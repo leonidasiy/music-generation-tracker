@@ -135,6 +135,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <button onclick="switchTab('todo')">✅ TODO</button>
   <button onclick="switchTab('references')">📚 References</button>
   <button onclick="switchTab('info')">ℹ️ Info</button>
+  <button onclick="switchTab('directions')">🧭 Directions</button>
 </nav>
 
 <!-- Stats Bar (visible on all tabs) -->
@@ -284,6 +285,97 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
       <li>Instruction tuning and in-context learning for music LLMs</li>
       <li>Music agents for interactive composition</li>
     </ul>
+  </div>
+</div>
+
+<!-- TAB 6: Directions -->
+<div class="tab-panel" id="tab-directions">
+  <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">Research Directions & Undergraduate Suitability</h2>
+
+  <div class="info-block">
+    <h3>🔥 Hot Directions (active frontier)</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:14px">
+        <strong style="color:var(--accent2)">1. Multi-track / stem orchestration</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:4px">Biggest gap between academic models and real production. JEN-1 Composer, SyncTrack, SketchSong all in last 18 months. Whoever solves coherent multi-stem wins.</p>
+        <span class="tag tag-cit">Hot 🔥</span>
+      </div>
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:14px">
+        <strong style="color:var(--accent2)">2. Long-form coherent structure</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:4px">Going from 30s clips to songs with verse/chorus/bridge. Hierarchical approach (plan→fill) is winning. Open models still can't reliably do 3-min songs.</p>
+        <span class="tag tag-cit">Hot 🔥</span>
+      </div>
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:14px">
+        <strong style="color:var(--accent2)">3. Instruction tuning for music</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:4px">FM Survey calls this underexplored. Everyone does text-to-music; nobody can follow instructions like "make the bass louder in chorus 2." Solved in LLMs, unsolved in music.</p>
+        <span class="tag tag-cit">Hot 🔥</span>
+      </div>
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:14px">
+        <strong style="color:var(--accent2)">4. Evaluation crisis</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:4px">FAD is broken. Human eval doesn't scale. SongBench (2026), Music Arena (2025) are trying. Meta-problem blocking all other progress.</p>
+        <span class="tag tag-cit">Hot 🔥</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-block">
+    <h3>🌊 Growing Directions</h3>
+    <ul>
+      <li><strong>Non-autoregressive / efficient generation</strong> — MAGNeT shows parallel decoding works. Real-time on-device is the endgame.</li>
+      <li><strong>Symbolic + audio joint models</strong> — MIDI-LLaMA, MuPT handle symbolic; nobody bridges symbolic+audio convincingly.</li>
+      <li><strong>Disentangled control</strong> — IRCAM separates pitch/timing from genre/timbre. Dream: independent sliders for every musical dimension.</li>
+    </ul>
+  </div>
+
+  <div class="info-block" style="border-left:3px solid var(--green)">
+    <h3>✅ Undergraduate-Suitable (zero/low GPU, 1 semester)</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:12px">
+        <strong style="color:var(--green)">⭐ Evaluation metrics</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:3px">Zero GPU. Design benchmark, run models via API, human studies. High publication potential — venues desperate for better eval.</p>
+        <span style="font-size:0.7rem;color:var(--text3)">Start: SongBench, Music Arena, FAD critiques</span>
+      </div>
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:12px">
+        <strong style="color:var(--green)">⭐ Controllability experiments</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:3px">Take MusicGen (open-source), add ONE conditioning dimension. Ablation = paper.</p>
+        <span style="font-size:0.7rem;color:var(--text3)">Start: MusicGen GitHub + HuggingFace</span>
+      </div>
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:12px">
+        <strong style="color:var(--green)">⭐ Prompt engineering for music</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:3px">Study how text maps to musical features. Systematic analysis, no training. Underexplored.</p>
+        <span style="font-size:0.7rem;color:var(--text3)">Start: MusicCaps (5.5k pairs), CLAP embeddings</span>
+      </div>
+      <div style="background:var(--surface2);border-radius:var(--radius);padding:12px">
+        <strong style="color:var(--green)">⭐ Cross-modal analysis</strong>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:3px">Correlate text descriptions ↔ audio features. Classification/regression, not generation. Low compute.</p>
+        <span style="font-size:0.7rem;color:var(--text3)">Start: MuLan embeddings, CLAP</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-block">
+    <h3>⚠️ Feasible with Guidance</h3>
+    <ul>
+      <li><strong>Symbolic music fine-tuning</strong> — MuPT is open-source. Fine-tune on niche genre/composer. Colab-level GPU.</li>
+      <li><strong>Dataset creation</strong> — Curate niche dataset (e.g., "jazz solos with structure annotations"). Zero GPU, always citable.</li>
+      <li><strong>Style transfer ablation</strong> — IRCAM's code is open. Test what breaks when removing disentanglement components.</li>
+    </ul>
+  </div>
+
+  <div class="info-block" style="border-left:3px solid var(--red)">
+    <h3>❌ Not Recommended for Undergrad</h3>
+    <ul>
+      <li><strong>Training large audio diffusion from scratch</strong> — needs 8×A100, weeks</li>
+      <li><strong>Multi-track generation</strong> — complex joint distributions, serious compute</li>
+      <li><strong>Competing with Suno/Udio on quality</strong> — billions in VC, proprietary data</li>
+      <li><strong>Long-form audio generation</strong> — Stable Audio 3 took a full team at Stability AI</li>
+      <li><strong>Foundation model pretraining</strong> — MuPT's 28 authors tells you the scale needed</li>
+    </ul>
+  </div>
+
+  <div class="info-block" style="background:var(--surface2);border:1px solid var(--accent);text-align:center">
+    <h3>🏆 Top Recommendation</h3>
+    <p style="font-size:0.9rem;color:var(--text2)"><strong>Evaluation metrics + Controllability:</strong> design a benchmark for fine-grained musical control (e.g., "did the model actually change from major to minor when asked?"). Zero compute, deeply needed, high citation potential, shippable in one semester.</p>
   </div>
 </div>
 
