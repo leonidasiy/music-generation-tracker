@@ -49,3 +49,4 @@
 - Added fifteen foundational and cross-domain sources to `REFERENCES.md`
 - Added an evolving Metric Lab tab to the website with implementation priorities and open decisions
 - Applied an independent review: normalized epistemic status labels, tightened cross-domain mappings, added direct film/poetry/game sources, and improved tab/search accessibility
+- Deployed the Metric Lab to GitHub Pages; verified 10 cards, 9 cross-domain links, correct tab/ARIA state, seven hidden inactive panels, and zero browser-console errors

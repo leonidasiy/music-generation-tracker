@@ -45,5 +45,5 @@
 - [x] Survey information-theoretic, graph, and dynamical-systems measures of form
 - [x] Maintain a candidate metric registry with novelty and feasibility status
 - [x] Add an evolving Metric Lab section to the website
-- [ ] Validate every website research increment before deployment
+- [x] Validate the initial Metric Lab website increment locally and on GitHub Pages
 - [x] Record open questions that require Leonidas's clarification
