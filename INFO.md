@@ -69,3 +69,9 @@
 - Production proxies are a principal threat: loudness, brightness, density, stereo width, patch novelty, vocal intensity, and transition effects can imitate form, contrast, pacing, tension, or boundary evidence.
 - Human evaluation must report instruction compliance, musicality, production quality, preference, and perceived artifacts separately.
 - This is practitioner review, not empirical metric validation.
+
+### Final iterative verdict
+- Dereck reviewed the revised registry again after M01–M04 and then M02/M06/M07/M09 were amended.
+- Final result: **M01–M04, M06–M07, M09, and M11 KEEP; M05, M08, and M10 DEFER; no REJECT; `REVISE_COUNT: 0`.**
+- “KEEP” means professionally coherent at the stated scope, not empirically validated.
+- Completed safeguards include separate applicable channels, explicit N/A handling, vocal/production separation, loudness-matched proxy controls, style and meter bounds, no unsupported aggregate, verified seed-coupling criteria, and alignment-sensitivity analysis.

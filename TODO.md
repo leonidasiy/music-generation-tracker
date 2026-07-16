@@ -83,3 +83,10 @@
 - [ ] Expand the representation benchmark across multiple renderers and controlled degradations
 - [ ] Design separate human judgments for compliance, musicality, production quality, and preference
 - [ ] Add oracle DAW perturbations for production-proxy gaming, justified adaptation, and alignment uncertainty
+
+## Iterative Dereck Metric Review — 2026-07-16
+- [x] Apply Dereck's first-round professional revisions to M01–M04
+- [x] Run a fresh native Codex Dereck review over all M01–M11 definitions
+- [x] Revise every metric still marked REVISE and resubmit
+- [x] Reach a final Dereck verdict with no metric marked REVISE
+- [x] Synchronize METRICS, INFO, HISTORY, TODO, and the live Metric Lab after the final decision

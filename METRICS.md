@@ -6,7 +6,7 @@
 
 > **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The next work item is a minimal prompt-pair pilot with same-prompt null baselines.
 
-> **Producer-practitioner validation:** A native Codex custom subagent, Dereck, independently reviewed M01–M11 from production, arrangement, sound-design, vocal-production, and audio-engineering perspectives. The review retained M09 as the flagship and M11 as infrastructure, recommended revisions to M01–M04, and deferred M05–M08 and M10 from the Paper 1 core. These are practitioner judgments, not empirical validation.
+> **Producer-practitioner validation:** Native Codex custom subagent Dereck repeatedly reviewed M01–M11 from production, arrangement, sound-design, vocal-production, and audio-engineering perspectives. After two revision rounds, the final pass returned `REVISE_COUNT: 0`: M01–M04, M06–M07, M09, and M11 are professionally coherent at their stated scopes; M05, M08, and M10 remain responsibly deferred. These are practitioner judgments, not empirical validation.
 
 ## Representation decision — 2026-07-16
 
@@ -23,48 +23,48 @@
 ## Initial candidate set
 
 ### M01 — Hierarchical Plan-Graph Alignment (HPGA)
-- **Status:** Candidate; high implementation priority
-- **Construct:** Ordered, nested section-form adherence
-- **Core idea:** Convert the instruction into a typed hierarchy containing boundaries, section identities, recurrence/contrast edges, and duration ranges. Align an inferred music hierarchy using L-measure, boundary agreement, relation accuracy, and penalized duration warping.
-- **Inputs:** Parsed plan; audio/MIDI; beat/bar tracking; multiscale section embeddings; optional human segmentation.
+- **Status:** Revised candidate; high implementation priority; optional CLPR evidence channel
+- **Construct:** Ordered, nested section-form adherence with uncertain boundaries and multi-label section roles
+- **Core idea:** Convert the instruction into a typed hierarchy containing boundary zones, section identities, musical functions, recurrence families, hierarchy levels, relation edges, and duration ranges. Align an inferred hierarchy using separate diagnostics for order, omission, duration, nesting, and recurrence; production-boundary salience cannot compensate for incorrect musical function.
+- **Inputs:** Parsed plan; audio/MIDI; beat/bar tracking; multiscale section embeddings; optional human segmentation distributions; separate compositional and production-cue features.
 - **Baselines:** Boundary F-score, L-measure, section-label edit distance, uniform segmentation.
 - **Novelty threat:** Individual components are established; novelty depends on the typed prompt-derived plan graph and relation diagnostics.
-- **Falsification:** Preserve all sections while permuting order, deleting a reprise, or breaking hierarchy. HPGA must decline monotonically and beat bag-of-label baselines on human plan-adherence judgments.
+- **Falsification:** Preserve all sections while permuting order, deleting a reprise, doubling one section, or breaking hierarchy; add a loudness-matched riser, impact, timbral reset, or mix discontinuity at a false boundary without changing the composition. Structural diagnostics must decline for form violations but resist production-only false boundaries and report listener boundary uncertainty.
 - **Feasibility:** High for symbolic; medium for audio.
 - **Established components:** [L-measure](https://pmc.ncbi.nlm.nih.gov/articles/PMC5541043/) and [Foote novelty segmentation](https://ccrma.stanford.edu/workshops/mir2009/references/Foote_00.pdf).
 
 ### M02 — Role-Conditioned Motif Recurrence and Transformation (RMRT)
-- **Status:** Candidate; high novelty potential
+- **Status:** Revised candidate; high novelty potential; optional motif-instruction subtest
 - **Cross-domain inspiration:** Choreographic theme-and-variation, rondo, canon, accumulation, and retrograde
 - **Construct:** Requested motif introduction, development, absence, and return without trivial looping
-- **Core idea:** Detect motif families and transformation types by section. Reward the requested recurrence role and moderate transformation; penalize leakage into forbidden sections, exact copying when variation was requested, and identity loss.
-- **Inputs:** Motif example or first occurrence; section-role schedule; melody/polyphonic representation; transformation-aware matcher.
+- **Core idea:** Detect motif families and prompt-conditioned transformations by section. Report pitch/contour, rhythm/phrasing, harmony-relative pitch, lyric/text identity, vocal timbre/delivery, instrumental timbre, and orchestration as separate applicable channels; mark inapplicable channels N/A. Predeclare which channels establish identity, which encode the requested transformation, and which constitute forbidden leakage. Audibility may gate interpretation but must be estimated under loudness-matched conditions and must not increase the score merely because the evaluated motif is louder, brighter, wider, denser, or more exposed. Do not produce a weighted aggregate until fixed weights are supported by independent listener judgments.
+- **Inputs:** Motif example or first occurrence; requested transformation profile; section-role schedule; symbolic and audio representations; salience estimate; transformation-aware matchers; prompt-anchored or human-adjudicated motif occurrence zones with alternatives when the first occurrence is ambiguous; vocal stem or lyric alignment when vocal channels are evaluated.
 - **Baselines:** Exact n-grams, DTW, MIREX motif occurrence scores, self-similarity stripe energy.
 - **Novelty threat:** Motif discovery is established; contribution must be the dramatic-role schedule and two-sided copy-versus-drift diagnosis.
-- **Falsification:** Compare exact copies, valid transformations, and unrelated replacements using human “same idea, varied” judgments.
+- **Falsification:** Use one instrumental and one sung motif. Apply loudness-matched edits to exactly one of contour, rhythm, harmony, lyric, vocal delivery, timbre, orchestration, or section placement; add gain-, brightness-, width-, and exposure-only controls. Test isolated stems and full mixes. Collect separate identity, requested-transformation, role, repetition, and audibility judgments; each diagnostic must respond selectively and resist production-only controls.
 - **Feasibility:** High for monophonic symbolic; medium-low for polyphonic audio.
 - **Transferred source:** [Laban/choreographic transformation vocabulary](https://www.danceedlab.com/wp-content/uploads/2021/05/LMA-Series-Horizontal.pdf). The proposed music metric retains typed recurrence and transformation, not movement semantics.
 
 ### M03 — Perceptual Boundary-Evidence Calibration (PBEC)
-- **Status:** Candidate; medium implementation priority
+- **Status:** Revised candidate; optional boundary-instruction subtest
 - **Cross-domain inspiration:** Film cuts and cognitive event segmentation
-- **Construct:** Whether requested boundaries are perceptually signaled and unrequested boundaries avoided
-- **Core idea:** Fuse feature-specific novelty curves for harmony, timbre, register, dynamics, density, rhythm, and instrumentation into a calibrated boundary probability. Compare it with a soft target density around planned boundaries.
-- **Inputs:** Planned boundaries; feature novelty curves; listener-click calibration subset.
+- **Construct:** Boundary existence, location, salience, hierarchy level, and prompt-appropriate signaling as distinct outputs
+- **Core idea:** Estimate feature-attributed evidence for structural boundary existence separately from perceptual salience. Compare uncertain listener-click distributions with prompt-specified boundary type—pronounced, subtle, seamless, interrupted, or intentionally ambiguous—rather than rewarding every strong discontinuity.
+- **Inputs:** Planned boundary zones and intended salience/type; feature novelty curves; listener clicks with hierarchy and confidence; artifact and production-cue controls.
 - **Baselines:** Foote novelty, boundary F-score, single-feature novelty.
 - **Novelty threat:** Novelty functions and boundary detectors are established; the fused, instruction-conditioned, listener-calibrated posterior is proposed.
-- **Falsification:** Listener boundary clicks must distinguish true planned boundaries from surface accents and recording artifacts.
+- **Falsification:** Hold composition fixed while independently adding a cadence, drum fill, impact, hard mute, loudness jump, vocal phrase ending, timbral swap, or mastering discontinuity; also render a genuine formal change with a deliberately smooth transition. Existence and appropriateness diagnostics must resist isolated false accents while salience responds selectively.
 - **Feasibility:** Medium-high.
 - **Established component:** [Foote novelty segmentation](https://ccrma.stanford.edu/workshops/mir2009/references/Foote_00.pdf). **Validation precedent:** [hierarchical annotation disagreement](https://pmc.ncbi.nlm.nih.gov/articles/PMC5541043/).
 
 ### M04 — Planned Contrast–Cohesion Margin (PCCM)
-- **Status:** Candidate; high implementation priority
+- **Status:** Revised candidate; optional relation-specific CLPR evidence channel
 - **Construct:** Same/varied sections remain related, contrast sections remain distinct, and sections remain internally coherent
-- **Core idea:** Use typed relation edges over section embeddings. Compute margins between requested recurrence pairs and requested contrast pairs, channel by channel, after correcting for ordinary temporal proximity.
-- **Inputs:** Section boundaries; relation graph; melody, harmony, rhythm, timbre, and instrumentation embeddings.
+- **Core idea:** Use typed relation edges and preregistered relation-specific channel profiles rather than a generic embedding average. Report melody, harmony, rhythm, lyric/vocal identity, timbre, instrumentation, density, and production channels separately after within-piece null calibration and temporal-proximity controls.
+- **Inputs:** Section boundaries; relation graph; melody, harmony, rhythm, lyric/vocal, timbre, instrumentation, density, and production representations.
 - **Baselines:** Binary SSM-template correlation, silhouette score, pairwise clustering F-score.
 - **Novelty threat:** Close to metric learning and SSM loss; typed relations and feature decomposition must add measurable value.
-- **Falsification:** Swap relation labels and independently perturb melody, rhythm, or instrumentation. The corresponding channel—not all channels—should fail.
+- **Falsification:** Independently perturb melody, harmony, groove, instrumentation, sound design, density/loudness, vocal register/stacking, and mastering. The intended channel must change selectively; production-only changes must not masquerade as compositional relation failure. Human ratings separately cover identity, contrast, continuity, and prompt appropriateness.
 - **Feasibility:** High.
 - **Established component:** self-similarity and relation comparison; [hierarchical structure evaluation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5541043/) is a validation baseline, not evidence for the proposed typed margin.
 
@@ -81,26 +81,26 @@
 - **Transferred sources:** [film continuity/discontinuity editing](https://pmc.ncbi.nlm.nih.gov/articles/PMC9684412/), [narrative entity persistence](https://aclanthology.org/J08-1001.pdf), and [automatic enjambment detection](https://dh2017.adho.org/abstracts/485/485.pdf). The retained invariant is formal boundary plus continuing dependency; the analogy fails if listeners do not perceive abruptness and continuity separately.
 
 ### M06 — Pacing Envelope Concordance (PEC)
-- **Status:** Adaptation; unvalidated for music instruction evaluation
+- **Status:** Revised adaptation; deferred from the Paper 1 core
 - **Cross-domain inspiration:** Film cutting-rate and shot-duration curves
-- **Construct:** Requested acceleration, deceleration, build, interruption, and climax timing
-- **Core idea:** Build a multichannel pacing trajectory from onset density, harmonic-change rate, timbral-change rate, boundary density, loudness motion, and texture change. Compare against the target envelope with rank correlation, constrained DTW, and peak-location error.
+- **Construct:** Requested acceleration, deceleration, build, interruption, and climax timing within preregistered styles and meters represented by the normalization corpus; out-of-scope material receives no concordance claim.
+- **Core idea:** Build separate beat-synchronous trajectories for event/onset rate, harmonic-change rate, timbral-change rate, formal-boundary rate, texture/density change, and dynamics/loudness motion. Compare only prompt-applicable channels with preregistered target directions or envelopes after meter-, style-, and section-role-conditioned normalization. Report musical-event pacing separately from production-intensity pacing. Do not average channels into a pacing score until a fixed aggregation rule is supported by independent pacing judgments.
 - **Inputs:** Beat-synchronous features; prompt-derived target envelope; style-conditioned normalization corpus.
 - **Baselines:** Tempo-only, loudness-only, onset-density-only curves.
 - **Novelty threat:** Most ingredients are established; value depends on multidimensional instruction-conditioned validation.
-- **Falsification:** Manipulate tempo, density, harmony rate, and timbral activity independently; human pacing judgments must support multiple channels.
+- **Falsification:** From one arrangement, independently alter tempo, onset density, harmonic rhythm, timbral activity, texture density, edit/boundary rate, and loudness automation. Include loudness-matched renders and production-only builds using automation, saturation, or brightness without additional musical events. Listeners separately rate speed of unfolding, intensity/excitement, and prompt compliance; musical-event pacing must not move merely because production intensity rises.
 - **Feasibility:** High.
 - **Transferred source:** [Cinemetrics discussion of shot-length and cutting-rate analysis](https://cinemetrics.uchicago.edu/article/616e7ecc-7915-4768-b84d-7dec79aa77c2). The 2022 [movie-editing experiment](https://pmc.ncbi.nlm.nih.gov/articles/PMC9684412/) supports cut-type effects on perceived duration, not the full pacing-envelope proposal.
 
 ### M07 — Tension-Arc Adherence and Resolution Debt (TAARD)
-- **Status:** Candidate; medium risk
+- **Status:** Revised candidate; deferred from the Paper 1 core; calibrated idioms only
 - **Construct:** Requested buildup, climax, relaxation, and resolution
-- **Core idea:** Estimate multidimensional tension from harmony, loudness, density, register, roughness, tempo, and expectation. Score ordinal arc constraints, climax location, and **resolution debt**, provisionally defined as residual tension above a style- and opening-calibrated endpoint target plus renewed upward tension motion inside the requested resolution interval.
+- **Core idea:** Report separate arcs for harmonic/expectation tension, arrangement/performance intensity, and production intensity. Vocal register, vocal roughness, breath pressure, stacking, and delivery intensity belong to the arrangement/performance profile unless the prompt explicitly targets them. Define resolution debt only inside a preregistered, style-calibrated tension model and requested resolution interval. Report endpoint residual and renewed upward motion separately; do not collapse them or the three tension/intensity profiles into a style-general scalar.
 - **Inputs:** Plan constraints; audio/MIDI features; tonal or tonal-free tension model; listener tension curves for calibration.
 - **Baselines:** Loudness, density, tonal strain, target-curve DTW.
 - **Novelty threat:** Tension estimation is established; novelty depends on natural-language arc constraints, channel attribution, and resolution debt.
-- **Falsification:** Metric must not mistake louder audio for greater harmonic tension and must generalize beyond one tonal style.
-- **Feasibility:** High for tonal symbolic; medium for audio; low outside calibrated idioms.
+- **Falsification:** Apply matched edits to harmony alone, arrangement density alone, instrumental or vocal register/delivery alone, and production alone through gain, limiting, saturation, brightness, or width. Loudness-match where the manipulated construct permits it. Collect separate continuous ratings of harmonic tension, energy/intensity, expected resolution, and felt resolution; the harmonic diagnostic must resist production- and delivery-only edits.
+- **Feasibility:** High for tonal symbolic music inside calibrated idioms; medium for aligned audio inside calibrated idioms; unsupported outside preregistered styles or for a nominally tonal-free aggregate until a separate operational model is specified.
 - **Established component and validation precedent:** [continuous listener tension trajectories and feature-specific time windows](https://pmc.ncbi.nlm.nih.gov/articles/PMC3874841/). Resolution debt is proposed, not established.
 
 ### M08 — Expectation-Regime Schedule Divergence (ERSD)
@@ -118,7 +118,7 @@
 - **Status:** Candidate; strongest model-level control diagnostic
 - **Cross-domain inspiration:** Meaningful agency in interactive narrative
 - **Construct:** Whether changing one instruction causes the requested local change without needless collateral changes
-- **Core idea:** Generate minimal prompt contrasts with matched seeds. Report target effect, direction accuracy, off-target leakage, boundary spillover, and uncertainty across seeds.
+- **Core idea:** Generate minimal prompt contrasts. Use paired seeds only when the generator exposes the same underlying stochastic draw and same-prompt diagnostics establish useful coupling; otherwise estimate repeated-sample average responsiveness. Report target effect, direction accuracy, off-target leakage, boundary spillover, alignment sensitivity, and uncertainty.
 - **Inputs:** Repeatable generator access; minimal prompt pairs; section alignment; relevant feature detectors or human pairwise labels.
 - **Baselines:** Same-prompt repeated generations, prompt shuffle, control-token ablation, independent-seed variance.
 - **Novelty threat:** Causal contrasts are standard in ML; novelty is localized long-form music plan evaluation.
@@ -174,16 +174,21 @@ For intervention `i`, piece `j`, repeated generation `s`, minimally different pr
 
 For every intervention, preregister three locality classes: **strict-preservation regions**, where change is presumptively collateral; **adaptation-allowed regions**, where pickups, transitions, voice-leading, automation ramps, reverb tails, gain-stage compensation, or downstream musical consequences may be necessary; and **unconstrained regions**, which are excluded from leakage claims. OTL and BS must not penalize justified adaptation as if it were arbitrary leakage.
 
-With defensibly matched seeds, TES estimates a paired controlled-generator intervention effect. Without seed coupling, estimate a repeated-sample average intervention effect and do not call individual output pairs counterfactuals. TES/DA characterize target response; OTL/BS characterize distinct distal and near-boundary collateral effects; PRD is an optional structural explanation. These outputs are dependent and are not five separate discoveries. No aggregate is primary until human judgments establish a defensible weighting; report instruction compliance, musicality, production quality, listener preference, and perceived generation/edit artifacts separately.
+For every output, preregister whether target and protected regions are prompt-anchored, oracle-aligned, or inferred. Represent inferred regions by an alignment distribution or an adjudicated set of plausible intervals. Compute TES, OTL, BS, and applicable PRD across those alternatives and report an alignment-sensitivity interval; never select the alignment that maximizes the requested effect. Predeclare whether the intervention may move a boundary and which anchors constrain monotone alignment.
 
-### Producer-practitioner review — Dereck, 2026-07-16
+Treat seeds as paired only when the generator interface fixes the same underlying stochastic draw across prompt variants and same-prompt diagnostics demonstrate useful within-seed coupling for the evaluated feature. Otherwise use repeated independent prompt samples, estimate an average intervention effect, and do not label output pairs counterfactual. TES/DA characterize target response; OTL/BS characterize distinct distal and near-boundary collateral effects; PRD is an optional structural explanation. These outputs are dependent and are not five separate discoveries. No aggregate is primary until human judgments establish a defensible weighting; report instruction compliance, musicality, production quality, listener preference, and perceived generation/edit artifacts separately.
 
-- **KEEP:** M09 as the flagship localized-responsiveness protocol; M11 as validation infrastructure.
-- **REVISE:** M01, M02, M03, and M04. Their constructs are audible in restricted settings, but production boundaries, loudness, timbre, arrangement density, vocal delivery, and embedding confounds require controlled DAW perturbations and channel-specific reporting.
-- **DEFER from the Paper 1 core:** M05, M06, M07, M08, and M10. Each remains a plausible research direction, but current operationalizations are too style-dependent, model-relative, or vulnerable to interpretive overclaiming.
+**Minimum oracle validation:** Create known local edits with unchanged boundaries, shifted boundaries, transition tails, and multiple plausible alignments; add loudness-, brightness-, width-, and density-only proxy edits. Effect direction and leakage conclusions must survive the declared alignment-sensitivity analysis and reject proxy-only compliance. Compare genuinely coupled pairs, permuted seed pairings, and independent samples against same-prompt nulls.
+
+### Producer-practitioner review — Dereck, final pass, 2026-07-16
+
+- **KEEP:** M01, M02, M03, M04, M06, M07, M09, and M11 are professionally coherent at their explicitly bounded diagnostic or infrastructure scopes.
+- **DEFER:** M05, M08, and M10 remain coherent exploratory hypotheses but require empirical establishment before promotion; deferral is not a textual defect.
+- **REJECT:** None.
+- **REVISE:** None (`REVISE_COUNT: 0`).
+- **Key revisions completed:** channel-specific and N/A reporting; vocal/production separation; loudness-matched proxy controls; bounded style and meter claims; no unsupported aggregation; explicit seed-coupling criteria; alignment-sensitivity intervals; and oracle DAW tests.
 - **Primary practical risk:** production proxies—loudness, brightness, density, stereo width, patch novelty, vocal intensity, and transition effects—may imitate structural compliance.
-- **Required validation:** use oracle multitrack edits before generator comparisons; test graded target changes, boundary spillover, distal leakage, false production cues, and alignment uncertainty.
-- **Epistemic limit:** this review contributes expert-practice scrutiny and experiment ideas; it is not evidence that any candidate metric is valid.
+- **Epistemic limit:** professional coherence does not establish construct validity, human agreement, generalization, or metric performance.
 
 ### Systematic questions for the narrowed paper
 

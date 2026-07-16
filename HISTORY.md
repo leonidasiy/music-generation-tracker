@@ -86,3 +86,14 @@
 - Elevated production-proxy gaming, stochastic pairing, alignment uncertainty, and annotation-scope expansion as practical risks
 - Required separate reporting for instruction compliance, musicality, production quality, preference, and perceived artifacts
 - Recorded the epistemic limit: Dereck's conclusions are practitioner judgments and experiment-design guidance, not empirical metric validation
+
+## 2026-07-16 — Iterative Dereck Revision Loop Complete
+- Applied first-round revisions to M01–M04 covering multi-label form roles, boundary uncertainty, motif salience, formal-versus-production boundary evidence, and channel-selective contrast/cohesion
+- A fresh Dereck pass marked M02, M06, M07, and M09 for further revision
+- Added non-aggregated instrumental/vocal motif channels and loudness-matched proxy controls to M02
+- Split musical-event pacing from production-intensity pacing and bounded M06 by preregistered style, meter, and section role
+- Split harmonic tension, arrangement/performance intensity, and production intensity in M07 and removed unsupported style-general aggregation
+- Added explicit stochastic-coupling criteria, prompt/oracle/inferred alignment classes, alignment-sensitivity intervals, and proxy-only compliance tests to M09
+- Ran a second fresh native Codex Dereck review over all current definitions
+- Final verdict: M01–M04, M06–M07, M09, and M11 KEEP; M05, M08, and M10 DEFER; no REJECT; `REVISE_COUNT: 0`
+- Preserved the evidence limit: professional coherence is not empirical metric validation
