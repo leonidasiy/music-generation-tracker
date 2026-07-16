@@ -37,6 +37,8 @@
 - [x] Audit the deterministic dual-representation feasibility pilot (4/4 tests passing)
 - [x] Validate the DDGS + local extraction research stack and document its limits
 - [x] Synchronize the frontend, TODO, HISTORY, INFO, REFERENCES, and METRICS status
+- [x] Run native Codex producer-practitioner review with Dereck and retain CLPR as flagship
+- [x] Add strict-preservation, adaptation-allowed, and unconstrained locality classes to CLPR
 - [ ] Complete full-text deep dives for the remaining core papers
 
 ## Refined Research Agenda — 2026-07-16
@@ -80,3 +82,4 @@
 - [ ] Implement a small CLPR prompt-pair pilot before adding more candidate metrics
 - [ ] Expand the representation benchmark across multiple renderers and controlled degradations
 - [ ] Design separate human judgments for compliance, musicality, production quality, and preference
+- [ ] Add oracle DAW perturbations for production-proxy gaming, justified adaptation, and alignment uncertainty

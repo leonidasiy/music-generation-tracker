@@ -43,7 +43,7 @@
 - Broad multimodal music instruction scoring is directly addressed by CMI-RewardBench.
 - Segment-level prompt alignment is addressed by SegTune and adjacent temporally controlled generation work.
 - The clearest remaining gap is **localized counterfactual responsiveness**: minimally change one section instruction, require the intended local effect, and penalize collateral change elsewhere.
-- Paper 1 should be framed as one benchmark for **causal, hierarchical instruction validity**, not eleven allegedly novel metrics.
+- Paper 1 should be framed as one benchmark for **localized instruction responsiveness**, not eleven allegedly novel metrics. Paired-effect or counterfactual language is conditional on defensible seed coupling.
 - HPGA and PCCM are interpretable structural evidence inside the flagship CLPR test.
 - CRVP is a validation protocol for representation/renderer dependence, not a novel psychometric theory.
 - Compliance, musicality, production quality, and preference must remain distinct outcomes.
@@ -61,3 +61,11 @@
 - **Primary outputs:** TES and DA for target response; OTL and BS for collateral effects; PRD only when an intervention changes a structural relation.
 - **Current evidence limit:** the pilot establishes mechanical feasibility and reproducibility only; it does not establish human validity, cross-renderer invariance, or population-level robustness.
 - **Active next increment:** freeze a minimal intervention ontology, select generators with sufficient duration and repeatable randomness, estimate same-prompt null variability, and run a small CLPR prompt-pair pilot.
+
+## Producer-practitioner validation — 2026-07-16
+- A native Codex custom subagent named **Dereck** reviewed the full M01–M11 registry from production, arrangement, synthesis, vocal-production, and audio-engineering perspectives.
+- Dereck retained M09 / CLPR as the Paper 1 flagship and M11 / CRVP as validation infrastructure; M01–M04 require revision, while M05–M08 and M10 should remain outside the Paper 1 core.
+- CLPR locality now distinguishes **strict-preservation**, **adaptation-allowed**, and **unconstrained** regions so musically necessary pickups, transitions, tails, automation, voice-leading, and downstream consequences are not mislabeled as leakage.
+- Production proxies are a principal threat: loudness, brightness, density, stereo width, patch novelty, vocal intensity, and transition effects can imitate form, contrast, pacing, tension, or boundary evidence.
+- Human evaluation must report instruction compliance, musicality, production quality, preference, and perceived artifacts separately.
+- This is practitioner review, not empirical metric validation.

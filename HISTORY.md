@@ -76,3 +76,13 @@
 - Rebuilt the core `REFERENCES.md` registry deterministically from the 14-paper frontend dataset; current registry totals are 3,721 approximate citations and 14/14 open-source or open-artifact entries
 - Added a concise current-status snapshot to INFO.md and the current flagship strategy to METRICS.md
 - Synchronized all project documentation around M09 / CLPR as Paper 1, optional HPGA/PCCM evidence, CRVP validation infrastructure, and the prompt-pair pilot as the active next step
+
+## 2026-07-16 — Codex Producer-Practitioner Validation
+- Created and invoked Dereck as a native Codex custom subagent with a professional music-production, arrangement, sound-design, vocal-production, and audio-engineering role
+- Dereck independently read the complete M01–M11 registry and completed successfully without modifying project files
+- Retained M09 / CLPR as the Paper 1 flagship and M11 / CRVP as validation infrastructure
+- Marked M01–M04 for revision and deferred M05–M08 and M10 from the Paper 1 core
+- Added three CLPR locality classes: strict-preservation, adaptation-allowed, and unconstrained regions
+- Elevated production-proxy gaming, stochastic pairing, alignment uncertainty, and annotation-scope expansion as practical risks
+- Required separate reporting for instruction compliance, musicality, production quality, preference, and perceived artifacts
+- Recorded the epistemic limit: Dereck's conclusions are practitioner judgments and experiment-design guidance, not empirical metric validation

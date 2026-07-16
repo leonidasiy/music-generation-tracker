@@ -6,6 +6,8 @@
 
 > **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The next work item is a minimal prompt-pair pilot with same-prompt null baselines.
 
+> **Producer-practitioner validation:** A native Codex custom subagent, Dereck, independently reviewed M01–M11 from production, arrangement, sound-design, vocal-production, and audio-engineering perspectives. The review retained M09 as the flagship and M11 as infrastructure, recommended revisions to M01–M04, and deferred M05–M08 and M10 from the Paper 1 core. These are practitioner judgments, not empirical validation.
+
 ## Representation decision — 2026-07-16
 
 **Keep symbolic and native-audio paths open during exploration.** Neither representation will be treated as ground truth. Symbolic and audio estimates are modeled as different, imperfect measurement methods; paired rendered-MIDI experiments will isolate representation effects from transcription and performance effects.
@@ -170,7 +172,18 @@ For intervention `i`, piece `j`, repeated generation `s`, minimally different pr
 4. **Boundary Spillover (BS).** Report a distance-indexed curve of absolute standardized change in non-overlapping rings immediately outside the target boundary. A preregistered halo AUC or decay length is secondary. The halo is excluded from OTL, so BS measures near-boundary decay while OTL measures distal or semantically protected change.
 5. **Plan Relation Delta (PRD).** Use only when one plan edge or structural constraint changes. For evidence function `q(y;e,r)` and intervention from relation `r0` to `r1`, report the contrast-in-contrasts `[q(y1;e,r1)-q(y1;e,r0)] - [q(y0;e,r1)-q(y0;e,r0)]`, standardized against same-prompt null contrasts. Report unaffected-edge change separately as structural leakage; otherwise mark PRD not applicable.
 
-With defensibly matched seeds, TES estimates a paired controlled-generator intervention effect. Without seed coupling, estimate a repeated-sample average intervention effect and do not call individual output pairs counterfactuals. TES/DA characterize target response; OTL/BS characterize distinct distal and near-boundary collateral effects; PRD is an optional structural explanation. These outputs are dependent and are not five separate discoveries. No aggregate is primary until human judgments establish a defensible weighting; report compliance separately from quality and preference.
+For every intervention, preregister three locality classes: **strict-preservation regions**, where change is presumptively collateral; **adaptation-allowed regions**, where pickups, transitions, voice-leading, automation ramps, reverb tails, gain-stage compensation, or downstream musical consequences may be necessary; and **unconstrained regions**, which are excluded from leakage claims. OTL and BS must not penalize justified adaptation as if it were arbitrary leakage.
+
+With defensibly matched seeds, TES estimates a paired controlled-generator intervention effect. Without seed coupling, estimate a repeated-sample average intervention effect and do not call individual output pairs counterfactuals. TES/DA characterize target response; OTL/BS characterize distinct distal and near-boundary collateral effects; PRD is an optional structural explanation. These outputs are dependent and are not five separate discoveries. No aggregate is primary until human judgments establish a defensible weighting; report instruction compliance, musicality, production quality, listener preference, and perceived generation/edit artifacts separately.
+
+### Producer-practitioner review — Dereck, 2026-07-16
+
+- **KEEP:** M09 as the flagship localized-responsiveness protocol; M11 as validation infrastructure.
+- **REVISE:** M01, M02, M03, and M04. Their constructs are audible in restricted settings, but production boundaries, loudness, timbre, arrangement density, vocal delivery, and embedding confounds require controlled DAW perturbations and channel-specific reporting.
+- **DEFER from the Paper 1 core:** M05, M06, M07, M08, and M10. Each remains a plausible research direction, but current operationalizations are too style-dependent, model-relative, or vulnerable to interpretive overclaiming.
+- **Primary practical risk:** production proxies—loudness, brightness, density, stereo width, patch novelty, vocal intensity, and transition effects—may imitate structural compliance.
+- **Required validation:** use oracle multitrack edits before generator comparisons; test graded target changes, boundary spillover, distal leakage, false production cues, and alignment uncertainty.
+- **Epistemic limit:** this review contributes expert-practice scrutiny and experiment ideas; it is not evidence that any candidate metric is valid.
 
 ### Systematic questions for the narrowed paper
 
