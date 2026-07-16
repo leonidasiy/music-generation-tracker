@@ -69,3 +69,10 @@
 - Operationalized TES, DA, OTL, BS, and applicable PRD with held-out same-prompt null scales, explicit protected regions, and piece/intervention-level uncertainty
 - Passed independent re-review after correcting source wording, metric ambiguity, causal scope, renderer terminology, and QA auditability
 - Updated the Metric Lab and Research Plan website sections to reflect the reliability gate and revised research strategy
+
+## 2026-07-16 — Progress and Documentation Synchronization
+- Replaced stale frontend progress states that still described the built, reviewed, and deployed tracker as pending
+- Aligned the frontend TODO with the repository TODO and made the next experimental increment explicit
+- Rebuilt the core `REFERENCES.md` registry deterministically from the 14-paper frontend dataset; current registry totals are 3,721 approximate citations and 14/14 open-source or open-artifact entries
+- Added a concise current-status snapshot to INFO.md and the current flagship strategy to METRICS.md
+- Synchronized all project documentation around M09 / CLPR as Paper 1, optional HPGA/PCCM evidence, CRVP validation infrastructure, and the prompt-pair pilot as the active next step

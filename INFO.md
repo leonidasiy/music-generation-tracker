@@ -54,3 +54,10 @@
 - Search snippets are discovery aids, not evidence; citation counts require dedicated scholarly sources.
 - Metadata-only landing pages must be followed to PDFs for substantive claims.
 - Long extracted documents may be summarized by the tool layer; quotations require checking the primary PDF.
+
+## Current project status — 2026-07-16
+- **Completed:** initial 14-paper collection, metadata review, light-mode tracker, GitHub Pages deployment, refined research agenda, Metric Lab, web-research reliability gate, and deterministic dual-representation pilot audit.
+- **Paper 1 focus:** test whether a minimal temporal-instruction change causes the requested local musical effect while preserving preregistered non-target regions.
+- **Primary outputs:** TES and DA for target response; OTL and BS for collateral effects; PRD only when an intervention changes a structural relation.
+- **Current evidence limit:** the pilot establishes mechanical feasibility and reproducibility only; it does not establish human validity, cross-renderer invariance, or population-level robustness.
+- **Active next increment:** freeze a minimal intervention ontology, select generators with sufficient duration and repeatable randomness, estimate same-prompt null variability, and run a small CLPR prompt-pair pilot.

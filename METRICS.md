@@ -4,6 +4,8 @@
 > Scope: long-form compositional plan adherence and music instruction following  
 > Status labels: **Candidate** = proposed but unvalidated; **Adaptation** = established method transferred to this task; **Speculative** = promising construct with major measurement risk.
 
+> **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The next work item is a minimal prompt-pair pilot with same-prompt null baselines.
+
 ## Representation decision — 2026-07-16
 
 **Keep symbolic and native-audio paths open during exploration.** Neither representation will be treated as ground truth. Symbolic and audio estimates are modeled as different, imperfect measurement methods; paired rendered-MIDI experiments will isolate representation effects from transcription and performance effects.

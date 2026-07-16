@@ -3,11 +3,11 @@
 > Project initiated: 2026-07-14
 
 ## Phase 1: Initial Research
-- [ ] Search arXiv for music generation papers (2023–2026)
-- [ ] Search arXiv for music orchestration / arrangement papers
-- [ ] Search web for frontier music generation models (MusicGen, Suno, Udio, etc.)
-- [ ] Compile 10+ papers with 10+ citations each
-- [ ] Write short summaries for each paper
+- [x] Search arXiv for music generation papers (2023–2026)
+- [x] Search arXiv for music orchestration / arrangement papers
+- [x] Search web for frontier music generation models (MusicGen, Suno, Udio, etc.)
+- [x] Compile 10+ papers with 10+ citations each
+- [x] Write short summaries for each core paper
 
 ## Phase 2: Deep Dive
 - [ ] Extract full paper contents via arXiv API / PDF
@@ -17,19 +17,27 @@
 - [ ] Note open-source model availability
 
 ## Phase 3: Frontend Tracker
-- [ ] Design UI layout with tabs
-- [ ] Code self-contained HTML page
-- [ ] Embed all research data
-- [ ] Add interactive features (search, filtering)
+- [x] Design UI layout with tabs
+- [x] Code self-contained HTML page
+- [x] Embed the core paper registry and current research agenda
+- [x] Add interactive features (search, filtering, keyboard-accessible tabs)
 
 ## Phase 4: Deployment
-- [ ] Set up GitHub Pages repository
-- [ ] Deploy frontend
-- [ ] Verify live URL accessibility
+- [x] Set up GitHub Pages repository
+- [x] Deploy frontend
+- [x] Verify live URL accessibility
 
 ## Phase 5: Finalization
-- [ ] Final validation
-- [ ] Deliver hosted URL
+- [x] Validate the initial hosted tracker
+- [x] Deliver the hosted URL
+
+## Current Status — 2026-07-16
+- [x] Narrow Paper 1 to localized instruction responsiveness (M09 / CLPR)
+- [x] Reclassify HPGA/PCCM as optional evidence channels and CRVP as validation infrastructure
+- [x] Audit the deterministic dual-representation feasibility pilot (4/4 tests passing)
+- [x] Validate the DDGS + local extraction research stack and document its limits
+- [x] Synchronize the frontend, TODO, HISTORY, INFO, REFERENCES, and METRICS status
+- [ ] Complete full-text deep dives for the remaining core papers
 
 ## Refined Research Agenda — 2026-07-16
 - [x] Review feasibility of combining long-form structure and music instruction tuning

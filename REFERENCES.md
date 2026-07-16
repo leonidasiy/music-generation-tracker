@@ -1,220 +1,255 @@
 # References — Music Generation & Orchestration Research
 
-> Last updated: 2026-07-14  
-> **14 frontier papers** with summaries, all with 10+ citations.
+> Last updated: 2026-07-16
+> **14 core tracker papers** synchronized with `index.html`, plus metric-design, competitive-benchmark, robustness, psychometric, and cross-domain sources. Citation counts are approximate snapshots and should not be treated as live bibliometrics.
 
 ---
 
-## Paper 1: Jukebox — A Generative Model for Music
-- **Authors:** Prafulla Dhariwal, Heewoo Jun, Christine Payne, Jong Wook Kim, Alec Radford, Ilya Sutskever (OpenAI)
-- **Year:** 2020 | **Venue:** arXiv / OpenAI Research
-- **arXiv:** [2005.00341](https://arxiv.org/abs/2005.00341)
-- **Citations:** ~1,373 [HIGH CONFIDENCE — multiple sources confirm]
-- **Code:** [github.com/openai/jukebox](https://github.com/openai/jukebox)
+## Core Paper 1: CLAP: Contrastive Language-Audio Pretraining
+- **Authors:** Benjamin Elizalde, Soham Deshmukh, Mahmoud Al Ismail, Huaming Wang
+- **Organization:** LAION / Microsoft
+- **Year:** 2022 | **Venue:** ICASSP 2023
+- **arXiv:** [2206.04769](https://arxiv.org/abs/2206.04769)
+- **Citations:** ~1,220 [HIGH CONFIDENCE]
+- **Relevance:** Active
 
-**Key Findings:** Introduced the first model to generate raw-audio music with singing. Uses a multi-scale VQ-VAE to compress raw audio into discrete codes, then models those codes with autoregressive Transformers. Can condition on artist, genre, and unaligned lyrics. Generates coherent songs lasting multiple minutes. Pioneered raw-audio generation at scale, laying the foundation for all subsequent high-fidelity music generation work.
+**Key Findings:** Learns joint audio-text representations via contrastive learning. Trained on 4.6M audio-text pairs. Enables zero-shot audio classification and cross-modal retrieval. Foundation for music-text alignment — directly powers prompt engineering and cross-modal analysis research directions. Widely adopted as embedding backbone for music generation evaluation.
 
-**Architecture:** Multi-scale VQ-VAE + Hierarchical Autoregressive Transformers  
-**Modality:** Raw audio (44.1kHz)  
-**Open-source:** ✅ Yes (code + weights)
-
----
-
-## Paper 2: MusicLM — Generating Music From Text
-- **Authors:** Andrea Agostinelli, Timo I. Denk, Zalán Borsos, Jesse Engel, Mauro Verzetti et al. (Google Research)
-- **Year:** 2023 | **Venue:** arXiv
-- **arXiv:** [2301.11325](https://arxiv.org/abs/2301.11325)
-- **Citations:** ~1,235 [HIGH CONFIDENCE]
-- **Dataset:** [MusicCaps](https://kaggle.com/datasets/googleai/musiccaps) (5.5k music-text pairs)
-
-**Key Findings:** Pioneered high-fidelity text-to-music generation. Casts conditional music generation as hierarchical sequence-to-sequence modeling. Generates 24kHz audio coherent over several minutes. Supports both text and melody conditioning (whistled/hummed input → styled output). Released MusicCaps, the first large-scale expert-annotated music-text dataset. Set the benchmark for text-aligned music generation quality.
-
-**Architecture:** Hierarchical Seq2Seq (SoundStream + w2v-BERT + MuLan)  
-**Modality:** Audio (24kHz)  
-**Open-source:** ❌ No (model not released; dataset only)
+**Architecture:** Dual-encoder contrastive (audio + text)
+**Modality:** Audio + Text embeddings
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** cross-modal, prompt-engineering
 
 ---
 
-## Paper 3: MusicGen — Simple and Controllable Music Generation
-- **Authors:** Jade Copet, Felix Kreuk, Itai Gat, Tal Remez, David Kant, Gabriel Synnaeve, Yossi Adi, Alexandre Défossez (Meta)
+## Core Paper 2: MusicGen: Simple and Controllable Music Generation
+- **Authors:** Jade Copet, Felix Kreuk, Itai Gat, Tal Remez, David Kant, Gabriel Synnaeve et al.
+- **Organization:** Meta
 - **Year:** 2023 | **Venue:** NeurIPS 2023
 - **arXiv:** [2306.05284](https://arxiv.org/abs/2306.05284)
 - **Citations:** ~1,199 [HIGH CONFIDENCE]
-- **Code:** [github.com/facebookresearch/audiocraft](https://github.com/facebookresearch/audiocraft)
+- **Relevance:** Active
 
-**Key Findings:** Simplified music generation to a single-stage transformer LM operating over compressed discrete tokens. Eliminated cascaded/hierarchical models used in prior work. Supports dual conditioning on text + melody. Achieved state-of-the-art on text-to-music benchmarks. Ablation studies validated each component's contribution. Fully open-source release drove widespread adoption and follow-up research.
+**Key Findings:** Single-stage transformer LM over compressed discrete tokens. Dual conditioning on text + melody. SOTA on text-to-music benchmarks. Fully open-source via Audiocraft. Ideal starting point for controllability experiments — add conditioning dimensions and measure effect.
 
-**Architecture:** Single-stage Transformer LM + EnCodec tokenizer + token interleaving  
-**Modality:** Audio (32kHz, mono + stereo)  
-**Open-source:** ✅ Yes (code + pretrained models)
-
----
-
-## Paper 4: Noise2Music — Text-Conditioned Music Generation with Diffusion Models
-- **Authors:** Qingqing Huang, Daniel S. Park, Tao Wang, Timo I. Denk et al. (Google Research)
-- **Year:** 2023 | **Venue:** arXiv
-- **arXiv:** [2302.03917](https://arxiv.org/abs/2302.03917)
-- **Citations:** ~333 [MEDIUM CONFIDENCE — web search aggregation]
-
-**Key Findings:** Introduced a series of diffusion models trained to generate high-quality 30-second music clips from text prompts. Uses a two-model cascade: a generator model produces intermediate representations conditioned on text, and a cascader model generates high-fidelity audio. Demonstrated that diffusion models can match or exceed autoregressive approaches for music generation.
-
-**Architecture:** Diffusion cascade (Generator + Cascader)  
-**Modality:** Audio (30-second clips)  
-**Open-source:** ❌ No
+**Architecture:** Single-stage Transformer LM + EnCodec tokenizer
+**Modality:** Audio (32kHz, mono + stereo)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** controllability
 
 ---
 
-## Paper 5: Symbolic Music Generation with Diffusion Models
-- **Authors:** Gautam Mittal, Jesse Engel, Curtis Hawthorne, Ian Simon (Google Brain / Magenta)
+## Core Paper 3: MusicLDM: Enhancing Novelty in Text-to-Music Generation Using Beat-Synchronous Mixup
+- **Authors:** Ke Chen, Yusong Wu, Haohe Liu, Marianna Nezhurina, Taylor Berg-Kirkpatrick, Shlomo Dubnov
+- **Organization:** UC San Diego / Qualcomm
+- **Year:** 2023 | **Venue:** ICASSP 2024
+- **arXiv:** [2308.01546](https://arxiv.org/abs/2308.01546)
+- **Citations:** ~204 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
+
+**Key Findings:** First to adapt Stable Diffusion + AudioLDM to music domain as open-source baseline. Introduces beat-synchronous mixup for training data augmentation, increasing output diversity. Reproducible, well-documented codebase. Excellent starting point for undergrads wanting a trainable text-to-music diffusion model.
+
+**Architecture:** Latent Diffusion (adapted from Stable Diffusion/AudioLDM)
+**Modality:** Audio (mel-spectrograms)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** controllability, efficient-generation
+
+---
+
+## Core Paper 4: MAGNeT: Masked Audio Generation using a Single Non-Autoregressive Transformer
+- **Authors:** Alon Ziv, Itai Gat, Gael Le Lan, Tal Remez, Felix Kreuk et al.
+- **Organization:** Meta
+- **Year:** 2024 | **Venue:** ICLR 2024
+- **arXiv:** [2401.04577](https://arxiv.org/abs/2401.04577)
+- **Citations:** ~82 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
+
+**Key Findings:** Non-autoregressive masked generative modeling for audio. Generates high-quality music in fewer steps via parallel token prediction. Part of Meta's Audiocraft. Complements MusicGen — useful for efficiency experiments and comparing AR vs. non-AR approaches.
+
+**Architecture:** Masked Non-Autoregressive Transformer
+**Modality:** Audio (32kHz)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** efficient-generation
+
+---
+
+## Core Paper 5: LP-MusicCaps: LLM-Based Pseudo Music Captioning
+- **Authors:** SeungHeon Doh, Keunwoo Choi, Jongpil Lee, Juhan Nam
+- **Organization:** KAIST / Gaudio Lab
+- **Year:** 2023 | **Venue:** ISMIR 2023
+- **arXiv:** [2307.16372](https://arxiv.org/abs/2307.16372)
+- **Citations:** ~176 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
+
+**Key Findings:** Uses LLMs to generate ~2.2M music captions from 0.5M audio clips. Addresses the critical bottleneck of labeled music data. Enables large-scale training for text-to-music and music understanding. Directly relevant for dataset creation, prompt engineering analysis, and training captioning models.
+
+**Architecture:** LLM-based pseudo-captioning pipeline
+**Modality:** Text (music captions)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** dataset-creation, prompt-engineering
+
+---
+
+## Core Paper 6: Symbolic Music Generation with Diffusion Models
+- **Authors:** Gautam Mittal, Jesse Engel, Curtis Hawthorne, Ian Simon
+- **Organization:** Google Brain / Magenta
 - **Year:** 2021 | **Venue:** ISMIR 2021
 - **arXiv:** [2103.16091](https://arxiv.org/abs/2103.16091)
 - **Citations:** ~318 [MEDIUM CONFIDENCE]
+- **Relevance:** Foundational
 
-**Key Findings:** First successful application of diffusion models to symbolic (MIDI/piano roll) music generation. Adapted continuous diffusion to discrete sequential data. Demonstrated that diffusion models produce more musically coherent outputs than autoregressive baselines for symbolic music. Influential bridge between image diffusion techniques and music generation.
+**Key Findings:** First successful application of diffusion models to symbolic (MIDI/piano roll) music. Adapted continuous diffusion to discrete sequential data. Critical bridge paper between image diffusion and music. Foundational for understanding how diffusion applies to musical sequences.
 
-**Architecture:** Denoising Diffusion Probabilistic Model (DDPM) adapted for sequences  
-**Modality:** Symbolic (piano rolls)  
-**Open-source:** ✅ Yes (part of Magenta)
-
----
-
-## Paper 6: Fast Timing-Conditioned Latent Audio Diffusion (Stable Audio)
-- **Authors:** Zach Evans, CJ Carr, Josiah Taylor, Scott H. Hawley, Jordi Pons (Stability AI)
-- **Year:** 2024 | **Venue:** arXiv / ICML 2024
-- **arXiv:** [2402.04825](https://arxiv.org/abs/2402.04825)
-- **Citations:** ~283 [MEDIUM CONFIDENCE]
-
-**Key Findings:** Efficient generation of long-form, variable-length stereo music and sounds at 44.1kHz from text prompts. Introduced timing conditioning for controlling output duration. Achieved significant computational efficiency gains over prior approaches through latent diffusion. Formed the foundation for Stability AI's Stable Audio product. Demonstrated commercial viability of diffusion-based music generation.
-
-**Architecture:** Latent Diffusion + Timing Conditioning  
-**Modality:** Stereo audio (44.1kHz, variable length)  
-**Open-source:** Partially (Stable Audio Open released)
+**Architecture:** DDPM adapted for sequences
+**Modality:** Symbolic (piano rolls)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** symbolic-finetuning
 
 ---
 
-## Paper 7: Theme Transformer — Symbolic Music Generation with Theme-Conditioned Transformer
+## Core Paper 7: FIGARO: Generating Symbolic Music with Fine-Grained Artistic Control
+- **Authors:** Dimitri von Rütte, Luca Biggio, Yannic Kilcher, Thomas Hofmann
+- **Organization:** ETH Zürich
+- **Year:** 2022 | **Venue:** ICLR 2023
+- **arXiv:** [2201.10936](https://arxiv.org/abs/2201.10936)
+- **Citations:** ~75 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
+
+**Key Findings:** Transformer-based model for controllable symbolic music generation. Uses learned expert descriptors for fine-grained control (genre, instrumentation, mood). Achieves SOTA in multi-track symbolic generation with style transfer. Open-source code available. Directly relevant for controllability experiments on symbolic music.
+
+**Architecture:** Transformer with learned expert descriptors
+**Modality:** Symbolic (multi-track MIDI)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** controllability, symbolic-finetuning
+
+---
+
+## Core Paper 8: Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer
 - **Authors:** Yi-Jen Shih, Shih-Lun Wu, Frank Zalkow, Meinard Müller, Yi-Hsuan Yang
+- **Organization:** Academia
 - **Year:** 2022 | **Venue:** IEEE/ACM TASLP
 - **arXiv:** [2111.04093](https://arxiv.org/abs/2111.04093)
 - **Citations:** ~166 [MEDIUM CONFIDENCE]
+- **Relevance:** Niche
 
-**Key Findings:** Proposed theme-based conditioning for symbolic music generation, where a given musical theme (melody phrase) guides the generation of the full piece. Unlike standard prompt-based conditioning, the theme transformer explicitly models thematic repetition and variation — a core aspect of musical composition. Achieved superior coherence and thematic consistency over prompt-based baselines.
+**Key Findings:** Theme-based conditioning: a given melody phrase guides full-piece generation. Explicitly models thematic repetition and variation. Achieved superior coherence over prompt-based baselines. Relevant for controllability — demonstrates how explicit musical structure conditioning improves output.
 
-**Architecture:** Theme-conditioned Transformer  
-**Modality:** Symbolic (MIDI)  
-**Open-source:** ✅ Yes
-
----
-
-## Paper 8: Long-Form Music Generation with Latent Diffusion
-- **Authors:** Zach Evans, Julian D. Parker, CJ Carr, Zack Zukowski, Josiah Taylor, Jordi Pons (Stability AI)
-- **Year:** 2024 | **Venue:** ISMIR 2024
-- **arXiv:** [2404.10301](https://arxiv.org/abs/2404.10301)
-- **Citations:** ~136 [HIGH CONFIDENCE]
-
-**Key Findings:** First model to generate full-length music tracks (up to 4min 45s) with coherent musical structure from text prompts. Uses a diffusion-transformer operating on highly downsampled continuous latent representations (21.5Hz rate). Achieved state-of-the-art on audio quality and prompt alignment metrics. Subjective tests confirmed coherent structure across the full track. Critical milestone for long-form music generation.
-
-**Architecture:** Diffusion-Transformer with highly compressed latent space  
-**Modality:** Audio (up to 4m45s)  
-**Open-source:** ❌ No
+**Architecture:** Theme-conditioned Transformer
+**Modality:** Symbolic (MIDI)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** controllability
 
 ---
 
-## Paper 9: Symbolic Music Generation with Transformer-GANs
-- **Authors:** Aashiq Muhamed, Liang Li, Xingjian Shi, Suri Yaddanapudi, Wayne Chi et al.
-- **Year:** 2021 | **Venue:** AAAI 2021
-- **Citations:** ~111 [MEDIUM CONFIDENCE]
+## Core Paper 9: Benchmarking Music Generation Models and Metrics via Human Preference Studies
+- **Authors:** Florian Grötschla, Luca A. Lanzendörfer, et al.
+- **Organization:** ETH Zürich
+- **Year:** 2025 | **Venue:** NeurIPS 2025 / ICASSP 2025
+- **arXiv:** [2506.19085](https://arxiv.org/abs/2506.19085)
+- **Citations:** ~27 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
 
-**Key Findings:** Combined Transformers and GANs for symbolic music generation. Transformer generates a sequence, GAN discriminator evaluates musical quality. The hybrid approach improved output quality over pure autoregressive Transformers. Demonstrated that adversarial training benefits symbolic music generation where traditional teacher-forcing leads to exposure bias.
+**Key Findings:** Generated 6k songs from 12 SOTA models; 15k pairwise comparisons with 2.5k participants. Found that existing automated metrics (FAD, CLAP score) correlate poorly with human preference. Established that specialized music evaluators outperform general audio metrics. Direct blueprint for evaluation benchmark design.
 
-**Architecture:** Transformer generator + GAN discriminator  
-**Modality:** Symbolic (MIDI)  
-**Open-source:** ✅ Yes
+**Architecture:** Human preference study + metric correlation analysis
+**Modality:** Evaluation benchmark
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** evaluation-metrics
 
 ---
 
-## Paper 10: Foundation Models for Music — A Survey
+## Core Paper 10: Foundation Models for Music: A Survey
 - **Authors:** Yinghao Ma, Anders Øland, Anton Ragni et al. (42 authors)
+- **Organization:** Multi-institution
 - **Year:** 2024 | **Venue:** arXiv (under review)
 - **arXiv:** [2408.14340](https://arxiv.org/abs/2408.14340)
 - **Citations:** ~76 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
 
-**Key Findings:** Comprehensive survey of foundation models in music covering representation learning, generative learning, and multimodal learning. Key insight: many music representations remain underexplored in foundation model development. Highlights underrepresented topics: instruction tuning, in-context learning for music, scaling laws, emergent abilities, long-sequence modeling. Dedicated section on music agents. Emphasizes ethical considerations including interpretability, transparency, and copyright. Essential roadmap for music AI research.
+**Key Findings:** Comprehensive survey of foundation models in music. Key insight: instruction tuning and evaluation remain underexplored. Highlights scaling laws, music agents, ethical considerations. Essential roadmap for identifying research gaps.
 
-**Architecture:** N/A (Survey)  
-**Modality:** Comprehensive (audio + symbolic + multimodal)  
-**Open-source:** ✅ Yes (CC BY-NC-SA 4.0)
+**Architecture:** N/A (Survey)
+**Modality:** Comprehensive (audio + symbolic + multimodal)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** evaluation-metrics, controllability
 
 ---
 
-## Paper 11: MuPT — Generative Symbolic Music Pretrained Transformer
+## Core Paper 11: The Song Describer Dataset: A Corpus of Audio Captions for Music-and-Language Evaluation
+- **Authors:** Ilaria Manco, Benno Weck, SeungHeon Doh, Minz Won, et al.
+- **Organization:** Multi-institution
+- **Year:** 2023 | **Venue:** ISMIR 2023 / NeurIPS 2023 Datasets
+- **arXiv:** [2311.10057](https://arxiv.org/abs/2311.10057)
+- **Citations:** ~93 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
+
+**Key Findings:** Crowdsourced corpus of ~1.1k high-quality captions for 706 permissively licensed recordings. Designed for evaluating music-and-language models. Gold-standard benchmark for text-to-music alignment and music captioning. Directly usable for cross-modal analysis and prompt engineering studies.
+
+**Architecture:** N/A (Dataset)
+**Modality:** Audio captions
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** cross-modal, dataset-creation, prompt-engineering
+
+---
+
+## Core Paper 12: MuPT: Generative Symbolic Music Pretrained Transformer
 - **Authors:** Xingwei Qu, Yizhi Li, Ruibin Yuan, Ge Zhang et al. (28 authors)
+- **Organization:** Multi-institution
 - **Year:** 2024 | **Venue:** ICLR 2025
 - **arXiv:** [2404.06393](https://arxiv.org/abs/2404.06393)
 - **Citations:** ~38 [MEDIUM CONFIDENCE]
+- **Relevance:** Active
 
-**Key Findings:** Applied LLM pretraining techniques (next-token prediction at scale) to symbolic music. Trained a decoder-only transformer on a large corpus of ABC notation music. Demonstrated that scaling model size and data improves symbolic music generation, mirroring trends in natural language. Showed emergent capabilities in musical structure understanding at larger scales.
+**Key Findings:** Applied LLM pretraining techniques to symbolic music (ABC notation). Scaling model size improves generation quality, mirroring NLP. Emergent structure understanding at scale. Open-source — suitable for fine-tuning on niche genres/composers as an undergrad project.
 
-**Architecture:** Decoder-only Transformer (LLM-style) for ABC notation  
-**Modality:** Symbolic (ABC notation)  
-**Open-source:** ✅ Yes
-
----
-
-## Paper 12: JEN-1 Composer — Unified Multi-Track Music Generation
-- **Authors:** Yao Yao, Peike Li, Boyu Chen, Alex Wang (Futureverse)
-- **Year:** 2023 | **Venue:** AAAI 2025
-- **arXiv:** [2310.19180](https://arxiv.org/abs/2310.19180)
-- **Citations:** ~28 [MEDIUM CONFIDENCE]
-
-**Key Findings:** Unified framework for multi-track music generation. Models marginal, conditional, and joint distributions for multi-track generation in a single model. Generates coherent multi-stem compositions (different instruments in separate tracks). Addresses the crucial gap between single-mix generation and real music production workflows. Represents the frontier of multi-track orchestration models.
-
-**Architecture:** Unified diffusion framework for multi-track generation  
-**Modality:** Multi-track audio  
-**Open-source:** ❌ No
+**Architecture:** Decoder-only Transformer (LLM-style)
+**Modality:** Symbolic (ABC notation)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** symbolic-finetuning
 
 ---
 
-## Paper 13: Combining Audio Control and Style Transfer Using Latent Diffusion
-- **Authors:** Nils Demerlé, Philippe Esling, Guillaume Doras, David Genova (IRCAM)
+## Core Paper 13: Combining Audio Control and Style Transfer Using Latent Diffusion
+- **Authors:** Nils Demerlé, Philippe Esling, Guillaume Doras, David Genova
+- **Organization:** IRCAM
 - **Year:** 2024 | **Venue:** ISMIR 2024
 - **arXiv:** [2408.00196](https://arxiv.org/abs/2408.00196)
-- **Citations:** ~27 [LOW CONFIDENCE — recent paper]
+- **Citations:** ~27 [LOW CONFIDENCE]
+- **Relevance:** Niche
 
-**Key Findings:** Unified explicit control and style transfer in a single latent diffusion model. Separates local information (pitch, timing) from global information (timbre, genre, mood). Enables fine-grained control: specify the notes/pitches while independently controlling genre/style. Important for practical music production where both structure and style matter.
+**Key Findings:** Unified explicit control and style transfer in one latent diffusion model. Disentangles local (pitch, timing) from global (timbre, genre, mood). Open-source code available. Ideal base for style transfer ablation studies: test what breaks when disentanglement components are removed.
 
-**Architecture:** Latent Diffusion with disentangled local/global conditioning  
-**Modality:** Audio  
-**Open-source:** ✅ Yes
+**Architecture:** Latent Diffusion, disentangled local/global cond.
+**Modality:** Audio
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** style-transfer, controllability
 
 ---
 
-## Paper 14: Musical Timbre Style Transfer with Diffusion Model
-- **Authors:** Hong Huang, Junfeng Man, Luyao Li, Rongke Zeng (Hunan University of Technology)
+## Core Paper 14: Musical Timbre Style Transfer with Diffusion Model
+- **Authors:** Hong Huang, Junfeng Man, Luyao Li, Rongke Zeng
+- **Organization:** Hunan University of Technology
 - **Year:** 2024 | **Venue:** PeerJ Computer Science (vol. 10, e2194)
 - **DOI:** [10.7717/peerj-cs.2194](https://doi.org/10.7717/peerj-cs.2194)
 - **Citations:** ~20 [MEDIUM CONFIDENCE]
+- **Relevance:** Niche
 
-**Key Findings:** Focused on the specific problem of timbre transfer — changing the instrument sound (e.g., piano → violin) while preserving musical content. Used spectrogram-based diffusion models for multi-to-multi timbre transfer. Achieved high-quality instrument conversion without degrading musical structure. Niche but important problem for orchestration: automatic instrument assignment and arrangement.
+**Key Findings:** Spectrogram-based diffusion for instrument timbre transfer (e.g., piano→violin). Preserves musical content while changing instrument identity. Important for orchestration and automatic arrangement. Niche but well-defined — suitable for focused undergrad exploration of timbre-space manipulation.
 
-**Architecture:** Spectrogram-based Diffusion Model  
-**Modality:** Audio (spectrograms)  
-**Open-source:** ✅ Yes
+**Architecture:** Spectrogram-based Diffusion Model
+**Modality:** Audio (spectrograms)
+**Open-source / open artifact:** ✅ Yes
+**Tracked directions:** style-transfer
 
 ---
 
-## Summary Statistics
+## Core Registry Summary
 
-| Metric | Value |
-|--------|-------|
-| Total papers | 14 |
-| Date range | 2020–2025 |
-| Total citations (estimated) | ~5,600+ |
-| Open-source papers | 9 of 14 (64%) |
-| Audio generation papers | 9 |
-| Symbolic generation papers | 4 |
-| Multi-track / orchestration | 3 |
-| Survey papers | 1 |
+- **Core papers:** 14
+- **Date range:** 2021–2025
+- **Approximate citation snapshot:** 3,721 (~3,700+)
+- **Open-source or open-artifact entries:** 14 of 14
+- **Categories:** 6 audio, 4 symbolic, 4 benchmark/dataset/survey
 
 ---
 

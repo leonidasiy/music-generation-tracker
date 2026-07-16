@@ -159,7 +159,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
 <header>
   <h1>🎵 Music Generation & Orchestration <span class="badge badge-green">Active</span></h1>
-  <p>Frontier Research Tracker — 14 papers, 5,300+ citations. Last updated: 2026-07-16</p>
+  <p>Frontier Research Tracker — 14 core papers, expanded evaluation literature, and an active CLPR benchmark plan. Last synced: 2026-07-16</p>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Research tracker sections">
@@ -176,9 +176,9 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 <!-- Stats Bar (visible on all tabs) -->
 <div class="stats-grid">
   <div class="stat-card"><div class="num green">14</div><div class="label">Papers Collected</div></div>
-  <div class="stat-card"><div class="num blue">5,300+</div><div class="label">Total Citations</div></div>
-  <div class="stat-card"><div class="num purple">9/14</div><div class="label">Open Source (64%)</div></div>
-  <div class="stat-card"><div class="num amber">2020–25</div><div class="label">Coverage Range</div></div>
+  <div class="stat-card"><div class="num blue">3,700+</div><div class="label">Core Registry Citations</div></div>
+  <div class="stat-card"><div class="num purple">14/14</div><div class="label">Open Source / Artifacts</div></div>
+  <div class="stat-card"><div class="num amber">M09</div><div class="label">Paper 1 Flagship: CLPR</div></div>
 </div>
 
 <!-- TAB 1: Recent Research (default) -->
@@ -207,48 +207,43 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 <!-- TAB 2: My Progress -->
 <div class="tab-panel" id="tab-progress" role="tabpanel" aria-labelledby="tabbtn-progress" hidden>
   <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">Research Progress Tracker</h2>
+  <div class="callout"><strong>Current position:</strong> discovery, tracker construction, deployment, strategic narrowing, web-stack validation, and the deterministic feasibility pilot are complete. The active increment is the first CLPR prompt-pair pilot; no human-validity or cross-renderer claim has been established.</div>
   <div class="progress-section">
-    <h3>Phase 1: Initial Research</h3>
+    <h3>Completed foundation</h3>
     <div class="phase-card">
       <div class="check done">✓</div>
-      <div><h4>Search arXiv & Web</h4><p>Collected 14 papers, all 10+ citations</p></div>
+      <div><h4>Initial literature and metadata review</h4><p>Collected 14 core papers, corrected three metadata issues, and expanded the source base for evaluation and robustness.</p></div>
     </div>
     <div class="phase-card">
       <div class="check done">✓</div>
-      <div><h4>Validate Paper Selection</h4><p>Validation subagent verified all papers. 3 metadata issues fixed.</p></div>
+      <div><h4>Frontend and deployment</h4><p>Built the light-mode tracker, completed independent UX/content review, deployed to GitHub Pages, and verified the live page.</p></div>
+    </div>
+    <div class="phase-card">
+      <div class="check done">✓</div>
+      <div><h4>Research agenda and Metric Lab</h4><p>Narrowed Paper 1 to M09 / CLPR; retained HPGA/PCCM as optional evidence and CRVP as validation infrastructure.</p></div>
+    </div>
+    <div class="phase-card">
+      <div class="check done">✓</div>
+      <div><h4>Reliability and feasibility gates</h4><p>Audited DDGS/local extraction, preserved raw QA data, and reran the deterministic pilot with 4/4 tests passing.</p></div>
     </div>
   </div>
   <div class="progress-section">
-    <h3>Phase 2: Deep Dive</h3>
+    <h3>Active experimental increment</h3>
     <div class="phase-card">
       <div class="check active">●</div>
-      <div><h4>Extract Paper Contents</h4><p>Extracting detailed summaries from top papers...</p></div>
+      <div><h4>Define the minimal intervention ontology</h4><p>Freeze section-local instrument, structural-relation, and density/dynamics instruction families.</p></div>
     </div>
     <div class="phase-card">
       <div class="check pending">○</div>
-      <div><h4>Phase 2 Validation</h4><p>Pending — validation subagent review</p></div>
-    </div>
-  </div>
-  <div class="progress-section">
-    <h3>Phase 3: Frontend Tracker</h3>
-    <div class="phase-card">
-      <div class="check active">●</div>
-      <div><h4>Build HTML Tracker</h4><p>Self-contained page with tabs and all data</p></div>
+      <div><h4>Select generators and establish null variability</h4><p>Require sufficient duration and repeatable randomness; estimate same-prompt null scales before interpreting interventions.</p></div>
     </div>
     <div class="phase-card">
       <div class="check pending">○</div>
-      <div><h4>Frontend Validation</h4><p>Pending — subagent UX and correctness review</p></div>
-    </div>
-  </div>
-  <div class="progress-section">
-    <h3>Phase 4: Deployment</h3>
-    <div class="phase-card">
-      <div class="check pending">○</div>
-      <div><h4>Deploy to GitHub Pages</h4><p>Free hosting, always accessible</p></div>
+      <div><h4>Run the first CLPR prompt-pair pilot</h4><p>Measure TES, DA, OTL, and BS; use PRD only for a preregistered structural-relation intervention.</p></div>
     </div>
     <div class="phase-card">
       <div class="check pending">○</div>
-      <div><h4>Final Delivery</h4><p>Share hosted URL with Leonidas</p></div>
+      <div><h4>Human and representation validation</h4><p>Keep compliance, musicality, production quality, and preference separate; expand across renderers only after the small pilot works.</p></div>
     </div>
   </div>
 </div>
@@ -260,23 +255,32 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Phase 1:</strong> Search arXiv & web — collect 10+ papers with 10+ citations</div></div>
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Phase 1:</strong> Validation subagent review — verify paper selection</div></div>
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Phase 1:</strong> Fix metadata issues (3 papers corrected)</div></div>
-  <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Phase 2:</strong> Extract paper contents, write detailed summaries</div></div>
+  <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Strategy:</strong> Narrow Paper 1 to localized instruction responsiveness (M09 / CLPR)</div></div>
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Frontend:</strong> Design and code self-contained HTML tracker</div></div>
-  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Validation:</strong> Subagent reviews frontend for correctness & UX</div></div>
-  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Deployment:</strong> Set up GitHub Pages repository and deploy</div></div>
-  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Final:</strong> Validate hosted URL and deliver</div></div>
-  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Future:</strong> Add more papers as new research emerges</div></div>
-  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Future:</strong> Add orchestration-specific paper deep-dive</div></div>
+  <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Validation:</strong> Complete independent frontend, source, strategy, and web-stack reviews</div></div>
+  <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Deployment:</strong> Deploy and verify the GitHub Pages tracker</div></div>
+  <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Pilot:</strong> Audit the dual-representation feasibility spike and pass 4/4 tests</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Now:</strong> Freeze the minimal section-clause intervention ontology</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Now:</strong> Select long-form generators with repeatable randomness</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Next:</strong> Build same-prompt null baselines and run the first CLPR prompt-pair pilot</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Later:</strong> Expand renderer/degradation tests and design separate human judgments</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Ongoing:</strong> Complete remaining full-text core-paper deep dives and add new primary research</div></div>
 </div>
 
 <!-- TAB 4: References -->
 <div class="tab-panel" id="tab-references" role="tabpanel" aria-labelledby="tabbtn-references" hidden>
-  <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">All 14 References</h2>
+  <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">14 Core Paper References</h2>
   <div id="refList"></div>
 </div>
 
 <!-- TAB 5: Info -->
 <div class="tab-panel" id="tab-info" role="tabpanel" aria-labelledby="tabbtn-info" hidden>
+  <div class="info-block" style="border-left:3px solid var(--accent)">
+    <h3>Current Project Status</h3>
+    <p><strong>Paper 1:</strong> a localized instruction-responsiveness benchmark. The central question is whether a minimal temporal-instruction change causes the requested local musical effect without damaging preregistered non-target regions.</p>
+    <p style="margin-top:8px"><strong>Active next step:</strong> freeze the intervention ontology, select suitable generators, estimate same-prompt null variability, and run a small CLPR prompt-pair pilot.</p>
+    <p style="margin-top:8px"><strong>Evidence limit:</strong> the current deterministic pilot is a reproducible feasibility spike—not evidence of human validity, cross-renderer invariance, or generalization.</p>
+  </div>
   <div class="info-block">
     <h3>Research Domains</h3>
     <div class="grid2">
@@ -536,7 +540,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <section class="agenda-section">
     <h2>Two-stage roadmap</h2>
     <div class="roadmap">
-      <article class="roadmap-step"><h3>Two-week feasibility pilot</h3><p>Use two models and a small balanced prompt set. Confirm that listeners agree, detectors are usable and existing metrics fail on at least one important counterfactual.</p></article>
+      <article class="roadmap-step"><h3>Two-week mechanical feasibility pilot</h3><p>Use a small balanced prompt set to verify generator access, repeatability, target-window alignment, feature extraction and same-prompt null estimation. This stage does not claim listener agreement or construct validity.</p></article>
       <article class="roadmap-step"><h3>Paper 1: benchmark and meta-evaluation</h3><p>Freeze the ontology, controlled violations and metric components; validate against humans with held-out generator and prompt-family tests.</p></article>
       <article class="roadmap-step"><h3>Paper 2A: prompt-only intervention</h3><p>Compare prose, keywords, constraint lists, section-tagged prompts and optimized paraphrases across fixed generators.</p></article>
       <article class="roadmap-step"><h3>Paper 2B: inference-time optimization</h3><p>Try best-of-N selection, reranking, prompt search and constraint-specific regeneration before training anything.</p></article>
@@ -570,7 +574,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
 <footer>
   <p>Music Generation & Orchestration Research Tracker · Updated 2026-07-16 · Relevance verified July 2026</p>
-  <p>14 papers · 11 evolving metric candidates · Cross-domain inspiration from film, narrative, poetry, dance, visual art, architecture, games, and psychometrics</p>
+  <p>14 core papers · M09 / CLPR flagship · HPGA/PCCM optional evidence · CRVP validation infrastructure · prompt-pair pilot next</p>
 </footer>
 
 <script>
