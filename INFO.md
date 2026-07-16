@@ -37,3 +37,20 @@
 - Use counterfactual prompt pairs to test localized responsiveness rather than incidental compliance.
 - Borrow relations—not superficial metaphors—from other arts: film pacing, narrative setup/payoff, poetic enjambment, choreographic transformation, and architectural local/global intelligibility.
 - Validate every candidate with controlled corruptions, held-out generators, human construct ratings, and simple confound baselines.
+
+## Competitive scan and narrowed paper core — 2026-07-16
+- Global long-form aesthetics and structural-clarity evaluation is now occupied by SongEval and the ICASSP song-aesthetics challenge.
+- Broad multimodal music instruction scoring is directly addressed by CMI-RewardBench.
+- Segment-level prompt alignment is addressed by SegTune and adjacent temporally controlled generation work.
+- The clearest remaining gap is **localized counterfactual responsiveness**: minimally change one section instruction, require the intended local effect, and penalize collateral change elsewhere.
+- Paper 1 should be framed as one benchmark for **causal, hierarchical instruction validity**, not eleven allegedly novel metrics.
+- HPGA and PCCM are interpretable structural evidence inside the flagship CLPR test.
+- CRVP is a validation protocol for representation/renderer dependence, not a novel psychometric theory.
+- Compliance, musicality, production quality, and preference must remain distinct outcomes.
+
+## Local web-stack reliability gate — 2026-07-16
+- DDGS found a correct primary source in 9 of 10 repeated known-item query runs, but exact result-set overlap was low (mean URL Jaccard 0.180).
+- Direct/local extraction succeeded on all eight tested public sources and blocked the private-network test.
+- Search snippets are discovery aids, not evidence; citation counts require dedicated scholarly sources.
+- Metadata-only landing pages must be followed to PDFs for substantive claims.
+- Long extracted documents may be summarized by the tool layer; quotations require checking the primary PDF.

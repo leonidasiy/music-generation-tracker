@@ -1,0 +1,70 @@
+{
+  "tested_at": "2026-07-16 20:04 HKT",
+  "search_backend": "ddgs",
+  "protocol": {
+    "runs_per_query": 2,
+    "limit": 5,
+    "primary_hit_definition": "A primary paper, publisher, or repository page for the intended work appears in the top five.",
+    "primary_rank1_definition": "The rank-one URL is a primary paper, publisher, or repository page for the intended work.",
+    "jaccard_formula": "|run1 URL set intersection run2 URL set| / |run1 URL set union run2 URL set|"
+  },
+  "search_cases": [
+    {
+      "query": "Learning Audio Sheet Music Correspondences 1707.09887",
+      "run1_urls": ["https://arxiv.org/abs/1707.09887", "https://arxiv.org/abs/1707.09887v1", "https://papers.app.nz/view/paper?id=326225", "https://ronggong1010.blogspot.com/2018/01/sheet-music-and-audio-multimodal.html", "https://ar5iv.labs.arxiv.org/html/1707.09887"],
+      "run2_urls": ["https://scholar.google.com/citations?user=F0Q1lZ0AAAAJ&hl=en", "https://scholar.google.co.cr/citations?user=F0Q1lZ0AAAAJ&hl=es", "https://scholar.google.com/citations?user=NuwGRl8AAAAJ&hl=de", "https://mural.maynoothuniversity.ie/id/eprint/17992/1/Behnam+Faghih+-+18250013+-+PhD+Thesis+-+Final+Editon.pdf", "https://scholar.google.com.cu/citations?user=F0Q1lZ0AAAAJ&hl=ko"],
+      "primary_top5": [true, false],
+      "primary_rank1": [true, false],
+      "jaccard": 0.0
+    },
+    {
+      "query": "Musically Informed Evaluation of Piano Transcription 2406.08454",
+      "run1_urls": ["https://arxiv.org/abs/2406.08454", "https://arxiv.org/pdf/2406.08454", "https://www.researchgate.net/publication/381372872_Towards_Musically_Informed_Evaluation_of_Piano_Transcription_Models", "https://www.themoonlight.io/en/review/towards-musically-informed-evaluation-of-piano-transcription-models", "https://www.semanticscholar.org/paper/Towards-Musically-Informed-Evaluation-of-Piano-Hu-Marták/82a63213a716d39c77082d043b981e377a4f6635"],
+      "run2_urls": ["https://arxiv.org/abs/2406.08454", "https://arxiv.org/html/2406.08454v3", "https://ar5iv.labs.arxiv.org/html/2406.08454", "https://www.researchgate.net/publication/381372872_Towards_Musically_Informed_Evaluation_of_Piano_Transcription_Models", "https://www.semanticscholar.org/paper/Towards-Musically-Informed-Evaluation-of-Piano-Hu-Marták/82a63213a716d39c77082d043b981e377a4f6635"],
+      "primary_top5": [true, true],
+      "primary_rank1": [true, true],
+      "jaccard": 0.42857142857142855
+    },
+    {
+      "query": "Evaluating Hierarchical Structure in Music Annotations L-measure",
+      "run1_urls": ["https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01337/full", "https://medium.com/center-for-data-science/can-algorithms-hear-musical-structures-introducing-the-l-measure-8c12815506d1", "https://brianmcfee.net/papers/frontiers2017_evaluating.pdf", "https://www.researchgate.net/publication/318880396_Evaluating_Hierarchical_Structure_in_Music_Annotations", "https://arxiv.org/pdf/1902.01023"],
+      "run2_urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC5541043/", "https://public-pages-files-2025.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01337/pdf", "https://www.researchgate.net/publication/318880396_Evaluating_Hierarchical_Structure_in_Music_Annotations", "https://europepmc.org/articles/PMC5541043", "https://www.semanticscholar.org/paper/Evaluating-Hierarchical-Structure-in-Music-McFee-Nieto/8c3c5b9e9a1dfd002377f57edcacf4db146fc8ef"],
+      "primary_top5": [true, true],
+      "primary_rank1": [true, true],
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "query": "MusicGen Simple and Controllable Music Generation 2306.05284",
+      "run1_urls": ["https://arxiv.org/abs/2306.05284", "https://proceedings.neurips.cc/paper_files/paper/2023/hash/94b472a1842cd7c56dcb125fb2765fbd-Abstract-Conference.html", "https://arxiv.org/pdf/2306.05284", "https://dl.acm.org/doi/10.5555/3666122.3668188", "https://audiocraft.metademolab.com/musicgen.html"],
+      "run2_urls": ["https://arxiv.org/abs/2306.05284", "https://huggingface.co/papers/2306.05284", "https://rose.dev/blog/wp-content/uploads/2023/06/2306.05284.pdf", "https://www.emergentmind.com/papers/2306.05284", "https://codesandbox.io/p/github/rntgspr/audiocraft"],
+      "primary_top5": [true, true],
+      "primary_rank1": [true, true],
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "query": "PIAST piano audio symbolic text 2411.02551",
+      "run1_urls": ["https://arxiv.org/abs/2411.02551", "https://arxiv.org/pdf/2411.02551", "https://www.researchgate.net/publication/385559713_PIAST_A_Multimodal_Piano_Dataset_with_Audio_Symbolic_and_Text", "https://api.openalex.org/works/doi:10.48550/ARXIV.2411.02551", "https://scholar.google.co.jp/citations?user=3VWIf88AAAAJ&hl=en&oe=ASCII"],
+      "run2_urls": ["https://arxiv.org/abs/2411.02551", "https://arxiv.org/html/2411.02551", "https://www.researchgate.net/publication/385559713_PIAST_A_Multimodal_Piano_Dataset_with_Audio_Symbolic_and_Text", "https://www.arxiv.org/list/eess.AS/2024-11?skip=75&show=50", "https://aclanthology.org/2024.nlp4musa-1.2.pdf"],
+      "primary_top5": [true, true],
+      "primary_rank1": [true, true],
+      "jaccard": 0.25
+    }
+  ],
+  "search_summary": {
+    "primary_top5_hits": 9,
+    "query_runs": 10,
+    "primary_rank1_hits": 9,
+    "mean_jaccard": 0.18015873015873013
+  },
+  "extract_cases": [
+    {"name":"arxiv_html","url":"https://arxiv.org/abs/1707.09887","success":true,"chars":1666,"route":"trafilatura-direct","observed":"Correct title and abstract"},
+    {"name":"pmc_html","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC5541043/","success":true,"chars":92886,"route":"jina-fallback","observed":"Correct hierarchical-structure article"},
+    {"name":"acl_html","url":"https://aclanthology.org/J08-1001/","success":true,"chars":858,"route":"trafilatura-direct","observed":"Bibliographic metadata and PDF link only"},
+    {"name":"pmlr_html","url":"https://proceedings.mlr.press/v48/peyre16.html","success":true,"chars":1338,"route":"trafilatura-direct","observed":"Correct title and abstract"},
+    {"name":"github_html","url":"https://github.com/facebookresearch/audiocraft","success":true,"chars":5270,"route":"trafilatura-direct","observed":"Correct repository and model descriptions"},
+    {"name":"docs_html","url":"https://hermes-agent.nousresearch.com/docs","success":true,"chars":6886,"route":"trafilatura-direct","observed":"Correct documentation content"},
+    {"name":"arxiv_pdf","url":"https://arxiv.org/pdf/2406.08454","success":true,"chars":37272,"route":"jina-fallback","observed":"Correct paper content"},
+    {"name":"direct_pdf","url":"https://ccrma.stanford.edu/workshops/mir2009/references/Foote_00.pdf","success":true,"chars":20450,"route":"jina-fallback","observed":"Correct novelty-segmentation paper content"},
+    {"name":"private_url","url":"http://127.0.0.1:9/","success":false,"route":"blocked-before-fetch","observed":"Blocked: URL targets a private or internal network address"}
+  ]
+}

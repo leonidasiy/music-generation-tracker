@@ -4,6 +4,10 @@
 > Scope: long-form compositional plan adherence and music instruction following  
 > Status labels: **Candidate** = proposed but unvalidated; **Adaptation** = established method transferred to this task; **Speculative** = promising construct with major measurement risk.
 
+## Representation decision — 2026-07-16
+
+**Keep symbolic and native-audio paths open during exploration.** Neither representation will be treated as ground truth. Symbolic and audio estimates are modeled as different, imperfect measurement methods; paired rendered-MIDI experiments will isolate representation effects from transcription and performance effects.
+
 ## Rules for this registry
 
 1. New ideas are added as soon as they emerge; they are not presented as validated metrics.
@@ -130,22 +134,97 @@
 - **Feasibility:** Medium-low.
 - **Transferred source:** [causal-event networks in narrative](https://pmc.ncbi.nlm.nih.gov/articles/PMC11305923/). “Causal” remains a perceptual dependency hypothesis in music.
 
-## Initial implementation order
+### M11 — Cross-Representation Validity Profile (CRVP)
+- **Status:** Validation work package; not a headline metric. Use paired representation/renderer perturbations, agreement analyses, and held-out-pipeline sensitivity checks. Fit MTMM only if indicator count, identification, and simulation-based power are adequate.
+- **Cross-domain inspiration:** Psychometric multi-trait multi-method analysis, measurement invariance, and method-comparison studies without a gold standard
+- **Construct:** Whether a proposed musical trait is measured robustly across symbolic and audio representations—or whether conclusions are dominated by representation-specific artifacts
+- **Core idea:** Model multiple traits jointly, with at least three indicators per trait and method, on paired symbolic/rendered-audio pieces. Pre-specify an identifiable MTMM model, its constraints, matched cross-method anchors, and simulation-based sample-size requirements. Report common-factor, method, and residual variance separately; add absolute/rank agreement and bootstrap uncertainty.
+- **Inputs:** Paired MIDI/MusicXML and multiple audio renders; optional aligned human performances; multiple traits; at least three indicators per trait/method; explicitly matched or anchored cross-method indicators; bootstrap resamples; controlled confound perturbations; human construct judgments for external validity.
+- **Diagnostic outputs:** **CRVC**, provisionally the model-estimated share of variance associated with a cross-method common factor—not yet the target trait until externally validated; **RSAA**, bias- and bootstrap-adjusted cross-method rank agreement; **MISD**, median standardized divergence between linked method-specific latent scores, reported only when the required scale-linking or scalar/alignment invariance assumptions hold.
+- **Baselines:** Pearson/Spearman correlation, raw mean absolute difference, ICC for consistency and absolute agreement, Bland–Altman limits, symbolic-only and audio-only rankings.
+- **Novelty threat:** MTMM, invariance testing, ICC, generalizability theory, and Bland–Altman analysis are established. The publishable contribution would be their preregistered adaptation to music-generation metric validation, paired rendering design, and evidence that naïve comparisons reach different conclusions.
+- **Falsification:** Perturbations that preserve a trait across rendering changes should remain stable; production-only perturbations should change audio-only traits but not symbolic-content traits. Shared-confound interventions must show whether common variance is actually the intended construct. The metric fails if tempo masquerading as rhythmic complexity.
+- **Feasibility:** Medium-low until identification and power simulations are complete. Statistical methods are available, but credible factor modeling needs multiple jointly modeled traits, anchored indicators, adequate sample size, held-out renderers, and human validation.
+- **Measurement warning:** High cross-method agreement is not proof of construct validity; both methods can share the same confound.
+- **Foundations:** [Campbell & Fiske’s MTMM framework](https://doi.org/10.1037/h0046016), [measurement-invariance practice](https://pmc.ncbi.nlm.nih.gov/articles/PMC5145197/), [why invariance is insufficient by itself](https://pmc.ncbi.nlm.nih.gov/articles/PMC11562939/), and [audio–sheet correspondence without transcription-as-truth](https://arxiv.org/abs/1707.09887).
 
-1. HPGA
-2. PCCM
-3. CLPR
-4. PBEC
-5. RMRT on symbolic melody
-6. PEC
-7. TAARD on tonal symbolic music
-8. ERSD on melody/chord representations
-9. BBEI after a transition-listening pilot
-10. SPC only after human construct validation
+## Competitive update — 2026-07-16
+
+The newest benchmark scan changes the paper strategy:
+
+- **M09 CLPR is promoted to the flagship contribution.** SongEval, MusicEval, MAD/MusicPrefs, AIME, and CMI-RewardBench already cover global aesthetics, preference, broad alignment, or multimodal instruction scoring. SegTune and related systems add segment-level alignment, but observational segment similarity does not establish that a changed instruction caused the requested local change.
+- **M01 HPGA and M04 PCCM become optional, preregistered structural evidence channels alongside CLPR**, not independent headline metrics. Report them only for interventions that alter a section boundary, identity, order, duration, recurrence, variation, or contrast relation; they are not required components of a universal CLPR aggregate.
+- **M11 CRVP becomes validation infrastructure**, not a claim that cross-representation psychometrics is novel. MTMM, generalizability theory, invariance, ICC, and Bland–Altman analysis are established. The substantive contribution would be showing which music-plan traits survive representation and renderer changes.
+- **M02, M03, M06, and M07 remain optional subtests.** Motif transformation, boundaries, pacing, and tension all have substantial prior work; including all of them in Paper 1 would weaken coherence and inflate annotation cost.
+- **M05, M08, and M10 are deferred.** They remain useful exploratory hypotheses but are not required to establish the core localized instruction-responsiveness claim; hierarchical evidence is optional and intervention-specific.
+
+### M09 operational profile
+
+For intervention `i`, piece `j`, repeated generation `s`, minimally different prompts `p0` and `p1`, target interval `T`, and predeclared protected regions, report five outputs:
+
+1. **Target Effect Size (TES).** For a preregistered scalar feature `f_i` and requested direction `d_i ∈ {-1,+1}`, define `ΔT_ijs = f_i(y1_ijs,T_ij) - f_i(y0_ijs,T_ij)`. Standardize the signed contrast `d_i ΔT_ijs` using a null scale estimated from held-out same-prompt replicate differences within preregistered generator × genre × section-type strata. For vector features, preregister the scalar projection or distance and its direction. Pieces and intervention types—not seeds—are the principal independent units.
+2. **Directional Accuracy (DA).** Average the signed target contrast across repeated generations for each piece × intervention unit, then report the fraction whose direction is positive. Also report a noise-exceedance version using a threshold fixed from held-out same-prompt null contrasts. Resample pieces and interventions for uncertainty.
+3. **Off-Target Leakage (OTL).** Preregister distal or semantically protected region–feature cells. Excluding a boundary halo, compute absolute intervention changes divided by cell-specific held-out same-prompt null scales, then combine with fixed weights. Report same-feature leakage and cross-feature collateral change separately.
+4. **Boundary Spillover (BS).** Report a distance-indexed curve of absolute standardized change in non-overlapping rings immediately outside the target boundary. A preregistered halo AUC or decay length is secondary. The halo is excluded from OTL, so BS measures near-boundary decay while OTL measures distal or semantically protected change.
+5. **Plan Relation Delta (PRD).** Use only when one plan edge or structural constraint changes. For evidence function `q(y;e,r)` and intervention from relation `r0` to `r1`, report the contrast-in-contrasts `[q(y1;e,r1)-q(y1;e,r0)] - [q(y0;e,r1)-q(y0;e,r0)]`, standardized against same-prompt null contrasts. Report unaffected-edge change separately as structural leakage; otherwise mark PRD not applicable.
+
+With defensibly matched seeds, TES estimates a paired controlled-generator intervention effect. Without seed coupling, estimate a repeated-sample average intervention effect and do not call individual output pairs counterfactuals. TES/DA characterize target response; OTL/BS characterize distinct distal and near-boundary collateral effects; PRD is an optional structural explanation. These outputs are dependent and are not five separate discoveries. No aggregate is primary until human judgments establish a defensible weighting; report compliance separately from quality and preference.
+
+### Systematic questions for the narrowed paper
+
+1. Which instruction types admit a minimal intervention whose intended acoustic or symbolic effect is independently measurable?
+2. Can generator randomness be matched strongly enough for counterfactual comparisons, or must same-prompt variance define a weaker baseline?
+3. Which target intervals are known from the prompt, and which require uncertain alignment after generation?
+4. How should TES be standardized when feature variance differs by genre, section type, and generator?
+5. Do TES, DA, OTL, BS, and applicable PRD conclusions remain stable when using alternative audio embeddings, beat trackers, or transcribers?
+6. Can HPGA and PCCM localize the failure better than segment CLAP/MuLan similarity?
+7. Do global metrics remain unchanged when a musically important instruction is moved to the wrong section?
+8. Can a model game the metric through abrupt boundaries, exaggerated instrumentation, or excessive repetition?
+9. Which controlled corruptions isolate section order, relation, timing, instrumentation, and dynamics without creating obvious edit artifacts?
+10. How many independent compositions, prompt pairs, seeds, renderers, and listeners are needed for stable effect estimates?
+11. Do musicians and general listeners agree on instruction compliance even when they disagree on preference?
+12. Are compliance judgments separable from production quality, loudness, familiarity, and memorability?
+13. Which findings generalize to an unseen generator, prompt template, renderer, genre, and duration range?
+14. Does audio–symbolic disagreement reflect representation error, transcription error, renderer effects, or genuine construct ambiguity?
+15. Can track-level bootstrap and multi-pipeline sensitivity envelopes preserve calibrated uncertainty without pretending detector activations are probabilities?
+16. What open models can actually generate long enough outputs and expose repeatable randomness at tolerable compute cost?
+17. What annotation design gives sufficient reliability without making full-song expert listening financially prohibitive?
+18. Would reviewers see the contribution as one localized instruction-responsiveness benchmark with optional hierarchical channels, or as a loose bundle of established MIR measurements?
+
+## Revised implementation order
+
+1. CLPR counterfactual prompt-pair pilot with same-prompt variance baselines
+2. HPGA + PCCM as localized structural evidence channels
+3. Paired symbolic/audio/renderer perturbation benchmark for CRVP-style validation
+4. Human compliance study separated from preference and quality
+5. PBEC or RMRT only if they explain residual human judgments
+6. PEC/TAARD only after the core benchmark is stable
+7. BBEI, ERSD, and SPC deferred from Paper 1
+
+## Systematic questions for the dual-representation stage
+
+1. Which target constructs have operational definitions that remain meaningful in both symbolic and audio domains?
+2. Which constructs are inherently representation-specific and should never be forced into a cross-domain score?
+3. What three or more indicators can measure each shared trait in each representation?
+4. Which symbolic features survive rendering, and which expressive audio features have no symbolic counterpart?
+5. How much do renderer, soundfont, tempo, dynamics, and room simulation alter audio-side rankings?
+6. How much do transcription, source separation, beat tracking, and segmentation errors alter downstream metric values?
+7. Can paired rendered MIDI separate representation error from transcription error and human-performance variation?
+8. Which human-performance datasets can test whether findings survive beyond synthetic rendering?
+9. Do the same factor structures emerge for symbolic and audio indicators?
+10. If metric or scalar invariance fails, which comparisons remain defensible?
+11. Are ranking conclusions stable under bootstrap resampling and held-out renderers?
+12. Do genre, instrumentation, polyphony, duration, or production quality moderate representation disagreement?
+13. Can automatic confidence estimates be propagated into uncertainty intervals for final metric outputs?
+14. Does a metric correlate with human judgments after controlling for tempo, loudness, density, and production quality?
+15. Can controlled perturbations independently target musical content and surface production?
+16. Which conclusions change when using oracle symbolic annotations, automatic audio estimates, and human annotations?
+17. What sample size is required for reliable latent-variable and invariance tests?
+18. Should cross-representation robustness be a publication contribution, a validation gate, or both?
 
 ## Open design questions
 
-1. Should the first benchmark use symbolic music, rendered symbolic music, native generated audio, or parallel tracks?
+1. **Answered:** keep symbolic and audio representations open during exploration; use paired tracks for calibration rather than selecting a winner now.
 2. Which genres and formal vocabularies define the first scope?
 3. What minimum duration qualifies as long-form for the core benchmark?
 4. Will source stems or multitracks be available for instrument-entry ground truth?
@@ -170,3 +249,26 @@
 - Eckmann et al. (1987), recurrence plots: https://www.ihes.fr/~ruelle/PUBLICATIONS/%5B92%5D.pdf
 - Brier (1950), probabilistic forecast verification: https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml
 - Rubin (1974), causal effects: https://doi.apa.org/doi/10.1037/h0037350
+- Dorfer et al. (2017), audio–sheet correspondence: https://arxiv.org/abs/1707.09887
+- Putnick & Bornstein (2016), measurement invariance conventions: https://pmc.ncbi.nlm.nih.gov/articles/PMC5145197/
+- Protzko et al. (2024), invariance is not sufficient for valid comparison: https://pmc.ncbi.nlm.nih.gov/articles/PMC11562939/
+- Ycart et al. (2024), musically informed transcription evaluation: https://arxiv.org/abs/2406.08454
+- PIAST multimodal audio/symbolic/text dataset (2024): https://arxiv.org/abs/2411.02551
+- Unified score/symbolic/audio translation (2025): https://arxiv.org/abs/2505.12863
+
+## Competitive and robustness sources — added 2026-07-16
+
+- SongEval, full-length song aesthetics and structure clarity: https://arxiv.org/abs/2505.10793
+- CMI-RewardBench, compositional multimodal instruction reward evaluation: https://arxiv.org/abs/2603.00610
+- SegTune, segment-level song control and alignment metrics: https://arxiv.org/abs/2510.18416
+- MAD / MusicPrefs, human-aligned distributional music evaluation: https://arxiv.org/abs/2503.16669
+- AIME human preference benchmark: https://arxiv.org/abs/2506.19085
+- Ycart et al., perceptual validity of piano-transcription metrics: https://transactions.ismir.net/articles/10.5334/tismir.57
+- Hu et al., musically informed piano-transcription evaluation: https://arxiv.org/abs/2406.08454
+- Marták et al., sound and music biases in transcription models: https://link.springer.com/article/10.1186/s13636-025-00428-z
+- Mauch & Ewert, Audio Degradation Toolbox robustness benchmark: https://sebewert.github.io/publications_pdf/2013_MauchEwert_AudioDegradationToolbox_ISMIR.pdf
+- Davies & Böck, evaluation measures for beat tracking: https://archives.ismir.net/ismir2014/paper/000238.pdf
+- McLeod & Steedman, MV2H and disjoint symbolic penalties: https://arxiv.org/abs/1906.00566
+- Eid et al., MTMM models for structurally different and interchangeable methods: https://doi.org/10.1037/a0013219
+- Nussbeck et al., sample-size requirements for ordinal MTMM models: https://pubmed.ncbi.nlm.nih.gov/16709286/
+- Bland & Altman, why correlation is not method agreement: https://pubmed.ncbi.nlm.nih.gov/2868172/

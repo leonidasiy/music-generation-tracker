@@ -47,3 +47,28 @@
 - [x] Add an evolving Metric Lab section to the website
 - [x] Validate the initial Metric Lab website increment locally and on GitHub Pages
 - [x] Record open questions that require Leonidas's clarification
+
+## Dual-Representation Exploration
+- [x] Record the decision to keep symbolic and native-audio paths open
+- [x] Investigate symbolic, audio, and cross-representation measurement risks
+- [x] Add Cross-Representation Validity Profile (CRVP) as candidate M11
+- [x] Define 18 systematic questions for paired symbolic/audio evaluation
+- [x] Update the Metric Lab with the decision and M11
+- [x] Build a small rendered-MIDI pilot and compare symbolic/audio estimates
+
+## Reliability Gate and Continued Exploration — 2026-07-16
+- [x] Benchmark DDGS search coverage and repeatability on known academic targets
+- [x] Benchmark local extraction fidelity across HTML, repositories, and papers
+- [x] Document limitations and source-verification rules for the local research stack
+- [x] Audit and interpret the dual-representation pilot outputs
+- [x] Investigate representation-robust metric design and transcription-error propagation
+- [x] Validate new findings with independent reviewers
+- [x] Update METRICS.md, INFO.md, REFERENCES.md, HISTORY.md, and the Metric Lab website
+
+## Next Experimental Increment
+- [ ] Define the first minimal section-clause intervention ontology
+- [ ] Identify open generators that expose repeatable randomness and sufficient duration
+- [ ] Build same-prompt replicate baselines for TES/DA/OTL/BS
+- [ ] Implement a small CLPR prompt-pair pilot before adding more candidate metrics
+- [ ] Expand the representation benchmark across multiple renderers and controlled degradations
+- [ ] Design separate human judgments for compliance, musicality, production quality, and preference

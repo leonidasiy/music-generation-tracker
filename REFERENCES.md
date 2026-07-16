@@ -243,3 +243,28 @@
 - [Eckmann, Kamphorst & Ruelle — Recurrence Plots](https://www.ihes.fr/~ruelle/PUBLICATIONS/%5B92%5D.pdf) — dynamical recurrence analysis. [Academic Study]
 - [Brier — Verification of Forecasts Expressed in Terms of Probability](https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml) — proper probabilistic scoring. [Academic Study]
 - [Rubin — Estimating Causal Effects](https://doi.apa.org/doi/10.1037/h0037350) — counterfactual treatment-effect framework. [Academic Study]
+
+### Cross-representation and psychometric validation
+- [Campbell & Fiske — Multitrait-Multimethod Matrix](https://doi.org/10.1037/h0046016) — separates target-trait agreement from measurement-method effects. [Academic Study]
+- [Putnick & Bornstein — Measurement Invariance Conventions](https://pmc.ncbi.nlm.nih.gov/articles/PMC5145197/) — configural, metric, and scalar invariance practice. [Academic Review]
+- [Protzko et al. — Measurement Invariance Is Not Sufficient](https://pmc.ncbi.nlm.nih.gov/articles/PMC11562939/) — statistical invariance does not establish construct validity. [Academic Study]
+- [Dorfer et al. — Learning Audio–Sheet Music Correspondences](https://arxiv.org/abs/1707.09887) — paired cross-modal learning without requiring transcription as truth. [Academic Study]
+- [Ycart et al. — Musically Informed Evaluation of Piano Transcription](https://arxiv.org/abs/2406.08454) — limits of frame/note metrics for articulation, dynamics, and rhythmic precision. [Academic Study]
+- [PIAST](https://arxiv.org/abs/2411.02551) — aligned piano audio, symbolic music, and expert text labels. [Academic Dataset]
+- [Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio](https://arxiv.org/abs/2505.12863) — multimodal translation evidence. [Academic Study]
+
+### Competitive benchmarks and robustness studies — added 2026-07-16
+- [SongEval](https://arxiv.org/abs/2505.10793) — 2,399 full-length songs totaling more than 140 hours, with aesthetic ratings from 16 professional annotators, including overall coherence and clarity of song structure. [Academic Preprint] [HIGH CONFIDENCE: primary paper verified]
+- [CMI-RewardBench](https://arxiv.org/abs/2603.00610) — evaluates reward models across musicality, text–music alignment, and compositional instruction alignment for music conditioned on text descriptions, lyrics, and audio prompts. [Academic Preprint] [HIGH CONFIDENCE: primary abstract verified]
+- [SegTune](https://arxiv.org/abs/2510.18416) — segment-level prompts and proposed segment-alignment/vocal-consistency evaluation for structured song generation. [Academic Preprint] [HIGH CONFIDENCE: primary abstract verified]
+- [MAD / MusicPrefs](https://arxiv.org/abs/2503.16669) — reports MAD rank correlation 0.84 versus FAD 0.49 on synthetic meta-evaluations and 0.62 versus 0.14 against MusicPrefs. [Academic Preprint] [HIGH CONFIDENCE: primary abstract verified]
+- [AIME](https://arxiv.org/abs/2506.19085) — human preference and metric benchmark; limited for long-form structure because evaluation uses short excerpts. [Academic Preprint] [MEDIUM CONFIDENCE: primary paper exists; detailed design needs continued checking]
+- [Investigating the Perceptual Validity of AMT Metrics](https://transactions.ismir.net/articles/10.5334/tismir.57) — shows standard transcription metrics do not uniformly reflect perceptual consequences. [Peer-reviewed Academic Study] [HIGH CONFIDENCE]
+- [Towards Musically Informed Evaluation of Piano Transcription Models](https://arxiv.org/abs/2406.08454) — decomposes timing, articulation, harmony, and dynamics under recordings and controlled degradation. [Academic Preprint] [HIGH CONFIDENCE: PDF extracted]
+- [Sound and Music Biases in Deep Music Transcription Models](https://link.springer.com/article/10.1186/s13636-025-00428-z) — reports note-level F1 drops of roughly 20 points from sound shift and 14 from genre shift. [Peer-reviewed Academic Study] [HIGH CONFIDENCE: publisher article verified]
+- [Audio Degradation Toolbox](https://sebewert.github.io/publications_pdf/2013_MauchEwert_AudioDegradationToolbox_ISMIR.pdf) — controlled degradation chains and evidence that method rankings can depend on degradation. [Peer-reviewed Academic Study] [HIGH CONFIDENCE]
+- [Evaluating Beat-Tracking Evaluation Measures](https://archives.ismir.net/ismir2014/paper/000238.pdf) — shows metric tolerances and allowed metrical alternatives materially alter apparent performance and human agreement. [Peer-reviewed Academic Study] [HIGH CONFIDENCE]
+- [MV2H](https://arxiv.org/abs/1906.00566) — evaluates pitch, voice, meter, value, and harmony with disjoint penalties to avoid cascading one error into several penalties. [Academic Study] [HIGH CONFIDENCE]
+- [Eid et al. on MTMM model choice](https://doi.org/10.1037/a0013219) — distinguishes structurally different from interchangeable methods; relevant because symbolic/audio are not exchangeable while renderers may be. [Peer-reviewed Methods Study] [HIGH CONFIDENCE]
+- [Nussbeck et al. on ordinal MTMM sample size](https://pubmed.ncbi.nlm.nih.gov/16709286/) — simulation-conditional evidence that confirmatory MTMM generally needs hundreds of independent observations, not a tiny paired pilot. [Peer-reviewed Simulation Study] [HIGH CONFIDENCE]
+- [Bland & Altman](https://pubmed.ncbi.nlm.nih.gov/2868172/) — correlation measures association, not agreement between methods. [Peer-reviewed Methods Study] [HIGH CONFIDENCE]

@@ -422,14 +422,21 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 <!-- TAB 7: Metric Exploration Lab -->
 <div class="tab-panel" id="tab-metriclab" role="tabpanel" aria-labelledby="tabbtn-metriclab" hidden>
   <section class="agenda-hero">
-    <div class="agenda-kicker">Living metric registry · initial exploration</div>
+    <div class="agenda-kicker">Living metric registry · validated strategic update</div>
     <h2>Metric Lab</h2>
     <p>Candidate diagnostics are added as they emerge. None are treated as validated until they survive controlled corruption tests, human construct validation, simple confound baselines, and held-out-generator evaluation.</p>
   </section>
 
+  <div class="callout"><strong>Representation decision:</strong> keep symbolic and native-audio paths open during exploration. Neither is ground truth; paired rendered-MIDI experiments will separate representation effects from transcription and performance effects.</div>
+
   <div class="lab-toolbar">
-    <span class="lab-pill">10 candidates</span><span class="lab-pill">5 art domains</span><span class="lab-pill">15+ foundational sources</span><span class="lab-pill">Status: exploration</span>
+    <span class="lab-pill">10 candidates + 1 validation work package</span><span class="lab-pill">flagship: localized responsiveness</span><span class="lab-pill">dual representation</span><span class="lab-pill">independently reviewed</span>
   </div>
+
+  <section class="agenda-section">
+    <h2>Reliability gate</h2>
+    <div class="verdict-grid"><article class="verdict-card"><span class="verdict verdict-high">GO</span><strong>Local research stack</strong><p>DDGS found a primary source in 9/10 known-item runs; direct/Jina extraction succeeded on 8/8 tested public URLs and blocked the private-network case.</p></article><article class="verdict-card"><span class="verdict verdict-medium">LIMITED</span><strong>Search reproducibility</strong><p>Repeated top-five URL overlap was low (mean Jaccard 0.180). DDGS discovers candidates; it is not the evidentiary record or a systematic-review index.</p></article><article class="verdict-card"><span class="verdict verdict-high">PASS</span><strong>Pilot mechanics</strong><p>Four tests pass and reruns are byte-identical. The current sine/harmonic experiment is a deterministic feasibility spike—not cross-renderer or metric validation.</p></article><article class="verdict-card"><span class="verdict verdict-low">DO NOT CLAIM</span><strong>Latent validity</strong><p>A tiny synthetic ABA example cannot establish MTMM factors, measurement invariance, human validity or population-level renderer robustness.</p></article></div>
+  </section>
 
   <section class="agenda-section">
     <h2>Current candidates</h2>
@@ -442,14 +449,15 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
       <article class="candidate-card"><div class="candidate-id">M06 · ADAPTATION — UNVALIDATED FOR THIS TASK</div><h3>Pacing Envelope Concordance</h3><p>Compare a requested pacing arc with onset, harmony, timbre, boundary, loudness and texture-change trajectories.</p><div class="candidate-meta"><span>IMPLEMENTATION CANDIDATE</span><span>FILM PACING</span><span>DTW</span><span>EST. HIGH FEASIBILITY</span></div><details><summary>Confound test</summary><p>Tempo, note density, harmonic rate and timbral activity must be manipulated independently. A loudness detector wearing a lab coat is still a loudness detector.</p></details></article>
       <article class="candidate-card"><div class="candidate-id">M07 · CANDIDATE — UNVALIDATED</div><h3>Tension-Arc Adherence & Resolution Debt</h3><p>Score requested buildup, climax location, relaxation and unresolved endpoint debt across multiple tension channels.</p><div class="candidate-meta"><span>MEDIUM RISK</span><span>TENSION</span><span>COGNITION</span><span>TONAL FIRST</span></div><details><summary>Scope warning</summary><p>Tonal strain is not universal tension. Initial validation should be tonal and symbolic; loudness, density and harmony must remain separable.</p></details></article>
       <article class="candidate-card"><div class="candidate-id">M08 · CANDIDATE — UNVALIDATED</div><h3>Expectation-Regime Schedule Divergence</h3><p>Compare each section’s uncertainty and realized surprise with its requested role: stable, developmental, surprising or return-like.</p><div class="candidate-meta"><span>INFORMATION DYNAMICS</span><span>ENTROPY</span><span>SURPRISAL</span><span>MEMORY</span></div><details><summary>Distinctive test</summary><p>A thematic return should become more predictable when within-piece memory is enabled. Average perplexity alone cannot distinguish purposeful return from generic cliché.</p></details></article>
-      <article class="candidate-card"><div class="candidate-id">M09 · CANDIDATE — UNVALIDATED</div><h3>Counterfactual Localized Plan Responsiveness</h3><p>Change one instruction while holding seed and unrelated constraints fixed; measure target effect, direction, leakage and boundary spillover.</p><div class="candidate-meta"><span>HIGH PRIORITY</span><span>CAUSAL CONTRAST</span><span>GAMES/AGENCY</span><span>MODEL-LEVEL</span></div><details><summary>Why it matters</summary><p>Single outputs cannot show that the instruction caused compliance. Meaningful control requires the requested region to change more—and more correctly—than unrelated regions.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M09 · FLAGSHIP CANDIDATE — UNVALIDATED</div><h3>Counterfactual Localized Plan Responsiveness</h3><p>Minimally change one instruction; measure signed target effect and directional accuracy while separating distal leakage, near-boundary spillover and optional plan-relation evidence.</p><div class="candidate-meta"><span>FLAGSHIP</span><span>INTERVENTION-BASED</span><span>LOCALIZED</span><span>MODEL-LEVEL</span></div><details><summary>Operational caution</summary><p>Matched seeds support a paired controlled-generator effect. Without defensible seed coupling, estimate repeated-sample average responsiveness and do not call individual output pairs counterfactuals.</p></details></article>
       <article class="candidate-card"><div class="candidate-id">M10 · SPECULATIVE — RESEARCH ONLY</div><h3>Setup–Payoff Connectivity</h3><p>Build a directed graph from introduced motifs, unresolved processes or timbres to later transformations and resolutions.</p><div class="candidate-meta"><span>NARRATIVE</span><span>HUMAN-FIRST</span></div><details><summary>Stop condition</summary><p>“Causal” is only a metaphor until matched edits removing only the setup measurably weaken listener comprehension or satisfaction of the preserved payoff.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M11 · VALIDATION WORK PACKAGE</div><h3>Cross-Representation Validity Profile</h3><p>Test whether conclusions survive symbolic/audio methods, renderer changes, controlled degradation and alternative analysis pipelines. It is infrastructure, not a headline metric.</p><div class="candidate-meta"><span>VALIDATION</span><span>PAIRED RENDERS</span><span>METHOD EFFECTS</span><span>POWER FIRST</span></div><details><summary>Scope limit</summary><p>Use agreement and perturbation analyses immediately. Fit MTMM only if indicator count, identification and simulation-based power are adequate; neither representation is ground truth.</p></details></article>
     </div>
   </section>
 
   <section class="agenda-section">
     <h2>Implementation queue</h2>
-    <div class="roadmap"><article class="roadmap-step"><h3>HPGA + PCCM</h3><p>Start with section order, hierarchy, recurrence and contrast. These are directly relevant and technically tractable.</p></article><article class="roadmap-step"><h3>CLPR</h3><p>Build minimal prompt-pair interventions to determine whether controls are causally responsive and localized.</p></article><article class="roadmap-step"><h3>PBEC + RMRT</h3><p>Add listener-calibrated boundaries and symbolic motif-role evaluation.</p></article><article class="roadmap-step"><h3>PEC + TAARD + ERSD</h3><p>Introduce pacing, tension and expectation only after representations and target constructs are stable.</p></article></div>
+    <div class="roadmap"><article class="roadmap-step"><h3>CLPR first</h3><p>Build minimal prompt-pair interventions with same-prompt variance baselines; estimate target effect, direction, leakage and spillover.</p></article><article class="roadmap-step"><h3>HPGA + PCCM as optional evidence</h3><p>Use only for interventions affecting section order, identity, duration, recurrence, variation or contrast—not as universal operands.</p></article><article class="roadmap-step"><h3>Representation robustness in parallel</h3><p>Expand the paired symbolic/audio pilot across renderers, degradations and analysis pipelines before making invariance claims.</p></article><article class="roadmap-step"><h3>Human compliance validation</h3><p>Measure instruction compliance separately from musicality, production quality and preference.</p></article><article class="roadmap-step"><h3>Defer the extras</h3><p>Add motif, boundary, pacing or tension subtests only if they explain residual human judgments.</p></article></div>
   </section>
 
   <section class="agenda-section citation-list">
@@ -459,7 +467,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
   <section class="agenda-section">
     <h2>Questions requiring eventual decisions</h2>
-    <ol class="agenda-list info-block"><li>Should the first benchmark use symbolic music, native generated audio, or parallel symbolic/rendered tracks?</li><li>Which genres and formal vocabularies define the initial scope?</li><li>What minimum duration should count as long-form?</li><li>Will source stems be available for instrument-entry ground truth?</li><li>Can the selected generators expose deterministic or approximately matched seeds?</li><li>Which listener groups are realistically available?</li></ol>
+    <ol class="agenda-list info-block"><li><strong>Answered:</strong> keep symbolic and audio open during exploration; use paired tracks for calibration.</li><li>Which genres and formal vocabularies define the initial scope?</li><li>What minimum duration should count as long-form?</li><li>Will source stems be available for instrument-entry ground truth?</li><li>Can the selected generators expose deterministic or approximately matched seeds?</li><li>Which listener groups are realistically available?</li></ol>
   </section>
 </div>
 
@@ -485,9 +493,9 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
   <section class="agenda-section">
     <h2>Recommended Paper 1</h2>
-    <p><strong>Working title:</strong> Evaluating Section-Level Arrangement and Instrumentation Control in Text-to-Music Systems</p>
+    <p><strong>Working title:</strong> Localized Instruction Responsiveness for Long-Form Music Generation</p>
     <div class="agenda-grid">
-      <article class="agenda-card"><h3>Scope</h3><ul class="agenda-list"><li>Instrumental audio first</li><li>30–90 second core examples</li><li>Small multi-minute stress-test subset</li><li>Arrangement and instrumentation controls</li><li>Three to four generator families</li></ul></article>
+      <article class="agenda-card"><h3>Scope</h3><ul class="agenda-list"><li>Instrumental audio first</li><li>30–90 second core examples</li><li>Small multi-minute stress-test subset</li><li>Minimal section-clause interventions</li><li>Same-prompt variance baselines</li><li>Three to four generator families</li></ul></article>
       <article class="agenda-card"><h3>Instruction ontology</h3><ul class="agenda-list"><li>Instrument presence and absence</li><li>Section order and boundaries</li><li>Instrument entry and exit</li><li>Density and dynamics trajectory</li><li>Repetition versus variation</li><li>Negation and temporal relations</li></ul></article>
     </div>
     <div class="callout"><strong>Do not build one “magic score.”</strong> Report a diagnostic vector. A track can obey a prompt while sounding poor, or sound excellent while ignoring the requested plan.</div>
@@ -552,6 +560,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
       <li><a href="https://arxiv.org/abs/2501.10811" target="_blank" rel="noopener">MusicEval (2025)</a> — expert-rated automatic text-to-music evaluation.</li>
       <li><a href="https://arxiv.org/abs/2503.16669" target="_blank" rel="noopener">MAD / MusicPrefs (2025)</a> — human-aligned metric meta-evaluation.</li>
       <li><a href="https://arxiv.org/abs/2505.10793" target="_blank" rel="noopener">SongEval (2025)</a> — full-song coherence and structural clarity ratings.</li>
+      <li><a href="https://arxiv.org/abs/2510.18416" target="_blank" rel="noopener">SegTune (2026)</a> — segment-level conditioning and observational segment-alignment metrics.</li>
       <li><a href="https://arxiv.org/abs/2405.18386" target="_blank" rel="noopener">Instruct-MusicGen (2025)</a> — instruction-tuned stem editing.</li>
       <li><a href="https://arxiv.org/abs/2311.07069" target="_blank" rel="noopener">Music ControlNet (2024)</a> — precise time-varying controls beyond text.</li>
       <li><a href="https://arxiv.org/abs/2404.10301" target="_blank" rel="noopener">Long-form Music Generation with Latent Diffusion (2024)</a> — full-length generation and subjective structure evaluation.</li>
@@ -561,7 +570,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
 <footer>
   <p>Music Generation & Orchestration Research Tracker · Updated 2026-07-16 · Relevance verified July 2026</p>
-  <p>14 papers · 10 evolving metric candidates · Cross-domain inspiration from film, narrative, poetry, dance, visual art, architecture, and games</p>
+  <p>14 papers · 11 evolving metric candidates · Cross-domain inspiration from film, narrative, poetry, dance, visual art, architecture, games, and psychometrics</p>
 </footer>
 
 <script>

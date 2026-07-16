@@ -50,3 +50,22 @@
 - Added an evolving Metric Lab tab to the website with implementation priorities and open decisions
 - Applied an independent review: normalized epistemic status labels, tightened cross-domain mappings, added direct film/poetry/game sources, and improved tab/search accessibility
 - Deployed the Metric Lab to GitHub Pages; verified 10 cards, 9 cross-domain links, correct tab/ARIA state, seven hidden inactive panels, and zero browser-console errors
+
+## 2026-07-16 — Dual-Representation Exploration
+- Leonidas chose to keep symbolic and native-audio representations open during exploration
+- Surveyed symbolic reliability, audio/transcription failure modes, and psychometric methods for comparing imperfect measurement methods
+- Added candidate M11, Cross-Representation Validity Profile, with CRVC, RSAA, and MISD diagnostics
+- Added eighteen systematic investigation questions and seven cross-representation sources
+- Firecrawl search credits were exhausted; continued through the arXiv API and direct primary-source extraction instead
+
+## 2026-07-16 — Reliability Gate and Strategic Narrowing
+- Benchmarked DDGS on five known academic targets over two runs each; primary sources appeared in 9/10 top-five sets, while repeated exact-URL overlap was low (mean Jaccard 0.180)
+- Benchmarked local extraction on eight public HTML/PDF/repository sources; all eight produced usable content, and the private-network case was blocked before fetch
+- Preserved raw ordered search results, labels, extraction routes, and arithmetic in `WEB_RESEARCH_QA_RAW.json`; documented limitations and operating rules in `WEB_RESEARCH_QA.md`
+- Audited the dual-representation pilot, fixed a tautological preservation assertion, reran four passing tests, and confirmed byte-identical output regeneration
+- Reclassified the current pilot as a deterministic feasibility spike rather than evidence of cross-renderer or construct validity
+- Verified newer competing work including SongEval, CMI-RewardBench, SegTune, MAD/MusicPrefs, transcription-robustness studies, and method-comparison foundations
+- Narrowed Paper 1 around M09 localized instruction responsiveness; HPGA/PCCM are optional structural evidence channels and CRVP is validation infrastructure
+- Operationalized TES, DA, OTL, BS, and applicable PRD with held-out same-prompt null scales, explicit protected regions, and piece/intervention-level uncertainty
+- Passed independent re-review after correcting source wording, metric ambiguity, causal scope, renderer terminology, and QA auditability
+- Updated the Metric Lab and Research Plan website sections to reflect the reliability gate and revised research strategy
