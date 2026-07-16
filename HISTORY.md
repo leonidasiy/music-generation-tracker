@@ -33,3 +33,9 @@
 - All badge and tag backgrounds updated for light theme
 - Pushed and verified live deployment
 - Documentation complete: TODO.md, HISTORY.md, INFO.md, REFERENCES.md
+
+## 2026-07-16 — Refined Research Agenda
+- Evaluated the feasibility of combining long-form coherent structure with music instruction tuning
+- Narrowed the shared problem to section-level compositional plan adherence
+- Defined a diagnostic metric suite, controlled counterfactual violations, falsifiable hypotheses, and go/no-go gates
+- Added a dedicated Research Plan tab to the website with linked primary sources

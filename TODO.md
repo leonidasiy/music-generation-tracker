@@ -30,3 +30,11 @@
 ## Phase 5: Finalization
 - [ ] Final validation
 - [ ] Deliver hosted URL
+
+## Refined Research Agenda — 2026-07-16
+- [x] Review feasibility of combining long-form structure and music instruction tuning
+- [x] Identify section-level compositional plan adherence as the unifying problem
+- [x] Define proposed metric suite, controlled violations, hypotheses, and go/no-go gates
+- [x] Add the refined plan to the website as a dedicated Research Plan tab
+- [x] Run browser and content validation on the updated site
+- [ ] Deploy and verify the updated GitHub Pages site

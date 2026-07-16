@@ -120,13 +120,37 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 .rel-foundational{background:#dbeafe;color:var(--blue);border:1px solid #bfdbfe}
 .rel-evolved{background:#fef3c7;color:var(--amber);border:1px solid #fde68a}
 .rel-niche{background:#f3e8ff;color:var(--purple);border:1px solid #e9d5ff}
+
+/* Research agenda */
+.agenda-hero{background:linear-gradient(135deg,#eef2ff 0%,#f8fafc 58%,#ecfdf5 100%);border:1px solid #c7d2fe;border-radius:16px;padding:28px;margin-bottom:18px}
+.agenda-kicker{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent2);margin-bottom:8px}
+.agenda-hero h2{font-size:1.65rem;line-height:1.2;letter-spacing:-.025em;margin-bottom:10px}
+.agenda-hero p{max-width:820px;color:var(--text2);font-size:.95rem}
+.verdict-grid,.agenda-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.verdict-card,.agenda-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px}
+.verdict-card strong,.agenda-card h3{display:block;font-size:.95rem;margin-bottom:6px}
+.verdict-card p,.agenda-card p,.agenda-card li{font-size:.83rem;color:var(--text2)}
+.verdict{display:inline-flex;align-items:center;border-radius:999px;padding:3px 9px;font-size:.7rem;font-weight:700;margin-bottom:9px}
+.verdict-high{background:#dcfce7;color:#15803d}.verdict-medium{background:#fef3c7;color:#b45309}.verdict-low{background:#fee2e2;color:#b91c1c}
+.agenda-section{margin:26px 0}.agenda-section>h2{font-size:1.15rem;letter-spacing:-.01em;margin-bottom:12px}.agenda-section>p{font-size:.86rem;color:var(--text2);margin:-5px 0 14px}
+.agenda-list{padding-left:20px}.agenda-list li{margin:7px 0}
+.agenda-section ol.info-block li{padding-left:0}.agenda-section ol.info-block li::before{display:none}
+.metric-row{display:grid;grid-template-columns:180px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.metric-row:last-child{border-bottom:0}.metric-row strong{font-size:.86rem}.metric-row p{font-size:.82rem;color:var(--text2)}
+.research-question{background:#1a1d2e;color:#fff;border-radius:var(--radius-lg);padding:20px 22px;margin:14px 0 20px;font-size:1rem;line-height:1.55}
+.roadmap{counter-reset:stage;display:grid;gap:10px}.roadmap-step{counter-increment:stage;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px 16px 56px;position:relative}
+.roadmap-step::before{content:counter(stage);position:absolute;left:16px;top:16px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:.75rem;font-weight:700}
+.roadmap-step h3{font-size:.9rem;margin-bottom:4px}.roadmap-step p{font-size:.8rem;color:var(--text2)}
+.citation-list a{color:var(--accent2);text-decoration:none}.citation-list a:hover{text-decoration:underline}
+.callout{border-left:3px solid var(--accent);background:#eef2ff;border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;color:var(--text2);font-size:.85rem;margin:14px 0}
+@media (max-width:700px){.verdict-grid,.agenda-grid{grid-template-columns:1fr}.metric-row{grid-template-columns:1fr;gap:4px}.agenda-hero{padding:20px}}
 </style>
 </head>
 <body>
 
 <header>
   <h1>🎵 Music Generation & Orchestration <span class="badge badge-green">Active</span></h1>
-  <p>Frontier Research Tracker — 14 papers, 5,300+ citations. Last updated: 2026-07-14</p>
+  <p>Frontier Research Tracker — 14 papers, 5,300+ citations. Last updated: 2026-07-16</p>
 </header>
 
 <nav class="tabs">
@@ -136,6 +160,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <button onclick="switchTab('references')">📚 References</button>
   <button onclick="switchTab('info')">ℹ️ Info</button>
   <button onclick="switchTab('directions')">🧭 Directions</button>
+  <button onclick="switchTab('agenda')">🧪 Research Plan</button>
 </nav>
 
 <!-- Stats Bar (visible on all tabs) -->
@@ -382,8 +407,104 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   </div>
 </div>
 
+<!-- TAB 7: Refined Research Agenda -->
+<div class="tab-panel" id="tab-agenda">
+  <section class="agenda-hero">
+    <div class="agenda-kicker">Refined research agenda · July 2026</div>
+    <h2>Long-form structure × music instruction following</h2>
+    <p>The defensible bridge is <strong>section-level compositional plan adherence</strong>: whether generated music realizes requested sections, entries, exits, repetitions, variations and global trajectories while remaining coherent.</p>
+  </section>
+
+  <div class="research-question"><strong>Central question:</strong> Can we automatically and diagnostically evaluate whether generated music follows a requested section-level compositional and orchestration plan, while distinguishing structural development from looping and separating adherence from musical quality?</div>
+
+  <section class="agenda-section">
+    <h2>Executive verdict</h2>
+    <div class="verdict-grid">
+      <article class="verdict-card"><span class="verdict verdict-high">STRONG</span><strong>Conceptual connection</strong><p>Long-form structure and instruction following meet naturally when instructions specify a temporal musical plan.</p></article>
+      <article class="verdict-card"><span class="verdict verdict-low">LOW NOVELTY</span><strong>Generic coherence + alignment score</strong><p>SongEval, SongBench, MusicEval and CMI-RewardBench already occupy adjacent broad evaluation territory.</p></article>
+      <article class="verdict-card"><span class="verdict verdict-high">PROMISING</span><strong>Diagnostic section-level benchmark</strong><p>Temporal order, negation, recurrence-with-variation and wrong-section violations remain much more defensible targets.</p></article>
+      <article class="verdict-card"><span class="verdict verdict-medium">CONDITIONAL</span><strong>Prompt-engineering follow-up</strong><p>Cheap to test, but precise temporal control may require architecture-level conditioning rather than better wording.</p></article>
+    </div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Recommended Paper 1</h2>
+    <p><strong>Working title:</strong> Evaluating Section-Level Arrangement and Instrumentation Control in Text-to-Music Systems</p>
+    <div class="agenda-grid">
+      <article class="agenda-card"><h3>Scope</h3><ul class="agenda-list"><li>Instrumental audio first</li><li>30–90 second core examples</li><li>Small multi-minute stress-test subset</li><li>Arrangement and instrumentation controls</li><li>Three to four generator families</li></ul></article>
+      <article class="agenda-card"><h3>Instruction ontology</h3><ul class="agenda-list"><li>Instrument presence and absence</li><li>Section order and boundaries</li><li>Instrument entry and exit</li><li>Density and dynamics trajectory</li><li>Repetition versus variation</li><li>Negation and temporal relations</li></ul></article>
+    </div>
+    <div class="callout"><strong>Do not build one “magic score.”</strong> Report a diagnostic vector. A track can obey a prompt while sounding poor, or sound excellent while ignoring the requested plan.</div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Metric suite</h2>
+    <div class="info-block">
+      <div class="metric-row"><strong>Atomic compliance</strong><p>Score every requested constraint independently: presence, absence, timing, section location, count, order and recurrence.</p></div>
+      <div class="metric-row"><strong>Form agreement</strong><p>Compare requested and estimated boundaries, section sequences and affinity graphs; penalize missing, reordered and duplicated sections.</p></div>
+      <div class="metric-row"><strong>Recurrence vs. looping</strong><p>Reward recognizable thematic return with controlled variation while penalizing exact duplication and unrelated drift.</p></div>
+      <div class="metric-row"><strong>Temporal localization</strong><p>Evaluate attributes inside their requested interval and penalize evidence in forbidden or incorrect sections.</p></div>
+      <div class="metric-row"><strong>Intrinsic coherence</strong><p>Keep transition plausibility, late-song drift, truncation and global trajectory separate from prompt adherence.</p></div>
+      <div class="metric-row"><strong>Quality controls</strong><p>Measure artifacts, musicality, production quality and listener preference independently to expose trade-offs.</p></div>
+    </div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Controlled violations</h2>
+    <p>The benchmark should include known counterfactual failures rather than relying only on naturally generated mistakes.</p>
+    <div class="agenda-grid">
+      <article class="agenda-card"><h3>Structural</h3><ul class="agenda-list"><li>Swap two sections</li><li>Delete the final return</li><li>Duplicate one section exactly</li><li>Replace a reprise with unrelated material</li><li>Truncate the outro</li></ul></article>
+      <article class="agenda-card"><h3>Instructional</h3><ul class="agenda-list"><li>Move an instrument entry to the wrong section</li><li>Insert a prohibited instrument</li><li>Flatten a requested crescendo</li><li>Reverse two requested events</li><li>Preserve concepts but scramble their order</li></ul></article>
+    </div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Falsifiable hypotheses</h2>
+    <ol class="agenda-list info-block">
+      <li>Section-local evaluation outperforms global text–audio similarity on wrong-section violations.</li>
+      <li>Atomic scoring outperforms whole-prompt scoring on negation, order and multi-constraint prompts.</li>
+      <li>A recurrence-development score distinguishes purposeful reprises from exact loops.</li>
+      <li>Adherence and intrinsic coherence are empirically separable.</li>
+      <li>Metric gains persist on an unseen generator and unseen prompt templates.</li>
+    </ol>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Two-stage roadmap</h2>
+    <div class="roadmap">
+      <article class="roadmap-step"><h3>Two-week feasibility pilot</h3><p>Use two models and a small balanced prompt set. Confirm that listeners agree, detectors are usable and existing metrics fail on at least one important counterfactual.</p></article>
+      <article class="roadmap-step"><h3>Paper 1: benchmark and meta-evaluation</h3><p>Freeze the ontology, controlled violations and metric components; validate against humans with held-out generator and prompt-family tests.</p></article>
+      <article class="roadmap-step"><h3>Paper 2A: prompt-only intervention</h3><p>Compare prose, keywords, constraint lists, section-tagged prompts and optimized paraphrases across fixed generators.</p></article>
+      <article class="roadmap-step"><h3>Paper 2B: inference-time optimization</h3><p>Try best-of-N selection, reranking, prompt search and constraint-specific regeneration before training anything.</p></article>
+      <article class="roadmap-step"><h3>Optional lightweight adapter</h3><p>Only if prompt-only methods plateau: add one section or instrumentation control through a small adapter or LoRA.</p></article>
+    </div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Go / no-go gates</h2>
+    <div class="agenda-grid">
+      <article class="agenda-card" style="border-left:3px solid var(--green)"><h3>Proceed when</h3><ul class="agenda-list"><li>Human judgments have usable reliability</li><li>Existing baselines fail on meaningful distinctions</li><li>The metric generalizes to an unseen generator</li><li>Results survive control for audio quality</li></ul></article>
+      <article class="agenda-card" style="border-left:3px solid var(--red)"><h3>Stop or rescope when</h3><ul class="agenda-list"><li>Detector noise dominates the labels</li><li>Listeners cannot agree on the constructs</li><li>Only system-level—not item-level—ranking improves</li><li>Paper 2 improves only the new metric, not blind human judgments</li></ul></article>
+    </div>
+  </section>
+
+  <section class="agenda-section citation-list">
+    <h2>Closest prior work</h2>
+    <div class="info-block"><ul>
+      <li><a href="https://arxiv.org/abs/2604.25937" target="_blank" rel="noopener">SongBench (2026)</a> — structure and arrangement quality assessment.</li>
+      <li><a href="https://arxiv.org/abs/2603.00610" target="_blank" rel="noopener">CMI-RewardBench (2026)</a> — musicality and compositional multimodal instruction alignment.</li>
+      <li><a href="https://arxiv.org/abs/2501.10811" target="_blank" rel="noopener">MusicEval (2025)</a> — expert-rated automatic text-to-music evaluation.</li>
+      <li><a href="https://arxiv.org/abs/2503.16669" target="_blank" rel="noopener">MAD / MusicPrefs (2025)</a> — human-aligned metric meta-evaluation.</li>
+      <li><a href="https://arxiv.org/abs/2505.10793" target="_blank" rel="noopener">SongEval (2025)</a> — full-song coherence and structural clarity ratings.</li>
+      <li><a href="https://arxiv.org/abs/2405.18386" target="_blank" rel="noopener">Instruct-MusicGen (2025)</a> — instruction-tuned stem editing.</li>
+      <li><a href="https://arxiv.org/abs/2311.07069" target="_blank" rel="noopener">Music ControlNet (2024)</a> — precise time-varying controls beyond text.</li>
+      <li><a href="https://arxiv.org/abs/2404.10301" target="_blank" rel="noopener">Long-form Music Generation with Latent Diffusion (2024)</a> — full-length generation and subjective structure evaluation.</li>
+    </ul></div>
+  </section>
+</div>
+
 <footer>
-  <p>Music Generation & Orchestration Research Tracker · Updated 2026-07-14 · Relevance verified July 2026</p>
+  <p>Music Generation & Orchestration Research Tracker · Updated 2026-07-16 · Relevance verified July 2026</p>
   <p>14 papers · Curated for undergrad-recommended directions · 6 added (CLAP, MusicLDM, LP-MusicCaps, FIGARO, Benchmark, SongDescriber) · 13/14 open source</p>
 </footer>
 
