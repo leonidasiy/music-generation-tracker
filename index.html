@@ -27,11 +27,14 @@ header p{color:var(--text2);font-size:0.9rem}
 
 /* Tabs */
 nav.tabs{display:flex;gap:4px;margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:0;flex-wrap:wrap}
-nav.tabs button{padding:10px 20px;background:none;border:none;color:var(--text3);font-size:0.875rem;font-weight:500;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.15s;font-family:var(--font);border-radius:6px 6px 0 0}
+nav.tabs button{padding:10px 20px;min-height:44px;background:none;border:none;color:var(--text3);font-size:0.875rem;font-weight:500;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.15s;font-family:var(--font);border-radius:6px 6px 0 0}
 nav.tabs button:hover{color:var(--text2);background:var(--surface)}
 nav.tabs button.active{color:var(--accent2);border-bottom-color:var(--accent);background:var(--surface)}
 .tab-panel{display:none}
 .tab-panel.active{display:block}
+.tab-panel[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* Stats bar */
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:28px}
@@ -143,7 +146,13 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 .roadmap-step h3{font-size:.9rem;margin-bottom:4px}.roadmap-step p{font-size:.8rem;color:var(--text2)}
 .citation-list a{color:var(--accent2);text-decoration:none}.citation-list a:hover{text-decoration:underline}
 .callout{border-left:3px solid var(--accent);background:#eef2ff;border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;color:var(--text2);font-size:.85rem;margin:14px 0}
-@media (max-width:700px){.verdict-grid,.agenda-grid{grid-template-columns:1fr}.metric-row{grid-template-columns:1fr;gap:4px}.agenda-hero{padding:20px}}
+.lab-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}.lab-pill{border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:5px 10px;font-size:.72rem;color:var(--text2)}
+.candidate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.candidate-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;position:relative}.candidate-card h3{font-size:1rem;line-height:1.35;margin:7px 0}.candidate-card p,.candidate-card li{font-size:.8rem;color:var(--text2)}
+.candidate-id{font-family:var(--mono);font-size:.68rem;color:var(--text3);letter-spacing:.06em}.candidate-meta{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.candidate-meta span{font-size:.66rem;font-weight:700;border-radius:999px;padding:3px 7px;background:var(--surface2);color:var(--text2)}
+.candidate-card details{margin-top:10px;border-top:1px solid var(--border);padding-top:9px}.candidate-card summary{cursor:pointer;font-size:.76rem;font-weight:600;color:var(--accent2)}.candidate-card details p{margin-top:7px}
+.source-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.source-strip a{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px;color:var(--accent2);font-size:.75rem;text-decoration:none}.source-strip a:hover{border-color:var(--accent)}
+.candidate-card,.source-strip a,.paper-card>div>div{min-width:0;overflow-wrap:anywhere}
+@media (max-width:700px){.verdict-grid,.agenda-grid,.candidate-grid,.source-strip{grid-template-columns:1fr}.metric-row{grid-template-columns:1fr;gap:4px}.agenda-hero{padding:20px}}
 </style>
 </head>
 <body>
@@ -153,14 +162,15 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <p>Frontier Research Tracker — 14 papers, 5,300+ citations. Last updated: 2026-07-16</p>
 </header>
 
-<nav class="tabs">
-  <button class="active" onclick="switchTab('research')">📄 Recent Research</button>
-  <button onclick="switchTab('progress')">📊 My Progress</button>
-  <button onclick="switchTab('todo')">✅ TODO</button>
-  <button onclick="switchTab('references')">📚 References</button>
-  <button onclick="switchTab('info')">ℹ️ Info</button>
-  <button onclick="switchTab('directions')">🧭 Directions</button>
-  <button onclick="switchTab('agenda')">🧪 Research Plan</button>
+<nav class="tabs" role="tablist" aria-label="Research tracker sections">
+  <button type="button" class="active" id="tabbtn-research" role="tab" aria-controls="tab-research" aria-selected="true" tabindex="0" onclick="switchTab('research',this)">📄 Recent Research</button>
+  <button type="button" id="tabbtn-progress" role="tab" aria-controls="tab-progress" aria-selected="false" tabindex="-1" onclick="switchTab('progress',this)">📊 My Progress</button>
+  <button type="button" id="tabbtn-todo" role="tab" aria-controls="tab-todo" aria-selected="false" tabindex="-1" onclick="switchTab('todo',this)">✅ TODO</button>
+  <button type="button" id="tabbtn-references" role="tab" aria-controls="tab-references" aria-selected="false" tabindex="-1" onclick="switchTab('references',this)">📚 References</button>
+  <button type="button" id="tabbtn-info" role="tab" aria-controls="tab-info" aria-selected="false" tabindex="-1" onclick="switchTab('info',this)">ℹ️ Info</button>
+  <button type="button" id="tabbtn-directions" role="tab" aria-controls="tab-directions" aria-selected="false" tabindex="-1" onclick="switchTab('directions',this)">🧭 Directions</button>
+  <button type="button" id="tabbtn-agenda" role="tab" aria-controls="tab-agenda" aria-selected="false" tabindex="-1" onclick="switchTab('agenda',this)">🧪 Research Plan</button>
+  <button type="button" id="tabbtn-metriclab" role="tab" aria-controls="tab-metriclab" aria-selected="false" tabindex="-1" onclick="switchTab('metriclab',this)">🧬 Metric Lab</button>
 </nav>
 
 <!-- Stats Bar (visible on all tabs) -->
@@ -172,9 +182,11 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 </div>
 
 <!-- TAB 1: Recent Research (default) -->
-<div class="tab-panel active" id="tab-research">
+<div class="tab-panel active" id="tab-research" role="tabpanel" aria-labelledby="tabbtn-research">
   <div class="filter-bar">
+    <label class="sr-only" for="paperSearch">Search papers</label>
     <input type="text" id="paperSearch" placeholder="Search papers by title, author, or keyword..." oninput="filterPapers()">
+    <label class="sr-only" for="paperFilter">Filter papers</label>
     <select id="paperFilter" onchange="filterPapers()">
       <option value="all">All Papers</option>
       <option value="audio">Audio Generation</option>
@@ -193,7 +205,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 </div>
 
 <!-- TAB 2: My Progress -->
-<div class="tab-panel" id="tab-progress">
+<div class="tab-panel" id="tab-progress" role="tabpanel" aria-labelledby="tabbtn-progress" hidden>
   <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">Research Progress Tracker</h2>
   <div class="progress-section">
     <h3>Phase 1: Initial Research</h3>
@@ -242,7 +254,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 </div>
 
 <!-- TAB 3: TODO -->
-<div class="tab-panel" id="tab-todo">
+<div class="tab-panel" id="tab-todo" role="tabpanel" aria-labelledby="tabbtn-todo" hidden>
   <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">Task Checklist</h2>
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Phase 1:</strong> Create project directory and documentation files</div></div>
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Phase 1:</strong> Search arXiv & web — collect 10+ papers with 10+ citations</div></div>
@@ -258,13 +270,13 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 </div>
 
 <!-- TAB 4: References -->
-<div class="tab-panel" id="tab-references">
+<div class="tab-panel" id="tab-references" role="tabpanel" aria-labelledby="tabbtn-references" hidden>
   <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">All 14 References</h2>
   <div id="refList"></div>
 </div>
 
 <!-- TAB 5: Info -->
-<div class="tab-panel" id="tab-info">
+<div class="tab-panel" id="tab-info" role="tabpanel" aria-labelledby="tabbtn-info" hidden>
   <div class="info-block">
     <h3>Research Domains</h3>
     <div class="grid2">
@@ -317,12 +329,12 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 </div>
 
 <!-- TAB 6: Directions -->
-<div class="tab-panel" id="tab-directions">
+<div class="tab-panel" id="tab-directions" role="tabpanel" aria-labelledby="tabbtn-directions" hidden>
   <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">Research Directions & Undergraduate Suitability</h2>
 
   <div class="info-block">
     <h3>🔥 Hot Directions (active frontier)</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div class="grid2">
       <div style="background:var(--surface2);border-radius:var(--radius);padding:14px">
         <strong style="color:var(--accent2)">1. Multi-track / stem orchestration</strong>
         <p style="font-size:0.8rem;color:var(--text2);margin-top:4px">Biggest gap between academic models and real production. JEN-1 Composer, SyncTrack, SketchSong all in last 18 months. Whoever solves coherent multi-stem wins.</p>
@@ -357,7 +369,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
   <div class="info-block" style="border-left:3px solid var(--green)">
     <h3>✅ Undergraduate-Suitable (zero/low GPU, 1 semester)</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <div class="grid2">
       <div style="background:var(--surface2);border-radius:var(--radius);padding:12px">
         <strong style="color:var(--green)">⭐ Evaluation metrics</strong>
         <p style="font-size:0.8rem;color:var(--text2);margin-top:3px">Zero GPU. Design benchmark, run models via API, human studies. High publication potential — venues desperate for better eval.</p>
@@ -407,8 +419,52 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   </div>
 </div>
 
-<!-- TAB 7: Refined Research Agenda -->
-<div class="tab-panel" id="tab-agenda">
+<!-- TAB 7: Metric Exploration Lab -->
+<div class="tab-panel" id="tab-metriclab" role="tabpanel" aria-labelledby="tabbtn-metriclab" hidden>
+  <section class="agenda-hero">
+    <div class="agenda-kicker">Living metric registry · initial exploration</div>
+    <h2>Metric Lab</h2>
+    <p>Candidate diagnostics are added as they emerge. None are treated as validated until they survive controlled corruption tests, human construct validation, simple confound baselines, and held-out-generator evaluation.</p>
+  </section>
+
+  <div class="lab-toolbar">
+    <span class="lab-pill">10 candidates</span><span class="lab-pill">5 art domains</span><span class="lab-pill">15+ foundational sources</span><span class="lab-pill">Status: exploration</span>
+  </div>
+
+  <section class="agenda-section">
+    <h2>Current candidates</h2>
+    <div class="candidate-grid">
+      <article class="candidate-card"><div class="candidate-id">M01 · CANDIDATE — UNVALIDATED</div><h3>Hierarchical Plan-Graph Alignment</h3><p>Align a prompt-derived hierarchy of sections, order, recurrence edges and duration ranges with the generated piece.</p><div class="candidate-meta"><span>HIGH PRIORITY</span><span>FORM</span><span>GRAPH</span><span>SYMBOLIC: EST. HIGH</span><span>AUDIO: EST. MEDIUM</span></div><details><summary>Novelty and falsification</summary><p>L-measure and boundary metrics already exist. Novelty depends on typed plan relations. It must decline when sections are reordered, reprises deleted, or hierarchy destroyed while labels remain present.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M02 · CANDIDATE — UNVALIDATED</div><h3>Role-Conditioned Motif Recurrence & Transformation</h3><p>Evaluate whether motifs are introduced, withheld, developed and returned as requested—without rewarding a copied loop.</p><div class="candidate-meta"><span>HIGH NOVELTY POTENTIAL</span><span>MOTIF</span><span>DANCE</span><span>VARIATION</span></div><details><summary>Cross-art inspiration</summary><p>Uses choreographic forms such as theme-and-variation, rondo, canon, accumulation and retrograde. Human tests must distinguish valid transformation, exact copying and identity loss.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M03 · CANDIDATE — UNVALIDATED</div><h3>Perceptual Boundary-Evidence Calibration</h3><p>Fuse novelty in harmony, timbre, register, dynamics, density and instrumentation into a calibrated probability of a perceived boundary.</p><div class="candidate-meta"><span>PERCEPTUAL</span><span>SEGMENTATION</span><span>FILM</span><span>LISTENER CLICKS</span></div><details><summary>Failure risk</summary><p>A model can game boundary metrics with abrupt surface changes. This metric must be paired with motif and relation diagnostics rather than treated as proof of form.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M04 · CANDIDATE — UNVALIDATED</div><h3>Planned Contrast–Cohesion Margin</h3><p>Reward requested recurrence pairs being more related than requested contrast pairs, separately for melody, harmony, rhythm, timbre and instrumentation.</p><div class="candidate-meta"><span>HIGH PRIORITY</span><span>SSM</span><span>RELATIONS</span><span>EST. HIGH FEASIBILITY</span></div><details><summary>Novelty and falsification</summary><p>Close to metric learning and SSM-template loss. It earns value only if typed relations and feature channels expose failures that binary same/different metrics miss.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M05 · ADAPTATION — UNVALIDATED FOR THIS TASK</div><h3>Boundary Bridging & Enjambment Index</h3><p>Separate surface discontinuity from cross-boundary continuity to distinguish a hard cut, seamless transition and “large change with a bridge.”</p><div class="candidate-meta"><span>POETRY</span><span>FILM EDITING</span><span>NARRATIVE</span></div><details><summary>Construct test</summary><p>Listeners must independently rate abruptness and continuity. If they collapse into one dimension, the enjambment analogy adds nothing.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M06 · ADAPTATION — UNVALIDATED FOR THIS TASK</div><h3>Pacing Envelope Concordance</h3><p>Compare a requested pacing arc with onset, harmony, timbre, boundary, loudness and texture-change trajectories.</p><div class="candidate-meta"><span>IMPLEMENTATION CANDIDATE</span><span>FILM PACING</span><span>DTW</span><span>EST. HIGH FEASIBILITY</span></div><details><summary>Confound test</summary><p>Tempo, note density, harmonic rate and timbral activity must be manipulated independently. A loudness detector wearing a lab coat is still a loudness detector.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M07 · CANDIDATE — UNVALIDATED</div><h3>Tension-Arc Adherence & Resolution Debt</h3><p>Score requested buildup, climax location, relaxation and unresolved endpoint debt across multiple tension channels.</p><div class="candidate-meta"><span>MEDIUM RISK</span><span>TENSION</span><span>COGNITION</span><span>TONAL FIRST</span></div><details><summary>Scope warning</summary><p>Tonal strain is not universal tension. Initial validation should be tonal and symbolic; loudness, density and harmony must remain separable.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M08 · CANDIDATE — UNVALIDATED</div><h3>Expectation-Regime Schedule Divergence</h3><p>Compare each section’s uncertainty and realized surprise with its requested role: stable, developmental, surprising or return-like.</p><div class="candidate-meta"><span>INFORMATION DYNAMICS</span><span>ENTROPY</span><span>SURPRISAL</span><span>MEMORY</span></div><details><summary>Distinctive test</summary><p>A thematic return should become more predictable when within-piece memory is enabled. Average perplexity alone cannot distinguish purposeful return from generic cliché.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M09 · CANDIDATE — UNVALIDATED</div><h3>Counterfactual Localized Plan Responsiveness</h3><p>Change one instruction while holding seed and unrelated constraints fixed; measure target effect, direction, leakage and boundary spillover.</p><div class="candidate-meta"><span>HIGH PRIORITY</span><span>CAUSAL CONTRAST</span><span>GAMES/AGENCY</span><span>MODEL-LEVEL</span></div><details><summary>Why it matters</summary><p>Single outputs cannot show that the instruction caused compliance. Meaningful control requires the requested region to change more—and more correctly—than unrelated regions.</p></details></article>
+      <article class="candidate-card"><div class="candidate-id">M10 · SPECULATIVE — RESEARCH ONLY</div><h3>Setup–Payoff Connectivity</h3><p>Build a directed graph from introduced motifs, unresolved processes or timbres to later transformations and resolutions.</p><div class="candidate-meta"><span>NARRATIVE</span><span>HUMAN-FIRST</span></div><details><summary>Stop condition</summary><p>“Causal” is only a metaphor until matched edits removing only the setup measurably weaken listener comprehension or satisfaction of the preserved payoff.</p></details></article>
+    </div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Implementation queue</h2>
+    <div class="roadmap"><article class="roadmap-step"><h3>HPGA + PCCM</h3><p>Start with section order, hierarchy, recurrence and contrast. These are directly relevant and technically tractable.</p></article><article class="roadmap-step"><h3>CLPR</h3><p>Build minimal prompt-pair interventions to determine whether controls are causally responsive and localized.</p></article><article class="roadmap-step"><h3>PBEC + RMRT</h3><p>Add listener-calibrated boundaries and symbolic motif-role evaluation.</p></article><article class="roadmap-step"><h3>PEC + TAARD + ERSD</h3><p>Introduce pacing, tension and expectation only after representations and target constructs are stable.</p></article></div>
+  </section>
+
+  <section class="agenda-section citation-list">
+    <h2>Cross-domain inspiration map</h2>
+    <div class="source-strip"><a href="https://cinemetrics.uchicago.edu/article/616e7ecc-7915-4768-b84d-7dec79aa77c2" target="_blank" rel="noopener">Film → pacing curves</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9684412/" target="_blank" rel="noopener">Film → cut type & perceived time</a><a href="https://dh2017.adho.org/abstracts/485/485.pdf" target="_blank" rel="noopener">Poetry → boundary-crossing dependency</a><a href="https://aclanthology.org/J08-1001.pdf" target="_blank" rel="noopener">Narrative → local persistence</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11305923/" target="_blank" rel="noopener">Narrative → setup/payoff graphs</a><a href="https://www.danceedlab.com/wp-content/uploads/2021/05/LMA-Series-Horizontal.pdf" target="_blank" rel="noopener">Dance → typed transformations</a><a href="https://access.archive-ouverte.unige.ch/access/metadata/d6a5eec8-adfb-4d4f-b399-031ac0cbd3b9/download" target="_blank" rel="noopener">Games → consequential agency</a><a href="https://www.mdpi.com/2071-1050/13/6/3394" target="_blank" rel="noopener">Architecture → future intelligibility metric</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3485801/" target="_blank" rel="noopener">Visual art → negative lesson: balance ≠ preference</a></div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Questions requiring eventual decisions</h2>
+    <ol class="agenda-list info-block"><li>Should the first benchmark use symbolic music, native generated audio, or parallel symbolic/rendered tracks?</li><li>Which genres and formal vocabularies define the initial scope?</li><li>What minimum duration should count as long-form?</li><li>Will source stems be available for instrument-entry ground truth?</li><li>Can the selected generators expose deterministic or approximately matched seeds?</li><li>Which listener groups are realistically available?</li></ol>
+  </section>
+</div>
+
+<!-- TAB 8: Refined Research Agenda -->
+<div class="tab-panel" id="tab-agenda" role="tabpanel" aria-labelledby="tabbtn-agenda" hidden>
   <section class="agenda-hero">
     <div class="agenda-kicker">Refined research agenda · July 2026</div>
     <h2>Long-form structure × music instruction following</h2>
@@ -505,7 +561,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
 <footer>
   <p>Music Generation & Orchestration Research Tracker · Updated 2026-07-16 · Relevance verified July 2026</p>
-  <p>14 papers · Curated for undergrad-recommended directions · 6 added (CLAP, MusicLDM, LP-MusicCaps, FIGARO, Benchmark, SongDescriber) · 13/14 open source</p>
+  <p>14 papers · 10 evolving metric candidates · Cross-domain inspiration from film, narrative, poetry, dance, visual art, architecture, and games</p>
 </footer>
 
 <script>
@@ -610,11 +666,16 @@ function filterPapers() {
   renderPapers(filtered);
 }
 
-function switchTab(name) {
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('nav.tabs button').forEach(b => b.classList.remove('active'));
-  document.getElementById('tab-' + name).classList.add('active');
-  event.target.classList.add('active');
+function switchTab(name, tab) {
+  document.querySelectorAll('.tab-panel').forEach(p => { p.classList.remove('active'); p.hidden = true; });
+  document.querySelectorAll('nav.tabs [role="tab"]').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); b.tabIndex = -1; });
+  const panel = document.getElementById('tab-' + name);
+  const button = tab || document.getElementById('tabbtn-' + name);
+  panel.hidden = false;
+  panel.classList.add('active');
+  button.classList.add('active');
+  button.setAttribute('aria-selected','true');
+  button.tabIndex = 0;
   if (name === 'references') renderRefs();
 }
 
@@ -622,6 +683,15 @@ function switchTab(name) {
 document.addEventListener('DOMContentLoaded', () => {
   renderPapers(papers);
   renderRefs();
+  const tabs = [...document.querySelectorAll('nav.tabs [role="tab"]')];
+  tabs.forEach((tab, index) => tab.addEventListener('keydown', e => {
+    let next = null;
+    if (e.key === 'ArrowRight') next = tabs[(index + 1) % tabs.length];
+    if (e.key === 'ArrowLeft') next = tabs[(index - 1 + tabs.length) % tabs.length];
+    if (e.key === 'Home') next = tabs[0];
+    if (e.key === 'End') next = tabs[tabs.length - 1];
+    if (next) { e.preventDefault(); next.focus(); next.click(); }
+  }));
 });
 </script>
 </body>

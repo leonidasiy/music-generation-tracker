@@ -41,3 +41,11 @@
 - Added a dedicated Research Plan tab to the website with linked primary sources
 - Validated HTML structure, JavaScript interaction, responsive layout, and all eight prior-work links
 - Deployed the update to GitHub Pages and verified the live Research Plan tab
+
+## 2026-07-16 — Metric Lab Initial Exploration
+- Surveyed music structure analysis, motif discovery, expectation, tension, controllability, psychometrics, causal evaluation, and dynamical-systems methods
+- Consulted cross-domain work from film, narrative, poetry, dance, visual composition, architecture, and interactive narrative
+- Opened `METRICS.md` as a living registry with ten candidate diagnostics, novelty threats, feasibility, failure cases, and falsification tests
+- Added fifteen foundational and cross-domain sources to `REFERENCES.md`
+- Added an evolving Metric Lab tab to the website with implementation priorities and open decisions
+- Applied an independent review: normalized epistemic status labels, tightened cross-domain mappings, added direct film/poetry/game sources, and improved tab/search accessibility

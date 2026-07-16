@@ -29,3 +29,11 @@
 - Music understanding + generation joint models
 - Efficiency improvements (latency, memory, real-time generation)
 - Evaluation metrics beyond FAD (Fréchet Audio Distance)
+
+## Metric Exploration Principles — 2026-07-16
+- Treat the benchmark as a diagnostic scorecard, not a universal scalar.
+- Separate generator error, analysis/recognizer error, and instruction ambiguity.
+- Evaluate recurrence by requested role and transformation, not repetition quantity alone.
+- Use counterfactual prompt pairs to test localized responsiveness rather than incidental compliance.
+- Borrow relations—not superficial metaphors—from other arts: film pacing, narrative setup/payoff, poetic enjambment, choreographic transformation, and architectural local/global intelligibility.
+- Validate every candidate with controlled corruptions, held-out generators, human construct ratings, and simple confound baselines.

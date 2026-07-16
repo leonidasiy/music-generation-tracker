@@ -38,3 +38,12 @@
 - [x] Add the refined plan to the website as a dedicated Research Plan tab
 - [x] Run browser and content validation on the updated site
 - [x] Deploy and verify the updated GitHub Pages site
+
+## Metric Exploration — Initial Stage
+- [x] Survey music-generation, MIR, cognition, and human-evaluation metrics
+- [x] Survey temporal evaluation methods from film, narrative, dance, and visual art
+- [x] Survey information-theoretic, graph, and dynamical-systems measures of form
+- [x] Maintain a candidate metric registry with novelty and feasibility status
+- [x] Add an evolving Metric Lab section to the website
+- [ ] Validate every website research increment before deployment
+- [x] Record open questions that require Leonidas's clarification

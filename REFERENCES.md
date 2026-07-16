@@ -215,3 +215,31 @@
 | Symbolic generation papers | 4 |
 | Multi-track / orchestration | 3 |
 | Survey papers | 1 |
+
+---
+
+## Metric Exploration Sources — Added 2026-07-16
+
+### Music structure, cognition, and control
+- [McFee et al. — Evaluating Hierarchical Structure in Music Annotations](https://pmc.ncbi.nlm.nih.gov/articles/PMC5541043/) — L-measure and multi-annotator hierarchy disagreement. [Academic Study]
+- [Foote — Automatic Audio Segmentation Using a Measure of Audio Novelty](https://ccrma.stanford.edu/workshops/mir2009/references/Foote_00.pdf) — self-similarity and novelty-based boundaries. [Academic Study]
+- [Pearce & Wiggins — Auditory Expectation: The Information Dynamics of Music Perception and Cognition](https://onlinelibrary.wiley.com/doi/10.1111/j.1756-8765.2012.01214.x) — entropy, surprisal, and IDyOM. [Academic Study]
+- [Farbood & Upham — Listener Judgments of Musical Tension](https://pmc.ncbi.nlm.nih.gov/articles/PMC3874841/) — continuous tension ratings and feature-specific time windows. [Academic Study]
+- [SymPAC](https://arxiv.org/abs/2409.03055) — prompted and finite-state constrained symbolic generation. [Academic Study]
+
+### Cross-art-domain inspirations
+- [Kovarski et al. — Movie Editing Influences Spectators’ Time Perception](https://pmc.ncbi.nlm.nih.gov/articles/PMC9684412/) — continuity/discontinuity editing and perceived pacing. [Academic Study]
+- [Barzilay & Lapata — Modeling Local Coherence: An Entity-Based Approach](https://aclanthology.org/J08-1001.pdf) — persistence patterns across narrative units. [Academic Study]
+- [Chen & Bornstein — The Causal Structure and Computational Value of Narratives](https://pmc.ncbi.nlm.nih.gov/articles/PMC11305923/) — setup/payoff and causal-event networks. [Academic Review]
+- [McManus et al. — Arnheim’s Gestalt Theory of Visual Balance](https://pmc.ncbi.nlm.nih.gov/articles/PMC3485801/) — contradictory evidence against simplistic visual balance metrics. [Academic Study]
+- [Yamu et al. — Space Syntax](https://www.mdpi.com/2071-1050/13/6/3394) — local/global integration and structural intelligibility. [Academic Review]
+- [Laban Movement Analysis chart](https://www.danceedlab.com/wp-content/uploads/2021/05/LMA-Series-Horizontal.pdf) — choreographic transformation and recurrence vocabulary. [Educational/Practice Source]
+- [Ruiz Fabo et al. — Automatic Enjambment Detection](https://dh2017.adho.org/abstracts/485/485.pdf) — formal boundaries crossed by continuing syntactic dependencies. [Academic Study]
+- [Salt — The Metrics in Cinemetrics](https://cinemetrics.uchicago.edu/article/616e7ecc-7915-4768-b84d-7dec79aa77c2) — shot-length and cutting-rate analysis with warnings about spurious trends. [Academic/Practice Analysis]
+- [Szilas & Ilea — Objective Metrics for Interactive Narrative](https://access.archive-ouverte.unige.ch/access/metadata/d6a5eec8-adfb-4d4f-b399-031ac0cbd3b9/download) — choice variability and consequences rather than option count alone. [Academic Study]
+
+### Mathematical and measurement foundations
+- [Peyré, Cuturi & Solomon — Gromov–Wasserstein Averaging](https://proceedings.mlr.press/v48/peyre16.pdf) — relational graph comparison. [Academic Study]
+- [Eckmann, Kamphorst & Ruelle — Recurrence Plots](https://www.ihes.fr/~ruelle/PUBLICATIONS/%5B92%5D.pdf) — dynamical recurrence analysis. [Academic Study]
+- [Brier — Verification of Forecasts Expressed in Terms of Probability](https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml) — proper probabilistic scoring. [Academic Study]
+- [Rubin — Estimating Causal Effects](https://doi.apa.org/doi/10.1037/h0037350) — counterfactual treatment-effect framework. [Academic Study]
