@@ -37,4 +37,4 @@
 - [x] Define proposed metric suite, controlled violations, hypotheses, and go/no-go gates
 - [x] Add the refined plan to the website as a dedicated Research Plan tab
 - [x] Run browser and content validation on the updated site
-- [ ] Deploy and verify the updated GitHub Pages site
+- [x] Deploy and verify the updated GitHub Pages site

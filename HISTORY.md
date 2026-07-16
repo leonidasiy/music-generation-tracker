@@ -39,3 +39,5 @@
 - Narrowed the shared problem to section-level compositional plan adherence
 - Defined a diagnostic metric suite, controlled counterfactual violations, falsifiable hypotheses, and go/no-go gates
 - Added a dedicated Research Plan tab to the website with linked primary sources
+- Validated HTML structure, JavaScript interaction, responsive layout, and all eight prior-work links
+- Deployed the update to GitHub Pages and verified the live Research Plan tab
