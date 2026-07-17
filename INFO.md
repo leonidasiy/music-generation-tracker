@@ -57,17 +57,19 @@
 - Long extracted documents may be summarized by the tool layer; quotations require checking the primary PDF.
 
 ## Current project status — 2026-07-17
-- **Completed:** initial 14-paper collection, metadata review, light-mode tracker, GitHub Pages deployment, refined research agenda, Metric Lab, web-research reliability gate, deterministic dual-representation pilot audit, producer review, and Stage 0 generator/dataset scan.
+- **Completed:** initial 14-paper collection, metadata review, light-mode tracker, GitHub Pages deployment, refined research agenda, Metric Lab, web-research reliability gate, deterministic dual-representation pilot audit, producer review, Stage 0 generator/dataset scan, detailed Stage 0–6 plan, frozen Stage 0 prompts, and tested manifest utilities.
 - **Paper 1 focus:** test whether a minimal temporal-instruction change causes the requested local musical effect while preserving preregistered non-target regions.
 - **Primary outputs:** TES and DA for target response; OTL and BS for collateral effects; PRD only when an intervention changes a structural relation.
 - **Current evidence limit:** the existing deterministic pilot establishes mechanical feasibility and reproducibility only; it does not establish human validity, cross-renderer invariance, or population-level robustness.
-- **Stage 0 decision:** the next run is a mechanical feasibility pilot, not the claim-bearing Paper 1 experiment.
+- **Stage 0 status:** execution has begun. Exact 60- and 90-second register and closed-hi-hat prompt pairs, timing regions, the run-manifest schema, and deterministic validators are frozen; seven tests pass.
 - **Initial musical scope:** instrumental electronic / beat-driven pop in a time-anchored A–B–A′ form; minimum duration 60 seconds, with 75–120 seconds preferred where supported.
 - **Initial interventions:** manipulate B-section register and rhythmic activity separately while holding all other prompt clauses fixed.
 - **Candidate panel:** ACE-Step 1.5 as the reproducible open core and Udio as one commercial external-validity anchor; selection remains conditional on runtime, version, and seed-coupling audits.
+- **ACE-Step source audit:** official revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` is pinned locally. The current environment resolves 124 packages, and the model repository reports 9.39 GiB before dependency/cache overhead.
+- **Current blocker:** the host volume has approximately 23 GiB free. Model weights alone would leave approximately 13.6 GiB, so dependency and model download awaits an explicit local-storage, external-volume, or cloud decision.
 - **Oracle calibration:** use BabySlakh/Slakh2100 for exact MIDI/stem counterfactuals before interpreting generated outputs.
 - **Budget:** $10 Udio + up to $50 cloud contingency + up to $30 listener reserve = $90 provisional total, leaving $10 below the $100 ceiling.
-- **Active next increment:** freeze exact prompt wording, verify ACE-Step locally, audit Udio's current interface and terms, create oracle edits, estimate same-prompt null variability, and then run the small CLPR prompt-pair pilot.
+- **Active next increment:** resolve the ACE-Step storage/execution location, install and run fixed-seed smoke tests, then audit Udio's current interface and terms, create oracle edits, estimate same-prompt null variability, and run the small CLPR prompt-pair pilot.
 
 ## Stage 0 evidence and publication boundary — 2026-07-17
 - Current academic practice supports mixed open/commercial panels when a benchmark seeks real-world or frontier relevance, but commercial systems are not methodologically preferred by default. Reproducible open models should remain the benchmark core.

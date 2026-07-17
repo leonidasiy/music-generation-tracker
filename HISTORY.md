@@ -108,3 +108,15 @@
 - Selected BabySlakh/Slakh2100 for exact MIDI/stem oracle edits and kept instrument-presence compliance outside the universal scorecard unless native tracks are available
 - Established a provisional $90 allocation: $10 Udio, up to $50 cloud contingency, and up to $30 listener micro-study reserve
 - Synchronized TODO, INFO, METRICS, REFERENCES, HISTORY, and the frontend around these decisions
+
+## 2026-07-17 — Stage 0 Execution Began
+- Wrote the detailed Stage 0–6 CLPR research and implementation plan at `docs/plans/2026-07-17-clpr-research-plan.md`, covering mechanical feasibility, calibrated piloting, claim-bearing collection, human validation, robustness, publication, and conditional follow-up work
+- Obtained a fresh producer review and froze clause-minimal 60- and 90-second prompt pairs for separate B-section lead-register and closed-hi-hat activity interventions
+- Created `pilots/clpr_stage0/` with a versioned prompt registry, JSON run-manifest schema, deterministic validation/hashing utilities, ignored raw-run directory, and execution README
+- Used test-first implementation: confirmed the expected missing-module failure, implemented the utilities, then passed seven protocol tests and validated the frozen prompt registry
+- Cloned the official ACE-Step 1.5 source to `~/.cache/clpr-stage0/ACE-Step-1.5` and pinned revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0`; the shallow source tree uses 30 MB
+- Audited current official installation requirements: Python 3.11–3.12, macOS MLX support, approximately 10 GB core-model storage, and automatic first-run model download
+- Ran `uv sync --dry-run --no-install-project`: dependency resolution succeeded and would create a Python 3.12 environment with 124 packages, downloading 90 packages
+- Queried the Hugging Face model API: ACE-Step 1.5 reports 10,079,024,720 bytes (9.39 GiB) of model storage
+- Stopped before dependency/model download because the project volume has approximately 23 GiB free; weights alone would leave approximately 13.6 GiB before dependencies, caches, and generated audio
+- No paid service, API key, credential, model weight, or commercial generation has been used

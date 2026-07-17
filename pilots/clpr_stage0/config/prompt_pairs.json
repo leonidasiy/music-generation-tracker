@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "scope": "instrumental electronic / beat-driven pop",
+  "global_invariants": [
+    "120 BPM",
+    "4/4 meter",
+    "stable four-chord harmonic loop",
+    "clearly identifiable monophonic synth-lead hook",
+    "electronic kick, snare or clap, closed hi-hat, bass, and pads",
+    "no vocals",
+    "no tempo, meter, or key changes",
+    "no risers, impacts, hard mutes, dropouts, patch swaps, or mastering changes at section boundaries"
+  ],
+  "durations": {
+    "60": {
+      "duration_sec": 60,
+      "form_timing": "A from 0:00 to 0:20, B from 0:20 to 0:40, and A-prime from 0:40 to 1:00",
+      "regions": [
+        {"name": "strict_a", "class": "strict_preservation", "start_sec": 0, "end_sec": 18},
+        {"name": "halo_ab", "class": "adaptation_allowed", "start_sec": 18, "end_sec": 22},
+        {"name": "target_b", "class": "target", "start_sec": 22, "end_sec": 38},
+        {"name": "halo_ba", "class": "adaptation_allowed", "start_sec": 38, "end_sec": 42},
+        {"name": "strict_aprime", "class": "strict_preservation", "start_sec": 42, "end_sec": 60}
+      ]
+    },
+    "90": {
+      "duration_sec": 90,
+      "form_timing": "A from 0:00 to 0:30, B from 0:30 to 1:00, and A-prime from 1:00 to 1:30",
+      "regions": [
+        {"name": "strict_a", "class": "strict_preservation", "start_sec": 0, "end_sec": 28},
+        {"name": "halo_ab", "class": "adaptation_allowed", "start_sec": 28, "end_sec": 32},
+        {"name": "target_b", "class": "target", "start_sec": 32, "end_sec": 58},
+        {"name": "halo_ba", "class": "adaptation_allowed", "start_sec": 58, "end_sec": 62},
+        {"name": "strict_aprime", "class": "strict_preservation", "start_sec": 62, "end_sec": 90}
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "id": "register_b",
+      "target_feature": "lead_register_semitones",
+      "changed_field": "target_clause",
+      "template": "Create an exactly {DURATION}-second instrumental electronic / beat-driven pop track at 120 BPM in 4/4; use a stable four-chord loop, a clearly identifiable monophonic synth-lead hook, electronic kick, snare or clap, closed hi-hat, bass, and pads; follow {FORM_TIMING}; A establishes the hook and groove, B keeps the same harmony, tempo, meter, instrumentation, sound palette, arrangement density, dynamics, and mix, and A-prime returns to a lightly varied version of A in A's original register; keep the lead hook's pitch-class sequence, rhythm, note durations, phrase count, and synthesizer patch unchanged across sections; {TARGET_CLAUSE}; make the section transitions clean, with no risers, impacts, hard mutes, dropouts, key changes, patch swaps, or mastering changes; no vocals.",
+      "clauses": {
+        "control": "During the B section only, play the synth-lead hook in the same middle register used in A",
+        "intervention": "During the B section only, play the synth-lead hook exactly one octave above the register used in A"
+      },
+      "b_core_invariants": [
+        "lead rhythm and note durations",
+        "lead pitch-class sequence and phrase count",
+        "lead synthesizer patch",
+        "harmony and chord voicing",
+        "bass and drum patterns",
+        "arrangement density, dynamics, and mix"
+      ]
+    },
+    {
+      "id": "closed_hat_activity_b",
+      "target_feature": "closed_hat_onsets_per_beat",
+      "changed_field": "target_clause",
+      "template": "Create an exactly {DURATION}-second instrumental electronic / beat-driven pop track at 120 BPM in 4/4; use a stable four-chord loop, a clearly identifiable monophonic synth-lead hook, electronic kick, snare or clap, closed hi-hat, bass, and pads; follow {FORM_TIMING}; A establishes the hook and groove with steady eighth-note closed hi-hats, B keeps the same harmony, tempo, meter, instrumentation, sound palette, lead hook, bass pattern, kick pattern, snare pattern, dynamics, and mix, and A-prime returns to a lightly varied version of A with steady eighth-note closed hi-hats; keep the closed-hi-hat sound, accent pattern, stereo position, and perceived section-level hat loudness unchanged; {TARGET_CLAUSE}; make the section transitions clean, with no drum fills, open-hi-hat substitutions, risers, impacts, hard mutes, dropouts, tempo changes, key changes, patch swaps, or mastering changes; no vocals.",
+      "clauses": {
+        "control": "During the B section only, the closed hi-hat plays steady eighth notes",
+        "intervention": "During the B section only, the closed hi-hat plays steady sixteenth notes"
+      },
+      "b_core_invariants": [
+        "lead melody, rhythm, and register",
+        "harmony and bass",
+        "kick and snare patterns",
+        "closed-hi-hat sample, accent topology, and panning",
+        "tempo, arrangement, dynamics, and mix"
+      ]
+    }
+  ]
+}

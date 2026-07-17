@@ -1,0 +1,24 @@
+# Raw Stage 0 outputs, manifests, and commercial downloads
+runs/*
+!runs/.gitkeep
+
+# External source trees and model artifacts
+vendor/
+models/
+*.safetensors
+*.ckpt
+*.pt
+*.bin
+
+# Audio outputs
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.ogg
+
+# Local environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+.cache/

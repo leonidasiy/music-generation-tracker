@@ -253,6 +253,19 @@ Treat seeds as paired only when the generator interface fixes the same underlyin
 - **Native-stem policy:** post-separated stems are estimates, not source ground truth. Instrument-presence compliance remains non-core unless the evaluated generator emits genuinely native tracks.
 - **Budget:** provisional ceiling $90: $10 Udio, up to $50 cloud contingency, and up to $30 listener micro-study reserve. Do not spend the listener reserve until the mechanical gate passes.
 
+### Frozen Stage 0 prompt protocol
+
+The versioned source of truth is `pilots/clpr_stage0/config/prompt_pairs.json`; deterministic validation requires every rendered pair to differ only at one `{TARGET_CLAUSE}` placeholder.
+
+- **60-second map:** A 0–20 s, B 20–40 s, A′ 40–60 s; strict A 0–18 s, halos 18–22 s and 38–42 s, target core 22–38 s, strict A′ 42–60 s.
+- **90-second map:** A 0–30 s, B 30–60 s, A′ 60–90 s; strict A 0–28 s, halos 28–32 s and 58–62 s, target core 32–58 s, strict A′ 62–90 s.
+- **Register control:** `During the B section only, play the synth-lead hook in the same middle register used in A`.
+- **Register intervention:** `During the B section only, play the synth-lead hook exactly one octave above the register used in A`.
+- **Hat-activity control:** `During the B section only, the closed hi-hat plays steady eighth notes`.
+- **Hat-activity intervention:** `During the B section only, the closed hi-hat plays steady sixteenth notes`.
+- **Pair invariants:** duration, seed candidate, generation settings, prompt stem, form, harmony, instrumentation, sound palette, dynamics, and mix are fixed. Register pairs additionally protect lead rhythm/patch and all accompaniment; hat pairs additionally protect tempo, kick, snare, bass, lead, hat sound, accents, and panning.
+- **Current implementation evidence:** the prompt registry, run-manifest schema, region ordering, one-clause constraint, required metadata, budget ceiling, and SHA-256 utility pass seven deterministic tests. This validates protocol mechanics only.
+
 ### Main empirical claim reserved for Paper 1
 
 > Minimal localized changes to long-form music instructions produce measurable target-section responses and collateral-change patterns that CLPR distinguishes from same-prompt stochastic variability; these diagnostics explain human judgments of localized instruction compliance better than global text–audio alignment or target-only segment similarity.

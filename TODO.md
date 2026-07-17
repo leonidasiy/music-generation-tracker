@@ -81,9 +81,14 @@
 - [x] Update METRICS.md, INFO.md, REFERENCES.md, HISTORY.md, and the Metric Lab website
 
 ## Next Experimental Increment
-- [ ] Freeze exact prompt wording for separate B-section register and rhythmic-activity interventions in instrumental electronic / beat-driven pop
+- [x] Freeze exact prompt wording for separate B-section register and rhythmic-activity interventions in instrumental electronic / beat-driven pop
+- [x] Write the detailed Stage 0–6 research and implementation plan
+- [x] Create the Stage 0 prompt registry, run-manifest schema, deterministic validators, and seven passing tests
 - [x] Identify candidate generators with repeatable randomness and sufficient duration: ACE-Step 1.5 plus Udio
+- [x] Pin ACE-Step source revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` and complete the no-download dependency audit
+- [ ] Resolve the ACE-Step storage location: the 9.39 GiB model plus 124 packages is unsafe to install by default on a volume with approximately 23 GiB free
 - [ ] Run an ACE-Step 1.5 installation and fixed-seed smoke test on the M5 / 24 GB Mac
+- [ ] Decide whether Udio must use native 60/90-second outputs or a preregistered supported-duration analysis window
 - [ ] Provision one month of Udio Standard and record the exact model/version, manual-mode settings, seed behavior, and terms
 - [ ] Build BabySlakh oracle edits for target effect, leakage, boundary spillover, and production-proxy controls
 - [ ] Build same-prompt replicate baselines for TES/DA/OTL/BS
