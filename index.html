@@ -221,7 +221,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 <!-- TAB 2: My Progress -->
 <div class="tab-panel" id="tab-progress" role="tabpanel" aria-labelledby="tabbtn-progress" hidden>
   <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">Research Progress Tracker</h2>
-  <div class="callout"><strong>Current position:</strong> Local ACE-Step execution is active under a conservative resource gate. The pinned environment and checkpoints are installed outside the repository; two 10-second seed-42 runs were byte-identical. The Mac currently has approximately 24 GiB free, so work is restricted to sequential batch-one tests with explicit disk and memory monitoring. Stage 0 remains mechanical feasibility evidence—not listener or construct validation.</div>
+  <div class="callout"><strong>Current position:</strong> The local ACE-Step smoke gate is partially complete. Two seed-42 runs were byte-identical, while seed 43 produced a different valid artifact. The seed-43 run increased swap from about 2.2 to 14.2 GiB and reduced free disk from 24 to 12 GiB, triggering the 15 GiB safety stop. Long-form 60/90-second generation is therefore deferred to a 48/80 GB institutional or cloud GPU. Stage 0 remains mechanical feasibility evidence—not listener or construct validation.</div>
   <div class="progress-section">
     <h3>Completed foundation</h3>
     <div class="phase-card">
@@ -249,7 +249,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
     <h3>Active experimental increment</h3>
     <div class="phase-card">
       <div class="check active">●</div>
-      <div><h4>Characterize long-form local ACE-Step feasibility</h4><p>The installation and deterministic 10-second smoke test passed. Next: verify a different seed, then attempt one monitored 60-second generation without parallel jobs or unnecessary planning-LM initialization.</p></div>
+      <div><h4>Move long-form ACE-Step feasibility to a suitable GPU host</h4><p>Same-seed repeatability and different-seed sensitivity passed locally, but a 10-second run breached the disk/swap safety gate. Await TACC/HPC4 confirmation or use the approved cloud contingency before 60/90-second generation.</p></div>
     </div>
     <div class="phase-card">
       <div class="check pending">○</div>

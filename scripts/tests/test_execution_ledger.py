@@ -54,6 +54,24 @@ class ExecutionLedgerTests(unittest.TestCase):
         self.assertNotIn("leak2", text)
         self.assertIn("[REDACTED]", text)
 
+    def test_ledger_does_not_publish_a_stale_hash_of_itself(self):
+        append_entry(
+            self.ledger,
+            phase="test",
+            title="Self reference",
+            status="completed",
+            cwd=self.root,
+            command="update ledger",
+            exit_code=0,
+            output_summary="ok",
+            outputs=[self.ledger],
+            timestamp="2026-07-17T09:32:00Z",
+        )
+        output = json.loads(self.ledger.read_text())["entries"][0]["outputs"][0]
+        self.assertEqual(output["kind"], "ledger-self-reference")
+        self.assertNotIn("sha256", output)
+        self.assertNotIn("size_bytes", output)
+
     def test_run_logged_command_records_exit_and_created_output(self):
         output = self.root / "artifact.txt"
         result = run_logged_command(

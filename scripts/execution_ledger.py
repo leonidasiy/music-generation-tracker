@@ -49,10 +49,17 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
-def describe_outputs(paths: Iterable[Path]) -> list[dict[str, object]]:
+def describe_outputs(
+    paths: Iterable[Path], ledger_path: Path | None = None
+) -> list[dict[str, object]]:
     records: list[dict[str, object]] = []
     for raw_path in paths:
         path = raw_path.expanduser().resolve()
+        if ledger_path is not None and path == ledger_path.expanduser().resolve():
+            records.append(
+                {"path": str(path), "exists": path.exists(), "kind": "ledger-self-reference"}
+            )
+            continue
         if not path.exists():
             records.append({"path": str(path), "exists": False})
             continue
@@ -93,7 +100,9 @@ def append_entry(
     compact_time = timestamp.replace("-", "").replace(":", "")
     entry_id = f"{compact_time}-{sequence:03d}"
     normalized_outputs = (
-        describe_outputs(outputs) if outputs and isinstance(outputs[0], Path) else outputs
+        describe_outputs(outputs, ledger_path)
+        if outputs and isinstance(outputs[0], Path)
+        else outputs
     )
     entry = {
         "id": entry_id,

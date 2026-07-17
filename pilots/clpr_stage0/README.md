@@ -33,14 +33,15 @@ Stage 0 tests whether the CLPR protocol can be executed and audited. It does **n
 - Seven Stage 0 protocol tests pass
 - ACE-Step source and environment installed under `/Users/lirenzhang/.cache/clpr-stage0/ACE-Step-1.5/` (approximately 11 GB)
 - Two 10-second seed-42 runs produced byte-identical FLAC files with SHA-256 `df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09`
+- One 10-second seed-43 run produced a distinct FLAC with SHA-256 `c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5`, confirming that the pinned configuration is not seed-insensitive
 - The successful local path used MLX, batch size one, eight ODE steps, direct prompting, and no planning-LM initialization
 - No paid subscription or commercial credential has been used
 
 ## Active local resource gate
 
-The model and environment are installed, and the host currently has approximately 24 GiB free. A prior inference session temporarily reduced free space to roughly 328 MiB through macOS swap pressure. Local work is therefore limited to sequential batch-one execution with the planning LM disabled, no parallel generation, and resource checks before and after every run.
+The model and environment are installed, and the host had approximately 24 GiB free before the seed-43 diagnostic. That single 10-second generation increased reported swap usage from approximately 2.2 GiB to 14.2 GiB and reduced free disk to 12 GiB. Stopping ACE-Step restored free disk to 21 GiB. An earlier inference session had temporarily reduced free space to roughly 328 MiB.
 
-Stop local inference if free disk falls below 15 GiB, the server becomes unstable, or swap growth makes the system unsafe. No files will be deleted or moved without separate explicit permission.
+The 15 GiB stop threshold was therefore triggered. Do not attempt the 60/90-second gate locally under the current storage and memory headroom; resume long-form testing on a 48/80 GB institutional or cloud GPU. No files will be deleted or moved without separate explicit permission.
 
 ## Test commands
 

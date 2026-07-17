@@ -130,3 +130,8 @@
 - Rechecked the Mac after user cleanup: approximately 24 GiB is free and system-wide memory free was reported at 86% while ACE-Step was stopped
 - Added `scripts/execution_ledger.py`, test-first coverage, and `execution-log.json` to record redacted commands, working directories, exit codes, summaries, and declared artifacts
 - Added an Execution Log tab to the website so deployed checkpoints can be monitored directly; raw generated audio remains excluded from Git
+- Ran a third 10-second diagnostic with seed 43; it produced a distinct 48 kHz stereo FLAC with SHA-256 `c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5`
+- Confirmed the different-seed behavior expected by the Stage 0 diagnostic: seed 42 repeats were identical, while seed 43 differed
+- Observed swap growth from approximately 2.2 GiB to 14.2 GiB and free-disk reduction from 24 GiB to 12 GiB during the seed-43 run
+- Enforced the preregistered 15 GiB stop threshold, terminated the ACE-Step server, verified that port 8001 was closed, and observed free disk recover to 21 GiB
+- Deferred 60/90-second generation to a 48/80 GB institutional or cloud GPU rather than risking the Mac system volume

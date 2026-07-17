@@ -89,9 +89,10 @@
 - [x] Install ACE-Step 1.5 under `~/.cache/clpr-stage0/`, including the pinned checkpoint and 124-package environment
 - [x] Run two fixed-seed ACE-Step smoke tests on the M5 / 24 GB Mac and verify byte-identical seed-42 outputs
 - [x] Add `execution-log.json`, a redacting command wrapper, and an Execution Log website tab for command/artifact monitoring
-- [ ] Verify a different seed produces a different artifact under the same pinned local configuration
-- [ ] Run one monitored 60-second batch-one generation; stop if free disk falls below 15 GiB or resource pressure becomes unsafe
-- [ ] Run a fixed-seed 60-second duplicate only if the first long-form run passes the resource gate
+- [x] Verify a different seed produces a different artifact under the same pinned local configuration: seed 43 produced SHA-256 `c2933382…`, distinct from seed 42
+- [x] Enforce the local safety gate: stop ACE-Step when the 10-second seed-43 run reduced free disk from 24 GiB to 12 GiB through swap growth
+- [ ] Do not attempt 60-second local generation under the current 24 GiB headroom; resume this gate on a 48/80 GB institutional or cloud GPU
+- [ ] Run a fixed-seed 60-second duplicate only after long-form execution passes on the selected GPU host
 - [ ] Decide whether Udio must use native 60/90-second outputs or a preregistered supported-duration analysis window
 - [ ] Provision one month of Udio Standard and record the exact model/version, manual-mode settings, seed behavior, and terms
 - [ ] Build BabySlakh oracle edits for target effect, leakage, boundary spillover, and production-proxy controls

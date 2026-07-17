@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-17T09:33:38Z",
+  "updated_at": "2026-07-17T09:43:56Z",
   "entries": [
     {
       "id": "20260717T092905Z-001",
@@ -139,9 +139,7 @@
         {
           "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/execution-log.json",
           "exists": true,
-          "kind": "file",
-          "size_bytes": 9765,
-          "sha256": "3032b52163dd4f5e8dd3f7dca52e454a9bfa87b8527dc6d94a74872b4f79dfa8"
+          "kind": "ledger-self-reference"
         },
         {
           "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
@@ -151,7 +149,134 @@
           "sha256": "13131d25b5f46b2183182fedd39eda7196702a7f12f22409a3781c086b19216b"
         }
       ]
+    },
+    {
+      "id": "20260717T094018Z-008",
+      "timestamp": "2026-07-17T09:40:18Z",
+      "phase": "stage0",
+      "title": "Run different-seed 10-second ACE-Step diagnostic",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "printf 'BEFORE RESOURCE SNAPSHOT\\n'; df -h /; sysctl vm.swapusage; python3 pilots/clpr_stage0/scripts/run_ace_smoke.py --duration 10 --seed 43 --output pilots/clpr_stage0/runs/ace_smoke_seed43.flac --timeout 480; printf '\\nAFTER RESOURCE SNAPSHOT\\n'; df -h /; sysctl vm.swapusage",
+      "exit_code": 0,
+      "output_summary": "BEFORE RESOURCE SNAPSHOT\nFilesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    24Gi    34%    459k  256M    0%   /\nvm.swapusage: total = 3072.00M  used = 2202.81M  free = 869.19M  (encrypted)\n{\n  \"completed_at_unix\": 1784281218.3269088,\n  \"output_path\": \"/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/runs/ace_smoke_seed43.flac\",\n  \"output_sha256\": \"c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5\",\n  \"output_size_bytes\": 1663663,\n  \"request\": {\n    \"audio_duration\": 10.0,\n    \"audio_format\": \"flac\",\n    \"batch_size\": 1,\n    \"bpm\": 120,\n    \"infer_method\": \"ode\",\n    \"inference_steps\": 8,\n    \"key_scale\": \"C Major\",\n    \"lyrics\": \"\",\n    \"model\": \"acestep-v15-turbo\",\n    \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n    \"sample_mode\": false,\n    \"seed\": 43,\n    \"thinking\": false,\n    \"time_signature\": \"4\",\n    \"use_cot_caption\": false,\n    \"use_cot_language\": false,\n    \"use_cot_metas\": false,\n    \"use_format\": false,\n    \"use_random_seed\": false\n  },\n  \"server_result\": {\n    \"create_time\": 1784281113,\n    \"dit_model\": \"acestep-v15-turbo\",\n    \"env\": \"development\",\n    \"file\": \"/v1/audio?path=%2FUsers%2Flirenzhang%2F.cache%2Fclpr-stage0%2FACE-Step-1.5%2F.cache%2Facestep%2Ftmp%2Fapi_audio%2Fb38dc8e5-0f7c-f913-5a66-9d4de339edf6.flac\",\n    \"generation_info\": \"**\\ud83c\\udfb5 Total generation time (1 song): 39.20s**\\n- 39.20s per song\\n- DiT phase (1 song): 39.20s\",\n    \"lm_model\": \"acestep-5Hz-lm-0.6B\",\n    \"lyrics\": \"\",\n    \"metas\": {\n      \"bpm\": 120,\n      \"duration\": 10.0,\n      \"genres\": \"N/A\",\n      \"keyscale\": \"C Major\",\n      \"lyrics\": \"\",\n      \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n      \"timesignature\": \"4\"\n    },\n    \"progress\": 1.0,\n    \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n    \"seed_value\": \"43\",\n    \"stage\": \"succeeded\",\n    \"status\": 1,\n    \"wave\": \"\"\n  },\n  \"submitted_at_unix\": 1784281113.214832,\n  \"task_id\": \"36309de5-3374-42d8-8dab-abd0c64f1c81\"\n}\n\nAFTER RESOURCE SNAPSHOT\nFilesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    12Gi    51%    459k  130M    0%   /\nvm.swapusage: total = 15360.00M  used = 14195.94M  free = 1164.06M  (encrypted)",
+      "outputs": [
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/runs/ace_smoke_seed43.flac",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1663663,
+          "sha256": "c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/runs/ace_smoke_seed43.flac.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 2073,
+          "sha256": "ccd49af2f62a7ed9e2e120ea2ef16e82b04dc33cf2043cd06db81e058f2a19e0"
+        }
+      ]
+    },
+    {
+      "id": "20260717T094042Z-009",
+      "timestamp": "2026-07-17T09:40:42Z",
+      "phase": "safety",
+      "title": "Stop ACE-Step after resource threshold breach",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "df -h /; sysctl vm.swapusage; lsof -nP -iTCP:8001 -sTCP:LISTEN || true",
+      "exit_code": 0,
+      "output_summary": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    21Gi    38%    459k  224M    0%   /\nvm.swapusage: total = 6144.00M  used = 4627.12M  free = 1516.88M  (encrypted)",
+      "outputs": []
+    },
+    {
+      "id": "20260717T094052Z-010",
+      "timestamp": "2026-07-17T09:40:52Z",
+      "phase": "stage0",
+      "title": "Validate different-seed artifact and media properties",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "shasum -a 256 pilots/clpr_stage0/runs/ace_smoke_seed42_a.flac pilots/clpr_stage0/runs/ace_smoke_seed43.flac; ffprobe -v error -show_entries format=duration,size:stream=codec_name,sample_rate,channels -of json pilots/clpr_stage0/runs/ace_smoke_seed43.flac; python3 - <<'PY'\nimport json\nfrom pathlib import Path\na=json.loads(Path('pilots/clpr_stage0/runs/ace_smoke_seed42_a.flac.json').read_text())\nb=json.loads(Path('pilots/clpr_stage0/runs/ace_smoke_seed43.flac.json').read_text())\nassert a['output_sha256'] != b['output_sha256']\nassert a['request']['seed'] == 42 and b['request']['seed'] == 43\nprint('Different-seed diagnostic: PASS; seed 42 and seed 43 produced different hashes')\nPY",
+      "exit_code": 0,
+      "output_summary": "df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09  pilots/clpr_stage0/runs/ace_smoke_seed42_a.flac\nc2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5  pilots/clpr_stage0/runs/ace_smoke_seed43.flac\n{\n    \"programs\": [\n\n    ],\n    \"stream_groups\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"flac\",\n            \"sample_rate\": \"48000\",\n            \"channels\": 2\n        }\n    ],\n    \"format\": {\n        \"duration\": \"10.000000\",\n        \"size\": \"1663663\"\n    }\n}\nDifferent-seed diagnostic: PASS; seed 42 and seed 43 produced different hashes",
+      "outputs": []
+    },
+    {
+      "id": "20260717T094244Z-011",
+      "timestamp": "2026-07-17T09:42:44Z",
+      "phase": "documentation",
+      "title": "Record local safety-gate result",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "Hermes patch: TODO.md, HISTORY.md, pilots/clpr_stage0/README.md, index.html",
+      "exit_code": 0,
+      "output_summary": "Marked the different-seed diagnostic complete, documented the 24-to-12 GiB free-disk drop and 2.2-to-14.2 GiB swap growth, recorded the server shutdown, and deferred 60/90-second generation to a 48/80 GB GPU.",
+      "outputs": [
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/TODO.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 7796,
+          "sha256": "bdc7a11cf59b2ce4da884fdf280a4b26f8fb0bdab3753392a80803164a2f43b7"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/HISTORY.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 13536,
+          "sha256": "f249c235ede42ecd4e0a57fbf134e56085fa3d644fa679caf36a30068d7a1cb3"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/README.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 3571,
+          "sha256": "63a674236ec25707953f6fde8a4819a6b3337f50016f66ea557966725ceee864"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 84755,
+          "sha256": "82813a996f6bdd49bcb889323e42ad8505cb62a75db976daee3b3296829ed959"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/execution-log.json",
+          "exists": true,
+          "kind": "ledger-self-reference"
+        }
+      ]
+    },
+    {
+      "id": "20260717T094343Z-012",
+      "timestamp": "2026-07-17T09:43:43Z",
+      "phase": "infrastructure",
+      "title": "Remove stale self-referential ledger hashes",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "python3 -c \"import json; from pathlib import Path; p=Path('execution-log.json').resolve(); d=json.loads(p.read_text()); [(o.pop('sha256',None),o.pop('size_bytes',None),o.update({'kind':'ledger-self-reference'})) for e in d['entries'] for o in e.get('outputs',[]) if Path(o['path']).resolve()==p]; p.write_text(json.dumps(d,indent=2)+'\\n')\"",
+      "exit_code": 0,
+      "output_summary": "",
+      "outputs": [
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/execution-log.json",
+          "exists": true,
+          "kind": "ledger-self-reference"
+        }
+      ]
+    },
+    {
+      "id": "20260717T094356Z-013",
+      "timestamp": "2026-07-17T09:43:56Z",
+      "phase": "validation",
+      "title": "Validate Stage 0 safety checkpoint",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "PYTHONPATH=scripts python3 -m unittest scripts.tests.test_execution_ledger -v && PYTHONPATH=pilots/clpr_stage0/src python3 -m unittest discover -s pilots/clpr_stage0/tests -v && (cd pilots/dual_representation && .venv/bin/python -m unittest test_pilot.py -v) && python3 -m json.tool execution-log.json >/dev/null && git diff --check && df -h / && sysctl vm.swapusage && test -z \"\" && echo 'Port 8001 closed'",
+      "exit_code": 0,
+      "output_summary": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    22Gi    36%    459k  235M    0%   /\nvm.swapusage: total = 5120.00M  used = 4322.06M  free = 797.94M  (encrypted)\nPort 8001 closed\ntest_append_entry_creates_deterministic_public_record (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_ledger_does_not_publish_a_stale_hash_of_itself (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_run_logged_command_records_exit_and_created_output (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_sensitive_values_are_redacted (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.017s\n\nOK\ntest_sha256_file_matches_hashlib (test_clpr_stage0.HashTests) ... ok\ntest_manifest_accepts_complete_record (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_invalid_condition (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_missing_generator_version (test_clpr_stage0.ManifestTests) ... ok\ntest_regions_reject_overlap (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_registry_rejects_multiple_target_placeholders (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_valid_registry_renders_clause_minimal_pair (test_clpr_stage0.PromptRegistryTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\ntest_audio_features_are_finite (test_pilot.DualRepresentationPilotTests) ... ok\ntest_end_to_end_writes_results (test_pilot.DualRepresentationPilotTests) ... ok\ntest_render_change_preserves_symbolic_source (test_pilot.DualRepresentationPilotTests) ... ok\ntest_structural_corruption_changes_symbolic_profile (test_pilot.DualRepresentationPilotTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.083s\n\nOK",
+      "outputs": []
     }
   ],
-  "current_status": "Verify Execution Log in local browser"
+  "current_status": "Validate Stage 0 safety checkpoint"
 }
