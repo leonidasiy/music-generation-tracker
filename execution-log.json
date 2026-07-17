@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-17T09:33:38Z",
+  "entries": [
+    {
+      "id": "20260717T092905Z-001",
+      "timestamp": "2026-07-17T09:29:05Z",
+      "phase": "audit",
+      "title": "Audit repository state",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "git status --short --branch && git log -5 --oneline --decorate && git diff --stat && git diff --check",
+      "exit_code": 0,
+      "output_summary": "## main...origin/main\n?? pilots/clpr_stage0/scripts/\n?? scripts/\n24f9ba2 (HEAD -> main, origin/main) feat: begin CLPR Stage 0 protocol\n17906b1 docs: synchronize CLPR Stage 0 decisions\n344343b docs: finalize iterative producer review of metrics\na354f70 docs: record producer validation of metric strategy\n66d7c74 docs: synchronize tracker progress and research state",
+      "outputs": []
+    },
+    {
+      "id": "20260717T092914Z-002",
+      "timestamp": "2026-07-17T09:29:14Z",
+      "phase": "audit",
+      "title": "Check Mac resource headroom",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "df -h /; memory_pressure; lsof -nP -iTCP:8001 -sTCP:LISTEN || true",
+      "exit_code": 0,
+      "output_summary": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    24Gi    34%    459k  256M    0%   /\nThe system has 25769803776 (1572864 pages with a page size of 16384).\n\nStats: \nPages free: 53536 \nPages purgeable: 21077 \nPages purged: 1535018 \n\nSwap I/O:\nSwapins: 4867456 \nSwapouts: 6732504 \n\nPage Q counts:\nPages active: 638095 \nPages inactive: 465391 \nPages speculative: 172018 \nPages throttled: 0 \nPages wired down: 157380 \n\nCompressor Stats:\nPages used by compressor: 44232 \nPages decompressed: 17409895 \nPages compressed: 23846235 \n\nFile I/O:\nPageins: 5781489 \nPageouts: 49419 \n\nSystem-wide memory free percentage: 86%",
+      "outputs": []
+    },
+    {
+      "id": "20260717T092922Z-003",
+      "timestamp": "2026-07-17T09:29:22Z",
+      "phase": "infrastructure",
+      "title": "Verify execution-ledger tests",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "PYTHONPATH=scripts python3 -m unittest scripts.tests.test_execution_ledger -v",
+      "exit_code": 0,
+      "output_summary": "test_append_entry_creates_deterministic_public_record (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_run_logged_command_records_exit_and_created_output (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_sensitive_values_are_redacted (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.018s\n\nOK",
+      "outputs": []
+    },
+    {
+      "id": "20260717T093133Z-004",
+      "timestamp": "2026-07-17T09:31:33Z",
+      "phase": "infrastructure",
+      "title": "Implement public execution ledger and website tab",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "Hermes write_file/patch: scripts/execution_ledger.py, scripts/tests/test_execution_ledger.py, index.html",
+      "exit_code": 0,
+      "output_summary": "Added a redacting command/artifact ledger, three passing tests, and a browser-rendered Execution Log tab backed by execution-log.json.",
+      "outputs": [
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/scripts/execution_ledger.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5620,
+          "sha256": "ccea1b07d17d15900a3c1cbe3eb2af165378b97897ebccc011af480bf07ccb98"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/scripts/tests/test_execution_ledger.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 2703,
+          "sha256": "9d36c8487615d86d396a594090735f345c463a0191fffed99ad9a34d66ed15da"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 84693,
+          "sha256": "13131d25b5f46b2183182fedd39eda7196702a7f12f22409a3781c086b19216b"
+        }
+      ]
+    },
+    {
+      "id": "20260717T093236Z-005",
+      "timestamp": "2026-07-17T09:32:36Z",
+      "phase": "documentation",
+      "title": "Synchronize local-runtime status and monitoring plan",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "Hermes patch: TODO.md, HISTORY.md, pilots/clpr_stage0/README.md, index.html",
+      "exit_code": 0,
+      "output_summary": "Recorded the completed installation and deterministic smoke evidence, replaced the obsolete download gate with a monitored local-resource gate, and exposed the next different-seed and 60-second checks.",
+      "outputs": [
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/TODO.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 7573,
+          "sha256": "625fbf7777447a5dc076985a00f5c5d2df43edc868c51a5e37d7d3f2e04fe30a"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/HISTORY.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 12824,
+          "sha256": "a6df7f1e203de25279ebf589e9bc41e880f61b1aa2c0ac88dfb1954376ecad7e"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/README.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 3272,
+          "sha256": "d1b699f1f4fd3f80eacd7bb71f096ea65b9263090b4521197a52fb1d0e13674a"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 84693,
+          "sha256": "13131d25b5f46b2183182fedd39eda7196702a7f12f22409a3781c086b19216b"
+        }
+      ]
+    },
+    {
+      "id": "20260717T093252Z-006",
+      "timestamp": "2026-07-17T09:32:52Z",
+      "phase": "validation",
+      "title": "Run project test suites and structural checks",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "PYTHONPATH=scripts python3 -m unittest scripts.tests.test_execution_ledger -v && PYTHONPATH=pilots/clpr_stage0/src python3 -m unittest discover -s pilots/clpr_stage0/tests -v && (cd pilots/dual_representation && .venv/bin/python -m unittest test_pilot.py -v) && python3 -m json.tool execution-log.json >/dev/null && python3 - <<'PY'\nfrom pathlib import Path\nfrom html.parser import HTMLParser\nclass Audit(HTMLParser):\n    def __init__(self):\n        super().__init__(); self.ids=[]; self.tabs=[]; self.panels=[]\n    def handle_starttag(self, tag, attrs):\n        a=dict(attrs)\n        if 'id' in a: self.ids.append(a['id'])\n        if a.get('role')=='tab': self.tabs.append(a)\n        if a.get('role')=='tabpanel': self.panels.append(a)\np=Audit(); p.feed(Path('index.html').read_text())\ndup={x for x in p.ids if p.ids.count(x)>1}\nassert not dup, dup\nassert len(p.tabs)==len(p.panels)==9, (len(p.tabs),len(p.panels))\nassert {x['aria-controls'] for x in p.tabs}=={x['id'] for x in p.panels}\nprint('HTML audit: 9 tabs, 9 panels, no duplicate IDs, ARIA targets match')\nPY\ngit diff --check",
+      "exit_code": 0,
+      "output_summary": "HTML audit: 9 tabs, 9 panels, no duplicate IDs, ARIA targets match\ntest_append_entry_creates_deterministic_public_record (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_run_logged_command_records_exit_and_created_output (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_sensitive_values_are_redacted (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.018s\n\nOK\ntest_sha256_file_matches_hashlib (test_clpr_stage0.HashTests) ... ok\ntest_manifest_accepts_complete_record (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_invalid_condition (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_missing_generator_version (test_clpr_stage0.ManifestTests) ... ok\ntest_regions_reject_overlap (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_registry_rejects_multiple_target_placeholders (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_valid_registry_renders_clause_minimal_pair (test_clpr_stage0.PromptRegistryTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\ntest_audio_features_are_finite (test_pilot.DualRepresentationPilotTests) ... ok\ntest_end_to_end_writes_results (test_pilot.DualRepresentationPilotTests) ... ok\ntest_render_change_preserves_symbolic_source (test_pilot.DualRepresentationPilotTests) ... ok\ntest_structural_corruption_changes_symbolic_profile (test_pilot.DualRepresentationPilotTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.083s\n\nOK",
+      "outputs": []
+    },
+    {
+      "id": "20260717T093338Z-007",
+      "timestamp": "2026-07-17T09:33:38Z",
+      "phase": "validation",
+      "title": "Verify Execution Log in local browser",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "python3 -m http.server 8765 --bind 127.0.0.1; browser QA at http://127.0.0.1:8765/",
+      "exit_code": 0,
+      "output_summary": "Execution Log loaded all records, keyboard tab semantics remained intact, visual inspection found no overlap or clipping in light mode, and the browser console reported zero JavaScript errors.",
+      "outputs": [
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/execution-log.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 9765,
+          "sha256": "3032b52163dd4f5e8dd3f7dca52e454a9bfa87b8527dc6d94a74872b4f79dfa8"
+        },
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 84693,
+          "sha256": "13131d25b5f46b2183182fedd39eda7196702a7f12f22409a3781c086b19216b"
+        }
+      ]
+    }
+  ],
+  "current_status": "Verify Execution Log in local browser"
+}

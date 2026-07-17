@@ -31,17 +31,16 @@ Stage 0 tests whether the CLPR protocol can be executed and audited. It does **n
 - `uv 0.6.14` is available
 - Prompt registry frozen for 60- and 90-second variants
 - Seven Stage 0 protocol tests pass
-- No model weights, paid subscription, or commercial credentials have been used
+- ACE-Step source and environment installed under `/Users/lirenzhang/.cache/clpr-stage0/ACE-Step-1.5/` (approximately 11 GB)
+- Two 10-second seed-42 runs produced byte-identical FLAC files with SHA-256 `df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09`
+- The successful local path used MLX, batch size one, eight ODE steps, direct prompting, and no planning-LM initialization
+- No paid subscription or commercial credential has been used
 
-## Immediate storage gate
+## Active local resource gate
 
-The model weights alone would leave approximately 13.6 GiB before Python dependencies, build artifacts, model caches, and generated audio. Downloading weights on a 95%-full volume is not treated as a harmless default. Source inspection may proceed, but dependency/model download requires either:
+The model and environment are installed, and the host currently has approximately 24 GiB free. A prior inference session temporarily reduced free space to roughly 328 MiB through macOS swap pressure. Local work is therefore limited to sequential batch-one execution with the planning LM disabled, no parallel generation, and resource checks before and after every run.
 
-1. explicit approval to use the remaining local storage,
-2. a user-selected cleanup or external-volume location, or
-3. explicit approval for a cloud-GPU run within the $50 contingency.
-
-No files will be deleted to make room without separate explicit permission.
+Stop local inference if free disk falls below 15 GiB, the server becomes unstable, or swap growth makes the system unsafe. No files will be deleted or moved without separate explicit permission.
 
 ## Test commands
 

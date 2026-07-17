@@ -77,6 +77,19 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,s
 .phase-card p{font-size:0.8rem;color:var(--text3);margin-top:2px}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.6}}
 
+/* Live execution ledger */
+.ledger-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px}
+.ledger-updated{font-family:var(--mono);font-size:.72rem;color:var(--text3)}
+.ledger-refresh{border:1px solid var(--border);background:var(--surface);color:var(--accent2);border-radius:var(--radius);padding:8px 12px;font:600 .75rem var(--font);cursor:pointer}
+.ledger-list{display:grid;gap:12px}
+.ledger-entry{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius-lg);padding:16px 18px}
+.ledger-entry.failed{border-left-color:var(--red)}.ledger-entry.completed{border-left-color:var(--green)}
+.ledger-entry header{display:flex;justify-content:space-between;gap:12px;padding:0;border:0;margin:0 0 10px}
+.ledger-entry h3{font-size:.92rem}.ledger-meta{font-family:var(--mono);font-size:.68rem;color:var(--text3)}
+.ledger-entry code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;background:#f6f7fa;border:1px solid var(--border);border-radius:6px;padding:10px;margin:8px 0;font-size:.72rem;color:var(--text2)}
+.ledger-summary{white-space:pre-wrap;max-height:190px;overflow:auto;font:normal .7rem/1.5 var(--mono);color:var(--text2);background:var(--surface2);border-radius:6px;padding:10px}
+.ledger-output{font:normal .7rem/1.5 var(--mono);color:var(--text3);overflow-wrap:anywhere;margin-top:7px}
+
 /* TODO list */
 .todo-item{display:flex;align-items:flex-start;gap:12px;padding:10px 16px;margin-bottom:6px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);font-size:0.875rem}
 .todo-item .checkbox{width:20px;height:20px;border-radius:4px;border:2px solid var(--border);flex-shrink:0;margin-top:1px}
@@ -165,6 +178,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 <nav class="tabs" role="tablist" aria-label="Research tracker sections">
   <button type="button" class="active" id="tabbtn-research" role="tab" aria-controls="tab-research" aria-selected="true" tabindex="0" onclick="switchTab('research',this)">📄 Recent Research</button>
   <button type="button" id="tabbtn-progress" role="tab" aria-controls="tab-progress" aria-selected="false" tabindex="-1" onclick="switchTab('progress',this)">📊 My Progress</button>
+  <button type="button" id="tabbtn-execution" role="tab" aria-controls="tab-execution" aria-selected="false" tabindex="-1" onclick="switchTab('execution',this)">🖥️ Execution Log</button>
   <button type="button" id="tabbtn-todo" role="tab" aria-controls="tab-todo" aria-selected="false" tabindex="-1" onclick="switchTab('todo',this)">✅ TODO</button>
   <button type="button" id="tabbtn-references" role="tab" aria-controls="tab-references" aria-selected="false" tabindex="-1" onclick="switchTab('references',this)">📚 References</button>
   <button type="button" id="tabbtn-info" role="tab" aria-controls="tab-info" aria-selected="false" tabindex="-1" onclick="switchTab('info',this)">ℹ️ Info</button>
@@ -207,7 +221,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 <!-- TAB 2: My Progress -->
 <div class="tab-panel" id="tab-progress" role="tabpanel" aria-labelledby="tabbtn-progress" hidden>
   <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:16px">Research Progress Tracker</h2>
-  <div class="callout"><strong>Current position:</strong> Stage 0 execution has begun. The Stage 0–6 plan, clause-minimal prompt registry, run-manifest schema, and deterministic utilities are committed locally; seven tests pass. ACE-Step source revision <code>6d467e4</code> is pinned, but the 9.39 GiB model plus 124-package environment is paused at a storage gate because the host volume has approximately 23 GiB free. No model weights, paid service, credential, or commercial generation has been used.</div>
+  <div class="callout"><strong>Current position:</strong> Local ACE-Step execution is active under a conservative resource gate. The pinned environment and checkpoints are installed outside the repository; two 10-second seed-42 runs were byte-identical. The Mac currently has approximately 24 GiB free, so work is restricted to sequential batch-one tests with explicit disk and memory monitoring. Stage 0 remains mechanical feasibility evidence—not listener or construct validation.</div>
   <div class="progress-section">
     <h3>Completed foundation</h3>
     <div class="phase-card">
@@ -235,7 +249,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
     <h3>Active experimental increment</h3>
     <div class="phase-card">
       <div class="check active">●</div>
-      <div><h4>Resolve ACE-Step storage and run the open-model smoke test</h4><p>The official source is pinned and its dependency graph resolves. Choose local storage, an external volume, or approved cloud compute before downloading the 9.39 GiB model and 124-package environment.</p></div>
+      <div><h4>Characterize long-form local ACE-Step feasibility</h4><p>The installation and deterministic 10-second smoke test passed. Next: verify a different seed, then attempt one monitored 60-second generation without parallel jobs or unnecessary planning-LM initialization.</p></div>
     </div>
     <div class="phase-card">
       <div class="check pending">○</div>
@@ -605,6 +619,21 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   </section>
 </div>
 
+<!-- TAB 9: Execution Log -->
+<div class="tab-panel" id="tab-execution" role="tabpanel" aria-labelledby="tabbtn-execution" hidden>
+  <div class="agenda-hero">
+    <div class="agenda-kicker">Auditable local execution</div>
+    <h2>Command and Artifact Ledger</h2>
+    <p>This view reads the repository's public <code>execution-log.json</code>. Each record names the working directory, exact redacted command, exit status, output summary, and declared artifacts. GitHub Pages updates after a logged checkpoint is committed and deployed.</p>
+  </div>
+  <div class="callout"><strong>Safety boundary:</strong> credentials and sensitive command values are redacted before publication. Raw generated audio remains excluded from Git; only metadata, hashes, and curated evidence are published.</div>
+  <div class="ledger-toolbar">
+    <div id="ledgerUpdated" class="ledger-updated">Loading execution ledger…</div>
+    <button type="button" class="ledger-refresh" onclick="loadExecutionLog()">Refresh now</button>
+  </div>
+  <div id="ledgerList" class="ledger-list" aria-live="polite"></div>
+</div>
+
 <footer>
   <p>Music Generation & Orchestration Research Tracker · Updated 2026-07-17 · Relevance verified July 2026</p>
   <p>14 core papers · M09 / CLPR flagship · Stage 0: ACE-Step 1.5 + Udio · BabySlakh oracle lane · $90 provisional budget</p>
@@ -712,6 +741,53 @@ function filterPapers() {
   renderPapers(filtered);
 }
 
+async function loadExecutionLog() {
+  const list = document.getElementById('ledgerList');
+  const updated = document.getElementById('ledgerUpdated');
+  if (!list || !updated) return;
+  updated.textContent = 'Loading execution ledger…';
+  try {
+    const response = await fetch(`execution-log.json?cache=${Date.now()}`, {cache:'no-store'});
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const ledger = await response.json();
+    updated.textContent = `Last ledger update: ${ledger.updated_at || 'unknown'} · ${ledger.entries.length} recorded steps`;
+    list.replaceChildren();
+    [...ledger.entries].reverse().forEach(entry => {
+      const article = document.createElement('article');
+      article.className = `ledger-entry ${entry.status || ''}`;
+      const header = document.createElement('header');
+      const title = document.createElement('h3');
+      title.textContent = entry.title;
+      const meta = document.createElement('div');
+      meta.className = 'ledger-meta';
+      meta.textContent = `${entry.timestamp} · ${entry.phase} · exit ${entry.exit_code ?? 'n/a'}`;
+      header.append(title, meta);
+      const cwd = document.createElement('div');
+      cwd.className = 'ledger-meta';
+      cwd.textContent = `cwd: ${entry.cwd}`;
+      const command = document.createElement('code');
+      command.textContent = entry.command;
+      article.append(header, cwd, command);
+      if (entry.output_summary) {
+        const summary = document.createElement('pre');
+        summary.className = 'ledger-summary';
+        summary.textContent = entry.output_summary;
+        article.append(summary);
+      }
+      (entry.outputs || []).forEach(output => {
+        const row = document.createElement('div');
+        row.className = 'ledger-output';
+        row.textContent = `output: ${output.path} · ${output.exists ? `${output.size_bytes ?? 'directory'} bytes` : 'not found'}${output.sha256 ? ` · sha256 ${output.sha256}` : ''}`;
+        article.append(row);
+      });
+      list.append(article);
+    });
+  } catch (error) {
+    updated.textContent = `Execution ledger unavailable: ${error.message}`;
+    list.replaceChildren();
+  }
+}
+
 function switchTab(name, tab) {
   document.querySelectorAll('.tab-panel').forEach(p => { p.classList.remove('active'); p.hidden = true; });
   document.querySelectorAll('nav.tabs [role="tab"]').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); b.tabIndex = -1; });
@@ -723,6 +799,7 @@ function switchTab(name, tab) {
   button.setAttribute('aria-selected','true');
   button.tabIndex = 0;
   if (name === 'references') renderRefs();
+  if (name === 'execution') loadExecutionLog();
 }
 
 // Init

@@ -86,8 +86,12 @@
 - [x] Create the Stage 0 prompt registry, run-manifest schema, deterministic validators, and seven passing tests
 - [x] Identify candidate generators with repeatable randomness and sufficient duration: ACE-Step 1.5 plus Udio
 - [x] Pin ACE-Step source revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` and complete the no-download dependency audit
-- [ ] Resolve the ACE-Step storage location: the 9.39 GiB model plus 124 packages is unsafe to install by default on a volume with approximately 23 GiB free
-- [ ] Run an ACE-Step 1.5 installation and fixed-seed smoke test on the M5 / 24 GB Mac
+- [x] Install ACE-Step 1.5 under `~/.cache/clpr-stage0/`, including the pinned checkpoint and 124-package environment
+- [x] Run two fixed-seed ACE-Step smoke tests on the M5 / 24 GB Mac and verify byte-identical seed-42 outputs
+- [x] Add `execution-log.json`, a redacting command wrapper, and an Execution Log website tab for command/artifact monitoring
+- [ ] Verify a different seed produces a different artifact under the same pinned local configuration
+- [ ] Run one monitored 60-second batch-one generation; stop if free disk falls below 15 GiB or resource pressure becomes unsafe
+- [ ] Run a fixed-seed 60-second duplicate only if the first long-form run passes the resource gate
 - [ ] Decide whether Udio must use native 60/90-second outputs or a preregistered supported-duration analysis window
 - [ ] Provision one month of Udio Standard and record the exact model/version, manual-mode settings, seed behavior, and terms
 - [ ] Build BabySlakh oracle edits for target effect, leakage, boundary spillover, and production-proxy controls

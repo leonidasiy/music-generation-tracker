@@ -120,3 +120,13 @@
 - Queried the Hugging Face model API: ACE-Step 1.5 reports 10,079,024,720 bytes (9.39 GiB) of model storage
 - Stopped before dependency/model download because the project volume has approximately 23 GiB free; weights alone would leave approximately 13.6 GiB before dependencies, caches, and generated audio
 - No paid service, API key, credential, model weight, or commercial generation has been used
+
+## 2026-07-17 — Local Runtime and Public Execution Ledger
+- Installed the ACE-Step 1.5 Python 3.12 environment and required checkpoints under `/Users/lirenzhang/.cache/clpr-stage0/ACE-Step-1.5/`, using standard HTTP resume after the initial Hugging Face Xet transfer stalled
+- Verified PyTorch 2.10.0, MLX 0.30.6, MLX-LM 0.29.1, and Apple MPS availability
+- Started the local REST API with MLX, planning-LM initialization disabled, caption rewriting disabled, and lazy model initialization
+- Generated two 10-second, 48 kHz stereo FLAC outputs with seed 42; both had SHA-256 `df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09`
+- Stopped the server after observing severe macOS swap pressure; no service remains on port 8001
+- Rechecked the Mac after user cleanup: approximately 24 GiB is free and system-wide memory free was reported at 86% while ACE-Step was stopped
+- Added `scripts/execution_ledger.py`, test-first coverage, and `execution-log.json` to record redacted commands, working directories, exit codes, summaries, and declared artifacts
+- Added an Execution Log tab to the website so deployed checkpoints can be monitored directly; raw generated audio remains excluded from Git
