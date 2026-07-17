@@ -97,3 +97,14 @@
 - Ran a second fresh native Codex Dereck review over all current definitions
 - Final verdict: M01–M04, M06–M07, M09, and M11 KEEP; M05, M08, and M10 DEFER; no REJECT; `REVISE_COUNT: 0`
 - Preserved the evidence limit: professional coherence is not empirical metric validation
+
+## 2026-07-17 — CLPR Stage 0 Resource and Evidence Decision
+- Clarified the boundary between the Stage 0 feasibility pilot and the claim-bearing Paper 1 experiment
+- Reserved Paper 1's empirical claim for evidence that CLPR separates localized response and collateral change from stochastic variability and improves agreement with human localized-compliance judgments over simpler baselines
+- Reviewed current academic practice and adopted a mixed-panel policy: reproducible open generators form the core, while commercial systems serve as dated external-validity snapshots
+- Selected ACE-Step 1.5 as the primary open candidate and Udio as the first commercial anchor, both conditional on runtime, version, terms, and seed-coupling audits
+- Fixed the initial production scope to instrumental electronic / beat-driven pop, time-anchored A–B–A′, at least 60 seconds with 75–120 seconds preferred
+- Restricted the first minimal prompt contrasts to separate B-section register and rhythmic-activity interventions
+- Selected BabySlakh/Slakh2100 for exact MIDI/stem oracle edits and kept instrument-presence compliance outside the universal scorecard unless native tracks are available
+- Established a provisional $90 allocation: $10 Udio, up to $50 cloud contingency, and up to $30 listener micro-study reserve
+- Synchronized TODO, INFO, METRICS, REFERENCES, HISTORY, and the frontend around these decisions

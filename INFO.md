@@ -14,6 +14,7 @@
 - ACM MM (Multimedia)
 
 ## Major Industry Models (frontier)
+- **ACE-Step 1.5** — Open long-form generator with duration, seed, metadata, repaint, and local execution controls; primary Stage 0 candidate
 - **MusicGen** (Meta, 2023) — Transformer-based text-to-music, released open-source
 - **Suno** — Proprietary, high-quality song generation from lyrics
 - **Udio** — Proprietary, high-fidelity music generation
@@ -55,12 +56,26 @@
 - Metadata-only landing pages must be followed to PDFs for substantive claims.
 - Long extracted documents may be summarized by the tool layer; quotations require checking the primary PDF.
 
-## Current project status — 2026-07-16
-- **Completed:** initial 14-paper collection, metadata review, light-mode tracker, GitHub Pages deployment, refined research agenda, Metric Lab, web-research reliability gate, and deterministic dual-representation pilot audit.
+## Current project status — 2026-07-17
+- **Completed:** initial 14-paper collection, metadata review, light-mode tracker, GitHub Pages deployment, refined research agenda, Metric Lab, web-research reliability gate, deterministic dual-representation pilot audit, producer review, and Stage 0 generator/dataset scan.
 - **Paper 1 focus:** test whether a minimal temporal-instruction change causes the requested local musical effect while preserving preregistered non-target regions.
 - **Primary outputs:** TES and DA for target response; OTL and BS for collateral effects; PRD only when an intervention changes a structural relation.
-- **Current evidence limit:** the pilot establishes mechanical feasibility and reproducibility only; it does not establish human validity, cross-renderer invariance, or population-level robustness.
-- **Active next increment:** freeze a minimal intervention ontology, select generators with sufficient duration and repeatable randomness, estimate same-prompt null variability, and run a small CLPR prompt-pair pilot.
+- **Current evidence limit:** the existing deterministic pilot establishes mechanical feasibility and reproducibility only; it does not establish human validity, cross-renderer invariance, or population-level robustness.
+- **Stage 0 decision:** the next run is a mechanical feasibility pilot, not the claim-bearing Paper 1 experiment.
+- **Initial musical scope:** instrumental electronic / beat-driven pop in a time-anchored A–B–A′ form; minimum duration 60 seconds, with 75–120 seconds preferred where supported.
+- **Initial interventions:** manipulate B-section register and rhythmic activity separately while holding all other prompt clauses fixed.
+- **Candidate panel:** ACE-Step 1.5 as the reproducible open core and Udio as one commercial external-validity anchor; selection remains conditional on runtime, version, and seed-coupling audits.
+- **Oracle calibration:** use BabySlakh/Slakh2100 for exact MIDI/stem counterfactuals before interpreting generated outputs.
+- **Budget:** $10 Udio + up to $50 cloud contingency + up to $30 listener reserve = $90 provisional total, leaving $10 below the $100 ceiling.
+- **Active next increment:** freeze exact prompt wording, verify ACE-Step locally, audit Udio's current interface and terms, create oracle edits, estimate same-prompt null variability, and then run the small CLPR prompt-pair pilot.
+
+## Stage 0 evidence and publication boundary — 2026-07-17
+- Current academic practice supports mixed open/commercial panels when a benchmark seeks real-world or frontier relevance, but commercial systems are not methodologically preferred by default. Reproducible open models should remain the benchmark core.
+- The proposed Paper 1 claim is that CLPR distinguishes requested target-section response and collateral-change patterns from same-prompt stochastic variability, and that these diagnostics explain human localized-compliance judgments better than global alignment or target-only similarity baselines.
+- Stage 0 can establish access, repeatability, null scales, alignment behavior, detector behavior, costs, and failure rates. It cannot establish human validity, broad generalization, metric superiority, or a universal CLPR aggregate.
+- A fixed seed is not sufficient by itself to justify counterfactual language. Equal-seed prompt variants must demonstrate useful stochastic coupling against same-prompt, permuted-seed, and independent-sample diagnostics.
+- Commercial outputs are dated product snapshots: record the service, displayed model/version, tier, date, interface, prompt-expansion state, all settings, seeds, raw files, and hashes.
+- Post-hoc source separation is not native-stem ground truth. Instrument-presence compliance remains an experimental lane and stays outside the common aggregate unless every compared system exposes genuinely native tracks.
 
 ## Producer-practitioner validation — 2026-07-16
 - A native Codex custom subagent named **Dereck** reviewed the full M01–M11 registry from production, arrangement, synthesis, vocal-production, and audio-engineering perspectives.

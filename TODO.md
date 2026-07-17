@@ -31,7 +31,7 @@
 - [x] Validate the initial hosted tracker
 - [x] Deliver the hosted URL
 
-## Current Status — 2026-07-16
+## Current Status — 2026-07-17
 - [x] Narrow Paper 1 to localized instruction responsiveness (M09 / CLPR)
 - [x] Reclassify HPGA/PCCM as optional evidence channels and CRVP as validation infrastructure
 - [x] Audit the deterministic dual-representation feasibility pilot (4/4 tests passing)
@@ -39,6 +39,11 @@
 - [x] Synchronize the frontend, TODO, HISTORY, INFO, REFERENCES, and METRICS status
 - [x] Run native Codex producer-practitioner review with Dereck and retain CLPR as flagship
 - [x] Add strict-preservation, adaptation-allowed, and unconstrained locality classes to CLPR
+- [x] Decide that Stage 0 is a feasibility pilot rather than the claim-bearing Paper 1 experiment
+- [x] Review academic practice for open versus commercial generator evaluation
+- [x] Select ACE-Step 1.5 as the primary open candidate and Udio as the commercial anchor
+- [x] Identify BabySlakh/Slakh2100 as the first oracle-calibration corpus
+- [x] Set a provisional total budget ceiling of $90 within the approved sub-$100 limit
 - [ ] Complete full-text deep dives for the remaining core papers
 
 ## Refined Research Agenda — 2026-07-16
@@ -76,13 +81,25 @@
 - [x] Update METRICS.md, INFO.md, REFERENCES.md, HISTORY.md, and the Metric Lab website
 
 ## Next Experimental Increment
-- [ ] Define the first minimal section-clause intervention ontology
-- [ ] Identify open generators that expose repeatable randomness and sufficient duration
+- [ ] Freeze exact prompt wording for separate B-section register and rhythmic-activity interventions in instrumental electronic / beat-driven pop
+- [x] Identify candidate generators with repeatable randomness and sufficient duration: ACE-Step 1.5 plus Udio
+- [ ] Run an ACE-Step 1.5 installation and fixed-seed smoke test on the M5 / 24 GB Mac
+- [ ] Provision one month of Udio Standard and record the exact model/version, manual-mode settings, seed behavior, and terms
+- [ ] Build BabySlakh oracle edits for target effect, leakage, boundary spillover, and production-proxy controls
 - [ ] Build same-prompt replicate baselines for TES/DA/OTL/BS
 - [ ] Implement a small CLPR prompt-pair pilot before adding more candidate metrics
 - [ ] Expand the representation benchmark across multiple renderers and controlled degradations
 - [ ] Design separate human judgments for compliance, musicality, production quality, and preference
 - [ ] Add oracle DAW perturbations for production-proxy gaming, justified adaptation, and alignment uncertainty
+
+## Stage 0 Resource Plan — 2026-07-17
+- [x] Open core: ACE-Step 1.5, subject to local runtime and determinism verification
+- [x] Commercial external-validity anchor: Udio Standard at $10 for one month
+- [x] Cloud-compute contingency: up to $50 only if local execution is inadequate
+- [x] Listener micro-study reserve: up to $30 after mechanical feasibility passes
+- [x] Total provisional allocation: $90; $10 remains below the $100 ceiling
+- [x] Keep instrument-presence evaluation outside the universal scorecard unless native stems are available
+- [ ] Audit output redistribution rights before publishing commercial generations
 
 ## Iterative Dereck Metric Review — 2026-07-16
 - [x] Apply Dereck's first-round professional revisions to M01–M04

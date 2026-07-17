@@ -242,13 +242,30 @@ Treat seeds as paired only when the generator interface fixes the same underlyin
 17. What sample size is required for reliable latent-variable and invariance tests?
 18. Should cross-representation robustness be a publication contribution, a validation gate, or both?
 
+## Stage 0 CLPR pilot decision — 2026-07-17
+
+- **Purpose:** mechanical feasibility only. The pilot estimates access reliability, fixed-seed behavior, useful cross-prompt stochastic coupling, same-prompt null scales, interval alignment, detector recovery, cost, and failure rates. It is not the claim-bearing Paper 1 experiment.
+- **Musical domain:** instrumental electronic / beat-driven pop with a time-anchored A–B–A′ plan. Require at least 60 seconds; prefer 75–120 seconds when the interface permits.
+- **First intervention families:** B-section register and B-section rhythmic activity, manipulated in separate minimal prompt pairs. Do not change both in one primary contrast.
+- **Generator panel:** ACE-Step 1.5 is the primary open candidate because it documents long duration, integer seed control, local execution, and repaint intervals. Udio is the commercial anchor because its current manual mode documents explicit seeds and reproducible matching-input outputs. Both remain subject to empirical interface audits.
+- **Commercial-model policy:** commercial systems are external-validity snapshots, not the reproducible core. One anchor is adequate for Stage 0; a comprehensive frontier-ranking claim would require multiple named commercial systems and versions.
+- **Oracle lane:** BabySlakh/Slakh2100 supplies aligned MIDI and stems for known target edits, exact preservation regions, spillover, and proxy-only controls. Natural multitrack corpora may be added later for timbral realism.
+- **Native-stem policy:** post-separated stems are estimates, not source ground truth. Instrument-presence compliance remains non-core unless the evaluated generator emits genuinely native tracks.
+- **Budget:** provisional ceiling $90: $10 Udio, up to $50 cloud contingency, and up to $30 listener micro-study reserve. Do not spend the listener reserve until the mechanical gate passes.
+
+### Main empirical claim reserved for Paper 1
+
+> Minimal localized changes to long-form music instructions produce measurable target-section responses and collateral-change patterns that CLPR distinguishes from same-prompt stochastic variability; these diagnostics explain human judgments of localized instruction compliance better than global text–audio alignment or target-only segment similarity.
+
+Supporting this claim requires held-out prompts, multiple generator families or an explicitly narrowed scope, generator/version-specific nulls, independent human localized-compliance judgments, quality and artifact controls, and comparison with simpler baselines. Stage 0 alone cannot support it.
+
 ## Open design questions
 
 1. **Answered:** keep symbolic and audio representations open during exploration; use paired tracks for calibration rather than selecting a winner now.
-2. Which genres and formal vocabularies define the first scope?
-3. What minimum duration qualifies as long-form for the core benchmark?
-4. Will source stems or multitracks be available for instrument-entry ground truth?
-5. Can tested generators expose deterministic or approximately matched seeds?
+2. **Answered for Stage 0:** instrumental electronic / beat-driven pop with time-anchored A–B–A′ form.
+3. **Answered for Stage 0:** 60-second minimum; 75–120 seconds preferred.
+4. **Partly answered:** use BabySlakh/Slakh2100 for oracle stems; generator-native stems remain unverified and non-core.
+5. **Candidate answer:** ACE-Step 1.5 and Udio expose seeds, but useful coupling must be verified empirically.
 6. Is the primary publication target ISMIR, an ML evaluation venue, or a thesis/workshop?
 7. What listener population is realistically available: musicians, arrangers, general listeners, or all three?
 

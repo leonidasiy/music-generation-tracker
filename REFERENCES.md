@@ -1,6 +1,6 @@
 # References — Music Generation & Orchestration Research
 
-> Last updated: 2026-07-16
+> Last updated: 2026-07-17
 > **14 core tracker papers** synchronized with `index.html`, plus metric-design, competitive-benchmark, robustness, psychometric, and cross-domain sources. Citation counts are approximate snapshots and should not be treated as live bibliometrics.
 
 ---
@@ -303,3 +303,18 @@
 - [Eid et al. on MTMM model choice](https://doi.org/10.1037/a0013219) — distinguishes structurally different from interchangeable methods; relevant because symbolic/audio are not exchangeable while renderers may be. [Peer-reviewed Methods Study] [HIGH CONFIDENCE]
 - [Nussbeck et al. on ordinal MTMM sample size](https://pubmed.ncbi.nlm.nih.gov/16709286/) — simulation-conditional evidence that confirmatory MTMM generally needs hundreds of independent observations, not a tiny paired pilot. [Peer-reviewed Simulation Study] [HIGH CONFIDENCE]
 - [Bland & Altman](https://pubmed.ncbi.nlm.nih.gov/2868172/) — correlation measures association, not agreement between methods. [Peer-reviewed Methods Study] [HIGH CONFIDENCE]
+
+### Stage 0 generator, commercial-practice, and oracle sources — added 2026-07-17
+- [ACE-Step 1.5 official repository](https://github.com/ace-step/ACE-Step-1.5) — documents 10-second to 10-minute duration, local execution, instrumental generation, metadata controls, repainting, and Apple Silicon support. [Official Open-Source Repository] [HIGH CONFIDENCE for documented capabilities; independent quality claims unverified]
+- [ACE-Step 1.5 tutorial](https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/en/Tutorial.md) — documents fixed-seed comparisons, task modes, interval repainting, and hardware guidance. [Official Technical Documentation] [HIGH CONFIDENCE]
+- [Udio pricing](https://www.udio.com/pricing) — documents the current $10 monthly Standard tier, 2,400 monthly credits, and 130-second generation option. [Corporate Product Documentation] [HIGH CONFIDENCE as a dated pricing snapshot]
+- [Udio two-minute model and controls](https://www.udio.com/blog/two-minute-model-new-controls) — documents explicit random seeds, manual-mode reproducibility controls, prompt strength, and clip start-time. [Corporate Product Documentation] [HIGH CONFIDENCE as a dated interface snapshot]
+- [Udio model updates](https://help.udio.com/en/articles/10756068-model-updates) — states that matching prompt, settings, and seed currently reproduce outputs while warning that future product changes may break this behavior. [Corporate Product Documentation] [HIGH CONFIDENCE as a dated behavior claim]
+- [Music Arena](https://arxiv.org/abs/2507.20900) — combines open-weight and API-based systems, reports access type and capabilities, and motivates renewable evaluation under model turnover. [Academic Preprint] [HIGH CONFIDENCE: primary paper verified]
+- [ACE-Step](https://arxiv.org/abs/2506.00045) — compares an open model with proprietary and open full-song systems, illustrating mixed-panel academic practice. [Academic Preprint] [HIGH CONFIDENCE: primary paper verified]
+- [DiffRhythm 2 official repository](https://github.com/ASLP-lab/DiffRhythm2) — released full-song and instrumental generation code and weights under Apache 2.0; fixed-seed support remains to be audited. [Official Open-Source Repository] [MEDIUM CONFIDENCE for CLPR suitability]
+- [YuE official repository](https://github.com/multimodal-art-projection/YuE) — open full-song lyrics-to-song model with substantial long-form hardware requirements; deferred from Stage 0. [Official Open-Source Repository] [HIGH CONFIDENCE for documented requirements]
+- [Slakh2100](https://zenodo.org/records/4599666) — 2,100 synthesized multitracks, aligned MIDI, 145 hours, and detailed source metadata; selected for oracle calibration rather than generator responsiveness. [Academic Dataset Archive] [HIGH CONFIDENCE]
+- [MedleyDB](https://steinhardt.nyu.edu/marl/research/resources/medleydb) — natural multitracks and instrument/source metadata for later timbral-realism validation. [Academic Dataset] [HIGH CONFIDENCE]
+- [MoisesDB](https://github.com/moises-ai/moises-db) — professionally recorded sources with a fine-grained stem taxonomy; suitable for later natural-audio calibration. [Academic Dataset Repository] [HIGH CONFIDENCE]
+- [MSG-LD](https://github.com/karchkha/MSG-LD) — native four-track generation and arrangement/inpainting for bass, drums, guitar, and piano; retained as a separate source-level experimental lane. [Academic Open-Source Repository] [HIGH CONFIDENCE]
