@@ -1,0 +1,3 @@
+# Python bytecode caches are local runtime artifacts.
+__pycache__/
+*.py[cod]
