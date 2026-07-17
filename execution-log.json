@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-17T09:44:30Z",
+  "updated_at": "2026-07-17T09:47:44Z",
   "entries": [
     {
       "id": "20260717T092905Z-001",
@@ -296,7 +296,27 @@
           "sha256": "f06d7e27766e9f5ca64bc738ebea90f6ef8b7b52b2d3cb2161e3399277ab1928"
         }
       ]
+    },
+    {
+      "id": "20260717T094744Z-015",
+      "timestamp": "2026-07-17T09:47:44Z",
+      "phase": "frontend",
+      "title": "Clarify self-referential ledger artifacts",
+      "status": "completed",
+      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "command": "Hermes patch: index.html",
+      "exit_code": 0,
+      "output_summary": "Changed self-referential execution-log outputs from the misleading label directory bytes to an explicit notice that the hash is intentionally omitted.",
+      "outputs": [
+        {
+          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 84946,
+          "sha256": "176bdaeacb46b17e5307d9ab183a5a4560e1d9985c0023bd3045d83ceba5a146"
+        }
+      ]
     }
   ],
-  "current_status": "Ignore local Python bytecode caches without deleting them"
+  "current_status": "Clarify self-referential ledger artifacts"
 }

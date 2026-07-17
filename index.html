@@ -777,7 +777,11 @@ async function loadExecutionLog() {
       (entry.outputs || []).forEach(output => {
         const row = document.createElement('div');
         row.className = 'ledger-output';
-        row.textContent = `output: ${output.path} · ${output.exists ? `${output.size_bytes ?? 'directory'} bytes` : 'not found'}${output.sha256 ? ` · sha256 ${output.sha256}` : ''}`;
+        if (output.kind === 'ledger-self-reference') {
+          row.textContent = `output: ${output.path} · ledger self-reference; hash intentionally omitted`;
+        } else {
+          row.textContent = `output: ${output.path} · ${output.exists ? `${output.size_bytes ?? output.kind} bytes` : 'not found'}${output.sha256 ? ` · sha256 ${output.sha256}` : ''}`;
+        }
         article.append(row);
       });
       list.append(article);
