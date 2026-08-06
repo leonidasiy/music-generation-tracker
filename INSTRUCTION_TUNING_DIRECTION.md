@@ -49,13 +49,13 @@ This is only one valid realization. The prompt does not specify meter, tempo, in
 
 ### 1. The central idea is technically feasible, especially in symbolic music
 
-ChatMusician continually pretrains and fine-tunes LLaMA-2 on ABC notation as a second textual language and reports conditioning on text, chords, melodies, motifs, and musical forms.[1] [Peer-reviewed ACL Findings paper, 2024] [HIGH]
+ChatMusician continually pretrains and fine-tunes LLaMA-2 on ABC notation as a second textual language and reports strict-format generation conditioned on text, **absolute chord symbols**, melodies, motifs, and automatically derived form labels.[1] [Peer-reviewed ACL Findings paper, 2024] [HIGH]
 
-MuseCoco decomposes text-to-symbolic-music generation into text-to-attribute understanding and attribute-to-music generation; its control inventory includes bar count, time signature, key, tempo, pitch range, emotion, and instrumentation.[2][14] [Academic preprint + official research repository, 2023] [HIGH]
+MuseCoco decomposes text-to-symbolic-music generation into text-to-attribute understanding and attribute-to-music generation; its fixed control inventory includes bar range, time signature, key-related categories, tempo, pitch range, emotion, and instrumentation, but not arbitrary per-bar chord progressions or Roman numerals.[2][14] [Academic preprint + official research repository, 2023] [HIGH]
 
 Text2MIDI uses a frozen FLAN-T5 encoder and an autoregressive REMI+ MIDI decoder; its captions may contain chords, keys, tempo, time signature, instruments, style, and mood.[3][13] [AAAI paper + official MIT-licensed repository, 2025] [HIGH]
 
-SymPAC encodes genre, section, tempo, chords, and tracks in prompt bars and uses a finite-state machine to restrict generation to grammatically and user-valid token subsets.[5] [ISMIR paper, 2024] [HIGH]
+SymPAC encodes genre, section, tempo, absolute major/minor chords, and tracks in symbolic prompt bars and uses a finite-state machine to restrict generation to grammatically and user-valid token subsets; it is not a natural-language instruction-tuned system.[5] [ISMIR paper, 2024] [HIGH]
 
 **Finding:** instruction tuning is not speculative in the broad sense. The unsolved part is **reliable compositional constraint satisfaction under compound, natural-language requests**. [SYNTHESIS] [HIGH]
 
@@ -167,6 +167,35 @@ listener study: compliance, musicality, mood/imagery, preference
 ```
 
 For example, after holding tempo, instrumentation, voicing, and production constant, one could compare interpretations of `I–V–IV–vii°` against a minimally altered cadence. Any mood or narrative difference would remain a listener/model-response association, not proof that a chord progression has one objective meaning. [SYNTHESIS; proposed experiment] [HIGH for design logic, LOW for predicted perceptual effect]
+
+## Independent Audit Refinements
+
+Three independent research audits converged on a stricter conclusion: **no verified open system jointly follows a free-form request containing exact tonic/key, exact bar count, Roman-numeral sequence, explicit repetition relation, and musical form**. ChatMusician supplies the closest language-to-ABC instruction precedent, while SymPAC supplies the closest hard-control mechanism; combining them with a Roman-numeral/form-aligned dataset is a proposed extension, not a demonstrated system.[1][5] [Peer-reviewed papers + independent source audit, 2024] [HIGH]
+
+The terms used by adjacent papers must remain separated:
+
+- “natural-language controllable” may mean classification into a closed attribute ontology, as in MuseCoco—not open-ended compositional instruction following.[2][14] [Academic paper + official repository, 2023] [HIGH]
+- “chord-conditioned” generally means absolute chord labels rather than key-relative Roman-numeral functions.[1][5][21] [Academic papers, 2022–2024] [HIGH]
+- “long-form” or bar-aware encoding does not establish exact requested bar count; MuPT and NotaGen are important symbolic foundation models but are not general natural-language instruction-following systems.[9][22] [Academic papers, 2024–2025] [HIGH]
+- Repeat signs or learned recurrence do not establish compliance with an explicit relation such as “repeat this four-bar unit exactly twice.” This claim requires additional verification.[1] [Peer-reviewed paper, 2024] [HIGH]
+
+### Stronger direct-audio comparison
+
+Mustango is the closest reviewed text-to-audio precedent for chord-rich prompts, but it internally predicts beat and timestamped chord controls before diffusion, generates ten-second audio, and therefore supports language as a front end to structured control rather than proof of implicit waveform-level musical reasoning.[16] [Academic preprint, 2023] [HIGH]
+
+JASCO combines global text with frame-aligned chord, melody, drum, or audio controls; its evidence supports using an explicit verified chord timeline for rendering, while also showing that strong local guidance can conflict with text-based instrumentation and require multi-source guidance balancing.[17] [Academic paper, 2024] [HIGH]
+
+Coco-Mulla explicitly argues that text has limited power for direct pitch/chord/drum control, while Music ControlNet obtains precise local audio control from explicit time-varying trajectories rather than prose.[18][19] [Academic papers, 2023–2024] [HIGH]
+
+**Refined system role:** symbolic planning is responsible for harmony, meter, repetition, and exact form; a conditioned audio model is responsible for arrangement, timbre, realism, and production. The rendered waveform must be re-analyzed against the retained symbolic plan, but the symbolic and audio measurements should remain separate under CRVP. [SYNTHESIS] [HIGH]
+
+### Refined novelty claim
+
+Text-conditioned symbolic generation, temporally local music control, audio-language grounding, and plural affect modeling all have prior work. The strongest defensible novelty is therefore the **combined intervention estimand and validation chain**: exact instruction plan → localized target/leakage/boundary diagnostics → cross-representation validation → distributional audio-grounded interpretation. [SYNTHESIS FROM INDEPENDENT AUDIT] [HIGH]
+
+### Dataset refinement
+
+MusicPile-SFT is the closest open instruction-schema source, while When-in-Rome and DCML corpora provide functional harmonic analyses that could be transformed into Roman-numeral-aligned instruction examples; these are analysis corpora, not ready-made instruction datasets, and score-level licenses and alignment must be audited before reuse.[1][20] [Research dataset/repository sources, 2024 and accessed 2026-08-06] [MEDIUM]
 
 ## Proposed Unified Research Program
 
@@ -281,3 +310,10 @@ The go/no-go result is simple: if deterministic tool augmentation already solves
 [13] Text2MIDI official repository — https://github.com/AMAAI-Lab/Text2midi  
 [14] MuseCoco official repository — https://github.com/microsoft/muzic/tree/main/musecoco  
 [15] Instruct-MusicGen official repository — https://github.com/ldzhangyx/instruct-MusicGen
+[16] Mustango — https://arxiv.org/abs/2311.08355
+[17] JASCO — https://arxiv.org/abs/2406.10970
+[18] Coco-Mulla — https://arxiv.org/abs/2310.17162
+[19] Music ControlNet — https://arxiv.org/abs/2311.07069
+[20] When-in-Rome harmonic analysis corpus — https://github.com/MarkGotham/When-in-Rome
+[21] FIGARO — https://arxiv.org/abs/2201.10936
+[22] NotaGen — https://arxiv.org/abs/2502.18008

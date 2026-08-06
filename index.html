@@ -464,11 +464,13 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   </section>
 
   <div class="verdict-grid">
-    <article class="verdict-card"><span class="verdict verdict-high">FEASIBLE</span><strong>Symbolic instruction tuning</strong><p>ChatMusician, MuseCoco, Text2MIDI, and SymPAC show that text, chords, bar counts, keys, form, and constrained symbolic generation can be combined.</p></article>
+    <article class="verdict-card"><span class="verdict verdict-high">FEASIBLE</span><strong>Proposed hybrid extension</strong><p>ChatMusician supplies strict language-to-ABC generation and SymPAC supplies symbolic hard constraints; no reviewed system combines these with Roman-numeral and repetition control.</p></article>
     <article class="verdict-card"><span class="verdict verdict-low">NOT SOLVED</span><strong>Exact compound compliance</strong><p>Text2MIDI reports 33.6% exact-key accuracy and 2.50/7 chord matching; MuseCoco warns that 100% control cannot be guaranteed.</p></article>
     <article class="verdict-card"><span class="verdict verdict-high">BEST FIRST PATH</span><strong>Compiler + constrained generator</strong><p>Compile language into a typed musical plan, validate hard constraints deterministically, and let the model handle expressive realization.</p></article>
-    <article class="verdict-card"><span class="verdict verdict-medium">LATER COMPARISON</span><strong>Direct audio tuning</strong><p>Instruct-MusicGen and InstructME establish instruction-guided editing, not exact theory-rich generation from scratch.</p></article>
+    <article class="verdict-card"><span class="verdict verdict-medium">AUDIO ROLE</span><strong>Structured rendering</strong><p>Mustango and JASCO reinforce the same lesson: precise audio control relies on predicted or supplied chord/beat timelines, not prose alone.</p></article>
   </div>
+
+  <div class="callout"><strong>Independent audit verdict:</strong> no verified open system jointly demonstrates free-form exact tonic/key + bar count + Roman-numeral sequence + explicit repetition + form. “Chord-conditioned” usually means absolute chord labels; “bar-aware” does not mean exact requested length; repeat signs do not prove instruction-following repetition.</div>
 
   <section class="agenda-section">
     <h2>Concrete unit test</h2>
@@ -485,6 +487,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
       <article class="roadmap-step"><h3>5 · CRVP</h3><p>Compare symbolic truth with audio-side key/chord/form estimates to expose transcription and renderer dependence.</p></article>
       <article class="roadmap-step"><h3>6 · Interpret</h3><p>Use the audio-conditioned interpretation POC only after compliance passes; test wrong-audio, silence, shuffle, and segment deletion.</p></article>
     </div>
+    <div class="callout"><strong>Refined novelty:</strong> not text-to-symbolic generation, local control, audio-language grounding, or plural affect separately. The contribution is their combined intervention and validation chain.</div>
   </section>
 
   <section class="agenda-section">
@@ -505,6 +508,8 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
       <li><a href="https://arxiv.org/abs/2412.16526" target="_blank" rel="noopener">Text2MIDI (AAAI 2025)</a> and its <a href="https://github.com/AMAAI-Lab/Text2midi" target="_blank" rel="noopener">official repository</a> — end-to-end caption-to-MIDI and current control results.</li>
       <li><a href="https://arxiv.org/abs/2409.03055" target="_blank" rel="noopener">SymPAC (ISMIR 2024)</a> — prompt bars and finite-state constrained decoding.</li>
       <li><a href="https://arxiv.org/abs/2405.18386" target="_blank" rel="noopener">Instruct-MusicGen (ISMIR 2025)</a> — parameter-efficient instruction tuning for music editing.</li>
+      <li><a href="https://arxiv.org/abs/2311.08355" target="_blank" rel="noopener">Mustango (2023)</a> — chord-rich text-to-audio via predicted beat and timestamped-chord controls.</li>
+      <li><a href="https://arxiv.org/abs/2406.10970" target="_blank" rel="noopener">JASCO (2024)</a> — global text plus explicit frame-aligned chord, melody, drum, and audio conditions.</li>
       <li><a href="https://aclanthology.org/2023.emnlp-demo.21/" target="_blank" rel="noopener">MusicAgent (EMNLP 2023)</a> — language planning plus specialized tools.</li>
     </ul></div>
     <div class="callout"><strong>Full archived assessment:</strong> <a href="https://github.com/leonidasiy/music-generation-tracker/blob/main/INSTRUCTION_TUNING_DIRECTION.md" target="_blank" rel="noopener">INSTRUCTION_TUNING_DIRECTION.md</a>.</div>
@@ -698,7 +703,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 </div>
 
 <footer>
-  <p>Music Generation & Orchestration Research Tracker · Updated 2026-08-06 · Instruction evidence verified August 2026</p>
+  <p>Music Generation & Orchestration Research Tracker · Updated 2026-08-06 · Three independent instruction-evidence audits incorporated</p>
   <p>14 core papers · M09 / CLPR flagship · symbolic Instruction Lab · Stage 0: ACE-Step 1.5 + Udio · BabySlakh oracle lane</p>
 </footer>
 

@@ -147,3 +147,7 @@
 - Extended CLPR with exact key/bar/chord/repetition targets and protected symbolic regions; retained CRVP for renderer/audio robustness
 - Connected verified generated outputs to the separate music-interpretation POC while preserving plural interpretations and counterfactual audio-dependence tests
 - Archived the full literature review, contradictions, gaps, recommendations, work packages, and sources in `INSTRUCTION_TUNING_DIRECTION.md`
+- Incorporated three independent source audits that sharpened the capability boundary: no reviewed open system jointly demonstrates exact key, bars, Roman harmony, repetition, and form from free-form language
+- Corrected adjacent-capability wording: ChatMusician uses absolute chord symbols and strict formats; MuseCoco uses a closed attribute ontology; SymPAC uses symbolic controls rather than natural language
+- Added Mustango, JASCO, Coco-Mulla, Music ControlNet, FIGARO, NotaGen, and When-in-Rome to the evidence base
+- Refined the novelty claim to the combined intervention and validation chain rather than symbolic generation, local control, grounding, or plural affect individually

@@ -102,3 +102,5 @@
 - **CRVP connection:** validate symbolically first, render through multiple synthesizers, and quantify which conclusions survive audio-side estimation and renderer changes.
 - **Interpretation connection:** after compliance is established, test whether controlled musical changes alter audio-grounded mood, imagery, tension, or narrative responses without treating any interpretation as objective essence.
 - **Detailed archive:** `INSTRUCTION_TUNING_DIRECTION.md` contains the 18-question investigation, literature review, contradictions, research gaps, proposed work packages, and linked sources.
+- **Independent audit refinement:** no reviewed open system jointly demonstrates free-form exact tonic/key, bar count, Roman-numeral sequence, explicit repetition, and form. The defensible novelty is the combined instruction-plan → CLPR → CRVP → plural-interpretation validation chain.
+- **Audio comparison:** Mustango and JASCO strengthen the hybrid recommendation because their precise chord/beat control is predicted or explicitly supplied as time-aligned structure rather than inferred reliably from prose alone.

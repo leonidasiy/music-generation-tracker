@@ -125,6 +125,7 @@
 - [x] Define the concrete eight-bar G-major `I–V–IV–vii°` repeated-twice unit test and ambiguity policy
 - [x] Connect the direction to CLPR, TES/DA/OTL/BS, CRVP, and the audio-conditioned plural-interpretation POC
 - [x] Archive the full assessment in `INSTRUCTION_TUNING_DIRECTION.md`
+- [x] Incorporate three independent symbolic, audio, and cross-program source audits and correct adjacent-capability overstatements
 - [ ] Build a versioned typed musical-plan JSON schema and deterministic Roman-numeral/bar validator
 - [ ] Create the first held-out instruction benchmark with ambiguity, contradiction, and impossible-request cases
 - [ ] Benchmark rules, prompted LLM, tool-augmented LLM, and compact instruction-tuned parser baselines
