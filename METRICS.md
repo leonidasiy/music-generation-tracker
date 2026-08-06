@@ -322,3 +322,40 @@ Supporting this claim requires held-out prompts, multiple generator families or 
 - Eid et al., MTMM models for structurally different and interchangeable methods: https://doi.org/10.1037/a0013219
 - Nussbeck et al., sample-size requirements for ordinal MTMM models: https://pubmed.ncbi.nlm.nih.gov/16709286/
 - Bland & Altman, why correlation is not method agreement: https://pubmed.ncbi.nlm.nih.gov/2868172/
+
+## Instruction-compliance benchmark extension — 2026-08-06
+
+The new instruction-following direction supplies exact symbolic oracles for CLPR. Each request is compiled into a typed plan before generation; every requested field is scored independently, and musicality/quality remain separate outcomes.
+
+### Exact symbolic compliance vector
+
+1. **Parse validity:** output can be decoded as the required symbolic representation.
+2. **Plan-field exact match:** key, mode, meter, tempo, bar count, harmonic rhythm, instrumentation, and form.
+3. **Chord-by-bar accuracy:** exact root, quality, inversion where requested, and Roman function for every bar or beat slot.
+4. **Progression edit distance:** insertion, deletion, substitution, and reordering errors normalized by requested progression length.
+5. **Repetition agreement:** requested unit boundaries, total occurrence count, and exact-versus-varied recurrence policy.
+6. **Constraint-satisfaction rate:** fraction of generations satisfying all hard constraints; report per-constraint rates as well so one failure cannot hide another.
+7. **Clarification validity:** ambiguous, contradictory, or impossible prompts should trigger the correct clarification/error behavior rather than arbitrary generation.
+8. **Diversity under validity:** variation in melody, rhythm, voicing, texture, and orchestration among outputs that satisfy the same hard plan.
+
+### CLPR mapping
+
+- **Target Effect Size (TES):** magnitude of the requested symbolic change, such as one bar changing from `V` to `vi` or a complete functional transposition.
+- **Directional Accuracy (DA):** whether the change moved exactly toward the requested key, chord, bar count, repetition, register, or instrumentation state.
+- **Off-Target Leakage (OTL):** unintended changes to protected bars, voices, rhythm, instrumentation, or production-independent symbolic features.
+- **Boundary Spillover (BS):** unintended changes adjacent to a target bar or section, with adaptation-allowed halos for valid voice-leading, pickups, suspensions, and cadential preparation.
+- **CRVP:** compare exact symbolic conclusions with chord/key/structure estimates from multiple rendered-audio conditions; neither representation is treated as universal ground truth.
+
+### Mandatory baselines and validity gates
+
+- rules-only instruction parser;
+- general LLM with schema-constrained output;
+- tool-augmented LLM with deterministic music-theory functions;
+- compact supervised parser or adapter;
+- unconstrained symbolic generation;
+- constrained decoding;
+- rejection sampling and deterministic repair;
+- same-prompt nulls, one-field counterfactuals, held-out wording templates, unseen progression families, and unseen keys;
+- separate human ratings for instruction compliance, musicality, originality, production quality, artifacts, and preference.
+
+Do not aggregate these dimensions into one score until human construct validation and robustness analyses justify the aggregation.

@@ -172,7 +172,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 
 <header>
   <h1>🎵 Music Generation & Orchestration <span class="badge badge-green">Active</span></h1>
-  <p>Frontier Research Tracker — 14 core papers, expanded evaluation literature, and a producer-reviewed CLPR benchmark plan. Last synced: 2026-07-17</p>
+  <p>Frontier Research Tracker — 14 core papers, expanded evaluation literature, CLPR, and a new verified symbolic instruction-following direction. Last synced: 2026-08-06</p>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Research tracker sections">
@@ -183,6 +183,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <button type="button" id="tabbtn-references" role="tab" aria-controls="tab-references" aria-selected="false" tabindex="-1" onclick="switchTab('references',this)">📚 References</button>
   <button type="button" id="tabbtn-info" role="tab" aria-controls="tab-info" aria-selected="false" tabindex="-1" onclick="switchTab('info',this)">ℹ️ Info</button>
   <button type="button" id="tabbtn-directions" role="tab" aria-controls="tab-directions" aria-selected="false" tabindex="-1" onclick="switchTab('directions',this)">🧭 Directions</button>
+  <button type="button" id="tabbtn-instruction" role="tab" aria-controls="tab-instruction" aria-selected="false" tabindex="-1" onclick="switchTab('instruction',this)">🎼 Instruction Lab</button>
   <button type="button" id="tabbtn-agenda" role="tab" aria-controls="tab-agenda" aria-selected="false" tabindex="-1" onclick="switchTab('agenda',this)">🧪 Research Plan</button>
   <button type="button" id="tabbtn-metriclab" role="tab" aria-controls="tab-metriclab" aria-selected="false" tabindex="-1" onclick="switchTab('metriclab',this)">🧬 Metric Lab</button>
 </nav>
@@ -238,6 +239,10 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
     </div>
     <div class="phase-card">
       <div class="check done">✓</div>
+      <div><h4>Symbolic instruction-following direction</h4><p>Reviewed 12 model and dataset families, defined an exact eight-bar chord-plan unit test, and connected a typed plan compiler to CLPR, CRVP, and audio-grounded interpretation.</p></div>
+    </div>
+    <div class="phase-card">
+      <div class="check done">✓</div>
       <div><h4>Stage 0 resource decision</h4><p>Selected ACE-Step 1.5 plus Udio, BabySlakh/Slakh2100 oracle calibration, separate register/rhythmic-activity interventions, and a $90 provisional budget.</p></div>
     </div>
     <div class="phase-card">
@@ -282,8 +287,10 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Selection:</strong> Choose ACE-Step 1.5 + Udio and BabySlakh/Slakh2100 oracle calibration</div></div>
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Stage 0:</strong> Freeze separate B-section register and rhythmic-activity prompt pairs</div></div>
   <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Stage 0:</strong> Write the Stage 0–6 plan and pass seven protocol/scaffold tests</div></div>
-  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Blocked:</strong> Choose local, external-volume, or cloud storage before the ACE-Step model/environment download</div></div>
-  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Now:</strong> Run ACE-Step fixed-seed smoke tests, then audit Udio version/settings/terms</div></div>
+  <div class="todo-item done"><div class="checkbox"></div><div class="label"><strong>Instruction Lab:</strong> Archive the 18-question symbolic instruction-tuning feasibility review and unified research architecture</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Instruction Lab next:</strong> Build the typed musical-plan schema, deterministic validator, and held-out parsing benchmark before fine-tuning</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Blocked:</strong> Move 60/90-second ACE-Step execution to a 48/80 GB institutional or cloud GPU</div></div>
+  <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Now:</strong> Build the symbolic instruction schema locally and run the ACE-Step 60-second duplicate gate only on the selected GPU host</div></div>
   <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Next:</strong> Build BabySlakh oracle edits and same-prompt null baselines</div></div>
   <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Next:</strong> Run the first CLPR prompt-pair pilot within the $90 provisional budget</div></div>
   <div class="todo-item"><div class="checkbox"></div><div class="label"><strong>Later:</strong> Validate against separate human compliance, musicality, production, artifact, and preference judgments</div></div>
@@ -301,10 +308,10 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <div class="info-block" style="border-left:3px solid var(--accent)">
     <h3>Current Project Status</h3>
     <p><strong>Paper 1:</strong> CLPR tests whether a minimal localized instruction change produces the requested target-section effect while preserving preregistered protected regions. The reserved empirical claim also requires better agreement with human localized-compliance judgments than global alignment or target-only similarity baselines.</p>
-    <p style="margin-top:8px"><strong>Stage 0:</strong> execution has begun. The 60/90-second prompt pairs, region maps, run-manifest schema, and deterministic validation utilities are frozen; seven tests pass.</p>
+    <p style="margin-top:8px"><strong>Stage 0:</strong> local 10-second fixed-seed mechanics passed: seed-42 duplicates were byte-identical and seed 43 differed. The third run breached the disk/swap safety gate, so 60/90-second generation is deferred to a 48/80 GB GPU host.</p>
     <p style="margin-top:8px"><strong>Panel and resources:</strong> ACE-Step 1.5 open core + Udio commercial anchor; BabySlakh/Slakh2100 oracle calibration; $90 provisional allocation under the $100 ceiling.</p>
-    <p style="margin-top:8px"><strong>Active blocker:</strong> ACE-Step source is pinned at <code>6d467e4</code>, but its 9.39 GiB model plus 124-package environment awaits a local-storage, external-volume, or approved cloud-compute decision. Approximately 23 GiB is currently free.</p>
-    <p style="margin-top:8px"><strong>Active next step:</strong> run ACE-Step fixed-seed smoke tests, audit Udio's duration/version/settings/terms, create oracle edits, and estimate same-prompt null variability.</p>
+    <p style="margin-top:8px"><strong>Active blocker:</strong> ACE-Step is installed, but observed swap growth makes long-form local execution unsafe. Resume only on a suitable institutional or cloud GPU.</p>
+    <p style="margin-top:8px"><strong>Active next steps:</strong> run the 60-second duplicate gate remotely; build the typed symbolic instruction plan and exact validator locally; then audit Udio, create oracle edits, and estimate same-prompt null variability.</p>
     <p style="margin-top:8px"><strong>Evidence limit:</strong> neither the existing deterministic spike nor Stage 0 can establish human validity, broad generalization, metric superiority, or a universal CLPR score.</p>
   </div>
   <div class="info-block">
@@ -376,7 +383,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
       </div>
       <div style="background:var(--surface2);border-radius:var(--radius);padding:14px">
         <strong style="color:var(--accent2)">3. Instruction tuning for music</strong>
-        <p style="font-size:0.8rem;color:var(--text2);margin-top:4px">FM Survey calls this underexplored. Everyone does text-to-music; nobody can follow instructions like "make the bass louder in chorus 2." Solved in LLMs, unsolved in music.</p>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:4px">Symbolic and audio-editing systems demonstrate partial instruction control, but exact compound compliance remains weak. The defensible target is verified plan following, not vague text similarity.</p>
         <span class="tag tag-cit">Hot 🔥</span>
       </div>
       <div style="background:var(--surface2);border-radius:var(--radius);padding:14px">
@@ -448,7 +455,63 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   </div>
 </div>
 
-<!-- TAB 7: Metric Exploration Lab -->
+<!-- TAB 7: Instruction-Following Symbolic Generation -->
+<div class="tab-panel" id="tab-instruction" role="tabpanel" aria-labelledby="tabbtn-instruction" hidden>
+  <section class="agenda-hero">
+    <div class="agenda-kicker">New direction · verified 2026-08-06</div>
+    <h2>Instruction-Following Music Generation</h2>
+    <p>Can a model obey exact requests such as eight bars in G major with <code>I–V–IV–vii°</code> repeated twice? <strong>Technically plausible, not reliably solved.</strong></p>
+  </section>
+
+  <div class="verdict-grid">
+    <article class="verdict-card"><span class="verdict verdict-high">FEASIBLE</span><strong>Symbolic instruction tuning</strong><p>ChatMusician, MuseCoco, Text2MIDI, and SymPAC show that text, chords, bar counts, keys, form, and constrained symbolic generation can be combined.</p></article>
+    <article class="verdict-card"><span class="verdict verdict-low">NOT SOLVED</span><strong>Exact compound compliance</strong><p>Text2MIDI reports 33.6% exact-key accuracy and 2.50/7 chord matching; MuseCoco warns that 100% control cannot be guaranteed.</p></article>
+    <article class="verdict-card"><span class="verdict verdict-high">BEST FIRST PATH</span><strong>Compiler + constrained generator</strong><p>Compile language into a typed musical plan, validate hard constraints deterministically, and let the model handle expressive realization.</p></article>
+    <article class="verdict-card"><span class="verdict verdict-medium">LATER COMPARISON</span><strong>Direct audio tuning</strong><p>Instruct-MusicGen and InstructME establish instruction-guided editing, not exact theory-rich generation from scratch.</p></article>
+  </div>
+
+  <section class="agenda-section">
+    <h2>Concrete unit test</h2>
+    <div class="research-question"><strong>Request:</strong> Generate eight bars in G; repeat <code>I–V–IV–vii°</code> twice.<br><strong>Default realization:</strong> <code>G | D | C | F♯dim | G | D | C | F♯dim</code>, one chord per bar. Meter, tempo, inversion, voicing, register, and instrumentation remain unspecified and require explicit defaults or clarification.</div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Unified architecture</h2>
+    <div class="roadmap">
+      <article class="roadmap-step"><h3>1 · Compile</h3><p>Parse natural language into typed key, mode, bars, meter, harmonic rhythm, Roman numerals, repetition, form, and orchestration fields.</p></article>
+      <article class="roadmap-step"><h3>2 · Generate</h3><p>Condition a symbolic generator on the accepted plan; compare free decoding, constrained decoding, rejection, and deterministic repair.</p></article>
+      <article class="roadmap-step"><h3>3 · Verify</h3><p>Check every hard constraint exactly before accepting the MIDI/ABC output; report failures per constraint, never as one vague alignment score.</p></article>
+      <article class="roadmap-step"><h3>4 · Render + CLPR</h3><p>Render through multiple synthesizers and measure target response, directional accuracy, off-target leakage, and boundary spillover.</p></article>
+      <article class="roadmap-step"><h3>5 · CRVP</h3><p>Compare symbolic truth with audio-side key/chord/form estimates to expose transcription and renderer dependence.</p></article>
+      <article class="roadmap-step"><h3>6 · Interpret</h3><p>Use the audio-conditioned interpretation POC only after compliance passes; test wrong-audio, silence, shuffle, and segment deletion.</p></article>
+    </div>
+  </section>
+
+  <section class="agenda-section">
+    <h2>Immediate experiment</h2>
+    <div class="agenda-grid">
+      <article class="agenda-card"><h3>Benchmark first</h3><ul class="agenda-list"><li>Held-out keys, progression families, and wording templates</li><li>Valid, ambiguous, contradictory, and impossible requests</li><li>Exact plan-field and chord-by-bar scoring</li><li>Clarification/error behavior</li></ul></article>
+      <article class="agenda-card"><h3>Baselines before fine-tuning</h3><ul class="agenda-list"><li>Rules-only parser</li><li>Prompted LLM with typed JSON</li><li>Tool-augmented LLM</li><li>Compact supervised parser</li><li>Constrained symbolic decoder</li></ul></article>
+      <article class="agenda-card"><h3>Keep outcomes separate</h3><ul class="agenda-list"><li>Constraint compliance</li><li>Musicality and voice leading</li><li>Diversity and originality</li><li>Production quality and artifacts</li><li>Listener preference</li></ul></article>
+      <article class="agenda-card"><h3>Stop condition</h3><ul class="agenda-list"><li>Do not fine-tune if rules/tools already solve parsing</li><li>Do not claim understanding from syntactic validity</li><li>Do not move to audio until symbolic compliance is measurable</li><li>Do not aggregate scores without construct validation</li></ul></article>
+    </div>
+  </section>
+
+  <section class="agenda-section citation-list">
+    <h2>Primary evidence</h2>
+    <div class="info-block"><ul>
+      <li><a href="https://aclanthology.org/2024.findings-acl.373/" target="_blank" rel="noopener">ChatMusician (ACL Findings 2024)</a> — ABC as a second language; text/chord/motif/form-conditioned symbolic generation.</li>
+      <li><a href="https://arxiv.org/abs/2306.00110" target="_blank" rel="noopener">MuseCoco (2023)</a> and its <a href="https://github.com/microsoft/muzic/tree/main/musecoco" target="_blank" rel="noopener">official repository</a> — text→attributes→music with explicit control limits.</li>
+      <li><a href="https://arxiv.org/abs/2412.16526" target="_blank" rel="noopener">Text2MIDI (AAAI 2025)</a> and its <a href="https://github.com/AMAAI-Lab/Text2midi" target="_blank" rel="noopener">official repository</a> — end-to-end caption-to-MIDI and current control results.</li>
+      <li><a href="https://arxiv.org/abs/2409.03055" target="_blank" rel="noopener">SymPAC (ISMIR 2024)</a> — prompt bars and finite-state constrained decoding.</li>
+      <li><a href="https://arxiv.org/abs/2405.18386" target="_blank" rel="noopener">Instruct-MusicGen (ISMIR 2025)</a> — parameter-efficient instruction tuning for music editing.</li>
+      <li><a href="https://aclanthology.org/2023.emnlp-demo.21/" target="_blank" rel="noopener">MusicAgent (EMNLP 2023)</a> — language planning plus specialized tools.</li>
+    </ul></div>
+    <div class="callout"><strong>Full archived assessment:</strong> <a href="https://github.com/leonidasiy/music-generation-tracker/blob/main/INSTRUCTION_TUNING_DIRECTION.md" target="_blank" rel="noopener">INSTRUCTION_TUNING_DIRECTION.md</a>.</div>
+  </section>
+</div>
+
+<!-- TAB 8: Metric Exploration Lab -->
 <div class="tab-panel" id="tab-metriclab" role="tabpanel" aria-labelledby="tabbtn-metriclab" hidden>
   <section class="agenda-hero">
     <div class="agenda-kicker">Living metric registry · validated strategic update</div>
@@ -506,7 +569,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   </section>
 </div>
 
-<!-- TAB 8: Refined Research Agenda -->
+<!-- TAB 9: Refined Research Agenda -->
 <div class="tab-panel" id="tab-agenda" role="tabpanel" aria-labelledby="tabbtn-agenda" hidden>
   <section class="agenda-hero">
     <div class="agenda-kicker">Refined research agenda · July 2026</div>
@@ -619,7 +682,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   </section>
 </div>
 
-<!-- TAB 9: Execution Log -->
+<!-- TAB 10: Execution Log -->
 <div class="tab-panel" id="tab-execution" role="tabpanel" aria-labelledby="tabbtn-execution" hidden>
   <div class="agenda-hero">
     <div class="agenda-kicker">Auditable local execution</div>
@@ -635,8 +698,8 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
 </div>
 
 <footer>
-  <p>Music Generation & Orchestration Research Tracker · Updated 2026-07-17 · Relevance verified July 2026</p>
-  <p>14 core papers · M09 / CLPR flagship · Stage 0: ACE-Step 1.5 + Udio · BabySlakh oracle lane · $90 provisional budget</p>
+  <p>Music Generation & Orchestration Research Tracker · Updated 2026-08-06 · Instruction evidence verified August 2026</p>
+  <p>14 core papers · M09 / CLPR flagship · symbolic Instruction Lab · Stage 0: ACE-Step 1.5 + Udio · BabySlakh oracle lane</p>
 </footer>
 
 <script>

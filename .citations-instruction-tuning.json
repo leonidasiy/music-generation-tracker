@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://aclanthology.org/2024.findings-acl.373",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 2,
+      "url": "https://arxiv.org/abs/2306.00110",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 3,
+      "url": "https://arxiv.org/abs/2412.16526",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 4,
+      "url": "https://arxiv.org/abs/2410.02084",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 5,
+      "url": "https://arxiv.org/abs/2409.03055",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 6,
+      "url": "https://arxiv.org/abs/2405.18386",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 7,
+      "url": "https://arxiv.org/abs/2308.14360",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 8,
+      "url": "https://arxiv.org/abs/2410.22046",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 9,
+      "url": "https://arxiv.org/abs/2404.06393",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 10,
+      "url": "https://aclanthology.org/2024.findings-naacl.231",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 11,
+      "url": "https://aclanthology.org/2023.emnlp-demo.21",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 12,
+      "url": "https://arxiv.org/abs/2509.23350",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 13,
+      "url": "https://github.com/AMAAI-Lab/Text2midi",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 14,
+      "url": "https://github.com/microsoft/muzic/tree/main/musecoco",
+      "title": "",
+      "accessed": "2026-08-06"
+    },
+    {
+      "id": 15,
+      "url": "https://github.com/ldzhangyx/instruct-MusicGen",
+      "title": "",
+      "accessed": "2026-08-06"
+    }
+  ]
+}

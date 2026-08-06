@@ -117,3 +117,18 @@
 - [x] Revise every metric still marked REVISE and resubmit
 - [x] Reach a final Dereck verdict with no metric marked REVISE
 - [x] Synchronize METRICS, INFO, HISTORY, TODO, and the live Metric Lab after the final decision
+
+## Instruction-Following Symbolic Generation — 2026-08-06
+- [x] Formulate 18 technical, data, evaluation, UX, compute, competitive, and contrarian research questions
+- [x] Review ChatMusician, MuseCoco, Text2MIDI, SymPAC, MuPT, MetaScore, Instruct-MusicGen, InstructME, MusicAgent, MusiLingo, CHORDONOMICON, and ABC-Eval
+- [x] Distinguish symbolic instruction following, text-conditioned symbolic generation, direct audio generation, audio editing, and music understanding
+- [x] Define the concrete eight-bar G-major `I–V–IV–vii°` repeated-twice unit test and ambiguity policy
+- [x] Connect the direction to CLPR, TES/DA/OTL/BS, CRVP, and the audio-conditioned plural-interpretation POC
+- [x] Archive the full assessment in `INSTRUCTION_TUNING_DIRECTION.md`
+- [ ] Build a versioned typed musical-plan JSON schema and deterministic Roman-numeral/bar validator
+- [ ] Create the first held-out instruction benchmark with ambiguity, contradiction, and impossible-request cases
+- [ ] Benchmark rules, prompted LLM, tool-augmented LLM, and compact instruction-tuned parser baselines
+- [ ] Audit candidate symbolic checkpoints and dataset licenses before downloading or adapting any model
+- [ ] Fine-tune only after deterministic baselines and the benchmark expose a genuine learned-model gap
+- [ ] Render validated outputs through multiple synthesizers and run symbolic/audio CLPR + CRVP comparisons
+- [ ] Connect verified outputs to the interpretation POC using wrong-audio, silence, shuffle, and segment-deletion controls

@@ -61,15 +61,15 @@
 - **Paper 1 focus:** test whether a minimal temporal-instruction change causes the requested local musical effect while preserving preregistered non-target regions.
 - **Primary outputs:** TES and DA for target response; OTL and BS for collateral effects; PRD only when an intervention changes a structural relation.
 - **Current evidence limit:** the existing deterministic pilot establishes mechanical feasibility and reproducibility only; it does not establish human validity, cross-renderer invariance, or population-level robustness.
-- **Stage 0 status:** execution has begun. Exact 60- and 90-second register and closed-hi-hat prompt pairs, timing regions, the run-manifest schema, and deterministic validators are frozen; seven tests pass.
+- **Stage 0 status:** local 10-second fixed-seed mechanics passed: two seed-42 runs were byte-identical and seed 43 produced a distinct valid artifact. The third run breached the disk/swap safety gate, so 60/90-second execution is deferred to a 48/80 GB institutional or cloud GPU.
 - **Initial musical scope:** instrumental electronic / beat-driven pop in a time-anchored A–B–A′ form; minimum duration 60 seconds, with 75–120 seconds preferred where supported.
 - **Initial interventions:** manipulate B-section register and rhythmic activity separately while holding all other prompt clauses fixed.
 - **Candidate panel:** ACE-Step 1.5 as the reproducible open core and Udio as one commercial external-validity anchor; selection remains conditional on runtime, version, and seed-coupling audits.
 - **ACE-Step source audit:** official revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` is pinned locally. The current environment resolves 124 packages, and the model repository reports 9.39 GiB before dependency/cache overhead.
-- **Current blocker:** the host volume has approximately 23 GiB free. Model weights alone would leave approximately 13.6 GiB, so dependency and model download awaits an explicit local-storage, external-volume, or cloud decision.
+- **Current blocker:** the model and environment are installed, but local long-form generation is unsafe under the observed swap pressure. Resume the 60/90-second gate only on a suitable GPU host.
 - **Oracle calibration:** use BabySlakh/Slakh2100 for exact MIDI/stem counterfactuals before interpreting generated outputs.
 - **Budget:** $10 Udio + up to $50 cloud contingency + up to $30 listener reserve = $90 provisional total, leaving $10 below the $100 ceiling.
-- **Active next increment:** resolve the ACE-Step storage/execution location, install and run fixed-seed smoke tests, then audit Udio's current interface and terms, create oracle edits, estimate same-prompt null variability, and run the small CLPR prompt-pair pilot.
+- **Active next increment:** secure a suitable GPU host, run the 60-second duplicate gate, audit Udio's current interface and terms, create oracle edits, estimate same-prompt null variability, and run the small CLPR prompt-pair pilot.
 
 ## Stage 0 evidence and publication boundary — 2026-07-17
 - Current academic practice supports mixed open/commercial panels when a benchmark seeks real-world or frontier relevance, but commercial systems are not methodologically preferred by default. Reproducible open models should remain the benchmark core.
@@ -92,3 +92,13 @@
 - Final result: **M01–M04, M06–M07, M09, and M11 KEEP; M05, M08, and M10 DEFER; no REJECT; `REVISE_COUNT: 0`.**
 - “KEEP” means professionally coherent at the stated scope, not empirically validated.
 - Completed safeguards include separate applicable channels, explicit N/A handling, vocal/production separation, loudness-matched proxy controls, style and meter bounds, no unsupported aggregate, verified seed-coupling criteria, and alignment-sensitivity analysis.
+
+## Instruction-following symbolic generation direction — 2026-08-06
+- **Feasibility verdict:** instruction fine-tuning for exact key, bar, chord, repetition, form, and orchestration requests is technically plausible, but current symbolic systems do not establish reliable compound-constraint compliance.
+- **Preferred architecture:** natural-language instruction → typed musical-plan compiler → constrained symbolic generator → deterministic validator → renderer → CLPR/CRVP analysis → audio-grounded plural interpretation.
+- **Why symbolic first:** MIDI/ABC/event representations expose key, bar boundaries, chords, repetition, and form to exact tests; direct audio models currently offer weaker verification and the reviewed instruction-tuned audio systems focus mainly on editing.
+- **Immediate research contribution:** build an instruction compiler and exact-compliance benchmark before training a new generator; compare prompting, tool augmentation, supervised parser tuning, constrained decoding, rejection, and repair.
+- **CLPR connection:** use one-field counterfactuals such as changing one chord, key, bar count, repetition count, or orchestration clause; score requested response and collateral change in exact target/protected regions.
+- **CRVP connection:** validate symbolically first, render through multiple synthesizers, and quantify which conclusions survive audio-side estimation and renderer changes.
+- **Interpretation connection:** after compliance is established, test whether controlled musical changes alter audio-grounded mood, imagery, tension, or narrative responses without treating any interpretation as objective essence.
+- **Detailed archive:** `INSTRUCTION_TUNING_DIRECTION.md` contains the 18-question investigation, literature review, contradictions, research gaps, proposed work packages, and linked sources.

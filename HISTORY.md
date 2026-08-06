@@ -135,3 +135,15 @@
 - Observed swap growth from approximately 2.2 GiB to 14.2 GiB and free-disk reduction from 24 GiB to 12 GiB during the seed-43 run
 - Enforced the preregistered 15 GiB stop threshold, terminated the ACE-Step server, verified that port 8001 was closed, and observed free disk recover to 21 GiB
 - Deferred 60/90-second generation to a 48/80 GB institutional or cloud GPU rather than risking the Mac system volume
+
+## 2026-08-06 — Instruction-Following Symbolic Generation Direction
+- Investigated whether music models can be instruction-fine-tuned for exact requests involving key, bar count, Roman-numeral harmony, repetition, form, and orchestration
+- Formulated 18 systematic technical, data, user-experience, financial, competitive, evaluation, and contrarian research questions
+- Reviewed primary papers and official repositories spanning ChatMusician, MuseCoco, Text2MIDI, SymPAC, MuPT, MetaScore, Instruct-MusicGen, InstructME, CHORDONOMICON, MusiLingo, MusicAgent, and ABC-Eval
+- Reached a conditional feasibility verdict: symbolic instruction tuning is plausible, but current systems do not demonstrate reliable compound-constraint compliance
+- Recorded contrary evidence from Text2MIDI's weak key/chord matching, MuseCoco's supported-attribute limitations, and near-chance symbolic reasoning benchmarks
+- Selected a compiler-like architecture: language instruction → typed plan → constrained symbolic generation → exact validator → rendering → CLPR/CRVP → audio-grounded plural interpretation
+- Defined the eight-bar G-major `I–V–IV–vii°` repeated-twice request as the first compositional unit test and documented its unresolved defaults
+- Extended CLPR with exact key/bar/chord/repetition targets and protected symbolic regions; retained CRVP for renderer/audio robustness
+- Connected verified generated outputs to the separate music-interpretation POC while preserving plural interpretations and counterfactual audio-dependence tests
+- Archived the full literature review, contradictions, gaps, recommendations, work packages, and sources in `INSTRUCTION_TUNING_DIRECTION.md`
