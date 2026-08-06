@@ -151,3 +151,4 @@
 - Corrected adjacent-capability wording: ChatMusician uses absolute chord symbols and strict formats; MuseCoco uses a closed attribute ontology; SymPAC uses symbolic controls rather than natural language
 - Added Mustango, JASCO, Coco-Mulla, Music ControlNet, FIGARO, NotaGen, and When-in-Rome to the evidence base
 - Refined the novelty claim to the combined intervention and validation chain rather than symbolic generation, local control, grounding, or plural affect individually
+- Applied the final independent factual/QA corrections: qualified Text2MIDI key/listening measurements, separated reasoning benchmarks from generation compliance, narrowed InstructME and MusicAgent claims, bounded field-wide gap language, corrected MuPT authorship metadata, synchronized Stage 0 status, and standardized CRVP oracle terminology

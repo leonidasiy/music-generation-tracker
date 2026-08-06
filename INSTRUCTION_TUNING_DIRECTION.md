@@ -7,9 +7,9 @@
 
 Yes: instruction fine-tuning can make a symbolic music model respond to requests involving key, bar count, chord progression, repetition, form, and instrumentation, and existing systems already demonstrate parts of this capability.[1][2][3][5] [Peer-reviewed papers / academic preprints, 2023–2025] [HIGH]
 
-However, present systems do **not** establish reliable exact compliance with compound requests: Text2MIDI reports only 33.6% exact-key accuracy in its current repository evaluation, its chord-matching listening score is 2.50/7, and MuseCoco explicitly warns that it cannot guarantee 100% control and works best with predefined attributes.[13][14] [Official research repositories, accessed 2026-08-06] [HIGH]
+However, the systems and evaluations reviewed here do **not** establish reliable exact compliance with compound requests: Text2MIDI reports 33.6% generated-to-reference agreement between keys extracted with `music21`, while a small listening study of 11 participants rating five Text2MIDI examples reported means of 3.64/7 for key matching and 2.50/7 for chord matching; MuseCoco explicitly warns that it cannot guarantee 100% control and works best with predefined attributes.[3][13][14] [Peer-reviewed paper + official research repositories, 2023–2025] [HIGH for reported measurements; LOW for population-level generalization]
 
-The strongest research program is therefore not “fine-tune a waveform generator and hope.” It is a **verified neuro-symbolic pipeline**: natural language → canonical musical plan → constrained symbolic generation → deterministic validation → rendering → audio-grounded interpretation, with the existing CLPR framework measuring whether requested changes occur in the correct region without unnecessary collateral change. [SYNTHESIS; proposed architecture, not an established fact]
+A well-motivated, testable research program is therefore not merely “fine-tune a waveform generator and hope.” It is a proposed **verified neuro-symbolic pipeline**: natural language → canonical musical plan → constrained symbolic generation → deterministic validation → rendering → audio-grounded interpretation, with the existing CLPR framework measuring whether requested changes occur in the correct region without unnecessary collateral change. [SYNTHESIS; proposed architecture, not an established fact]
 
 ## Systematic Research Questions
 
@@ -57,25 +57,27 @@ Text2MIDI uses a frozen FLAN-T5 encoder and an autoregressive REMI+ MIDI decoder
 
 SymPAC encodes genre, section, tempo, absolute major/minor chords, and tracks in symbolic prompt bars and uses a finite-state machine to restrict generation to grammatically and user-valid token subsets; it is not a natural-language instruction-tuned system.[5] [ISMIR paper, 2024] [HIGH]
 
-**Finding:** instruction tuning is not speculative in the broad sense. The unsolved part is **reliable compositional constraint satisfaction under compound, natural-language requests**. [SYNTHESIS] [HIGH]
+**Finding:** instruction tuning is not speculative in the broad sense. **Reliable compositional constraint satisfaction under compound, natural-language requests is not established by the systems and evaluations reviewed here.** [SYNTHESIS] [HIGH]
 
 ### 2. Exact compliance is still weak
 
-The current Text2MIDI repository reports 33.6% Correct Key and 35.6% Correct Key with relative-minor duplicates; its listening-test means are 3.64/7 for key matching and 2.50/7 for chord matching.[13] [Official research repository, accessed 2026-08-06] [HIGH]
+The current Text2MIDI evaluation reports 33.6% generated-to-reference agreement between keys extracted with `music21` and 35.6% when relative-major/minor equivalence is accepted. A small listening study—11 participants rating five generated Text2MIDI examples—reported means of 3.64/7 for key matching and 2.50/7 for chord matching.[3][13] [Peer-reviewed paper + official research repository, 2025] [HIGH for reported measurements; LOW for broad compliance inference]
 
 MuseCoco’s official instructions say that control accuracy is difficult to guarantee at 100%, recommend only supported attribute values, and suggest filtering generated samples using an attribute evaluator.[14] [Official research repository, accessed 2026-08-06] [HIGH]
 
-ChatMusician’s own MusicTheoryBench results show that symbolic music reasoning remained close to a 25% random baseline: the paper reports 26.3 for ChatMusician, 27.1 for ChatMusician-Base, and 25.6 for GPT-4 in its zero-shot reasoning subset.[1] [Peer-reviewed ACL Findings paper, 2024] [HIGH]
+ChatMusician’s own MusicTheoryBench results show that multiple-choice symbolic music reasoning remained close to a 25% random baseline: the paper reports 26.3 for ChatMusician, 27.1 for ChatMusician-Base, and 25.6 for GPT-4 in its zero-shot reasoning subset.[1] [Peer-reviewed ACL Findings paper, 2024] [HIGH]
 
-ABC-Eval later evaluated seven LLMs across 1,086 samples and ten symbolic understanding/instruction-following subtasks, reporting notable limitations.[12] [Academic preprint, 2025] [MEDIUM; one benchmark paper]
+ABC-Eval later evaluated seven LLMs across 1,086 samples and ten symbolic analysis or structured-answer subtasks, reporting notable limitations.[12] [Academic preprint, 2025] [MEDIUM; one benchmark paper]
+
+These reasoning and analysis benchmarks are **not direct generation-compliance evaluations**. They motivate deterministic verification of Roman-numeral parsing and symbolic outputs, but they do not measure whether a generated piece obeys the compound request. [SYNTHESIS] [HIGH]
 
 **Finding:** a fluent output or valid MIDI file is not evidence that all requested constraints were obeyed. This claim requires additional verification for every model and instruction family. [SYNTHESIS] [HIGH]
 
-### 3. A compiler-like intermediate representation is preferable to direct free-form control
+### 3. A compiler-like intermediate representation is a testable recommendation
 
 MuseCoco’s two-stage text→attributes→music design makes the inferred controls inspectable, while SymPAC demonstrates that finite-state constraints can enforce known grammar and user inputs during decoding.[2][5] [Academic papers, 2023–2024] [HIGH]
 
-MusicAgent uses an LLM to decompose a request into subtasks and invoke specialized music tools rather than requiring one model to perform every operation internally.[11] [Peer-reviewed EMNLP system-demonstration paper, 2023] [HIGH]
+MusicAgent uses an LLM to decompose a request into subtasks and invoke specialized music tools rather than requiring one model to perform every operation internally.[11] [Peer-reviewed EMNLP system-demonstration paper, 2023] [HIGH] It is precedent for tool orchestration only; it does not demonstrate a typed musical compiler, deterministic theory validation, or exact constraint enforcement. [SYNTHESIS] [HIGH]
 
 **Recommended intermediate plan:**
 
@@ -119,7 +121,7 @@ CHORDONOMICON contains more than 666,000 user-generated chord progressions with 
 
 Instruct-MusicGen adds audio- and text-fusion modules to pretrained MusicGen, trains roughly 8% additional parameters for 5,000 steps, and supports instructions such as adding, removing, or separating stems.[6][15] [ISMIR paper + official Apache-2.0 repository, 2025] [HIGH]
 
-InstructME is a latent-diffusion editing system that adds a chord-progression matrix and a chunk transformer; its demonstrations center on instrument editing, remixing, and multi-round editing.[7] [Academic preprint, 2023] [MEDIUM; author-reported evaluation]
+InstructME is a latent-diffusion editing system that extracts a chord-progression matrix from the source music and uses it to preserve harmony during instrument editing, remixing, and multi-round editing; it does not demonstrate user-specified chord replacement or progression control.[7] [Academic preprint, 2023] [MEDIUM; author-reported evaluation]
 
 These papers demonstrate that parameter-efficient instruction adaptation of audio models is possible, but neither establishes exact compliance with a request such as eight bars in a named key with a repeated Roman-numeral progression. This claim requires additional verification. [SYNTHESIS] [HIGH]
 
@@ -193,6 +195,8 @@ Coco-Mulla explicitly argues that text has limited power for direct pitch/chord/
 
 Text-conditioned symbolic generation, temporally local music control, audio-language grounding, and plural affect modeling all have prior work. The strongest defensible novelty is therefore the **combined intervention estimand and validation chain**: exact instruction plan → localized target/leakage/boundary diagnostics → cross-representation validation → distributional audio-grounded interpretation. [SYNTHESIS FROM INDEPENDENT AUDIT] [HIGH]
 
+Adjacent work must remain explicit: SegTune studies segment-level structured song control, while CMI-RewardBench evaluates multimodal compositional alignment. Neither paper establishes simultaneous exact tonic/key, bar-count, Roman-numeral, repetition, and form compliance; CMI-RewardBench uses “compositional” for adaptation across optional input modalities rather than this exact compound-constraint meaning.[23][24] [Academic preprints, 2025–2026] [HIGH for scope distinction]
+
 ### Dataset refinement
 
 MusicPile-SFT is the closest open instruction-schema source, while When-in-Rome and DCML corpora provide functional harmonic analyses that could be transformed into Roman-numeral-aligned instruction examples; these are analysis corpora, not ready-made instruction datasets, and score-level licenses and alignment must be audited before reuse.[1][20] [Research dataset/repository sources, 2024 and accessed 2026-08-06] [MEDIUM]
@@ -243,9 +247,9 @@ MusicPile-SFT is the closest open instruction-schema source, while When-in-Rome 
 
 ## Contradictions Found
 
-1. **“Text-to-MIDI supports keys and chords” versus weak exact control.** Text2MIDI states that captions may include chords and keys, yet its repository reports 33.6% exact-key accuracy and a 2.50/7 chord-matching listening score.[3][13] [Peer-reviewed paper + official repository] [CONFLICTING — capability exists, reliability is weak]
+1. **“Text-to-MIDI supports keys and chords” versus weak measured agreement.** Text2MIDI states that captions may include chords and keys, yet reports 33.6% generated-to-reference extracted-key agreement; its small 11-participant, five-example listening study reports a 2.50/7 mean chord-matching score.[3][13] [Peer-reviewed paper + official repository] [CONFLICTING — capability exists, robust exact compliance is not established]
 2. **“Natural-language control” versus supported-vocabulary dependence.** MuseCoco presents a natural-language interface, but its repository recommends predefined attribute values and warns that unsupported values degrade control.[2][14] [Academic paper + official repository] [CONFLICTING — interface is open-form, control ontology is largely closed]
-3. **“LLMs can reason about music” versus benchmark performance near chance.** ChatMusician improves symbolic specialization but reports reasoning accuracy near the 25% random baseline, while ABC-Eval also reports substantial limitations.[1][12] [Peer-reviewed paper + academic preprint] [HIGH CONFIDENCE that reasoning remains unsolved]
+3. **“LLMs can reason about music” versus analysis-benchmark limitations.** ChatMusician improves symbolic specialization but reports multiple-choice reasoning accuracy near the 25% random baseline, while ABC-Eval reports substantial limitations in symbolic analysis and structured answers. These are warning signs for a validator, not direct generation-compliance evidence.[1][12] [Peer-reviewed paper + academic preprint] [HIGH]
 4. **End-to-end elegance versus verifiability.** Text2MIDI criticizes two-stage inference as slower, while MuseCoco and SymPAC provide more inspectable or enforceable control paths.[2][3][5] [Academic papers] [CONFLICTING DESIGN PRIORITIES — no universal winner]
 5. **Large synthetic captions enable scale versus introduce bias.** MetaScore and Text2MIDI gain data volume through LLM/pseudo captions, but such captions are derived from available metadata and therefore cannot teach constraints absent from that metadata.[3][4] [Academic papers] [MEDIUM; mechanism is clear, downstream bias magnitude unmeasured]
 
@@ -317,3 +321,5 @@ The go/no-go result is simple: if deterministic tool augmentation already solves
 [20] When-in-Rome harmonic analysis corpus — https://github.com/MarkGotham/When-in-Rome
 [21] FIGARO — https://arxiv.org/abs/2201.10936
 [22] NotaGen — https://arxiv.org/abs/2502.18008
+[23] SegTune — https://arxiv.org/abs/2510.18416
+[24] CMI-RewardBench — https://arxiv.org/abs/2603.00610

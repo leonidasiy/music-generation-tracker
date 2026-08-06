@@ -1,6 +1,6 @@
 # References — Music Generation & Orchestration Research
 
-> Last updated: 2026-07-17
+> Last updated: 2026-08-06
 > **14 core tracker papers** synchronized with `index.html`, plus metric-design, competitive-benchmark, robustness, psychometric, and cross-domain sources. Citation counts are approximate snapshots and should not be treated as live bibliometrics.
 
 ---
@@ -193,7 +193,7 @@
 ---
 
 ## Core Paper 12: MuPT: Generative Symbolic Music Pretrained Transformer
-- **Authors:** Xingwei Qu, Yizhi Li, Ruibin Yuan, Ge Zhang et al. (28 authors)
+- **Authors:** Xingwei Qu, Yuelin Bai, Yinghao Ma, Ziya Zhou et al. (28 authors)
 - **Organization:** Multi-institution
 - **Year:** 2024 | **Venue:** ICLR 2025
 - **arXiv:** [2404.06393](https://arxiv.org/abs/2404.06393)
@@ -325,16 +325,16 @@
 - [MuseCoco: Generating Symbolic Music from Text](https://arxiv.org/abs/2306.00110) — two-stage text-to-attribute and attribute-to-music symbolic generation with bar, key, meter, tempo, instrumentation, and other controls. [Academic Preprint] [HIGH CONFIDENCE]
 - [MuseCoco official repository](https://github.com/microsoft/muzic/tree/main/musecoco) — released code/checkpoints; warns that 100% control cannot be guaranteed and recommends supported attribute values plus evaluator-based filtering. [Official Research Repository] [HIGH CONFIDENCE]
 - [Text2MIDI: Generating Symbolic Music from Captions](https://arxiv.org/abs/2412.16526) — FLAN-T5-conditioned autoregressive REMI+ MIDI generator trained with SymphonyNet and MidiCaps. [AAAI 2025 Paper] [HIGH CONFIDENCE]
-- [Text2MIDI official repository](https://github.com/AMAAI-Lab/Text2midi) — MIT-licensed inference/training code and checkpoint; current reported evaluation includes 33.6% Correct Key and 2.50/7 chord-matching listener score. [Official Research Repository] [HIGH CONFIDENCE]
+- [Text2MIDI official repository](https://github.com/AMAAI-Lab/Text2midi) — MIT-licensed inference/training code and checkpoint; reports 33.6% generated-to-reference agreement between `music21`-extracted keys. A small listening study of 11 participants rating five Text2MIDI examples reported means of 3.64/7 for key and 2.50/7 for chord matching. [Official Research Repository + AAAI Paper] [HIGH CONFIDENCE for reported values; LOW for population-level compliance inference]
 - [SymPAC: Scalable Symbolic Music Generation With Prompts And Constraints](https://arxiv.org/abs/2409.03055) — prompt-bar controls plus finite-state constrained decoding for genre, section, tempo, chord, and track tokens. [ISMIR 2024 Paper] [HIGH CONFIDENCE]
 - [MuPT: A Generative Symbolic Music Pretrained Transformer](https://arxiv.org/abs/2404.06393) — scalable ABC foundation model and open symbolic pretraining resource; relevant as a possible adapter baseline rather than proof of instruction compliance. [ICLR 2025 Paper] [HIGH CONFIDENCE]
 - [Generating Symbolic Music from Natural Language Prompts using an LLM-Enhanced Dataset / MetaScore](https://arxiv.org/abs/2410.02084) — 963K-score corpus with metadata and generated captions; copyright restrictions require attention. [ISMIR 2025 Paper] [HIGH CONFIDENCE]
 - [Instruct-MusicGen](https://arxiv.org/abs/2405.18386) and [official repository](https://github.com/ldzhangyx/instruct-MusicGen) — parameter-efficient instruction tuning for stem-oriented text-to-music editing; not evidence of exact theory-rich generation. [ISMIR 2025 Paper + Official Repository] [HIGH CONFIDENCE]
-- [InstructME](https://arxiv.org/abs/2308.14360) — chord-conditioned latent-diffusion framework for instruction-guided instrument editing and remixing. [Academic Preprint] [MEDIUM CONFIDENCE]
+- [InstructME](https://arxiv.org/abs/2308.14360) — latent-diffusion framework that extracts a chord matrix from source music to preserve harmony during instruction-guided instrument editing and remixing; it does not demonstrate user-specified chord-progression control. [Academic Preprint] [MEDIUM CONFIDENCE]
 - [CHORDONOMICON](https://arxiv.org/abs/2410.22046) — more than 666K structured chord progressions with metadata; potential harmonic-language resource subject to provenance and licensing review. [Academic Dataset Preprint] [MEDIUM CONFIDENCE]
 - [MusiLingo](https://aclanthology.org/2024.findings-naacl.231/) — instruction-tuned music understanding and conversation; relevant to the interpretation side, not direct music generation. [Peer-reviewed NAACL Findings Paper] [HIGH CONFIDENCE]
-- [MusicAgent](https://aclanthology.org/2023.emnlp-demo.21/) — LLM planner that decomposes user requests and invokes specialized music tools; supports a compiler/tool architecture. [Peer-reviewed EMNLP Demo Paper] [HIGH CONFIDENCE]
-- [ABC-Eval](https://arxiv.org/abs/2509.23350) — evaluates symbolic understanding and instruction following across ten subtasks and reports substantial limitations in current LLMs. [Academic Preprint] [MEDIUM CONFIDENCE]
+- [MusicAgent](https://aclanthology.org/2023.emnlp-demo.21/) — LLM planner that decomposes user requests and invokes specialized music tools; precedent for tool orchestration, not a typed musical compiler or exact constraint validator. [Peer-reviewed EMNLP Demo Paper] [HIGH CONFIDENCE]
+- [ABC-Eval](https://arxiv.org/abs/2509.23350) — evaluates symbolic analysis and structured-answer following across ten subtasks; relevant to reasoning/validation limits, not direct generated-music compliance. [Academic Preprint] [MEDIUM CONFIDENCE]
 - [Mustango](https://arxiv.org/abs/2311.08355) — text-to-audio diffusion system that predicts structured beat and timestamped-chord controls before generation; closest direct-audio precedent for chord-rich prompts, but limited to ten-second outputs. [Academic Preprint] [HIGH CONFIDENCE]
 - [JASCO](https://arxiv.org/abs/2406.10970) — continuous-codec music generation with global text plus frame-aligned chord, melody, drum, or audio conditions; demonstrates explicit local control rather than prose-only timeline construction. [Academic Paper] [HIGH CONFIDENCE]
 - [Coco-Mulla](https://arxiv.org/abs/2310.17162) — parameter-efficient MusicGen adaptation using explicit chord, piano-roll, and drum controls; argues that text alone has limited power over pitch, chords, and drums. [Academic Preprint] [HIGH CONFIDENCE]

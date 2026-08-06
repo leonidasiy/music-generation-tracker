@@ -460,12 +460,12 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <section class="agenda-hero">
     <div class="agenda-kicker">New direction · verified 2026-08-06</div>
     <h2>Instruction-Following Music Generation</h2>
-    <p>Can a model obey exact requests such as eight bars in G major with <code>I–V–IV–vii°</code> repeated twice? <strong>Technically plausible, not reliably solved.</strong></p>
+    <p>Can a model obey exact requests such as eight bars in G major with <code>I–V–IV–vii°</code> repeated twice? <strong>Technically plausible; not established by the systems and evaluations reviewed here.</strong></p>
   </section>
 
   <div class="verdict-grid">
     <article class="verdict-card"><span class="verdict verdict-high">FEASIBLE</span><strong>Proposed hybrid extension</strong><p>ChatMusician supplies strict language-to-ABC generation and SymPAC supplies symbolic hard constraints; no reviewed system combines these with Roman-numeral and repetition control.</p></article>
-    <article class="verdict-card"><span class="verdict verdict-low">NOT SOLVED</span><strong>Exact compound compliance</strong><p>Text2MIDI reports 33.6% exact-key accuracy and 2.50/7 chord matching; MuseCoco warns that 100% control cannot be guaranteed.</p></article>
+    <article class="verdict-card"><span class="verdict verdict-low">NOT ESTABLISHED</span><strong>Exact compound compliance</strong><p>Text2MIDI reports 33.6% generated-to-reference extracted-key agreement; a small 11-participant, five-example study reported 2.50/7 mean chord matching. MuseCoco warns that 100% control cannot be guaranteed.</p></article>
     <article class="verdict-card"><span class="verdict verdict-high">BEST FIRST PATH</span><strong>Compiler + constrained generator</strong><p>Compile language into a typed musical plan, validate hard constraints deterministically, and let the model handle expressive realization.</p></article>
     <article class="verdict-card"><span class="verdict verdict-medium">AUDIO ROLE</span><strong>Structured rendering</strong><p>Mustango and JASCO reinforce the same lesson: precise audio control relies on predicted or supplied chord/beat timelines, not prose alone.</p></article>
   </div>
@@ -484,7 +484,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
       <article class="roadmap-step"><h3>2 · Generate</h3><p>Condition a symbolic generator on the accepted plan; compare free decoding, constrained decoding, rejection, and deterministic repair.</p></article>
       <article class="roadmap-step"><h3>3 · Verify</h3><p>Check every hard constraint exactly before accepting the MIDI/ABC output; report failures per constraint, never as one vague alignment score.</p></article>
       <article class="roadmap-step"><h3>4 · Render + CLPR</h3><p>Render through multiple synthesizers and measure target response, directional accuracy, off-target leakage, and boundary spillover.</p></article>
-      <article class="roadmap-step"><h3>5 · CRVP</h3><p>Compare symbolic truth with audio-side key/chord/form estimates to expose transcription and renderer dependence.</p></article>
+      <article class="roadmap-step"><h3>5 · CRVP</h3><p>Compare the exact symbolic oracle for requested constraints with audio-side key/chord/form estimates to expose transcription and renderer dependence; neither representation is universal ground truth.</p></article>
       <article class="roadmap-step"><h3>6 · Interpret</h3><p>Use the audio-conditioned interpretation POC only after compliance passes; test wrong-audio, silence, shuffle, and segment deletion.</p></article>
     </div>
     <div class="callout"><strong>Refined novelty:</strong> not text-to-symbolic generation, local control, audio-language grounding, or plural affect separately. The contribution is their combined intervention and validation chain.</div>
@@ -652,7 +652,7 @@ footer{text-align:center;color:var(--text3);font-size:0.75rem;margin-top:40px;pa
   <section class="agenda-section">
     <h2>Stage 0–6 research roadmap</h2>
     <div class="roadmap">
-      <article class="roadmap-step"><h3>Stage 0 — Mechanical feasibility</h3><p>Freeze prompts and manifests; verify ACE-Step and Udio access, versions, seeds, storage, target windows, oracle recovery, null variability, costs, and typed failures. Current state: protocol scaffold complete; ACE-Step download awaits a storage/execution decision.</p></article>
+      <article class="roadmap-step"><h3>Stage 0 — Mechanical feasibility</h3><p>Freeze prompts and manifests; verify ACE-Step and Udio access, versions, seeds, storage, target windows, oracle recovery, null variability, costs, and typed failures. Current state: ACE-Step is installed; two seed-42 smoke runs were byte-identical and seed 43 differed, but the local disk/swap safety gate defers 60/90-second runs to a 48/80 GB GPU host.</p></article>
       <article class="roadmap-step"><h3>Stage 1 — Calibrated multi-plan pilot</h3><p>Expand to 6–10 base plans per intervention only after Stage 0 failure analysis; freeze detectors against held-out oracle edits; report TES, DA, OTL, BS, and alignment sensitivity separately; draft the preregistration.</p></article>
       <article class="roadmap-step"><h3>Stage 2 — Claim-bearing benchmark collection</h3><p>Pin 3–4 generator families or explicitly narrow scope; preregister prompts, regions, null strata, exclusions, and code; collect unchanged-prompt nulls before inspecting intervention effects; retain every failure.</p></article>
       <article class="roadmap-step"><h3>Stage 3 — Human construct validation</h3><p>Collect blinded, separate judgments for target compliance, A/A′ preservation, non-target B preservation, transitions, artifacts, coherence, quality, and preference; compare CLPR with global and target-only baselines.</p></article>
