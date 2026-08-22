@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://suno.com/blog/studio-2",
+      "title": "Introducing Studio 2.0",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 2,
+      "url": "https://help.suno.com/en/articles/13670529",
+      "title": "Introducing Suno Studio 2.0",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 3,
+      "url": "https://help.suno.com/en/articles/13670593",
+      "title": "MIDI in Studio",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 4,
+      "url": "https://help.suno.com/en/articles/13670785",
+      "title": "Audio Effects and Plugins in Suno Studio",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 5,
+      "url": "https://help.suno.com/en/articles/13674305",
+      "title": "Automation in Studio",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 6,
+      "url": "https://about.suno.com/release-notes/studio-2",
+      "title": "Studio 2.0 is here",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 7,
+      "url": "https://suno.com/pricing",
+      "title": "Suno Pricing",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 8,
+      "url": "https://suno.com/terms",
+      "title": "Suno Terms of Service",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 9,
+      "url": "https://the-decoder.com/suno-studio-2-0s-new-chat-feature-lets-you-talk-to-your-daw-like-its-a-bandmate",
+      "title": "Suno Studio 2.0's chat-driven DAW",
+      "accessed": "2026-08-22"
+    }
+  ]
+}

@@ -152,3 +152,15 @@
 - Added Mustango, JASCO, Coco-Mulla, Music ControlNet, FIGARO, NotaGen, and When-in-Rome to the evidence base
 - Refined the novelty claim to the combined intervention and validation chain rather than symbolic generation, local control, grounding, or plural affect individually
 - Applied the final independent factual/QA corrections: qualified Text2MIDI key/listening measurements, separated reasoning benchmarks from generation compliance, narrowed InstructME and MusicAgent claims, bounded field-wide gap language, corrected MuPT authorship metadata, synchronized Stage 0 status, and standardized CRVP oracle terminology
+
+## 2026-08-22 — Suno Studio 2.0 Impact Refinement
+- Reviewed Suno's launch announcement, detailed help, MIDI, custom-plugin, automation, pricing, terms, and independent reporting
+- Confirmed that the beta Chat Bar can generate audio and MIDI clips, arrange projects, and create/revise custom effects; confirmed separate audio→MIDI and MIDI→audio paths
+- Corrected the shorthand claim “raw voice to any instrument”: official documentation describes a fallible two-stage transcription-and-rendering path, not a universal direct guarantee
+- Preserved M09 / CLPR as Paper 1 because Suno publishes product capabilities but no exact compound-compliance, localized leakage, spillover, repeatability, or human-validity results
+- Broadened the static typed musical-plan compiler into a stateful music-and-production action schema with project preconditions, target/protected state, observed diffs, and execution traces
+- Added action-level CLPR mappings and an audio↔MIDI round-trip CRVP lane; deferred plugin/automation compliance from the Paper 1 core
+- Reprioritized the commercial panel: ACE-Step 1.5 remains the open audio core; Suno Studio 2.0 is selected for the first interactive-system audit; Udio remains a deferred raw-audio backup
+- Revised the provisional budget to $95: up to $30 Suno, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted; no purchase was made
+- Archived the full 18-question assessment, contradictions, gaps, recommendations, and six-task audit protocol in `SUNO_STUDIO_2_IMPACT.md`
+- Synchronized TODO, INFO, METRICS, REFERENCES, HISTORY, and the public tracker around the revised decision

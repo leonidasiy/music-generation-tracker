@@ -4,7 +4,7 @@
 > Scope: long-form compositional plan adherence and music instruction following  
 > Status labels: **Candidate** = proposed but unvalidated; **Adaptation** = established method transferred to this task; **Speculative** = promising construct with major measurement risk.
 
-> **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The immediate local workstream is the typed symbolic instruction-plan schema, deterministic validator, and held-out parsing benchmark; the audio prompt-pair pilot resumes on a suitable GPU host with same-prompt null baselines.
+> **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The immediate local workstream is now a stateful typed music-and-production action schema, deterministic project-state validator, and held-out parsing/action benchmark. Suno Studio 2.0 is the first commercial interactive-system audit candidate; the ACE-Step audio prompt-pair pilot resumes on a suitable GPU host with same-prompt null baselines.
 
 > **Producer-practitioner validation:** Native Codex custom subagent Dereck repeatedly reviewed M01–M11 from production, arrangement, sound-design, vocal-production, and audio-engineering perspectives. After two revision rounds, the final pass returned `REVISE_COUNT: 0`: M01–M04, M06–M07, M09, and M11 are professionally coherent at their stated scopes; M05, M08, and M10 remain responsibly deferred. These are practitioner judgments, not empirical validation.
 
@@ -251,7 +251,7 @@ Treat seeds as paired only when the generator interface fixes the same underlyin
 - **Commercial-model policy:** commercial systems are external-validity snapshots, not the reproducible core. One anchor is adequate for Stage 0; a comprehensive frontier-ranking claim would require multiple named commercial systems and versions.
 - **Oracle lane:** BabySlakh/Slakh2100 supplies aligned MIDI and stems for known target edits, exact preservation regions, spillover, and proxy-only controls. Natural multitrack corpora may be added later for timbral realism.
 - **Native-stem policy:** post-separated stems are estimates, not source ground truth. Instrument-presence compliance remains non-core unless the evaluated generator emits genuinely native tracks.
-- **Budget:** provisional ceiling $90: $10 Udio, up to $50 cloud contingency, and up to $30 listener micro-study reserve. Do not spend the listener reserve until the mechanical gate passes.
+- **Budget:** revised provisional ceiling $95: up to $30 Suno access, up to $45 cloud contingency, up to $20 listener micro-study reserve, and $5 uncommitted. Do not spend the listener reserve until the mechanical gate passes; do not purchase Suno and Udio simultaneously before the commercial audit gate resolves.
 
 ### Frozen Stage 0 prompt protocol
 
@@ -359,3 +359,50 @@ The new instruction-following direction supplies exact symbolic oracles for CLPR
 - separate human ratings for instruction compliance, musicality, originality, production quality, artifacts, and preference.
 
 Do not aggregate these dimensions into one score until human construct validation and robustness analyses justify the aggregation.
+
+## Interactive production-action extension — 2026-08-22
+
+Suno Studio 2.0 adds a commercially deployed chat interface that can create audio and MIDI clips, arrange projects, construct and revise plugins, and participate in audio↔MIDI workflows. This does not validate exact instruction following; it expands the observable action space for CLPR.
+
+### Stateful instruction representation
+
+Each benchmark item should contain:
+
+1. **Initial project state:** tempo, meter, key, tracks, clips, note events, routing, effects, parameters, automation, and protected assets.
+2. **Typed musical plan:** requested key, bars, harmony, repetition, form, instrumentation, and local constraints.
+3. **Typed action plan:** one or more of `create_midi`, `edit_notes`, `arrange_clip`, `audio_to_midi`, `midi_to_audio`, `create_plugin`, `revise_plugin`, `set_parameter`, `write_automation`, `split_stems`, or `export`.
+4. **Preconditions:** required track, selection, time range, device, or source clip.
+5. **Target state:** exact fields or signal behavior that must change.
+6. **Protected state:** strict-preservation fields, adaptation-allowed fields, and unconstrained fields.
+7. **Observed diff:** symbolic/project-state changes plus rendered-audio changes.
+8. **Execution trace:** user turn, assistant response, retries, clarifications, manual corrections, costs, and version/date metadata.
+
+### CLPR mapping for project actions
+
+- **TES:** requested change in the target note set, clip, track, plugin behavior, parameter, automation lane, stem, or export.
+- **DA:** whether the project-state diff moved in the requested direction.
+- **OTL:** unintended changes to protected notes, tracks, effects, automation, routing, or project settings.
+- **BS:** near-boundary changes around a requested clip, bar, section, or automation interval.
+- **PRD:** use when the instruction changes a structural or routing relation.
+- **Null variability:** repeated identical chat turns from identical saved project states; use repeated-sample responsiveness unless useful coupling is demonstrated.
+
+### Audio↔MIDI CRVP lane
+
+- Start with hand-labeled monophonic hums, sung roots, instrumental melodies, and controlled polyphonic clips.
+- Measure pitch, onset, duration, velocity, rhythm, and polyphony error after audio→MIDI.
+- Render the recovered MIDI through piano, bowed strings, and synth conditions; verify exact note/timing retention before audio-side comparison.
+- Separate transcription error, synthesis/rendering effects, generated-cover changes, and downstream detector error.
+- A user-facing “voice to instrument” success is not one construct; it is a chain of transcription, symbolic preservation, instrument realization, and perceptual acceptability.
+
+### Plugin and automation lane
+
+**Status:** coherent secondary lane; deferred from Paper 1 until score/MIDI CLPR is stable.
+
+Report requested control topology, parameter monotonicity/range, transfer or frequency response, one-field conversational revision, temporal automation realization, and protected-control leakage. Do not score a plugin by prose similarity or subjective novelty alone.
+
+### Revised commercial panel and budget
+
+- ACE-Step 1.5 remains the reproducible open audio core.
+- Suno Studio 2.0 becomes the first commercial interactive-system audit candidate, conditional on price, terms, export, version capture, timing, and repeated-instruction gates.
+- Udio remains a deferred backup for a distinct raw-audio/seed-control comparison; do not subscribe to both before the Suno gate resolves.
+- Provisional ceiling: $95 — up to $30 Suno access, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted.

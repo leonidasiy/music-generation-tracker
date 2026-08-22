@@ -19,10 +19,10 @@
 - **Duration:** 60-second minimum; 75–120 seconds preferred when interfaces permit.
 - **Initial interventions:** B-section lead-register change and B-section closed-hi-hat rhythmic-activity change, evaluated separately.
 - **Open core:** ACE-Step 1.5, subject to local runtime and determinism verification.
-- **Commercial anchor:** Udio manual mode, subject to subscription, version, settings, terms, and seed verification.
+- **Commercial interactive anchor (revised 2026-08-22):** Suno Studio 2.0, subject to Premier checkout, visible version, export, timing, terms, and repeated-instruction verification. Udio is a deferred raw-audio seed-control backup.
 - **Oracle calibration:** BabySlakh first; Slakh2100 when additional coverage is needed.
 - **Stem policy:** post-separated stems are estimates, not native source ground truth; instrument-presence compliance is non-core.
-- **Budget ceiling:** $90 provisional allocation within a hard $100 ceiling: $10 Udio, up to $50 cloud contingency, up to $30 listener reserve.
+- **Budget ceiling (revised 2026-08-22):** $95 provisional allocation within a hard $100 ceiling: up to $30 Suno Studio 2.0 access, up to $45 cloud contingency, up to $20 listener reserve, and $5 uncommitted. Udio is a deferred raw-audio backup; do not purchase both commercial systems before the Suno gate resolves.
 
 ## Reserved Paper 1 Claim
 

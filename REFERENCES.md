@@ -1,6 +1,6 @@
 # References — Music Generation & Orchestration Research
 
-> Last updated: 2026-08-06
+> Last updated: 2026-08-22
 > **14 core tracker papers** synchronized with `index.html`, plus metric-design, competitive-benchmark, robustness, psychometric, and cross-domain sources. Citation counts are approximate snapshots and should not be treated as live bibliometrics.
 
 ---
@@ -342,3 +342,15 @@
 - [FIGARO](https://arxiv.org/abs/2201.10936) — bar-level structured descriptors and absolute chord labels, not natural-language instruction following. [ICLR 2023 Paper] [HIGH CONFIDENCE]
 - [NotaGen](https://arxiv.org/abs/2502.18008) — long-form classical ABC generation from structured period/composer/instrumentation prompts; does not demonstrate requested key, bar count, Roman harmony, or repetition. [Academic Preprint] [MEDIUM CONFIDENCE]
 - [When-in-Rome](https://github.com/MarkGotham/When-in-Rome) — functional harmonic analyses suitable for constructing Roman-numeral-aligned examples after score alignment and licensing review. [Academic Dataset Repository] [MEDIUM CONFIDENCE]
+
+## Suno Studio 2.0 Sources — Added 2026-08-22
+
+- [Introducing Studio 2.0](https://suno.com/blog/studio-2) — official launch announcement documenting MIDI import/record/edit, MIDI-conditioned audio generation, beta chat, advanced separation, effects, custom plugins, automation, and Premier multitrack export. [Corporate Product Announcement; financially interested] [HIGH CONFIDENCE for documented features; reliability unverified]
+- [Introducing Suno Studio 2.0](https://help.suno.com/en/articles/13670529) — official detailed help page: chat-generated audio/MIDI, arrangement, audio↔MIDI, built-in instruments, effects, automation, compatibility limits, timing caveat, and workflow FAQs. [Corporate Help Documentation] [HIGH CONFIDENCE]
+- [MIDI in Studio](https://help.suno.com/en/articles/13670593) — official piano-roll, musical-typing, Web MIDI, MIDI Learn, scale-assist, recording, and note-editing documentation. [Corporate Help Documentation] [HIGH CONFIDENCE]
+- [Audio Effects and Plugins in Suno Studio](https://help.suno.com/en/articles/13670785) — official built-in effects and conversational custom-plugin creation/revision documentation; confirms no VST/AU hosting. [Corporate Help Documentation] [HIGH CONFIDENCE]
+- [Automation in Studio](https://help.suno.com/en/articles/13674305) — official parameter-lane and export behavior documentation. [Corporate Help Documentation] [HIGH CONFIDENCE]
+- [Studio 2.0 is here](https://about.suno.com/release-notes/studio-2) — concise official release note covering MIDI, chat, effects, wavetable synthesis, musical typing, and automation. [Corporate Release Note] [HIGH CONFIDENCE]
+- [Suno pricing](https://suno.com/pricing) — dated Premier feature and annual-equivalent price listing; month-to-month checkout and experiment-specific credit use remain to be verified before purchase. [Corporate Pricing Page; financially interested] [HIGH CONFIDENCE as a dated listing]
+- [Suno Terms of Service](https://suno.com/terms) — service, submission, output, voice-model, commercial-use, and mutability terms; must be rechecked at collection time. [Corporate Legal Terms] [MEDIUM CONFIDENCE because terms may change]
+- [The Decoder — Suno Studio 2.0's new chat feature](https://the-decoder.com/suno-studio-2-0s-new-chat-feature-lets-you-talk-to-your-daw-like-its-a-bandmate/) — independent summary corroborating the broad chat-driven DAW feature set while largely relying on Suno's announcement rather than controlled testing. [Independent Technology Reporting] [MEDIUM CONFIDENCE]

@@ -41,9 +41,9 @@
 - [x] Add strict-preservation, adaptation-allowed, and unconstrained locality classes to CLPR
 - [x] Decide that Stage 0 is a feasibility pilot rather than the claim-bearing Paper 1 experiment
 - [x] Review academic practice for open versus commercial generator evaluation
-- [x] Select ACE-Step 1.5 as the primary open candidate and Udio as the commercial anchor
+- [x] Initial selection: ACE-Step 1.5 as the primary open candidate and Udio as the commercial anchor; superseded on 2026-08-22 by the Suno interactive-audit decision
 - [x] Identify BabySlakh/Slakh2100 as the first oracle-calibration corpus
-- [x] Set a provisional total budget ceiling of $90 within the approved sub-$100 limit
+- [x] Initial $90 budget decision; revised to a $95 allocation on 2026-08-22 while remaining under the $100 ceiling
 - [ ] Complete full-text deep dives for the remaining core papers
 
 ## Refined Research Agenda — 2026-07-16
@@ -84,7 +84,7 @@
 - [x] Freeze exact prompt wording for separate B-section register and rhythmic-activity interventions in instrumental electronic / beat-driven pop
 - [x] Write the detailed Stage 0–6 research and implementation plan
 - [x] Create the Stage 0 prompt registry, run-manifest schema, deterministic validators, and seven passing tests
-- [x] Identify candidate generators with repeatable randomness and sufficient duration: ACE-Step 1.5 plus Udio
+- [x] Identify initial raw-audio candidates with repeatable randomness and sufficient duration: ACE-Step 1.5 plus Udio; Udio is now a deferred backup
 - [x] Pin ACE-Step source revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` and complete the no-download dependency audit
 - [x] Install ACE-Step 1.5 under `~/.cache/clpr-stage0/`, including the pinned checkpoint and 124-package environment
 - [x] Run two fixed-seed ACE-Step smoke tests on the M5 / 24 GB Mac and verify byte-identical seed-42 outputs
@@ -104,10 +104,10 @@
 
 ## Stage 0 Resource Plan — 2026-07-17
 - [x] Open core: ACE-Step 1.5, subject to local runtime and determinism verification
-- [x] Commercial external-validity anchor: Udio Standard at $10 for one month
-- [x] Cloud-compute contingency: up to $50 only if local execution is inadequate
-- [x] Listener micro-study reserve: up to $30 after mechanical feasibility passes
-- [x] Total provisional allocation: $90; $10 remains below the $100 ceiling
+- [x] Revised commercial interactive audit: Suno Studio 2.0, capped at $30 after checkout/terms verification; Udio deferred
+- [x] Revised cloud-compute contingency: up to $45 only if local execution is inadequate
+- [x] Revised listener micro-study reserve: up to $20 after mechanical feasibility passes
+- [x] Revised total provisional allocation: $95; $5 remains below the $100 ceiling
 - [x] Keep instrument-presence evaluation outside the universal scorecard unless native stems are available
 - [ ] Audit output redistribution rights before publishing commercial generations
 
@@ -133,3 +133,17 @@
 - [ ] Fine-tune only after deterministic baselines and the benchmark expose a genuine learned-model gap
 - [ ] Render validated outputs through multiple synthesizers and run symbolic/audio CLPR + CRVP comparisons
 - [ ] Connect verified outputs to the interpretation POC using wrong-audio, silence, shuffle, and segment-deletion controls
+
+## Suno Studio 2.0 Impact Refinement — 2026-08-22
+- [x] Verify the launch claims against Suno's product, help, MIDI, plugin, automation, pricing, and terms pages
+- [x] Separate chat-to-MIDI, audio-to-MIDI, MIDI-to-audio, voice models, plugin construction, parameter revision, automation, and stem separation
+- [x] Preserve CLPR as the flagship and broaden the typed plan into a stateful production-action schema
+- [x] Select Suno Studio 2.0 for the first commercial interactive-system audit; retain Udio as a deferred raw-audio backup
+- [x] Archive the full assessment in `SUNO_STUDIO_2_IMPACT.md`
+- [ ] Before purchase, verify live month-to-month Premier checkout price, credit accounting, export categories, terms, and visible product/version identifiers
+- [ ] Extend the typed schema with project preconditions, actions, protected state, and post-action validators
+- [ ] Build a six-task Suno audit covering exact MIDI creation, one-bar editing, local orchestration, audio→MIDI, MIDI→audio, and plugin revision
+- [ ] Capture repeated identical chat instructions and estimate action-level null variability; do not assume stochastic coupling
+- [ ] Add audio↔MIDI round-trip tests to CRVP using monophonic, sung-root, instrumental, and controlled polyphonic inputs
+- [ ] Keep plugin/automation compliance as a secondary lane until score/MIDI CLPR is stable
+- [ ] Do not subscribe to both Suno and Udio before the Suno access/export/repeatability gate is resolved

@@ -17,6 +17,7 @@
 - **ACE-Step 1.5** — Open long-form generator with duration, seed, metadata, repaint, and local execution controls; primary Stage 0 candidate
 - **MusicGen** (Meta, 2023) — Transformer-based text-to-music, released open-source
 - **Suno** — Proprietary, high-quality song generation from lyrics
+- **Suno Studio 2.0** — Premier-only chat-driven production environment with chat-generated audio/MIDI, audio↔MIDI workflows, project arrangement, custom effects, automation, built-in synthesis, and stem separation; first commercial interactive-system audit candidate as of 2026-08-22
 - **Udio** — Proprietary, high-fidelity music generation
 - **Stable Audio** (Stability AI) — Diffusion-based audio generation
 - **Jukebox** (OpenAI, 2020) — VQ-VAE + transformer for raw audio
@@ -64,12 +65,12 @@
 - **Stage 0 status:** local 10-second fixed-seed mechanics passed: two seed-42 runs were byte-identical and seed 43 produced a distinct valid artifact. The third run breached the disk/swap safety gate, so 60/90-second execution is deferred to a 48/80 GB institutional or cloud GPU.
 - **Initial musical scope:** instrumental electronic / beat-driven pop in a time-anchored A–B–A′ form; minimum duration 60 seconds, with 75–120 seconds preferred where supported.
 - **Initial interventions:** manipulate B-section register and rhythmic activity separately while holding all other prompt clauses fixed.
-- **Candidate panel:** ACE-Step 1.5 as the reproducible open core and Udio as one commercial external-validity anchor; selection remains conditional on runtime, version, and seed-coupling audits.
+- **Revised commercial panel:** ACE-Step 1.5 remains the reproducible open audio core. Suno Studio 2.0 is now the first commercial interactive-system audit candidate because it directly exposes chat-to-MIDI, localized project editing, audio↔MIDI, effects, and automation. Udio is retained as a deferred raw-audio backup rather than a simultaneous purchase.
 - **ACE-Step source audit:** official revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` is pinned locally. The current environment resolves 124 packages, and the model repository reports 9.39 GiB before dependency/cache overhead.
 - **Current blocker:** the model and environment are installed, but local long-form generation is unsafe under the observed swap pressure. Resume the 60/90-second gate only on a suitable GPU host.
 - **Oracle calibration:** use BabySlakh/Slakh2100 for exact MIDI/stem counterfactuals before interpreting generated outputs.
-- **Budget:** $10 Udio + up to $50 cloud contingency + up to $30 listener reserve = $90 provisional total, leaving $10 below the $100 ceiling.
-- **Active next increment:** secure a suitable GPU host, run the 60-second duplicate gate, audit Udio's current interface and terms, create oracle edits, estimate same-prompt null variability, and run the small CLPR prompt-pair pilot.
+- **Budget:** up to $30 Suno + up to $45 cloud contingency + up to $20 listener reserve = $95 provisional total, leaving $5 below the $100 ceiling. No purchase has been made.
+- **Active next increment:** build the stateful instruction/action schema, verify Suno checkout/terms/export/version behavior, run the six-task Suno audit, secure a suitable GPU host for ACE-Step, create oracle edits, and estimate repeated-instruction/same-prompt null variability.
 
 ## Stage 0 evidence and publication boundary — 2026-07-17
 - Current academic practice supports mixed open/commercial panels when a benchmark seeks real-world or frontier relevance, but commercial systems are not methodologically preferred by default. Reproducible open models should remain the benchmark core.
@@ -104,3 +105,13 @@
 - **Detailed archive:** `INSTRUCTION_TUNING_DIRECTION.md` contains the 18-question investigation, literature review, contradictions, research gaps, proposed work packages, and linked sources.
 - **Independent audit refinement:** no reviewed open system jointly demonstrates free-form exact tonic/key, bar count, Roman-numeral sequence, explicit repetition, and form. The defensible novelty is the combined instruction-plan → CLPR → CRVP → plural-interpretation validation chain.
 - **Audio comparison:** Mustango and JASCO strengthen the hybrid recommendation because their precise chord/beat control is predicted or explicitly supplied as time-aligned structure rather than inferred reliably from prose alone.
+
+## Suno Studio 2.0 research impact — 2026-08-22
+- **Decision:** KEEP CLPR as Paper 1. Suno's release increases the ecological relevance of localized instruction responsiveness but publishes no exact compound-compliance, leakage, spillover, or repeatability benchmark.
+- **Architecture refinement:** expand the static typed musical plan into a stateful production-action schema with project preconditions, actions, protected state, and post-action diffs. Initial actions: create/edit MIDI, arrange clips, audio→MIDI, MIDI→audio, create/revise plugins, set parameters, write automation, split stems, and export.
+- **Capability boundary:** official documentation supports chat-generated MIDI clips, audio-to-MIDI transcription, MIDI-to-audio generation, conversational plugin creation/revision, and manual parameter automation. It does not establish reliable exact constraints or a universal direct "voice to any instrument" operation.
+- **New empirical lane:** add audio↔MIDI round-trip validation to CRVP using labeled monophonic, sung-root, instrumental, and controlled polyphonic inputs, followed by multi-instrument rendering.
+- **Secondary lane:** plugin and automation instruction compliance is valuable but deferred from the Paper 1 core until score/MIDI CLPR is stable.
+- **Commercial-system policy:** prioritize one Suno Studio audit month after price/terms/export/version checks; do not subscribe to Suno and Udio simultaneously before the gate resolves.
+- **Budget refinement:** provisional ceiling becomes $95: up to $30 Suno access, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted. Verify live checkout before spending.
+- **Detailed archive:** `SUNO_STUDIO_2_IMPACT.md` contains the 18-question review, claim corrections, contradictions, gaps, audit protocol, and citations.
