@@ -9,7 +9,7 @@ Suno Studio 2.0 materially strengthens the case for studying **interactive, tool
 
 It does **not** invalidate the current CLPR or typed-plan direction: Suno publishes capabilities, not exact compound-compliance rates, and its own documentation acknowledges timing errors while excluding VST/AU hosting and direct DAW sync.[2] [Corporate Documentation] [HIGH]
 
-The correct refinement is to retain CLPR as Paper 1, broaden the typed plan from a static score schema into a **stateful production-action schema**, and prioritize Suno Studio 2.0 as the first commercial interactive-system audit while retaining ACE-Step as the reproducible open audio core.
+The correct refinement is to retain CLPR as Paper 1, broaden the typed plan from a static score schema into a **stateful production-action schema**, and place Suno Studio 2.0 in a bounded commercial qualification audit while retaining ACE-Step as the reproducible open audio core and Udio provisionally pending a matched gate.
 
 ## Systematic Research Questions
 
@@ -36,11 +36,11 @@ The correct refinement is to retain CLPR as Paper 1, broaden the typed plan from
 
 ### Confirmed capabilities
 
-- The Chat Bar can generate an audio clip, generate a MIDI clip, design plugins, and arrange a song through conversation.[2] [Corporate Help Documentation] [HIGH]
+- The Chat Bar can generate an audio clip, generate a MIDI clip, design plugins, and arrange a song through conversation; independent launch reporting describes text-generated melodies, chord sequences, and drum patterns but provides no controlled compliance test.[2][10] [Corporate Help + Independent Technology Reporting] [HIGH for existence; LOW for reliability]
 - MIDI can be imported, recorded, edited in a piano roll, played by typing or controller, and used as a prompt for new audio generation.[1][2][3] [Corporate Product/Help Documentation] [HIGH]
-- Audio can be dragged onto a MIDI track for note transcription, while MIDI can be rendered or “covered” through the chat/generation system.[2][3] [Corporate Help Documentation] [HIGH]
+- Audio can be dragged onto a MIDI track for note transcription, while MIDI can be rendered or “covered” through the chat/generation system; a hands-on review of the preceding Studio workflow found converted MIDI could be messy, but this predates 2.0 and therefore identifies unresolved risk rather than current failure.[2][3][11] [Corporate Help + Independent Hands-on Review] [HIGH for operation; LOW for current accuracy]
 - Studio provides built-in wavetable synthesis, effects, parameter automation, MIDI Learn, stem separation, and 32-bit/48 kHz multitrack export for Premier users.[1][2][5] [Corporate Product/Help Documentation] [HIGH]
-- Custom effects can be created and conversationally revised, including changes such as slowing a wobble or changing parameter behavior.[2][4] [Corporate Help Documentation] [HIGH]
+- Custom effects can be created and conversationally revised, including changes such as slowing a wobble or changing parameter behavior; independent reporting corroborates that these are Studio-internal effects rather than exportable VST/AU binaries.[2][4][12] [Corporate Help + Independent Technology Reporting] [HIGH]
 - The feature set is currently Premier-only; the pricing page lists an annual-equivalent Premier price of $24/month and identifies Studio, MIDI, effects, automation, and custom plugins as Premier features.[7] [Corporate Pricing Page; financially interested] [HIGH as a dated listing]
 
 ### Claims that require correction or restraint
@@ -74,15 +74,15 @@ instruction
 
 Add action types for `create_midi`, `edit_notes`, `arrange_clip`, `audio_to_midi`, `midi_to_audio`, `create_plugin`, `revise_plugin`, `set_parameter`, `write_automation`, `split_stems`, and `export`. [PROPOSED DESIGN] [HIGH]
 
-### 3. Suno should become the first commercial interactive anchor — REVISE
+### 3. Suno should enter a bounded commercial qualification audit — REVISE
 
-Udio remains useful for a raw-audio seed-coupling comparison, but Suno Studio 2.0 is now more capability-matched to the combined symbolic, audio, orchestration, editing, and production-instruction research question. The panel should therefore be:
+An independent methods review correctly rejected replacing an established commercial anchor from a feature announcement alone. Suno Studio 2.0 is more capability-matched to symbolic, audio, orchestration, editing, and production instructions, while Udio remains useful for raw-audio seed-coupling. The panel should therefore be:
 
 - **Reproducible open audio core:** ACE-Step 1.5.
-- **Commercial interactive anchor:** Suno Studio 2.0, conditional on access, version capture, exportability, costs, and repeated-instruction diagnostics.
-- **Backup raw-audio commercial anchor:** Udio, deferred unless Suno cannot support the preregistered test or a distinct raw-generation comparison is needed.
+- **Bounded commercial interactive audit:** Suno Studio 2.0, conditional on access, version capture, exportability, costs, construct equivalence, and repeated-instruction diagnostics.
+- **Existing commercial raw-audio candidate:** Udio, retained provisionally until a matched qualification gate determines which commercial condition belongs in claim-bearing work.
 
-This is a selection for audit, not validation.
+This is a selection for feasibility audit, not a replacement decision or product validation. Only one commercial access period should be purchased initially.
 
 ### 4. Add an audio↔MIDI round-trip lane — REVISE
 
@@ -112,12 +112,14 @@ Independent reporting confirms the broad chat-driven DAW feature set but largely
 
 ### Preregistered instruction family
 
-1. Create eight bars of MIDI in G major, 4/4, one chord per bar: `I–V–IV–vii°`, exactly two total occurrences.
+1. Import a small oracle MIDI project, then create or reconstruct eight bars in G major, 4/4, one chord per bar: `I–V–IV–vii°`, exactly two total occurrences.
 2. Change bar 2 from `V` to `vi`; preserve every other note and project setting.
 3. Orchestrate only bars 5–8 for strings; preserve harmony and bars 1–4 instrumentation.
 4. Convert a fixed hummed melody to MIDI; compare against hand-labeled note events.
 5. Render the same validated MIDI as piano, bowed strings, and synth lead; preserve note events and timing.
 6. Create a custom effect, revise one control, and verify protected controls and audio behavior.
+
+Run matched no-change requests and repeated identical edits from the same saved starting project. Compare direct natural-language editing with language→typed plan→validated constrained editing; include one deliberately corrupted plan field as a validator check.
 
 ### Required captures
 
@@ -143,6 +145,32 @@ Independent reporting confirms the broad chat-driven DAW feature set but largely
 - rendered note/timing preservation;
 - separate musicality, production quality, artifacts, and preference.
 
+### Commercial qualification gate
+
+Before treating Suno as claim-bearing, compare the expressibility of a compact matched intervention set in Suno and Udio without ranking musical quality. Record repeatability, failure rate, export completeness, timing/alignment reliability, cost per usable intervention, and whether raw artifacts plus metadata can be frozen. If comparable intervention conditions cannot be formed, report separate capability strata rather than a direct leaderboard.
+
+### Renderer control
+
+For claim-bearing symbolic experiments, render exactly validated MIDI through at least two controlled external renderers or soundfonts before adding Suno's built-in synth or generative MIDI-to-audio path as a dated commercial condition. A renderer-choice reversal of pass/fail conclusions or system rankings falsifies renderer invariance and requires representation-specific reporting.
+
+## Competitive Context
+
+- SoundFlow executes natural-language or voice session actions in Pro Tools, but its documented action list emphasizes tracks, routing, inserts, sends, markers, and transport rather than note-level generation or audio↔MIDI workflows.[13] [Corporate Product Documentation] [HIGH]
+- MAGDA is an open-source AI-native DAW whose chat compiles instructions into an internal DSL and can create configured tracks and musical material, but it explicitly identifies itself as an early version with bugs and missing pieces.[14] [Open-source Repository] [HIGH]
+- Soundverse Agent One claims multi-step tool chaining across generation, inpainting, extension, stems, remixing, and voice-to-instrument operations, but no independent compound-compliance or preservation benchmark was found.[15] [Corporate Product Page; financially interested] [MEDIUM]
+- ACE Studio and RipX provide editable MIDI/vocal or note-level audio workflows, stem separation, and transcription-related tools, but their documented interaction model is not a general compound natural-language project executor.[16][17] [Corporate Product Documentation] [MEDIUM]
+
+The competitive implication is narrower than “Suno invented the AI DAW.” Natural-language production execution is becoming a real product category; no reviewed system publishes controlled target-locality, protected-region preservation, per-subinstruction success, recovery-after-failure, or representation-stability results. [SYNTHESIS] [HIGH]
+
+## Independent-Review Refinements
+
+- Treat Suno-exported MIDI as an observed output or mediator, not evidence of Suno's hidden internal plan.
+- Separate requested plan, executed symbolic/project state, and rendered observation.
+- Preserve four locality classes: strict protection, near-boundary adaptation halo, musically necessary downstream adaptation, and unconstrained state.
+- Use known MIDI rendered to audio before allowing audio-to-MIDI transcription into primary CLPR claims.
+- Reject a direct “best system” leaderboard unless interfaces and intervention affordances are construct-equivalent.
+- Phrase the central contribution as a reproducible, representation-aware method for measuring whether localized instructions are executed correctly while protected content is preserved—not merely as building a language-driven symbolic editor.
+
 ## Contradictions Found
 
 1. **Full production environment vs interoperability limits.** Suno presents Studio 2.0 as a full production environment, yet it cannot host VST/AU plugins and has no direct DAW sync or plugin-host integration.[2] [Corporate Help Documentation] [CONFLICTING PRODUCT POSITIONING]
@@ -165,7 +193,7 @@ Independent reporting confirms the broad chat-driven DAW feature set but largely
 
 1. **Keep CLPR as Paper 1.** Studio 2.0 increases its relevance; it does not solve the measurement problem.
 2. **Revise the schema now.** Add stateful production actions and project-state diffs while retaining exact symbolic plans.
-3. **Prioritize Suno for one commercial audit month.** Do not pay for both Suno and Udio until Suno’s access/export/repeatability gate is complete.
+3. **Run a bounded Suno qualification audit before changing commercial anchors.** Do not pay for both Suno and Udio; retain Udio provisionally until the matched gate resolves.
 4. **Run benchmark-before-training.** A capable proprietary product makes unverified fine-tuning less defensible, not more.
 5. **Add audio↔MIDI round-trip tests to CRVP.** This is the clearest new empirical opportunity created by the release.
 6. **Keep plugin/automation evaluation secondary.** It is valuable but should not dilute the first paper’s score/MIDI/local-edit construct.
@@ -185,3 +213,11 @@ Independent reporting confirms the broad chat-driven DAW feature set but largely
 [7] https://suno.com/pricing — Suno Pricing
 [8] https://suno.com/terms — Suno Terms of Service
 [9] https://the-decoder.com/suno-studio-2-0s-new-chat-feature-lets-you-talk-to-your-daw-like-its-a-bandmate — Suno Studio 2.0's chat-driven DAW
+[10] https://www.musicradar.com/music-tech/sunos-studio-2-0-adds-an-ai-chatbot-that-can-control-your-project-transform-sounds-and-generate-custom-plugins — Suno Studio 2.0 adds an AI chatbot
+[11] https://musictech.com/reviews/digital-audio-workstations/suno-studio-review — Suno Studio hands-on review
+[12] https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects — Suno Studio 2.0 adds MIDI chatbot and custom effects
+[13] https://soundflow.org/session-assistant — SoundFlow Session Assistant
+[14] https://github.com/Conceptual-Machines/magda-core — MAGDA open-source AI-native DAW
+[15] https://www.soundverse.ai/agent — Soundverse Agent One
+[16] https://acestudio.ai — ACE Studio
+[17] https://hitnmix.com — RipX AI DAW

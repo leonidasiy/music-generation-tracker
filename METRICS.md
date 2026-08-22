@@ -4,7 +4,7 @@
 > Scope: long-form compositional plan adherence and music instruction following  
 > Status labels: **Candidate** = proposed but unvalidated; **Adaptation** = established method transferred to this task; **Speculative** = promising construct with major measurement risk.
 
-> **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The immediate local workstream is now a stateful typed music-and-production action schema, deterministic project-state validator, and held-out parsing/action benchmark. Suno Studio 2.0 is the first commercial interactive-system audit candidate; the ACE-Step audio prompt-pair pilot resumes on a suitable GPU host with same-prompt null baselines.
+> **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The immediate local workstream is now a stateful typed music-and-production action schema, deterministic project-state validator, and held-out parsing/action benchmark. Suno Studio 2.0 enters a bounded commercial qualification audit, not the reproducible core or an automatic replacement for Udio; the ACE-Step audio prompt-pair pilot resumes on a suitable GPU host with same-prompt null baselines.
 
 > **Producer-practitioner validation:** Native Codex custom subagent Dereck repeatedly reviewed M01–M11 from production, arrangement, sound-design, vocal-production, and audio-engineering perspectives. After two revision rounds, the final pass returned `REVISE_COUNT: 0`: M01–M04, M06–M07, M09, and M11 are professionally coherent at their stated scopes; M05, M08, and M10 remain responsibly deferred. These are practitioner judgments, not empirical validation.
 
@@ -377,6 +377,8 @@ Each benchmark item should contain:
 7. **Observed diff:** symbolic/project-state changes plus rendered-audio changes.
 8. **Execution trace:** user turn, assistant response, retries, clarifications, manual corrections, costs, and version/date metadata.
 
+Keep three objects distinct: the **requested plan**, the **executed symbolic/project state**, and the **rendered observation**. Exported MIDI is an observed output or mediator, not evidence of a proprietary system's hidden internal plan.
+
 ### CLPR mapping for project actions
 
 - **TES:** requested change in the target note set, clip, track, plugin behavior, parameter, automation lane, stem, or export.
@@ -385,10 +387,11 @@ Each benchmark item should contain:
 - **BS:** near-boundary changes around a requested clip, bar, section, or automation interval.
 - **PRD:** use when the instruction changes a structural or routing relation.
 - **Null variability:** repeated identical chat turns from identical saved project states; use repeated-sample responsiveness unless useful coupling is demonstrated.
+- **Locality classes:** strict protection, near-boundary adaptation halo, musically necessary downstream adaptation, and unconstrained state. Sensitivity to halo width must be reported.
 
 ### Audio↔MIDI CRVP lane
 
-- Start with hand-labeled monophonic hums, sung roots, instrumental melodies, and controlled polyphonic clips.
+- Start with known MIDI rendered to audio, then hand-labeled monophonic hums, sung roots, instrumental melodies, and controlled polyphonic clips. Audio-to-MIDI remains diagnostic rather than claim-bearing until its errors are calibrated.
 - Measure pitch, onset, duration, velocity, rhythm, and polyphony error after audio→MIDI.
 - Render the recovered MIDI through piano, bowed strings, and synth conditions; verify exact note/timing retention before audio-side comparison.
 - Separate transcription error, synthesis/rendering effects, generated-cover changes, and downstream detector error.
@@ -403,6 +406,8 @@ Report requested control topology, parameter monotonicity/range, transfer or fre
 ### Revised commercial panel and budget
 
 - ACE-Step 1.5 remains the reproducible open audio core.
-- Suno Studio 2.0 becomes the first commercial interactive-system audit candidate, conditional on price, terms, export, version capture, timing, and repeated-instruction gates.
-- Udio remains a deferred backup for a distinct raw-audio/seed-control comparison; do not subscribe to both before the Suno gate resolves.
+- Suno Studio 2.0 enters a bounded commercial interactive qualification audit, conditional on price, terms, export, version capture, timing, repeated-instruction, artifact-retention, and construct-equivalence gates.
+- Udio remains the provisional raw-audio commercial candidate until the matched gate resolves; do not subscribe to both initially and do not force a direct leaderboard when intervention affordances differ.
 - Provisional ceiling: $95 — up to $30 Suno access, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted.
+
+For claim-bearing symbolic tests, use at least two controlled external renderers before adding a commercial renderer/generative cover condition. Report renderer-specific results if renderer choice reverses rankings or pass/fail conclusions.

@@ -17,7 +17,7 @@
 - **ACE-Step 1.5** — Open long-form generator with duration, seed, metadata, repaint, and local execution controls; primary Stage 0 candidate
 - **MusicGen** (Meta, 2023) — Transformer-based text-to-music, released open-source
 - **Suno** — Proprietary, high-quality song generation from lyrics
-- **Suno Studio 2.0** — Premier-only chat-driven production environment with chat-generated audio/MIDI, audio↔MIDI workflows, project arrangement, custom effects, automation, built-in synthesis, and stem separation; first commercial interactive-system audit candidate as of 2026-08-22
+- **Suno Studio 2.0** — Premier-only chat-driven production environment with chat-generated audio/MIDI, audio↔MIDI workflows, project arrangement, custom effects, automation, built-in synthesis, and stem separation; bounded commercial qualification-audit candidate as of 2026-08-22
 - **Udio** — Proprietary, high-fidelity music generation
 - **Stable Audio** (Stability AI) — Diffusion-based audio generation
 - **Jukebox** (OpenAI, 2020) — VQ-VAE + transformer for raw audio
@@ -65,12 +65,12 @@
 - **Stage 0 status:** local 10-second fixed-seed mechanics passed: two seed-42 runs were byte-identical and seed 43 produced a distinct valid artifact. The third run breached the disk/swap safety gate, so 60/90-second execution is deferred to a 48/80 GB institutional or cloud GPU.
 - **Initial musical scope:** instrumental electronic / beat-driven pop in a time-anchored A–B–A′ form; minimum duration 60 seconds, with 75–120 seconds preferred where supported.
 - **Initial interventions:** manipulate B-section register and rhythmic activity separately while holding all other prompt clauses fixed.
-- **Revised commercial panel:** ACE-Step 1.5 remains the reproducible open audio core. Suno Studio 2.0 is now the first commercial interactive-system audit candidate because it directly exposes chat-to-MIDI, localized project editing, audio↔MIDI, effects, and automation. Udio is retained as a deferred raw-audio backup rather than a simultaneous purchase.
+- **Revised commercial panel:** ACE-Step 1.5 remains the reproducible open audio core. Suno Studio 2.0 enters a bounded interactive-system qualification audit because it exposes chat-to-MIDI, localized project editing, audio↔MIDI, effects, and automation. Udio remains the provisional raw-audio commercial candidate until a matched access/export/repeatability/construct-equivalence gate resolves the claim-bearing commercial slot; only one commercial access period will be purchased initially.
 - **ACE-Step source audit:** official revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` is pinned locally. The current environment resolves 124 packages, and the model repository reports 9.39 GiB before dependency/cache overhead.
 - **Current blocker:** the model and environment are installed, but local long-form generation is unsafe under the observed swap pressure. Resume the 60/90-second gate only on a suitable GPU host.
 - **Oracle calibration:** use BabySlakh/Slakh2100 for exact MIDI/stem counterfactuals before interpreting generated outputs.
 - **Budget:** up to $30 Suno + up to $45 cloud contingency + up to $20 listener reserve = $95 provisional total, leaving $5 below the $100 ceiling. No purchase has been made.
-- **Active next increment:** build the stateful instruction/action schema, verify Suno checkout/terms/export/version behavior, run the six-task Suno audit, secure a suitable GPU host for ACE-Step, create oracle edits, and estimate repeated-instruction/same-prompt null variability.
+- **Active next increment:** build the stateful instruction/action schema, verify Suno checkout/terms/export/version behavior, run the six-task bounded Suno audit from imported oracle projects, apply a matched Suno–Udio qualification gate without quality ranking, secure a suitable GPU host for ACE-Step, create oracle edits, and estimate repeated-instruction/same-prompt null variability.
 
 ## Stage 0 evidence and publication boundary — 2026-07-17
 - Current academic practice supports mixed open/commercial panels when a benchmark seeks real-world or frontier relevance, but commercial systems are not methodologically preferred by default. Reproducible open models should remain the benchmark core.
@@ -112,6 +112,6 @@
 - **Capability boundary:** official documentation supports chat-generated MIDI clips, audio-to-MIDI transcription, MIDI-to-audio generation, conversational plugin creation/revision, and manual parameter automation. It does not establish reliable exact constraints or a universal direct "voice to any instrument" operation.
 - **New empirical lane:** add audio↔MIDI round-trip validation to CRVP using labeled monophonic, sung-root, instrumental, and controlled polyphonic inputs, followed by multi-instrument rendering.
 - **Secondary lane:** plugin and automation instruction compliance is valuable but deferred from the Paper 1 core until score/MIDI CLPR is stable.
-- **Commercial-system policy:** prioritize one Suno Studio audit month after price/terms/export/version checks; do not subscribe to Suno and Udio simultaneously before the gate resolves.
+- **Commercial-system policy:** run one bounded Suno Studio qualification period after price/terms/export/version checks; do not replace Udio or subscribe to both before the matched construct-equivalence gate resolves.
 - **Budget refinement:** provisional ceiling becomes $95: up to $30 Suno access, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted. Verify live checkout before spending.
 - **Detailed archive:** `SUNO_STUDIO_2_IMPACT.md` contains the 18-question review, claim corrections, contradictions, gaps, audit protocol, and citations.

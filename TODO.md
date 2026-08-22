@@ -104,7 +104,7 @@
 
 ## Stage 0 Resource Plan — 2026-07-17
 - [x] Open core: ACE-Step 1.5, subject to local runtime and determinism verification
-- [x] Revised commercial interactive audit: Suno Studio 2.0, capped at $30 after checkout/terms verification; Udio deferred
+- [x] Revised commercial qualification audit: Suno Studio 2.0, capped at $30 after checkout/terms verification; Udio retained provisionally pending the matched gate
 - [x] Revised cloud-compute contingency: up to $45 only if local execution is inadequate
 - [x] Revised listener micro-study reserve: up to $20 after mechanical feasibility passes
 - [x] Revised total provisional allocation: $95; $5 remains below the $100 ceiling
@@ -138,12 +138,15 @@
 - [x] Verify the launch claims against Suno's product, help, MIDI, plugin, automation, pricing, and terms pages
 - [x] Separate chat-to-MIDI, audio-to-MIDI, MIDI-to-audio, voice models, plugin construction, parameter revision, automation, and stem separation
 - [x] Preserve CLPR as the flagship and broaden the typed plan into a stateful production-action schema
-- [x] Select Suno Studio 2.0 for the first commercial interactive-system audit; retain Udio as a deferred raw-audio backup
+- [x] Add Suno Studio 2.0 as a bounded commercial interactive-system qualification audit; retain Udio provisionally until a matched gate resolves the claim-bearing commercial slot
 - [x] Archive the full assessment in `SUNO_STUDIO_2_IMPACT.md`
 - [ ] Before purchase, verify live month-to-month Premier checkout price, credit accounting, export categories, terms, and visible product/version identifiers
 - [ ] Extend the typed schema with project preconditions, actions, protected state, and post-action validators
-- [ ] Build a six-task Suno audit covering exact MIDI creation, one-bar editing, local orchestration, audio→MIDI, MIDI→audio, and plugin revision
+- [ ] Build a six-task Suno audit from imported oracle projects covering exact MIDI creation, one-bar editing, local orchestration, audio→MIDI, MIDI→audio, and plugin revision
+- [ ] Compare direct language editing with language→typed plan→validated execution and one deliberately corrupted plan field
+- [ ] Run a matched Suno–Udio qualification gate on expressibility, repeatability, failure rate, exports, timing, cost, and artifact retention without ranking musical quality
+- [ ] Render validated MIDI through two controlled external renderers before adding Suno's built-in/generative rendering condition
 - [ ] Capture repeated identical chat instructions and estimate action-level null variability; do not assume stochastic coupling
 - [ ] Add audio↔MIDI round-trip tests to CRVP using monophonic, sung-root, instrumental, and controlled polyphonic inputs
 - [ ] Keep plugin/automation compliance as a secondary lane until score/MIDI CLPR is stable
-- [ ] Do not subscribe to both Suno and Udio before the Suno access/export/repeatability gate is resolved
+- [ ] Do not subscribe to both Suno and Udio before the matched access/export/repeatability/construct-equivalence gate is resolved

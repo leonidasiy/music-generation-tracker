@@ -164,3 +164,4 @@
 - Revised the provisional budget to $95: up to $30 Suno, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted; no purchase was made
 - Archived the full 18-question assessment, contradictions, gaps, recommendations, and six-task audit protocol in `SUNO_STUDIO_2_IMPACT.md`
 - Synchronized TODO, INFO, METRICS, REFERENCES, HISTORY, and the public tracker around the revised decision
+- Incorporated three completed independent reviews: narrowed Suno from an automatic commercial-anchor replacement to a bounded qualification audit, retained Udio provisionally, added imported-oracle existing-project edits, a matched construct-equivalence gate, two-renderer control, explicit requested/executed/rendered objects, and competitive AI-DAW context

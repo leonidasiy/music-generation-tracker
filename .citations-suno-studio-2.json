@@ -54,6 +54,54 @@
       "url": "https://the-decoder.com/suno-studio-2-0s-new-chat-feature-lets-you-talk-to-your-daw-like-its-a-bandmate",
       "title": "Suno Studio 2.0's chat-driven DAW",
       "accessed": "2026-08-22"
+    },
+    {
+      "id": 10,
+      "url": "https://www.musicradar.com/music-tech/sunos-studio-2-0-adds-an-ai-chatbot-that-can-control-your-project-transform-sounds-and-generate-custom-plugins",
+      "title": "Suno Studio 2.0 adds an AI chatbot",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 11,
+      "url": "https://musictech.com/reviews/digital-audio-workstations/suno-studio-review",
+      "title": "Suno Studio hands-on review",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 12,
+      "url": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects",
+      "title": "Suno Studio 2.0 adds MIDI chatbot and custom effects",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 13,
+      "url": "https://soundflow.org/session-assistant",
+      "title": "SoundFlow Session Assistant",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 14,
+      "url": "https://github.com/Conceptual-Machines/magda-core",
+      "title": "MAGDA open-source AI-native DAW",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 15,
+      "url": "https://www.soundverse.ai/agent",
+      "title": "Soundverse Agent One",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 16,
+      "url": "https://acestudio.ai",
+      "title": "ACE Studio",
+      "accessed": "2026-08-22"
+    },
+    {
+      "id": 17,
+      "url": "https://hitnmix.com",
+      "title": "RipX AI DAW",
+      "accessed": "2026-08-22"
     }
   ]
 }
