@@ -150,3 +150,21 @@
 - [ ] Add audio↔MIDI round-trip tests to CRVP using monophonic, sung-root, instrumental, and controlled polyphonic inputs
 - [ ] Keep plugin/automation compliance as a secondary lane until score/MIDI CLPR is stable
 - [ ] Do not subscribe to both Suno and Udio before the matched access/export/repeatability/construct-equivalence gate is resolved
+
+## Veena Studio Mechanical Pilot — 2026-09-06
+- [x] Run five user-operated MIDI creation, accompaniment, analysis, and localized-edit instructions in Veena Studio
+- [x] Archive the exact available prompts and responses in `VEENA_STUDIO_PILOT.md`, preserving transcript gaps rather than reconstructing them
+- [x] Archive baseline and post-Query-5 MIDI exports with SHA-256 hashes
+- [x] Implement a standard-library MIDI parser and deterministic event-level comparison
+- [x] Verify Query 1 final exactness: 32/32 requested chord notes after an agent repair loop
+- [x] Measure Query 2 harmonic-position compliance against full chord-symbol pitch classes: 23/32 (71.875%), despite correct timing/range mechanics
+- [x] Measure Query 3 maximum-one-non-chord-event compliance: 3/8 bars
+- [x] Verify Query 5 strict locality: zero protected-event changes; only Track 1 bars 6–7 changed
+- [x] Diagnose Query 5 target failure: `Bb7(#11)` omitted `Ab`, and the dependent bar-7 bass remained incompatible
+- [x] Preserve CLPR, symbolic-first validation, benchmark-before-training, and the reproducible open core
+- [x] Add claim-calibration, verification/repair, required-adaptation, and functional chord-degree methodology refinements
+- [ ] Repeat identical Veena tasks from restored initial states with a fixed first-candidate policy
+- [ ] Add a no-op project verification control and measure false edits plus claim calibration
+- [ ] Test a validator-generated minimal repair for the missing `Ab` and incompatible bar-7 bass
+- [ ] Verify project cloning/restoration, model/version capture, request accounting, and export stability before claim-bearing use
+- [ ] Compare matched Veena and Suno exact-create/local-edit/repair tasks only after construct-equivalence gates pass

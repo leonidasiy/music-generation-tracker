@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-17T09:48:54Z",
+  "updated_at": "2026-09-06T00:48:49Z",
   "entries": [
     {
       "id": "20260717T092905Z-001",
@@ -8,7 +8,7 @@
       "phase": "audit",
       "title": "Audit repository state",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "git status --short --branch && git log -5 --oneline --decorate && git diff --stat && git diff --check",
       "exit_code": 0,
       "output_summary": "## main...origin/main\n?? pilots/clpr_stage0/scripts/\n?? scripts/\n24f9ba2 (HEAD -> main, origin/main) feat: begin CLPR Stage 0 protocol\n17906b1 docs: synchronize CLPR Stage 0 decisions\n344343b docs: finalize iterative producer review of metrics\na354f70 docs: record producer validation of metric strategy\n66d7c74 docs: synchronize tracker progress and research state",
@@ -20,7 +20,7 @@
       "phase": "audit",
       "title": "Check Mac resource headroom",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "df -h /; memory_pressure; lsof -nP -iTCP:8001 -sTCP:LISTEN || true",
       "exit_code": 0,
       "output_summary": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    24Gi    34%    459k  256M    0%   /\nThe system has 25769803776 (1572864 pages with a page size of 16384).\n\nStats: \nPages free: 53536 \nPages purgeable: 21077 \nPages purged: 1535018 \n\nSwap I/O:\nSwapins: 4867456 \nSwapouts: 6732504 \n\nPage Q counts:\nPages active: 638095 \nPages inactive: 465391 \nPages speculative: 172018 \nPages throttled: 0 \nPages wired down: 157380 \n\nCompressor Stats:\nPages used by compressor: 44232 \nPages decompressed: 17409895 \nPages compressed: 23846235 \n\nFile I/O:\nPageins: 5781489 \nPageouts: 49419 \n\nSystem-wide memory free percentage: 86%",
@@ -32,7 +32,7 @@
       "phase": "infrastructure",
       "title": "Verify execution-ledger tests",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "PYTHONPATH=scripts python3 -m unittest scripts.tests.test_execution_ledger -v",
       "exit_code": 0,
       "output_summary": "test_append_entry_creates_deterministic_public_record (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_run_logged_command_records_exit_and_created_output (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_sensitive_values_are_redacted (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.018s\n\nOK",
@@ -44,27 +44,27 @@
       "phase": "infrastructure",
       "title": "Implement public execution ledger and website tab",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "Hermes write_file/patch: scripts/execution_ledger.py, scripts/tests/test_execution_ledger.py, index.html",
       "exit_code": 0,
       "output_summary": "Added a redacting command/artifact ledger, three passing tests, and a browser-rendered Execution Log tab backed by execution-log.json.",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/scripts/execution_ledger.py",
+          "path": "./scripts/execution_ledger.py",
           "exists": true,
           "kind": "file",
           "size_bytes": 5620,
           "sha256": "ccea1b07d17d15900a3c1cbe3eb2af165378b97897ebccc011af480bf07ccb98"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/scripts/tests/test_execution_ledger.py",
+          "path": "./scripts/tests/test_execution_ledger.py",
           "exists": true,
           "kind": "file",
           "size_bytes": 2703,
           "sha256": "9d36c8487615d86d396a594090735f345c463a0191fffed99ad9a34d66ed15da"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "path": "./index.html",
           "exists": true,
           "kind": "file",
           "size_bytes": 84693,
@@ -78,34 +78,34 @@
       "phase": "documentation",
       "title": "Synchronize local-runtime status and monitoring plan",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "Hermes patch: TODO.md, HISTORY.md, pilots/clpr_stage0/README.md, index.html",
       "exit_code": 0,
       "output_summary": "Recorded the completed installation and deterministic smoke evidence, replaced the obsolete download gate with a monitored local-resource gate, and exposed the next different-seed and 60-second checks.",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/TODO.md",
+          "path": "./TODO.md",
           "exists": true,
           "kind": "file",
           "size_bytes": 7573,
           "sha256": "625fbf7777447a5dc076985a00f5c5d2df43edc868c51a5e37d7d3f2e04fe30a"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/HISTORY.md",
+          "path": "./HISTORY.md",
           "exists": true,
           "kind": "file",
           "size_bytes": 12824,
           "sha256": "a6df7f1e203de25279ebf589e9bc41e880f61b1aa2c0ac88dfb1954376ecad7e"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/README.md",
+          "path": "./pilots/clpr_stage0/README.md",
           "exists": true,
           "kind": "file",
           "size_bytes": 3272,
           "sha256": "d1b699f1f4fd3f80eacd7bb71f096ea65b9263090b4521197a52fb1d0e13674a"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "path": "./index.html",
           "exists": true,
           "kind": "file",
           "size_bytes": 84693,
@@ -119,7 +119,7 @@
       "phase": "validation",
       "title": "Run project test suites and structural checks",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "PYTHONPATH=scripts python3 -m unittest scripts.tests.test_execution_ledger -v && PYTHONPATH=pilots/clpr_stage0/src python3 -m unittest discover -s pilots/clpr_stage0/tests -v && (cd pilots/dual_representation && .venv/bin/python -m unittest test_pilot.py -v) && python3 -m json.tool execution-log.json >/dev/null && python3 - <<'PY'\nfrom pathlib import Path\nfrom html.parser import HTMLParser\nclass Audit(HTMLParser):\n    def __init__(self):\n        super().__init__(); self.ids=[]; self.tabs=[]; self.panels=[]\n    def handle_starttag(self, tag, attrs):\n        a=dict(attrs)\n        if 'id' in a: self.ids.append(a['id'])\n        if a.get('role')=='tab': self.tabs.append(a)\n        if a.get('role')=='tabpanel': self.panels.append(a)\np=Audit(); p.feed(Path('index.html').read_text())\ndup={x for x in p.ids if p.ids.count(x)>1}\nassert not dup, dup\nassert len(p.tabs)==len(p.panels)==9, (len(p.tabs),len(p.panels))\nassert {x['aria-controls'] for x in p.tabs}=={x['id'] for x in p.panels}\nprint('HTML audit: 9 tabs, 9 panels, no duplicate IDs, ARIA targets match')\nPY\ngit diff --check",
       "exit_code": 0,
       "output_summary": "HTML audit: 9 tabs, 9 panels, no duplicate IDs, ARIA targets match\ntest_append_entry_creates_deterministic_public_record (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_run_logged_command_records_exit_and_created_output (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_sensitive_values_are_redacted (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.018s\n\nOK\ntest_sha256_file_matches_hashlib (test_clpr_stage0.HashTests) ... ok\ntest_manifest_accepts_complete_record (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_invalid_condition (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_missing_generator_version (test_clpr_stage0.ManifestTests) ... ok\ntest_regions_reject_overlap (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_registry_rejects_multiple_target_placeholders (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_valid_registry_renders_clause_minimal_pair (test_clpr_stage0.PromptRegistryTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\ntest_audio_features_are_finite (test_pilot.DualRepresentationPilotTests) ... ok\ntest_end_to_end_writes_results (test_pilot.DualRepresentationPilotTests) ... ok\ntest_render_change_preserves_symbolic_source (test_pilot.DualRepresentationPilotTests) ... ok\ntest_structural_corruption_changes_symbolic_profile (test_pilot.DualRepresentationPilotTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.083s\n\nOK",
@@ -131,18 +131,18 @@
       "phase": "validation",
       "title": "Verify Execution Log in local browser",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "python3 -m http.server 8765 --bind 127.0.0.1; browser QA at http://127.0.0.1:8765/",
       "exit_code": 0,
       "output_summary": "Execution Log loaded all records, keyboard tab semantics remained intact, visual inspection found no overlap or clipping in light mode, and the browser console reported zero JavaScript errors.",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/execution-log.json",
+          "path": "./execution-log.json",
           "exists": true,
           "kind": "ledger-self-reference"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "path": "./index.html",
           "exists": true,
           "kind": "file",
           "size_bytes": 84693,
@@ -156,20 +156,20 @@
       "phase": "stage0",
       "title": "Run different-seed 10-second ACE-Step diagnostic",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "printf 'BEFORE RESOURCE SNAPSHOT\\n'; df -h /; sysctl vm.swapusage; python3 pilots/clpr_stage0/scripts/run_ace_smoke.py --duration 10 --seed 43 --output pilots/clpr_stage0/runs/ace_smoke_seed43.flac --timeout 480; printf '\\nAFTER RESOURCE SNAPSHOT\\n'; df -h /; sysctl vm.swapusage",
       "exit_code": 0,
-      "output_summary": "BEFORE RESOURCE SNAPSHOT\nFilesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    24Gi    34%    459k  256M    0%   /\nvm.swapusage: total = 3072.00M  used = 2202.81M  free = 869.19M  (encrypted)\n{\n  \"completed_at_unix\": 1784281218.3269088,\n  \"output_path\": \"/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/runs/ace_smoke_seed43.flac\",\n  \"output_sha256\": \"c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5\",\n  \"output_size_bytes\": 1663663,\n  \"request\": {\n    \"audio_duration\": 10.0,\n    \"audio_format\": \"flac\",\n    \"batch_size\": 1,\n    \"bpm\": 120,\n    \"infer_method\": \"ode\",\n    \"inference_steps\": 8,\n    \"key_scale\": \"C Major\",\n    \"lyrics\": \"\",\n    \"model\": \"acestep-v15-turbo\",\n    \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n    \"sample_mode\": false,\n    \"seed\": 43,\n    \"thinking\": false,\n    \"time_signature\": \"4\",\n    \"use_cot_caption\": false,\n    \"use_cot_language\": false,\n    \"use_cot_metas\": false,\n    \"use_format\": false,\n    \"use_random_seed\": false\n  },\n  \"server_result\": {\n    \"create_time\": 1784281113,\n    \"dit_model\": \"acestep-v15-turbo\",\n    \"env\": \"development\",\n    \"file\": \"/v1/audio?path=%2FUsers%2Flirenzhang%2F.cache%2Fclpr-stage0%2FACE-Step-1.5%2F.cache%2Facestep%2Ftmp%2Fapi_audio%2Fb38dc8e5-0f7c-f913-5a66-9d4de339edf6.flac\",\n    \"generation_info\": \"**\\ud83c\\udfb5 Total generation time (1 song): 39.20s**\\n- 39.20s per song\\n- DiT phase (1 song): 39.20s\",\n    \"lm_model\": \"acestep-5Hz-lm-0.6B\",\n    \"lyrics\": \"\",\n    \"metas\": {\n      \"bpm\": 120,\n      \"duration\": 10.0,\n      \"genres\": \"N/A\",\n      \"keyscale\": \"C Major\",\n      \"lyrics\": \"\",\n      \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n      \"timesignature\": \"4\"\n    },\n    \"progress\": 1.0,\n    \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n    \"seed_value\": \"43\",\n    \"stage\": \"succeeded\",\n    \"status\": 1,\n    \"wave\": \"\"\n  },\n  \"submitted_at_unix\": 1784281113.214832,\n  \"task_id\": \"36309de5-3374-42d8-8dab-abd0c64f1c81\"\n}\n\nAFTER RESOURCE SNAPSHOT\nFilesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    12Gi    51%    459k  130M    0%   /\nvm.swapusage: total = 15360.00M  used = 14195.94M  free = 1164.06M  (encrypted)",
+      "output_summary": "BEFORE RESOURCE SNAPSHOT\nFilesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    24Gi    34%    459k  256M    0%   /\nvm.swapusage: total = 3072.00M  used = 2202.81M  free = 869.19M  (encrypted)\n{\n  \"completed_at_unix\": 1784281218.3269088,\n  \"output_path\": \"./pilots/clpr_stage0/runs/ace_smoke_seed43.flac\",\n  \"output_sha256\": \"c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5\",\n  \"output_size_bytes\": 1663663,\n  \"request\": {\n    \"audio_duration\": 10.0,\n    \"audio_format\": \"flac\",\n    \"batch_size\": 1,\n    \"bpm\": 120,\n    \"infer_method\": \"ode\",\n    \"inference_steps\": 8,\n    \"key_scale\": \"C Major\",\n    \"lyrics\": \"\",\n    \"model\": \"acestep-v15-turbo\",\n    \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n    \"sample_mode\": false,\n    \"seed\": 43,\n    \"thinking\": false,\n    \"time_signature\": \"4\",\n    \"use_cot_caption\": false,\n    \"use_cot_language\": false,\n    \"use_cot_metas\": false,\n    \"use_format\": false,\n    \"use_random_seed\": false\n  },\n  \"server_result\": {\n    \"create_time\": 1784281113,\n    \"dit_model\": \"acestep-v15-turbo\",\n    \"env\": \"development\",\n    \"file\": \"/v1/audio?path=%5BHOME%5D%2F.cache%2Fclpr-stage0%2FACE-Step-1.5%2F.cache%2Facestep%2Ftmp%2Fapi_audio%2Fb38dc8e5-0f7c-f913-5a66-9d4de339edf6.flac\",\n    \"generation_info\": \"**\\ud83c\\udfb5 Total generation time (1 song): 39.20s**\\n- 39.20s per song\\n- DiT phase (1 song): 39.20s\",\n    \"lm_model\": \"acestep-5Hz-lm-0.6B\",\n    \"lyrics\": \"\",\n    \"metas\": {\n      \"bpm\": 120,\n      \"duration\": 10.0,\n      \"genres\": \"N/A\",\n      \"keyscale\": \"C Major\",\n      \"lyrics\": \"\",\n      \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n      \"timesignature\": \"4\"\n    },\n    \"progress\": 1.0,\n    \"prompt\": \"instrumental electronic pop groove, monophonic synthesizer lead, electronic kick, snare, closed hi-hat, bass and pads, no vocals\",\n    \"seed_value\": \"43\",\n    \"stage\": \"succeeded\",\n    \"status\": 1,\n    \"wave\": \"\"\n  },\n  \"submitted_at_unix\": 1784281113.214832,\n  \"task_id\": \"36309de5-3374-42d8-8dab-abd0c64f1c81\"\n}\n\nAFTER RESOURCE SNAPSHOT\nFilesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    12Gi    51%    459k  130M    0%   /\nvm.swapusage: total = 15360.00M  used = 14195.94M  free = 1164.06M  (encrypted)",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/runs/ace_smoke_seed43.flac",
+          "path": "./pilots/clpr_stage0/runs/ace_smoke_seed43.flac",
           "exists": true,
           "kind": "file",
           "size_bytes": 1663663,
           "sha256": "c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/runs/ace_smoke_seed43.flac.json",
+          "path": "./pilots/clpr_stage0/runs/ace_smoke_seed43.flac.json",
           "exists": true,
           "kind": "file",
           "size_bytes": 2073,
@@ -183,7 +183,7 @@
       "phase": "safety",
       "title": "Stop ACE-Step after resource threshold breach",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "df -h /; sysctl vm.swapusage; lsof -nP -iTCP:8001 -sTCP:LISTEN || true",
       "exit_code": 0,
       "output_summary": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    21Gi    38%    459k  224M    0%   /\nvm.swapusage: total = 6144.00M  used = 4627.12M  free = 1516.88M  (encrypted)",
@@ -195,7 +195,7 @@
       "phase": "stage0",
       "title": "Validate different-seed artifact and media properties",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "shasum -a 256 pilots/clpr_stage0/runs/ace_smoke_seed42_a.flac pilots/clpr_stage0/runs/ace_smoke_seed43.flac; ffprobe -v error -show_entries format=duration,size:stream=codec_name,sample_rate,channels -of json pilots/clpr_stage0/runs/ace_smoke_seed43.flac; python3 - <<'PY'\nimport json\nfrom pathlib import Path\na=json.loads(Path('pilots/clpr_stage0/runs/ace_smoke_seed42_a.flac.json').read_text())\nb=json.loads(Path('pilots/clpr_stage0/runs/ace_smoke_seed43.flac.json').read_text())\nassert a['output_sha256'] != b['output_sha256']\nassert a['request']['seed'] == 42 and b['request']['seed'] == 43\nprint('Different-seed diagnostic: PASS; seed 42 and seed 43 produced different hashes')\nPY",
       "exit_code": 0,
       "output_summary": "df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09  pilots/clpr_stage0/runs/ace_smoke_seed42_a.flac\nc2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5  pilots/clpr_stage0/runs/ace_smoke_seed43.flac\n{\n    \"programs\": [\n\n    ],\n    \"stream_groups\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"flac\",\n            \"sample_rate\": \"48000\",\n            \"channels\": 2\n        }\n    ],\n    \"format\": {\n        \"duration\": \"10.000000\",\n        \"size\": \"1663663\"\n    }\n}\nDifferent-seed diagnostic: PASS; seed 42 and seed 43 produced different hashes",
@@ -207,41 +207,41 @@
       "phase": "documentation",
       "title": "Record local safety-gate result",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "Hermes patch: TODO.md, HISTORY.md, pilots/clpr_stage0/README.md, index.html",
       "exit_code": 0,
       "output_summary": "Marked the different-seed diagnostic complete, documented the 24-to-12 GiB free-disk drop and 2.2-to-14.2 GiB swap growth, recorded the server shutdown, and deferred 60/90-second generation to a 48/80 GB GPU.",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/TODO.md",
+          "path": "./TODO.md",
           "exists": true,
           "kind": "file",
           "size_bytes": 7796,
           "sha256": "bdc7a11cf59b2ce4da884fdf280a4b26f8fb0bdab3753392a80803164a2f43b7"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/HISTORY.md",
+          "path": "./HISTORY.md",
           "exists": true,
           "kind": "file",
           "size_bytes": 13536,
           "sha256": "f249c235ede42ecd4e0a57fbf134e56085fa3d644fa679caf36a30068d7a1cb3"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/clpr_stage0/README.md",
+          "path": "./pilots/clpr_stage0/README.md",
           "exists": true,
           "kind": "file",
           "size_bytes": 3571,
           "sha256": "63a674236ec25707953f6fde8a4819a6b3337f50016f66ea557966725ceee864"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "path": "./index.html",
           "exists": true,
           "kind": "file",
           "size_bytes": 84755,
           "sha256": "82813a996f6bdd49bcb889323e42ad8505cb62a75db976daee3b3296829ed959"
         },
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/execution-log.json",
+          "path": "./execution-log.json",
           "exists": true,
           "kind": "ledger-self-reference"
         }
@@ -253,13 +253,13 @@
       "phase": "infrastructure",
       "title": "Remove stale self-referential ledger hashes",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "python3 -c \"import json; from pathlib import Path; p=Path('execution-log.json').resolve(); d=json.loads(p.read_text()); [(o.pop('sha256',None),o.pop('size_bytes',None),o.update({'kind':'ledger-self-reference'})) for e in d['entries'] for o in e.get('outputs',[]) if Path(o['path']).resolve()==p]; p.write_text(json.dumps(d,indent=2)+'\\n')\"",
       "exit_code": 0,
       "output_summary": "",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/execution-log.json",
+          "path": "./execution-log.json",
           "exists": true,
           "kind": "ledger-self-reference"
         }
@@ -271,7 +271,7 @@
       "phase": "validation",
       "title": "Validate Stage 0 safety checkpoint",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "PYTHONPATH=scripts python3 -m unittest scripts.tests.test_execution_ledger -v && PYTHONPATH=pilots/clpr_stage0/src python3 -m unittest discover -s pilots/clpr_stage0/tests -v && (cd pilots/dual_representation && .venv/bin/python -m unittest test_pilot.py -v) && python3 -m json.tool execution-log.json >/dev/null && git diff --check && df -h / && sysctl vm.swapusage && test -z \"\" && echo 'Port 8001 closed'",
       "exit_code": 0,
       "output_summary": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    22Gi    36%    459k  235M    0%   /\nvm.swapusage: total = 5120.00M  used = 4322.06M  free = 797.94M  (encrypted)\nPort 8001 closed\ntest_append_entry_creates_deterministic_public_record (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_ledger_does_not_publish_a_stale_hash_of_itself (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_run_logged_command_records_exit_and_created_output (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\ntest_sensitive_values_are_redacted (scripts.tests.test_execution_ledger.ExecutionLedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.017s\n\nOK\ntest_sha256_file_matches_hashlib (test_clpr_stage0.HashTests) ... ok\ntest_manifest_accepts_complete_record (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_invalid_condition (test_clpr_stage0.ManifestTests) ... ok\ntest_manifest_rejects_missing_generator_version (test_clpr_stage0.ManifestTests) ... ok\ntest_regions_reject_overlap (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_registry_rejects_multiple_target_placeholders (test_clpr_stage0.PromptRegistryTests) ... ok\ntest_valid_registry_renders_clause_minimal_pair (test_clpr_stage0.PromptRegistryTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\ntest_audio_features_are_finite (test_pilot.DualRepresentationPilotTests) ... ok\ntest_end_to_end_writes_results (test_pilot.DualRepresentationPilotTests) ... ok\ntest_render_change_preserves_symbolic_source (test_pilot.DualRepresentationPilotTests) ... ok\ntest_structural_corruption_changes_symbolic_profile (test_pilot.DualRepresentationPilotTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.083s\n\nOK",
@@ -283,13 +283,13 @@
       "phase": "repository",
       "title": "Ignore local Python bytecode caches without deleting them",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "Hermes write_file: .gitignore",
       "exit_code": 0,
       "output_summary": "Added root ignore rules for __pycache__ and Python bytecode. Existing caches were left in place and were not deleted.",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/.gitignore",
+          "path": "./.gitignore",
           "exists": true,
           "kind": "file",
           "size_bytes": 77,
@@ -303,13 +303,13 @@
       "phase": "frontend",
       "title": "Clarify self-referential ledger artifacts",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "Hermes patch: index.html",
       "exit_code": 0,
       "output_summary": "Changed self-referential execution-log outputs from the misleading label directory bytes to an explicit notice that the hash is intentionally omitted.",
       "outputs": [
         {
-          "path": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/index.html",
+          "path": "./index.html",
           "exists": true,
           "kind": "file",
           "size_bytes": 84946,
@@ -323,12 +323,177 @@
       "phase": "deployment",
       "title": "Deploy monitored Stage 0 checkpoints",
       "status": "completed",
-      "cwd": "/Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research",
+      "cwd": ".",
       "command": "git add ...; git commit; git push origin main; gh api -X POST repos/leonidasiy/music-generation-tracker/pages/builds",
       "exit_code": 0,
       "output_summary": "Pushed execution-ledger and safety-gate checkpoints. One zero-duration GitHub Pages build errored without diagnostics; a manual rebuild of the same commit succeeded. Final monitored frontend fix built successfully at commit 50a2c6e.",
       "outputs": []
+    },
+    {
+      "id": "20260906T003250Z-017",
+      "timestamp": "2026-09-06T00:32:50Z",
+      "phase": "Veena Studio pilot",
+      "title": "Reproduce Veena MIDI compliance and locality audit",
+      "status": "superseded",
+      "cwd": ".",
+      "command": "python3 pilots/veena_studio_2026-09-06/analyze_midi.py --before pilots/veena_studio_2026-09-06/baseline.mid --after pilots/veena_studio_2026-09-06/after_query_5.mid --output pilots/veena_studio_2026-09-06/results.json",
+      "exit_code": 0,
+      "output_summary": "SUPERSEDED: independent review corrected Query 2 from 21/32 to 23/32 (71.875%), required actual approach-note resolution, and expanded protected-event comparison. See the later corrected Veena audit entry.",
+      "outputs": [
+        {
+          "path": "./pilots/veena_studio_2026-09-06/results.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 78795,
+          "sha256": "001de1252aac022df3be49baa5c5830a37c9b2248ed9769f995e7c5eec64105e"
+        },
+        {
+          "path": "./pilots/veena_studio_2026-09-06/baseline.mid",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1034,
+          "sha256": "fbeda0e6c2adc6437863cff528197569dd98a408fd5e31f8cebdd34f5d2f1c21"
+        },
+        {
+          "path": "./pilots/veena_studio_2026-09-06/after_query_5.mid",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1034,
+          "sha256": "b9807056666aebd37f0d2613654528010688391662dc0d5455307507f6ae6f78"
+        },
+        {
+          "path": "./VEENA_STUDIO_PILOT.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 22638,
+          "sha256": "dfe233cf909f52152216ea05c4616ebd7b77f4fed193ac102054c09f767cd909"
+        }
+      ]
+    },
+    {
+      "id": "20260906T003811Z-018",
+      "timestamp": "2026-09-06T00:38:11Z",
+      "phase": "Veena Studio pilot",
+      "title": "Validate synchronized Veena pilot artifacts and regression tests",
+      "status": "superseded",
+      "cwd": ".",
+      "command": "PYTHONPATH=pilots/veena_studio_2026-09-06 python3 -m unittest pilots/veena_studio_2026-09-06/test_analyze_midi.py -v && python3 -m json.tool pilots/veena_studio_2026-09-06/results.json >/dev/null && git diff --cached --check",
+      "exit_code": 0,
+      "output_summary": "SUPERSEDED: independent review corrected Query 2 from 21/32 to 23/32 (71.875%), required actual approach-note resolution, and expanded protected-event comparison. See the later corrected Veena audit entry.",
+      "outputs": [
+        {
+          "path": "./pilots/veena_studio_2026-09-06/results.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 78733,
+          "sha256": "24b35556df1da0e2eb8f6d53698a36f8a87ed8f72ef6359714870822526bbae1"
+        },
+        {
+          "path": "./pilots/veena_studio_2026-09-06/analyze_midi.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 15026,
+          "sha256": "568eceda8ce9286d34e3a3e457dfbae70c55a9ddba26654c758d18a101cdb0e6"
+        },
+        {
+          "path": "./pilots/veena_studio_2026-09-06/test_analyze_midi.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 2538,
+          "sha256": "7d0dd8d11ae77459a3c40c9723508de14d188659466d6c5a0a8857a6ffba2a44"
+        },
+        {
+          "path": "./VEENA_STUDIO_PILOT.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 22630,
+          "sha256": "2ed8fcfcb8e8199ef5b6c03cfb2669f176daa3f1060b1aa2ee3c9c09d322065d"
+        },
+        {
+          "path": "./index.html",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 106365,
+          "sha256": "d2ce0523fb12022b5b66179e9ed5a90e8c7c185ede59df75d83befd361f5f9d6"
+        }
+      ]
+    },
+    {
+      "id": "20260906T004849Z-019",
+      "timestamp": "2026-09-06T00:48:49Z",
+      "phase": "Veena Studio pilot",
+      "title": "Corrected Veena MIDI audit passes independent-review fixes",
+      "status": "completed",
+      "cwd": ".",
+      "command": "PYTHONPATH=scripts python3 -m unittest scripts.tests.test_execution_ledger -v && PYTHONPATH=pilots/veena_studio_2026-09-06 python3 -m unittest pilots/veena_studio_2026-09-06/test_analyze_midi.py -v && python3 -m json.tool pilots/veena_studio_2026-09-06/results.json >/dev/null && git diff --cached --check",
+      "exit_code": 0,
+      "output_summary": "23 focused tests passed: 6 execution-ledger tests and 17 Veena MIDI tests. The regenerated results.json parsed successfully and the staged diff passed whitespace validation.",
+      "outputs": [
+        {
+          "path": "pilots/veena_studio_2026-09-06/results.json",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 165331,
+          "sha256": "e7e3bc391a34cacaaee641ccc499a6185865da3f259e6ea446a6a4b1a900db5c"
+        },
+        {
+          "path": "pilots/veena_studio_2026-09-06/analyze_midi.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 23812,
+          "sha256": "bec59173c0a65a9ad21ec48c9fcc9352e8865f600dab8a532b6fb2124d0e4033"
+        },
+        {
+          "path": "pilots/veena_studio_2026-09-06/test_analyze_midi.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 11057,
+          "sha256": "3f70956f9b00c54f9314921380427e0cd92ab870b75a2b2ef536de8a3518f838"
+        },
+        {
+          "path": "pilots/veena_studio_2026-09-06/README.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 1494,
+          "sha256": "1449b8dc2e436ad72ba75251f0d1a9a62ce51ee2f2622ac6d0e2539943acf047"
+        },
+        {
+          "path": "scripts/execution_ledger.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 7482,
+          "sha256": "d65a806dd5cdc768a631c97f68c59b3e23b5e2ec39932436b8b8d39ee56ef84a"
+        },
+        {
+          "path": "scripts/tests/test_execution_ledger.py",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 5056,
+          "sha256": "1b9b64d2b04905c7d8a99a93c1335e84bc39248b86aeb6e2f68a5ca9b225d413"
+        },
+        {
+          "path": "HISTORY.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 20702,
+          "sha256": "b50ce90fed1f03672127cd673883ed52b3a8372fcdac1167f433c334e40a5d62"
+        },
+        {
+          "path": "VEENA_STUDIO_PILOT.md",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 23164,
+          "sha256": "6b5aa149f256711b2cf46a3ea6bfb1a1f2f74cb4ddf869c0f06f70340d826ba9"
+        },
+        {
+          "path": "index.html",
+          "exists": true,
+          "kind": "file",
+          "size_bytes": 106424,
+          "sha256": "5e2b40af8e2b1d016757b56670e606da857131fe22fdf7b290ea88d1760ce6c3"
+        }
+      ]
     }
   ],
-  "current_status": "Deploy monitored Stage 0 checkpoints"
+  "current_status": "Corrected Veena MIDI audit passes independent-review fixes"
 }

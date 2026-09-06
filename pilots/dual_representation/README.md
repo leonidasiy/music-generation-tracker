@@ -7,7 +7,7 @@ The pilot is deliberately small. It tests plumbing and failure modes, not the va
 ## Run
 
 ```bash
-cd /Users/lirenzhang/.hermes/profiles/researcher/projects/music-generation-research/pilots/dual_representation
+cd pilots/dual_representation
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python pilot.py --output outputs

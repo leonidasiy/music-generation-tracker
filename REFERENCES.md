@@ -1,6 +1,6 @@
 # References — Music Generation & Orchestration Research
 
-> Last updated: 2026-08-22
+> Last updated: 2026-09-06
 > **14 core tracker papers** synchronized with `index.html`, plus metric-design, competitive-benchmark, robustness, psychometric, and cross-domain sources. Citation counts are approximate snapshots and should not be treated as live bibliometrics.
 
 ---
@@ -365,3 +365,12 @@
 - [Soundverse Agent One](https://www.soundverse.ai/agent) — vendor-claimed multi-step tool chaining across generation, inpainting, extension, stems, remixing, and voice-to-instrument; no independent compound-compliance benchmark located. [Corporate Product Page; financially interested] [MEDIUM CONFIDENCE]
 - [ACE Studio](https://acestudio.ai/) — editable MIDI-driven vocals/instruments, stem splitting, audio/vocal-to-MIDI, and conventional DAW bridge; not documented as a general compound natural-language project executor. [Corporate Product Documentation] [MEDIUM CONFIDENCE]
 - [RipX AI DAW](https://hitnmix.com/) — stem and note-level audio decomposition/editing, MIDI extraction, and effects workflows; relevant manual-control comparator rather than a general chat executor. [Corporate Product Documentation] [MEDIUM CONFIDENCE]
+
+## Veena Studio Sources and Pilot — Added 2026-09-06
+
+- [Veena Studio](https://www.veena.studio/) — first-party browser-DAW, CoProducer, feature, and pricing claims. [Corporate Product Documentation; financially interested] [HIGH CONFIDENCE for current displayed claims; LOW for reliability]
+- [Veena AI MIDI Generator](https://www.veena.studio/features/ai-midi-generator) — claims native editable MIDI, project-aware key/tempo/chord/rhythm analysis, and natural-language variation. [Corporate Product Documentation; financially interested] [HIGH CONFIDENCE for advertised operation; LOW for exact compliance]
+- [Veena Terms of Service](https://www.veena.studio/terms) — content/output ownership, service mutability, credit, and broad service-improvement license terms. [Corporate Legal Terms] [MEDIUM CONFIDENCE because terms may change]
+- [Veena Privacy Policy](https://www.veena.studio/privacy) — processing of prompts, MIDI, audio, project files, outputs, and usage data for service operation and improvement. [Corporate Privacy Policy] [MEDIUM CONFIDENCE because policy may change]
+- [`VEENA_STUDIO_PILOT.md`](VEENA_STUDIO_PILOT.md) — exact available prompts and responses, evidence limits, deterministic MIDI findings, methodology decision, and reproduction command. [Internal Mechanical Pilot Record] [HIGH CONFIDENCE for archived artifacts; no population-level claim]
+- [`pilots/veena_studio_2026-09-06/results.json`](pilots/veena_studio_2026-09-06/results.json) — machine-readable parsed MIDI events, compliance counts, required-degree checks, and event-level before/after diff. [Deterministic Analysis Artifact] [HIGH CONFIDENCE for the two supplied MIDI files]

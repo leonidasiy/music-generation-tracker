@@ -18,6 +18,7 @@
 - **MusicGen** (Meta, 2023) — Transformer-based text-to-music, released open-source
 - **Suno** — Proprietary, high-quality song generation from lyrics
 - **Suno Studio 2.0** — Premier-only chat-driven production environment with chat-generated audio/MIDI, audio↔MIDI workflows, project arrangement, custom effects, automation, built-in synthesis, and stem separation; bounded commercial qualification-audit candidate as of 2026-08-22
+- **Veena Studio** — Browser-based agentic MIDI/audio DAW added as a dated interactive-MIDI development pilot after a 2026-09-06 user-operated test; demonstrated exact repaired chord creation and zero-leakage local editing, but compound harmonic compliance, functional chord realization, required downstream adaptation, and self-verification were inconsistent
 - **Udio** — Proprietary, high-fidelity music generation
 - **Stable Audio** (Stability AI) — Diffusion-based audio generation
 - **Jukebox** (OpenAI, 2020) — VQ-VAE + transformer for raw audio
@@ -57,7 +58,7 @@
 - Metadata-only landing pages must be followed to PDFs for substantive claims.
 - Long extracted documents may be summarized by the tool layer; quotations require checking the primary PDF.
 
-## Current project status — 2026-07-17
+## Current project status — 2026-09-06
 - **Completed:** initial 14-paper collection, metadata review, light-mode tracker, GitHub Pages deployment, refined research agenda, Metric Lab, web-research reliability gate, deterministic dual-representation pilot audit, producer review, Stage 0 generator/dataset scan, detailed Stage 0–6 plan, frozen Stage 0 prompts, and tested manifest utilities.
 - **Paper 1 focus:** test whether a minimal temporal-instruction change causes the requested local musical effect while preserving preregistered non-target regions.
 - **Primary outputs:** TES and DA for target response; OTL and BS for collateral effects; PRD only when an intervention changes a structural relation.
@@ -71,6 +72,9 @@
 - **Oracle calibration:** use BabySlakh/Slakh2100 for exact MIDI/stem counterfactuals before interpreting generated outputs.
 - **Budget:** up to $30 Suno + up to $45 cloud contingency + up to $20 listener reserve = $95 provisional total, leaving $5 below the $100 ceiling. No purchase has been made.
 - **Active next increment:** build the stateful instruction/action schema, verify Suno checkout/terms/export/version behavior, run the six-task bounded Suno audit from imported oracle projects, apply a matched Suno–Udio qualification gate without quality ranking, secure a suitable GPU host for ACE-Step, create oracle edits, and estimate repeated-instruction/same-prompt null variability.
+- **Veena pilot:** two archived MIDI exports and a standard-library parser establish a mechanical single-session result: Query 1 final exactness was 32/32 notes after repair; Query 2 harmonic-position compliance was 23/32 (71.875%); Query 3 obeyed the maximum-one-non-chord-event rule in 3/8 bars; Query 5 changed only Track 1 note events in bars 6–7 with zero protected-event changes, but omitted `Ab` from `Bb7(#11)` and left an incompatible bass bar unchanged.
+- **Method refinement:** retain CLPR and symbolic-first validation; add agent-claim calibration, verification/repair trajectories, required-adaptation omission, and function-defining chord-degree checks. Split locality into strictly protected, adaptation-allowed-but-unnecessary, adaptation-required, and unconstrained state.
+- **Panel refinement:** Veena is a free dated development pilot, not a validated winner or reproducible core. Suno remains the bounded paid interactive audit; ACE-Step remains the open audio core; Udio remains provisional for raw-audio construct comparison.
 
 ## Stage 0 evidence and publication boundary — 2026-07-17
 - Current academic practice supports mixed open/commercial panels when a benchmark seeks real-world or frontier relevance, but commercial systems are not methodologically preferred by default. Reproducible open models should remain the benchmark core.

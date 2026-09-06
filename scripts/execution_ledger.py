@@ -22,6 +22,14 @@ SENSITIVE_FLAG = re.compile(
 SENSITIVE_LABEL = re.compile(
     r"(?i)\b(api[_-]?key|token|secret|password|passwd|authorization)\s*:\s*\S+"
 )
+LOCAL_HOME = re.compile(r"(?i)(?:/Users/|/home/)[^/\s\"'<>?&]+")
+ENCODED_LOCAL_HOME = re.compile(
+    r"(?i)%2f(?:Users|home)%2f(?:(?!%2f|[\s\"'<>?&]).)+"
+)
+LOCAL_PROFILE = re.compile(r"(?i)\[HOME\]/\.hermes/profiles/[^/\s\"'<>?&]+")
+ENCODED_LOCAL_PROFILE = re.compile(
+    r"(?i)%5bHOME%5d%2f\.hermes%2fprofiles%2f(?:(?!%2f|[\s\"'<>?&]).)+"
+)
 
 
 @dataclass(frozen=True)
@@ -38,7 +46,22 @@ def utc_now() -> str:
 def redact(text: str) -> str:
     text = SENSITIVE_ASSIGNMENT.sub(lambda match: f"{match.group(1)}=[REDACTED]", text)
     text = SENSITIVE_FLAG.sub(lambda match: f"{match.group(1)}[REDACTED]", text)
-    return SENSITIVE_LABEL.sub(lambda match: f"{match.group(1)}: [REDACTED]", text)
+    text = SENSITIVE_LABEL.sub(lambda match: f"{match.group(1)}: [REDACTED]", text)
+    text = ENCODED_LOCAL_HOME.sub("%5BHOME%5D", text)
+    text = LOCAL_HOME.sub("[HOME]", text)
+    text = ENCODED_LOCAL_PROFILE.sub("%5BPROFILE%5D", text)
+    return LOCAL_PROFILE.sub("[PROFILE]", text)
+
+
+def redact_value(value):
+    """Recursively sanitize every public string, including output records."""
+    if isinstance(value, str):
+        return redact(value)
+    if isinstance(value, list):
+        return [redact_value(item) for item in value]
+    if isinstance(value, dict):
+        return {redact_value(key): redact_value(item) for key, item in value.items()}
+    return value
 
 
 def sha256_file(path: Path) -> str:
@@ -49,22 +72,35 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def public_path(path: Path, root: Path) -> str:
+    """Render a ledger path without exposing the host's home/profile layout."""
+    path = path.expanduser().resolve()
+    root = root.expanduser().resolve()
+    try:
+        relative = path.relative_to(root)
+    except ValueError:
+        return f"[external]/{path.name}"
+    return "." if relative == Path(".") else relative.as_posix()
+
+
 def describe_outputs(
     paths: Iterable[Path], ledger_path: Path | None = None
 ) -> list[dict[str, object]]:
     records: list[dict[str, object]] = []
     for raw_path in paths:
         path = raw_path.expanduser().resolve()
+        root = ledger_path.expanduser().resolve().parent if ledger_path is not None else Path.cwd().resolve()
+        display_path = public_path(path, root)
         if ledger_path is not None and path == ledger_path.expanduser().resolve():
             records.append(
-                {"path": str(path), "exists": path.exists(), "kind": "ledger-self-reference"}
+                {"path": display_path, "exists": path.exists(), "kind": "ledger-self-reference"}
             )
             continue
         if not path.exists():
-            records.append({"path": str(path), "exists": False})
+            records.append({"path": display_path, "exists": False})
             continue
         record: dict[str, object] = {
-            "path": str(path),
+            "path": display_path,
             "exists": True,
             "kind": "directory" if path.is_dir() else "file",
         }
@@ -91,7 +127,7 @@ def append_entry(
     timestamp = timestamp or utc_now()
     ledger_path = ledger_path.expanduser().resolve()
     if ledger_path.exists():
-        ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+        ledger = redact_value(json.loads(ledger_path.read_text(encoding="utf-8")))
     else:
         ledger = {"schema_version": 1, "updated_at": timestamp, "entries": []}
 
@@ -107,19 +143,19 @@ def append_entry(
     entry = {
         "id": entry_id,
         "timestamp": timestamp,
-        "phase": phase,
-        "title": title,
-        "status": status,
-        "cwd": str(Path(cwd).expanduser().resolve()),
+        "phase": redact(phase),
+        "title": redact(title),
+        "status": redact(status),
+        "cwd": public_path(Path(cwd), ledger_path.parent),
         "command": redact(command),
         "exit_code": exit_code,
         "output_summary": redact(output_summary[-4000:]),
-        "outputs": normalized_outputs,
+        "outputs": redact_value(normalized_outputs),
     }
     existing.append(entry)
     ledger["entries"] = existing
     ledger["updated_at"] = timestamp
-    ledger["current_status"] = title
+    ledger["current_status"] = entry["title"]
     ledger_path.parent.mkdir(parents=True, exist_ok=True)
     ledger_path.write_text(json.dumps(ledger, indent=2, sort_keys=False) + "\n", encoding="utf-8")
     return entry

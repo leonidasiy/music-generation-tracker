@@ -31,7 +31,7 @@ Stage 0 tests whether the CLPR protocol can be executed and audited. It does **n
 - `uv 0.6.14` is available
 - Prompt registry frozen for 60- and 90-second variants
 - Seven Stage 0 protocol tests pass
-- ACE-Step source and environment installed under `/Users/lirenzhang/.cache/clpr-stage0/ACE-Step-1.5/` (approximately 11 GB)
+- ACE-Step source and environment installed under `[HOME]/.cache/clpr-stage0/ACE-Step-1.5/` (approximately 11 GB)
 - Two 10-second seed-42 runs produced byte-identical FLAC files with SHA-256 `df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09`
 - One 10-second seed-43 run produced a distinct FLAC with SHA-256 `c2933382abd0dd77610f1d24b21ae0ebbf5e4920ecfc57815469bade2d2a41f5`, confirming that the pinned configuration is not seed-insensitive
 - The successful local path used MLX, batch size one, eight ODE steps, direct prompting, and no planning-LM initialization

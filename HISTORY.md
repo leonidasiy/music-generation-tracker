@@ -122,7 +122,7 @@
 - No paid service, API key, credential, model weight, or commercial generation has been used
 
 ## 2026-07-17 — Local Runtime and Public Execution Ledger
-- Installed the ACE-Step 1.5 Python 3.12 environment and required checkpoints under `/Users/lirenzhang/.cache/clpr-stage0/ACE-Step-1.5/`, using standard HTTP resume after the initial Hugging Face Xet transfer stalled
+- Installed the ACE-Step 1.5 Python 3.12 environment and required checkpoints under `[HOME]/.cache/clpr-stage0/ACE-Step-1.5/`, using standard HTTP resume after the initial Hugging Face Xet transfer stalled
 - Verified PyTorch 2.10.0, MLX 0.30.6, MLX-LM 0.29.1, and Apple MPS availability
 - Started the local REST API with MLX, planning-LM initialization disabled, caption rewriting disabled, and lazy model initialization
 - Generated two 10-second, 48 kHz stereo FLAC outputs with seed 42; both had SHA-256 `df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09`
@@ -165,3 +165,17 @@
 - Archived the full 18-question assessment, contradictions, gaps, recommendations, and six-task audit protocol in `SUNO_STUDIO_2_IMPACT.md`
 - Synchronized TODO, INFO, METRICS, REFERENCES, HISTORY, and the public tracker around the revised decision
 - Incorporated three completed independent reviews: narrowed Suno from an automatic commercial-anchor replacement to a bounded qualification audit, retained Udio provisionally, added imported-oracle existing-project edits, a matched construct-equivalence gate, two-renderer control, explicit requested/executed/rendered objects, and competitive AI-DAW context
+
+## 2026-09-06 — Veena Studio MIDI and Local-Edit Pilot
+- Leonidas operated Veena Studio while the research protocol supplied five exact MIDI creation, bass, melody, theory-analysis, and localized-reharmonization instructions
+- Preserved the complete available Query 1–3 traces, the supplied partial Query 4 response, and the fact that the trace labeled Query 5 duplicated Query 3; no missing text was reconstructed
+- Archived `baseline.mid` and `after_query_5.mid` under `pilots/veena_studio_2026-09-06/` with SHA-256 hashes `fbeda0e6…` and `b9807056…`
+- Implemented and ran a Python-standard-library MIDI parser/evaluator; generated a decoded event inventory and deterministic before/after diff in `results.json`; added seventeen passing regression tests covering hashes, full chord classes, actual approach resolution, headers, extra tracks, well-formed end-of-track handling, unmatched and boundary-ending notes, metadata, controllers, pressure, pitch bend, SysEx, locality, and byte-identical reproduction
+- Verified Query 1 final exactness at 32/32 requested notes after Veena detected and repaired its initial mismatch
+- Measured Query 2 at 6/8 correct downbeat roots, 12/16 correct beat-2/3 chord tones, and 5/8 valid beat-4 tones/approaches: 23/32 harmonic positions overall (71.875%); corrected after independent review required full chord-symbol pitch classes rather than exported voicings alone
+- Measured Query 3 at 3/8 bars satisfying the maximum-one-non-chord-event rule, despite correct range, monophony, and final `G#→A` cadence
+- Verified Query 5 changed only Track 1 bars 6–7 with zero protected-event changes and preserved all programs, onsets, durations, velocities, channels, and non-target note events
+- Verified complete `Bm7(b5)` in bar 6 but diagnosed bar 7 as `Bb(add#11)`, not functionally complete `Bb7(#11)`, because `Ab` and the defining `D–Ab` tritone were absent
+- Diagnosed required-adaptation omission: the unchanged bar-7 bass retained A-natural and D#/Eb against the requested substitute harmony
+- Kept M09/CLPR, symbolic-first validation, and benchmark-before-training unchanged; added agent-claim calibration, verification/repair trajectories, required-adaptation omission, four locality classes, and function-defining chord-degree validation
+- Added Veena as a free dated interactive-MIDI development pilot, not a validated winner or replacement for the open core or bounded Suno audit

@@ -4,7 +4,7 @@
 > Scope: long-form compositional plan adherence and music instruction following  
 > Status labels: **Candidate** = proposed but unvalidated; **Adaptation** = established method transferred to this task; **Speculative** = promising construct with major measurement risk.
 
-> **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The immediate local workstream is now a stateful typed music-and-production action schema, deterministic project-state validator, and held-out parsing/action benchmark. Suno Studio 2.0 enters a bounded commercial qualification audit, not the reproducible core or an automatic replacement for Udio; the ACE-Step audio prompt-pair pilot resumes on a suitable GPU host with same-prompt null baselines.
+> **Current strategy:** M09 / CLPR is the Paper 1 flagship; M01 / HPGA and M04 / PCCM are optional intervention-specific evidence channels; M11 / CRVP is validation infrastructure. The immediate local workstream is a stateful typed music-and-production action schema, deterministic project-state validator, and held-out parsing/action benchmark. The 2026-09-06 Veena pilot adds a free, dated interactive-MIDI development condition and empirically motivates claim-calibration, repair-trajectory, required-adaptation, and functionally complete chord diagnostics. Suno Studio 2.0 remains a bounded commercial qualification audit; neither proprietary system replaces the reproducible core. The ACE-Step audio prompt-pair pilot resumes on a suitable GPU host with same-prompt null baselines.
 
 > **Producer-practitioner validation:** Native Codex custom subagent Dereck repeatedly reviewed M01–M11 from production, arrangement, sound-design, vocal-production, and audio-engineering perspectives. After two revision rounds, the final pass returned `REVISE_COUNT: 0`: M01–M04, M06–M07, M09, and M11 are professionally coherent at their stated scopes; M05, M08, and M10 remain responsibly deferred. These are practitioner judgments, not empirical validation.
 
@@ -411,3 +411,67 @@ Report requested control topology, parameter monotonicity/range, transfer or fre
 - Provisional ceiling: $95 — up to $30 Suno access, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted.
 
 For claim-bearing symbolic tests, use at least two controlled external renderers before adding a commercial renderer/generative cover condition. Report renderer-specific results if renderer choice reverses rankings or pass/fail conclusions.
+
+## Veena Studio mechanical pilot refinement — 2026-09-06
+
+### Epistemic status
+
+One user-operated Veena Studio session produced two exported MIDI artifacts and partial/full interaction traces for five instructions. This is direct mechanical evidence for the selected outputs, not a product-wide reliability estimate, human-validity result, or stable model comparison. No model identifier, seed, identical-state repetition, or complete Query 5 trace was available.
+
+### Measured results
+
+- **Exact creation after repair:** Query 1 finished with 32/32 requested chord notes, eight exact full-bar chords, and correct onsets/durations. The trace reports that the first attempt was wrong and a read–detect–repair loop corrected it.
+- **Contextual bass weakness:** Query 2 produced correct quarter-note mechanics and range but only 6/8 correct downbeat roots, 12/16 correct beat-2/3 chord tones, and 5/8 valid beat-4 chord tones or semitone approaches: 23/32 harmonic positions overall (71.875%). Chord-tone scoring uses the full requested chord symbols, including conventionally omitted A in Dm9 and B in E7(b9).
+- **Compound melody weakness:** Query 3 met range, monophony, and final `G#→A` requirements, but only 3/8 bars obeyed the maximum-one-non-chord-event rule.
+- **Localized edit strength:** Query 5 changed only Track 1 bars 6–7; every protected note event, program, onset, duration, velocity, and channel was preserved. Protected-event changes were zero.
+- **Functional target failure:** Bar 6 became complete `Bm7(b5)`. Bar 7 became `Bb–D–F–E`, omitting `Ab`; it is not a functionally complete `Bb7(#11)` because the requested minor seventh and defining `D–Ab` tritone are absent.
+- **Required-adaptation omission:** The unchanged bar-7 bass retained A-natural and D#/Eb against the intended `Bb7(#11)`, so zero leakage coexisted with invalid under-editing.
+- **Trace/artifact divergence:** Generation-stage summaries overclaimed compliance; later inspection was inconsistent and did not reliably trigger repair. The trace supplied for Query 5 duplicated Query 3 and is treated as unavailable.
+
+Full prompts, preserved responses, limitations, hashes, and reproduction instructions are in `VEENA_STUDIO_PILOT.md`; machine-readable events and diffs are in `pilots/veena_studio_2026-09-06/results.json`.
+
+### Stateful object refinement
+
+For agentic project edits, retain the existing requested-plan, executed-state, and rendered-observation objects, and add:
+
+1. **Agent result claim:** the prose description of what supposedly occurred.
+2. **Verification trace:** state reads, constraint checks, and identified violations.
+3. **Repair trace:** attempted corrections, iteration count, and resulting state.
+4. **Final termination state:** valid, knowingly partial, or prematurely declared complete.
+
+Do not infer execution success from a fluent `Applying changes` summary. The exported project-state diff remains the mechanical evidence.
+
+### Additional diagnostic vector
+
+1. **Initial Execution Compliance (IEC):** per-constraint compliance before repair.
+2. **Final Execution Compliance (FEC):** per-constraint compliance at termination.
+3. **Claim Calibration (CC):** agreement between the agent’s claim and exported state.
+4. **Violation Detection Recall/Precision (VDR/VDP):** actual failures identified and compliant fields falsely flagged.
+5. **Repair Attempt Rate (RAR):** detected violations that trigger correction.
+6. **Repair Success Rate (RSR):** attempted corrections that resolve the target violation without introducing another.
+7. **Repair Leakage (RL):** previously valid protected state damaged during repair.
+8. **Actions to Validity (ATV):** generations, reads, retries, and repairs needed before all hard constraints pass.
+9. **Premature Termination Rate (PTR):** runs declared complete while hard violations remain.
+10. **Required-Adaptation Omission (RAO):** downstream state that must change for validity but remains unchanged.
+
+These are dependent diagnostics, not separate headline discoveries or a justified aggregate.
+
+### Four locality classes
+
+1. **Strictly protected:** any change is collateral.
+2. **Adaptation allowed but unnecessary:** changes may be acceptable but are not required.
+3. **Adaptation required:** downstream change is necessary for validity after the target intervention.
+4. **Unconstrained:** excluded from locality claims.
+
+RAO prevents a system from receiving an artificially favorable locality result by preserving dependent material that the requested edit made invalid. For sensitivity analysis, distinguish strict event equality from musically equivalent revoicing or respelling.
+
+### Functional chord-validation requirements
+
+Chord-by-bar validation must represent root, quality-defining third, function-defining seventh, requested alterations/extensions, required versus optional degrees, prohibited/conflicting degrees, inversion/bass requirements, and function-critical intervals. For `Bb7(#11)`, a compact required set is `Bb, D, Ab, E`; F is optional. Set-overlap or chord-scale membership alone would incorrectly accept the observed `Bb, D, F, E` output.
+
+### Panel and next gate
+
+- Add Veena as a free, dated interactive-MIDI development pilot, not the reproducible core or a validated commercial winner.
+- Preserve ACE-Step as the open audio core; preserve Suno as a bounded paid interactive audit and Udio as a provisional raw-audio condition until matched gates resolve construct equivalence.
+- Repeat exact-create, no-op, local-edit, and validator-generated repair tasks from identical restored states with a fixed candidate-selection policy.
+- Compare systems only within matched action/representation strata; do not force a musical-quality leaderboard across incompatible affordances.
