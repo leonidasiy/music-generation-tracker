@@ -123,4 +123,9 @@
 
 ## Separate recognizer research lane — 2026-10-24
 
-Recognizer Research is a separate curated milestone page under recognizer-research/, not a replacement for this generation project or its existing Execution Log. Task-specific rhythm/beat qualification starts the analyzer work; CLPR remains flagship and CRVP remains validation infrastructure. Deployment is pending security/logic review and browser QA. New analyzer work does not validate register/activity constructs or reopen unsafe long-form local generation.
+Recognizer Research is a separate curated milestone page under recognizer-research/, not a replacement for this generation project or its existing Execution Log. Task-specific rhythm/beat qualification starts the analyzer work; CLPR remains flagship and CRVP remains validation infrastructure. The first checkpoint is deployed and live-verified; the separate page publishes reviewed milestone checkpoints. New analyzer work does not validate register/activity constructs or reopen unsafe long-form local generation.
+
+
+## Trained recognizer research scope — 2026-10-24
+
+Fine-tuning/retraining and promising new architectures are now permitted for research copies; no training has run. The separate Recognizer Research page reports this lane without changing the flagship or existing generator budget. Explore This! is newly verified close 2026 prior art, so joint grid/meter modeling alone is not claimed novel.

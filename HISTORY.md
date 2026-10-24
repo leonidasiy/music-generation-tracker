@@ -184,3 +184,8 @@
 ## 2026-10-24 — separate recognizer execution page prepared
 
 Owner requested research updates in a separate frontend page/panel. Added recognizer-research/ with a curated source registry, explicit evidence boundaries, milestone cards and refresh/failure states. Original generation tabs and Execution Log are unchanged. No raw private source bundle, audio or transcripts are published. Deployment pending independent validation and browser QA.
+
+
+## 2026-10-24 — preparatory closure and training amendment
+
+First recognizer progress checkpoint deployed and live-verified at commit 8320e89. Independent bounded closure reproduced all four adapter tests and actual CLI outputs. Owner then authorized retraining/new architectures. Added a dated training amendment and a primary-paper/code novelty check; exact original reproduction commit was resolved through Git tree after current README paths produced 404. No training, weights or paid compute run. A separate completion/scope checkpoint is being independently reviewed before deployment.

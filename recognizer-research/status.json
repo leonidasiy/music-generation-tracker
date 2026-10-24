@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "rhythm-foundation-baseline-executed",
-  "updated_at": "2026-10-24T10:57:57.257799+00:00",
+  "checkpoint": "rhythm-foundation-training-authorized",
+  "updated_at": "2026-10-24T11:13:35.184091+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm-first execution",
-  "summary": "First bounded rhythm execution is complete: four copied development recordings and six numerical controls. Historical per-record diagnosis is also complete. No improvement candidate or empirical musical gain is established.",
+  "summary": "The first preparatory rhythm increment is independently checked. The owner has now authorized fine-tuning, retraining and promising new architectures. Model/architecture design is active; no training, improved recognizer performance or empirical-paper finding is claimed.",
   "publication_ready": false,
   "milestones": [
     {
@@ -24,16 +24,16 @@
     {
       "id": "metrics",
       "title": "Task-separated scoring harness",
-      "status": "running",
+      "status": "complete",
       "evidence_type": "Implementation and tests",
-      "detail": "Independent BPM, pulse-level, beat/downbeat, literal-meter and availability channels; no universal scalar."
+      "detail": "Task-separated standard-library prototype: 18 tests pass, including exhaustive small event-match checks. The CLI was exercised on all ten actual baseline outputs. All-octave diagnostics differ from the historical restricted half/original/double score; continuity remains deferred."
     },
     {
       "id": "reference-contract",
       "title": "Blinded reference and source eligibility",
-      "status": "running",
+      "status": "complete",
       "evidence_type": "Reference preparation, not annotation",
-      "detail": "Two-annotator instructions and rights/overlap inventory. Existing guitar/drum diagnostic data remains development material."
+      "detail": "Blinded manual, blank forms, disagreement/effort logs, structural validator and rights/overlap inventory are prepared. Five validator tests pass. No human annotation or listening packet is claimed."
     },
     {
       "id": "historical-diagnosis",
@@ -45,16 +45,23 @@
     {
       "id": "independent-validation",
       "title": "Independent validation of execution increment",
-      "status": "pending",
+      "status": "complete",
       "evidence_type": "Review gate",
-      "detail": "Review actual artifacts, source boundaries, scoring denominators and public-page security before promoting any result."
+      "detail": "Independent scientific and frontend reviews approve this preparatory increment, not musical validity. Bounded independent adapter reproduction passed all four tests with writable temporary and Numba-cache directories, closing the earlier environment-only verification gap."
+    },
+    {
+      "id": "trained-model-design",
+      "title": "Retraining and architecture lane",
+      "status": "running",
+      "evidence_type": "Owner authorization plus prospective experimental design",
+      "detail": "Compare unchanged/simple baselines, a lightweight trained head/adapter, limited backbone fine-tuning and a conditional architecture extension. Existing inspected sources may support exploratory development training after rights/label/split checks, but not untouched confirmation. No training has run."
     },
     {
       "id": "confirmation",
       "title": "Independent musical confirmation",
       "status": "blocked",
       "evidence_type": "Missing empirical evidence",
-      "detail": "No new blinded human labels or untouched-source confirmation study is available yet."
+      "detail": "The local inventory establishes zero presently eligible new composition-independent, rights-evidenced confirmation sources; shortfall: twelve for the planned feasibility batch. Two independent musical annotators are also not yet recruited."
     }
   ],
   "findings": [
@@ -71,16 +78,31 @@
       "evidence_type": "Fresh rhythm-only CPU execution",
       "confidence": "HIGH for this pinned execution only",
       "source": "baseline/baseline-results.json, 2026-10-24; deterministic execution artifact"
+    },
+    {
+      "title": "Reference availability, not file availability, is the immediate bottleneck",
+      "detail": "The scoped local inventory found 1,241 media files and 746 existing benchmark audio memberships. Repeated/inspected material, isolated notes, uncertain composition identity and rights/overlap gaps mean zero sources are yet demonstrated eligible for new independent confirmation. This does not mean every local recording is unusable.",
+      "evidence_type": "Executed filesystem/manifest and retained-rights audit",
+      "confidence": "HIGH for scoped counts and documented eligibility status; broader availability unknown",
+      "source": "references/local_inventory.json and README.md, 2026-10-24; internal inventory"
+    },
+    {
+      "title": "A close 2026 architecture baseline changes the novelty boundary",
+      "detail": "Explore This! already learns a tatum grid and joint beat/downbeat metrical interpretations. Joint pulse/grid modeling alone is therefore not a sufficient novelty claim. Its reported limitations motivate candidates, but no local performance claim is replicated. The primary PDF and original reproduction-code commit were inspected.",
+      "evidence_type": "Primary academic paper, official conference page and released source",
+      "confidence": "HIGH on verified existence/overlap; local transfer unverified",
+      "source": "Kihlborg, Holzapfel and Schlüter, Explore This! (ISMIR 2026); https://arxiv.org/pdf/2610.14817 and https://github.com/CPJKU/explore_this"
     }
   ],
   "blockers": [
-    "Prediction-blinded musical annotation and untouched-source confirmation remain outstanding.",
-    "No improvement candidate is selected or promoted; no empirical paper is ready."
+    "New independent musical confirmation still needs evidenced composition-independent, rights-cleared sources and two independent musical annotators. That blocks confirmation claims, not all exploratory training.",
+    "A concrete training-label, source-group split, checkpoint and resource-smoke protocol must be frozen before fitting. Existing session BPM labels do not supply perceptual beat/downbeat/meter truth.",
+    "No trained candidate gain, source-held-out confirmation, continuity validation or empirical paper is established. Paid compute and production changes are not authorized."
   ],
   "next_steps": [
-    "Complete and independently check this bounded execution increment.",
-    "Use the reference inventory to choose rights-cleared, composition-grouped annotation sources.",
-    "Test one pulse-level mechanism only after a trustworthy diagnosis."
+    "Finish independent architecture/comparator design and reject ideas already covered by close prior art.",
+    "Freeze an admissible development training contract and run a bounded local trainability/resource smoke test; compare the smallest learned baseline before escalating.",
+    "In parallel, resolve the 12-source annotation-feasibility inventory and arrange two independent listening passes for later confirmation."
   ],
   "agents": [
     {
@@ -97,6 +119,11 @@
       "responsibility": "Retained-record diagnosis",
       "model": "gpt-6.1-sol",
       "reasoning": "medium"
+    },
+    {
+      "responsibility": "Bounded trainable-model and architecture/comparator design",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium"
     }
   ],
   "activity": [
@@ -111,6 +138,18 @@
       "title": "Frozen rhythm baseline and historical diagnosis completed",
       "action": "Invocation summaries: run_baseline.py; unittest test_frozen_rhythm; reanalyse_rhythm.py and its self-tests. Existing local Python environments; no checkpoint/audio acquisition.",
       "result": "Ten baseline/control cases finished; four adapter tests pass. Historical diagnosis reaggregates 193 inspected records. Independent execution/publication review still pending."
+    },
+    {
+      "time": "2026-10-24T11:06:19.756936+00:00",
+      "title": "Scoring and blinded-reference preparation reviewed",
+      "action": "Invocation summaries: metrics unittest (18 tests); annotation validator unittest (5 tests); independent scientific review; publisher unittest (6 tests); local and live headless-Chrome QA.",
+      "result": "Metric and reference contracts approved as preparatory infrastructure. Confirmation-source and human-annotation gates remain blocked; no musical performance gain or empirical submission claimed."
+    },
+    {
+      "time": "2026-10-24T11:13:35.184091+00:00",
+      "title": "Training and creative architectures authorized",
+      "action": "Recorded owner scope amendment; verified local PyTorch/MPS capability; retrieved primary architecture literature and pinned upstream implementation. Separate architecture-design worker requested as gpt-6.1-sol / medium.",
+      "result": "Training is allowed prospectively in the research workspace. No training has run. Explore This! is a close comparator; a novel or larger model is not automatically preferred."
     }
   ],
   "artifacts": [
@@ -148,6 +187,76 @@
       "name": "diagnosis/RESULTS.md",
       "bytes": 12311,
       "sha256": "cb5874622dddc260a4534ab2dddd4fd57ffda8bf5e1323d470f88a2967072ea1"
+    },
+    {
+      "name": "metrics/rhythm_metrics.py",
+      "bytes": 10462,
+      "sha256": "5b4d1cb09f1d80cfec1914fae6046c9750e7373d46bcee35d73818af932e6909"
+    },
+    {
+      "name": "metrics/green-output.txt",
+      "bytes": 1563,
+      "sha256": "82f1c3ff4a9d383263607d9e00bb06491b03b49e7a52e1cbe9a4eac40b62a96f"
+    },
+    {
+      "name": "references/annotation_manual.md",
+      "bytes": 5279,
+      "sha256": "8b202fcf4a17da52ea241addb0e4691db3119a96db5f4dfc53968a54eb9e352d"
+    },
+    {
+      "name": "references/validate_annotations.py",
+      "bytes": 5339,
+      "sha256": "0ae2d75ceeb0c63178cd30bf5bef779f6154ec9c4f82062180d631249487db2a"
+    },
+    {
+      "name": "references/local_inventory.json",
+      "bytes": 1344126,
+      "sha256": "27320f5389f536f37ce69f2c6cf39499f9445552852b79ab88b3f4d2d651028f"
+    },
+    {
+      "name": "validation/scientific-review.md",
+      "bytes": 3757,
+      "sha256": "19c3922066b409fa98e3feb5075e25a14dd9cb263a7133b788f6ee6aa851be32"
+    },
+    {
+      "name": "validation/frontend-review.md",
+      "bytes": 2270,
+      "sha256": "f10e09563b5121d38c147bf256ffbbc29d2708cd0ec784ba006dc004611d1480"
+    },
+    {
+      "name": "baseline/prototype-scores.json",
+      "bytes": 29371,
+      "sha256": "fc6c3341d737161c4e64054bf660ba2517dae7fbce945c0a28d6ada98a26399d"
+    },
+    {
+      "name": "validation/live-browser-qa.json",
+      "bytes": 537,
+      "sha256": "4d35b1ebe93f1d30d05cd67a6a22f8a0b7e5e45cdd66908ed6fbc8422b9dae96"
+    },
+    {
+      "name": "validation/final-closure.md",
+      "bytes": 2446,
+      "sha256": "816c35bac83d54abedeccf270b5c2c8a70b417bf466ecc03c7cc6aec693a4e0d"
+    },
+    {
+      "name": "architecture/SCOPE_AMENDMENT.md",
+      "bytes": 2832,
+      "sha256": "1981b31f02b5fd72588b34680cd0c1af11cbe33e7926ba9b71600ed31f25fcb1"
+    },
+    {
+      "name": "architecture/TRAINING_QUESTIONS.md",
+      "bytes": 1876,
+      "sha256": "a1b4d903bf6ab6f1a00111ec9dc9bcc9009f8e1832b390b77ff74556bea39fd2"
+    },
+    {
+      "name": "architecture/literature/source-manifest.json",
+      "bytes": 2874,
+      "sha256": "1461cfc2c8248d810fa240a127117ec4b72e0d6988e37c360e4e06026b8e9821"
+    },
+    {
+      "name": "agents/verified-provenance.json",
+      "bytes": 1345,
+      "sha256": "2780794bf03ed19c5469051de2d6abcfb330a30a2741d3101967ca5f2e516bc1"
     }
   ],
   "limits": [

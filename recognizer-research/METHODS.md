@@ -25,3 +25,14 @@ No new recognizer-performance gain or empirical paper is currently established. 
 - [Groove MIDI Dataset](https://magenta.tensorflow.org/datasets/groove) — dataset source; electronic-kit recordings and metadata have domain/split limits.
 
 The private source audit and agent transcripts remain local. Only curated status, aggregate findings and safe artifact identities are published here. Milestone checkpoints are deployed, not streamed continuously.
+
+## Training/architecture amendment — 24 October 2026
+
+The owner now explicitly authorizes fine-tuning, retraining and promising architecture changes in the research workspace. This supersedes the initial no-training phase boundary, not the historical results. No training has run yet. Existing inspected datasets may support honestly labeled exploratory development training after rights/label/group checks; they cannot become untouched confirmation. Unknown beat/meter labels must not be invented from session BPM or treated as negatives. Resource and independent evaluation gates remain. Paid compute and production modifications are separate decisions.
+
+The comparison ladder is unchanged/simple rules → small trained head or adapter → limited backbone fine-tuning → a mechanism-motivated architecture extension. Each tier must be falsifiable against simpler and complexity-matched controls.
+
+### Close prior art, not our new finding
+[Explore This! Beat and Downbeat Tracking From a Learned Tatum Grid (Kihlborg, Holzapfel, Schlüter; ISMIR 2026)](https://arxiv.org/pdf/2610.14817) already models a learned tatum grid, candidate tempo/phase distributions and joint metrical states. The [official program entry](https://ismir2026program.ismir.net/poster_320.html) and [released source](https://github.com/CPJKU/explore_this) confirm the identity and scope. Paper/code are not independent replications of musical performance. Its reported limitations are hypotheses for diagnosis, not established local gains. The original reproduction commit named in the upstream README is `18906da44d2247b19829e0cf9a098bed6d42316f`; its modules live under `beat_this/model/`, unlike the current README's renamed path. Only small code/license files were retrieved; no weights or upstream model execution.
+
+Thus a joint grid/meter architecture alone does not establish novelty. Candidate extensions, training and scientific claims remain separately gated.

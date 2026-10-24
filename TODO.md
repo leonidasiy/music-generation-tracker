@@ -174,6 +174,7 @@
 
 - [x] Add separate light-mode page and minimal navigation link.
 - [x] Implement/test a deterministic fail-closed public status projection.
-- [ ] Complete independent review and browser QA.
-- [ ] Deploy and verify first milestone checkpoint.
+- [x] Complete independent review and local/live desktop/mobile browser QA.
+- [x] Deploy and verify first milestone checkpoint.
+- [ ] Verify the completion/training-scope checkpoint after final review.
 - [ ] Synchronize after subsequent major research milestones.
