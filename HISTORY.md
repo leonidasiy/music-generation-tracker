@@ -179,3 +179,8 @@
 - Diagnosed required-adaptation omission: the unchanged bar-7 bass retained A-natural and D#/Eb against the requested substitute harmony
 - Kept M09/CLPR, symbolic-first validation, and benchmark-before-training unchanged; added agent-claim calibration, verification/repair trajectories, required-adaptation omission, four locality classes, and function-defining chord-degree validation
 - Added Veena as a free dated interactive-MIDI development pilot, not a validated winner or replacement for the open core or bounded Suno audit
+
+
+## 2026-10-24 — separate recognizer execution page prepared
+
+Owner requested research updates in a separate frontend page/panel. Added recognizer-research/ with a curated source registry, explicit evidence boundaries, milestone cards and refresh/failure states. Original generation tabs and Execution Log are unchanged. No raw private source bundle, audio or transcripts are published. Deployment pending independent validation and browser QA.

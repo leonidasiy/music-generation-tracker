@@ -168,3 +168,12 @@
 - [ ] Test a validator-generated minimal repair for the missing `Ab` and incompatible bar-7 bass
 - [ ] Verify project cloning/restoration, model/version capture, request accounting, and export stability before claim-bearing use
 - [ ] Compare matched Veena and Suno exact-create/local-edit/repair tasks only after construct-equivalence gates pass
+
+
+## Recognizer Research frontend lane — 2026-10-24
+
+- [x] Add separate light-mode page and minimal navigation link.
+- [x] Implement/test a deterministic fail-closed public status projection.
+- [ ] Complete independent review and browser QA.
+- [ ] Deploy and verify first milestone checkpoint.
+- [ ] Synchronize after subsequent major research milestones.

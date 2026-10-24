@@ -119,3 +119,8 @@
 - **Commercial-system policy:** run one bounded Suno Studio qualification period after price/terms/export/version checks; do not replace Udio or subscribe to both before the matched construct-equivalence gate resolves.
 - **Budget refinement:** provisional ceiling becomes $95: up to $30 Suno access, up to $45 cloud inference, up to $20 listener pilot, and $5 uncommitted. Verify live checkout before spending.
 - **Detailed archive:** `SUNO_STUDIO_2_IMPACT.md` contains the 18-question review, claim corrections, contradictions, gaps, audit protocol, and citations.
+
+
+## Separate recognizer research lane — 2026-10-24
+
+Recognizer Research is a separate curated milestone page under recognizer-research/, not a replacement for this generation project or its existing Execution Log. Task-specific rhythm/beat qualification starts the analyzer work; CLPR remains flagship and CRVP remains validation infrastructure. Deployment is pending security/logic review and browser QA. New analyzer work does not validate register/activity constructs or reopen unsafe long-form local generation.

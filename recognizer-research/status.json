@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "checkpoint": "rhythm-foundation-baseline-executed",
+  "updated_at": "2026-10-24T10:57:57.257799+00:00",
+  "title": "Recognizer Research",
+  "phase": "Rhythm-first execution",
+  "summary": "First bounded rhythm execution is complete: four copied development recordings and six numerical controls. Historical per-record diagnosis is also complete. No improvement candidate or empirical musical gain is established.",
+  "publication_ready": false,
+  "milestones": [
+    {
+      "id": "audit-design",
+      "title": "Audit and research design",
+      "status": "complete",
+      "evidence_type": "Technical review and retained-evidence audit",
+      "detail": "Eight areas reviewed; native Dereck review obtained; 36-step protocol approved after two corrections. Protocol approval is not empirical validation."
+    },
+    {
+      "id": "frozen-execution",
+      "title": "Frozen rhythm baseline",
+      "status": "complete",
+      "evidence_type": "New local CPU execution",
+      "detail": "Ten rhythm-only executions completed: four copied local development recordings and six synthetic controls. Four adapter tests pass. Original source/audio checksums are retained; the full app was not run."
+    },
+    {
+      "id": "metrics",
+      "title": "Task-separated scoring harness",
+      "status": "running",
+      "evidence_type": "Implementation and tests",
+      "detail": "Independent BPM, pulse-level, beat/downbeat, literal-meter and availability channels; no universal scalar."
+    },
+    {
+      "id": "reference-contract",
+      "title": "Blinded reference and source eligibility",
+      "status": "running",
+      "evidence_type": "Reference preparation, not annotation",
+      "detail": "Two-annotator instructions and rights/overlap inventory. Existing guitar/drum diagnostic data remains development material."
+    },
+    {
+      "id": "historical-diagnosis",
+      "title": "Historical pulse-error diagnosis",
+      "status": "complete",
+      "evidence_type": "New analysis of retained predictions",
+      "detail": "All 78 guitar and 115 drum retained predictions reaggregated. Nine missing-media exclusions remain explicit. Reference-informed correction is only an oracle diagnostic."
+    },
+    {
+      "id": "independent-validation",
+      "title": "Independent validation of execution increment",
+      "status": "pending",
+      "evidence_type": "Review gate",
+      "detail": "Review actual artifacts, source boundaries, scoring denominators and public-page security before promoting any result."
+    },
+    {
+      "id": "confirmation",
+      "title": "Independent musical confirmation",
+      "status": "blocked",
+      "evidence_type": "Missing empirical evidence",
+      "detail": "No new blinded human labels or untouched-source confirmation study is available yet."
+    }
+  ],
+  "findings": [
+    {
+      "title": "Pulse-level mistakes dominate a large share of retained drum error",
+      "detail": "Using the predeclared descriptive 4% reference-relative half/double-nearness rule, 22 of 115 drum records account for 64.49% of summed exact relative error. The corresponding guitar values are 3 of 78 and 14.32%. This is retained-development arithmetic, not a new model gain or proof of perceptual correctness.",
+      "evidence_type": "Executed retained-record reanalysis",
+      "confidence": "HIGH for the retained arithmetic; generalization unestablished",
+      "source": "diagnosis/RESULTS.md and diagnosis.json, 2026-10-24; internal development evidence"
+    },
+    {
+      "title": "The frozen baseline reproduces a numerical half-rate case",
+      "detail": "On a synthetic 180-pulse-per-minute control, the unchanged estimator returns 89.1 BPM. Silence, DC and the tested sustained tone return unavailable BPM. These controls establish numerical behavior only, not musical accuracy.",
+      "evidence_type": "Fresh rhythm-only CPU execution",
+      "confidence": "HIGH for this pinned execution only",
+      "source": "baseline/baseline-results.json, 2026-10-24; deterministic execution artifact"
+    }
+  ],
+  "blockers": [
+    "Prediction-blinded musical annotation and untouched-source confirmation remain outstanding.",
+    "No improvement candidate is selected or promoted; no empirical paper is ready."
+  ],
+  "next_steps": [
+    "Complete and independently check this bounded execution increment.",
+    "Use the reference inventory to choose rights-cleared, composition-grouped annotation sources.",
+    "Test one pulse-level mechanism only after a trustworthy diagnosis."
+  ],
+  "agents": [
+    {
+      "responsibility": "Scoring implementation and tests",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium"
+    },
+    {
+      "responsibility": "Blinded reference contract and source inventory",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium"
+    },
+    {
+      "responsibility": "Retained-record diagnosis",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium"
+    }
+  ],
+  "activity": [
+    {
+      "time": "2026-10-24T10:55:34.915135+00:00",
+      "title": "Research execution authorized and dispatched",
+      "action": "Three disjoint native Codex agents; gpt-6.1-sol, model_reasoning_effort=medium.",
+      "result": "Running; no paid compute, source-app modification, audio/weight acquisition or submission."
+    },
+    {
+      "time": "2026-10-24T10:57:57.257799+00:00",
+      "title": "Frozen rhythm baseline and historical diagnosis completed",
+      "action": "Invocation summaries: run_baseline.py; unittest test_frozen_rhythm; reanalyse_rhythm.py and its self-tests. Existing local Python environments; no checkpoint/audio acquisition.",
+      "result": "Ten baseline/control cases finished; four adapter tests pass. Historical diagnosis reaggregates 193 inspected records. Independent execution/publication review still pending."
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "baseline/frozen_rhythm.py",
+      "bytes": 2812,
+      "sha256": "a549a06c2263d22d9236230cc16f6320c56a12c1064714abe97ed71f872874ad"
+    },
+    {
+      "name": "baseline/baseline-manifest.json",
+      "bytes": 2675,
+      "sha256": "461403e3e3d13b25489d25717981fc836f3e24874319685e614b844a5751bc88"
+    },
+    {
+      "name": "baseline/baseline-results.json",
+      "bytes": 29116,
+      "sha256": "cfc30f0e3ecc69c4368d5b639ba7214f8035784caae12eb64f23e4411b6eccda"
+    },
+    {
+      "name": "baseline/tests-green.txt",
+      "bytes": 576,
+      "sha256": "10c509d16180394b0b49cb20bda7c4b5421e65bcc7d6cb5071b3c10b2f6b2690"
+    },
+    {
+      "name": "diagnosis/reanalyse_rhythm.py",
+      "bytes": 23422,
+      "sha256": "c0929b2108566d426c9981c5e3a2ede61e125497aa6055035526f20356892c14"
+    },
+    {
+      "name": "diagnosis/diagnosis.json",
+      "bytes": 495328,
+      "sha256": "6147f5aac1b59fc9a5ac6800a46442d2510ed66b652f00fdef1407dd93048991"
+    },
+    {
+      "name": "diagnosis/RESULTS.md",
+      "bytes": 12311,
+      "sha256": "cb5874622dddc260a4534ab2dddd4fd57ffda8bf5e1323d470f88a2967072ea1"
+    }
+  ],
+  "limits": [
+    "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",
+    "Synthetic controls test numerical behavior, not musical correctness.",
+    "Old diagnostic recordings are not fresh confirmation material.",
+    "CLPR remains the flagship. This is a proposed task-specific recognizer-qualification lane; rhythm/meter accuracy does not validate register or note-density constructs."
+  ],
+  "sources": [
+    {
+      "title": "Research plan and evidence boundaries",
+      "url": "./METHODS.md"
+    }
+  ]
+}
