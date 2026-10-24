@@ -178,3 +178,8 @@
 - [x] Deploy and verify first milestone checkpoint.
 - [x] Verify the completion/training-scope checkpoint after final review.
 - [ ] Synchronize after subsequent major research milestones.
+
+
+### Architecture design closure — 2026-10-24
+- [x] Apply six independent design-review corrections and obtain fresh design-only approval.
+- [ ] Run a fresh resource/rights/label/split preflight before choosing a bounded exploratory fit; no training completed.

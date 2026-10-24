@@ -129,3 +129,8 @@ Recognizer Research is a separate curated milestone page under recognizer-resear
 ## Trained recognizer research scope — 2026-10-24
 
 Fine-tuning/retraining and promising new architectures are now permitted for research copies; no training has run. The separate Recognizer Research page reports this lane without changing the flagship or existing generator budget. Explore This! is newly verified close 2026 prior art, so joint grid/meter modeling alone is not claimed novel.
+
+
+## Architecture design closure — 2026-10-24
+
+Architecture-design closure: the independent reviewer first requested six bounded corrections. All were applied and a fresh gpt-6.1-sol medium read-only review approved the current design. Corrections restore inherited 512 MiB new-files / 30 GiB free-disk limits pending a separate measured preflight; prohibit automatic cache deletion; separate numerical 0.05 s scorer plumbing from unfrozen musical tolerance; correct capability attribution and superseded restrictions; and match hard routing and all downstream gradient-detachment controls. Approval is design coherence only, not training feasibility, musical benefit or novelty. No training has run.

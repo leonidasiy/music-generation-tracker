@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "rhythm-foundation-training-authorized",
-  "updated_at": "2026-10-24T11:13:35.184091+00:00",
+  "checkpoint": "rhythm-architecture-design-reviewed",
+  "updated_at": "2026-10-24T11:31:52.418977+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm-first execution",
-  "summary": "The first preparatory rhythm increment is independently checked. The owner has now authorized fine-tuning, retraining and promising new architectures. Model/architecture design is active; no training, improved recognizer performance or empirical-paper finding is claimed.",
+  "summary": "The preparatory rhythm increment and expanded architecture experiment design have passed independent technical reviews. Training is authorized but has not run; local fit, musical gains and novelty remain unestablished.",
   "publication_ready": false,
   "milestones": [
     {
@@ -52,9 +52,9 @@
     {
       "id": "trained-model-design",
       "title": "Retraining and architecture lane",
-      "status": "running",
-      "evidence_type": "Owner authorization plus prospective experimental design",
-      "detail": "Compare unchanged/simple baselines, a lightweight trained head/adapter, limited backbone fine-tuning and a conditional architecture extension. Existing inspected sources may support exploratory development training after rights/label/split checks, but not untouched confirmation. No training has run."
+      "status": "complete",
+      "evidence_type": "Prospective experiment design and independent correction/closure review",
+      "detail": "A 23-arm candidate matrix covers unchanged/simple baselines, a lightweight trained head, limited fine-tuning and conditional architecture controls. Six review corrections are applied; fresh independent review approves design coherence only. Fresh resource, rights, label and split preflight is still required before fitting. No training has run."
     },
     {
       "id": "confirmation",
@@ -62,6 +62,13 @@
       "status": "blocked",
       "evidence_type": "Missing empirical evidence",
       "detail": "The local inventory establishes zero presently eligible new composition-independent, rights-evidenced confirmation sources; shortfall: twelve for the planned feasibility batch. Two independent musical annotators are also not yet recruited."
+    },
+    {
+      "id": "training-preflight",
+      "title": "Training execution preflight",
+      "status": "pending",
+      "evidence_type": "Future execution gate",
+      "detail": "Measure resource fit and verify rights, labels, source-group splits and local assets before selecting a bounded exploratory fit. Retain inherited 512 MiB cumulative new files and 30 GiB free disk until an explicit separately scoped preflight changes the envelope. No automatic cache deletion."
     }
   ],
   "findings": [
@@ -100,7 +107,7 @@
     "No trained candidate gain, source-held-out confirmation, continuity validation or empirical paper is established. Paid compute and production changes are not authorized."
   ],
   "next_steps": [
-    "Finish independent architecture/comparator design and reject ideas already covered by close prior art.",
+    "Run a fresh tool-measured resource preflight and verify local asset availability, rights, label semantics and source-group splits against the independently reviewed design before selecting a bounded exploratory fit.",
     "Freeze an admissible development training contract and run a bounded local trainability/resource smoke test; compare the smallest learned baseline before escalating.",
     "In parallel, resolve the 12-source annotation-feasibility inventory and arrange two independent listening passes for later confirmation."
   ],
@@ -150,6 +157,12 @@
       "title": "Training and creative architectures authorized",
       "action": "Recorded owner scope amendment; verified local PyTorch/MPS capability; retrieved primary architecture literature and pinned upstream implementation. Separate architecture-design worker requested as gpt-6.1-sol / medium.",
       "result": "Training is allowed prospectively in the research workspace. No training has run. Explore This! is a close comparator; a novel or larger model is not automatically preferred."
+    },
+    {
+      "time": "2026-10-24T11:31:59.819971+00:00",
+      "title": "Architecture experiment design independently approved",
+      "action": "Applied six bounded review corrections and obtained fresh read-only closure over the exact current design hashes.",
+      "result": "Design coherence approved; training has not run. Resource fit, independent musical gains and novelty remain unestablished."
     }
   ],
   "artifacts": [
@@ -257,6 +270,26 @@
       "name": "agents/verified-provenance.json",
       "bytes": 1345,
       "sha256": "2780794bf03ed19c5469051de2d6abcfb330a30a2741d3101967ca5f2e516bc1"
+    },
+    {
+      "name": "architecture/ARCHITECTURE_OPTIONS.md",
+      "bytes": 39924,
+      "sha256": "a53d552da63ae04e483eb376e1fb7286361452222302f04b983d694ba1283c82"
+    },
+    {
+      "name": "architecture/experiment-matrix.json",
+      "bytes": 52008,
+      "sha256": "db8da2eb4856365e59a18fdd3fa37bb6d9f69955ff294c12dd4d63532926061d"
+    },
+    {
+      "name": "architecture/closure-review.md",
+      "bytes": 1181,
+      "sha256": "38d91ff51fdc49229e54d2bfc4209bd76113323fadf2baccc9c6be3b669949cd"
+    },
+    {
+      "name": "architecture/CLOSURE.md",
+      "bytes": 938,
+      "sha256": "09b2450403f74510f5e7220521484b285fbf27a843a1e2fa0878b9ee95468fff"
     }
   ],
   "limits": [

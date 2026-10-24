@@ -194,3 +194,8 @@ First recognizer progress checkpoint deployed and live-verified at commit 8320e8
 ## 2026-10-24 — second curated checkpoint verified
 
 Independent final public-data review approved the completion/training-scope checkpoint; all 21 artifact sizes/hashes were checked. Commit `cef805c14b88dd54232b510599fc67e967eee10a` built successfully on Pages; public HTML, JS, status JSON and methods bytes matched the commit exactly. Twelve local/live browser checks passed, including refresh failure/recovery, text-only rendering, mobile overflow and legacy tab behavior. Publication remains false; prospective architecture design remains running and no unreviewed proposal is published. No training or musical-performance gain is claimed.
+
+
+## Architecture design closure — 2026-10-24
+
+Architecture-design closure: the independent reviewer first requested six bounded corrections. All were applied and a fresh gpt-6.1-sol medium read-only review approved the current design. Corrections restore inherited 512 MiB new-files / 30 GiB free-disk limits pending a separate measured preflight; prohibit automatic cache deletion; separate numerical 0.05 s scorer plumbing from unfrozen musical tolerance; correct capability attribution and superseded restrictions; and match hard routing and all downstream gradient-detachment controls. Approval is design coherence only, not training feasibility, musical benefit or novelty. No training has run.
