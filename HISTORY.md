@@ -189,3 +189,8 @@ Owner requested research updates in a separate frontend page/panel. Added recogn
 ## 2026-10-24 — preparatory closure and training amendment
 
 First recognizer progress checkpoint deployed and live-verified at commit 8320e89. Independent bounded closure reproduced all four adapter tests and actual CLI outputs. Owner then authorized retraining/new architectures. Added a dated training amendment and a primary-paper/code novelty check; exact original reproduction commit was resolved through Git tree after current README paths produced 404. No training, weights or paid compute run. A separate completion/scope checkpoint is being independently reviewed before deployment.
+
+
+## 2026-10-24 — second curated checkpoint verified
+
+Independent final public-data review approved the completion/training-scope checkpoint; all 21 artifact sizes/hashes were checked. Commit `cef805c14b88dd54232b510599fc67e967eee10a` built successfully on Pages; public HTML, JS, status JSON and methods bytes matched the commit exactly. Twelve local/live browser checks passed, including refresh failure/recovery, text-only rendering, mobile overflow and legacy tab behavior. Publication remains false; prospective architecture design remains running and no unreviewed proposal is published. No training or musical-performance gain is claimed.

@@ -176,5 +176,5 @@
 - [x] Implement/test a deterministic fail-closed public status projection.
 - [x] Complete independent review and local/live desktop/mobile browser QA.
 - [x] Deploy and verify first milestone checkpoint.
-- [ ] Verify the completion/training-scope checkpoint after final review.
+- [x] Verify the completion/training-scope checkpoint after final review.
 - [ ] Synchronize after subsequent major research milestones.
