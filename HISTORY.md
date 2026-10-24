@@ -199,3 +199,8 @@ Independent final public-data review approved the completion/training-scope chec
 ## Architecture design closure — 2026-10-24
 
 Architecture-design closure: the independent reviewer first requested six bounded corrections. All were applied and a fresh gpt-6.1-sol medium read-only review approved the current design. Corrections restore inherited 512 MiB new-files / 30 GiB free-disk limits pending a separate measured preflight; prohibit automatic cache deletion; separate numerical 0.05 s scorer plumbing from unfrozen musical tolerance; correct capability attribution and superseded restrictions; and match hard routing and all downstream gradient-detachment controls. Approval is design coherence only, not training feasibility, musical benefit or novelty. No training has run.
+
+
+## Presentation preference — 2026-10-24
+
+Removed the Verified artifact identities section and its renderer from the recognizer research page at the owner’s request. Underlying artifact metadata and verification procedures remain intact. No research status or result changed.

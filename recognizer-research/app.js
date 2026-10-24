@@ -38,11 +38,6 @@ function render(data) {
     row.append(node('h3',item.title),node('p',item.time,'meta'),node('p',item.action),node('p',item.result));
     return row;
   }));
-  element('artifacts').replaceChildren(...(data.artifacts.length ? data.artifacts.map(item => {
-    const row = node('div',undefined,'artifact');
-    row.append(node('strong',item.name),node('p',item.bytes+' bytes','meta'),node('code','SHA-256 '+item.sha256));
-    return row;
-  }) : [node('p','Artifact identities will appear after completed execution and verification.','muted')]));
   element('content').hidden = false;
 }
 async function loadCheckpoint() {
