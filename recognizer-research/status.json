@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "below30-feasibility-assessed-not-achieved",
-  "updated_at": "2026-10-27T11:19:40.917612+00:00",
+  "checkpoint": "frozen-pretrained-pilot-complete-exploratory",
+  "updated_at": "2026-10-27T12:41:01.160040+00:00",
   "title": "Recognizer Research",
-  "phase": "Rhythm reliability: new-evidence and pulse-interpretation feasibility",
-  "summary": "Current best observed failure incidence at an 8% tempo-error tolerance remains 39.07% (59/151). Below 30% needs 14 net corrections. Even perfect reference-informed selection among the five tested preprocessing outputs still fails 31.79%; expanded candidate coverage is headroom, not achieved accuracy. Next: a frozen modern-backbone baseline, then matched temporal decoders. No new model run has started.",
+  "phase": "Frozen pretrained rhythm pilot complete; independent confirmation pending",
+  "summary": "On 151 inspected recordings, the frozen direct model has 11 above-8%-tolerance errors plus 2 missing estimates: 13/151 = 8.61% combined, versus the previous 39.07%. This is a strong exploratory signal, not independent confirmation: 100 cases match the training partition. Guitar solos remain 33.33% failures. No retraining or production recognizer change.",
   "publication_ready": false,
   "milestones": [
     {
@@ -118,11 +118,46 @@
       "status": "complete",
       "evidence_type": "Saved-output arithmetic, fresh primary-source/benchmark review and independent read-only critique",
       "detail": "Twenty research questions; four headroom tests; 2,265 saved selector predictions across 15 arm/seed groups rescored. Target: at most 45 failures in 151 recordings, requiring 14 net corrections. The source application and historical predictions are unchanged; no model downloads, training or inference."
+    },
+    {
+      "id": "frozen-beat-runtime",
+      "title": "Frozen-backbone pilot: controls and runtime gate passed",
+      "status": "complete",
+      "evidence_type": "Executed numerical/API tests, synthetic smoke, checksum verification and independent read-only review",
+      "detail": "Advance envelope: 1–2 hours estimated, 3-hour stop, 1.25 GiB file cap, 30 GiB free reserve, 6 GiB process-memory stop. Eight-fold downloads blocked; exact-author-checksummed single_final0 acquired from an immutable mirror. CASM installation deferred for absent explicit decoder licence. Actual arms: direct and librosa DP; no retraining."
+    },
+    {
+      "id": "frozen-beat-outcome",
+      "title": "Frozen pretrained pilot: substantial exploratory gain",
+      "status": "complete",
+      "evidence_type": "Actual frozen-model inference, independent saved-output audit and exploratory reporting closure",
+      "detail": "151 cases, 302 arm outputs. Direct: observed above-tolerance rate 7.28%; missing 1.32%; combined 8.61% (13/151; rates independently rounded). DP combined 10.60%. Sixteen tests and eight API controls; 151 caches/302 readouts, 152 summary and 152 paired cells checked. Exact publisher-validation subset 1/21 direct, not untouched confirmation. Recorded case loop 50.82 seconds; peak Python RSS 1.84 GiB, not total unified memory."
     }
   ],
   "findings": [
     {
-      "title": "Current primary score: above-tolerance dataset percentage",
+      "title": "Current frozen-model pilot: 8.61% combined, with exposure explicit",
+      "detail": "At the unchanged 8% relative-BPM tolerance: original 62/151 = 41.06%; previous preprocessing 59/151 = 39.07%; frozen direct 11 observed errors (7.28%) plus 2 missing (1.32%), combined 13/151 = 8.61%; frozen DP 16/151 = 10.60%, no missing. Severe >50%: direct 2/151 (1.32%), DP 5/151 (3.31%). Overall data are training-exposed exploratory material, not an independent benchmark.",
+      "evidence_type": "Executed fixed-checkpoint comparison and independent identity/arithmetic audit",
+      "confidence": "HIGH for this saved-data computation; independent broad performance unestablished",
+      "source": "Frozen-beat pilot revision 2, results and verification, 2026-10-27."
+    },
+    {
+      "title": "Independent-looking strata must not be overstated",
+      "detail": "All 151 retained: 100 exact training-partition cases; 21 exact publisher-validation cases; 18 related-comp solos; 12 unresolved. In the 21 validation-partition cases, direct is 1/21 = 4.76% and previous preprocessing 7/21 = 33.33%, with no missing. Publisher validation and shared performer/session families are not untouched independent confirmation.",
+      "evidence_type": "Pinned original publisher splits, checkpoint metadata and saved-result subgroup audit",
+      "confidence": "HIGH for partition mapping and counts; LOW for broad generalization",
+      "source": "Publisher v1.0 single split and frozen-beat pilot, 2026-10-27."
+    },
+    {
+      "title": "Subgroup regressions and DP safety failures retained",
+      "detail": "Combined direct failures: drums 5/115 = 4.35%; guitar 8/36 = 22.22%; guitar solos 6/18 = 33.33%. All three new direct regressions versus preprocessing are solos. Five related-validation solos worsen from 1/5 to 3/5; unresolved cases remain 4/12 combined failures. DP fabricates about 300 BPM on quiet/non-rhythmic controls, so no production promotion.",
+      "evidence_type": "Actual per-case comparisons, provenance breakdown and retained negative controls",
+      "confidence": "HIGH for these recorded inputs; no universal reliability claim",
+      "source": "Frozen-beat pilot case changes, controls and outcome closure, 2026-10-27."
+    },
+    {
+      "title": "Historical preprocessing pilot: incidence rescoring",
       "detail": "At an 8% BPM tolerance: original mean 41.06% (62/151); original median 41.72% (63/151); percussive mean 41.06% (62/151); percussive median 39.07% (59/151); harmonic median 49.01% (74/151). No missing predictions. Severe deviations above 50%: baseline and percussive median both 17.88% (27/151). Each offending recording counts once, regardless of error size.",
       "evidence_type": "Owner-directed post-hoc incidence reanalysis of unchanged pilot outputs",
       "confidence": "HIGH for saved-data arithmetic; no independent musical/generalization validation",
@@ -205,12 +240,11 @@
     "No trained candidate gain, source-held-out confirmation, continuity validation or empirical paper is established. Paid compute and production changes are not authorized."
   ],
   "next_steps": [
-    "Keep the unchanged production estimator. Retain percussive+median as a candidate for diverse independent confirmation, not a deployed default or universally best arm.",
-    "First scope a frozen modern beat-backbone baseline with fixed scalar-BPM readout and training-overlap audit; then compare direct/CASM/broad-support temporal decoding on identical activations. Give a separate advance resource estimate before model downloads or substantial execution.",
-    "Retain the unchanged estimator: do not promote the failed small selectors.",
-    "Inventory diverse rights-evidenced full-song/audio types and genre labels; freeze a coverage matrix, independent source/artist/composition splits and category-level reporting.",
-    "Provide a separate advance time/cost/storage estimate before acquiring data or starting larger training/fine-tuning.",
-    "Resolve independent musical timing/pulse references and confirmation gaps; inspected metadata-based transfer tests are development evidence only."
+    "Keep production unchanged. Prioritize the frozen direct backbone for independent confirmation; retain the old estimator and preprocessing as frozen controls.",
+    "Prepare a separate advance resource/rights proposal for diverse genres and audio/song types, with training-overlap, artist/composition/performance grouping and category support frozen before acquisition.",
+    "Investigate guitar-solo pulse-level regressions and unresolved sparse cases using suitable beat/tactus references; no reference-informed fallback or octave forgiveness in the headline score.",
+    "CASM remains deferred pending explicit decoder licensing; blocked eight-fold retrieval is not a completed experiment.",
+    "Do not start retraining merely because it is allowed: diagnose remaining activation/interpretation failures and budget any substantial new run separately."
   ],
   "agents": [
     {
@@ -306,6 +340,18 @@
       "title": "Below30%feasibility assessed without a new model run",
       "action": "Computed target and fixed-pool/expanded-bank diagnostics; rescored all15selector arm/seed groups; checked fresh primary papers, contrary MIREX results and read-only critique.",
       "result": "Research target remains unproved. Modern frozen-backbone baseline first, matched decoding second; no tolerance widening or production change."
+    },
+    {
+      "time": "2026-10-27T12:25:33.749718+00:00",
+      "title": "Frozen beat pilot cleared to execute",
+      "action": "Verified publisher checksum, isolated dependencies, 16 tests and eight controls; fixed stale-identity and partial-denominator blockers before corpus inference.",
+      "result": "Approved only for an exploratory single-checkpoint comparison. Previous measured score unchanged; no production promotion or training."
+    },
+    {
+      "time": "2026-10-27T12:41:01.160040+00:00",
+      "title": "Frozen-model comparison completed; promotion withheld",
+      "action": "Executed 151 cases; independently verified 151 caches, 302 event readouts, 152 summary and 152 paired cells; reporting closure approved.",
+      "result": "Direct 8.61% combined vs prior 39.07%, but training exposure, sparse outputs, solo regressions and DP negative controls block broad/production claims."
     }
   ],
   "artifacts": [
@@ -598,6 +644,76 @@
       "name": "below30-feasibility-20261027/QUESTIONS.md",
       "bytes": 1825,
       "sha256": "d66bef78e6ed900a07840739b9423b3d55e6517ca52f4222cdd005f4cd8b5c46"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/CONTRACT.json",
+      "bytes": 4116,
+      "sha256": "7927951fdfee46fa3bb6b7bbc30f2462adc41064bb82df68db41f83c104b12a7"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/reviews/runtime-closure.md",
+      "bytes": 915,
+      "sha256": "07d034093ed0c40257d86b0a25d8879c8b725907cbc7cda8f12c18089a843438"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/DEVICE.json",
+      "bytes": 294,
+      "sha256": "b8ad9b4cd18bd9b8425cfefbf0674052422cba44a63b8442f4433a677c859097"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/REPORT.md",
+      "bytes": 12041,
+      "sha256": "8c6eb31bc5a82fcc8a552acb08f0cc724a42e1b7bfdb04c296d6c22d143e4098"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/results.json",
+      "bytes": 79709,
+      "sha256": "52e773895d55f97f53cbf7d7e1a6eb279b211f844245111962914060d632f9b5"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/verification.json",
+      "bytes": 402,
+      "sha256": "caf9bc016239ae0ff1231bcd37594207e631b4675bb224ff7250224a27d5c823"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/case-changes.json",
+      "bytes": 41208,
+      "sha256": "41ef0b796e52922925ee42ecca390994d95ce7798908927841fd410ac5109be7"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/controls.json",
+      "bytes": 10502,
+      "sha256": "c0b9bbac4fecbf2af87fcb65b55abd4b611ba9f0ec71007841e9dfc157ab1e41"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/pipeline.py",
+      "bytes": 7284,
+      "sha256": "aa0056fa1196ec9779427346759ca738b83439623a5c03bb2cb36ca45868bbd0"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/run_pilot.py",
+      "bytes": 12280,
+      "sha256": "31a04a38ba73c4d5f5b098bdf90124450f301b1853f851733be1bb6d0f2aae15"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/test_pilot.py",
+      "bytes": 5852,
+      "sha256": "1f69db7cf860816fcb858979811dafd3ac7d499851c0eb7012a7d7f5235e0695"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/verify_outputs.py",
+      "bytes": 6864,
+      "sha256": "b9fad9edf6bba2baba891953fc7f862b7db7c0112d944143652fabb91311d833"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/asset-identities.json",
+      "bytes": 1122,
+      "sha256": "d91850ed4aba387c526bcae5bc23f0ae3aedec4f066fa6392681fc14d4e7f933"
+    },
+    {
+      "name": "frozen-beat-pilot-20261027/reviews/outcome-closure.md",
+      "bytes": 676,
+      "sha256": "cc4060c270b0f33a4a2cff7402d545e32e92a6137794ee6c64c2338fe62038ae"
     }
   ],
   "limits": [
@@ -606,7 +722,8 @@
     "Old diagnostic recordings are not fresh confirmation material.",
     "CLPR remains the flagship. This is a proposed task-specific recognizer-qualification lane; rhythm/meter accuracy does not validate register or note-density constructs.",
     "This local pilot uses only guitar/drum corpora and weak global BPM labels; it cannot satisfy the owner’s final-run diversity requirement. The final diverse acquisition/training run is not started or budgeted.",
-    "Scoring update: use above-tolerance incidence as the current headline; historical mean relative error is not the percentage of recordings that failed. The8%threshold is specific to this tempo benchmark, not a universal tolerance for chords/instruments/beat timing."
+    "Scoring update: use above-tolerance incidence as the current headline; historical mean relative error is not the percentage of recordings that failed. The8%threshold is specific to this tempo benchmark, not a universal tolerance for chords/instruments/beat timing.",
+    "The frozen pretrained pilot overall score includes 100 exact publisher-training cases plus related/unresolved material. A below-30% exploratory result is not independent genre-wide confirmation; solos and unresolved cases remain 33.33% combined failures. No production model integration or retraining occurred."
   ],
   "sources": [
     {
