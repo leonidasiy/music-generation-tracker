@@ -144,3 +144,13 @@ Read-only inventory and advance estimate completed: 151 existing recordings (2.5
 ## Local training pilot closed — 2026-10-27
 
 Approved local pilot completed: frozen exact metadata BPM mean error 25.02%, linear 37.19%, MLP 35.41–37.45%; no learned model promoted. Fifteen tests and independent technical closure; 151 inputs, 24 distinct final fit configurations, 2,265 verified predictions and 45 summaries. Research-close elapsed about 21 minutes with roughly 6 MiB retained at closure. All research artifacts are under Hermes projects; Desktop music-analysis stays read-only. Final run needs broad genre/audio coverage, independent source groups and its own advance budget.
+
+## Current recognizer pilot outcome — 27 October 2026
+
+This updates the separate Recognizer Research lane, not CLPR/generation claims or its budget. Current scoring uses intended-dataset incidence above a prespecified tolerance, not mean error magnitude; the historical means above are not failure rates.
+
+Frozen Beat This! single_final0/direct on 151 inspected recordings: 11 above-8%-tolerance estimates (7.28%) and 2 missing, combined 13/151 = 8.61%, versus prior preprocessing 59/151 = 39.07%. Licensed same-activation librosa DP is 16/151 = 10.60%. Severe direct deviations above 50%: 2/151. No training or production recognizer change occurred in this pilot.
+
+The aggregate is training-exposed: 100 exact training-partition cases, 21 exact publisher-validation cases, 18 related-comp solos, 12 unresolved. Direct is 1/21 on exact publisher validation, not untouched performer/session-independent confirmation. Guitar solos and unresolved strata remain 33.33% combined failures; all three new direct regressions are solos. DP fabricates about 300 BPM on quiet/non-rhythmic controls and cannot be promoted as fail-safe.
+
+Original eight-fold weight transfers failed before inference; an immutable public mirror supplied the publisher-checksummed single-split weight after a documented pre-outcome revision. CASM installation was deferred for unclear own-decoder licensing. Sixteen tests/eight API controls, 151 cache identities/302 readouts, 152 summary/152 paired checks and independent runtime/exploratory-report closures passed. Next: separately budgeted, rights-evidenced, genre/audio-type-diverse confirmation of the frozen direct backbone. Source of truth remains the researcher's music-analysis-improvement-review project and the deployed recognizer-research/status.json.
