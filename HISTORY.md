@@ -217,3 +217,6 @@ Approved local pilot completed: frozen exact metadata BPM mean error 25.02%, lin
 
 ## 2026-10-27 — Preprocessing proposal
 Separate recognizer page updated with a targeted frontier-literature check and a pending, bounded task-specific preprocessing proposal. Negative pilot result retained; no new preprocessing/training result claimed. Budget estimate and diverse final-run gates remain visible.
+
+## 2026-10-27 — Preprocessing pilot completion
+Separate recognizer page records actual151case/five-view execution after a resolved memory-pressure pause, independent review corrections and audited modest/negative results. Percussive+median is a confirmation candidate only; severe errors remain. No production recognizer integration.

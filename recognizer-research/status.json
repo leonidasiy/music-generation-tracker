@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "task-specific-preprocessing-proposed",
-  "updated_at": "2026-10-27T08:55:58.635851+00:00",
+  "checkpoint": "preprocessing-pilot-complete-modest-signal",
+  "updated_at": "2026-10-27T10:25:11.893518+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm-first execution",
-  "summary": "The completed local selector pilot remains a negative result, not a rejection of all learned analysis or preprocessing. A fresh literature check supports a controlled task-specific preprocessing experiment, not universal audio cleanup. A no-training rhythm DSP ablation is proposed with an advance resource envelope; it has not run. Broad diverse confirmation remains a separate gate.",
+  "summary": "The approved five-view preprocessing pilot completed151recordings/755outputs after a resolved resource pause. Percussive+median lowered observed mean metadata BPM error25.02%->24.29%, but only11cases changed and severe errors stayed27. Independent reviews approve exploratory reporting only. No production default is changed; diverse confirmation and separately scoped pulse-level decoding are next.",
   "publication_ready": false,
   "milestones": [
     {
@@ -100,10 +100,10 @@
     },
     {
       "id": "preprocessing-stage-a",
-      "title": "Bounded preprocessing pilot proposed",
-      "status": "pending",
-      "evidence_type": "Advance estimate, not measured runtime or executed benchmark",
-      "detail": "Proposed fixed-model DSP ablation: original/median and harmonic/percussive views, with aligned synthetic controls and all failures reported. Estimate 45–90 minutes total, 2-hour stop; 20–80 MiB expected, 128 MiB cap; no new cloud/data/software charges, electricity and normal assistant billing excluded. No installs, weights, acquisition or training. Maintain 30 GiB free disk; stop for memory pressure."
+      "title": "Five-view preprocessing pilot completed",
+      "status": "complete",
+      "evidence_type": "Actual fixed-model DSP execution, exact baseline parity and independent numerical/outcome review",
+      "detail": "15tests,8controls,151cases/755outputs; zero failures. All151baseline outputs and source hashes match. Percussive+median has lowest observed mean among five inspected views, but6cases improve/5worsen,140unchanged and27severe errors remain. Initial pressure pause resolved within the original2-hour/128 MiB limits. No production promotion or broad musical claim."
     }
   ],
   "findings": [
@@ -150,11 +150,18 @@
       "source": "local selector pilot candidate-support and oracle records, 2026-10-27; internal diagnostic"
     },
     {
-      "title": "Preprocessing remains testable, not established",
-      "detail": "The failed ranker did not test end-to-end audio models or task-dependent source views. A candidate oracle is not a recognizer. New chord-remix evidence includes only a 0.20-percentage-point triad gain in one 2025 study and newly broken frames; separation can distort attacks/dynamics. Preserve original audio as a mandatory control.",
-      "evidence_type": "Local source inspection plus academic primary reports and contrary project evidence",
-      "confidence": "HIGH for what the local pilot tested; external effect sizes author-reported and local efficacy unverified",
-      "source": "Preprocessing reconnaissance, 2026-10-27; APSIPA 2025 chord paper, CASM and Beyond SDR preprints. This claim requires additional verification for our models."
+      "title": "Preprocessing gives a modest, fragile development signal",
+      "detail": "Mean exact metadata BPM error: original25.0171%, raw median24.7568%, percussive mean24.7402%, percussive median24.2945%, harmonic median30.5686%. Lowest observed mean arm improves6/worsens5/unchanged140; within8%89->92, severe errors27->27. Original median has fewer severe errors25. No universal cleanup or production recommendation.",
+      "evidence_type": "Executed five-view DSP comparison and independent saved-prediction arithmetic review",
+      "confidence": "HIGH for these inspected numerical outputs; musical/generalization benefit unverified",
+      "source": "Preprocessing pilot results, verification and independent outcome review,2026-10-27; direct execution and read-only review."
+    },
+    {
+      "title": "Effects differ by category; pulse ambiguity survives",
+      "detail": "Percussive+median mean error guitar20.5457->20.1876%, drums26.4168->25.5801%; three extra within8% cases are drums. Guitar accompaniment and >90s recordings are unchanged for this arm. All32category groups retained privately. The180-pulse numerical control still returns89.1BPM on original/percussive views.",
+      "evidence_type": "Executed subgroup/control diagnostics; not independent genre confirmation",
+      "confidence": "HIGH for scoped arithmetic; no causal or perceptual claim",
+      "source": "CATEGORY_RESULTS.md, controls and outcome-review.md,2026-10-27; local experimental evidence."
     }
   ],
   "blockers": [
@@ -163,8 +170,9 @@
     "No trained candidate gain, source-held-out confirmation, continuity validation or empirical paper is established. Paid compute and production changes are not authorized."
   ],
   "next_steps": [
+    "Keep the unchanged production estimator. Retain percussive+median as a candidate for diverse independent confirmation, not a deployed default or universally best arm.",
+    "Scope pulse-level/multiple-hypothesis temporal decoding with suitable beat/tactus references and fixed-front-end controls; provide a separate advance resource estimate before execution.",
     "Retain the unchanged estimator: do not promote the failed small selectors.",
-    "Approve the new bounded preprocessing proposal; freeze a fixed-estimator, reference-blind ablation before a substantial run. Chord/instrument stem models and decoder changes require separate compatibility checks/estimates.",
     "Inventory diverse rights-evidenced full-song/audio types and genre labels; freeze a coverage matrix, independent source/artist/composition splits and category-level reporting.",
     "Provide a separate advance time/cost/storage estimate before acquiring data or starting larger training/fine-tuning.",
     "Resolve independent musical timing/pulse references and confirmation gaps; inspected metadata-based transfer tests are development evidence only."
@@ -239,6 +247,18 @@
       "title": "Preprocessing hypothesis and resource proposal recorded",
       "action": "Checked current pilot code and recent primary literature, including negative evidence. No audio preprocessing benchmark, training, model acquisition or paid compute launched.",
       "result": "Task-specific views proposed; implementation and local gains unestablished. Original estimator retained; diverse final-run requirements unchanged."
+    },
+    {
+      "time": "2026-10-27T09:46:20.976470+00:00",
+      "title": "Preprocessing implementation tested; real resource gate stopped corpus",
+      "action": "Frozen five-view implementation, 11 passing numerical tests and actual guarded preflight. No training, data/weight acquisition or corpus benchmark.",
+      "result": "Sustained memory warning2; preflight exited2 before inference. No direction promoted/rejected and no production change. Resume conditions recorded."
+    },
+    {
+      "time": "2026-10-27T10:25:11.893518+00:00",
+      "title": "Preprocessing pilot completed with a modest signal and regressions",
+      "action": "Resumed at normal pressure under original budget, corrected two pre-run review defects, ran15tests/8controls/151cases, verified baseline/source identities and obtained independent outcome audit.",
+      "result": "755available outputs; no failures. Lowest observed mean arm24.2945%vs25.0171%baseline; severe errors unchanged. No deployment, genre-wide confirmation or further model training."
     }
   ],
   "artifacts": [
@@ -406,6 +426,86 @@
       "name": "preprocessing-recon-20261027/SOURCE_NOTES.json",
       "bytes": 690,
       "sha256": "c2343adfcd23f4db177c7f24451dea3e8e4d8cd95a4ef241df3996428661e65e"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/REPORT.md",
+      "bytes": 8552,
+      "sha256": "46b7411121da54ab0051c193c780a9ae6c7844b38961cde0aa4c50e2dcd16d39"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/CONTRACT.json",
+      "bytes": 1792,
+      "sha256": "9371b0056ae98759931fec69a3a8105b953560bbc90a115b26e7742b54538e91"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/DESIGN.md",
+      "bytes": 2212,
+      "sha256": "e02942e78b0ca25648cef5a7e9af20ad7ef4b6e4ac47187812a4a132dc46097a"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/preprocess.py",
+      "bytes": 8693,
+      "sha256": "3e02e27997b1ca7d2fa38bc3e2403328921f41e7dcd17efb1a533ad0c6d07974"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/run_preprocessing.py",
+      "bytes": 10513,
+      "sha256": "844dc9cf8949d97aba0e21e8a55da8d15605ee7933dc783cecc770e1bb9cb757"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/test_preprocess.py",
+      "bytes": 6855,
+      "sha256": "4678e78e4453fd3d0cc4df8e802de66c6dd0660c6be06410cd5ca754bdec6dab"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/final-tests.log",
+      "bytes": 1975,
+      "sha256": "628236f5fa1cb60a03239f4833e936e5f5df99ffcf901280c7f265918aae570b"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/STOP.json",
+      "bytes": 353,
+      "sha256": "cd9202b07bae614b1ab2c357591b3e5b2bb1fcae5ed84a0a3923fd286f795a67"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/results.json",
+      "bytes": 120273,
+      "sha256": "1ac3fec3c2367891146ca98463de0d95c2a53ba515c09db0648246a4b7f2dbbd"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/verification.json",
+      "bytes": 439,
+      "sha256": "e88961b8b85a1a4a1329a8219b0f6f59d0ca52d8e37289b6ae8a3aa136a4d3c7"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/CATEGORY_RESULTS.md",
+      "bytes": 27150,
+      "sha256": "fca7ce09c1c9d6baadac227e186dc930e536339c25cb5dd0f4a155bed5602fb9"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/NEXT_DIRECTIONS.md",
+      "bytes": 2052,
+      "sha256": "9c268a9e7973896e008e29d744582d1ad154dce869d218bca23b9224ab4793f0"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/case-changes.json",
+      "bytes": 3432,
+      "sha256": "551fb4154e1ed5315382345eca5e5b5c933aa01c388cd83975efd24896c0d736"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/controls.json",
+      "bytes": 21077,
+      "sha256": "12cb83672d49ab7443a8e389f656019fd497b677d3a90c3b3be39061ed8590b0"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/runtime-closure.md",
+      "bytes": 2195,
+      "sha256": "4727c1e09fc7f81fe12f9abb9033e88d23a74cdf50d30356c5b6b4f6b1ed5b48"
+    },
+    {
+      "name": "preprocessing-pilot-20261027/outcome-review.md",
+      "bytes": 3874,
+      "sha256": "ab24eeb679edf32dfd2562007b133b1939bb33b2e672c19e2daaa91c46fee0c1"
     }
   ],
   "limits": [
