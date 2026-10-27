@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "local-training-budget-proposed",
-  "updated_at": "2026-10-27T07:51:00.682630+00:00",
+  "checkpoint": "local-selector-pilot-complete-negative",
+  "updated_at": "2026-10-27T08:22:50.576026+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm-first execution",
-  "summary": "Read-only local preflight completed. A small pulse-selection pilot is proposed at 1–2.5 hours end-to-end, with a 3-hour stop and 256 MiB added-file cap. No new cloud fees or purchases; electricity and normal assistant billing excluded. Training and downloads have not started; the proposed run awaits owner approval.",
+  "summary": "The approved local pilot has completed actual training and independent technical closure. Every learned selector worsened pooled exact metadata BPM mean error versus the frozen baseline; no checkpoint is promoted. All research artifacts stay in Hermes projects and the Desktop application remains read-only. A diverse final run has not started.",
   "publication_ready": false,
   "milestones": [
     {
@@ -66,16 +66,30 @@
     {
       "id": "training-preflight",
       "title": "Training execution preflight",
-      "status": "running",
-      "evidence_type": "Read-only measured inventory plus provisional budget",
-      "detail": "24 GiB RAM, about 34 GiB free disk; all 151 scoped recordings are present (2.51 audio hours already stored). Budget proposed; rights, labels, grouped split and trainability checks remain execution gates. No training or acquisition has started."
+      "status": "complete",
+      "evidence_type": "Measured inventory, source/rights checks and bounded execution",
+      "detail": "All 151 existing inputs were hashed and processed. Local pilot completed within the approved envelope; labels remain weak metadata BPM and the source grouping is only two whole-corpus transfer folds."
     },
     {
       "id": "pilot-budget",
       "title": "Advance local-pilot estimate",
+      "status": "complete",
+      "evidence_type": "Owner approval and measured local pilot",
+      "detail": "Owner approved the 3-hour / 256 MiB envelope. Research and technical closure took about 21 minutes; recorded fitting totaled 27.4 seconds across corrective reruns. Roughly 6 MiB of research artifacts were retained at closure. No cloud jobs/purchases; electricity and normal assistant billing excluded."
+    },
+    {
+      "id": "trained-local-pilot",
+      "title": "Local training pilot: completed, no gain",
+      "status": "complete",
+      "evidence_type": "Actual fits, exact saved-result verification and independent technical closure",
+      "detail": "151 recordings; 24 distinct final model/fold/seed fits. Frozen mean error 25.02%, linear 37.19%, width32 MLP 35.41–37.45%. Fifteen tests pass; 2,265 predictions and 45 summaries verified. No production model change or broad musical validity is claimed."
+    },
+    {
+      "id": "diverse-final-run",
+      "title": "Diverse final-run data and budget gate",
       "status": "pending",
-      "evidence_type": "Planning estimate; owner approval pending",
-      "detail": "1–2.5 hours end-to-end; stop at 3 hours. Expected added files 20–100 MiB, capped at 256 MiB with inherited combined 512 MiB ceiling and 30 GiB free-disk floor. Local compute only, no cloud fees/purchases; electricity and normal assistant billing excluded. No backbone fine-tuning or downloads scheduled."
+      "evidence_type": "Owner requirement; prospective acceptance condition",
+      "detail": "Final runs must cover varied genres and full-song/audio types, with rights-evidenced labels, independent source/artist/composition grouping and category-level results. Current guitar/drum data do not satisfy this. A separate advance time/cost/storage estimate is required before larger acquisition/fitting."
     }
   ],
   "findings": [
@@ -106,6 +120,20 @@
       "evidence_type": "Primary academic paper, official conference page and released source",
       "confidence": "HIGH on verified existence/overlap; local transfer unverified",
       "source": "Kihlborg, Holzapfel and Schlüter, Explore This! (ISMIR 2026); https://arxiv.org/pdf/2610.14817 and https://github.com/CPJKU/explore_this"
+    },
+    {
+      "title": "Small learned selectors failed cross-corpus transfer",
+      "detail": "Pooled exact metadata BPM mean error increased from 25.017% frozen to 37.187% linear and 35.413–37.446% MLP. Above-50% error cases increased from 27/151 to 48/151 linear and 49–52/151 MLP. Lower medians for some arms did not compensate for worse tails. No learned checkpoint is promoted.",
+      "evidence_type": "Actual training on opposite-corpus development folds; verified saved predictions",
+      "confidence": "HIGH for this bounded numerical result; broad musical generalization unestablished",
+      "source": "local selector pilot results, verification and independent technical closure, 2026-10-27; direct execution and technical review"
+    },
+    {
+      "title": "Candidate support is not successful selection",
+      "detail": "A reference-informed candidate oracle has 1.066% mean error; candidates within 8% metadata BPM exist for 36/36 guitar and 113/115 drum recordings. This is a diagnostic ceiling, not an achieved model gain or evidence of perceptually correct musical pulse.",
+      "evidence_type": "Reference-informed diagnostic over the frozen extracted candidate bank",
+      "confidence": "HIGH for the arithmetic only; no achieved improvement",
+      "source": "local selector pilot candidate-support and oracle records, 2026-10-27; internal diagnostic"
     }
   ],
   "blockers": [
@@ -114,10 +142,10 @@
     "No trained candidate gain, source-held-out confirmation, continuity validation or empirical paper is established. Paid compute and production changes are not authorized."
   ],
   "next_steps": [
-    "Obtain owner approval of the communicated local pilot envelope before training.",
-    "Audit exact input rights, label provenance, candidate support and performer/session/progression grouping; preserve publisher split metadata and explicitly mark all fitted material exploratory development.",
-    "Implement and test the small frozen-feature selector, run bounded smoke and fitting only after approval, then report actual time/storage and development-only outcomes.",
-    "Resolve independent source and annotation gaps in parallel; development fitting does not establish confirmation."
+    "Retain the unchanged estimator: do not promote the failed small selectors.",
+    "Inventory diverse rights-evidenced full-song/audio types and genre labels; freeze a coverage matrix, independent source/artist/composition splits and category-level reporting.",
+    "Provide a separate advance time/cost/storage estimate before acquiring data or starting larger training/fine-tuning.",
+    "Resolve independent musical timing/pulse references and confirmation gaps; inspected metadata-based transfer tests are development evidence only."
   ],
   "agents": [
     {
@@ -177,6 +205,12 @@
       "title": "Local pilot budget communicated before fitting",
       "action": "Read-only resource, dependency and audio-header inventory; no model inference, training, acquisition or installation.",
       "result": "Recommended small selector pilot: 1–2.5 hours, 256 MiB added-file cap, no new cloud fees or purchases. Runtime/storage ranges are provisional, not measured training throughput. Awaiting owner approval."
+    },
+    {
+      "time": "2026-10-27T08:22:50.576026+00:00",
+      "title": "Approved local pilot completed with a negative result",
+      "action": "Reference-blind features, explicit trainability gate, fixed cross-corpus fits, checkpoint replay, independent review corrections and closure.",
+      "result": "All learned arms worse than frozen baseline. Original evidence retained; no production change. All generated research artifacts remain in Hermes projects; Desktop app Git status and all source audio hashes match pre-run records."
     }
   ],
   "artifacts": [
@@ -304,13 +338,39 @@
       "name": "architecture/CLOSURE.md",
       "bytes": 938,
       "sha256": "09b2450403f74510f5e7220521484b285fbf27a843a1e2fa0878b9ee95468fff"
+    },
+    {
+      "name": "local-selector-pilot-20261027/REPORT.md",
+      "bytes": 5460,
+      "sha256": "2754c5b1cfd647599b0c2a9d61adefbe65cd8bd43d854431b3c3959e7afee74c"
+    },
+    {
+      "name": "local-selector-pilot-20261027/PILOT_SUMMARY.json",
+      "bytes": 1579,
+      "sha256": "36b9a61ce6c9c501c0ca888e653f795d9a714e28035a85dda1806f5170a8e33d"
+    },
+    {
+      "name": "local-selector-pilot-20261027/results.json",
+      "bytes": 31108,
+      "sha256": "e9242c425648acce6b52b3d6566f81d9e5f067fc5a382afde989adce2038986a"
+    },
+    {
+      "name": "local-selector-pilot-20261027/verification.json",
+      "bytes": 427,
+      "sha256": "92d3da5ed76cdfc0975a541e18616c995884db55aa4e0a652aeb38927e5049c6"
+    },
+    {
+      "name": "local-selector-pilot-20261027/final-closure-review.md",
+      "bytes": 1776,
+      "sha256": "70d8da8f083647a7c25dcaedaeda4a7df711823111c0b4f8259fc8c01922888c"
     }
   ],
   "limits": [
     "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",
     "Synthetic controls test numerical behavior, not musical correctness.",
     "Old diagnostic recordings are not fresh confirmation material.",
-    "CLPR remains the flagship. This is a proposed task-specific recognizer-qualification lane; rhythm/meter accuracy does not validate register or note-density constructs."
+    "CLPR remains the flagship. This is a proposed task-specific recognizer-qualification lane; rhythm/meter accuracy does not validate register or note-density constructs.",
+    "This local pilot uses only guitar/drum corpora and weak global BPM labels; it cannot satisfy the owner’s final-run diversity requirement. The final diverse acquisition/training run is not started or budgeted."
   ],
   "sources": [
     {

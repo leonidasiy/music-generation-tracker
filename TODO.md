@@ -190,3 +190,10 @@
 Read-only inventory and advance estimate completed: 151 existing recordings (2.51 hours); proposed small selector, 1–2.5 hours end-to-end / 3-hour stop, expected 20–100 MiB new files / 256 MiB cap. Preserve inherited combined 512 MiB and >=30 GiB free-disk gates. No cloud purchases/fees; electricity and normal assistant billing excluded. No training or downloads started. Owner approval and rights/label/grouping checks remain pending.
 - [x] Communicate advance local pilot estimate.
 - [ ] Owner approval before fitting; then scoped resource/label/split checks and bounded local exploratory fit.
+
+
+## Local training pilot closed — 2026-10-27
+
+Approved local pilot completed: frozen exact metadata BPM mean error 25.02%, linear 37.19%, MLP 35.41–37.45%; no learned model promoted. Fifteen tests and independent technical closure; 151 inputs, 24 distinct final fit configurations, 2,265 verified predictions and 45 summaries. Research-close elapsed about 21 minutes with roughly 6 MiB retained at closure. All research artifacts are under Hermes projects; Desktop music-analysis stays read-only. Final run needs broad genre/audio coverage, independent source groups and its own advance budget.
+- [x] Approved local fit, negative-result review closure and preserved evidence.
+- [ ] Inventory diverse final-run sources/labels and communicate larger-run time/cost/storage before acquisition/fitting.
