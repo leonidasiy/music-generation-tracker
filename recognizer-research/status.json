@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "checkpoint": "below30-feasibility-assessed-not-achieved",
-  "updated_at": "2026-10-27T11:16:24.511546+00:00",
+  "updated_at": "2026-10-27T11:19:40.917612+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm reliability: new-evidence and pulse-interpretation feasibility",
-  "summary": "Current best observed8%tempo-failure incidence remains39.07%(59/151). Below30%needs14netrescues. A fixed-five-view oracle cannot reach it; expanded candidate coverage indicates interpretation headroom, not achieved accuracy. Next priority: frozen modern-backbone baseline, then matched temporal decoders; no new model run started.",
+  "summary": "Current best observed failure incidence at an 8% tempo-error tolerance remains 39.07% (59/151). Below 30% needs 14 net corrections. Even perfect reference-informed selection among the five tested preprocessing outputs still fails 31.79%; expanded candidate coverage is headroom, not achieved accuracy. Next: a frozen modern-backbone baseline, then matched temporal decoders. No new model run has started.",
   "publication_ready": false,
   "milestones": [
     {
@@ -117,27 +117,27 @@
       "title": "Sub-30% target assessed—not achieved",
       "status": "complete",
       "evidence_type": "Saved-output arithmetic, fresh primary-source/benchmark review and independent read-only critique",
-      "detail": "Twenty research questions; four headroom tests;2265saved selector predictions across15arm/seed groups rescored. Current target45/151failures,14netcorrections. Current source application and historical predictions unchanged; no downloads/training/inference."
+      "detail": "Twenty research questions; four headroom tests; 2,265 saved selector predictions across 15 arm/seed groups rescored. Target: at most 45 failures in 151 recordings, requiring 14 net corrections. The source application and historical predictions are unchanged; no model downloads, training or inference."
     }
   ],
   "findings": [
     {
       "title": "Current primary score: above-tolerance dataset percentage",
-      "detail": "At8% BPM tolerance: original mean41.06%(62/151), original median41.72%(63/151), percussive mean41.06%(62/151), percussive median39.07%(59/151), harmonic median49.01%(74/151). All have zero missing predictions. Baseline and percussive median severe>50%incidence both17.88%(27/151). Each offending recording counts once, regardless of error size.",
+      "detail": "At an 8% BPM tolerance: original mean 41.06% (62/151); original median 41.72% (63/151); percussive mean 41.06% (62/151); percussive median 39.07% (59/151); harmonic median 49.01% (74/151). No missing predictions. Severe deviations above 50%: baseline and percussive median both 17.88% (27/151). Each offending recording counts once, regardless of error size.",
       "evidence_type": "Owner-directed post-hoc incidence reanalysis of unchanged pilot outputs",
       "confidence": "HIGH for saved-data arithmetic; no independent musical/generalization validation",
       "source": "Threshold-incidence policy and rescoring,2026-10-27; direct deterministic computation. Historical mean-error findings below are secondary, not failure rates."
     },
     {
       "title": "Existing five preprocessing outputs have a fixed-pool limit",
-      "detail": "Even reference-informed perfect selection among those exact five outputs leaves48/151=31.79%above8%tempo tolerance. This is not a bound on all preprocessing or the expanded candidate bank. Of current59failures,29are mathematically half/double-compatible with reference BPM; actual reference-blind correction remains unproved.",
+      "detail": "Even reference-informed perfect selection among those exact five outputs leaves 48/151 = 31.79% above the 8% tempo-error tolerance. This is not a bound on all preprocessing or the expanded candidate bank. Of the current 59 failures, 29 are mathematically half/double-compatible with reference BPM; actual reference-blind correction remains unproved.",
       "evidence_type": "Post-hoc fixed saved-output diagnostic; not a deployable oracle",
       "confidence": "HIGH for fixed-data arithmetic; LOW for achievable benefit",
       "source": "Below30%headroom audit,2026-10-27."
     },
     {
       "title": "Candidate availability is not selection performance",
-      "detail": "The earlier expanded bank contains a within8%candidate for149/151recordings, but its reference-informed1.32%oracle failure is NOT model performance. Actual incidence: linear48.34%, MLP47.68–49.01%. Fresh papers and benchmark trade-offs favor testing stronger frozen rhythm evidence before assuming decoder-only rescue.",
+      "detail": "The earlier expanded bank contains a candidate within 8% for 149/151 recordings, but its reference-informed 1.32% oracle failure is NOT model performance. Actual incidence: linear 48.34%; MLP 47.68–49.01%. Fresh papers and benchmark trade-offs favor testing stronger frozen rhythm evidence before assuming decoder-only rescue.",
       "evidence_type": "All saved selector seeds rescored; targeted academic/benchmark synthesis",
       "confidence": "HIGH for saved-output arithmetic; MEDIUM for research priority, no forecast",
       "source": "Selector incidence crosscheck and literature review,2026-10-27; eventF1scores are not recording-level8%failure rates."
