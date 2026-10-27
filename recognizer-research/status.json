@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "rhythm-architecture-design-reviewed",
-  "updated_at": "2026-10-24T11:31:52.418977+00:00",
+  "checkpoint": "local-training-budget-proposed",
+  "updated_at": "2026-10-27T07:51:00.682630+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm-first execution",
-  "summary": "The preparatory rhythm increment and expanded architecture experiment design have passed independent technical reviews. Training is authorized but has not run; local fit, musical gains and novelty remain unestablished.",
+  "summary": "Read-only local preflight completed. A small pulse-selection pilot is proposed at 1–2.5 hours end-to-end, with a 3-hour stop and 256 MiB added-file cap. No new cloud fees or purchases; electricity and normal assistant billing excluded. Training and downloads have not started; the proposed run awaits owner approval.",
   "publication_ready": false,
   "milestones": [
     {
@@ -66,9 +66,16 @@
     {
       "id": "training-preflight",
       "title": "Training execution preflight",
+      "status": "running",
+      "evidence_type": "Read-only measured inventory plus provisional budget",
+      "detail": "24 GiB RAM, about 34 GiB free disk; all 151 scoped recordings are present (2.51 audio hours already stored). Budget proposed; rights, labels, grouped split and trainability checks remain execution gates. No training or acquisition has started."
+    },
+    {
+      "id": "pilot-budget",
+      "title": "Advance local-pilot estimate",
       "status": "pending",
-      "evidence_type": "Future execution gate",
-      "detail": "Measure resource fit and verify rights, labels, source-group splits and local assets before selecting a bounded exploratory fit. Retain inherited 512 MiB cumulative new files and 30 GiB free disk until an explicit separately scoped preflight changes the envelope. No automatic cache deletion."
+      "evidence_type": "Planning estimate; owner approval pending",
+      "detail": "1–2.5 hours end-to-end; stop at 3 hours. Expected added files 20–100 MiB, capped at 256 MiB with inherited combined 512 MiB ceiling and 30 GiB free-disk floor. Local compute only, no cloud fees/purchases; electricity and normal assistant billing excluded. No backbone fine-tuning or downloads scheduled."
     }
   ],
   "findings": [
@@ -107,9 +114,10 @@
     "No trained candidate gain, source-held-out confirmation, continuity validation or empirical paper is established. Paid compute and production changes are not authorized."
   ],
   "next_steps": [
-    "Run a fresh tool-measured resource preflight and verify local asset availability, rights, label semantics and source-group splits against the independently reviewed design before selecting a bounded exploratory fit.",
-    "Freeze an admissible development training contract and run a bounded local trainability/resource smoke test; compare the smallest learned baseline before escalating.",
-    "In parallel, resolve the 12-source annotation-feasibility inventory and arrange two independent listening passes for later confirmation."
+    "Obtain owner approval of the communicated local pilot envelope before training.",
+    "Audit exact input rights, label provenance, candidate support and performer/session/progression grouping; preserve publisher split metadata and explicitly mark all fitted material exploratory development.",
+    "Implement and test the small frozen-feature selector, run bounded smoke and fitting only after approval, then report actual time/storage and development-only outcomes.",
+    "Resolve independent source and annotation gaps in parallel; development fitting does not establish confirmation."
   ],
   "agents": [
     {
@@ -163,6 +171,12 @@
       "title": "Architecture experiment design independently approved",
       "action": "Applied six bounded review corrections and obtained fresh read-only closure over the exact current design hashes.",
       "result": "Design coherence approved; training has not run. Resource fit, independent musical gains and novelty remain unestablished."
+    },
+    {
+      "time": "2026-10-27T07:51:00.682630+00:00",
+      "title": "Local pilot budget communicated before fitting",
+      "action": "Read-only resource, dependency and audio-header inventory; no model inference, training, acquisition or installation.",
+      "result": "Recommended small selector pilot: 1–2.5 hours, 256 MiB added-file cap, no new cloud fees or purchases. Runtime/storage ranges are provisional, not measured training throughput. Awaiting owner approval."
     }
   ],
   "artifacts": [

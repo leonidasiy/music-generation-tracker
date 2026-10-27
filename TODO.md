@@ -183,3 +183,10 @@
 ### Architecture design closure — 2026-10-24
 - [x] Apply six independent design-review corrections and obtain fresh design-only approval.
 - [ ] Run a fresh resource/rights/label/split preflight before choosing a bounded exploratory fit; no training completed.
+
+
+## Local pilot budget — 2026-10-27
+
+Read-only inventory and advance estimate completed: 151 existing recordings (2.51 hours); proposed small selector, 1–2.5 hours end-to-end / 3-hour stop, expected 20–100 MiB new files / 256 MiB cap. Preserve inherited combined 512 MiB and >=30 GiB free-disk gates. No cloud purchases/fees; electricity and normal assistant billing excluded. No training or downloads started. Owner approval and rights/label/grouping checks remain pending.
+- [x] Communicate advance local pilot estimate.
+- [ ] Owner approval before fitting; then scoped resource/label/split checks and bounded local exploratory fit.

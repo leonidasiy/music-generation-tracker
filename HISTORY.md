@@ -204,3 +204,8 @@ Architecture-design closure: the independent reviewer first requested six bounde
 ## Presentation preference — 2026-10-24
 
 Removed the Verified artifact identities section and its renderer from the recognizer research page at the owner’s request. Underlying artifact metadata and verification procedures remain intact. No research status or result changed.
+
+
+## Local pilot budget — 2026-10-27
+
+Read-only inventory and advance estimate completed: 151 existing recordings (2.51 hours); proposed small selector, 1–2.5 hours end-to-end / 3-hour stop, expected 20–100 MiB new files / 256 MiB cap. Preserve inherited combined 512 MiB and >=30 GiB free-disk gates. No cloud purchases/fees; electricity and normal assistant billing excluded. No training or downloads started. Owner approval and rights/label/grouping checks remain pending.

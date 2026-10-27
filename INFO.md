@@ -134,3 +134,8 @@ Fine-tuning/retraining and promising new architectures are now permitted for res
 ## Architecture design closure — 2026-10-24
 
 Architecture-design closure: the independent reviewer first requested six bounded corrections. All were applied and a fresh gpt-6.1-sol medium read-only review approved the current design. Corrections restore inherited 512 MiB new-files / 30 GiB free-disk limits pending a separate measured preflight; prohibit automatic cache deletion; separate numerical 0.05 s scorer plumbing from unfrozen musical tolerance; correct capability attribution and superseded restrictions; and match hard routing and all downstream gradient-detachment controls. Approval is design coherence only, not training feasibility, musical benefit or novelty. No training has run.
+
+
+## Local pilot budget — 2026-10-27
+
+Read-only inventory and advance estimate completed: 151 existing recordings (2.51 hours); proposed small selector, 1–2.5 hours end-to-end / 3-hour stop, expected 20–100 MiB new files / 256 MiB cap. Preserve inherited combined 512 MiB and >=30 GiB free-disk gates. No cloud purchases/fees; electricity and normal assistant billing excluded. No training or downloads started. Owner approval and rights/label/grouping checks remain pending.
