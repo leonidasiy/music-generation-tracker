@@ -223,3 +223,5 @@ Separate recognizer page records actual151case/five-view execution after a resol
 
 ## 2026-10-27 — Headline scoring corrected to dataset incidence
 Owner requested percentage of above-tolerance recordings, not magnitude-weighted mean error. Separate recognizer page leads with baseline41.06%vs39.07%percussive+median at8%relativeBPM tolerance, with severe and missing rates separate. Fixed predictions were rescored; no new model result or change to original experiment evidence.
+
+2026-10-27 — Sub30%tempo feasibility assessed, not achieved. Target14netrescues; fixed-five output oracle31.79%; expanded-bank coverage149/151is not model accuracy. Actual selector arms still worse under incidence. Refined next priority: frozen modern-backbone baseline and overlap/readout audit, then matched direct/temporal decoding. Fresh contrary MIREX/source evidence retained; no new model execution or production estimator change.

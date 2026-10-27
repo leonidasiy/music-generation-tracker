@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "threshold-incidence-scoring-adopted",
-  "updated_at": "2026-10-27T10:49:08.430538+00:00",
+  "checkpoint": "below30-feasibility-assessed-not-achieved",
+  "updated_at": "2026-10-27T11:16:24.511546+00:00",
   "title": "Recognizer Research",
-  "phase": "Rhythm-first execution",
-  "summary": "The owner-directed headline score is now the percentage of intended recordings above a task-specific tolerance, not mean error magnitude. With the current8% BPM tolerance: baseline62/151=41.06%, percussive+median59/151=39.07%. Severe errors above50% remain27/151=17.88%for both; no outputs are missing. These are rescored fixed predictions, not a new model gain or broad musical confirmation.",
+  "phase": "Rhythm reliability: new-evidence and pulse-interpretation feasibility",
+  "summary": "Current best observed8%tempo-failure incidence remains39.07%(59/151). Below30%needs14netrescues. A fixed-five-view oracle cannot reach it; expanded candidate coverage indicates interpretation headroom, not achieved accuracy. Next priority: frozen modern-backbone baseline, then matched temporal decoders; no new model run started.",
   "publication_ready": false,
   "milestones": [
     {
@@ -111,6 +111,13 @@
       "status": "complete",
       "evidence_type": "Explicit owner policy and deterministic saved-prediction rescoring",
       "detail": "Primary: percentage of intended recordings above the prespecified tolerable threshold; current tempo8%. Separate severe>50%, missing and combined unacceptable/missing rates. Five scorer tests and160group/view count checks pass. Original experiment and all predictions preserved; other tasks need their own tolerances."
+    },
+    {
+      "id": "below30-feasibility",
+      "title": "Sub-30% target assessed—not achieved",
+      "status": "complete",
+      "evidence_type": "Saved-output arithmetic, fresh primary-source/benchmark review and independent read-only critique",
+      "detail": "Twenty research questions; four headroom tests;2265saved selector predictions across15arm/seed groups rescored. Current target45/151failures,14netcorrections. Current source application and historical predictions unchanged; no downloads/training/inference."
     }
   ],
   "findings": [
@@ -120,6 +127,20 @@
       "evidence_type": "Owner-directed post-hoc incidence reanalysis of unchanged pilot outputs",
       "confidence": "HIGH for saved-data arithmetic; no independent musical/generalization validation",
       "source": "Threshold-incidence policy and rescoring,2026-10-27; direct deterministic computation. Historical mean-error findings below are secondary, not failure rates."
+    },
+    {
+      "title": "Existing five preprocessing outputs have a fixed-pool limit",
+      "detail": "Even reference-informed perfect selection among those exact five outputs leaves48/151=31.79%above8%tempo tolerance. This is not a bound on all preprocessing or the expanded candidate bank. Of current59failures,29are mathematically half/double-compatible with reference BPM; actual reference-blind correction remains unproved.",
+      "evidence_type": "Post-hoc fixed saved-output diagnostic; not a deployable oracle",
+      "confidence": "HIGH for fixed-data arithmetic; LOW for achievable benefit",
+      "source": "Below30%headroom audit,2026-10-27."
+    },
+    {
+      "title": "Candidate availability is not selection performance",
+      "detail": "The earlier expanded bank contains a within8%candidate for149/151recordings, but its reference-informed1.32%oracle failure is NOT model performance. Actual incidence: linear48.34%, MLP47.68–49.01%. Fresh papers and benchmark trade-offs favor testing stronger frozen rhythm evidence before assuming decoder-only rescue.",
+      "evidence_type": "All saved selector seeds rescored; targeted academic/benchmark synthesis",
+      "confidence": "HIGH for saved-output arithmetic; MEDIUM for research priority, no forecast",
+      "source": "Selector incidence crosscheck and literature review,2026-10-27; eventF1scores are not recording-level8%failure rates."
     },
     {
       "title": "Pulse-level mistakes dominate a large share of retained drum error",
@@ -185,7 +206,7 @@
   ],
   "next_steps": [
     "Keep the unchanged production estimator. Retain percussive+median as a candidate for diverse independent confirmation, not a deployed default or universally best arm.",
-    "Scope pulse-level/multiple-hypothesis temporal decoding with suitable beat/tactus references and fixed-front-end controls; provide a separate advance resource estimate before execution.",
+    "First scope a frozen modern beat-backbone baseline with fixed scalar-BPM readout and training-overlap audit; then compare direct/CASM/broad-support temporal decoding on identical activations. Give a separate advance resource estimate before model downloads or substantial execution.",
     "Retain the unchanged estimator: do not promote the failed small selectors.",
     "Inventory diverse rights-evidenced full-song/audio types and genre labels; freeze a coverage matrix, independent source/artist/composition splits and category-level reporting.",
     "Provide a separate advance time/cost/storage estimate before acquiring data or starting larger training/fine-tuning.",
@@ -279,6 +300,12 @@
       "title": "Owner-directed scoring reference applied",
       "action": "Persisted incidence-based scoring policy; rescored unchanged151recordings across five views, retaining severe/missing rates and original experiment evidence.",
       "result": "Primary above8%rate41.06%baseline vs39.07%percussive+median; severe incidence17.88%unchanged. Five tests and160group/view checks pass. No new inference or training."
+    },
+    {
+      "time": "2026-10-27T11:16:24.511546+00:00",
+      "title": "Below30%feasibility assessed without a new model run",
+      "action": "Computed target and fixed-pool/expanded-bank diagnostics; rescored all15selector arm/seed groups; checked fresh primary papers, contrary MIREX results and read-only critique.",
+      "result": "Research target remains unproved. Modern frozen-backbone baseline first, matched decoding second; no tolerance widening or production change."
     }
   ],
   "artifacts": [
@@ -541,6 +568,36 @@
       "name": "threshold-rescore-20261027/score_threshold_rates.py",
       "bytes": 5027,
       "sha256": "91a2015f66c700afa7666b333ffd419e78b027fcef9e4d846a7c1531be927718"
+    },
+    {
+      "name": "below30-feasibility-20261027/REPORT.md",
+      "bytes": 9752,
+      "sha256": "d9300b60d164d11ba93cbecc5192d881217c48265d38e631216b06a382ad1271"
+    },
+    {
+      "name": "below30-feasibility-20261027/headroom.json",
+      "bytes": 18720,
+      "sha256": "3037d8b54d81b3f210f5d25e9d011d627ac2e69534fcb98adf0844f0100f1a70"
+    },
+    {
+      "name": "below30-feasibility-20261027/selector-incidence-crosscheck.json",
+      "bytes": 3882,
+      "sha256": "c01686fc17cc945e584573b57073e330cbac44033b53306866b7a7d10a2110ca"
+    },
+    {
+      "name": "below30-feasibility-20261027/audit_headroom.py",
+      "bytes": 5989,
+      "sha256": "798f19cf50b00add616c4e48a316fe56d52c5fc53b49812701e3b62497c62d29"
+    },
+    {
+      "name": "below30-feasibility-20261027/audit_selector_incidence.py",
+      "bytes": 2135,
+      "sha256": "2ab4c8dfe940dabf33ce3e22f951bcbd88e658892ed3cef0bb50afc721029001"
+    },
+    {
+      "name": "below30-feasibility-20261027/QUESTIONS.md",
+      "bytes": 1825,
+      "sha256": "d66bef78e6ed900a07840739b9423b3d55e6517ca52f4222cdd005f4cd8b5c46"
     }
   ],
   "limits": [
@@ -571,6 +628,18 @@
     {
       "title": "MuScriptor representation ablation — 2026 preprint",
       "url": "https://arxiv.org/html/2607.08168v1"
+    },
+    {
+      "title": "Beat This! official frozen-model interface and overlap caveats",
+      "url": "https://github.com/CPJKU/beat_this"
+    },
+    {
+      "title": "SMC Blind Spot contrary evidence,May2026",
+      "url": "https://arxiv.org/pdf/2605.12287"
+    },
+    {
+      "title": "MIREX2026 matched-decoder benchmark trade-offs",
+      "url": "https://music-ir.org/mirex/wiki/2026:Audio_Beat_Tracking_Results"
     }
   ]
 }
