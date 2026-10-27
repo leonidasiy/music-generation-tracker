@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "local-selector-pilot-complete-negative",
-  "updated_at": "2026-10-27T08:22:50.576026+00:00",
+  "checkpoint": "task-specific-preprocessing-proposed",
+  "updated_at": "2026-10-27T08:55:58.635851+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm-first execution",
-  "summary": "The approved local pilot has completed actual training and independent technical closure. Every learned selector worsened pooled exact metadata BPM mean error versus the frozen baseline; no checkpoint is promoted. All research artifacts stay in Hermes projects and the Desktop application remains read-only. A diverse final run has not started.",
+  "summary": "The completed local selector pilot remains a negative result, not a rejection of all learned analysis or preprocessing. A fresh literature check supports a controlled task-specific preprocessing experiment, not universal audio cleanup. A no-training rhythm DSP ablation is proposed with an advance resource envelope; it has not run. Broad diverse confirmation remains a separate gate.",
   "publication_ready": false,
   "milestones": [
     {
@@ -54,7 +54,7 @@
       "title": "Retraining and architecture lane",
       "status": "complete",
       "evidence_type": "Prospective experiment design and independent correction/closure review",
-      "detail": "A 23-arm candidate matrix covers unchanged/simple baselines, a lightweight trained head, limited fine-tuning and conditional architecture controls. Six review corrections are applied; fresh independent review approves design coherence only. Fresh resource, rights, label and split preflight is still required before fitting. No training has run."
+      "detail": "A 23-arm candidate matrix covers unchanged/simple baselines, a lightweight trained head, limited fine-tuning and conditional architecture controls. Six review corrections are applied; fresh independent review approves design coherence only. The subsequent bounded selector pilot completed with no gain; larger arms still require fresh resource, rights, label and split preflight."
     },
     {
       "id": "confirmation",
@@ -90,6 +90,20 @@
       "status": "pending",
       "evidence_type": "Owner requirement; prospective acceptance condition",
       "detail": "Final runs must cover varied genres and full-song/audio types, with rights-evidenced labels, independent source/artist/composition grouping and category-level results. Current guitar/drum data do not satisfy this. A separate advance time/cost/storage estimate is required before larger acquisition/fitting."
+    },
+    {
+      "id": "preprocessing-recon",
+      "title": "Task-specific preprocessing literature check",
+      "status": "complete",
+      "evidence_type": "Primary-source reconnaissance and explicit contrary evidence; no local preprocessing gain",
+      "detail": "Read recent CASM and MuScriptor work, separation-fidelity risks and positive/negative chord-remix evidence. Current adapter already has a median-onset control; the failed pilot used mean onsets. New papers inspire falsifiable controls, not automatic model replacement."
+    },
+    {
+      "id": "preprocessing-stage-a",
+      "title": "Bounded preprocessing pilot proposed",
+      "status": "pending",
+      "evidence_type": "Advance estimate, not measured runtime or executed benchmark",
+      "detail": "Proposed fixed-model DSP ablation: original/median and harmonic/percussive views, with aligned synthetic controls and all failures reported. Estimate 45–90 minutes total, 2-hour stop; 20–80 MiB expected, 128 MiB cap; no new cloud/data/software charges, electricity and normal assistant billing excluded. No installs, weights, acquisition or training. Maintain 30 GiB free disk; stop for memory pressure."
     }
   ],
   "findings": [
@@ -134,6 +148,13 @@
       "evidence_type": "Reference-informed diagnostic over the frozen extracted candidate bank",
       "confidence": "HIGH for the arithmetic only; no achieved improvement",
       "source": "local selector pilot candidate-support and oracle records, 2026-10-27; internal diagnostic"
+    },
+    {
+      "title": "Preprocessing remains testable, not established",
+      "detail": "The failed ranker did not test end-to-end audio models or task-dependent source views. A candidate oracle is not a recognizer. New chord-remix evidence includes only a 0.20-percentage-point triad gain in one 2025 study and newly broken frames; separation can distort attacks/dynamics. Preserve original audio as a mandatory control.",
+      "evidence_type": "Local source inspection plus academic primary reports and contrary project evidence",
+      "confidence": "HIGH for what the local pilot tested; external effect sizes author-reported and local efficacy unverified",
+      "source": "Preprocessing reconnaissance, 2026-10-27; APSIPA 2025 chord paper, CASM and Beyond SDR preprints. This claim requires additional verification for our models."
     }
   ],
   "blockers": [
@@ -143,6 +164,7 @@
   ],
   "next_steps": [
     "Retain the unchanged estimator: do not promote the failed small selectors.",
+    "Approve the new bounded preprocessing proposal; freeze a fixed-estimator, reference-blind ablation before a substantial run. Chord/instrument stem models and decoder changes require separate compatibility checks/estimates.",
     "Inventory diverse rights-evidenced full-song/audio types and genre labels; freeze a coverage matrix, independent source/artist/composition splits and category-level reporting.",
     "Provide a separate advance time/cost/storage estimate before acquiring data or starting larger training/fine-tuning.",
     "Resolve independent musical timing/pulse references and confirmation gaps; inspected metadata-based transfer tests are development evidence only."
@@ -211,6 +233,12 @@
       "title": "Approved local pilot completed with a negative result",
       "action": "Reference-blind features, explicit trainability gate, fixed cross-corpus fits, checkpoint replay, independent review corrections and closure.",
       "result": "All learned arms worse than frozen baseline. Original evidence retained; no production change. All generated research artifacts remain in Hermes projects; Desktop app Git status and all source audio hashes match pre-run records."
+    },
+    {
+      "time": "2026-10-27T08:55:58.635851+00:00",
+      "title": "Preprocessing hypothesis and resource proposal recorded",
+      "action": "Checked current pilot code and recent primary literature, including negative evidence. No audio preprocessing benchmark, training, model acquisition or paid compute launched.",
+      "result": "Task-specific views proposed; implementation and local gains unestablished. Original estimator retained; diverse final-run requirements unchanged."
     }
   ],
   "artifacts": [
@@ -363,6 +391,21 @@
       "name": "local-selector-pilot-20261027/final-closure-review.md",
       "bytes": 1776,
       "sha256": "70d8da8f083647a7c25dcaedaeda4a7df711823111c0b4f8259fc8c01922888c"
+    },
+    {
+      "name": "preprocessing-recon-20261027/PROPOSAL.md",
+      "bytes": 14108,
+      "sha256": "b673c7be09a7fe0e5032d7e0c7d8d17dffbe2fd5e501044827ad716f7b29ac46"
+    },
+    {
+      "name": "preprocessing-recon-20261027/QUESTIONS.md",
+      "bytes": 1762,
+      "sha256": "5c1ed98658d4f289aa7bfb8e456826eedfcdb0d0b4a45f8a1fafeb3e54e6f4ec"
+    },
+    {
+      "name": "preprocessing-recon-20261027/SOURCE_NOTES.json",
+      "bytes": 690,
+      "sha256": "c2343adfcd23f4db177c7f24451dea3e8e4d8cd95a4ef241df3996428661e65e"
     }
   ],
   "limits": [
@@ -376,6 +419,22 @@
     {
       "title": "Research plan and evidence boundaries",
       "url": "./METHODS.md"
+    },
+    {
+      "title": "CASM — 7 October 2026 preprint",
+      "url": "https://arxiv.org/html/2610.09318v1"
+    },
+    {
+      "title": "Chord source-separation preprocessing — APSIPA 2025",
+      "url": "https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P307.pdf"
+    },
+    {
+      "title": "Beyond SDR — 2026 preprint",
+      "url": "https://arxiv.org/html/2609.04224v1"
+    },
+    {
+      "title": "MuScriptor representation ablation — 2026 preprint",
+      "url": "https://arxiv.org/html/2607.08168v1"
     }
   ]
 }

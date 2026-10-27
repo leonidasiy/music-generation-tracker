@@ -214,3 +214,6 @@ Read-only inventory and advance estimate completed: 151 existing recordings (2.5
 ## Local training pilot closed — 2026-10-27
 
 Approved local pilot completed: frozen exact metadata BPM mean error 25.02%, linear 37.19%, MLP 35.41–37.45%; no learned model promoted. Fifteen tests and independent technical closure; 151 inputs, 24 distinct final fit configurations, 2,265 verified predictions and 45 summaries. Research-close elapsed about 21 minutes with roughly 6 MiB retained at closure. All research artifacts are under Hermes projects; Desktop music-analysis stays read-only. Final run needs broad genre/audio coverage, independent source groups and its own advance budget.
+
+## 2026-10-27 — Preprocessing proposal
+Separate recognizer page updated with a targeted frontier-literature check and a pending, bounded task-specific preprocessing proposal. Negative pilot result retained; no new preprocessing/training result claimed. Budget estimate and diverse final-run gates remain visible.
