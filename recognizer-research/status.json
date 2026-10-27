@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "preprocessing-pilot-complete-modest-signal",
-  "updated_at": "2026-10-27T10:25:11.893518+00:00",
+  "checkpoint": "threshold-incidence-scoring-adopted",
+  "updated_at": "2026-10-27T10:49:08.430538+00:00",
   "title": "Recognizer Research",
   "phase": "Rhythm-first execution",
-  "summary": "The approved five-view preprocessing pilot completed151recordings/755outputs after a resolved resource pause. Percussive+median lowered observed mean metadata BPM error25.02%->24.29%, but only11cases changed and severe errors stayed27. Independent reviews approve exploratory reporting only. No production default is changed; diverse confirmation and separately scoped pulse-level decoding are next.",
+  "summary": "The owner-directed headline score is now the percentage of intended recordings above a task-specific tolerance, not mean error magnitude. With the current8% BPM tolerance: baseline62/151=41.06%, percussive+median59/151=39.07%. Severe errors above50% remain27/151=17.88%for both; no outputs are missing. These are rescored fixed predictions, not a new model gain or broad musical confirmation.",
   "publication_ready": false,
   "milestones": [
     {
@@ -104,9 +104,23 @@
       "status": "complete",
       "evidence_type": "Actual fixed-model DSP execution, exact baseline parity and independent numerical/outcome review",
       "detail": "15tests,8controls,151cases/755outputs; zero failures. All151baseline outputs and source hashes match. Percussive+median has lowest observed mean among five inspected views, but6cases improve/5worsen,140unchanged and27severe errors remain. Initial pressure pause resolved within the original2-hour/128 MiB limits. No production promotion or broad musical claim."
+    },
+    {
+      "id": "threshold-incidence-policy",
+      "title": "Dataset error-incidence scoring adopted",
+      "status": "complete",
+      "evidence_type": "Explicit owner policy and deterministic saved-prediction rescoring",
+      "detail": "Primary: percentage of intended recordings above the prespecified tolerable threshold; current tempo8%. Separate severe>50%, missing and combined unacceptable/missing rates. Five scorer tests and160group/view count checks pass. Original experiment and all predictions preserved; other tasks need their own tolerances."
     }
   ],
   "findings": [
+    {
+      "title": "Current primary score: above-tolerance dataset percentage",
+      "detail": "At8% BPM tolerance: original mean41.06%(62/151), original median41.72%(63/151), percussive mean41.06%(62/151), percussive median39.07%(59/151), harmonic median49.01%(74/151). All have zero missing predictions. Baseline and percussive median severe>50%incidence both17.88%(27/151). Each offending recording counts once, regardless of error size.",
+      "evidence_type": "Owner-directed post-hoc incidence reanalysis of unchanged pilot outputs",
+      "confidence": "HIGH for saved-data arithmetic; no independent musical/generalization validation",
+      "source": "Threshold-incidence policy and rescoring,2026-10-27; direct deterministic computation. Historical mean-error findings below are secondary, not failure rates."
+    },
     {
       "title": "Pulse-level mistakes dominate a large share of retained drum error",
       "detail": "Using the predeclared descriptive 4% reference-relative half/double-nearness rule, 22 of 115 drum records account for 64.49% of summed exact relative error. The corresponding guitar values are 3 of 78 and 14.32%. This is retained-development arithmetic, not a new model gain or proof of perceptual correctness.",
@@ -150,7 +164,7 @@
       "source": "local selector pilot candidate-support and oracle records, 2026-10-27; internal diagnostic"
     },
     {
-      "title": "Preprocessing gives a modest, fragile development signal",
+      "title": "Historical mean-error diagnostic: modest, fragile signal",
       "detail": "Mean exact metadata BPM error: original25.0171%, raw median24.7568%, percussive mean24.7402%, percussive median24.2945%, harmonic median30.5686%. Lowest observed mean arm improves6/worsens5/unchanged140; within8%89->92, severe errors27->27. Original median has fewer severe errors25. No universal cleanup or production recommendation.",
       "evidence_type": "Executed five-view DSP comparison and independent saved-prediction arithmetic review",
       "confidence": "HIGH for these inspected numerical outputs; musical/generalization benefit unverified",
@@ -259,6 +273,12 @@
       "title": "Preprocessing pilot completed with a modest signal and regressions",
       "action": "Resumed at normal pressure under original budget, corrected two pre-run review defects, ran15tests/8controls/151cases, verified baseline/source identities and obtained independent outcome audit.",
       "result": "755available outputs; no failures. Lowest observed mean arm24.2945%vs25.0171%baseline; severe errors unchanged. No deployment, genre-wide confirmation or further model training."
+    },
+    {
+      "time": "2026-10-27T10:49:08.430538+00:00",
+      "title": "Owner-directed scoring reference applied",
+      "action": "Persisted incidence-based scoring policy; rescored unchanged151recordings across five views, retaining severe/missing rates and original experiment evidence.",
+      "result": "Primary above8%rate41.06%baseline vs39.07%percussive+median; severe incidence17.88%unchanged. Five tests and160group/view checks pass. No new inference or training."
     }
   ],
   "artifacts": [
@@ -506,6 +526,21 @@
       "name": "preprocessing-pilot-20261027/outcome-review.md",
       "bytes": 3874,
       "sha256": "ab24eeb679edf32dfd2562007b133b1939bb33b2e672c19e2daaa91c46fee0c1"
+    },
+    {
+      "name": "threshold-rescore-20261027/REPORT.md",
+      "bytes": 2086,
+      "sha256": "0794231f9f4ae5314cfd8059907cb2f13b3d977d57c6e1919beb2fd6fda99ac9"
+    },
+    {
+      "name": "threshold-rescore-20261027/scores.json",
+      "bytes": 90162,
+      "sha256": "01b3e240ca9e962896e90659f555ac2f6bdca5672b81a33f6a547c0e109a80c8"
+    },
+    {
+      "name": "threshold-rescore-20261027/score_threshold_rates.py",
+      "bytes": 5027,
+      "sha256": "91a2015f66c700afa7666b333ffd419e78b027fcef9e4d846a7c1531be927718"
     }
   ],
   "limits": [
@@ -513,7 +548,8 @@
     "Synthetic controls test numerical behavior, not musical correctness.",
     "Old diagnostic recordings are not fresh confirmation material.",
     "CLPR remains the flagship. This is a proposed task-specific recognizer-qualification lane; rhythm/meter accuracy does not validate register or note-density constructs.",
-    "This local pilot uses only guitar/drum corpora and weak global BPM labels; it cannot satisfy the owner’s final-run diversity requirement. The final diverse acquisition/training run is not started or budgeted."
+    "This local pilot uses only guitar/drum corpora and weak global BPM labels; it cannot satisfy the owner’s final-run diversity requirement. The final diverse acquisition/training run is not started or budgeted.",
+    "Scoring update: use above-tolerance incidence as the current headline; historical mean relative error is not the percentage of recordings that failed. The8%threshold is specific to this tempo benchmark, not a universal tolerance for chords/instruments/beat timing."
   ],
   "sources": [
     {

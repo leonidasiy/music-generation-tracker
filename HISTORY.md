@@ -220,3 +220,6 @@ Separate recognizer page updated with a targeted frontier-literature check and a
 
 ## 2026-10-27 — Preprocessing pilot completion
 Separate recognizer page records actual151case/five-view execution after a resolved memory-pressure pause, independent review corrections and audited modest/negative results. Percussive+median is a confirmation candidate only; severe errors remain. No production recognizer integration.
+
+## 2026-10-27 — Headline scoring corrected to dataset incidence
+Owner requested percentage of above-tolerance recordings, not magnitude-weighted mean error. Separate recognizer page leads with baseline41.06%vs39.07%percussive+median at8%relativeBPM tolerance, with severe and missing rates separate. Fixed predictions were rescored; no new model result or change to original experiment evidence.
