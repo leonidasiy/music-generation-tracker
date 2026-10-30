@@ -1,5 +1,15 @@
 # Recognizer Research — methods and evidence boundaries
 
+## Newest presence-trace and resource amendment — 31 October 2026
+
+Source-bound saved-return replay and parent reproduction verify 505 historical fusion calls, 505 separately compared current calls, 66 additional saved-score reconstructions, 269 global/family projections and 326 section projections spanning 190 overlapping saved IDs. Exact row/family comparisons are not byte-identical full-report serialization or new model inference. Fifteen contract controls, 15 invented Bassoon-coverage probes and 25 independent contract assertions are separate scopes, not an application test-suite total.
+
+The known global0.190/local0.215 Vocal omission follows the documented main-list intersection rule. Bassoon's zero CLAP-only coverage is a separate earlier admission loss. Neither similarity nor injected coverage establishes local audibility. Preserve historical source/policy generations; today's expanded prompts were not rerun on audio. Internal generic rows are not public errors; articulation receives pre-display inputs and is not silently realigned.
+
+Disposition: no production/model/report-policy change. Presence tolerances and severe/missing/reference-coverage policy remain unfrozen until task/reference feasibility and before new candidate outcomes. Existing no-fee human annotations remain leads subject to exact rights/source/task/overlap checks; paid annotation/data services and similar purchases are excluded. Required broad genre/audio-type final confirmation and category reporting remain open.
+
+Owner authorizes justified storage and demonstrably disposable temporary/superseded cleanup, with alerts only below15GBfree; preserve required data/checkpoints/source/evidence and __pycache__. This supersedes the current30GiBpause, not older dated protocols. No model/audio acquisition, training, new recognizer inference or application modification in this increment. The previous pushed handoff failed its exact live publication gate; current site publication is not claimed from a push.
+
 ## Newest recording/reference clearance amendment — 30 October 2026
 
 Recording-level evidence now covers 16 metadata candidates across three datasets with 42 checked literal quotations/hashes; none is admitted or human-annotated. Rights are split into waveform, existing labels and prospective human annotations. Versioned license assertions and contrary original-origin leads remain unresolved, rather than being flattened into a collection-level clearance. Three shortlisted GuitarSet IDs are already in the inspected development manifest; neither style breadth nor a new release label makes them untouched confirmation.

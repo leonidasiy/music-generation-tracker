@@ -1,5 +1,39 @@
 # Music Generation & Orchestration Research — TODO
 
+## Current presence-trace increment — 31 October 2026
+- [x] Replay retained first-loss evidence with explicit source generations and unknown/reference limits; parent reproduction passes.
+- [x] Independently review documented section/global contract and25controls; close no-production-change disposition.
+- [x] Record no-fee-reference boundary and owner-authorized justified storage/disposable cleanup with alerts only below15GBfree.
+- [x] Remove only this increment's disposable worker Chrome profile after exact-PID shutdown; retain evidence unchanged.
+- [ ] Final current-artifact review, exact current deployment/live read-back and browser verification; external failures stay open.
+- [ ] Admit task-suitable no-fee independent references and freeze presence error-incidence/coverage/severe/missing policy before new candidate outcomes; broad category confirmation remains open.
+
+## Current exact-recording / human-reference increment — 30 October 2026
+- [x] Reconcile completed prior final review and exact five-file live/browser publication receipts; preserve historical protocols.
+- [x] Review ten MusicNet literal rows and six exact non-classical metadata candidates;42quote/hash checks,zero admissions.
+- [x] Correct currentACE/optionalBTC comparator roster and identify all three shortlisted GuitarSet IDs as previously inspected development.
+- [x] Implement human interval-response handoff;23tests,independent review corrections and final preparatory approval.
+- [ ] Verify retried194e91cPagesdeployment,exact live bytes and desktop/mobile/refresh after GitHub500; no success inferred from push.
+- [ ] Obtain authorized exact-copy/use review,private playback and two independent human annotators; actual fees/effort remain unmeasured/unapproved.
+- [ ] Calibrate feasibility,then freeze chord tolerance/severe/reference-coverage/canonical-projection policies before candidate outcomes; final diverse confirmation open.
+
+## Current chord-readiness lane — 30 October 2026
+- [x] Replay all720archived chordscore cells in existing pinned environment, no mismatches or new inference.
+- [x] Audit current frontend/decoder and run13purecontrols; no newly justified production change.
+- [x] Prepare and test blank blinded task tooling,12tests; real empty intake correctly blocks.
+- [x] Retrieve only43,775byteMusicNetmetadata supplement,330rows,10literal unresolved stubs; no admissions.
+- [x] Attempt frozen endpoint mapping; reject on3collapsed terminalNevents,all60recordings scanned,no gain scored;6tests pass.
+- [x] Final current-content review approved; exact Pages commit8916ba2 live bytes and desktop/mobile/refresh verified.
+- [ ] Item-level grants/identity/exposure review, authorized private playback and two independent human annotators.
+
+## Earlier recognizer lane — tempo reconciliation, 30 October 2026
+- [x] Reconcile final source-bound local tempo implementation evidence and static packaging checks; preserve missing/severe and exposure caveats.
+- [x] Execute chord archive-only diagnosis over60recordings/sixvariants;16tests pass after fail-closed corrections.
+- [x] Prepare diverse-source rights/overlap inventory and staged chord reference/intervention contract; no new audio or fitting.
+- [x] Finish independent final review and exact live milestone/readback (8916ba2); the public synchronization dependency is resolved.
+- [ ] Admit independent diverse recordings and blinded musical references before confirmation; hosted/container release remains separate.
+
+
 > Project initiated: 2026-07-14
 
 ## Phase 1: Initial Research
