@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "chord-standard-score-replay-and-annotation-readiness",
-  "updated_at": "2026-10-30T08:39:02.979516+00:00",
+  "checkpoint": "chord-recording-clearance-and-human-reference-handoff",
+  "updated_at": "2026-10-30T14:24:58.210682+00:00",
   "title": "Recognizer Research",
-  "phase": "Tempo implemented; chord standard-score replay complete; independent references pending",
-  "summary": "The direct global-tempo implementation is already in the application; its 151-case evidence remains narrow and training-exposed. Fresh chord scoring replays all 720 recording/decoder/reference cells without mismatches. Blinded task-preparation tooling is tested, but no new recording is admitted, no new independent human chord labels have been collected and no chord model has been promoted.",
+  "phase": "Recording-level source audit complete; human reference collection remains blocked",
+  "summary": "Tempo is implemented. The chord source review now covers 16 exact metadata candidates across MusicNet, MedleyDB and GuitarSet; no new recording is admitted, no independent human chord labels have been collected, and no chord model has been promoted. Release/version and original-origin license conflicts are preserved. All three shortlisted GuitarSet IDs are already inspected development recordings, not new confirmation data.",
   "publication_ready": false,
   "milestones": [
     {
@@ -195,9 +195,37 @@
       "status": "complete",
       "evidence_type": "Read-only source/identity tracing and 13 pure numerical tests; no model inference",
       "detail": "Current resampling, tail clipping, strict checkpoint loading and projection already exist. Hop 2048 differs from released inference 512 but reflects a previously tested local choice; source/config disagreement does not identify the original training frontend. No newly demonstrated implementation defect justifies a production change."
+    },
+    {
+      "id": "chord-recording-clearance",
+      "title": "Recording-level license and origin audit",
+      "status": "complete",
+      "evidence_type": "Primary release/origin metadata research, not legal clearance or audio inspection",
+      "detail": "Ten MusicNet stubs plus three MedleyDB and three GuitarSet candidates remain unadmitted. Forty-two saved literal quote/hash checks pass. MusicNet has restrictive upstream-recording leads not proven identical to its waveforms; MedleyDB has 3.0/4.0/sample-scope discrepancies and restricted access; GuitarSet v1.1.0 states BY while older releases state BY-NC. Collection metadata does not prove contributor authority."
+    },
+    {
+      "id": "chord-human-return-tooling",
+      "title": "Human annotation response and adjudication handoff",
+      "status": "complete",
+      "evidence_type": "23 synthetic tests after independent defect reproduction and corrections; no human labels",
+      "detail": "Exact task/event schema, complete intervals, uncertainty/no-chord distinction, blank first-pass task placeholders and structured malformed-JSON/overflow rejection are exercised. Identical responses never become automatic consensus. Rights, audible labels, consent, independent humans, secure playback and operational blinding are not verified by code."
+    },
+    {
+      "id": "chord-development-exposure",
+      "title": "Retained-development exposure cross-check",
+      "status": "complete",
+      "evidence_type": "Deterministic literal-ID join against the prior 60-case chord manifest; no audio read",
+      "detail": "All three shortlisted GuitarSet IDs already appear in the inspected chord development archive. A different genre or performer code does not make them untouched confirmation. Current Consonance-ACE and optional BTC/ChordFormer overlap remain distinct unresolved checkpoint audits."
     }
   ],
   "findings": [
+    {
+      "title": "Exact licenses and prior exposure narrow the next human-reference step",
+      "detail": "The source audit recovered specific permission/version conflicts rather than granting admissions. Prefer a bounded, explicitly developmental human-reference feasibility step only after exact-copy/intended-use authorization; do not reacquire known inspected guitar examples as independent confirmation.",
+      "evidence_type": "Primary metadata and retained-manifest checks; no musical inference",
+      "confidence": "HIGH for literal metadata/ID checks; legal authority and reference quality unverified",
+      "source": "Chord recording clearance and handoff, 30 October 2026"
+    },
     {
       "title": "Standard chord scores now replay; this is not a new model gain",
       "detail": "The performed-reference baseline replays at 54.0455%. Every saved arm and both reference tracks match the archive; none was selected or promoted. Earlier production-environment dependency failure did not mean the existing isolated evaluator was absent.",
@@ -332,11 +360,11 @@
     "No annotation-ready real recording, independently recruited pair of annotators, frozen operational chord tolerance or untouched diverse confirmation cohort. Metadata shape checks do not establish actual grants or reference quality."
   ],
   "next_steps": [
-    "Finish exact-recording rights/identity review and authorized private playback preparation; keep unresolved checkpoint overlap explicitly developmental, never confirmation.",
-    "Collect independent prediction-blinded interval references and calibrate human effort before expanding the feasibility batch; no references are generated by an LLM.",
-    "Freeze the chord task-specific tolerance, severe tier, denominator and group-held-out selection before new candidate outcomes.",
-    "Use the native preprocessing/decoder audit and adjudicated error mechanisms to select one justified intervention. Preserve the current chord baseline until a beneficial change is actually demonstrated.",
-    "Keep broad genre/audio-type final confirmation, meter/downbeat research and hosted application qualification separate from implemented global tempo and research-site publication."
+    "Obtain explicit authorization and applicable exact-version rights review for a small diagnostic-development annotation cohort; do not treat release claims as resolution of original-rights conflicts.",
+    "Arrange two qualified independent humans, consent/annotation-use agreements and private playback; measure effort/rates before any paid recruitment or batch expansion.",
+    "Reuse a retained waveform only after exact-copy/use review and a separate bounded resource preflight; do not download large archives to rediscover the three already-inspected GuitarSet IDs.",
+    "Freeze canonical native/product chord mappings, operational tolerance and severe/missing/reference-coverage policies after annotation feasibility but before candidate outcomes.",
+    "Select exactly one intervention from actual adjudicated errors; preserve unchanged chord production behavior until a benefit is demonstrated on an eligible comparison."
   ],
   "agents": [
     {
@@ -461,6 +489,12 @@
       "title": "Chord standard-score replay and blinded-task readiness",
       "action": "Recovered the existing isolated evaluator, replayed all saved score cells and exercised metadata-only blinded task preparation.",
       "result": "Numerical consistency verified; no audio/model acquisition, inference, training, human annotation, hosted application deployment or chord promotion."
+    },
+    {
+      "time": "2026-10-30T14:24:58.210682+00:00",
+      "title": "Recording-level clearance and human-response workflow",
+      "action": "Reviewed sixteen metadata candidates, checked forty-two quotes/hashes and added a tested human interval-response validator.",
+      "result": "Zero admissions or new human references; three selected GuitarSet IDs are known prior development. No audio/model acquisition, inference, training, paid recruitment or production change."
     }
   ],
   "artifacts": [
@@ -863,6 +897,21 @@
       "name": "chord-readiness-20261030/ANNOTATION_PROTOCOL.md",
       "bytes": 5708,
       "sha256": "00e9e63220f5e3bf276cb791eafc301bc03727164a09a511ae67b7223050d1ff"
+    },
+    {
+      "name": "chord-reference-clearance-20261030/human_handoff.py",
+      "bytes": 7467,
+      "sha256": "7019d4d398e3e477d21880f0c5b32c74de87b538bd7237b58ebfe9a99e3770b9"
+    },
+    {
+      "name": "chord-reference-clearance-20261030/HUMAN_HANDOFF.md",
+      "bytes": 5928,
+      "sha256": "bb4e3937b59d4456cefa5881e9312d6fc9572a8636c06902bef5924d83f50bc7"
+    },
+    {
+      "name": "chord-reference-clearance-20261030/SCORING_ADDENDUM.md",
+      "bytes": 4336,
+      "sha256": "df4fa880768e83f722cabbd81bc0718afa848b1f0eed6385194e10660b1849f7"
     }
   ],
   "limits": [
@@ -876,7 +925,8 @@
     "Chord matched seconds are retained approved-score observations; the fresh stdlib partition is not an independent mir_eval reproduction or expert musical annotation.",
     "No severe/missing cases are concealed by aggregate success; the weak solo and unresolved tempo subsets remain open.",
     "A model paper, its repository and its checkpoint mirror are one evidence lineage, not independent performance replications.",
-    "The later fresh standard-score replay supersedes only the earlier inability to replay. It does not reconstruct the historical scoring process or turn the inspected developmental guitar corpus into independent musical validation."
+    "The later fresh standard-score replay supersedes only the earlier inability to replay. It does not reconstruct the historical scoring process or turn the inspected developmental guitar corpus into independent musical validation.",
+    "Recording-level metadata review is not legal clearance. Only humans can supply independent audible reference judgments here; future reference rights/consent and all confirmatory tolerances remain unresolved. The response checker cannot verify human independence or musical truth."
   ],
   "sources": [
     {
@@ -910,6 +960,22 @@
     {
       "title": "MIREX2026 matched-decoder benchmark trade-offs",
       "url": "https://music-ir.org/mirex/wiki/2026:Audio_Beat_Tracking_Results"
+    },
+    {
+      "title": "MusicNet primary release",
+      "url": "https://zenodo.org/records/5120004"
+    },
+    {
+      "title": "MedleyDB official licensing and access",
+      "url": "https://medleydb.weebly.com/downloads.html"
+    },
+    {
+      "title": "GuitarSet selected v1.1.0 release",
+      "url": "https://zenodo.org/records/3371780"
+    },
+    {
+      "title": "GuitarSet original release",
+      "url": "https://zenodo.org/records/1302060"
     }
   ]
 }

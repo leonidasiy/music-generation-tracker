@@ -1,5 +1,13 @@
 # Recognizer Research — methods and evidence boundaries
 
+## Newest recording/reference clearance amendment — 30 October 2026
+
+Recording-level evidence now covers 16 metadata candidates across three datasets with 42 checked literal quotations/hashes; none is admitted or human-annotated. Rights are split into waveform, existing labels and prospective human annotations. Versioned license assertions and contrary original-origin leads remain unresolved, rather than being flattened into a collection-level clearance. Three shortlisted GuitarSet IDs are already in the inspected development manifest; neither style breadth nor a new release label makes them untouched confirmation.
+
+Human response tooling accepts the actual blank task-builder export and validates complete chronological interval returns. Twenty-three synthetic tests include independent-review corrections for contaminated task placeholders, deep JSON and overflowing finite-duration totals. String/interval comparison reports differences and all tasks pending authorized reference review, never automatically adjudicating even identical labels. Unknown/unsupported harmony remains distinct from N, and predicted X cannot become reference truth. Code does not verify human independence, consent, source clearance, audible musical labels or secure playback.
+
+The scoring addendum explicitly leaves operational chord/severe thresholds and reference-coverage/canonical projection policy unresolved until feasibility/task-use calibration, before candidate outcomes. Assigned windows are not whole-song ground truth. No audio/model acquisition, listening, inference, training, paid recruitment or production change occurred. See [the detailed follow-up](FOLLOWUP.md) for sourced limits and human gates.
+
 ## Later chord-readiness amendment — 30 October 2026
 
 The existing isolated mir_eval 0.8.2 evaluator was recovered without installation. Fresh scoring of all 60 recordings × six saved decoder variants × two reference tracks reproduces 720 archived cells within 1e-8 absolute tolerance. A separate endpoint sweep shares only label semantics with the standard scorer, not its alignment routine; pinned/current scorer checks intentionally reuse pinned helpers. Historical driver attribution and independent musical-reference validity remain unresolved. This supersedes the earlier *inability to replay*, not the earlier dated result.
