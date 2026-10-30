@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "frozen-pretrained-pilot-complete-exploratory",
-  "updated_at": "2026-10-27T12:41:01.160040+00:00",
+  "checkpoint": "chord-standard-score-replay-and-annotation-readiness",
+  "updated_at": "2026-10-30T08:39:02.979516+00:00",
   "title": "Recognizer Research",
-  "phase": "Frozen pretrained rhythm pilot complete; independent confirmation pending",
-  "summary": "On 151 inspected recordings, the frozen direct model has 11 above-8%-tolerance errors plus 2 missing estimates: 13/151 = 8.61% combined, versus the previous 39.07%. This is a strong exploratory signal, not independent confirmation: 100 cases match the training partition. Guitar solos remain 33.33% failures. No retraining or production recognizer change.",
+  "phase": "Tempo implemented; chord standard-score replay complete; independent references pending",
+  "summary": "The direct global-tempo implementation is already in the application; its 151-case evidence remains narrow and training-exposed. Fresh chord scoring replays all 720 recording/decoder/reference cells without mismatches. Blinded task-preparation tooling is tested, but no new recording is admitted, no new independent human chord labels have been collected and no chord model has been promoted.",
   "publication_ready": false,
   "milestones": [
     {
@@ -89,7 +89,7 @@
       "title": "Diverse final-run data and budget gate",
       "status": "pending",
       "evidence_type": "Owner requirement; prospective acceptance condition",
-      "detail": "Final runs must cover varied genres and full-song/audio types, with rights-evidenced labels, independent source/artist/composition grouping and category-level results. Current guitar/drum data do not satisfy this. A separate advance time/cost/storage estimate is required before larger acquisition/fitting."
+      "detail": "Source-level inventory and a staged budget proposal are prepared; no recording has passed all audio-rights, checkpoint overlap, group-independence and reference-quality gates. Acquisition, annotation, final coverage and compute budget remain open."
     },
     {
       "id": "preprocessing-recon",
@@ -132,9 +132,100 @@
       "status": "complete",
       "evidence_type": "Actual frozen-model inference, independent saved-output audit and exploratory reporting closure",
       "detail": "151 cases, 302 arm outputs. Direct: observed above-tolerance rate 7.28%; missing 1.32%; combined 8.61% (13/151; rates independently rounded). DP combined 10.60%. Sixteen tests and eight API controls; 151 caches/302 readouts, 152 summary and 152 paired cells checked. Exact publisher-validation subset 1/21 direct, not untouched confirmation. Recorded case loop 50.82 seconds; peak Python RSS 1.84 GiB, not total unified memory."
+    },
+    {
+      "id": "tempo-local-evidence",
+      "title": "Local tempo implementation and final evidence reconciled",
+      "status": "complete",
+      "evidence_type": "Source-bound retained execution audit plus fresh static packaging check",
+      "detail": "151 unique final component comparisons and final-source logit parity; 227 tests with zero failures/errors and nine disclosed skips; one real full-report smoke and local desktop/mobile checks. These executions predate this reconciliation. Production code was already wired; current worker changes are documentation only. Static packaging passes; no Docker image build or hosted release."
+    },
+    {
+      "id": "diverse-inventory",
+      "title": "Diverse validation source inventory",
+      "status": "complete",
+      "evidence_type": "Primary dataset/license/split metadata reconnaissance; not acquired data",
+      "detail": "Ten candidate datasets and 15 actual publisher single-split tables audited. Zero recordings admitted. Prioritize track-level rights and overlap triage for FMA, MedleyDB and MusicNet, with conditional live-source screening. Corpus names or annotation downloads do not establish independent licensed audio."
+    },
+    {
+      "id": "chord-diagnosis",
+      "title": "Chord error budget and next-experiment contract",
+      "status": "complete",
+      "evidence_type": "New archive-only analysis of final intervals and retained approved matched seconds",
+      "detail": "60 recordings, six saved variants and 360 case/variant checks. Agreement remains 54.0455%; approximately 80.33% of erroneous time already has a musical label. Perfect reference-informed repair of all X time reaches only 61.3688%. This is a diagnostic upper bound, not model performance. Standard-scorer replay is now complete in a later increment; independent mixed-music labels remain open."
+    },
+    {
+      "id": "chord-intervention",
+      "title": "Blinded chord reference feasibility and one diagnosed intervention",
+      "status": "pending",
+      "evidence_type": "Prospective experiment; no new labels, inference, fitting or assets",
+      "detail": "Prepare a representative source-grouped annotation packet, separate native chord/product vocabulary and timing effects, freeze a task-specific incidence tolerance before candidate outcomes, then select one comparator or intervention. Do not repeat threshold sweeps by default."
+    },
+    {
+      "id": "chord-standard-replay",
+      "title": "Pinned standard chord-scoring replay",
+      "status": "complete",
+      "evidence_type": "Fresh saved-prediction execution, not inference or new musical references",
+      "detail": "Recovered the existing isolated mir_eval 0.8.2 environment without installing anything. Replayed 60 recordings, six saved variants and two reference tracks: 720 cells; zero mismatches across pinned/current scorers and an independent endpoint sweep at 1e-8 absolute tolerance. Label semantics are shared; historical process attribution and independent musical validity remain unresolved."
+    },
+    {
+      "id": "chord-annotation-tooling",
+      "title": "Prediction-blinded annotation task preparation",
+      "status": "complete",
+      "evidence_type": "Executed synthetic code tests; empty real intake correctly blocked",
+      "detail": "Deterministic, source-grouped time sampling produces separate blank annotator task files with opaque IDs and private mapping. Final admission and pre-reference annotation readiness are separate gates. No listening, audio export, real packet or reference creation occurred; human rights review and independent annotators are still required."
+    },
+    {
+      "id": "chord-exact-source-triage",
+      "title": "Exact-recording metadata triage",
+      "status": "complete",
+      "evidence_type": "Bounded public metadata retrieval and deterministic row extraction; no audio",
+      "detail": "Saved-only triage yielded no exact rows. A later 43,775-byte MusicNet metadata supplement contains 330 rows; ten literal recording stubs were selected, one per composer in numeric-ID order. Zero are annotation-ready or admitted; distinct composers do not establish independent performers or broad genres."
+    },
+    {
+      "id": "chord-timing-proposal",
+      "title": "Endpoint-only retiming proposal rejected at feasibility gate",
+      "status": "complete",
+      "evidence_type": "Real saved-output attempt failed its prespecified interval-validity condition; no accuracy result",
+      "detail": "The frozen same-label endpoint mapping collapses three clipped terminal no-chord events to zero duration in a full 60-recording feasibility scan. No recordings/events were dropped or tolerances relaxed. No complete retiming gain was scored, and no timing patch was adopted."
+    },
+    {
+      "id": "chord-native-contract-audit",
+      "title": "Native chord input/decoder contract audit",
+      "status": "complete",
+      "evidence_type": "Read-only source/identity tracing and 13 pure numerical tests; no model inference",
+      "detail": "Current resampling, tail clipping, strict checkpoint loading and projection already exist. Hop 2048 differs from released inference 512 but reflects a previously tested local choice; source/config disagreement does not identify the original training frontend. No newly demonstrated implementation defect justifies a production change."
     }
   ],
   "findings": [
+    {
+      "title": "Standard chord scores now replay; this is not a new model gain",
+      "detail": "The performed-reference baseline replays at 54.0455%. Every saved arm and both reference tracks match the archive; none was selected or promoted. Earlier production-environment dependency failure did not mean the existing isolated evaluator was absent.",
+      "evidence_type": "Fresh pinned-library scoring and independent interval sweep",
+      "confidence": "HIGH for archived-score consistency; independent accuracy unverified",
+      "source": "Chord readiness scoring replay, 30 October 2026"
+    },
+    {
+      "title": "Local tempo gain is implemented, not hosted or broadly confirmed",
+      "detail": "Fresh read-back confirms the final 151-row ledger binds the current tempo source and preserves 13/151 combined failures, two missing and two severe cases. Legacy has 62/151 combined and 27 severe. Earlier 41/52-case stop notes were superseded by complete execution artifacts.",
+      "evidence_type": "Internal source-bound ledger audit; not new inference",
+      "confidence": "HIGH for recorded counts; independent transfer unverified",
+      "source": "Application validation, final-source parity and parent read-back, 27 and 30 October 2026"
+    },
+    {
+      "title": "Chord weakness is mainly emitted labels, not only abstention",
+      "detail": "Over 1,832.6404 reference-labeled seconds: 286.4511 wrong-root seconds, 390.0944 same-root but triad-wrong seconds, and 134.2092 X seconds. Same-root error is not automatically a third-classifier defect; representation, timing and reference construction may contribute.",
+      "evidence_type": "Independent interval partition using saved approved matched seconds",
+      "confidence": "HIGH within this inspected archive; causal explanation unverified",
+      "source": "Chord diagnostic and independent arithmetic checks, 30 October 2026"
+    },
+    {
+      "title": "Small threshold changes do not improve exploratory song-incidence panels",
+      "detail": "All six historical chord decoder variants have the same failing-recording counts at descriptive 20/40/60-percent chord-error cutoffs: 43/60, 30/60 and 24/60. These are retrospective sensitivity panels, not a validated operational chord tolerance or a new held-out comparison.",
+      "evidence_type": "Deterministic saved-output reanalysis",
+      "confidence": "HIGH for counts; user-utility tolerance unresolved",
+      "source": "Chord diagnostic over 60 development recordings, 30 October 2026"
+    },
     {
       "title": "Current frozen-model pilot: 8.61% combined, with exposure explicit",
       "detail": "At the unchanged 8% relative-BPM tolerance: original 62/151 = 41.06%; previous preprocessing 59/151 = 39.07%; frozen direct 11 observed errors (7.28%) plus 2 missing (1.32%), combined 13/151 = 8.61%; frozen DP 16/151 = 10.60%, no missing. Severe >50%: direct 2/151 (1.32%), DP 5/151 (3.31%). Overall data are training-exposed exploratory material, not an independent benchmark.",
@@ -235,16 +326,17 @@
     }
   ],
   "blockers": [
-    "New independent musical confirmation still needs evidenced composition-independent, rights-cleared sources and two independent musical annotators. That blocks confirmation claims, not all exploratory training.",
-    "A concrete training-label, source-group split, checkpoint and resource-smoke protocol must be frozen before fitting. Existing session BPM labels do not supply perceptual beat/downbeat/meter truth.",
-    "No trained candidate gain, source-held-out confirmation, continuity validation or empirical paper is established. Paid compute and production changes are not authorized."
+    "No newly admitted independent rights-evidenced confirmation recordings or recruited two-person blinded annotation panel. Candidate source inventories are not a final benchmark.",
+    "Broad final genre/audio-type coverage, performer/composition grouping and checkpoint pretraining exclusions remain mandatory. Some candidate releases have unresolved or conflicting terms.",
+    "Docker image build and authenticated hosted release testing have not run. Static packaging checks are not image-build qualification. The hosted application has not been updated by this package.",
+    "No annotation-ready real recording, independently recruited pair of annotators, frozen operational chord tolerance or untouched diverse confirmation cohort. Metadata shape checks do not establish actual grants or reference quality."
   ],
   "next_steps": [
-    "Keep production unchanged. Prioritize the frozen direct backbone for independent confirmation; retain the old estimator and preprocessing as frozen controls.",
-    "Prepare a separate advance resource/rights proposal for diverse genres and audio/song types, with training-overlap, artist/composition/performance grouping and category support frozen before acquisition.",
-    "Investigate guitar-solo pulse-level regressions and unresolved sparse cases using suitable beat/tactus references; no reference-informed fallback or octave forgiveness in the headline score.",
-    "CASM remains deferred pending explicit decoder licensing; blocked eight-fold retrieval is not a completed experiment.",
-    "Do not start retraining merely because it is allowed: diagnose remaining activation/interpretation failures and budget any substantial new run separately."
+    "Finish exact-recording rights/identity review and authorized private playback preparation; keep unresolved checkpoint overlap explicitly developmental, never confirmation.",
+    "Collect independent prediction-blinded interval references and calibrate human effort before expanding the feasibility batch; no references are generated by an LLM.",
+    "Freeze the chord task-specific tolerance, severe tier, denominator and group-held-out selection before new candidate outcomes.",
+    "Use the native preprocessing/decoder audit and adjudicated error mechanisms to select one justified intervention. Preserve the current chord baseline until a beneficial change is actually demonstrated.",
+    "Keep broad genre/audio-type final confirmation, meter/downbeat research and hosted application qualification separate from implemented global tempo and research-site publication."
   ],
   "agents": [
     {
@@ -265,6 +357,11 @@
     {
       "responsibility": "Bounded trainable-model and architecture/comparator design",
       "model": "gpt-6.1-sol",
+      "reasoning": "medium"
+    },
+    {
+      "responsibility": "Native Codex tempo evidence reconciliation and production documentation",
+      "model": "gpt-6-luna",
       "reasoning": "medium"
     }
   ],
@@ -352,6 +449,18 @@
       "title": "Frozen-model comparison completed; promotion withheld",
       "action": "Executed 151 cases; independently verified 151 caches, 302 event readouts, 152 summary and 152 paired cells; reporting closure approved.",
       "result": "Direct 8.61% combined vs prior 39.07%, but training exposure, sparse outputs, solo regressions and DP negative controls block broad/production claims."
+    },
+    {
+      "time": "2026-10-30T07:40:57.829249+00:00",
+      "title": "Tempo evidence reconciliation, diverse inventory and chord diagnosis",
+      "action": "Reconciled late complete tempo artifacts with stale tasks; inspected candidate source rights and actual training tables; executed archive-only chord error partition and tests.",
+      "result": "No new training, acquired recordings, model weights or hosted release. Local adoption scope, prospective chord intervention and independent diverse confirmation remain explicitly separated."
+    },
+    {
+      "time": "2026-10-30T08:39:02.979516+00:00",
+      "title": "Chord standard-score replay and blinded-task readiness",
+      "action": "Recovered the existing isolated evaluator, replayed all saved score cells and exercised metadata-only blinded task preparation.",
+      "result": "Numerical consistency verified; no audio/model acquisition, inference, training, human annotation, hosted application deployment or chord promotion."
     }
   ],
   "artifacts": [
@@ -714,6 +823,46 @@
       "name": "frozen-beat-pilot-20261027/reviews/outcome-closure.md",
       "bytes": 676,
       "sha256": "cc4060c270b0f33a4a2cff7402d545e32e92a6137794ee6c64c2338fe62038ae"
+    },
+    {
+      "name": "closure-and-chords-20261030/CHORD_DIAGNOSIS.md",
+      "bytes": 6308,
+      "sha256": "f750d3b86fa65345227fd7afe672b3cbe2653a41026efd9b94cf8e016a87ac26"
+    },
+    {
+      "name": "closure-and-chords-20261030/CHORD_EXPERIMENT_CONTRACT.md",
+      "bytes": 9976,
+      "sha256": "4a8b1fbe8c144e3e6ebaf12369ad8bf65f1d0ec9fb89a8f69fbaf414d3dcf5fd"
+    },
+    {
+      "name": "closure-and-chords-20261030/chord-diagnosis.json",
+      "bytes": 85480,
+      "sha256": "5a77ed1c79cb4f3a882406bb14348c3f7cfdc690436046b96de72d3ca12ffda5"
+    },
+    {
+      "name": "closure-and-chords-20261030/parent-verification.json",
+      "bytes": 1748,
+      "sha256": "d5fc19df75697793eb8e36bae57f753d3ba2d76ac055077cc9bf5df93d085e3e"
+    },
+    {
+      "name": "chord-readiness-20261030/score_replay.py",
+      "bytes": 7677,
+      "sha256": "3ce82b13ebdb9aecb6bd8b7d303deb800f1cda00f889c8fdf952be66168f690a"
+    },
+    {
+      "name": "chord-readiness-20261030/score-replay.json",
+      "bytes": 862027,
+      "sha256": "96e411314537ca5d8863822d045adf46375c7764363edf54113fd84d322cf5c2"
+    },
+    {
+      "name": "chord-readiness-20261030/annotation_packet.py",
+      "bytes": 5783,
+      "sha256": "85768efa328a749ff64087f88031d2e7454be265f6f0657b1653033692857f71"
+    },
+    {
+      "name": "chord-readiness-20261030/ANNOTATION_PROTOCOL.md",
+      "bytes": 5708,
+      "sha256": "00e9e63220f5e3bf276cb791eafc301bc03727164a09a511ae67b7223050d1ff"
     }
   ],
   "limits": [
@@ -723,7 +872,11 @@
     "CLPR remains the flagship. This is a proposed task-specific recognizer-qualification lane; rhythm/meter accuracy does not validate register or note-density constructs.",
     "This local pilot uses only guitar/drum corpora and weak global BPM labels; it cannot satisfy the owner’s final-run diversity requirement. The final diverse acquisition/training run is not started or budgeted.",
     "Scoring update: use above-tolerance incidence as the current headline; historical mean relative error is not the percentage of recordings that failed. The8%threshold is specific to this tempo benchmark, not a universal tolerance for chords/instruments/beat timing.",
-    "The frozen pretrained pilot overall score includes 100 exact publisher-training cases plus related/unresolved material. A below-30% exploratory result is not independent genre-wide confirmation; solos and unresolved cases remain 33.33% combined failures. No production model integration or retraining occurred."
+    "The frozen pilot was research-only at its original dated milestone; later owner-authorized development integrated the direct global-tempo method. No new training or hosted model release occurred in this package.",
+    "Chord matched seconds are retained approved-score observations; the fresh stdlib partition is not an independent mir_eval reproduction or expert musical annotation.",
+    "No severe/missing cases are concealed by aggregate success; the weak solo and unresolved tempo subsets remain open.",
+    "A model paper, its repository and its checkpoint mirror are one evidence lineage, not independent performance replications.",
+    "The later fresh standard-score replay supersedes only the earlier inability to replay. It does not reconstruct the historical scoring process or turn the inspected developmental guitar corpus into independent musical validation."
   ],
   "sources": [
     {
