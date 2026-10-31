@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "union-suppression-independent-reconstruction",
-  "updated_at": "2026-10-31T11:23:02.172706+00:00",
+  "checkpoint": "coarse19-independent-nonpromotion",
+  "updated_at": "2026-10-31T12:58:38.977536+00:00",
   "title": "Recognizer Research",
-  "phase": "Union suppression reconstructed; below practical gain gate",
-  "summary": "Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted. Prior chord/crop/training outcomes remain retained; broad confirmation open.",
+  "phase": "Coarse19 reconstructed; severe errors reject promotion",
+  "summary": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "coarse19",
+      "title": "Coarse19 independently reconstructed—not promoted",
+      "status": "complete",
+      "evidence_type": "299 saved predictions;897 armsets;321 panel-arm metrics; independent numerical review",
+      "detail": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation."
+    },
     {
       "id": "union-suppression",
       "title": "Union suppression independently reconstructed—not promoted",
@@ -367,6 +374,13 @@
   ],
   "findings": [
     {
+      "title": "Lower failure count is insufficient when severe errors rise",
+      "detail": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. Global-relative27rescues/16regressions; source-test18→19failures and3→5severe.",
+      "evidence_type": "Independent aggregate reconstruction; exposed partial-label development",
+      "confidence": "HIGH numerical scope only; broad confirmation unproven",
+      "source": "COARSE.md and coarse-summary.json"
+    },
+    {
       "title": "Temporal and external diagnostic endpoints disagree; no automatic promotion",
       "detail": "Temporal chord smoothing leaves guitar failures at 26/60 while reducing events from 1,437 to 850. Four external classical whole songs were scored with predictions sealed before reference access. Instrument window study: baseline: 88/292, global_fixed: 73/292, mean: 86/292, max: 96/292, top2: 93/292, persistence: 82/292. Original application unchanged; broad sub-30% confirmation remains open.",
       "confidence": "High scoped computation; generalization unconfirmed",
@@ -562,9 +576,9 @@
     "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
   ],
   "next_steps": [
-    "Next bounded research task: fixed PaSST-only all19 coarse-label presence comparator from existing cached scores, distinct from exact-subtype reporting. Freeze literal coarse ontology, .3 threshold, unchanged Music/null gates and all295 inputs before scoring; compare global73/292 and suppression66/292 without retuning. No new waveform inference, models, acquisition or production edits; confirm remaining cycle budget first.",
-    "Broaden lawful independent genre/audio-type references; partial ten-second labels do not establish whole-song precision or recall.",
-    "Preserve qualified global comparator and original application; production adoption separately gated."
+    "Next bounded task: fresh task-specific primary/release check and read-only existing feature/preprocessing inventory, then freeze one intervention-isolating preprocessing or representation pilot with a separate time/storage budget before new inference. Do not repeat completed cached coarse/window/head runs. Broad lawful genre/audio-type-diverse and whole-song confirmation remains open.",
+    "Keep qualified global comparator; no production source writes.",
+    "Independent diverse/whole-song reference admission and final tolerances remain separate gates."
   ],
   "agents": [
     {
@@ -594,6 +608,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-10-31T12:58:38.977536+00:00",
+      "title": "Coarse19 numerical review and nonpromotion disposition complete",
+      "action": "Reused completed cached science without new forwards/fits; privacy allowlisted aggregate projection.",
+      "result": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation."
+    },
     {
       "time": "2026-10-31T11:23:02.172706+00:00",
       "title": "Union suppression independent reconstruction completed",
@@ -1167,6 +1187,7 @@
     }
   ],
   "limits": [
+    "Coarse19 changes reporting specificity and raises severe11→14; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
     "Current scope:allchordresults are60alreadyinspectedsolo-guitarclips; no broad or untouchedfinalconfirmation. Root-only forgiveness is not permission to forgivewrongquality.",
     "Thresholds/hyperparameters are tunable with development-onlyselection; publishedoldfixedthresholdexperiments remainunchanged.",
     "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",

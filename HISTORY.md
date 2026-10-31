@@ -1,4 +1,13 @@
 
+## Coarse19 disposition —31 October 2026
+
+Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. [Independent three-arm reconstruction,31Oct2026][Internal experiment/verification][HIGH numerical confidence only]
+
+Next bounded task: fresh task-specific primary/release check and read-only existing feature/preprocessing inventory, then freeze one intervention-isolating preprocessing or representation pilot with a separate time/storage budget before new inference. Do not repeat completed cached coarse/window/head runs. Broad lawful genre/audio-type-diverse and whole-song confirmation remains open.
+
+[Detailed coarse19 decision](recognizer-research/COARSE.md); aggregate panels are in recognizer-research/coarse-summary.json.
+
+
 ## Independently reconstructed union suppression —31 October 2026
 
 Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted. [Exact two-arm reconstruction, 31 Oct 2026; Internal experiment/independent verification; HIGH scoped computational confidence, generalization unconfirmed]
@@ -157,7 +166,7 @@ No application adoption, full-song accuracy or hosted/commercial release is esta
 - Obtained a fresh producer review and froze clause-minimal 60- and 90-second prompt pairs for separate B-section lead-register and closed-hi-hat activity interventions
 - Created `pilots/clpr_stage0/` with a versioned prompt registry, JSON run-manifest schema, deterministic validation/hashing utilities, ignored raw-run directory, and execution README
 - Used test-first implementation: confirmed the expected missing-module failure, implemented the utilities, then passed seven protocol tests and validated the frozen prompt registry
-- Cloned the official ACE-Step 1.5 source to `~/.cache/clpr-stage0/ACE-Step-1.5` and pinned revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0`; the shallow source tree uses 30 MB
+- Cloned the official ACE-Step 1.5 source to `[HOME]/.cache/clpr-stage0/ACE-Step-1.5` and pinned revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0`; the shallow source tree uses 30 MB
 - Audited current official installation requirements: Python 3.11–3.12, macOS MLX support, approximately 10 GB core-model storage, and automatic first-run model download
 - Ran `uv sync --dry-run --no-install-project`: dependency resolution succeeded and would create a Python 3.12 environment with 124 packages, downloading 90 packages
 - Queried the Hugging Face model API: ACE-Step 1.5 reports 10,079,024,720 bytes (9.39 GiB) of model storage

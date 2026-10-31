@@ -41,6 +41,14 @@ The reviewer reconstructed590 predictions,19 partial classes/703 observed pairs 
 
 Fewer false positives do not imply better recall: bass, mallet percussion and organ each lose one true positive. Keep strongest qualified global comparator as the adoption control; suppression is a below-gate experimental reference, not broad confirmation. [Independent class reconstruction, 31 Oct 2026; Internal verification; HIGH scoped confidence]
 
-Next bounded research task: fixed PaSST-only all19 coarse-label presence comparator from existing cached scores, distinct from exact-subtype reporting. Freeze literal coarse ontology, .3 threshold, unchanged Music/null gates and all295 inputs before scoring; compare global73/292 and suppression66/292 without retuning. No new waveform inference, models, acquisition or production edits; confirm remaining cycle budget first.
+The fixed coarse19 follow-up is complete and independently reconstructed; its nonpromotion disposition is below.
 
 [All19-class metrics and107 category comparisons](union-summary.json). No recording/artist identifiers, raw media or reference intervals are published.
+
+## Coarse19 follow-up — not promoted
+
+Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. [Independent three-arm reconstruction,31Oct2026][Internal verification][HIGH numerical confidence only]
+
+Next bounded task: fresh task-specific primary/release check and read-only existing feature/preprocessing inventory, then freeze one intervention-isolating preprocessing or representation pilot with a separate time/storage budget before new inference. Do not repeat completed cached coarse/window/head runs. Broad lawful genre/audio-type-diverse and whole-song confirmation remains open.
+
+[Full coarse19 protocol, contradictions and decision](COARSE.md) · [Complete aggregate categories](coarse-summary.json).

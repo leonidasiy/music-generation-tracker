@@ -1,9 +1,16 @@
+## Current coarse19 decision —31 October 2026
+
+Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation.
+- [x] Fixed cached execution and independent reconstruction complete; no repeat inference.
+- [x] Synchronize nonpromotion registry, current records and separate research panel.
+- [ ] A13 Next bounded task: fresh task-specific primary/release check and read-only existing feature/preprocessing inventory, then freeze one intervention-isolating preprocessing or representation pilot with a separate time/storage budget before new inference. Do not repeat completed cached coarse/window/head runs. Broad lawful genre/audio-type-diverse and whole-song confirmation remains open.
+
 <!-- union-current-20261031 -->
 ## Union-suppression numerical closure
 Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted.
 - [x] Independent numerical reconstruction and parent source acceptance.
 - [ ] Public exact-live closure.
-- [ ] Next bounded research task: fixed PaSST-only all19 coarse-label presence comparator from existing cached scores, distinct from exact-subtype reporting. Freeze literal coarse ontology, .3 threshold, unchanged Music/null gates and all295 inputs before scoring; compare global73/292 and suppression66/292 without retuning. No new waveform inference, models, acquisition or production edits; confirm remaining cycle budget first.
+- [ ] Next bounded task: fresh task-specific primary/release check and read-only existing feature/preprocessing inventory, then freeze one intervention-isolating preprocessing or representation pilot with a separate time/storage budget before new inference. Do not repeat completed cached coarse/window/head runs. Broad lawful genre/audio-type-diverse and whole-song confirmation remains open.
 <!-- end union-current-20261031 -->
 
 <!-- autonomous-improvement-20261031 -->
@@ -165,7 +172,7 @@ PaSST-assisted instrument presence reduced observed-reference failure recordings
 - [x] Create the Stage 0 prompt registry, run-manifest schema, deterministic validators, and seven passing tests
 - [x] Identify initial raw-audio candidates with repeatable randomness and sufficient duration: ACE-Step 1.5 plus Udio; Udio is now a deferred backup
 - [x] Pin ACE-Step source revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` and complete the no-download dependency audit
-- [x] Install ACE-Step 1.5 under `~/.cache/clpr-stage0/`, including the pinned checkpoint and 124-package environment
+- [x] Install ACE-Step 1.5 under `[HOME]/.cache/clpr-stage0/`, including the pinned checkpoint and 124-package environment
 - [x] Run two fixed-seed ACE-Step smoke tests on the M5 / 24 GB Mac and verify byte-identical seed-42 outputs
 - [x] Add `execution-log.json`, a redacting command wrapper, and an Execution Log website tab for command/artifact monitoring
 - [x] Verify a different seed produces a different artifact under the same pinned local configuration: seed 43 produced SHA-256 `c2933382…`, distinct from seed 42
