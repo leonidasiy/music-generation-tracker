@@ -1,0 +1,2476 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-31T02:24:59.600218+00:00",
+  "scope": "Already inspected partial-label OpenMIC and60shortGuitarSetcompingdevelopmentclips; not broad whole-song or untouched final validation.",
+  "owner_policy": {
+    "target_failure_percent_strictly_below": 30,
+    "threshold_tuning_permitted": true,
+    "conditional_training_permitted": true,
+    "ignore_inversions": true,
+    "quality_errors_explicitly_forgiven": false,
+    "per_recording_chord_tolerance_validated": false
+  },
+  "instrumentation": {
+    "configuration": {
+      "threshold": 0.3,
+      "head_weight": 0.75,
+      "display_threshold": 0.2,
+      "Music_gate": 0.5,
+      "score_policy": "Quantize head round(score,3), historical fixed adapter compatibility. Piecewise linear r(h,t)=.2*h/t below t, .2+.8*(h-t)/(1-t) otherwise; t=.2 identity. Blend (1-w)*baseline+w*r. This is a decision-score remap, NOT calibrated probabilities. Inclusive .20 applies to blended decision score; raw threshold effectively includes historical rounding cell."
+    },
+    "cross_fitted": {
+      "baseline": {
+        "intended": 295,
+        "scorable": 292,
+        "reference_unscorable": 3,
+        "above_tolerance": 88,
+        "severe": 15,
+        "missing": 0,
+        "unacceptable_or_missing": 88,
+        "tp": 217,
+        "fp": 48,
+        "fn": 57,
+        "tn": 381,
+        "observed_pairs": 703,
+        "above_tolerance_percent": 30.136986301369863,
+        "severe_percent": 5.136986301369863,
+        "missing_percent": 0.0,
+        "unacceptable_or_missing_percent": 30.136986301369863
+      },
+      "fixed": {
+        "intended": 295,
+        "scorable": 292,
+        "reference_unscorable": 3,
+        "above_tolerance": 84,
+        "severe": 12,
+        "missing": 0,
+        "unacceptable_or_missing": 84,
+        "tp": 245,
+        "fp": 69,
+        "fn": 29,
+        "tn": 360,
+        "observed_pairs": 703,
+        "above_tolerance_percent": 28.767123287671232,
+        "severe_percent": 4.109589041095891,
+        "missing_percent": 0.0,
+        "unacceptable_or_missing_percent": 28.767123287671232
+      },
+      "tuned": {
+        "intended": 295,
+        "scorable": 292,
+        "reference_unscorable": 3,
+        "above_tolerance": 73,
+        "severe": 11,
+        "missing": 0,
+        "unacceptable_or_missing": 73,
+        "tp": 232,
+        "fp": 44,
+        "fn": 42,
+        "tn": 385,
+        "observed_pairs": 703,
+        "above_tolerance_percent": 25.0,
+        "severe_percent": 3.767123287671233,
+        "missing_percent": 0.0,
+        "unacceptable_or_missing_percent": 25.0
+      }
+    },
+    "diagnostics": {
+      "old34previously_inspected_diagnostic": {
+        "baseline": {
+          "intended": 34,
+          "scorable": 28,
+          "reference_unscorable": 6,
+          "above_tolerance": 12,
+          "severe": 2,
+          "missing": 0,
+          "unacceptable_or_missing": 12,
+          "tp": 9,
+          "fp": 7,
+          "fn": 7,
+          "tn": 14,
+          "observed_pairs": 37,
+          "above_tolerance_percent": 42.857142857142854,
+          "severe_percent": 7.142857142857143,
+          "missing_percent": 0.0,
+          "unacceptable_or_missing_percent": 42.857142857142854
+        },
+        "fixed": {
+          "intended": 34,
+          "scorable": 28,
+          "reference_unscorable": 6,
+          "above_tolerance": 13,
+          "severe": 0,
+          "missing": 0,
+          "unacceptable_or_missing": 13,
+          "tp": 13,
+          "fp": 10,
+          "fn": 3,
+          "tn": 11,
+          "observed_pairs": 37,
+          "above_tolerance_percent": 46.42857142857143,
+          "severe_percent": 0.0,
+          "missing_percent": 0.0,
+          "unacceptable_or_missing_percent": 46.42857142857143
+        },
+        "tuned": {
+          "intended": 34,
+          "scorable": 28,
+          "reference_unscorable": 6,
+          "above_tolerance": 10,
+          "severe": 0,
+          "missing": 0,
+          "unacceptable_or_missing": 10,
+          "tp": 13,
+          "fp": 7,
+          "fn": 3,
+          "tn": 14,
+          "observed_pairs": 37,
+          "above_tolerance_percent": 35.714285714285715,
+          "severe_percent": 0.0,
+          "missing_percent": 0.0,
+          "unacceptable_or_missing_percent": 35.714285714285715
+        }
+      },
+      "new49previously_inspected_diagnostic": {
+        "baseline": {
+          "intended": 49,
+          "scorable": 47,
+          "reference_unscorable": 2,
+          "above_tolerance": 19,
+          "severe": 1,
+          "missing": 0,
+          "unacceptable_or_missing": 19,
+          "tp": 31,
+          "fp": 8,
+          "fn": 12,
+          "tn": 48,
+          "observed_pairs": 99,
+          "above_tolerance_percent": 40.42553191489362,
+          "severe_percent": 2.127659574468085,
+          "missing_percent": 0.0,
+          "unacceptable_or_missing_percent": 40.42553191489362
+        },
+        "fixed": {
+          "intended": 49,
+          "scorable": 47,
+          "reference_unscorable": 2,
+          "above_tolerance": 14,
+          "severe": 1,
+          "missing": 0,
+          "unacceptable_or_missing": 14,
+          "tp": 36,
+          "fp": 8,
+          "fn": 7,
+          "tn": 48,
+          "observed_pairs": 99,
+          "above_tolerance_percent": 29.78723404255319,
+          "severe_percent": 2.127659574468085,
+          "missing_percent": 0.0,
+          "unacceptable_or_missing_percent": 29.78723404255319
+        },
+        "tuned": {
+          "intended": 49,
+          "scorable": 47,
+          "reference_unscorable": 2,
+          "above_tolerance": 15,
+          "severe": 1,
+          "missing": 0,
+          "unacceptable_or_missing": 15,
+          "tp": 33,
+          "fp": 6,
+          "fn": 10,
+          "tn": 50,
+          "observed_pairs": 99,
+          "above_tolerance_percent": 31.914893617021278,
+          "severe_percent": 2.127659574468085,
+          "missing_percent": 0.0,
+          "unacceptable_or_missing_percent": 31.914893617021278
+        }
+      }
+    },
+    "independent_confirmation": false
+  },
+  "chords": {
+    "recordings": 60,
+    "saved_cells_replayed": 360,
+    "original_score_mismatches": 0,
+    "acoustic_extraction": {
+      "recordings": 60,
+      "baseline_parity": true,
+      "fresh_waveform_inference": true,
+      "new_assets_downloaded": false
+    },
+    "sequence_summaries": {
+      "baseline": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 24.66854168920003,
+          "recordings_above40": 14,
+          "above40_rate_percent": 23.333333333333332,
+          "recordings_above30": 20,
+          "above30_rate_percent": 33.333333333333336,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 45.95446318880646,
+          "recordings_above40": 30,
+          "above40_rate_percent": 50.0,
+          "recordings_above30": 35,
+          "above30_rate_percent": 58.333333333333336,
+          "exploratory_severe_above80": 10
+        }
+      },
+      "soft_no_history": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 19.983483127722522,
+          "recordings_above40": 11,
+          "above40_rate_percent": 18.333333333333332,
+          "recordings_above30": 16,
+          "above30_rate_percent": 26.666666666666668,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 44.88801276156745,
+          "recordings_above40": 29,
+          "above40_rate_percent": 48.333333333333336,
+          "recordings_above30": 34,
+          "above30_rate_percent": 56.666666666666664,
+          "exploratory_severe_above80": 9
+        }
+      },
+      "duration_selected": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 20.00386679705307,
+          "recordings_above40": 12,
+          "above40_rate_percent": 20.0,
+          "recordings_above30": 16,
+          "above30_rate_percent": 26.666666666666668,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 44.68961941953562,
+          "recordings_above40": 29,
+          "above40_rate_percent": 48.333333333333336,
+          "recordings_above30": 34,
+          "above30_rate_percent": 56.666666666666664,
+          "exploratory_severe_above80": 9
+        }
+      },
+      "history_selected": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 20.264314930573146,
+          "recordings_above40": 13,
+          "above40_rate_percent": 21.666666666666668,
+          "recordings_above30": 17,
+          "above30_rate_percent": 28.333333333333332,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 44.86894626561373,
+          "recordings_above40": 29,
+          "above40_rate_percent": 48.333333333333336,
+          "recordings_above30": 34,
+          "above30_rate_percent": 56.666666666666664,
+          "exploratory_severe_above80": 9
+        }
+      },
+      "raw_root_diagnostic": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 19.93580746355139,
+          "recordings_above40": 11,
+          "above40_rate_percent": 18.333333333333332,
+          "recordings_above30": 16,
+          "above30_rate_percent": 26.666666666666668,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 56.13672130689991,
+          "recordings_above40": 39,
+          "above40_rate_percent": 65.0,
+          "recordings_above30": 45,
+          "above30_rate_percent": 75.0,
+          "exploratory_severe_above80": 13
+        }
+      }
+    },
+    "sequence_categories": {
+      "BN": {
+        "baseline": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 23.984456680088726,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 4,
+            "above30_rate_percent": 40.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 58.41116867793067,
+            "recordings_above40": 7,
+            "above40_rate_percent": 70.0,
+            "recordings_above30": 8,
+            "above30_rate_percent": 80.0,
+            "exploratory_severe_above80": 1
+          }
+        },
+        "soft_no_history": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 19.117456239782925,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 3,
+            "above30_rate_percent": 30.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 57.46542278854222,
+            "recordings_above40": 6,
+            "above40_rate_percent": 60.0,
+            "recordings_above30": 8,
+            "above30_rate_percent": 80.0,
+            "exploratory_severe_above80": 1
+          }
+        },
+        "duration_selected": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 20.023354768403003,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 3,
+            "above30_rate_percent": 30.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 57.43928757340375,
+            "recordings_above40": 6,
+            "above40_rate_percent": 60.0,
+            "recordings_above30": 8,
+            "above30_rate_percent": 80.0,
+            "exploratory_severe_above80": 1
+          }
+        },
+        "history_selected": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 19.716647096147387,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 3,
+            "above30_rate_percent": 30.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 57.40094911437179,
+            "recordings_above40": 6,
+            "above40_rate_percent": 60.0,
+            "recordings_above30": 8,
+            "above30_rate_percent": 80.0,
+            "exploratory_severe_above80": 1
+          }
+        },
+        "raw_root_diagnostic": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 19.347486993974638,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 3,
+            "above30_rate_percent": 30.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 65.87318351232675,
+            "recordings_above40": 8,
+            "above40_rate_percent": 80.0,
+            "recordings_above30": 9,
+            "above30_rate_percent": 90.0,
+            "exploratory_severe_above80": 2
+          }
+        }
+      },
+      "Funk": {
+        "baseline": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 46.84765395046423,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 10,
+            "above30_rate_percent": 66.66666666666667,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 72.66375218192617,
+            "recordings_above40": 14,
+            "above40_rate_percent": 93.33333333333333,
+            "recordings_above30": 14,
+            "above30_rate_percent": 93.33333333333333,
+            "exploratory_severe_above80": 5
+          }
+        },
+        "soft_no_history": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 38.00746046429031,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 8,
+            "above30_rate_percent": 53.333333333333336,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 71.41014778591706,
+            "recordings_above40": 14,
+            "above40_rate_percent": 93.33333333333333,
+            "recordings_above30": 14,
+            "above30_rate_percent": 93.33333333333333,
+            "exploratory_severe_above80": 5
+          }
+        },
+        "duration_selected": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 38.15860280928529,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 8,
+            "above30_rate_percent": 53.333333333333336,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 71.02878534772672,
+            "recordings_above40": 14,
+            "above40_rate_percent": 93.33333333333333,
+            "recordings_above30": 14,
+            "above30_rate_percent": 93.33333333333333,
+            "exploratory_severe_above80": 5
+          }
+        },
+        "history_selected": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 38.52023146837451,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 9,
+            "above30_rate_percent": 60.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 71.22549338772768,
+            "recordings_above40": 14,
+            "above40_rate_percent": 93.33333333333333,
+            "recordings_above30": 14,
+            "above30_rate_percent": 93.33333333333333,
+            "exploratory_severe_above80": 5
+          }
+        },
+        "raw_root_diagnostic": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 37.58076108474451,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 8,
+            "above30_rate_percent": 53.333333333333336,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 77.42698571938851,
+            "recordings_above40": 15,
+            "above40_rate_percent": 100.0,
+            "recordings_above30": 15,
+            "above30_rate_percent": 100.0,
+            "exploratory_severe_above80": 6
+          }
+        }
+      },
+      "Jazz": {
+        "baseline": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 37.03489091792866,
+            "recordings_above40": 5,
+            "above40_rate_percent": 41.666666666666664,
+            "recordings_above30": 6,
+            "above30_rate_percent": 50.0,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 56.84632045866351,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 4
+          }
+        },
+        "soft_no_history": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 32.39919759035066,
+            "recordings_above40": 3,
+            "above40_rate_percent": 25.0,
+            "recordings_above30": 5,
+            "above30_rate_percent": 41.666666666666664,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 55.1199551494562,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 3
+          }
+        },
+        "duration_selected": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 32.809147206029735,
+            "recordings_above40": 3,
+            "above40_rate_percent": 25.0,
+            "recordings_above30": 5,
+            "above30_rate_percent": 41.666666666666664,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 55.077261853265384,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 3
+          }
+        },
+        "history_selected": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 33.56155825946766,
+            "recordings_above40": 4,
+            "above40_rate_percent": 33.333333333333336,
+            "recordings_above30": 5,
+            "above30_rate_percent": 41.666666666666664,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 55.82967290670331,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 3
+          }
+        },
+        "raw_root_diagnostic": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 32.22708420898957,
+            "recordings_above40": 3,
+            "above40_rate_percent": 25.0,
+            "recordings_above30": 5,
+            "above30_rate_percent": 41.666666666666664,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 58.438940068686854,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 4
+          }
+        }
+      },
+      "Rock": {
+        "baseline": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 8.24369752263805,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 23.224943954587328,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 2,
+            "above30_rate_percent": 20.0,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "soft_no_history": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 6.555227390820184,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 21.99049938692774,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 1,
+            "above30_rate_percent": 10.0,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "duration_selected": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 6.360636965365874,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 21.721195441136665,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 1,
+            "above30_rate_percent": 10.0,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "history_selected": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 6.360636965365874,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 21.60732080906702,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 1,
+            "above30_rate_percent": 10.0,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "raw_root_diagnostic": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 6.649053672173332,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 41.36577665399803,
+            "recordings_above40": 4,
+            "above40_rate_percent": 40.0,
+            "recordings_above30": 5,
+            "above30_rate_percent": 50.0,
+            "exploratory_severe_above80": 1
+          }
+        }
+      },
+      "SS": {
+        "baseline": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 6.0310526729487,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 21.118050743928286,
+            "recordings_above40": 1,
+            "above40_rate_percent": 7.6923076923076925,
+            "recordings_above30": 4,
+            "above30_rate_percent": 30.76923076923077,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "soft_no_history": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 3.7561929100975444,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 20.634304398322513,
+            "recordings_above40": 1,
+            "above40_rate_percent": 7.6923076923076925,
+            "recordings_above30": 4,
+            "above30_rate_percent": 30.76923076923077,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "duration_selected": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 3.144597157250606,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 20.493305123159043,
+            "recordings_above40": 1,
+            "above40_rate_percent": 7.6923076923076925,
+            "recordings_above30": 4,
+            "above30_rate_percent": 30.76923076923077,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "history_selected": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 3.4612164434242088,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 20.62193170816706,
+            "recordings_above40": 1,
+            "above40_rate_percent": 7.6923076923076925,
+            "recordings_above30": 4,
+            "above30_rate_percent": 30.76923076923077,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "raw_root_diagnostic": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 3.9361758971783734,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 37.901191592777415,
+            "recordings_above40": 5,
+            "above40_rate_percent": 38.46153846153846,
+            "recordings_above30": 9,
+            "above30_rate_percent": 69.23076923076923,
+            "exploratory_severe_above80": 0
+          }
+        }
+      }
+    },
+    "quality_head_summaries": {
+      "baseline": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 24.66854168920003,
+          "recordings_above40": 14,
+          "above40_rate_percent": 23.333333333333332,
+          "recordings_above30": 20,
+          "above30_rate_percent": 33.333333333333336,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 45.95446318880646,
+          "recordings_above40": 30,
+          "above40_rate_percent": 50.0,
+          "recordings_above30": 35,
+          "above30_rate_percent": 58.333333333333336,
+          "exploratory_severe_above80": 10
+        }
+      },
+      "soft_no_history": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 19.983483127722522,
+          "recordings_above40": 11,
+          "above40_rate_percent": 18.333333333333332,
+          "recordings_above30": 16,
+          "above30_rate_percent": 26.666666666666668,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 44.88801276156745,
+          "recordings_above40": 29,
+          "above40_rate_percent": 48.333333333333336,
+          "recordings_above30": 34,
+          "above30_rate_percent": 56.666666666666664,
+          "exploratory_severe_above80": 9
+        }
+      },
+      "trained_quality_head": {
+        "intended": 60,
+        "scorable": 60,
+        "fully_missing": 0,
+        "labeled_seconds": 1832.6404,
+        "root": {
+          "duration_error_percent": 20.260642955253473,
+          "recordings_above40": 11,
+          "above40_rate_percent": 18.333333333333332,
+          "recordings_above30": 16,
+          "above30_rate_percent": 26.666666666666668,
+          "exploratory_severe_above80": 1
+        },
+        "quality": {
+          "duration_error_percent": 45.15909870064174,
+          "recordings_above40": 29,
+          "above40_rate_percent": 48.333333333333336,
+          "recordings_above30": 36,
+          "above30_rate_percent": 60.0,
+          "exploratory_severe_above80": 10
+        }
+      }
+    },
+    "quality_head_categories": {
+      "BN": {
+        "trained_quality_head": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 19.74087245438628,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 3,
+            "above30_rate_percent": 30.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 57.377487785930214,
+            "recordings_above40": 6,
+            "above40_rate_percent": 60.0,
+            "recordings_above30": 8,
+            "above30_rate_percent": 80.0,
+            "exploratory_severe_above80": 1
+          }
+        },
+        "baseline": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 23.984456680088726,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 4,
+            "above30_rate_percent": 40.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 58.41116867793067,
+            "recordings_above40": 7,
+            "above40_rate_percent": 70.0,
+            "recordings_above30": 8,
+            "above30_rate_percent": 80.0,
+            "exploratory_severe_above80": 1
+          }
+        },
+        "soft_no_history": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 241.5136,
+          "root": {
+            "duration_error_percent": 19.117456239782925,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 3,
+            "above30_rate_percent": 30.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 57.46542278854222,
+            "recordings_above40": 6,
+            "above40_rate_percent": 60.0,
+            "recordings_above30": 8,
+            "above30_rate_percent": 80.0,
+            "exploratory_severe_above80": 1
+          }
+        }
+      },
+      "Funk": {
+        "trained_quality_head": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 38.08074104535603,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 8,
+            "above30_rate_percent": 53.333333333333336,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 71.08701737420185,
+            "recordings_above40": 14,
+            "above40_rate_percent": 93.33333333333333,
+            "recordings_above30": 14,
+            "above30_rate_percent": 93.33333333333333,
+            "exploratory_severe_above80": 5
+          }
+        },
+        "baseline": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 46.84765395046423,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 10,
+            "above30_rate_percent": 66.66666666666667,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 72.66375218192617,
+            "recordings_above40": 14,
+            "above40_rate_percent": 93.33333333333333,
+            "recordings_above30": 14,
+            "above30_rate_percent": 93.33333333333333,
+            "exploratory_severe_above80": 5
+          }
+        },
+        "soft_no_history": {
+          "intended": 15,
+          "scorable": 15,
+          "fully_missing": 0,
+          "labeled_seconds": 505.29359999999974,
+          "root": {
+            "duration_error_percent": 38.00746046429031,
+            "recordings_above40": 8,
+            "above40_rate_percent": 53.333333333333336,
+            "recordings_above30": 8,
+            "above30_rate_percent": 53.333333333333336,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 71.41014778591706,
+            "recordings_above40": 14,
+            "above40_rate_percent": 93.33333333333333,
+            "recordings_above30": 14,
+            "above30_rate_percent": 93.33333333333333,
+            "exploratory_severe_above80": 5
+          }
+        }
+      },
+      "Jazz": {
+        "trained_quality_head": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 32.61455674696975,
+            "recordings_above40": 3,
+            "above40_rate_percent": 25.0,
+            "recordings_above30": 5,
+            "above30_rate_percent": 41.666666666666664,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 55.68466111979545,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 4
+          }
+        },
+        "baseline": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 37.03489091792866,
+            "recordings_above40": 5,
+            "above40_rate_percent": 41.666666666666664,
+            "recordings_above30": 6,
+            "above30_rate_percent": 50.0,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 56.84632045866351,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 4
+          }
+        },
+        "soft_no_history": {
+          "intended": 12,
+          "scorable": 12,
+          "fully_missing": 0,
+          "labeled_seconds": 275.1648,
+          "root": {
+            "duration_error_percent": 32.39919759035066,
+            "recordings_above40": 3,
+            "above40_rate_percent": 25.0,
+            "recordings_above30": 5,
+            "above30_rate_percent": 41.666666666666664,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 55.1199551494562,
+            "recordings_above40": 7,
+            "above40_rate_percent": 58.333333333333336,
+            "recordings_above30": 7,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 3
+          }
+        }
+      },
+      "Rock": {
+        "trained_quality_head": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 6.679460337426679,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 23.455499594722006,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 3,
+            "above30_rate_percent": 30.0,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "baseline": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 8.24369752263805,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 23.224943954587328,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 2,
+            "above30_rate_percent": 20.0,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "soft_no_history": {
+          "intended": 10,
+          "scorable": 10,
+          "fully_missing": 0,
+          "labeled_seconds": 300.22520000000003,
+          "root": {
+            "duration_error_percent": 6.555227390820184,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 21.99049938692774,
+            "recordings_above40": 1,
+            "above40_rate_percent": 10.0,
+            "recordings_above30": 1,
+            "above30_rate_percent": 10.0,
+            "exploratory_severe_above80": 0
+          }
+        }
+      },
+      "SS": {
+        "trained_quality_head": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 4.194606966324521,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 20.802979553754287,
+            "recordings_above40": 1,
+            "above40_rate_percent": 7.6923076923076925,
+            "recordings_above30": 4,
+            "above30_rate_percent": 30.76923076923077,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "baseline": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 6.0310526729487,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 21.118050743928286,
+            "recordings_above40": 1,
+            "above40_rate_percent": 7.6923076923076925,
+            "recordings_above30": 4,
+            "above30_rate_percent": 30.76923076923077,
+            "exploratory_severe_above80": 0
+          }
+        },
+        "soft_no_history": {
+          "intended": 13,
+          "scorable": 13,
+          "fully_missing": 0,
+          "labeled_seconds": 510.44320000000016,
+          "root": {
+            "duration_error_percent": 3.7561929100975444,
+            "recordings_above40": 0,
+            "above40_rate_percent": 0.0,
+            "recordings_above30": 0,
+            "above30_rate_percent": 0.0,
+            "exploratory_severe_above80": 0
+          },
+          "quality": {
+            "duration_error_percent": 20.634304398322513,
+            "recordings_above40": 1,
+            "above40_rate_percent": 7.6923076923076925,
+            "recordings_above30": 4,
+            "above30_rate_percent": 30.76923076923077,
+            "exploratory_severe_above80": 0
+          }
+        }
+      }
+    },
+    "quality_head_fits": 65,
+    "quality_head_saved_models": 5,
+    "trained_acoustic_backbone": false,
+    "saved_transition_models": 5,
+    "inner_auxiliary_transition_fits": 30,
+    "vocabulary_oracle": {
+      "root_only": {
+        "recordings": 60,
+        "duration_error_floor_percent": 0.0,
+        "unavoidable_failures_at40": 0,
+        "unavoidable_failures_at30": 0
+      },
+      "triads": {
+        "recordings": 60,
+        "duration_error_floor_percent": 34.577363246328616,
+        "unavoidable_failures_at40": 22,
+        "unavoidable_failures_at30": 29
+      },
+      "triads_bass_stripped": {
+        "recordings": 60,
+        "duration_error_floor_percent": 31.49459237220634,
+        "unavoidable_failures_at40": 20,
+        "unavoidable_failures_at30": 26
+      }
+    },
+    "vocabulary_oracle_warning": "Perfect timing and reference-informed allowed label choice at every annotation span. Not a trained model, deployment, causal diagnosis or achievable guarantee.",
+    "root_only_is_not_quality_correctness": true,
+    "strict_bass_stripped_rescoring": "Historical and strict bass-contribution-stripped policies published side by side; explicit omitted notes preserved.",
+    "content_family_transfer": {
+      "groups": 3,
+      "group_support": [
+        21,
+        21,
+        18
+      ],
+      "scope": "All60inspectedsolo-guitar development; three shared reference-derived harmonictemplates—not three independently sampled compositions or untouched validation. Groupmetadata only for splitting, never inference input.",
+      "summaries": {
+        "baseline": {
+          "intended": 60,
+          "scorable": 60,
+          "fully_missing": 0,
+          "labeled_seconds": 1832.6404,
+          "root": {
+            "duration_error_percent": 24.66854168920003,
+            "recordings_above40": 14,
+            "above40_rate_percent": 23.333333333333332,
+            "recordings_above30": 20,
+            "above30_rate_percent": 33.333333333333336,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 45.95446318880646,
+            "recordings_above40": 30,
+            "above40_rate_percent": 50.0,
+            "recordings_above30": 35,
+            "above30_rate_percent": 58.333333333333336,
+            "exploratory_severe_above80": 10
+          }
+        },
+        "soft_no_history": {
+          "intended": 60,
+          "scorable": 60,
+          "fully_missing": 0,
+          "labeled_seconds": 1832.6404,
+          "root": {
+            "duration_error_percent": 19.983483127722522,
+            "recordings_above40": 11,
+            "above40_rate_percent": 18.333333333333332,
+            "recordings_above30": 16,
+            "above30_rate_percent": 26.666666666666668,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 44.88801276156745,
+            "recordings_above40": 29,
+            "above40_rate_percent": 48.333333333333336,
+            "recordings_above30": 34,
+            "above30_rate_percent": 56.666666666666664,
+            "exploratory_severe_above80": 9
+          }
+        },
+        "duration_selected": {
+          "intended": 60,
+          "scorable": 60,
+          "fully_missing": 0,
+          "labeled_seconds": 1832.6404,
+          "root": {
+            "duration_error_percent": 20.00386679705307,
+            "recordings_above40": 12,
+            "above40_rate_percent": 20.0,
+            "recordings_above30": 16,
+            "above30_rate_percent": 26.666666666666668,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 44.68961941953562,
+            "recordings_above40": 29,
+            "above40_rate_percent": 48.333333333333336,
+            "recordings_above30": 34,
+            "above30_rate_percent": 56.666666666666664,
+            "exploratory_severe_above80": 9
+          }
+        },
+        "history_selected": {
+          "intended": 60,
+          "scorable": 60,
+          "fully_missing": 0,
+          "labeled_seconds": 1832.6404,
+          "root": {
+            "duration_error_percent": 20.208738369098324,
+            "recordings_above40": 13,
+            "above40_rate_percent": 21.666666666666668,
+            "recordings_above30": 16,
+            "above30_rate_percent": 26.666666666666668,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 44.86894626561373,
+            "recordings_above40": 29,
+            "above40_rate_percent": 48.333333333333336,
+            "recordings_above30": 34,
+            "above30_rate_percent": 56.666666666666664,
+            "exploratory_severe_above80": 9
+          }
+        },
+        "trained_quality_head": {
+          "intended": 60,
+          "scorable": 60,
+          "fully_missing": 0,
+          "labeled_seconds": 1832.6404,
+          "root": {
+            "duration_error_percent": 20.209324756255764,
+            "recordings_above40": 11,
+            "above40_rate_percent": 18.333333333333332,
+            "recordings_above30": 16,
+            "above30_rate_percent": 26.666666666666668,
+            "exploratory_severe_above80": 1
+          },
+          "quality": {
+            "duration_error_percent": 45.374362944028,
+            "recordings_above40": 29,
+            "above40_rate_percent": 48.333333333333336,
+            "recordings_above30": 36,
+            "above30_rate_percent": 60.0,
+            "exploratory_severe_above80": 10
+          }
+        }
+      },
+      "policy_summaries": {
+        "baseline": {
+          "root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1380.5547389128778,
+            "duration_weighted_agreement": 0.7533145831079997,
+            "mean_recording_error_percent": 24.926928170779455,
+            "above_40_count": 14,
+            "above_40_percent": 23.333333333333332,
+            "above_30_count": 20,
+            "above_30_percent": 33.333333333333336
+          },
+          "rooted_reference_root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1380.5547389128778,
+            "duration_weighted_agreement": 0.7533145831079997,
+            "mean_recording_error_percent": 24.926928170779455,
+            "above_40_count": 14,
+            "above_40_percent": 23.333333333333332,
+            "above_30_count": 20,
+            "above_30_percent": 33.333333333333336
+          },
+          "triads": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 990.4603419988044,
+            "duration_weighted_agreement": 0.5404553681119354,
+            "mean_recording_error_percent": 46.36607176874119,
+            "above_40_count": 30,
+            "above_40_percent": 50.0,
+            "above_30_count": 35,
+            "above_30_percent": 58.333333333333336
+          },
+          "triads_bass_stripped": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1040.710198382101,
+            "duration_weighted_agreement": 0.5678747442117401,
+            "mean_recording_error_percent": 43.352964364988445,
+            "above_40_count": 27,
+            "above_40_percent": 45.0,
+            "above_30_count": 33,
+            "above_30_percent": 55.0
+          },
+          "majmin_projected": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1578.0248714322877,
+            "matched_seconds": 1168.6523914022314,
+            "duration_weighted_agreement": 0.7405791965379538,
+            "mean_recording_error_percent": 26.17360386281315,
+            "above_40_count": 17,
+            "above_40_percent": 28.333333333333332,
+            "above_30_count": 20,
+            "above_30_percent": 33.333333333333336
+          },
+          "full_quality": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 787.7964408806915,
+            "duration_weighted_agreement": 0.4298696246577842,
+            "mean_recording_error_percent": 58.70175573057889,
+            "above_40_count": 35,
+            "above_40_percent": 58.333333333333336,
+            "above_30_count": 41,
+            "above_30_percent": 68.33333333333333
+          },
+          "triads_inv": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 840.4671160774056,
+            "duration_weighted_agreement": 0.45860994665260335,
+            "mean_recording_error_percent": 54.802029292864425,
+            "above_40_count": 39,
+            "above_40_percent": 65.0,
+            "above_30_count": 42,
+            "above_30_percent": 70.0
+          }
+        },
+        "soft_no_history": {
+          "root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1466.4150148741735,
+            "duration_weighted_agreement": 0.8001651687227748,
+            "mean_recording_error_percent": 20.465010238379403,
+            "above_40_count": 11,
+            "above_40_percent": 18.333333333333332,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "rooted_reference_root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1466.4150148741735,
+            "duration_weighted_agreement": 0.8001651687227748,
+            "mean_recording_error_percent": 20.465010238379403,
+            "above_40_count": 11,
+            "above_40_percent": 18.333333333333332,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "triads": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1010.0045433743592,
+            "duration_weighted_agreement": 0.5511198723843255,
+            "mean_recording_error_percent": 45.342708603836215,
+            "above_40_count": 29,
+            "above_40_percent": 48.333333333333336,
+            "above_30_count": 34,
+            "above_30_percent": 56.666666666666664
+          },
+          "triads_bass_stripped": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1060.8919253045667,
+            "duration_weighted_agreement": 0.5788871211747633,
+            "mean_recording_error_percent": 42.27582395500442,
+            "above_40_count": 27,
+            "above_40_percent": 45.0,
+            "above_30_count": 32,
+            "above_30_percent": 53.333333333333336
+          },
+          "majmin_projected": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1578.0248714322877,
+            "matched_seconds": 1213.323746625477,
+            "duration_weighted_agreement": 0.7688875939732235,
+            "mean_recording_error_percent": 23.534822117525515,
+            "above_40_count": 14,
+            "above_40_percent": 23.333333333333332,
+            "above_30_count": 18,
+            "above_30_percent": 30.0
+          },
+          "full_quality": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 797.1524718634707,
+            "duration_weighted_agreement": 0.4349748438719733,
+            "mean_recording_error_percent": 58.23516472364148,
+            "above_40_count": 35,
+            "above_40_percent": 58.333333333333336,
+            "above_30_count": 42,
+            "above_30_percent": 70.0
+          },
+          "triads_inv": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 853.3536884054344,
+            "duration_weighted_agreement": 0.4656416438300904,
+            "mean_recording_error_percent": 54.11686096261735,
+            "above_40_count": 36,
+            "above_40_percent": 60.0,
+            "above_30_count": 43,
+            "above_30_percent": 71.66666666666667
+          }
+        },
+        "duration_selected": {
+          "root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1466.0414555150194,
+            "duration_weighted_agreement": 0.7999613320294693,
+            "mean_recording_error_percent": 20.561365181502364,
+            "above_40_count": 12,
+            "above_40_percent": 20.0,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "rooted_reference_root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1466.0414555150194,
+            "duration_weighted_agreement": 0.7999613320294693,
+            "mean_recording_error_percent": 20.561365181502364,
+            "above_40_count": 12,
+            "above_40_percent": 20.0,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "triads": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1013.6403799113448,
+            "duration_weighted_agreement": 0.5531038058046438,
+            "mean_recording_error_percent": 45.161889946189234,
+            "above_40_count": 29,
+            "above_40_percent": 48.333333333333336,
+            "above_30_count": 34,
+            "above_30_percent": 56.666666666666664
+          },
+          "triads_bass_stripped": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1064.4081738043174,
+            "duration_weighted_agreement": 0.5808058000927608,
+            "mean_recording_error_percent": 42.109196472113204,
+            "above_40_count": 27,
+            "above_40_percent": 45.0,
+            "above_30_count": 31,
+            "above_30_percent": 51.666666666666664
+          },
+          "majmin_projected": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1578.0248714322877,
+            "matched_seconds": 1214.0939303060652,
+            "duration_weighted_agreement": 0.7693756621238155,
+            "mean_recording_error_percent": 23.605233955052384,
+            "above_40_count": 15,
+            "above_40_percent": 25.0,
+            "above_30_count": 18,
+            "above_30_percent": 30.0
+          },
+          "full_quality": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 800.3500698749607,
+            "duration_weighted_agreement": 0.4367196477142819,
+            "mean_recording_error_percent": 58.03832330570551,
+            "above_40_count": 35,
+            "above_40_percent": 58.333333333333336,
+            "above_30_count": 40,
+            "above_30_percent": 66.66666666666667
+          },
+          "triads_inv": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 855.7814713738705,
+            "duration_weighted_agreement": 0.4669663897914018,
+            "mean_recording_error_percent": 54.00640582801085,
+            "above_40_count": 36,
+            "above_40_percent": 60.0,
+            "above_30_count": 43,
+            "above_30_percent": 71.66666666666667
+          }
+        },
+        "history_selected": {
+          "root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1462.2868963176031,
+            "duration_weighted_agreement": 0.7979126163090168,
+            "mean_recording_error_percent": 20.821684628680973,
+            "above_40_count": 13,
+            "above_40_percent": 21.666666666666668,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "rooted_reference_root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1462.2868963176031,
+            "duration_weighted_agreement": 0.7979126163090168,
+            "mean_recording_error_percent": 20.821684628680973,
+            "above_40_count": 13,
+            "above_40_percent": 21.666666666666668,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "triads": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1010.3539636820715,
+            "duration_weighted_agreement": 0.5513105373438627,
+            "mean_recording_error_percent": 45.39206506738147,
+            "above_40_count": 29,
+            "above_40_percent": 48.333333333333336,
+            "above_30_count": 34,
+            "above_30_percent": 56.666666666666664
+          },
+          "triads_bass_stripped": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1061.1217575750438,
+            "duration_weighted_agreement": 0.5790125316319796,
+            "mean_recording_error_percent": 42.33937159330544,
+            "above_40_count": 27,
+            "above_40_percent": 45.0,
+            "above_30_count": 32,
+            "above_30_percent": 53.333333333333336
+          },
+          "majmin_projected": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1578.0248714322877,
+            "matched_seconds": 1210.714921484199,
+            "duration_weighted_agreement": 0.7672343721587219,
+            "mean_recording_error_percent": 23.846180663132635,
+            "above_40_count": 16,
+            "above_40_percent": 26.666666666666668,
+            "above_30_count": 18,
+            "above_30_percent": 30.0
+          },
+          "full_quality": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 798.0576067824976,
+            "duration_weighted_agreement": 0.43546874050277273,
+            "mean_recording_error_percent": 58.226215647400906,
+            "above_40_count": 35,
+            "above_40_percent": 58.333333333333336,
+            "above_30_count": 41,
+            "above_30_percent": 68.33333333333333
+          },
+          "triads_inv": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 852.4950551445972,
+            "duration_weighted_agreement": 0.4651731213306207,
+            "mean_recording_error_percent": 54.23658094920308,
+            "above_40_count": 36,
+            "above_40_percent": 60.0,
+            "above_30_count": 43,
+            "above_30_percent": 71.66666666666667
+          }
+        },
+        "trained_quality_head": {
+          "root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1462.2761499496553,
+            "duration_weighted_agreement": 0.7979067524374424,
+            "mean_recording_error_percent": 20.690601852332097,
+            "above_40_count": 11,
+            "above_40_percent": 18.333333333333332,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "rooted_reference_root_only": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1462.2761499496553,
+            "duration_weighted_agreement": 0.7979067524374424,
+            "mean_recording_error_percent": 20.690601852332097,
+            "above_40_count": 11,
+            "above_40_percent": 18.333333333333332,
+            "above_30_count": 16,
+            "above_30_percent": 26.666666666666668
+          },
+          "triads": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1001.0914934451135,
+            "duration_weighted_agreement": 0.54625637055972,
+            "mean_recording_error_percent": 45.80105307424287,
+            "above_40_count": 29,
+            "above_40_percent": 48.333333333333336,
+            "above_30_count": 36,
+            "above_30_percent": 60.0
+          },
+          "triads_bass_stripped": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 1052.1640605605062,
+            "duration_weighted_agreement": 0.5741246676437485,
+            "mean_recording_error_percent": 42.71742352657706,
+            "above_40_count": 27,
+            "above_40_percent": 45.0,
+            "above_30_count": 32,
+            "above_30_percent": 53.333333333333336
+          },
+          "majmin_projected": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1578.0248714322877,
+            "matched_seconds": 1190.6392551431939,
+            "duration_weighted_agreement": 0.7545123506592866,
+            "mean_recording_error_percent": 24.861986301422043,
+            "above_40_count": 15,
+            "above_40_percent": 25.0,
+            "above_30_count": 20,
+            "above_30_percent": 33.333333333333336
+          },
+          "full_quality": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 791.9472182494701,
+            "duration_weighted_agreement": 0.4321345410968077,
+            "mean_recording_error_percent": 58.40686224963728,
+            "above_40_count": 35,
+            "above_40_percent": 58.333333333333336,
+            "above_30_count": 42,
+            "above_30_percent": 70.0
+          },
+          "triads_inv": {
+            "recordings": 60,
+            "scorable_recordings": 60,
+            "unscorable_recordings": 0,
+            "eligible_seconds": 1832.6404,
+            "matched_seconds": 846.8622329925284,
+            "duration_weighted_agreement": 0.4620995111711651,
+            "mean_recording_error_percent": 54.43636602015106,
+            "above_40_count": 37,
+            "above_40_percent": 61.666666666666664,
+            "above_30_count": 43,
+            "above_30_percent": 71.66666666666667
+          }
+        }
+      },
+      "categories": {
+        "BN": {
+          "baseline": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 241.5136,
+            "root": {
+              "duration_error_percent": 23.984456680088726,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 4,
+              "above30_rate_percent": 40.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 58.41116867793067,
+              "recordings_above40": 7,
+              "above40_rate_percent": 70.0,
+              "recordings_above30": 8,
+              "above30_rate_percent": 80.0,
+              "exploratory_severe_above80": 1
+            }
+          },
+          "soft_no_history": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 241.5136,
+            "root": {
+              "duration_error_percent": 19.117456239782925,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 3,
+              "above30_rate_percent": 30.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 57.46542278854222,
+              "recordings_above40": 6,
+              "above40_rate_percent": 60.0,
+              "recordings_above30": 8,
+              "above30_rate_percent": 80.0,
+              "exploratory_severe_above80": 1
+            }
+          },
+          "duration_selected": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 241.5136,
+            "root": {
+              "duration_error_percent": 20.023354768403003,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 3,
+              "above30_rate_percent": 30.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 57.43928757340375,
+              "recordings_above40": 6,
+              "above40_rate_percent": 60.0,
+              "recordings_above30": 8,
+              "above30_rate_percent": 80.0,
+              "exploratory_severe_above80": 1
+            }
+          },
+          "history_selected": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 241.5136,
+            "root": {
+              "duration_error_percent": 20.100031686466913,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 3,
+              "above30_rate_percent": 30.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 57.40094911437179,
+              "recordings_above40": 6,
+              "above40_rate_percent": 60.0,
+              "recordings_above30": 8,
+              "above30_rate_percent": 80.0,
+              "exploratory_severe_above80": 1
+            }
+          },
+          "trained_quality_head": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 241.5136,
+            "root": {
+              "duration_error_percent": 19.505298790454994,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 3,
+              "above30_rate_percent": 30.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 58.65789993576842,
+              "recordings_above40": 6,
+              "above40_rate_percent": 60.0,
+              "recordings_above30": 8,
+              "above30_rate_percent": 80.0,
+              "exploratory_severe_above80": 1
+            }
+          }
+        },
+        "Funk": {
+          "baseline": {
+            "intended": 15,
+            "scorable": 15,
+            "fully_missing": 0,
+            "labeled_seconds": 505.29359999999974,
+            "root": {
+              "duration_error_percent": 46.84765395046423,
+              "recordings_above40": 8,
+              "above40_rate_percent": 53.333333333333336,
+              "recordings_above30": 10,
+              "above30_rate_percent": 66.66666666666667,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 72.66375218192617,
+              "recordings_above40": 14,
+              "above40_rate_percent": 93.33333333333333,
+              "recordings_above30": 14,
+              "above30_rate_percent": 93.33333333333333,
+              "exploratory_severe_above80": 5
+            }
+          },
+          "soft_no_history": {
+            "intended": 15,
+            "scorable": 15,
+            "fully_missing": 0,
+            "labeled_seconds": 505.29359999999974,
+            "root": {
+              "duration_error_percent": 38.00746046429031,
+              "recordings_above40": 8,
+              "above40_rate_percent": 53.333333333333336,
+              "recordings_above30": 8,
+              "above30_rate_percent": 53.333333333333336,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 71.41014778591706,
+              "recordings_above40": 14,
+              "above40_rate_percent": 93.33333333333333,
+              "recordings_above30": 14,
+              "above30_rate_percent": 93.33333333333333,
+              "exploratory_severe_above80": 5
+            }
+          },
+          "duration_selected": {
+            "intended": 15,
+            "scorable": 15,
+            "fully_missing": 0,
+            "labeled_seconds": 505.29359999999974,
+            "root": {
+              "duration_error_percent": 38.15860280928529,
+              "recordings_above40": 8,
+              "above40_rate_percent": 53.333333333333336,
+              "recordings_above30": 8,
+              "above30_rate_percent": 53.333333333333336,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 71.02878534772672,
+              "recordings_above40": 14,
+              "above40_rate_percent": 93.33333333333333,
+              "recordings_above30": 14,
+              "above30_rate_percent": 93.33333333333333,
+              "exploratory_severe_above80": 5
+            }
+          },
+          "history_selected": {
+            "intended": 15,
+            "scorable": 15,
+            "fully_missing": 0,
+            "labeled_seconds": 505.29359999999974,
+            "root": {
+              "duration_error_percent": 38.35531084928625,
+              "recordings_above40": 8,
+              "above40_rate_percent": 53.333333333333336,
+              "recordings_above30": 8,
+              "above30_rate_percent": 53.333333333333336,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 71.22549338772768,
+              "recordings_above40": 14,
+              "above40_rate_percent": 93.33333333333333,
+              "recordings_above30": 14,
+              "above30_rate_percent": 93.33333333333333,
+              "exploratory_severe_above80": 5
+            }
+          },
+          "trained_quality_head": {
+            "intended": 15,
+            "scorable": 15,
+            "fully_missing": 0,
+            "labeled_seconds": 505.29359999999974,
+            "root": {
+              "duration_error_percent": 38.08074104535603,
+              "recordings_above40": 8,
+              "above40_rate_percent": 53.333333333333336,
+              "recordings_above30": 8,
+              "above30_rate_percent": 53.333333333333336,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 71.30498263685652,
+              "recordings_above40": 14,
+              "above40_rate_percent": 93.33333333333333,
+              "recordings_above30": 14,
+              "above30_rate_percent": 93.33333333333333,
+              "exploratory_severe_above80": 5
+            }
+          }
+        },
+        "Jazz": {
+          "baseline": {
+            "intended": 12,
+            "scorable": 12,
+            "fully_missing": 0,
+            "labeled_seconds": 275.1648,
+            "root": {
+              "duration_error_percent": 37.03489091792866,
+              "recordings_above40": 5,
+              "above40_rate_percent": 41.666666666666664,
+              "recordings_above30": 6,
+              "above30_rate_percent": 50.0,
+              "exploratory_severe_above80": 1
+            },
+            "quality": {
+              "duration_error_percent": 56.84632045866351,
+              "recordings_above40": 7,
+              "above40_rate_percent": 58.333333333333336,
+              "recordings_above30": 7,
+              "above30_rate_percent": 58.333333333333336,
+              "exploratory_severe_above80": 4
+            }
+          },
+          "soft_no_history": {
+            "intended": 12,
+            "scorable": 12,
+            "fully_missing": 0,
+            "labeled_seconds": 275.1648,
+            "root": {
+              "duration_error_percent": 32.39919759035066,
+              "recordings_above40": 3,
+              "above40_rate_percent": 25.0,
+              "recordings_above30": 5,
+              "above30_rate_percent": 41.666666666666664,
+              "exploratory_severe_above80": 1
+            },
+            "quality": {
+              "duration_error_percent": 55.1199551494562,
+              "recordings_above40": 7,
+              "above40_rate_percent": 58.333333333333336,
+              "recordings_above30": 7,
+              "above30_rate_percent": 58.333333333333336,
+              "exploratory_severe_above80": 3
+            }
+          },
+          "duration_selected": {
+            "intended": 12,
+            "scorable": 12,
+            "fully_missing": 0,
+            "labeled_seconds": 275.1648,
+            "root": {
+              "duration_error_percent": 32.809147206029735,
+              "recordings_above40": 3,
+              "above40_rate_percent": 25.0,
+              "recordings_above30": 5,
+              "above30_rate_percent": 41.666666666666664,
+              "exploratory_severe_above80": 1
+            },
+            "quality": {
+              "duration_error_percent": 55.077261853265384,
+              "recordings_above40": 7,
+              "above40_rate_percent": 58.333333333333336,
+              "recordings_above30": 7,
+              "above30_rate_percent": 58.333333333333336,
+              "exploratory_severe_above80": 3
+            }
+          },
+          "history_selected": {
+            "intended": 12,
+            "scorable": 12,
+            "fully_missing": 0,
+            "labeled_seconds": 275.1648,
+            "root": {
+              "duration_error_percent": 33.56155825946766,
+              "recordings_above40": 4,
+              "above40_rate_percent": 33.333333333333336,
+              "recordings_above30": 5,
+              "above30_rate_percent": 41.666666666666664,
+              "exploratory_severe_above80": 1
+            },
+            "quality": {
+              "duration_error_percent": 55.82967290670331,
+              "recordings_above40": 7,
+              "above40_rate_percent": 58.333333333333336,
+              "recordings_above30": 7,
+              "above30_rate_percent": 58.333333333333336,
+              "exploratory_severe_above80": 3
+            }
+          },
+          "trained_quality_head": {
+            "intended": 12,
+            "scorable": 12,
+            "fully_missing": 0,
+            "labeled_seconds": 275.1648,
+            "root": {
+              "duration_error_percent": 33.041604165492814,
+              "recordings_above40": 3,
+              "above40_rate_percent": 25.0,
+              "recordings_above30": 5,
+              "above30_rate_percent": 41.666666666666664,
+              "exploratory_severe_above80": 1
+            },
+            "quality": {
+              "duration_error_percent": 55.38181230579987,
+              "recordings_above40": 7,
+              "above40_rate_percent": 58.333333333333336,
+              "recordings_above30": 7,
+              "above30_rate_percent": 58.333333333333336,
+              "exploratory_severe_above80": 4
+            }
+          }
+        },
+        "Rock": {
+          "baseline": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 300.22520000000003,
+            "root": {
+              "duration_error_percent": 8.24369752263805,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 23.224943954587328,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 2,
+              "above30_rate_percent": 20.0,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "soft_no_history": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 300.22520000000003,
+            "root": {
+              "duration_error_percent": 6.555227390820184,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 21.99049938692774,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 1,
+              "above30_rate_percent": 10.0,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "duration_selected": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 300.22520000000003,
+            "root": {
+              "duration_error_percent": 6.360636965365874,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 21.721195441136665,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 1,
+              "above30_rate_percent": 10.0,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "history_selected": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 300.22520000000003,
+            "root": {
+              "duration_error_percent": 6.360636965365874,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 21.60732080906702,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 1,
+              "above30_rate_percent": 10.0,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "trained_quality_head": {
+            "intended": 10,
+            "scorable": 10,
+            "fully_missing": 0,
+            "labeled_seconds": 300.22520000000003,
+            "root": {
+              "duration_error_percent": 6.678591575562298,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 23.394686264215323,
+              "recordings_above40": 1,
+              "above40_rate_percent": 10.0,
+              "recordings_above30": 3,
+              "above30_rate_percent": 30.0,
+              "exploratory_severe_above80": 0
+            }
+          }
+        },
+        "SS": {
+          "baseline": {
+            "intended": 13,
+            "scorable": 13,
+            "fully_missing": 0,
+            "labeled_seconds": 510.44320000000016,
+            "root": {
+              "duration_error_percent": 6.0310526729487,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 21.118050743928286,
+              "recordings_above40": 1,
+              "above40_rate_percent": 7.6923076923076925,
+              "recordings_above30": 4,
+              "above30_rate_percent": 30.76923076923077,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "soft_no_history": {
+            "intended": 13,
+            "scorable": 13,
+            "fully_missing": 0,
+            "labeled_seconds": 510.44320000000016,
+            "root": {
+              "duration_error_percent": 3.7561929100975444,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 20.634304398322513,
+              "recordings_above40": 1,
+              "above40_rate_percent": 7.6923076923076925,
+              "recordings_above30": 4,
+              "above30_rate_percent": 30.76923076923077,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "duration_selected": {
+            "intended": 13,
+            "scorable": 13,
+            "fully_missing": 0,
+            "labeled_seconds": 510.44320000000016,
+            "root": {
+              "duration_error_percent": 3.144597157250606,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 20.493305123159043,
+              "recordings_above40": 1,
+              "above40_rate_percent": 7.6923076923076925,
+              "recordings_above30": 4,
+              "above30_rate_percent": 30.76923076923077,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "history_selected": {
+            "intended": 13,
+            "scorable": 13,
+            "fully_missing": 0,
+            "labeled_seconds": 510.44320000000016,
+            "root": {
+              "duration_error_percent": 3.2435406841798575,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 20.62193170816706,
+              "recordings_above40": 1,
+              "above40_rate_percent": 7.6923076923076925,
+              "recordings_above30": 4,
+              "above30_rate_percent": 30.76923076923077,
+              "exploratory_severe_above80": 0
+            }
+          },
+          "trained_quality_head": {
+            "intended": 13,
+            "scorable": 13,
+            "fully_missing": 0,
+            "labeled_seconds": 510.44320000000016,
+            "root": {
+              "duration_error_percent": 3.892122469712256,
+              "recordings_above40": 0,
+              "above40_rate_percent": 0.0,
+              "recordings_above30": 0,
+              "above30_rate_percent": 0.0,
+              "exploratory_severe_above80": 0
+            },
+            "quality": {
+              "duration_error_percent": 20.953279482756326,
+              "recordings_above40": 1,
+              "above40_rate_percent": 7.6923076923076925,
+              "recordings_above30": 4,
+              "above30_rate_percent": 30.76923076923077,
+              "exploratory_severe_above80": 0
+            }
+          }
+        }
+      },
+      "quality_fits": 27,
+      "saved_quality_models": 3,
+      "saved_transition_models": 3,
+      "inner_no_fit_fallbacks": 0
+    },
+    "total_quality_fits": 92,
+    "total_saved_quality_models": 8,
+    "training_label_semantics": "Quality training targets use historical bass-augmented triad projection. This differs from strictly bass-stripped projection on26annotation spans/56.496104seconds. Unchanged root softmax does not mean unchanged decoded roots under joint root/quality argmax."
+  },
+  "decision": "Instrument tuning meets the development-only incidence target, but previously inspected diagnostic transfer is mixed. Root-only readout improves; true chord-quality performance remains above target. No global or untouched-confirmation success and no production adoption.",
+  "adopted": false,
+  "cost_boundary": "No paid compute, annotation or dataset services; existing assistant billing/electricity excluded. Existing local audio/checkpoint reused."
+}

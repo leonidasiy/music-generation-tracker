@@ -1,4 +1,8 @@
 <!-- passt-current-20261031 -->
+
+## 31October2026—tuning/root-focused bounded development execution
+46PaSST threshold/blend arms completed: groupeddevelopment88/292→73/292(25.00%), but new49inspecteddiagnostic15/47(31.91%) versusfixed14/47. All360savedchordcells replayed;60freshacousticrecaptures match originalbaseline. Softrootdurationerror24.67%→19.98%;16/60exceed30%rooterror. Duration/historycontrols and92smallquality-headfits completed(65arrangement-proxy+27content-familytransfer); neither solves triadquality29/60failure at historical40%tolerance. Tinytrainedhead rejected. Best-of25vocabularyoracle suggests a structuralquality floor evenwithbassstripped; independent count/vocabulary review retained; no broadconfirmation. No productionchange/globaltargetclaim. Currentpacket execution/tuning-and-chord-roots-20261031/todo.md; curated TUNING.md andtuning-root-summary.json prepared; exactpublication/liveverification is a separate gate.
+
 ## 2026-10-31T01:22:06.266853+00:00 — actual PaSST instrumentation comparison
 
 PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.

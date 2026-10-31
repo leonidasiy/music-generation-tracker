@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "instrument-presence-passt-matched-comparison",
-  "updated_at": "2026-10-31T01:22:06.266853+00:00",
+  "checkpoint": "tuning-and-root-focused-chord-development",
+  "updated_at": "2026-10-31T02:24:59.600218+00:00",
   "title": "Recognizer Research",
-  "phase": "PaSST instrument presence: mixed evidence; working candidate remains experimental",
-  "summary": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.",
+  "phase": "Threshold tuning and root-focused chords: development gains, overall target unconfirmed",
+  "summary": "Instrumentation tuning: 88/292 → 73/292 failures (25.00%) in grouped development; the previously inspected 49-clip diagnostic has 15/47 failures (31.91%), not confirmation. The soft chord readout reduces root-only duration error from 24.67% to 19.98%; 16/60 clips exceed 30% root error. Chord quality still has 29/60 failures at the provisional 40% tolerance. Learned history and 92 small quality-head fits did not beat the simpler readout. Original application unchanged; no broad sub-30% success or default adoption.",
   "publication_ready": false,
   "milestones": [
     {
@@ -265,9 +265,44 @@
       "status": "complete",
       "evidence_type": "10integration tests,49-cache parity,227tests/9skips per source copy and real paired full-report smoke",
       "detail": "Actual application unchanged. Corrected patch preserves current-global section subset. Wider329historical cases show FP55→79; keep candidate experimental. Longer inputs retain baseline; full-track validation and explicit production integration scope remain separate."
+    },
+    {
+      "id": "threshold-tuning-root-scope",
+      "title": "Owner permits measured tuning and conditional training",
+      "status": "complete",
+      "evidence_type": "Owner scope amendment; no performance claim",
+      "detail": "Strict<30%taskfailure target; inversion errors accepted. Root-only and root+quality remain distinct. Threshold selection development-only; original heldout results remain historical."
+    },
+    {
+      "id": "threshold-tuning-executed",
+      "title": "PaSST threshold/blend search completed",
+      "status": "complete",
+      "evidence_type": "46cached-score arms;5artist-grouped outerfolds;19partial-referenceclasses",
+      "detail": "88/292→73/292developmentfailures; selected headthreshold0.30/headweight0.75. New49inspecteddiagnostic15/47fails, worse thanfixed14/47; no default adoption."
+    },
+    {
+      "id": "chord-soft-history-executed",
+      "title": "Chord root and duration/history comparison completed",
+      "status": "complete",
+      "evidence_type": "60paired real acoustic captures; exactbaselineparity; trainedeventprior",
+      "detail": "Softrootdurationerror19.98% versusbaseline24.67%. Learnedhistory did not beatduration-only; both29/60triadfailures at provisional40%tolerance. Root-only is not quality correctness."
+    },
+    {
+      "id": "chord-quality-head-trained",
+      "title": "Small chord-quality head trained and rejected",
+      "status": "complete",
+      "evidence_type": "92supervisedfits;eightsavedmodels;3contentfamilytransfer plus15prefixsensitivity;fixedbackbone",
+      "detail": "Training-onlynormalizers;13coefficients/head. Quality29/60failures,3family durationerror45.37% versussoft44.89%. Restrictedvocabulary ceiling blocks strict<30%qualitytarget onthese references; no fullbackboneretraining or adoption."
     }
   ],
   "findings": [
+    {
+      "title": "Tuning helps development, not uniformly transfer",
+      "detail": "Instrument tuning meets the development-only incidence target, but previously inspected diagnostic transfer is mixed. Root-only readout improves; true chord-quality performance remains above target. No global or untouched-confirmation success and no production adoption.",
+      "confidence": "High for recorded counts; generalization unconfirmed",
+      "evidence_type": "Executed outputs and independently reviewed arithmetic",
+      "source": "TUNING.md; tuning-root-summary.json"
+    },
     {
       "title": "PaSST hybrid: fewer observed-reference failed recordings",
       "detail": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.",
@@ -444,12 +479,10 @@
     "No annotation-ready real recording, independently recruited pair of annotators, frozen operational chord tolerance or untouched diverse confirmation cohort. Metadata shape checks do not establish actual grants or reference quality."
   ],
   "next_steps": [
-    "Keep the rejected calibrator disabled; retain the PaSST result as bounded49-clip evidence, not a general full-song replacement.",
-    "Retain the exercised isolated PaSST integration as experimental: 10 integration tests, 49-cache parity, 227 tests with 9 skips per source copy and real paired full-report smoke are complete. Preserve inclusive0.20 and CURRENT-global section intersection; actual application adoption requires explicit scope and longer inputs retain baseline.",
-    "Freeze a full-track window/aggregation comparison and independent diverse reference panel before any broad instrument-detection claim.",
-    "Advance the separate chord event/duration/history comparison with matched acoustic evidence; literature support is not an executed chord improvement.",
-    "Keep instrument presence, section audibility, fine/family identity and melody role as separate reference tasks.",
-    "Communicate estimates before substantial runs. No paid annotation, paid data services or compute purchases; storage alert only below15GB free."
+    "Confirm simple soft-root readout on diverse licensed audio; root-only and quality outcomes remain separate.",
+    "Assess explicit richer chord vocabulary/omission semantics before larger quality retraining; fixedmajor/minor/Ncannotmeet currentqualityendpoint ceiling.",
+    "Validate tuned instrumental decisions on broader sources and separately freeze whole-songwindowaggregation.",
+    "No paid annotation/data services; retain required evidence and alert only below15GBfree."
   ],
   "agents": [
     {
@@ -479,6 +512,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-10-31T02:24:59.600218+00:00",
+      "title": "Threshold tuning, root readout and conditional small-head training executed",
+      "action": "46instrumentgridarms;360savedchordcells;60exact-baseline acousticrecaptures;duration/historycontrols;92smallqualityheadfits.",
+      "result": "Boundeddevelopmentfindings,mixedtransfer,negativequality-headresult;applicationunchanged."
+    },
     {
       "time": "2026-10-24T10:55:34.915135+00:00",
       "title": "Research execution authorized and dispatched",
@@ -1022,6 +1061,8 @@
     }
   ],
   "limits": [
+    "Current scope:allchordresults are60alreadyinspectedsolo-guitarclips; no broad or untouchedfinalconfirmation. Root-only forgiveness is not permission to forgivewrongquality.",
+    "Thresholds/hyperparameters are tunable with development-onlyselection; publishedoldfixedthresholdexperiments remainunchanged.",
     "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",
     "Synthetic controls test numerical behavior, not musical correctness.",
     "Old diagnostic recordings are not fresh confirmation material.",
