@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "temporal-quality-and-whole-song-diagnostic",
-  "updated_at": "2026-10-31T10:13:46.748654+00:00",
+  "checkpoint": "union-suppression-independent-reconstruction",
+  "updated_at": "2026-10-31T11:23:02.172706+00:00",
   "title": "Recognizer Research",
-  "phase": "Temporal smoothing and external whole-song diagnostic tested; instrument windows executed",
-  "summary": "Temporal chord smoothing leaves guitar failures at 26/60 while reducing events from 1,437 to 850. Four external classical whole songs were scored with predictions sealed before reference access. Instrument window study: baseline: 88/292, global_fixed: 73/292, mean: 86/292, max: 96/292, top2: 93/292, persistence: 82/292. Original application unchanged; broad sub-30% confirmation remains open.",
+  "phase": "Union suppression reconstructed; below practical gain gate",
+  "summary": "Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted. Prior chord/crop/training outcomes remain retained; broad confirmation open.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "union-suppression",
+      "title": "Union suppression independently reconstructed—not promoted",
+      "status": "complete",
+      "evidence_type": "Standalone raw-cache, partial-label and107-panel reconstruction",
+      "detail": "Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted."
+    },
     {
       "id": "audit-design",
       "title": "Audit and research design",
@@ -555,10 +562,9 @@
     "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
   ],
   "next_steps": [
-    "Retain the existing global instrument comparator; do not promote crop pooling or the rejected masked head.",
-    "Review the separately reference-informed contract-oracle diagnostic before using it to prioritize mapping, upstream admission or further representation work; it is not achieved classifier accuracy.",
-    "Broaden lawful independent genre/audio-type references and establish root/quality utility tolerances; overall below30% remains unconfirmed.",
-    "Keep the original application unchanged until production qualification; no paid services; disk alerts below15GB."
+    "Next bounded research task: fixed PaSST-only all19 coarse-label presence comparator from existing cached scores, distinct from exact-subtype reporting. Freeze literal coarse ontology, .3 threshold, unchanged Music/null gates and all295 inputs before scoring; compare global73/292 and suppression66/292 without retuning. No new waveform inference, models, acquisition or production edits; confirm remaining cycle budget first.",
+    "Broaden lawful independent genre/audio-type references; partial ten-second labels do not establish whole-song precision or recall.",
+    "Preserve qualified global comparator and original application; production adoption separately gated."
   ],
   "agents": [
     {
@@ -588,6 +594,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-10-31T11:23:02.172706+00:00",
+      "title": "Union suppression independent reconstruction completed",
+      "action": "590 predictions,295 recordings,19 partial classes and107 panels verified without rerunning inference.",
+      "result": "Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted."
+    },
     {
       "time": "2026-10-31T10:13:46.748654+00:00",
       "title": "Masked instrument-head independent review completed",
@@ -1171,10 +1183,10 @@
     "Recording-level metadata review is not legal clearance. Only humans can supply independent audible reference judgments here; future reference rights/consent and all confirmatory tolerances remain unresolved. The response checker cannot verify human independence or musical truth.",
     "Current storage authorization (31 October): justified storage and demonstrably disposable cleanup are allowed; alert only below 15 GB free. Required source/data/checkpoints/evidence are retained. Earlier dated 30 GiB pauses are historical.",
     "The prior recording-clearance commit was pushed but failed its live publication gate; last verified prior five-file checkpoint remained the older chord-readiness page. Current publication is only established by exact deployment/live read-back, never by a push.",
-    "Primary failure means at least one disagreement on an observed reference class; unknown/unannotated classes are never negatives. Two reference-unscorable recordings remain in inference accounting.",
+    "Primary failure means at least one disagreement on an observed reference class; unknown/unannotated classes are never negatives. Three reference-unscorable recordings remain in current295-input inference accounting (292scorable); the historical49-input diagnostic had two.",
     "PaSST publisher TEST served validation/checkpoint selection. New local artist groups do not imply independence from model selection, compositions or pretrained exposure.",
     "The descriptive artist-cluster95% interval for candidate-minus-baseline failure incidence spans -25.00 to +2.44 percentage points; it includes no difference. No population-level improvement is established.",
-    "Only eleven existing one-to-one singleton names are rescored; eight coarse/multimember classes and Vocal/world vocabulary are unchanged. No new instrument rows are invented.",
+    "Historical global comparator rescored only eleven existing singleton names. The current experimental arm additionally suppresses eight coarse/multimember classes, without boosting exact subtypes or inventing rows. Vocal/world vocabulary stays unchanged; no production adoption.",
     "These results concern ten-second clips. The prepared local integration must fall back on longer inputs; a first-window score must not be assigned to an entire song. Full-track pooling and section audibility remain separate experiments.",
     "Genres and marked/not-marked instrumental are overlapping track metadata, not verified excerpt vocal/solo/live/studio conditions. Broad independent final audio-condition coverage remains open.",
     "Source licence and conditional author weight permission do not establish commercial/hosted/redistribution clearance. No paid annotation/data/compute service was used; existing assistant billing and electricity are excluded.",

@@ -31,4 +31,16 @@ The masked 768D follow-up has now completed training and independent verificatio
 
 Training used train-only normalization, unknown-label masks, five artist-grouped outer folds and three inner folds. The corpus ledger has60 bank fits (45 inner+15 outer),522 optimizer returns,138 unsupported-class fallbacks and60 saved bank files. Independent replay matched15,285 saved head rows and240 actual-feature null projections; no null projection added names. Learned severe failures are11/10/11 versus global11; missing0 in every arm. The inspected cohort is not untouched confirmation. [Training ledger and independent reconstruction, 31 Oct 2026; Internal verification; HIGH scoped confidence]
 
-A separately frozen reference-informed contract-oracle diagnostic is under independent review. It is not a deployable method, achieved accuracy, a performance gain or proof of an acoustic cause. [Diagnostic protocol, 31 Oct 2026; Internal protocol; MEDIUM pending independent review]
+The separately frozen reference-informed contract-oracle diagnostic has passed independent numerical review; its label-assisted bound is not achieved performance. It is not a deployable method, achieved accuracy, a performance gain or proof of an acoustic cause. [Independent constrained diagnostic review, 31 Oct 2026; Internal verification; HIGH within constrained scope]
+
+## Independently reconstructed union suppression —31 October 2026
+
+Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted. [Exact two-arm reconstruction, 31 Oct 2026; Internal experiment/independent verification; HIGH scoped computational confidence, generalization unconfirmed]
+
+The reviewer reconstructed590 predictions,19 partial classes/703 observed pairs and107 descriptive overlapping panels. All295 raw-cache inputs and retained100+remaining195 recovery provenance were verified. Original25MB storage-stop failure remains preserved; separate compact recovery completed under50MB task cap. No waveform inference or fits. Four nulls preserve nonaddition, but retain some existing false positives; they are not all-empty controls. Unknown labels remain unscored. [Independent numerical review, 31 Oct 2026; Internal verification; HIGH scoped confidence]
+
+Fewer false positives do not imply better recall: bass, mallet percussion and organ each lose one true positive. Keep strongest qualified global comparator as the adoption control; suppression is a below-gate experimental reference, not broad confirmation. [Independent class reconstruction, 31 Oct 2026; Internal verification; HIGH scoped confidence]
+
+Next bounded research task: fixed PaSST-only all19 coarse-label presence comparator from existing cached scores, distinct from exact-subtype reporting. Freeze literal coarse ontology, .3 threshold, unchanged Music/null gates and all295 inputs before scoring; compare global73/292 and suppression66/292 without retuning. No new waveform inference, models, acquisition or production edits; confirm remaining cycle budget first.
+
+[All19-class metrics and107 category comparisons](union-summary.json). No recording/artist identifiers, raw media or reference intervals are published.

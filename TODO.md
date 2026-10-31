@@ -1,3 +1,11 @@
+<!-- union-current-20261031 -->
+## Union-suppression numerical closure
+Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted.
+- [x] Independent numerical reconstruction and parent source acceptance.
+- [ ] Public exact-live closure.
+- [ ] Next bounded research task: fixed PaSST-only all19 coarse-label presence comparator from existing cached scores, distinct from exact-subtype reporting. Freeze literal coarse ontology, .3 threshold, unchanged Music/null gates and all295 inputs before scoring; compare global73/292 and suppression66/292 without retuning. No new waveform inference, models, acquisition or production edits; confirm remaining cycle budget first.
+<!-- end union-current-20261031 -->
+
 <!-- autonomous-improvement-20261031 -->
 ## Current autonomous improvement milestone —31October2026
 
@@ -30,7 +38,7 @@ PaSST-assisted instrument presence reduced observed-reference failure recordings
 - [x] Close isolated integration regression/full-report smoke; keep actual application unchanged and default adoption deferred.
 - [x] Published the reviewed PaSST metrics milestone and verified seven exact live artifacts plus desktop/mobile refresh/reload checks (metrics commit def84dd75beda260252f6198dd67c5eb36705990).
 - [ ] Independently qualify full-song aggregation and diverse audio conditions.
-- [ ] Run the separately frozen chord event-sequence experiment after instrumentation closure.
+- [x] Run and independently reconstruct the separately frozen temporal chord event-sequence experiment;26/60primaryfailures unchanged.
 <!-- end passt-current-20261031 -->
 
 ---

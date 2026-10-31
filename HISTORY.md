@@ -1,3 +1,16 @@
+
+## Independently reconstructed union suppression —31 October 2026
+
+Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted. [Exact two-arm reconstruction, 31 Oct 2026; Internal experiment/independent verification; HIGH scoped computational confidence, generalization unconfirmed]
+
+The reviewer reconstructed590 predictions,19 partial classes/703 observed pairs and107 descriptive overlapping panels. All295 raw-cache inputs and retained100+remaining195 recovery provenance were verified. Original25MB storage-stop failure remains preserved; separate compact recovery completed under50MB task cap. No waveform inference or fits. Four nulls preserve nonaddition, but retain some existing false positives; they are not all-empty controls. Unknown labels remain unscored. [Independent numerical review, 31 Oct 2026; Internal verification; HIGH scoped confidence]
+
+Fewer false positives do not imply better recall: bass, mallet percussion and organ each lose one true positive. Keep strongest qualified global comparator as the adoption control; suppression is a below-gate experimental reference, not broad confirmation. [Independent class reconstruction, 31 Oct 2026; Internal verification; HIGH scoped confidence]
+
+Next bounded research task: fixed PaSST-only all19 coarse-label presence comparator from existing cached scores, distinct from exact-subtype reporting. Freeze literal coarse ontology, .3 threshold, unchanged Music/null gates and all295 inputs before scoring; compare global73/292 and suppression66/292 without retuning. No new waveform inference, models, acquisition or production edits; confirm remaining cycle budget first.
+
+[All19-class metrics and107 category comparisons](recognizer-research/union-summary.json). No recording/artist identifiers, raw media or reference intervals are published.
+
 <!-- autonomous-improvement-20261031 -->
 ## Current autonomous improvement milestone —31October2026
 
