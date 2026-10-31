@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "coarse19-independent-nonpromotion",
-  "updated_at": "2026-10-31T12:58:38.977536+00:00",
+  "checkpoint": "chord-hpss-implementation-smoke",
+  "updated_at": "2026-10-31T13:43:33.535236+00:00",
   "title": "Recognizer Research",
-  "phase": "Coarse19 reconstructed; severe errors reject promotion",
-  "summary": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation.",
+  "phase": "Chord preprocessing implementation verified; reference accuracy not yet scored",
+  "summary": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. New preprocessing smoke: one exposed recording, four real forwards, exact original parity; no accuracy or gain measured.",
   "publication_ready": false,
   "milestones": [
     {
@@ -370,6 +370,13 @@
       "status": "complete",
       "evidence_type": "60 saved bank fits; independent coefficient, mask, grouping, loss and prediction reconstruction",
       "detail": "L2 .01/.1/1: 88/86/89 failed recordings versus global73/292. All five artist-grouped outer folds select global. 522 optimizer returns,138 unsupported fallbacks,240 null projections with no added names; no new backbone inference or adoption."
+    },
+    {
+      "id": "chord-hpss-smoke",
+      "title": "Chord harmonic-emphasis frontend: actual paired smoke verified",
+      "status": "complete",
+      "evidence_type": "Fresh existing-model waveform inference; independent saved-waveform, padded-output, clock and decoder reconstruction",
+      "detail": "One previously exposed guitar recording; four actual forwards (two per arm),242 frames per arm. Original waveform, five cached arrays and native events reproduce exactly. Fixed 50%original+50%HPSS harmonic changes30 raw root-state frames; native events9 to7. These changes are NOT accuracy measurements or a performance gain. No fitting, download or adoption."
     }
   ],
   "findings": [
@@ -576,9 +583,9 @@
     "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
   ],
   "next_steps": [
-    "Next bounded task: fresh task-specific primary/release check and read-only existing feature/preprocessing inventory, then freeze one intervention-isolating preprocessing or representation pilot with a separate time/storage budget before new inference. Do not repeat completed cached coarse/window/head runs. Broad lawful genre/audio-type-diverse and whole-song confirmation remains open.",
-    "Keep qualified global comparator; no production source writes.",
-    "Independent diverse/whole-song reference admission and final tolerances remain separate gates."
+    "Freeze a broader matched original-versus-fixed-HPSS evaluation before reference scoring; retain root-only, strict triad, expanded full-pitch endpoints and recording-failure incidence.",
+    "Treat the smoke as compatibility only; broad genre/audio-type reference coverage and checkpoint exposure remain unresolved.",
+    "Retain all losing instrument readouts as nonpromoted; no production changes or paid services."
   ],
   "agents": [
     {
@@ -608,6 +615,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-10-31T13:43:33.535236+00:00",
+      "title": "A13 actual chord-preprocessing smoke independently verified",
+      "action": "Executed one fixed HPSS50 blend and mandatory unchanged-mixture control with the same existing chord model.",
+      "result": "Four actual forwards; exact baseline parity and preserved clocks. No reference accuracy measured; no gain or adoption claim."
+    },
     {
       "time": "2026-10-31T12:58:38.977536+00:00",
       "title": "Coarse19 numerical review and nonpromotion disposition complete",

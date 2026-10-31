@@ -289,8 +289,8 @@
     "new_checkpoint_downloads": false,
     "paid_services": false
   },
-  "checkpoint": "temporal-quality-and-whole-song-diagnostic",
-  "updated_at": "2026-10-31T10:13:46.748654+00:00",
+  "checkpoint": "chord-hpss-implementation-smoke",
+  "updated_at": "2026-10-31T13:43:33.535236+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25439,5 +25439,52 @@
       "Overlapping publisher raw genres and metadata flags are descriptive, not independent broad confirmation.",
       "All five outer folds selected the existing global comparator; no learned arm promoted."
     ]
+  },
+  "chord_preprocessing_smoke": {
+    "status": "independently_verified_implementation_smoke_not_accuracy",
+    "recordings": 1,
+    "arms": 2,
+    "waveform_forwards": 4,
+    "forwards_per_arm": 2,
+    "frames_per_arm": 242,
+    "seconds_audio": 22.32439909297052,
+    "baseline_exact_five_array_parity": true,
+    "baseline_exact_waveform_and_native_events": true,
+    "equal_sample_frame_clock": true,
+    "full_padded_outputs_retained": true,
+    "adapter_control_tests": 15,
+    "guard_control_tests": 9,
+    "native_event_counts": {
+      "original": 9,
+      "hpss_softmix": 7
+    },
+    "changed_raw_root_argmax_frames": 30,
+    "supervised_wall_seconds": 3.6088912079999997,
+    "supervised_peak_rss_bytes": 617103360,
+    "fits": 0,
+    "new_models_downloaded": 0,
+    "paid_services": false,
+    "reference_scores_computed": false,
+    "qualifying_gain": false,
+    "production_adoption": false,
+    "independent_confirmation": false,
+    "recipe": {
+      "original": 0.5,
+      "harmonic": 0.5,
+      "sr": 22050,
+      "stft_fft": 2048,
+      "stft_hop": 512,
+      "hpss_kernels": [
+        31,
+        31
+      ],
+      "hpss_power": 2,
+      "hpss_margins": [
+        1,
+        1
+      ],
+      "renormalize_before_model": false
+    },
+    "claim_boundary": "One previously exposed guitar recording verifies the waveform-to-model path only. Changed roots and fewer native events are neither accuracy improvements nor regressions without scoring. Broad genre/audio-type confirmation and any production adoption remain open."
   }
 }

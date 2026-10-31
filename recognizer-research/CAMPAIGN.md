@@ -1,3 +1,9 @@
+<!-- chord-preprocessing-a13 -->
+## A13 chord frontend smoke
+
+Actual one-recording paired waveform inference and independent saved-output verification are complete:4 forwards, exact original parity, unchanged clocks. This is implementation compatibility only, not an accuracy gain. See [the bounded smoke report](CHORD-PREPROCESSING.md).
+<!-- end chord-preprocessing-a13 -->
+
 # Instrument and chord improvement loop — 31 October 2026
 
 ## Executive summary

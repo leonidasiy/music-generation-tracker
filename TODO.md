@@ -1,3 +1,9 @@
+<!-- chord-preprocessing-a13 -->
+## A13 chord-preprocessing execution
+
+One fixed HPSS50 blend and unchanged-mixture control were actually run and independently verified on one existing exposed recording.4 real forwards, exact original parity, equal clocks; no reference scoring, gain, broad confirmation or production adoption. Next: prospectively freeze a wider matched diagnostic before scoring. [Bounded report](recognizer-research/CHORD-PREPROCESSING.md).
+<!-- end chord-preprocessing-a13 -->
+
 ## Current coarse19 decision —31 October 2026
 
 Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation.

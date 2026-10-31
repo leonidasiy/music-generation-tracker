@@ -1,3 +1,8 @@
+<!-- chord-preprocessing-a13 -->
+## A13 chord-preprocessing execution
+
+One fixed HPSS50 blend and unchanged-mixture control were actually run and independently verified on one existing exposed recording.4 real forwards, exact original parity, equal clocks; no reference scoring, gain, broad confirmation or production adoption. Next: prospectively freeze a wider matched diagnostic before scoring. [Bounded report](recognizer-research/CHORD-PREPROCESSING.md).
+<!-- end chord-preprocessing-a13 -->
 
 ## Coarse19 disposition —31 October 2026
 
