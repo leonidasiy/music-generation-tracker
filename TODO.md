@@ -1,3 +1,19 @@
+<!-- autonomous-improvement-20261031 -->
+## Current autonomous improvement milestone —31October2026
+
+Temporal chord smoothing leaves guitar failures at 26/60 while reducing events from 1,437 to 850. Four external classical whole songs were scored with predictions sealed before reference access. Instrument window study: baseline: 88/292, global_fixed: 73/292, mean: 86/292, max: 96/292, top2: 93/292, persistence: 82/292. Original application unchanged; broad sub-30% confirmation remains open.
+
+See [current detailed comparison](recognizer-research/CAMPAIGN.md) and [curated aggregates](recognizer-research/autonomous-summary.json). Internal scientificreviews pass; exactpublic security/browser/deployment gates are separately recorded. The masked 768D follow-up has now completed training and independent verification: learned arms give88/86/89 failed recordings versus global73/292, and all five grouped outer folds retain global. All learned arms are rejected; no new backbone inference or production adoption.
+<!-- end autonomous-improvement-20261031 -->
+
+<!-- extended-decoding-20261031 -->
+## Current richer-decoding increment —31October2026
+
+Class-aware instrument tuning: 74/292 failures versus 73/292 for the simpler global setting; reject adoption. Fixed 181-label root-first chords improve expanded full-pitch error from 59.09% to 51.42%, but strict quality still fails 26/60 clips. Root error of 19.94% matches the prior raw-root control. The new quality head, tested with 27 corpus fits, fails 27/60 and is rejected. Original application unchanged; no broad sub-30% confirmation.
+
+27corpus multinomialfits/32total optimizercalls/28model files; no acoustic-backbone retraining. An additive extension-aware full-pitch rescore preserves historical encoding/scores; main quality denominator1832.6404seconds. Cache-backed integration9tests/180projections is not full-app testing. Sixsourcefamilies inspected; two prospective recent full songs total14,651,020bytes,NCaudio/reference reuse unresolved; no new audio/model acquired. See [latest detailed report](recognizer-research/EXTENDED.md) and [curated aggregates](recognizer-research/extended-decoding-summary.json). Overall target and production adoption remain open.
+<!-- end extended-decoding-20261031 -->
+
 <!-- passt-current-20261031 -->
 
 ## 31October2026—tuning/root-focused bounded development execution

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "tuning-and-root-focused-chord-development",
-  "updated_at": "2026-10-31T02:24:59.600218+00:00",
+  "checkpoint": "temporal-quality-and-whole-song-diagnostic",
+  "updated_at": "2026-10-31T10:13:46.748654+00:00",
   "title": "Recognizer Research",
-  "phase": "Threshold tuning and root-focused chords: development gains, overall target unconfirmed",
-  "summary": "Instrumentation tuning: 88/292 → 73/292 failures (25.00%) in grouped development; the previously inspected 49-clip diagnostic has 15/47 failures (31.91%), not confirmation. The soft chord readout reduces root-only duration error from 24.67% to 19.98%; 16/60 clips exceed 30% root error. Chord quality still has 29/60 failures at the provisional 40% tolerance. Learned history and 92 small quality-head fits did not beat the simpler readout. Original application unchanged; no broad sub-30% success or default adoption.",
+  "phase": "Temporal smoothing and external whole-song diagnostic tested; instrument windows executed",
+  "summary": "Temporal chord smoothing leaves guitar failures at 26/60 while reducing events from 1,437 to 850. Four external classical whole songs were scored with predictions sealed before reference access. Instrument window study: baseline: 88/292, global_fixed: 73/292, mean: 86/292, max: 96/292, top2: 93/292, persistence: 82/292. Original application unchanged; broad sub-30% confirmation remains open.",
   "publication_ready": false,
   "milestones": [
     {
@@ -61,7 +61,7 @@
       "title": "Independent musical confirmation",
       "status": "blocked",
       "evidence_type": "Missing empirical evidence",
-      "detail": "The local inventory establishes zero presently eligible new composition-independent, rights-evidenced confirmation sources; shortfall: twelve for the planned feasibility batch. Two independent musical annotators are also not yet recruited."
+      "detail": "External4songclassicaldiagnosticexecuted; broadgenre/audio-type/artistindependence andcheckpointoverlapremainunconfirmed. Thisdoesnotclosefinalconfirmation."
     },
     {
       "id": "training-preflight",
@@ -293,9 +293,86 @@
       "status": "complete",
       "evidence_type": "92supervisedfits;eightsavedmodels;3contentfamilytransfer plus15prefixsensitivity;fixedbackbone",
       "detail": "Training-onlynormalizers;13coefficients/head. Quality29/60failures,3family durationerror45.37% versussoft44.89%. Restrictedvocabulary ceiling blocks strict<30%qualitytarget onthese references; no fullbackboneretraining or adoption."
+    },
+    {
+      "id": "extended-instrument-classes",
+      "title": "Class-aware instrument thresholds tested and rejected",
+      "status": "complete",
+      "evidence_type": "Nested artist-grouped cached-score policy fitting and independent reconstruction",
+      "detail": "Cross-fitted74/292 versus global73/292; optimistic64and inspected13/47do not justify adoption. Existing11-name and current-global section rules preserved."
+    },
+    {
+      "id": "extended-chord-vocabulary",
+      "title": "Richer root-first chord vocabulary executed",
+      "status": "complete",
+      "evidence_type": "Fixed181labels; identical cached logits;3content-family sensitivity",
+      "detail": "Expanded full-pitch error59.09%→51.42%; strict failures26/60remain above target. Rootfirst matches priorrawroot; no new acoustic model."
+    },
+    {
+      "id": "strict-multiclass-training",
+      "title": "Strict15-class quality head trained and rejected",
+      "status": "complete",
+      "evidence_type": "27corpusfits plus1smoke/4unitfits;28savedmodels;independent replay",
+      "detail": "Selected trained strict27/60 versus fixedrich26/60. Targets preserveomissions/expandedextensions; no acoustic backbone training."
+    },
+    {
+      "id": "extended-semantic-correction",
+      "title": "Extended-quality scoring corrected without rewriting history",
+      "status": "complete",
+      "evidence_type": "BehavioralRED/GREEN and additive1440cellreplay",
+      "detail": "Oldfullqualityreduces9/11/13shorthand; newexpandedfullpitchmetric kept separately. Root/triad scores and frozen selections unchanged."
+    },
+    {
+      "id": "broader-source-preflight",
+      "title": "Broader source and whole-song metadata preflight",
+      "status": "complete",
+      "evidence_type": "Sixcandidatefamilies;publisherlicenses/headers;noaudioacquisition",
+      "detail": "Smallest prospective2songpair14.65MB,CCBY-NC4audio; annotation reuse/provenance and sampleoverlap unresolved. Notdiversefinalconfirmation."
+    },
+    {
+      "id": "temporal-quality-followup",
+      "title": "Root-preserving temporal quality decoder: primary unchanged",
+      "status": "complete",
+      "evidence_type": "Actual 60-case cached decoding; independent semantic/frame replay",
+      "detail": "26/60 strict failures unchanged; 1,437 to 850 events. Expanded full-pitch error: 51.42% to 50.18%; 31/60 failures unchanged. Secondary improvement, not adoption."
+    },
+    {
+      "id": "external-whole-song-diagnostic",
+      "title": "Four actual external whole-song chord diagnostics completed",
+      "status": "complete",
+      "evidence_type": "Bounded lawful acquisition, new waveform inference, pre-reference sealed predictions, independent 80-cell review",
+      "detail": "Four classical voice-and-piano songs; 653 known-reference seconds. Original/soft/rich/temporal strict failures: 1/0/1/1; full-pitch failures: 4/3/2/2. Four clustered songs are not broad confirmation."
+    },
+    {
+      "id": "instrument-crop-execution",
+      "title": "Instrument crop pooling and embeddings actually extracted",
+      "status": "complete",
+      "evidence_type": "48-forward controls-first pilot; 897 total forwards; independent 295-case / 19-class scoring",
+      "detail": "baseline: 88/292, global_fixed: 73/292, mean: 86/292, max: 96/292, top2: 93/292, persistence: 82/292. All cropped readouts lose to the strongest global comparator. No whole-song or section-accuracy claim."
+    },
+    {
+      "id": "masked-feature-training",
+      "title": "Masked 768D instrument head trained, independently verified and rejected",
+      "status": "complete",
+      "evidence_type": "60 saved bank fits; independent coefficient, mask, grouping, loss and prediction reconstruction",
+      "detail": "L2 .01/.1/1: 88/86/89 failed recordings versus global73/292. All five artist-grouped outer folds select global. 522 optimizer returns,138 unsupported fallbacks,240 null projections with no added names; no new backbone inference or adoption."
     }
   ],
   "findings": [
+    {
+      "title": "Temporal and external diagnostic endpoints disagree; no automatic promotion",
+      "detail": "Temporal chord smoothing leaves guitar failures at 26/60 while reducing events from 1,437 to 850. Four external classical whole songs were scored with predictions sealed before reference access. Instrument window study: baseline: 88/292, global_fixed: 73/292, mean: 86/292, max: 96/292, top2: 93/292, persistence: 82/292. Original application unchanged; broad sub-30% confirmation remains open.",
+      "confidence": "High scoped computation; generalization unconfirmed",
+      "evidence_type": "Executed comparisons and independent reconstruction",
+      "source": "CAMPAIGN.md; autonomous-summary.json"
+    },
+    {
+      "title": "Richer labels help content matching; extra tuning/training does not win",
+      "detail": "Class-aware instrument tuning: 74/292 failures versus 73/292 for the simpler global setting; reject adoption. Fixed 181-label root-first chords improve expanded full-pitch error from 59.09% to 51.42%, but strict quality still fails 26/60 clips. Root error of 19.94% matches the prior raw-root control. The new quality head, tested with 27 corpus fits, fails 27/60 and is rejected. Original application unchanged; no broad sub-30% confirmation.",
+      "confidence": "High computation; generalization unconfirmed",
+      "evidence_type": "Executed matched-cache experiments; independent reconstruction",
+      "source": "EXTENDED.md; extended-decoding-summary.json"
+    },
     {
       "title": "Tuning helps development, not uniformly transfer",
       "detail": "Instrument tuning meets the development-only incidence target, but previously inspected diagnostic transfer is mixed. Root-only readout improves; true chord-quality performance remains above target. No global or untouched-confirmation success and no production adoption.",
@@ -473,16 +550,15 @@
     }
   ],
   "blockers": [
-    "No newly admitted independent rights-evidenced confirmation recordings or recruited two-person blinded annotation panel. Candidate source inventories are not a final benchmark.",
-    "Broad final genre/audio-type coverage, performer/composition grouping and checkpoint pretraining exclusions remain mandatory. Some candidate releases have unresolved or conflicting terms.",
-    "Docker image build and authenticated hosted release testing have not run. Static packaging checks are not image-build qualification. The hosted application has not been updated by this package.",
-    "No annotation-ready real recording, independently recruited pair of annotators, frozen operational chord tolerance or untouched diverse confirmation cohort. Metadata shape checks do not establish actual grants or reference quality."
+    "No broadindependentgenre/audio-typefinalconfirmation orvalidatedfinalchordutilitytolerance.",
+    "Instrumentreferencesremainpartialcliplabels,notexhaustivewhole-song/sectioninventories.",
+    "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
   ],
   "next_steps": [
-    "Confirm simple soft-root readout on diverse licensed audio; root-only and quality outcomes remain separate.",
-    "Assess explicit richer chord vocabulary/omission semantics before larger quality retraining; fixedmajor/minor/Ncannotmeet currentqualityendpoint ceiling.",
-    "Validate tuned instrumental decisions on broader sources and separately freeze whole-songwindowaggregation.",
-    "No paid annotation/data services; retain required evidence and alert only below15GBfree."
+    "Retain the existing global instrument comparator; do not promote crop pooling or the rejected masked head.",
+    "Review the separately reference-informed contract-oracle diagnostic before using it to prioritize mapping, upstream admission or further representation work; it is not achieved classifier accuracy.",
+    "Broaden lawful independent genre/audio-type references and establish root/quality utility tolerances; overall below30% remains unconfirmed.",
+    "Keep the original application unchanged until production qualification; no paid services; disk alerts below15GB."
   ],
   "agents": [
     {
@@ -512,6 +588,24 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-10-31T10:13:46.748654+00:00",
+      "title": "Masked instrument-head independent review completed",
+      "action": "Actual bounded masked768D fitting followed by independent saved-coefficient reconstruction.",
+      "result": "All learned arms lose to global73/292; five folds retain global. No production adoption or broad confirmation."
+    },
+    {
+      "time": "2026-10-31T09:38:22.346704+00:00",
+      "title": "Temporal decoder, external whole songs and instrument crop comparison completed",
+      "action": "Actualcachedtemporaldecoding,newlicensed4songwaveforms,pre-referencecandidateexport/CSVscoring,and897instrumentforwards.",
+      "result": "Allprimarycomparators/negative-transferkept; independentarithmetic/sourcechecks; originalappunchanged, broadtargetopen."
+    },
+    {
+      "time": "2026-10-31T08:04:59.603964+00:00",
+      "title": "Richer vocabulary, class-aware thresholds and strict quality training closed",
+      "action": "Executed cached instrument selection,181labeldecoding,27corpusfits,1440cellsemanticreplay and180cache-backedreportprojections.",
+      "result": "Retainfixedrichresearchcandidate; rejectextra threshold/headcomplexity; applicationunchanged; broadtargetopen."
+    },
     {
       "time": "2026-10-31T02:24:59.600218+00:00",
       "title": "Threshold tuning, root readout and conditional small-head training executed",

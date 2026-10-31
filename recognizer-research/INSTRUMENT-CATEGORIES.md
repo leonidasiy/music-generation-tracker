@@ -1,0 +1,225 @@
+# Instrument crop study: descriptive category results
+
+These are overlapping publisher raw genres and metadata flags on inspected 10-second clips, not an inferred broad taxonomy or whole-song truth. All six fixed arms are reported. Each cell is failed/scorable recordings; sparse categories are descriptive only and cannot establish generalization. Artist identities and recording identifiers are not published.
+
+- **metadata_instrumental/0**: baseline 79/259, global_fixed 65/259, mean 76/259, max 87/259, top2 83/259, persistence 73/259
+- **metadata_instrumental/1**: baseline 9/33, global_fixed 8/33, mean 10/33, max 9/33, top2 10/33, persistence 9/33
+- **original_split/fit**: baseline 61/204, global_fixed 51/204, mean 61/204, max 72/204, top2 67/204, persistence 57/204
+- **original_split/selection**: baseline 27/88, global_fixed 22/88, mean 25/88, max 24/88, top2 26/88, persistence 25/88
+- **raw_genre/Alternative Hip-Hop**: baseline 0/2, global_fixed 0/2, mean 0/2, max 0/2, top2 0/2, persistence 0/2
+- **raw_genre/Ambient**: baseline 8/26, global_fixed 7/26, mean 8/26, max 8/26, top2 8/26, persistence 10/26
+- **raw_genre/Ambient Electronic**: baseline 2/7, global_fixed 2/7, mean 4/7, max 4/7, top2 4/7, persistence 3/7
+- **raw_genre/Americana**: baseline 0/2, global_fixed 0/2, mean 0/2, max 0/2, top2 0/2, persistence 0/2
+- **raw_genre/Asia-Far East**: baseline 2/2, global_fixed 0/2, mean 1/2, max 1/2, top2 1/2, persistence 0/2
+- **raw_genre/Audio Collage**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Avant-Garde**: baseline 1/11, global_fixed 1/11, mean 1/11, max 1/11, top2 1/11, persistence 1/11
+- **raw_genre/Black-Metal**: baseline 0/2, global_fixed 0/2, mean 0/2, max 0/2, top2 0/2, persistence 0/2
+- **raw_genre/Blues**: baseline 0/3, global_fixed 0/3, mean 0/3, max 0/3, top2 0/3, persistence 0/3
+- **raw_genre/Breakcore - Hard**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Chamber Music**: baseline 1/1, global_fixed 1/1, mean 1/1, max 1/1, top2 1/1, persistence 1/1
+- **raw_genre/Chill-out**: baseline 1/2, global_fixed 1/2, mean 1/2, max 1/2, top2 1/2, persistence 1/2
+- **raw_genre/Chip Music**: baseline 0/5, global_fixed 0/5, mean 0/5, max 0/5, top2 0/5, persistence 0/5
+- **raw_genre/Chiptune**: baseline 3/6, global_fixed 1/6, mean 1/6, max 1/6, top2 1/6, persistence 1/6
+- **raw_genre/Choral Music**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Classical**: baseline 0/6, global_fixed 0/6, mean 0/6, max 0/6, top2 0/6, persistence 0/6
+- **raw_genre/Comedy**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Composed Music**: baseline 0/3, global_fixed 0/3, mean 0/3, max 0/3, top2 0/3, persistence 0/3
+- **raw_genre/Contemporary Classical**: baseline 3/8, global_fixed 3/8, mean 3/8, max 3/8, top2 3/8, persistence 3/8
+- **raw_genre/Country**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Cumbia**: baseline 1/1, global_fixed 1/1, mean 1/1, max 1/1, top2 1/1, persistence 1/1
+- **raw_genre/Death-Metal**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Downtempo**: baseline 1/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Drone**: baseline 0/4, global_fixed 0/4, mean 0/4, max 0/4, top2 0/4, persistence 0/4
+- **raw_genre/Drum & Bass**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Dubstep**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Easy Listening**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Electro-Punk**: baseline 0/2, global_fixed 0/2, mean 0/2, max 0/2, top2 0/2, persistence 0/2
+- **raw_genre/Electroacoustic**: baseline 0/4, global_fixed 0/4, mean 1/4, max 1/4, top2 1/4, persistence 0/4
+- **raw_genre/Electronic**: baseline 12/31, global_fixed 5/31, mean 6/31, max 7/31, top2 7/31, persistence 5/31
+- **raw_genre/Europe**: baseline 4/13, global_fixed 4/13, mean 6/13, max 6/13, top2 7/13, persistence 5/13
+- **raw_genre/Experimental**: baseline 15/50, global_fixed 12/50, mean 13/50, max 13/50, top2 13/50, persistence 12/50
+- **raw_genre/Experimental Pop**: baseline 3/10, global_fixed 2/10, mean 3/10, max 5/10, top2 3/10, persistence 3/10
+- **raw_genre/Field Recordings**: baseline 1/2, global_fixed 1/2, mean 1/2, max 1/2, top2 1/2, persistence 1/2
+- **raw_genre/Folk**: baseline 4/14, global_fixed 3/14, mean 3/14, max 3/14, top2 3/14, persistence 2/14
+- **raw_genre/Freak-Folk**: baseline 2/6, global_fixed 1/6, mean 1/6, max 1/6, top2 1/6, persistence 1/6
+- **raw_genre/Free-Folk**: baseline 2/4, global_fixed 2/4, mean 2/4, max 2/4, top2 2/4, persistence 2/4
+- **raw_genre/Free-Jazz**: baseline 0/2, global_fixed 0/2, mean 0/2, max 0/2, top2 0/2, persistence 0/2
+- **raw_genre/French**: baseline 1/1, global_fixed 0/1, mean 1/1, max 1/1, top2 1/1, persistence 1/1
+- **raw_genre/Funk**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Garage**: baseline 2/6, global_fixed 1/6, mean 1/6, max 1/6, top2 1/6, persistence 1/6
+- **raw_genre/Glitch**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Goth**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Hip-Hop**: baseline 2/11, global_fixed 2/11, mean 2/11, max 3/11, top2 2/11, persistence 2/11
+- **raw_genre/Hip-Hop Beats**: baseline 3/4, global_fixed 2/4, mean 2/4, max 2/4, top2 2/4, persistence 2/4
+- **raw_genre/House**: baseline 3/5, global_fixed 1/5, mean 1/5, max 1/5, top2 1/5, persistence 1/5
+- **raw_genre/IDM**: baseline 1/4, global_fixed 1/4, mean 1/4, max 1/4, top2 1/4, persistence 1/4
+- **raw_genre/Improv**: baseline 5/14, global_fixed 4/14, mean 5/14, max 4/14, top2 4/14, persistence 4/14
+- **raw_genre/Indian**: baseline 0/2, global_fixed 1/2, mean 1/2, max 1/2, top2 1/2, persistence 1/2
+- **raw_genre/Indie-Rock**: baseline 4/12, global_fixed 2/12, mean 2/12, max 3/12, top2 3/12, persistence 3/12
+- **raw_genre/Industrial**: baseline 1/6, global_fixed 1/6, mean 1/6, max 1/6, top2 1/6, persistence 1/6
+- **raw_genre/Instrumental**: baseline 10/30, global_fixed 7/30, mean 6/30, max 7/30, top2 8/30, persistence 9/30
+- **raw_genre/International**: baseline 13/36, global_fixed 11/36, mean 16/36, max 17/36, top2 18/36, persistence 14/36
+- **raw_genre/Jazz**: baseline 4/9, global_fixed 3/9, mean 2/9, max 3/9, top2 3/9, persistence 2/9
+- **raw_genre/Jazz: Out**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Klezmer**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Krautrock**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Latin America**: baseline 0/0, global_fixed 0/0, mean 0/0, max 0/0, top2 0/0, persistence 0/0
+- **raw_genre/Lo-Fi**: baseline 2/6, global_fixed 1/6, mean 1/6, max 1/6, top2 1/6, persistence 1/6
+- **raw_genre/Loud-Rock**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Lounge**: baseline 1/2, global_fixed 0/2, mean 0/2, max 1/2, top2 1/2, persistence 0/2
+- **raw_genre/Metal**: baseline 1/3, global_fixed 1/3, mean 1/3, max 1/3, top2 1/3, persistence 1/3
+- **raw_genre/Middle East**: baseline 1/3, global_fixed 2/3, mean 2/3, max 3/3, top2 3/3, persistence 2/3
+- **raw_genre/Minimal Electronic**: baseline 1/2, global_fixed 1/2, mean 1/2, max 1/2, top2 1/2, persistence 1/2
+- **raw_genre/Minimalism**: baseline 2/3, global_fixed 2/3, mean 2/3, max 2/3, top2 2/3, persistence 2/3
+- **raw_genre/Modern Jazz**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Musique Concrete**: baseline 0/3, global_fixed 0/3, mean 0/3, max 0/3, top2 0/3, persistence 0/3
+- **raw_genre/New Age**: baseline 1/4, global_fixed 1/4, mean 1/4, max 0/4, top2 1/4, persistence 1/4
+- **raw_genre/No Wave**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Noise**: baseline 1/10, global_fixed 1/10, mean 1/10, max 1/10, top2 1/10, persistence 1/10
+- **raw_genre/Noise-Rock**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/North African**: baseline 1/2, global_fixed 1/2, mean 1/2, max 1/2, top2 1/2, persistence 1/2
+- **raw_genre/Old-Time / Historic**: baseline 14/34, global_fixed 11/34, mean 16/34, max 17/34, top2 18/34, persistence 14/34
+- **raw_genre/Pop**: baseline 2/9, global_fixed 1/9, mean 1/9, max 4/9, top2 2/9, persistence 1/9
+- **raw_genre/Post-Punk**: baseline 1/2, global_fixed 1/2, mean 1/2, max 1/2, top2 1/2, persistence 1/2
+- **raw_genre/Post-Rock**: baseline 1/4, global_fixed 1/4, mean 2/4, max 2/4, top2 2/4, persistence 2/4
+- **raw_genre/Power-Pop**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Progressive**: baseline 1/5, global_fixed 1/5, mean 1/5, max 2/5, top2 2/5, persistence 1/5
+- **raw_genre/Psych-Folk**: baseline 2/5, global_fixed 2/5, mean 2/5, max 3/5, top2 2/5, persistence 2/5
+- **raw_genre/Psych-Rock**: baseline 2/3, global_fixed 1/3, mean 2/3, max 2/3, top2 2/3, persistence 2/3
+- **raw_genre/Punk**: baseline 1/7, global_fixed 1/7, mean 1/7, max 1/7, top2 1/7, persistence 1/7
+- **raw_genre/Radio**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Rap**: baseline 0/2, global_fixed 0/2, mean 0/2, max 0/2, top2 0/2, persistence 0/2
+- **raw_genre/Rock**: baseline 5/16, global_fixed 5/16, mean 5/16, max 6/16, top2 6/16, persistence 5/16
+- **raw_genre/Rock Opera**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Shoegaze**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Singer-Songwriter**: baseline 1/9, global_fixed 0/9, mean 1/9, max 1/9, top2 1/9, persistence 1/9
+- **raw_genre/Sludge**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Soul-RnB**: baseline 0/2, global_fixed 0/2, mean 0/2, max 0/2, top2 0/2, persistence 0/2
+- **raw_genre/Sound Art**: baseline 2/8, global_fixed 2/8, mean 2/8, max 2/8, top2 2/8, persistence 2/8
+- **raw_genre/Sound Collage**: baseline 0/4, global_fixed 0/4, mean 1/4, max 1/4, top2 1/4, persistence 0/4
+- **raw_genre/Sound Poetry**: baseline 1/1, global_fixed 0/1, mean 1/1, max 1/1, top2 1/1, persistence 1/1
+- **raw_genre/Soundtrack**: baseline 7/21, global_fixed 5/21, mean 5/21, max 5/21, top2 5/21, persistence 6/21
+- **raw_genre/South Indian Traditional**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Space-Rock**: baseline 1/1, global_fixed 1/1, mean 1/1, max 1/1, top2 1/1, persistence 1/1
+- **raw_genre/Spoken Weird**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Synth Pop**: baseline 1/3, global_fixed 0/3, mean 0/3, max 0/3, top2 0/3, persistence 0/3
+- **raw_genre/Tango**: baseline 0/1, global_fixed 0/1, mean 0/1, max 0/1, top2 0/1, persistence 0/1
+- **raw_genre/Trip-Hop**: baseline 3/4, global_fixed 1/4, mean 1/4, max 1/4, top2 1/4, persistence 2/4
+- **raw_genre/Turkish**: baseline 0/1, global_fixed 1/1, mean 1/1, max 1/1, top2 1/1, persistence 1/1
+- **raw_genre/Unclassifiable**: baseline 2/6, global_fixed 2/6, mean 2/6, max 2/6, top2 2/6, persistence 2/6
+- **source_partition/test**: baseline 22/85, global_fixed 18/85, mean 17/85, max 20/85, top2 19/85, persistence 18/85
+- **source_partition/train**: baseline 66/207, global_fixed 55/207, mean 69/207, max 76/207, top2 74/207, persistence 64/207
+
+[Main comparison](CAMPAIGN.md) · [Full aggregate JSON](autonomous-summary.json)
+
+## Masked-head follow-up: matched category results
+
+All five outer arms are retained below. Cells are failed/scorable recordings. Categories overlap and may be sparse; raw genres are publisher metadata, not an inferred taxonomy. Artist/recording identifiers are excluded.
+
+- **metadata_instrumental/0**: 0.01 76/259, 0.1 75/259, 1.0 78/259, selected 65/259, global 65/259
+- **metadata_instrumental/1**: 0.01 12/33, 0.1 11/33, 1.0 11/33, selected 8/33, global 8/33
+- **original_split/fit**: 0.01 62/204, 0.1 62/204, 1.0 64/204, selected 51/204, global 51/204
+- **original_split/selection**: 0.01 26/88, 0.1 24/88, 1.0 25/88, selected 22/88, global 22/88
+- **raw_genre/Alternative Hip-Hop**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/Ambient**: 0.01 11/26, 0.1 11/26, 1.0 11/26, selected 7/26, global 7/26
+- **raw_genre/Ambient Electronic**: 0.01 3/7, 0.1 3/7, 1.0 3/7, selected 2/7, global 2/7
+- **raw_genre/Americana**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/Asia-Far East**: 0.01 1/2, 0.1 1/2, 1.0 1/2, selected 0/2, global 0/2
+- **raw_genre/Audio Collage**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Avant-Garde**: 0.01 1/11, 0.1 1/11, 1.0 1/11, selected 1/11, global 1/11
+- **raw_genre/Black-Metal**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/Blues**: 0.01 0/3, 0.1 0/3, 1.0 0/3, selected 0/3, global 0/3
+- **raw_genre/Breakcore - Hard**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Chamber Music**: 0.01 1/1, 0.1 1/1, 1.0 1/1, selected 1/1, global 1/1
+- **raw_genre/Chill-out**: 0.01 1/2, 0.1 1/2, 1.0 1/2, selected 1/2, global 1/2
+- **raw_genre/Chip Music**: 0.01 1/5, 0.1 1/5, 1.0 1/5, selected 0/5, global 0/5
+- **raw_genre/Chiptune**: 0.01 1/6, 0.1 1/6, 1.0 1/6, selected 1/6, global 1/6
+- **raw_genre/Choral Music**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Classical**: 0.01 2/6, 0.1 2/6, 1.0 2/6, selected 0/6, global 0/6
+- **raw_genre/Comedy**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Composed Music**: 0.01 0/3, 0.1 0/3, 1.0 0/3, selected 0/3, global 0/3
+- **raw_genre/Contemporary Classical**: 0.01 3/8, 0.1 3/8, 1.0 3/8, selected 3/8, global 3/8
+- **raw_genre/Country**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Cumbia**: 0.01 1/1, 0.1 1/1, 1.0 1/1, selected 1/1, global 1/1
+- **raw_genre/Death-Metal**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Downtempo**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Drone**: 0.01 0/4, 0.1 0/4, 1.0 0/4, selected 0/4, global 0/4
+- **raw_genre/Drum & Bass**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Dubstep**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Easy Listening**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Electro-Punk**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/Electroacoustic**: 0.01 1/4, 0.1 1/4, 1.0 1/4, selected 0/4, global 0/4
+- **raw_genre/Electronic**: 0.01 6/31, 0.1 6/31, 1.0 6/31, selected 5/31, global 5/31
+- **raw_genre/Europe**: 0.01 7/13, 0.1 6/13, 1.0 6/13, selected 4/13, global 4/13
+- **raw_genre/Experimental**: 0.01 13/50, 0.1 13/50, 1.0 13/50, selected 12/50, global 12/50
+- **raw_genre/Experimental Pop**: 0.01 2/10, 0.1 2/10, 1.0 2/10, selected 2/10, global 2/10
+- **raw_genre/Field Recordings**: 0.01 1/2, 0.1 1/2, 1.0 1/2, selected 1/2, global 1/2
+- **raw_genre/Folk**: 0.01 4/14, 0.1 4/14, 1.0 4/14, selected 3/14, global 3/14
+- **raw_genre/Freak-Folk**: 0.01 1/6, 0.1 1/6, 1.0 1/6, selected 1/6, global 1/6
+- **raw_genre/Free-Folk**: 0.01 2/4, 0.1 2/4, 1.0 2/4, selected 2/4, global 2/4
+- **raw_genre/Free-Jazz**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/French**: 0.01 1/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Funk**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Garage**: 0.01 1/6, 0.1 1/6, 1.0 1/6, selected 1/6, global 1/6
+- **raw_genre/Glitch**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Goth**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Hip-Hop**: 0.01 2/11, 0.1 2/11, 1.0 2/11, selected 2/11, global 2/11
+- **raw_genre/Hip-Hop Beats**: 0.01 2/4, 0.1 2/4, 1.0 2/4, selected 2/4, global 2/4
+- **raw_genre/House**: 0.01 1/5, 0.1 1/5, 1.0 1/5, selected 1/5, global 1/5
+- **raw_genre/IDM**: 0.01 2/4, 0.1 2/4, 1.0 2/4, selected 1/4, global 1/4
+- **raw_genre/Improv**: 0.01 3/14, 0.1 3/14, 1.0 4/14, selected 4/14, global 4/14
+- **raw_genre/Indian**: 0.01 1/2, 0.1 1/2, 1.0 1/2, selected 1/2, global 1/2
+- **raw_genre/Indie-Rock**: 0.01 2/12, 0.1 2/12, 1.0 2/12, selected 2/12, global 2/12
+- **raw_genre/Industrial**: 0.01 1/6, 0.1 1/6, 1.0 1/6, selected 1/6, global 1/6
+- **raw_genre/Instrumental**: 0.01 7/30, 0.1 7/30, 1.0 7/30, selected 7/30, global 7/30
+- **raw_genre/International**: 0.01 17/36, 0.1 17/36, 1.0 17/36, selected 11/36, global 11/36
+- **raw_genre/Jazz**: 0.01 3/9, 0.1 3/9, 1.0 3/9, selected 3/9, global 3/9
+- **raw_genre/Jazz: Out**: 0.01 0/1, 0.1 0/1, 1.0 1/1, selected 0/1, global 0/1
+- **raw_genre/Klezmer**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Krautrock**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Latin America**: 0.01 0/0, 0.1 0/0, 1.0 0/0, selected 0/0, global 0/0
+- **raw_genre/Lo-Fi**: 0.01 2/6, 0.1 2/6, 1.0 2/6, selected 1/6, global 1/6
+- **raw_genre/Loud-Rock**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Lounge**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/Metal**: 0.01 1/3, 0.1 1/3, 1.0 1/3, selected 1/3, global 1/3
+- **raw_genre/Middle East**: 0.01 2/3, 0.1 2/3, 1.0 2/3, selected 2/3, global 2/3
+- **raw_genre/Minimal Electronic**: 0.01 1/2, 0.1 1/2, 1.0 1/2, selected 1/2, global 1/2
+- **raw_genre/Minimalism**: 0.01 2/3, 0.1 2/3, 1.0 2/3, selected 2/3, global 2/3
+- **raw_genre/Modern Jazz**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Musique Concrete**: 0.01 0/3, 0.1 0/3, 1.0 0/3, selected 0/3, global 0/3
+- **raw_genre/New Age**: 0.01 2/4, 0.1 2/4, 1.0 2/4, selected 1/4, global 1/4
+- **raw_genre/No Wave**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Noise**: 0.01 0/10, 0.1 0/10, 1.0 0/10, selected 1/10, global 1/10
+- **raw_genre/Noise-Rock**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/North African**: 0.01 1/2, 0.1 1/2, 1.0 1/2, selected 1/2, global 1/2
+- **raw_genre/Old-Time / Historic**: 0.01 18/34, 0.1 18/34, 1.0 18/34, selected 11/34, global 11/34
+- **raw_genre/Pop**: 0.01 1/9, 0.1 1/9, 1.0 1/9, selected 1/9, global 1/9
+- **raw_genre/Post-Punk**: 0.01 1/2, 0.1 1/2, 1.0 1/2, selected 1/2, global 1/2
+- **raw_genre/Post-Rock**: 0.01 2/4, 0.1 2/4, 1.0 2/4, selected 1/4, global 1/4
+- **raw_genre/Power-Pop**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Progressive**: 0.01 1/5, 0.1 1/5, 1.0 1/5, selected 1/5, global 1/5
+- **raw_genre/Psych-Folk**: 0.01 1/5, 0.1 1/5, 1.0 1/5, selected 2/5, global 2/5
+- **raw_genre/Psych-Rock**: 0.01 2/3, 0.1 2/3, 1.0 2/3, selected 1/3, global 1/3
+- **raw_genre/Punk**: 0.01 2/7, 0.1 2/7, 1.0 2/7, selected 1/7, global 1/7
+- **raw_genre/Radio**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Rap**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/Rock**: 0.01 5/16, 0.1 5/16, 1.0 5/16, selected 5/16, global 5/16
+- **raw_genre/Rock Opera**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Shoegaze**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Singer-Songwriter**: 0.01 0/9, 0.1 0/9, 1.0 0/9, selected 0/9, global 0/9
+- **raw_genre/Sludge**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Soul-RnB**: 0.01 0/2, 0.1 0/2, 1.0 0/2, selected 0/2, global 0/2
+- **raw_genre/Sound Art**: 0.01 3/8, 0.1 3/8, 1.0 3/8, selected 2/8, global 2/8
+- **raw_genre/Sound Collage**: 0.01 0/4, 0.1 0/4, 1.0 0/4, selected 0/4, global 0/4
+- **raw_genre/Sound Poetry**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Soundtrack**: 0.01 7/21, 0.1 7/21, 1.0 7/21, selected 5/21, global 5/21
+- **raw_genre/South Indian Traditional**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Space-Rock**: 0.01 1/1, 0.1 1/1, 1.0 1/1, selected 1/1, global 1/1
+- **raw_genre/Spoken Weird**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Synth Pop**: 0.01 0/3, 0.1 0/3, 1.0 0/3, selected 0/3, global 0/3
+- **raw_genre/Tango**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 0/1, global 0/1
+- **raw_genre/Trip-Hop**: 0.01 2/4, 0.1 2/4, 1.0 2/4, selected 1/4, global 1/4
+- **raw_genre/Turkish**: 0.01 0/1, 0.1 0/1, 1.0 0/1, selected 1/1, global 1/1
+- **raw_genre/Unclassifiable**: 0.01 2/6, 0.1 2/6, 1.0 3/6, selected 2/6, global 2/6
+- **source_partition/test**: 0.01 22/85, 0.1 20/85, 1.0 21/85, selected 18/85, global 18/85
+- **source_partition/train**: 0.01 66/207, 0.1 66/207, 1.0 68/207, selected 55/207, global 55/207
