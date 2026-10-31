@@ -1,3 +1,7 @@
+## Practical implementation result —31October2026
+
+Released BTC CPU adapter actually completed7/7 fixed recordings (80native model-block forwards). Primary root failures0→1/7 versus strongest ACE control; strict-triad4→3/7 is secondary. No promotion/adoption; HPSS remains deferred. Retain the runnable comparator and seek materially different task-trained solutions, not small-pilot tuning. [Report](PRACTICAL-SOLUTIONS.md).
+
 <!-- practical-solutions-pivot -->
 ## CURRENT: practical solutions first
 

@@ -290,7 +290,7 @@
     "paid_services": false
   },
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-10-31T14:27:50.645324+00:00",
+  "updated_at": "2026-10-31T14:42:37.704208+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25497,8 +25497,1058 @@
       "feasible local runtime and isolated adapter",
       "matched comparison against strongest current control"
     ],
-    "next_deliverable": "A runnable practical recognizer adapter with actual inference, followed by useful paired evaluation; not another low-yield parameter variant.",
+    "next_deliverable": "Keep the working alternate recognizer as a comparator; no promotion after root regression. Prioritize the next materially different task-trained solution, not another small variant.",
     "new_accuracy_gain_claim": false,
-    "production_adoption": false
+    "production_adoption": false,
+    "first_practical_pilot": {
+      "status": "actual_frozen_pilot_not_promoted",
+      "recordings": 7,
+      "category_counts": {
+        "solo_guitar": 3,
+        "classical_songs": 4
+      },
+      "new_model_block_forwards": 80,
+      "whole_model_forward_calls": 0,
+      "missing_model_outputs": 0,
+      "fits": 0,
+      "model_checkpoint_bytes": 12229576,
+      "decoder_labels": 170,
+      "cpu_threads": 2,
+      "supervised_seconds": 10.051666292,
+      "supervised_peak_group_rss_bytes": 568344576,
+      "pooled": {
+        "ace_fixed181_rootfirst": {
+          "root_only": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 25.26102134863106
+          },
+          "strict_triad": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 34.45156080506126
+          },
+          "historical_triad": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 34.66026329034477
+          },
+          "expanded_full_quality": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 43.186390775178076
+          }
+        },
+        "btc_native170": {
+          "root_only": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 23.18657127372685
+          },
+          "strict_triad": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 27.845341711510386
+          },
+          "historical_triad": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 28.054044196793892
+          },
+          "expanded_full_quality": {
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "duration_error_percent": 38.59480267714063
+          }
+        }
+      },
+      "category_panels": {
+        "GuitarSet": {
+          "ace_fixed181_rootfirst": {
+            "root_only": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 16.608421183695466
+            },
+            "strict_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 43.30583941949888
+            },
+            "historical_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 45.14720215926206
+            },
+            "expanded_full_quality": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 55.07105870921913
+            }
+          },
+          "btc_native170": {
+            "root_only": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 17.223412605885912
+            },
+            "strict_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 40.85167196858759
+            },
+            "historical_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 42.693034708350766
+            },
+            "expanded_full_quality": {
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 52.79457837726957
+            }
+          }
+        },
+        "HU33": {
+          "ace_fixed181_rootfirst": {
+            "root_only": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 26.367080710112877
+            },
+            "strict_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 33.31972094606092
+            },
+            "historical_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 33.31972094606092
+            },
+            "expanded_full_quality": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 41.66717713118937
+            }
+          },
+          "btc_native170": {
+            "root_only": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 23.94884011116781
+            },
+            "strict_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 26.18274629913221
+            },
+            "historical_triad": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 26.18274629913221
+            },
+            "expanded_full_quality": {
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "duration_error_percent": 36.77964948102773
+            }
+          }
+        }
+      },
+      "paired_gt30": [
+        {
+          "metric": "root_only",
+          "rescues": 0,
+          "regressions": 0
+        },
+        {
+          "metric": "strict_triad",
+          "rescues": 1,
+          "regressions": 0
+        },
+        {
+          "metric": "historical_triad",
+          "rescues": 1,
+          "regressions": 0
+        },
+        {
+          "metric": "expanded_full_quality",
+          "rescues": 0,
+          "regressions": 0
+        }
+      ],
+      "primary_root_failure_count_worsens": true,
+      "known_reference_microgap_recordings_per_arm": 2,
+      "microgap_note": "Two guitar reference spans extend beyond the decoded endpoint by approximately 0.9 and10.0microseconds in both arms. Frozen missing-coverage rule retained; these are not absent model outputs.",
+      "qualifying_gain": false,
+      "production_adoption": false,
+      "independent_confirmation": false,
+      "scope": "Exposed three-guitar/four-classical diagnostic, not broad genre or checkpoint-independent confirmation. No tuning, routing or model selection from individual reference outcomes."
+    }
   }
 }

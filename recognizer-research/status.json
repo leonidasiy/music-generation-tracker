@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-10-31T14:27:50.645324+00:00",
+  "updated_at": "2026-10-31T14:42:37.704208+00:00",
   "title": "Recognizer Research",
-  "phase": "Owner-directed pivot: practical recognizers and implementation first",
-  "summary": "Current priority: find and implement practical, evidence-backed recognizer solutions. The fixed HPSS follow-up is deferred before corpus execution; no new accuracy gain or production adoption is claimed. Previous experiment results remain historical evidence.",
+  "phase": "Practical recognizer implemented and actual paired pilot executed—not promoted",
+  "summary": "Practical-solutions pivot executed: released BTC CPU adapter completed7/7 fixed recordings with80 native model-block forwards. Primary root failures0 to1/7; strict-triad failures4 to3/7. Secondary improvements do not cancel the root regression: no promotion, broad confirmation or application adoption. HPSS follow-up remains deferred.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "practical-btc-pilot",
+      "title": "Working alternate chord recognizer: actual inference complete—not promoted",
+      "status": "complete",
+      "evidence_type": "New CPU waveform inference on a fixed7-recording diagnostic; no training",
+      "detail": "Official170-label BTC adapter,7/7 recordings,80 native attention/output-block forwards; no missing model outputs. Root recording failures0→1/7 while strict triad4→3/7; pooled duration improves but primary root regression blocks promotion. Exposed narrow diagnostic, not broad confirmation or adoption."
+    },
     {
       "id": "practical-solution-pivot",
       "title": "Practical solutions and implementation now take priority",
@@ -590,9 +597,9 @@
     "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
   ],
   "next_steps": [
-    "Select a small shortlist of practical released recognizers using actual code, checkpoint availability, terms and task-matched evidence.",
-    "Implement the strongest feasible candidate as an isolated runnable adapter, then execute real inference and compare with the strongest retained control.",
-    "Do not resume the deferred HPSS follow-up or repeat losing pooling/head variants without materially new evidence; retain broad validation and adoption as separate gates."
+    "Keep the working BTC adapter as an operational comparator, not an adopted replacement: primary root regression is explicit.",
+    "Prioritize a materially different task-trained released recognizer with actual CPU/terms feasibility, rather than tune this small pilot or resume HPSS.",
+    "Preserve fixed denominators, regressions and broad validation requirements; carry only verified useful gains to a separately scoped app-integration task."
   ],
   "agents": [
     {
@@ -622,6 +629,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-10-31T14:42:37.704208+00:00",
+      "title": "First practical recognizer implemented and actually executed",
+      "action": "Acquired verified released BTC weights; implemented CPU adapter and ran all7 fixed audio cases.",
+      "result": "80 native model-block forwards; mixed paired results, root primary regression, no promotion. No production changes."
+    },
     {
       "time": "2026-10-31T14:27:50.645324+00:00",
       "title": "Owner-directed practical-solutions pivot",
