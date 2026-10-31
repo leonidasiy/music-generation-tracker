@@ -289,8 +289,8 @@
     "new_checkpoint_downloads": false,
     "paid_services": false
   },
-  "checkpoint": "chord-hpss-implementation-smoke",
-  "updated_at": "2026-10-31T13:43:33.535236+00:00",
+  "checkpoint": "practical-solutions-first",
+  "updated_at": "2026-10-31T14:27:50.645324+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25486,5 +25486,19 @@
       "renormalize_before_model": false
     },
     "claim_boundary": "One previously exposed guitar recording verifies the waveform-to-model path only. Changed roots and fewer native events are neither accuracy improvements nor regressions without scoring. Broad genre/audio-type confirmation and any production adoption remain open."
+  },
+  "current_direction": {
+    "status": "owner_directed_practical_solution_priority",
+    "deferred": "fixed_hpss_corpus_followup_before_inference",
+    "selection_requirements": [
+      "released runnable code and obtainable weights",
+      "task-matched evidence and explicit limitations",
+      "compatible artifact terms",
+      "feasible local runtime and isolated adapter",
+      "matched comparison against strongest current control"
+    ],
+    "next_deliverable": "A runnable practical recognizer adapter with actual inference, followed by useful paired evaluation; not another low-yield parameter variant.",
+    "new_accuracy_gain_claim": false,
+    "production_adoption": false
   }
 }

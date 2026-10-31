@@ -1,3 +1,9 @@
+<!-- practical-solutions-pivot -->
+## CURRENT: practical solutions first
+
+Owner-directed priority change: defer the pending HPSS corpus follow-up before inference. Select credible practical released recognizers, implement a runnable adapter and execute useful matched evaluation rather than repeat low-yield variants. No new gain or adoption claim. [Current direction](PRACTICAL-SOLUTIONS.md). Historical next-step sections below are superseded where they conflict.
+<!-- end practical-solutions-pivot -->
+
 <!-- chord-preprocessing-a13 -->
 ## A13 chord frontend smoke
 

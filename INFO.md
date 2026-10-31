@@ -1,3 +1,9 @@
+<!-- practical-solutions-pivot -->
+## Current recognizer-research direction
+
+Practical evidence-backed recognizers and implementation take priority. Pending HPSS corpus follow-up is deferred before inference; retained older results are not rewritten. Next: bounded release/code feasibility selection, runnable adapter, actual inference and strongest-control comparison. No new accuracy or adoption claim. [Direction](recognizer-research/PRACTICAL-SOLUTIONS.md). Earlier conflicting recognizer next-work items are historical/superseded.
+<!-- end practical-solutions-pivot -->
+
 <!-- chord-preprocessing-a13 -->
 ## A13 chord-preprocessing execution
 

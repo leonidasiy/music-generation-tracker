@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "chord-hpss-implementation-smoke",
-  "updated_at": "2026-10-31T13:43:33.535236+00:00",
+  "checkpoint": "practical-solutions-first",
+  "updated_at": "2026-10-31T14:27:50.645324+00:00",
   "title": "Recognizer Research",
-  "phase": "Chord preprocessing implementation verified; reference accuracy not yet scored",
-  "summary": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. New preprocessing smoke: one exposed recording, four real forwards, exact original parity; no accuracy or gain measured.",
+  "phase": "Owner-directed pivot: practical recognizers and implementation first",
+  "summary": "Current priority: find and implement practical, evidence-backed recognizer solutions. The fixed HPSS follow-up is deferred before corpus execution; no new accuracy gain or production adoption is claimed. Previous experiment results remain historical evidence.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "practical-solution-pivot",
+      "title": "Practical solutions and implementation now take priority",
+      "status": "in_progress",
+      "evidence_type": "Explicit owner-directed priority change, not an accuracy result",
+      "detail": "Fixed HPSS corpus follow-up deferred before inference. Prioritize released task-matched recognizers, actual checkpoint/runtime feasibility, and practical integration; stop repeating low-yield variants by default. No new gain or production adoption claimed."
+    },
     {
       "id": "coarse19",
       "title": "Coarse19 independently reconstructed—not promoted",
@@ -583,9 +590,9 @@
     "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
   ],
   "next_steps": [
-    "Freeze a broader matched original-versus-fixed-HPSS evaluation before reference scoring; retain root-only, strict triad, expanded full-pitch endpoints and recording-failure incidence.",
-    "Treat the smoke as compatibility only; broad genre/audio-type reference coverage and checkpoint exposure remain unresolved.",
-    "Retain all losing instrument readouts as nonpromoted; no production changes or paid services."
+    "Select a small shortlist of practical released recognizers using actual code, checkpoint availability, terms and task-matched evidence.",
+    "Implement the strongest feasible candidate as an isolated runnable adapter, then execute real inference and compare with the strongest retained control.",
+    "Do not resume the deferred HPSS follow-up or repeat losing pooling/head variants without materially new evidence; retain broad validation and adoption as separate gates."
   ],
   "agents": [
     {
@@ -615,6 +622,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-10-31T14:27:50.645324+00:00",
+      "title": "Owner-directed practical-solutions pivot",
+      "action": "Deferred the pending HPSS corpus experiment and changed autonomous next-work priorities.",
+      "result": "Bounded release/code feasibility selection followed by a runnable adapter and real matched evaluation; not another parameter sweep."
+    },
     {
       "time": "2026-10-31T13:43:33.535236+00:00",
       "title": "A13 actual chord-preprocessing smoke independently verified",
