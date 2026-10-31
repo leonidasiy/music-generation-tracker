@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "instrument-presence-first-loss-and-contract-closure",
-  "updated_at": "2026-10-30T23:31:46.077109+00:00",
+  "checkpoint": "instrument-presence-passt-matched-comparison",
+  "updated_at": "2026-10-31T01:22:06.266853+00:00",
   "title": "Recognizer Research",
-  "phase": "Instrument-presence first-loss trace complete; reporting contract preserved",
-  "summary": "Tempo remains implemented. Saved instrument evidence was replayed across 269 report instances and 326 sections, representing 190 overlapping saved case IDs. The known local Vocal omission follows the documented global-membership rule; Bassoon has a separate CLAP-only coverage loss. No instrument/chord model or reporting rule is changed. Independent local audibility, no-fee reference admission and broad confirmation remain open.",
+  "phase": "PaSST instrument presence: mixed evidence; working candidate remains experimental",
+  "summary": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.",
   "publication_ready": false,
   "milestones": [
     {
@@ -237,9 +237,51 @@
       "status": "pending",
       "evidence_type": "Prospective evidence/metric contract, not new annotations",
       "detail": "Require exact-source/use and overlap review, known positive/negative masks, explicit unknowns and natural section audibility when needed. Existing inspected cases stay development. Task-specific error-incidence tolerance, severe/missing policy and reference coverage must freeze before new candidate outcomes. Broad genre/audio-type and category reporting remain required. No paid annotation/data services."
+    },
+    {
+      "id": "presence-calibration-executed",
+      "title": "Learned calibration implemented and rejected",
+      "status": "complete",
+      "evidence_type": "Real295-source inference, three fitted models, prospective34-case artist-held-out test",
+      "detail": "Calibration failed12/28→13/28 observed-record failures;FN7→2 butFP7→12. Working code retained; no adoption. Independent negative-experiment review approved."
+    },
+    {
+      "id": "passt-runtime",
+      "title": "Released PaSST OpenMIC20 runtime verified",
+      "status": "complete",
+      "evidence_type": "Frozen released checkpoint, source conformance and actual synthetic inference",
+      "detail": "Genuine20-output task head,15 runtime tests and CPU/MPS controls; local research rights only, no calibrated-probability or commercial-release claim."
+    },
+    {
+      "id": "passt-matched-comparison",
+      "title": "PaSST instrument-presence comparison completed",
+      "status": "complete",
+      "evidence_type": "Actual matched inference and independent saved-output reconstruction",
+      "detail": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default."
+    },
+    {
+      "id": "passt-integration",
+      "title": "Research-copy integration exercised; default adoption deferred",
+      "status": "complete",
+      "evidence_type": "10integration tests,49-cache parity,227tests/9skips per source copy and real paired full-report smoke",
+      "detail": "Actual application unchanged. Corrected patch preserves current-global section subset. Wider329historical cases show FP55→79; keep candidate experimental. Longer inputs retain baseline; full-track validation and explicit production integration scope remain separate."
     }
   ],
   "findings": [
+    {
+      "title": "PaSST hybrid: fewer observed-reference failed recordings",
+      "detail": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.",
+      "evidence_type": "Frozen local sparse-reference comparison, independently reconstructed",
+      "confidence": "HIGH for scoped arithmetic; generalization unresolved",
+      "source": "Matched comparison and independent outcome reconstruction,31Oct2026; local experimental evidence."
+    },
+    {
+      "title": "Native head is not a drop-in full-vocabulary replacement",
+      "detail": "Native0.50 head:15/47 failed,17FN,1FP,3severe. Tested hybrid:14/47 failed,7FN,8FP,1severe. Eleven singleton scores change; world/Vocal/coarse names are retained.",
+      "evidence_type": "Prespecified diagnostic versus deployment-shaped hybrid",
+      "confidence": "HIGH for scoped counts; no global musical-accuracy claim",
+      "source": "Matched four-arm reference-proxy comparison,31Oct2026."
+    },
     {
       "title": "One visible omission, distinct first-loss mechanisms",
       "detail": "The local Vocal candidate survives canonical fusion but fails displayed-global membership. In 15 saved Bassoon cases, zero CLAP coverage instead excludes the CLAP-only identity before display. Forcing synthetic coverage admits 15 rows, 11 above cutoff; these are diagnostic counterfactuals, not corrected musical predictions.",
@@ -402,12 +444,12 @@
     "No annotation-ready real recording, independently recruited pair of annotators, frozen operational chord tolerance or untouched diverse confirmation cohort. Metadata shape checks do not establish actual grants or reference quality."
   ],
   "next_steps": [
-    "Keep the current models, inclusive thresholds and section/global reporting standard; no demonstrated contract violation or winning replacement was found.",
-    "Build the next bounded stage-traced diagnostic intake only from no-fee existing human references with exact-source/use, task-fit and overlap review; unknown labels remain unknown.",
-    "Separate recording presence, natural section audibility, exact/family identity and melody-role reference tasks; do not infer local truth from a clip-level voice label.",
-    "Freeze task-specific above-tolerance recording incidence, severe/missing/reference-coverage policies before new candidate outcomes, and preserve broad final genre/audio-type coverage with category reporting.",
-    "Evaluate any proposed section/global semantics or articulation-input change separately and obtain explicit authorization for a changed report standard; no silent union or threshold sweep.",
-    "Communicate resource estimates before substantial acquisition, inference or training. No paid annotation, paid data services or similar purchases."
+    "Keep the rejected calibrator disabled; retain the PaSST result as bounded49-clip evidence, not a general full-song replacement.",
+    "Retain the exercised isolated PaSST integration as experimental: 10 integration tests, 49-cache parity, 227 tests with 9 skips per source copy and real paired full-report smoke are complete. Preserve inclusive0.20 and CURRENT-global section intersection; actual application adoption requires explicit scope and longer inputs retain baseline.",
+    "Freeze a full-track window/aggregation comparison and independent diverse reference panel before any broad instrument-detection claim.",
+    "Advance the separate chord event/duration/history comparison with matched acoustic evidence; literature support is not an executed chord improvement.",
+    "Keep instrument presence, section audibility, fine/family identity and melody role as separate reference tasks.",
+    "Communicate estimates before substantial runs. No paid annotation, paid data services or compute purchases; storage alert only below15GB free."
   ],
   "agents": [
     {
@@ -544,6 +586,12 @@
       "title": "Presence first-loss and contract trace completed locally",
       "action": "Executed source-bound saved-return replay, independent contract controls and parent reproduction; preserved historical model/policy generations separately.",
       "result": "No production change. Known Vocal and Bassoon losses localize to different stages; unknown references and broad confirmation remain open. Public deployment verification is a separate fail-closed gate."
+    },
+    {
+      "time": "2026-10-31T01:22:06.266853+00:00",
+      "title": "Actual instrumentation comparison and independent reconstruction complete",
+      "action": "Frozen49record/29artist comparison,329historical head regressions, four null controls, independent reconstruction and real research-copy report/tests; no retraining or production edits.",
+      "result": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default."
     }
   ],
   "artifacts": [
@@ -961,6 +1009,16 @@
       "name": "chord-reference-clearance-20261030/SCORING_ADDENDUM.md",
       "bytes": 4336,
       "sha256": "df4fa880768e83f722cabbd81bc0718afa848b1f0eed6385194e10660b1849f7"
+    },
+    {
+      "name": "recognizer-research/INSTRUMENTS.md",
+      "bytes": 10706,
+      "sha256": "ce133ff0d585e07a51513310b2da20a4689770799b3c139a9958b8253e018f3e"
+    },
+    {
+      "name": "recognizer-research/instrument-presence-summary.json",
+      "bytes": 91227,
+      "sha256": "c958269fb971cc1b0936696f001ef70c90475bc97d0df8cdfd9c973506611758"
     }
   ],
   "limits": [
@@ -977,8 +1035,15 @@
     "The later fresh standard-score replay supersedes only the earlier inability to replay. It does not reconstruct the historical scoring process or turn the inspected developmental guitar corpus into independent musical validation.",
     "Recording-level metadata review is not legal clearance. Only humans can supply independent audible reference judgments here; future reference rights/consent and all confirmatory tolerances remain unresolved. The response checker cannot verify human independence or musical truth.",
     "Current storage authorization (31 October): justified storage and demonstrably disposable cleanup are allowed; alert only below 15 GB free. Required source/data/checkpoints/evidence are retained. Earlier dated 30 GiB pauses are historical.",
-    "Saved audio hashes are retained provenance, not freshly checked audio integrity. No new recognizer inference, training, model/audio acquisition or musical labels in this increment.",
-    "The prior recording-clearance commit was pushed but failed its live publication gate; last verified prior five-file checkpoint remained the older chord-readiness page. Current publication is only established by exact deployment/live read-back, never by a push."
+    "The prior recording-clearance commit was pushed but failed its live publication gate; last verified prior five-file checkpoint remained the older chord-readiness page. Current publication is only established by exact deployment/live read-back, never by a push.",
+    "Primary failure means at least one disagreement on an observed reference class; unknown/unannotated classes are never negatives. Two reference-unscorable recordings remain in inference accounting.",
+    "PaSST publisher TEST served validation/checkpoint selection. New local artist groups do not imply independence from model selection, compositions or pretrained exposure.",
+    "The descriptive artist-cluster95% interval for candidate-minus-baseline failure incidence spans -25.00 to +2.44 percentage points; it includes no difference. No population-level improvement is established.",
+    "Only eleven existing one-to-one singleton names are rescored; eight coarse/multimember classes and Vocal/world vocabulary are unchanged. No new instrument rows are invented.",
+    "These results concern ten-second clips. The prepared local integration must fall back on longer inputs; a first-window score must not be assigned to an entire song. Full-track pooling and section audibility remain separate experiments.",
+    "Genres and marked/not-marked instrumental are overlapping track metadata, not verified excerpt vocal/solo/live/studio conditions. Broad independent final audio-condition coverage remains open.",
+    "Source licence and conditional author weight permission do not establish commercial/hosted/redistribution clearance. No paid annotation/data/compute service was used; existing assistant billing and electricity are excluded.",
+    "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
     {
@@ -1036,6 +1101,14 @@
     {
       "title": "MIREX 2026 instrument results; organizer report, labels not manually verified",
       "url": "https://music-ir.org/mirex/wiki/2026:Audio_Instrument_Recognition_Results"
+    },
+    {
+      "title": "PaSST official OpenMIC checkpoint",
+      "url": "https://github.com/kkoutini/PaSST/releases/tag/v0.0.5"
+    },
+    {
+      "title": "OpenMIC dataset and rights metadata",
+      "url": "https://zenodo.org/records/1432913"
     }
   ]
 }

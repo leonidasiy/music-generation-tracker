@@ -1,6 +1,25 @@
+<!-- passt-current-20261031 -->
+# PaSST matched instrumentation comparison —31October2026
+
+PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.
+
+- Primary failure means at least one disagreement on an observed reference class; unknown/unannotated classes are never negatives. Two reference-unscorable recordings remain in inference accounting.
+- PaSST publisher TEST served validation/checkpoint selection. New local artist groups do not imply independence from model selection, compositions or pretrained exposure.
+- The descriptive artist-cluster95% interval for candidate-minus-baseline failure incidence spans -25.00 to +2.44 percentage points; it includes no difference. No population-level improvement is established.
+- Only eleven existing one-to-one singleton names are rescored; eight coarse/multimember classes and Vocal/world vocabulary are unchanged. No new instrument rows are invented.
+- These results concern ten-second clips. The prepared local integration must fall back on longer inputs; a first-window score must not be assigned to an entire song. Full-track pooling and section audibility remain separate experiments.
+- Genres and marked/not-marked instrumental are overlapping track metadata, not verified excerpt vocal/solo/live/studio conditions. Broad independent final audio-condition coverage remains open.
+- Source licence and conditional author weight permission do not establish commercial/hosted/redistribution clearance. No paid annotation/data/compute service was used; existing assistant billing and electricity are excluded.
+- The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities.
+
+Read [instrument results](INSTRUMENTS.md) and [aggregate machine-readable results](instrument-presence-summary.json).
+<!-- end passt-current-20261031 -->
+
+---
+
 # Presence tracing: decision and next evidence
 
-## Current checkpoint — 31 October 2026
+## Historical presence-trace checkpoint — 31 October 2026 (superseded by the opening PaSST comparison)
 
 **Scope:** saved-output/source tracing and pure replay, not new model inference or a musical-accuracy experiment. Tempo remains implemented; this increment does not change instrument or chord models.
 

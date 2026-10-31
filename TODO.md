@@ -1,3 +1,20 @@
+<!-- passt-current-20261031 -->
+# Current instrumentation work —31October2026
+
+PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.
+
+- [x] Complete calibrated-score implementation, fresh-artist failure test and explicit rejection.
+- [x] Verify PaSST runtime/admission/freeze and execute all49clips plus4controls.
+- [x] Independently reconstruct four-arm/class/category/paired outcomes.
+- [x] Execute329historical head regressions and reproduce waveform/score verification.
+- [x] Close isolated integration regression/full-report smoke; keep actual application unchanged and default adoption deferred.
+- [ ] Complete reviewed public synchronization and exact live read-back.
+- [ ] Independently qualify full-song aggregation and diverse audio conditions.
+- [ ] Run the separately frozen chord event-sequence experiment after instrumentation closure.
+<!-- end passt-current-20261031 -->
+
+---
+
 # Music Generation & Orchestration Research — TODO
 
 ## Current presence-trace increment — 31 October 2026
@@ -5,7 +22,7 @@
 - [x] Independently review documented section/global contract and25controls; close no-production-change disposition.
 - [x] Record no-fee-reference boundary and owner-authorized justified storage/disposable cleanup with alerts only below15GBfree.
 - [x] Remove only this increment's disposable worker Chrome profile after exact-PID shutdown; retain evidence unchanged.
-- [ ] Final current-artifact review, exact current deployment/live read-back and browser verification; external failures stay open.
+- [x] Final current-artifact review and milestone4d51511publication verified:5/5exact live files,14local/14live browser checks and native desktop/mobile visual inspection.
 - [ ] Admit task-suitable no-fee independent references and freeze presence error-incidence/coverage/severe/missing policy before new candidate outcomes; broad category confirmation remains open.
 
 ## Current exact-recording / human-reference increment — 30 October 2026
@@ -13,7 +30,7 @@
 - [x] Review ten MusicNet literal rows and six exact non-classical metadata candidates;42quote/hash checks,zero admissions.
 - [x] Correct currentACE/optionalBTC comparator roster and identify all three shortlisted GuitarSet IDs as previously inspected development.
 - [x] Implement human interval-response handoff;23tests,independent review corrections and final preparatory approval.
-- [ ] Verify retried194e91cPagesdeployment,exact live bytes and desktop/mobile/refresh after GitHub500; no success inferred from push.
+- [x] Supersede failed194e91cpublication with reviewed milestone4d51511;5/5exact live files and local/live desktop/mobile/refresh verified. Do not claim194e91cwas ever live.
 - [ ] Obtain authorized exact-copy/use review,private playback and two independent human annotators; actual fees/effort remain unmeasured/unapproved.
 - [ ] Calibrate feasibility,then freeze chord tolerance/severe/reference-coverage/canonical-projection policies before candidate outcomes; final diverse confirmation open.
 

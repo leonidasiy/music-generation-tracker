@@ -1,9 +1,19 @@
+<!-- passt-current-20261031 -->
+# Current instrument-presence evidence —31October2026
+
+PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.
+
+Current decision: bounded performance gate and independent reconstruction pass;10integration tests,227tests/9skips per source copy and real paired report smoke pass. Wider historical FP regressions, interval crossing zero and ten-second scope justify experimental-only status; no default adoption. The prior calibration is a completed negative result, not an active candidate.
+<!-- end passt-current-20261031 -->
+
+---
+
 # Noteworthy Information
 
 ## Current recognizer lane — instrument-presence tracing, 31 October 2026
 Saved-return replay/parent reproduction verifies 505 historical fusion returns and separate current-function comparisons,66current saved-score reconstructions,269global/family and326section projections across190overlapping saved IDs. Fifteen contract controls,15invented-coverage probes and25independent contract assertions pass. The saved global0.190/local0.215 Vocal omission follows the documented section/global rule; Bassoon first loses CLAP-only coverage. No production/model/report-policy change justified. 169blocked nongeneric section-row instances across35saved IDs are not verified musical misses; zero public generic rows despite5,355internal instances. Articulation conditions on pre-display candidates and is not silently realigned. No new inference/training/audio/model acquisition or human labels.
 
-No paid annotation/data services or similar purchases. Existing no-fee human references need exact-source/use, task-fit, partial-label and overlap review. Owner authorizes justified storage and disposable cleanup; alert only below15GBfree, preserve required source/data/checkpoints/evidence. Current presence tolerances/coverage/severe policy and broad genre/audio-type confirmation remain open. Previous194e91cwas pushed but is not live:5-file readback shows2targetmatches, older8916ba2matchesall5; GitHub failedHTTP500deployment remains an external gate. Current milestone publication must be verified, never inferred from push.
+No paid annotation/data services or similar purchases. Existing no-fee human references need exact-source/use, task-fit, partial-label and overlap review. Owner authorizes justified storage and disposable cleanup; alert only below15GBfree, preserve required source/data/checkpoints/evidence. Current presence tolerances/coverage/severe policy and broad genre/audio-type confirmation remain open. Previous194e91cwas pushed but its own exact publication was not verified:5-file readback showed2targetmatches, older8916ba2matchedall5, with failedHTTP500deployment. That failed handoff is now superseded, not retroactively declared successful. Current milestone4d51511532a10109ec4072e690d78474e66abf29 is now verified: successful Pages run,5/5exact live files,14local/14live real-Chrome checks, refresh/reload/console/mobile and native desktop/mobile visual inspection. It supersedes the failed handoff publication, not a claim that194e91cwas live. Final independent review APPROVED_PREPUBLICATION; no production change or new musical accuracy is implied.
 
 ## Exact-recording clearance and human-response handoff — 30 October 2026
 

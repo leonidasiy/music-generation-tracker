@@ -1,3 +1,13 @@
+<!-- passt-current-20261031 -->
+## 2026-10-31T01:22:06.266853+00:00 — actual PaSST instrumentation comparison
+
+PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.
+
+No application adoption, full-song accuracy or hosted/commercial release is established. Research artifacts preserve frozen identities and prior negative findings.
+<!-- end passt-current-20261031 -->
+
+---
+
 # Work History
 
 ## 2026-07-14 — Session Start
@@ -245,3 +255,6 @@ New stdlib chord diagnostic partitions60inspected recordings×sixvariants/360cel
 Executed saved-return trace:505historical fusion calls plus separate current comparisons,66current reconstructions,269global/family and326section projections across190overlapping savedIDs. Parent reruns pass;15contract controls,15invented Bassoon-coverage probes and25independent contract assertions are separate scopes. Global0.190/local0.215 Vocal obeys documented intersection; Bassoon coverage loss is earlier/different. No model/report-policy/application change.169blocked nongeneric local rows across35IDs are not169musical misses; public generic rows zero despite5,355internal instances. Articulation pre-display conditioning and stale max/mean docstring disclosed without causal audio inference.
 
 Owner permits justified storage/disposable cleanup and alerts only below15GBfree; no paid annotation/data services. Disposable new QA profile removed after exact-PID shutdown with retained evidence hashes unchanged. Prior194e91cnotlive:2/5target paths, older8916ba2matches5/5; HTTP500deployment not hidden behind queued/building API statuses. New current-artifact review/deployment verification pending at this entry; research-site synchronization is not application deployment or musical confirmation.
+
+### 31 October — exact live milestone closure
+Independent final review APPROVED_PREPUBLICATION. Milestone4d51511532a10109ec4072e690d78474e66abf29 has successful Pages run41145612408 and5/5exact live artifact matches. Local/live real-Chrome QA each passes14checks; native desktop/mobile visuals inspected, refresh/reload/console clean. The failed194e91cpublication is superseded, not falsely marked deployed. Current TODO/INFO closure is reconciled; scientific presence trace is complete without production/model/report-policy changes. Required no-fee-reference admission, operational metric freeze and broad genre/audio-type confirmation remain open. Temporary server and newly created disposable QA profiles removed/stopped with retained evidence unchanged.
