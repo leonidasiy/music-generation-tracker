@@ -1,3 +1,20 @@
+## Current —1November2026: small full-mix chord comparison
+
+Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption.
+
+Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%→18.28% and failures1→2/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain.
+
+Keep the root-preserving hybrid as the promising research integration candidate: baseline roots/N remain unchanged while candidate supplies conditional quality. Test another small contrasting subset before separately authorized application adoption. Do not replace roots wholesale or require full-benchmark completion by default.
+
+Evidence: independently reconstructed eight waveform pairs; HIGH confidence scoped arithmetic, generalization unconfirmed.
+
+- [x] Eight metadata-selected30second vocal full mixes; exact waveform/CRC/reference identities verified.
+- [x] Unchanged native candidate and actual fresh strongest-control waveform inference.
+- [x] Independent per-case/pooled/paired/category numerical audit and explicit decision.
+- [ ] Further contrasting subset evidence and separately scoped lawful application adoption if promising.
+---
+## Prior records (historical; current status above supersedes)
+
 ## Current numerical progress —1November2026
 
 Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.

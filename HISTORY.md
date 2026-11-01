@@ -407,3 +407,14 @@ Chords, complete64: root duration error21.63%→18.04% (16.59% relative reductio
 Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.
 
 Evidence: recognizer-research/PROGRESS.md and progress-numbers.json. Matched partial rates exclude171missing/invalid outputs; these remain availability failures on original295 roster, never silent acoustic negatives.
+
+
+## Current —1November2026: small full-mix chord comparison
+
+Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption.
+
+Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%→18.28% and failures1→2/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain.
+
+Keep the root-preserving hybrid as the promising research integration candidate: baseline roots/N remain unchanged while candidate supplies conditional quality. Test another small contrasting subset before separately authorized application adoption. Do not replace roots wholesale or require full-benchmark completion by default.
+
+Evidence: independently reconstructed eight waveform pairs; HIGH confidence scoped arithmetic, generalization unconfirmed.

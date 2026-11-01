@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "numerical-progress-partial-yourmt3-stop",
-  "updated_at": "2026-11-01T07:46:24.730334+00:00",
+  "checkpoint": "rwc-eight-chord-subset-reviewed",
+  "updated_at": "2026-11-01T08:25:09.663421+00:00",
   "title": "Recognizer Research",
-  "phase": "Measured chord gains; partial instrument regression",
-  "summary": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.",
+  "phase": "Eight full-mix chord pairs — promising followup",
+  "summary": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "rwc-eight-chord-subset",
+      "title": "Eight vocal full-mix chord pairs — promising scoped gain",
+      "status": "complete",
+      "evidence_type": "Fresh two-arm waveform inference, independent saved-output reconstruction",
+      "detail": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption. Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%→18.28% and failures1→2/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain."
+    },
     {
       "id": "yourmt3-partial-146",
       "title": "YourMT3 partial146 — worse on matched122; not promoted",
@@ -444,6 +451,13 @@
   ],
   "findings": [
     {
+      "title": "Chord full-mix transfer subset: actual classification numbers",
+      "detail": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption. Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%→18.28% and failures1→2/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain.",
+      "evidence_type": "Exposed eight-clip RWC development transfer diagnostic",
+      "confidence": "HIGH scoped arithmetic; independent generalization unconfirmed",
+      "source": "RWC-SUBSET.md; rwc-chord-subset.json"
+    },
+    {
       "title": "Actual gains and regressions, not infrastructure counts",
       "detail": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.",
       "evidence_type": "Complete64 chord comparison and partial122 matched instrument comparison",
@@ -696,8 +710,8 @@
     "No owner action required for current diagnostic. NC checkpoint/code/noN constraints and broad independent validation remain production gates; primary improvement is below practical5pp threshold."
   ],
   "next_steps": [
-    "Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.",
-    "Show sample size, baseline→candidate rates, percentage-point and relative changes, and missing/invalid counts in each substantive result. Broad independent genre/audio-type confirmation and separately scoped lawful adoption remain open."
+    "Keep the root-preserving hybrid as the promising research integration candidate: baseline roots/N remain unchanged while candidate supplies conditional quality. Test another small contrasting subset before separately authorized application adoption. Do not replace roots wholesale or require full-benchmark completion by default.",
+    "Subset-first owner approval is based on meaningful relative root-duration gains; historical5pp recording-incidence gate remains distinct. YourMT3 unpromising instrument continuation remains abandoned."
   ],
   "agents": [
     {
@@ -727,6 +741,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T08:25:09.663421+00:00",
+      "title": "Eight full-mix chord comparisons completed",
+      "action": "Selective CRC-verified waveform crops; baseline and memory-efficient native candidate; references only after predictions sealed.",
+      "result": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption."
+    },
     {
       "time": "2026-11-01T07:46:24.730334+00:00",
       "title": "Accuracy numbers surfaced; remaining-only losing run not launched",

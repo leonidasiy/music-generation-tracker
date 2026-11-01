@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T07:46:24.730334+00:00",
+  "updated_at": "2026-11-01T08:25:09.663421+00:00",
   "chords": {
     "status": "complete_exposed64_not_promoted",
     "available": 64,
@@ -102,5 +102,821 @@
     "Stopping further inference is an outcome-informed resource decision, not a preregistered futility test or proof of full-cohort performance.",
     "Invalid and missing outputs are availability failures, not acoustic false negatives.",
     "Chord64 is an exposed cohort dominated by guitar plus four classical songs, not broad independent confirmation."
-  ]
+  ],
+  "chord_fullmix_subset": {
+    "status": "promising_root_preserving_quality_hybrid_exposed_subset",
+    "intended": 8,
+    "available_pairs": 8,
+    "clip_seconds": 30,
+    "total_audio_seconds": 240,
+    "root_duration_gain_pp": -0.043626543209864366,
+    "root_relative_error_reduction_percent": -0.2391626009587831,
+    "baseline": {
+      "root_only": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 18.241373456790132,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 196.2207037037037,
+        "failures_over30": 1,
+        "failure_percent": 12.5,
+        "severe_over70": 0,
+        "severe_percent": 0.0,
+        "missing_model_output": 0
+      },
+      "strict_triad": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 29.340972222222227,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 169.58166666666665,
+        "failures_over30": 2,
+        "failure_percent": 25.0,
+        "severe_over70": 1,
+        "severe_percent": 12.5,
+        "missing_model_output": 0
+      },
+      "historical_triad": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 29.340972222222227,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 169.58166666666665,
+        "failures_over30": 2,
+        "failure_percent": 25.0,
+        "severe_over70": 1,
+        "severe_percent": 12.5,
+        "missing_model_output": 0
+      },
+      "expanded_full_quality": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 45.59777777777777,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 130.56533333333334,
+        "failures_over30": 6,
+        "failure_percent": 75.0,
+        "severe_over70": 1,
+        "severe_percent": 12.5,
+        "missing_model_output": 0
+      }
+    },
+    "candidate": {
+      "root_only": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 18.284999999999997,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 196.116,
+        "failures_over30": 2,
+        "failure_percent": 25.0,
+        "severe_over70": 0,
+        "severe_percent": 0.0,
+        "missing_model_output": 0
+      },
+      "strict_triad": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 19.291249999999994,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 193.70100000000002,
+        "failures_over30": 2,
+        "failure_percent": 25.0,
+        "severe_over70": 0,
+        "severe_percent": 0.0,
+        "missing_model_output": 0
+      },
+      "historical_triad": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 19.291249999999994,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 193.70100000000002,
+        "failures_over30": 2,
+        "failure_percent": 25.0,
+        "severe_over70": 0,
+        "severe_percent": 0.0,
+        "missing_model_output": 0
+      },
+      "expanded_full_quality": {
+        "intended": 8,
+        "scorable": 8,
+        "duration_error_percent": 40.228333333333325,
+        "eligible_seconds": 240.0,
+        "matched_seconds": 143.45200000000003,
+        "failures_over30": 6,
+        "failure_percent": 75.0,
+        "severe_over70": 0,
+        "severe_percent": 0.0,
+        "missing_model_output": 0
+      }
+    },
+    "paired": {
+      "root_only": {
+        "pairs": 8,
+        "rescues": 1,
+        "regressions": 2,
+        "improved": 4,
+        "worsened": 4
+      },
+      "strict_triad": {
+        "pairs": 8,
+        "rescues": 1,
+        "regressions": 1,
+        "improved": 6,
+        "worsened": 2
+      },
+      "historical_triad": {
+        "pairs": 8,
+        "rescues": 1,
+        "regressions": 1,
+        "improved": 6,
+        "worsened": 2
+      },
+      "expanded_full_quality": {
+        "pairs": 8,
+        "rescues": 1,
+        "regressions": 1,
+        "improved": 5,
+        "worsened": 3
+      }
+    },
+    "category_panels": {
+      "English Pop vocalist": {
+        "baseline": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 19.711543209876524,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 48.17307407407409,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 20.565246913580225,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 47.66085185185187,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 20.565246913580225,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 47.66085185185187,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 31.426358024691336,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 41.1441851851852,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        },
+        "candidate": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 15.175000000000004,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 50.894999999999996,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 15.508333333333347,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 50.69499999999999,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 15.508333333333347,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 50.69499999999999,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 35.03666666666667,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 38.977999999999994,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        }
+      },
+      "Japanese J-pop female solo": {
+        "baseline": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 27.445802469135828,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 43.5325185185185,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 27.789876543209914,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 43.32607407407405,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 27.789876543209914,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 43.32607407407405,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 50.588395061728434,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 29.646962962962945,
+            "failures_over30": 2,
+            "failure_percent": 100.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        },
+        "candidate": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 15.061666666666651,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 50.96300000000001,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 15.061666666666651,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 50.96300000000001,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 15.061666666666651,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 50.96300000000001,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 50.929999999999964,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 29.442000000000025,
+            "failures_over30": 2,
+            "failure_percent": 100.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        }
+      },
+      "Japanese J-pop male solo": {
+        "baseline": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 14.43561728395063,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 51.33862962962962,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 25.65512345679013,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 44.60692592592592,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 25.65512345679013,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 44.60692592592592,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 43.4937037037037,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 33.903777777777776,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        },
+        "candidate": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 21.076666666666643,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 47.35400000000001,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 24.768333333333324,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 45.139,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 24.768333333333324,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 45.139,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 46.77333333333332,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 31.936000000000007,
+            "failures_over30": 2,
+            "failure_percent": 100.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        }
+      },
+      "Japanese J-pop vocal group": {
+        "baseline": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 11.372530864197527,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 53.17648148148148,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 43.35364197530863,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 33.98781481481482,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 1,
+            "severe_percent": 50.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 43.35364197530863,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 33.98781481481482,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 1,
+            "severe_percent": 50.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 56.88265432098765,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 25.870407407407413,
+            "failures_over30": 2,
+            "failure_percent": 100.0,
+            "severe_over70": 1,
+            "severe_percent": 50.0,
+            "missing_model_output": 0
+          }
+        },
+        "candidate": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 21.82666666666665,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 46.90400000000001,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 21.82666666666665,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 46.90400000000001,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 21.82666666666665,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 46.90400000000001,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 28.17333333333333,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 43.096000000000004,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        }
+      }
+    },
+    "reference_unknown_seconds": 0.0,
+    "reference_N_seconds": 1.2079999999999984,
+    "training_overlap": "Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation.",
+    "diversity": "Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres.",
+    "broad_confirmation": false,
+    "production_adopted": false,
+    "promising_subset": true,
+    "root_locked_hybrid": {
+      "metrics": {
+        "root_only": {
+          "intended": 8,
+          "scorable": 8,
+          "duration_error_percent": 18.241373456790132,
+          "eligible_seconds": 240.0,
+          "matched_seconds": 196.2207037037037,
+          "failures_over30": 1,
+          "failure_percent": 12.5,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "strict_triad": {
+          "intended": 8,
+          "scorable": 8,
+          "duration_error_percent": 19.685015432098773,
+          "eligible_seconds": 240.0,
+          "matched_seconds": 192.75596296296294,
+          "failures_over30": 2,
+          "failure_percent": 25.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "historical_triad": {
+          "intended": 8,
+          "scorable": 8,
+          "duration_error_percent": 19.685015432098773,
+          "eligible_seconds": 240.0,
+          "matched_seconds": 192.75596296296294,
+          "failures_over30": 2,
+          "failure_percent": 25.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "expanded_full_quality": {
+          "intended": 8,
+          "scorable": 8,
+          "duration_error_percent": 38.79689814814815,
+          "eligible_seconds": 240.0,
+          "matched_seconds": 146.88744444444444,
+          "failures_over30": 5,
+          "failure_percent": 62.5,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        }
+      },
+      "category_panels": {
+        "English Pop vocalist": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 19.711543209876524,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 48.17307407407409,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 20.206172839506166,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 47.8762962962963,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 20.206172839506166,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 47.8762962962963,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 35.68895061728393,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 38.58662962962964,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        },
+        "Japanese J-pop female solo": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 27.445802469135828,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 43.5325185185185,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 27.445802469135828,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 43.5325185185185,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 27.445802469135828,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 43.5325185185185,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 58.42839506172841,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 24.94296296296295,
+            "failures_over30": 2,
+            "failure_percent": 100.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        },
+        "Japanese J-pop male solo": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 14.43561728395063,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 51.33862962962962,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 19.467222222222226,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 48.31966666666666,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 19.467222222222226,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 48.31966666666666,
+            "failures_over30": 1,
+            "failure_percent": 50.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 43.60962962962963,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 33.83422222222222,
+            "failures_over30": 2,
+            "failure_percent": 100.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        },
+        "Japanese J-pop vocal group": {
+          "root_only": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 11.372530864197527,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 53.17648148148148,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "strict_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 11.620864197530867,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 53.02748148148148,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "historical_triad": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 11.620864197530867,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 53.02748148148148,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          },
+          "expanded_full_quality": {
+            "intended": 2,
+            "scorable": 2,
+            "duration_error_percent": 17.46061728395063,
+            "eligible_seconds": 60.0,
+            "matched_seconds": 49.523629629629625,
+            "failures_over30": 0,
+            "failure_percent": 0.0,
+            "severe_over70": 0,
+            "severe_percent": 0.0,
+            "missing_model_output": 0
+          }
+        }
+      },
+      "strict_triad_gain_pp": 9.655956790123454,
+      "strict_triad_relative_error_reduction_percent": 32.90946433877961,
+      "root_N_exact_baseline_preservation": true,
+      "new_model_calls": 0,
+      "chosen_after_standalone_outcomes": true,
+      "independent_confirmation": false
+    }
+  }
 }
