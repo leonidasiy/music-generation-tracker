@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "checkpoint": "btc-actual-app-six-verified",
+  "evidence_type": "Six exposed development excerpts; actual full-analyzer current-hybrid versus research-only BTC backend, independent interval reconstruction",
+  "intended": 6,
+  "completed_pairs": 6,
+  "reused_pilot_pairs": 1,
+  "new_pairs": 5,
+  "paired": {
+    "current": {
+      "root_only": {
+        "n": 6,
+        "eligible_seconds": 167.20560000000006,
+        "error_percent": 25.36497438473151,
+        "fail_gt30": 2,
+        "severe_gt70": 0
+      },
+      "strict_triad": {
+        "n": 6,
+        "eligible_seconds": 167.20560000000006,
+        "error_percent": 29.434415440134753,
+        "fail_gt30": 3,
+        "severe_gt70": 0
+      },
+      "expanded_full_quality": {
+        "n": 6,
+        "eligible_seconds": 167.20560000000006,
+        "error_percent": 37.53872047049966,
+        "fail_gt30": 3,
+        "severe_gt70": 0
+      }
+    },
+    "btc": {
+      "root_only": {
+        "n": 6,
+        "eligible_seconds": 167.20560000000006,
+        "error_percent": 16.479594492719873,
+        "fail_gt30": 1,
+        "severe_gt70": 0
+      },
+      "strict_triad": {
+        "n": 6,
+        "eligible_seconds": 167.20560000000006,
+        "error_percent": 21.262742264459135,
+        "fail_gt30": 1,
+        "severe_gt70": 0
+      },
+      "expanded_full_quality": {
+        "n": 6,
+        "eligible_seconds": 167.20560000000006,
+        "error_percent": 27.731278666374383,
+        "fail_gt30": 2,
+        "severe_gt70": 0
+      }
+    }
+  },
+  "missing_outputs": 0,
+  "invalid_outputs": 0,
+  "missing_prediction_seconds": 0,
+  "categories": {
+    "classical_vocal_piano": {
+      "current": {
+        "root_only": {
+          "n": 1,
+          "eligible_seconds": 29.8,
+          "error_percent": 31.5535669898086,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "n": 1,
+          "eligible_seconds": 29.8,
+          "error_percent": 31.5535669898086,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "n": 1,
+          "eligible_seconds": 29.8,
+          "error_percent": 45.30947054436988,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        }
+      },
+      "btc": {
+        "root_only": {
+          "n": 1,
+          "eligible_seconds": 29.8,
+          "error_percent": 19.256266264895228,
+          "fail_gt30": 0,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "n": 1,
+          "eligible_seconds": 29.8,
+          "error_percent": 19.256266264895228,
+          "fail_gt30": 0,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "n": 1,
+          "eligible_seconds": 29.8,
+          "error_percent": 24.654156964799355,
+          "fail_gt30": 0,
+          "severe_gt70": 0
+        }
+      }
+    },
+    "guitar": {
+      "current": {
+        "root_only": {
+          "n": 2,
+          "eligible_seconds": 47.40560000000005,
+          "error_percent": 15.499790575264772,
+          "fail_gt30": 0,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "n": 2,
+          "eligible_seconds": 47.40560000000005,
+          "error_percent": 29.703457090050623,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "n": 2,
+          "eligible_seconds": 47.40560000000005,
+          "error_percent": 29.703457090050623,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        }
+      },
+      "btc": {
+        "root_only": {
+          "n": 2,
+          "eligible_seconds": 47.40560000000005,
+          "error_percent": 6.604728551743966,
+          "fail_gt30": 0,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "n": 2,
+          "eligible_seconds": 47.40560000000005,
+          "error_percent": 23.083649382690187,
+          "fail_gt30": 0,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "n": 2,
+          "eligible_seconds": 47.40560000000005,
+          "error_percent": 23.083649382690187,
+          "fail_gt30": 0,
+          "severe_gt70": 0
+        }
+      }
+    },
+    "rwc_fullmix": {
+      "current": {
+        "root_only": {
+          "n": 3,
+          "eligible_seconds": 90.0,
+          "error_percent": 28.51213991769549,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "n": 3,
+          "eligible_seconds": 90.0,
+          "error_percent": 28.591028806584372,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "n": 3,
+          "eligible_seconds": 90.0,
+          "error_percent": 39.09279835390947,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        }
+      },
+      "btc": {
+        "root_only": {
+          "n": 3,
+          "eligible_seconds": 90.0,
+          "error_percent": 20.761584782060982,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "n": 3,
+          "eligible_seconds": 90.0,
+          "error_percent": 20.967984378936777,
+          "fail_gt30": 1,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "n": 3,
+          "eligible_seconds": 90.0,
+          "error_percent": 31.19818846056942,
+          "fail_gt30": 2,
+          "severe_gt70": 0
+        }
+      }
+    }
+  },
+  "candidate_only_union": {
+    "n": 12,
+    "strict_triad_duration_error_percent": 27.818855630578287,
+    "strict_triad_failed_recordings": 4,
+    "strict_triad_failure_incidence_percent": 33.333333333333336,
+    "caveat": "Six prior component-screen outputs plus six actual-app candidate outputs, not twelve matched application pairs."
+  },
+  "limitations": [
+    "Exposed development material and unresolved training overlap, not independent dataset confirmation.",
+    "The broader twelve-case candidate-only union still has four strict-triad failures (33.33%); overall below-30% recording-failure target not established.",
+    "One full-mix excerpt worsens expanded-quality error across the failure threshold; no universal improvement.",
+    "Research-only in-memory backend; installed application unchanged, no production adoption or future commercial clearance."
+  ]
+}

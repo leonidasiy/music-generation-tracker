@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "private-chord-option-installed-resource-held",
-  "updated_at": "2026-11-01T09:06:42.663879+00:00",
+  "checkpoint": "btc-actual-app-six-verified",
+  "updated_at": "2026-11-01T14:52:13.936987+00:00",
   "title": "Recognizer Research",
-  "phase": "Private chord option installed; final hardened runtime resource-held",
-  "summary": "Cached contrasting eight-recording check: triad error 33.44% → 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback.",
+  "phase": "BTC actual-app six-case comparison verified; broader target remains open",
+  "summary": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%).",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "btc-actual-app-six",
+      "title": "BTC actual-app follow-up — six verified development pairs",
+      "status": "complete",
+      "evidence_type": "Actual full-analyzer inference plus independent interval reconstruction",
+      "detail": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 → 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training."
+    },
     {
       "id": "private-chord-option",
       "title": "Private chord-quality option installed — final runtime resource-held",
@@ -458,6 +465,13 @@
   ],
   "findings": [
     {
+      "title": "BTC improves the additional six-case application screen, but the broader failure target remains open",
+      "detail": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 → 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training.",
+      "evidence_type": "Six matched full-analyzer pairs, independent native/scoring audit",
+      "confidence": "High for scoped arithmetic; generalization unverified",
+      "source": "Actual-app follow-up, 1 November 2026"
+    },
+    {
       "title": "Contrasting cached subset retains triad gain, but not universal quality improvement",
       "detail": "Triad 33.44% → 28.63%; guitar 34.13% → 32.57%; classical vocal/piano 33.32% → 27.96%. Roots unchanged. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights.",
       "evidence_type": "Independent computational reconstruction of all eight saved-output comparisons",
@@ -718,14 +732,13 @@
     }
   ],
   "blockers": [
-    "Final cache-hardened private native runtime is held by a host memory warning; the normal application and baseline fallback remain operational. Do not silently weaken the resource guard.",
-    "No broadindependentgenre/audio-typefinalconfirmation orvalidatedfinalchordutilitytolerance.",
-    "Instrumentreferencesremainpartialcliplabels,notexhaustivewhole-song/sectioninventories.",
-    "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
+    "Broad independent dataset confirmation and future commercial/code rights remain unresolved.",
+    "Across twelve exploratory BTC outputs, strict-triad recording failures remain 4/12 (33.33%); do not claim overall target attainment.",
+    "Full-quality failure incidence worsens on the three full mixes despite lower pooled error."
   ],
   "next_steps": [
-    "Use the reversible private experimental option only; keep the ordinary recognizer as default/fallback. Complete final cache-hardened native waveform verification when the resource gate permits; no further tuning or full benchmark is queued.",
-    "Before any commercial use or distribution, reassess checkpoint permission, code provenance and application-specific performance. No-subscription private use is the present scope, not blanket future product clearance."
+    "Prioritize diagnosis of residual hard guitar/full-mix errors and task-relevant independent confirmation before production adoption.",
+    "Retain the current application unchanged; any BTC installation or new training run needs separate scope and resource review."
   ],
   "agents": [
     {
@@ -755,6 +768,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T14:52:13.936987+00:00",
+      "title": "Six-case actual-application BTC follow-up independently verified",
+      "action": "One verified pilot plus five additional matched pairs, immutable scopes and resource guards.",
+      "result": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 → 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training."
+    },
     {
       "time": "2026-11-01T09:06:42.663955+00:00",
       "title": "Private chord integration and contrasting cached check",
@@ -1443,6 +1462,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "BTC actual-app six-case aggregate and broader-target caveat",
+      "url": "./btc-app-six.json"
+    },
     {
       "title": "Research plan and evidence boundaries",
       "url": "./METHODS.md"
