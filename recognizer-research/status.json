@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "panns295-fixed-head-rejected",
-  "updated_at": "2026-11-01T05:14:38.193274+00:00",
+  "checkpoint": "yourmt3-waveform-runtime-feasible",
+  "updated_at": "2026-11-01T07:00:52.329453+00:00",
   "title": "Recognizer Research",
-  "phase": "PANNs295 rejected; raw-note adapter next",
-  "summary": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.",
+  "phase": "YourMT3+ runtime feasible; accuracy untested",
+  "summary": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "yourmt3-waveform-smoke",
+      "title": "YourMT3+ waveform smoke — runtime feasible only",
+      "status": "complete",
+      "evidence_type": "Real waveform plus silence, independent saved-artifact audit",
+      "detail": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption. Two-thread CPUFP32 supervised9.474s, sampled2.198GB groupRSS; music3.084s/silence1.380s warm inference, not full-song throughput. Native music decoder errors retained:13segment-tie merges and3missing onsets. Checkpoint hparams and bias tensors establish layer_norm despite rms filename. Minimal licensed legacy T5 tuple-cache core avoids changing installed Transformers; no training, new audio, paid service or production edits. Independent saved-artifact audit accepted38pins/audio and130EOS-bearing sequences. Optional nonempty task conditioning and complete upstream numerical equivalence untested; exposed singleclip is not diverse independent confirmation. Training-vocabulary collapsed/unsupported classes remain unknown, never negative. Code distribution/provenance and separately scoped adoption remain open."
+    },
     {
       "id": "panns295-fixed-diagnostic",
       "title": "PANNs295 completed — fixed candidate rejected",
@@ -430,6 +437,13 @@
   ],
   "findings": [
     {
+      "title": "Raw-note runtime works; accuracy still untested",
+      "detail": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption. Two-thread CPUFP32 supervised9.474s, sampled2.198GB groupRSS; music3.084s/silence1.380s warm inference, not full-song throughput. Native music decoder errors retained:13segment-tie merges and3missing onsets. Checkpoint hparams and bias tensors establish layer_norm despite rms filename. Minimal licensed legacy T5 tuple-cache core avoids changing installed Transformers; no training, new audio, paid service or production edits. Independent saved-artifact audit accepted38pins/audio and130EOS-bearing sequences. Optional nonempty task conditioning and complete upstream numerical equivalence untested; exposed singleclip is not diverse independent confirmation. Training-vocabulary collapsed/unsupported classes remain unknown, never negative. Code distribution/provenance and separately scoped adoption remain open.",
+      "evidence_type": "Single exposedclip engineering feasibility",
+      "confidence": "HIGH scoped runtime; acoustic benefit unverified",
+      "source": "PRACTICAL-SOLUTIONS.md"
+    },
+    {
       "title": "Released classifier reduces false positives but loses too much recall",
       "detail": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.",
       "evidence_type": "Exposed matched development, not independent confirmation",
@@ -668,8 +682,8 @@
     "No owner action required for current diagnostic. NC checkpoint/code/noN constraints and broad independent validation remain production gates; primary improvement is below practical5pp threshold."
   ],
   "next_steps": [
-    "Next concrete task: implement one isolated YourMT3+ raw-note CPU adapter from pinned author source, preserving instrument programs and cross-segment ties BEFORE default MIDI export collapses them. First audit reachable program vocabulary, per-file GPL/Apache discrepancy, minimal existing dependency compatibility and safe weights-only loading; all19 evidence/support states, unsupported never negative. Selected561544628-byte author checkpoint is metadata-verified, NOT downloaded; full execution storage/runtime fit not cleared. Give new measured scope/time/cost/storage estimate before acquisition or inference. No PANNs threshold/pooling/head/HPSS rescue. Broad diverse independent confirmation and separately scoped lawful adoption remain open.",
-    "No model promoted; current production and strongest control retained."
+    "Next substantive task: test and freeze all19 training-support/raw-note mapping and one fixed presence rule, then one useful matched exposed evaluation versus strongest unchanged PaSST/fusion control (primary55/severe12 of292). Keep295intended/292scorable, known/unknown masks, unsupported/missing coverage and paired/category panels explicit; do not silently remove unsupported classes or change denominator. Reuse exact smoke only after identities match. Give measured corpus time/storage estimate and prospective phase before new inference; no repeat feasibility/literature/website-only loop. Broad independent genre/audio-type confirmation and lawful separately scoped adoption of qualifying gain remain open.",
+    "No model promoted; strongest current control and production unchanged."
   ],
   "agents": [
     {
@@ -699,6 +713,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T07:00:52.329453+00:00",
+      "title": "YourMT3+ waveform feasibility independently audited",
+      "action": "Verified checkpoint, isolated raw-note inference without MIDI collapse.",
+      "result": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption."
+    },
     {
       "time": "2026-11-01T05:14:38.193274+00:00",
       "title": "PANNs295 diagnostic independently reconstructed",

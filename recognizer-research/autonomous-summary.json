@@ -290,7 +290,7 @@
     "paid_services": false
   },
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T05:14:38.193274+00:00",
+  "updated_at": "2026-11-01T07:00:52.329453+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25497,7 +25497,7 @@
       "feasible local runtime and isolated adapter",
       "matched comparison against strongest current control"
     ],
-    "next_deliverable": "Next concrete task: implement one isolated YourMT3+ raw-note CPU adapter from pinned author source, preserving instrument programs and cross-segment ties BEFORE default MIDI export collapses them. First audit reachable program vocabulary, per-file GPL/Apache discrepancy, minimal existing dependency compatibility and safe weights-only loading; all19 evidence/support states, unsupported never negative. Selected561544628-byte author checkpoint is metadata-verified, NOT downloaded; full execution storage/runtime fit not cleared. Give new measured scope/time/cost/storage estimate before acquisition or inference. No PANNs threshold/pooling/head/HPSS rescue. Broad diverse independent confirmation and separately scoped lawful adoption remain open.",
+    "next_deliverable": "Next substantive task: test and freeze all19 training-support/raw-note mapping and one fixed presence rule, then one useful matched exposed evaluation versus strongest unchanged PaSST/fusion control (primary55/severe12 of292). Keep295intended/292scorable, known/unknown masks, unsupported/missing coverage and paired/category panels explicit; do not silently remove unsupported classes or change denominator. Reuse exact smoke only after identities match. Give measured corpus time/storage estimate and prospective phase before new inference; no repeat feasibility/literature/website-only loop. Broad independent genre/audio-type confirmation and lawful separately scoped adoption of qualifying gain remain open.",
     "new_accuracy_gain_claim": false,
     "production_adoption": false,
     "first_practical_pilot": {
@@ -102686,6 +102686,15 @@
         "historical_any": "errors >= 1; historical control 73/292",
         "historical_severe2": "errors >= 2"
       }
+    },
+    "yourmt3_runtime": {
+      "status": "feasible_accuracy_untested",
+      "music_notes": 103,
+      "silence_notes": 0,
+      "segment_calls": 10,
+      "channels": 13,
+      "qualified_gain": false,
+      "production_adopted": false
     }
   }
 }

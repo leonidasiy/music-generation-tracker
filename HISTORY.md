@@ -1,3 +1,14 @@
+## Current —1 November2026: YourMT3+ waveform runtime feasible; accuracy untested
+
+YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption.
+
+Two-thread CPUFP32 supervised9.474s, sampled2.198GB groupRSS; music3.084s/silence1.380s warm inference, not full-song throughput. Native music decoder errors retained:13segment-tie merges and3missing onsets. Checkpoint hparams and bias tensors establish layer_norm despite rms filename. Minimal licensed legacy T5 tuple-cache core avoids changing installed Transformers; no training, new audio, paid service or production edits. Independent saved-artifact audit accepted38pins/audio and130EOS-bearing sequences. Optional nonempty task conditioning and complete upstream numerical equivalence untested; exposed singleclip is not diverse independent confirmation. Training-vocabulary collapsed/unsupported classes remain unknown, never negative. Code distribution/provenance and separately scoped adoption remain open.
+
+Next substantive task: test and freeze all19 training-support/raw-note mapping and one fixed presence rule, then one useful matched exposed evaluation versus strongest unchanged PaSST/fusion control (primary55/severe12 of292). Keep295intended/292scorable, known/unknown masks, unsupported/missing coverage and paired/category panels explicit; do not silently remove unsupported classes or change denominator. Reuse exact smoke only after identities match. Give measured corpus time/storage estimate and prospective phase before new inference; no repeat feasibility/literature/website-only loop. Broad independent genre/audio-type confirmation and lawful separately scoped adoption of qualifying gain remain open.
+
+---
+## Prior records (historical; current status above supersedes)
+
 ## Current —1November2026: PANNs295 completed and rejected
 
 Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.
