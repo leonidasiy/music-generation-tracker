@@ -418,3 +418,12 @@ Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and Eng
 Keep the root-preserving hybrid as the promising research integration candidate: baseline roots/N remain unchanged while candidate supplies conditional quality. Test another small contrasting subset before separately authorized application adoption. Do not replace roots wholesale or require full-benchmark completion by default.
 
 Evidence: independently reconstructed eight waveform pairs; HIGH confidence scoped arithmetic, generalization unconfirmed.
+
+
+## Private chord option — 1 November 2026
+
+Cached contrasting eight-recording check: triad error 33.44% → 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback.
+
+Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights.
+
+No further model tuning/full benchmark is queued. Final native verification remains resource-held; private installation is not commercial promotion.

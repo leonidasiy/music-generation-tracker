@@ -1,0 +1,318 @@
+{
+  "scope": "Eight previously exposed cached contrasting recordings: four guitar and four clustered classical vocal/piano recordings; fixed root-preserving rule; no new model inference for accuracy comparison.",
+  "intended": 8,
+  "baseline": {
+    "root_only": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 24.953633479830128,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 574.1197131526035,
+      "failures_over30": 0,
+      "failure_percent": 0.0,
+      "severe_over70": 0,
+      "severe_percent": 0.0,
+      "missing_model_output": 0
+    },
+    "strict_triad": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 33.43782556498076,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 509.2139468627841,
+      "failures_over30": 4,
+      "failure_percent": 50.0,
+      "severe_over70": 1,
+      "severe_percent": 12.5,
+      "missing_model_output": 0
+    },
+    "historical_triad": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 33.69199466440881,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 507.26950241833964,
+      "failures_over30": 4,
+      "failure_percent": 50.0,
+      "severe_over70": 1,
+      "severe_percent": 12.5,
+      "missing_model_output": 0
+    },
+    "expanded_full_quality": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 43.37325136228096,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 433.20595242827807,
+      "failures_over30": 6,
+      "failure_percent": 75.0,
+      "severe_over70": 1,
+      "severe_percent": 12.5,
+      "missing_model_output": 0
+    }
+  },
+  "root_locked": {
+    "root_only": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 24.953633479830128,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 574.1197131526035,
+      "failures_over30": 0,
+      "failure_percent": 0.0,
+      "severe_over70": 0,
+      "severe_percent": 0.0,
+      "missing_model_output": 0
+    },
+    "strict_triad": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 28.63330338836375,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 545.9695024183395,
+      "failures_over30": 4,
+      "failure_percent": 50.0,
+      "severe_over70": 1,
+      "severe_percent": 12.5,
+      "missing_model_output": 0
+    },
+    "historical_triad": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 28.887472487791797,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 544.0250579738951,
+      "failures_over30": 4,
+      "failure_percent": 50.0,
+      "severe_over70": 1,
+      "severe_percent": 12.5,
+      "missing_model_output": 0
+    },
+    "expanded_full_quality": {
+      "intended": 8,
+      "scorable": 8,
+      "duration_error_percent": 42.96096262465283,
+      "eligible_seconds": 765.0199999999999,
+      "matched_seconds": 436.36004372888084,
+      "failures_over30": 6,
+      "failure_percent": 75.0,
+      "severe_over70": 2,
+      "severe_percent": 25.0,
+      "missing_model_output": 0
+    }
+  },
+  "categories": {
+    "Classical vocal+piano": {
+      "baseline": {
+        "root_only": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 26.367080710112877,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 480.8229629629629,
+          "failures_over30": 0,
+          "failure_percent": 0.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "strict_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 33.31972094606092,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 435.4222222222222,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "historical_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 33.31972094606092,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 435.4222222222222,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "expanded_full_quality": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 41.66717713118937,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 380.9133333333334,
+          "failures_over30": 3,
+          "failure_percent": 75.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        }
+      },
+      "root_locked": {
+        "root_only": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 26.367080710112877,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 480.8229629629629,
+          "failures_over30": 0,
+          "failure_percent": 0.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "strict_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 27.95757472633431,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 470.43703703703693,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "historical_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 27.95757472633431,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 470.43703703703693,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "expanded_full_quality": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 40.76705802280076,
+          "eligible_seconds": 653.0,
+          "matched_seconds": 386.79111111111104,
+          "failures_over30": 3,
+          "failure_percent": 75.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        }
+      }
+    },
+    "GuitarSet": {
+      "baseline": {
+        "root_only": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 16.714202651633038,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 93.29675018964056,
+          "failures_over30": 0,
+          "failure_percent": 0.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "strict_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 34.12629473258174,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 73.79172464056185,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 1,
+          "severe_percent": 25.0,
+          "missing_model_output": 0
+        },
+        "historical_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 35.862095879202386,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 71.84728019611741,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 1,
+          "severe_percent": 25.0,
+          "missing_model_output": 0
+        },
+        "expanded_full_quality": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 53.318497504959176,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 52.292619094944676,
+          "failures_over30": 3,
+          "failure_percent": 75.0,
+          "severe_over70": 1,
+          "severe_percent": 25.0,
+          "missing_model_output": 0
+        }
+      },
+      "root_locked": {
+        "root_only": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 16.714202651633038,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 93.29675018964056,
+          "failures_over30": 0,
+          "failure_percent": 0.0,
+          "severe_over70": 0,
+          "severe_percent": 0.0,
+          "missing_model_output": 0
+        },
+        "strict_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 32.57233942036898,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 75.53246538130259,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 1,
+          "severe_percent": 25.0,
+          "missing_model_output": 0
+        },
+        "historical_triad": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 34.30814056698961,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 73.58802093685816,
+          "failures_over30": 2,
+          "failure_percent": 50.0,
+          "severe_over70": 1,
+          "severe_percent": 25.0,
+          "missing_model_output": 0
+        },
+        "expanded_full_quality": {
+          "intended": 4,
+          "scorable": 4,
+          "duration_error_percent": 55.749926247304145,
+          "eligible_seconds": 112.01999999999987,
+          "matched_seconds": 49.56893261776983,
+          "failures_over30": 3,
+          "failure_percent": 75.0,
+          "severe_over70": 2,
+          "severe_percent": 50.0,
+          "missing_model_output": 0
+        }
+      }
+    }
+  },
+  "strict_triad_relative_reduction_percent": 14.36852455396729,
+  "new_model_calls_for_accuracy_comparison": 0,
+  "independent_generalization_confirmation": false,
+  "private_option_installed": true,
+  "default_replaced": false,
+  "current_application_baseline_matches_scored_fixed181": false,
+  "final_hardened_waveform_verification": "resource-blocked by host memory warning; baseline fallback served successfully",
+  "commercial_clearance": false
+}

@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "rwc-eight-chord-subset-reviewed",
-  "updated_at": "2026-11-01T08:25:09.663421+00:00",
+  "checkpoint": "private-chord-option-installed-resource-held",
+  "updated_at": "2026-11-01T09:06:42.663879+00:00",
   "title": "Recognizer Research",
-  "phase": "Eight full-mix chord pairs — promising followup",
-  "summary": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption.",
+  "phase": "Private chord option installed; final hardened runtime resource-held",
+  "summary": "Cached contrasting eight-recording check: triad error 33.44% → 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "private-chord-option",
+      "title": "Private chord-quality option installed — final runtime resource-held",
+      "status": "blocked",
+      "evidence_type": "Independent cached-output audit; real chord-path smoke before cache hardening; full local API/UI fallback verification",
+      "detail": "Cached contrasting eight-recording check: triad error 33.44% → 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights. Earlier real 22.32-second app chord-path call took 4.77 seconds versus 0.67 seconds baseline; roots/N/X preserved. Those are one-clip timings before cache hardening, not full-application throughput. Final cache-hardened code passes independent code review; host memory warning prevents claiming final native-path waveform completion."
+    },
     {
       "id": "rwc-eight-chord-subset",
       "title": "Eight vocal full-mix chord pairs — promising scoped gain",
@@ -451,6 +458,13 @@
   ],
   "findings": [
     {
+      "title": "Contrasting cached subset retains triad gain, but not universal quality improvement",
+      "detail": "Triad 33.44% → 28.63%; guitar 34.13% → 32.57%; classical vocal/piano 33.32% → 27.96%. Roots unchanged. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights.",
+      "evidence_type": "Independent computational reconstruction of all eight saved-output comparisons",
+      "confidence": "High for saved subset arithmetic; generalization unverified",
+      "source": "Private cached contrast audit, 1 November 2026"
+    },
+    {
       "title": "Chord full-mix transfer subset: actual classification numbers",
       "detail": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption. Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%→18.28% and failures1→2/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain.",
       "evidence_type": "Exposed eight-clip RWC development transfer diagnostic",
@@ -704,14 +718,14 @@
     }
   ],
   "blockers": [
+    "Final cache-hardened private native runtime is held by a host memory warning; the normal application and baseline fallback remain operational. Do not silently weaken the resource guard.",
     "No broadindependentgenre/audio-typefinalconfirmation orvalidatedfinalchordutilitytolerance.",
     "Instrumentreferencesremainpartialcliplabels,notexhaustivewhole-song/sectioninventories.",
-    "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved.",
-    "No owner action required for current diagnostic. NC checkpoint/code/noN constraints and broad independent validation remain production gates; primary improvement is below practical5pp threshold."
+    "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
   ],
   "next_steps": [
-    "Keep the root-preserving hybrid as the promising research integration candidate: baseline roots/N remain unchanged while candidate supplies conditional quality. Test another small contrasting subset before separately authorized application adoption. Do not replace roots wholesale or require full-benchmark completion by default.",
-    "Subset-first owner approval is based on meaningful relative root-duration gains; historical5pp recording-incidence gate remains distinct. YourMT3 unpromising instrument continuation remains abandoned."
+    "Use the reversible private experimental option only; keep the ordinary recognizer as default/fallback. Complete final cache-hardened native waveform verification when the resource gate permits; no further tuning or full benchmark is queued.",
+    "Before any commercial use or distribution, reassess checkpoint permission, code provenance and application-specific performance. No-subscription private use is the present scope, not blanket future product clearance."
   ],
   "agents": [
     {
@@ -741,6 +755,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T09:06:42.663955+00:00",
+      "title": "Private chord integration and contrasting cached check",
+      "action": "Fixed decoder replay on eight cached recordings; installed a separate, explicitly acknowledged private application option.",
+      "result": "Cached contrasting eight-recording check: triad error 33.44% → 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights."
+    },
     {
       "time": "2026-11-01T08:25:09.663421+00:00",
       "title": "Eight full-mix chord comparisons completed",
@@ -1383,6 +1403,16 @@
       "name": "recognizer-research/instrument-presence-summary.json",
       "bytes": 91227,
       "sha256": "c958269fb971cc1b0936696f001ef70c90475bc97d0df8cdfd9c973506611758"
+    },
+    {
+      "name": "recognizer-research/private-chord-adoption.json",
+      "bytes": 10258,
+      "sha256": "ece0d084467102598d9947ab51f55137e9784a2ba98396caf1dbe1fb484637fd"
+    },
+    {
+      "name": "recognizer-research/PRIVATE-CHORD-ADOPTION.md",
+      "bytes": 2198,
+      "sha256": "44b901a5d7c187476b60d717e4405d1b31c9b8be570ec1e568dfbe064ae6ae9f"
     }
   ],
   "limits": [
