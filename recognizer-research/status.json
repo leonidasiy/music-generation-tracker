@@ -1,15 +1,22 @@
 {
   "schema_version": 1,
-  "checkpoint": "yourmt3-waveform-runtime-feasible",
-  "updated_at": "2026-11-01T07:00:52.329453+00:00",
+  "checkpoint": "numerical-progress-partial-yourmt3-stop",
+  "updated_at": "2026-11-01T07:46:24.730334+00:00",
   "title": "Recognizer Research",
-  "phase": "YourMT3+ runtime feasible; accuracy untested",
-  "summary": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption.",
+  "phase": "Measured chord gains; partial instrument regression",
+  "summary": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.",
   "publication_ready": false,
   "milestones": [
     {
+      "id": "yourmt3-partial-146",
+      "title": "YourMT3 partial146 — worse on matched122; not promoted",
+      "status": "complete",
+      "evidence_type": "Deadline-stopped waveform run; independent saved-output reconstruction",
+      "detail": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption. Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory. Partial run closure is not full295 evaluation completion."
+    },
+    {
       "id": "yourmt3-waveform-smoke",
-      "title": "YourMT3+ waveform smoke — runtime feasible only",
+      "title": "Historical YourMT3 waveform smoke — superseded by partial accuracy result",
       "status": "complete",
       "evidence_type": "Real waveform plus silence, independent saved-artifact audit",
       "detail": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption. Two-thread CPUFP32 supervised9.474s, sampled2.198GB groupRSS; music3.084s/silence1.380s warm inference, not full-song throughput. Native music decoder errors retained:13segment-tie merges and3missing onsets. Checkpoint hparams and bias tensors establish layer_norm despite rms filename. Minimal licensed legacy T5 tuple-cache core avoids changing installed Transformers; no training, new audio, paid service or production edits. Independent saved-artifact audit accepted38pins/audio and130EOS-bearing sequences. Optional nonempty task conditioning and complete upstream numerical equivalence untested; exposed singleclip is not diverse independent confirmation. Training-vocabulary collapsed/unsupported classes remain unknown, never negative. Code distribution/provenance and separately scoped adoption remain open."
@@ -59,7 +66,7 @@
     {
       "id": "practical-solution-pivot",
       "title": "Practical solutions and implementation now take priority",
-      "status": "in_progress",
+      "status": "running",
       "evidence_type": "Explicit owner-directed priority change, not an accuracy result",
       "detail": "Fixed HPSS corpus follow-up deferred before inference. Prioritize released task-matched recognizers, actual checkpoint/runtime feasibility, and practical integration; stop repeating low-yield variants by default. No new gain or production adoption claimed."
     },
@@ -437,6 +444,13 @@
   ],
   "findings": [
     {
+      "title": "Actual gains and regressions, not infrastructure counts",
+      "detail": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.",
+      "evidence_type": "Complete64 chord comparison and partial122 matched instrument comparison",
+      "confidence": "HIGH scoped arithmetic; generalization unconfirmed",
+      "source": "PROGRESS.md; progress-numbers.json; full64-complete.json"
+    },
+    {
       "title": "Raw-note runtime works; accuracy still untested",
       "detail": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption. Two-thread CPUFP32 supervised9.474s, sampled2.198GB groupRSS; music3.084s/silence1.380s warm inference, not full-song throughput. Native music decoder errors retained:13segment-tie merges and3missing onsets. Checkpoint hparams and bias tensors establish layer_norm despite rms filename. Minimal licensed legacy T5 tuple-cache core avoids changing installed Transformers; no training, new audio, paid service or production edits. Independent saved-artifact audit accepted38pins/audio and130EOS-bearing sequences. Optional nonempty task conditioning and complete upstream numerical equivalence untested; exposed singleclip is not diverse independent confirmation. Training-vocabulary collapsed/unsupported classes remain unknown, never negative. Code distribution/provenance and separately scoped adoption remain open.",
       "evidence_type": "Single exposedclip engineering feasibility",
@@ -682,8 +696,8 @@
     "No owner action required for current diagnostic. NC checkpoint/code/noN constraints and broad independent validation remain production gates; primary improvement is below practical5pp threshold."
   ],
   "next_steps": [
-    "Next substantive task: test and freeze all19 training-support/raw-note mapping and one fixed presence rule, then one useful matched exposed evaluation versus strongest unchanged PaSST/fusion control (primary55/severe12 of292). Keep295intended/292scorable, known/unknown masks, unsupported/missing coverage and paired/category panels explicit; do not silently remove unsupported classes or change denominator. Reuse exact smoke only after identities match. Give measured corpus time/storage estimate and prospective phase before new inference; no repeat feasibility/literature/website-only loop. Broad independent genre/audio-type confirmation and lawful separately scoped adoption of qualifying gain remain open.",
-    "No model promoted; strongest current control and production unchanged."
+    "Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.",
+    "Show sample size, baseline→candidate rates, percentage-point and relative changes, and missing/invalid counts in each substantive result. Broad independent genre/audio-type confirmation and separately scoped lawful adoption remain open."
   ],
   "agents": [
     {
@@ -713,6 +727,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T07:46:24.730334+00:00",
+      "title": "Accuracy numbers surfaced; remaining-only losing run not launched",
+      "action": "Scored146saved raw wrappers, separated124valid/22invalid, compared matched122scorable; preserved149missing. No new inference.",
+      "result": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption."
+    },
     {
       "time": "2026-11-01T07:00:52.329453+00:00",
       "title": "YourMT3+ waveform feasibility independently audited",
@@ -1343,11 +1363,6 @@
       "name": "recognizer-research/instrument-presence-summary.json",
       "bytes": 91227,
       "sha256": "c958269fb971cc1b0936696f001ef70c90475bc97d0df8cdfd9c973506611758"
-    },
-    {
-      "title": "PANNs295 aggregate diagnostic",
-      "url": "panns-matched.json",
-      "description": "All19class and non-identifying category counters; no recording arrays."
     }
   ],
   "limits": [
@@ -1441,6 +1456,11 @@
     {
       "title": "OpenMIC dataset and rights metadata",
       "url": "https://zenodo.org/records/1432913"
+    },
+    {
+      "title": "PANNs295 aggregate diagnostic",
+      "url": "panns-matched.json",
+      "description": "All19class and non-identifying category counters; no recording arrays."
     }
   ]
 }

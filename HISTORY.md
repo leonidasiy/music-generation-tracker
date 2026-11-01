@@ -259,7 +259,7 @@ No application adoption, full-song accuracy or hosted/commercial release is esta
 - Obtained a fresh producer review and froze clause-minimal 60- and 90-second prompt pairs for separate B-section lead-register and closed-hi-hat activity interventions
 - Created `pilots/clpr_stage0/` with a versioned prompt registry, JSON run-manifest schema, deterministic validation/hashing utilities, ignored raw-run directory, and execution README
 - Used test-first implementation: confirmed the expected missing-module failure, implemented the utilities, then passed seven protocol tests and validated the frozen prompt registry
-- Cloned the official ACE-Step 1.5 source to `[HOME]/.cache/clpr-stage0/ACE-Step-1.5` and pinned revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0`; the shallow source tree uses 30 MB
+- Cloned the official ACE-Step 1.5 source to `[private installation path omitted]` and pinned revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0`; the shallow source tree uses 30 MB
 - Audited current official installation requirements: Python 3.11–3.12, macOS MLX support, approximately 10 GB core-model storage, and automatic first-run model download
 - Ran `uv sync --dry-run --no-install-project`: dependency resolution succeeded and would create a Python 3.12 environment with 124 packages, downloading 90 packages
 - Queried the Hugging Face model API: ACE-Step 1.5 reports 10,079,024,720 bytes (9.39 GiB) of model storage
@@ -267,7 +267,7 @@ No application adoption, full-song accuracy or hosted/commercial release is esta
 - No paid service, API key, credential, model weight, or commercial generation has been used
 
 ## 2026-07-17 — Local Runtime and Public Execution Ledger
-- Installed the ACE-Step 1.5 Python 3.12 environment and required checkpoints under `[HOME]/.cache/clpr-stage0/ACE-Step-1.5/`, using standard HTTP resume after the initial Hugging Face Xet transfer stalled
+- Installed the ACE-Step 1.5 Python 3.12 environment and required checkpoints under `[private installation path omitted]`, using standard HTTP resume after the initial Hugging Face Xet transfer stalled
 - Verified PyTorch 2.10.0, MLX 0.30.6, MLX-LM 0.29.1, and Apple MPS availability
 - Started the local REST API with MLX, planning-LM initialization disabled, caption rewriting disabled, and lazy model initialization
 - Generated two 10-second, 48 kHz stereo FLAC outputs with seed 42; both had SHA-256 `df405f00c845e3d745d2e584603b2b3127c08d58d94b11cb48ed25c0dfae7f09`
@@ -398,3 +398,13 @@ Independent final review APPROVED_PREPUBLICATION. Milestone4d51511532a10109ec407
 ## 2026-10-31T01:28:56.878246+00:00 — PaSST metrics publication verified
 
 Metrics commit def84dd75beda260252f6198dd67c5eb36705990 completed its exact Pages run successfully; seven of seven live artifacts match reviewed committed bytes. Fourteen local and fourteen live browser checks, desktop/mobile visual inspection and refresh/reload pass. Candidate remains experimental; no actual application adoption. This entry records the preceding metrics deployment, not self-attestation of a later documentation-only commit.
+
+
+## Current numerical progress —1November2026
+
+Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.
+
+Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.
+
+Evidence: recognizer-research/PROGRESS.md and progress-numbers.json. Matched partial rates exclude171missing/invalid outputs; these remain availability failures on original295 roster, never silent acoustic negatives.
+

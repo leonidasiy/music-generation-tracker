@@ -1,3 +1,18 @@
+## Current numerical progress —1November2026
+
+Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.
+
+Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.
+
+Evidence: recognizer-research/PROGRESS.md and progress-numbers.json. Matched partial rates exclude171missing/invalid outputs; these remain availability failures on original295 roster, never silent acoustic negatives.
+
+- [x] Original deadline stop and owned-group cleanup verified.
+- [x] Partial saved outputs scored with fixed masks and identical matched denominators.
+- [x] Outcome-informed decision: do not launch remaining-only inference; retain incomplete status.
+- [ ] Broad independent evaluation and separately scoped lawful adoption of an actual winner.
+---
+## Historical records (current status above supersedes)
+
 ## Current —1 November2026: YourMT3+ waveform runtime feasible; accuracy untested
 
 YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption.
@@ -294,7 +309,7 @@ PaSST-assisted instrument presence reduced observed-reference failure recordings
 - [x] Create the Stage 0 prompt registry, run-manifest schema, deterministic validators, and seven passing tests
 - [x] Identify initial raw-audio candidates with repeatable randomness and sufficient duration: ACE-Step 1.5 plus Udio; Udio is now a deferred backup
 - [x] Pin ACE-Step source revision `6d467e4b5081ccb0abf1ec1bf4fdf9051a2d34b0` and complete the no-download dependency audit
-- [x] Install ACE-Step 1.5 under `[HOME]/.cache/clpr-stage0/`, including the pinned checkpoint and 124-package environment
+- [x] Install ACE-Step 1.5 under `[private installation path omitted]`, including the pinned checkpoint and 124-package environment
 - [x] Run two fixed-seed ACE-Step smoke tests on the M5 / 24 GB Mac and verify byte-identical seed-42 outputs
 - [x] Add `execution-log.json`, a redacting command wrapper, and an Execution Log website tab for command/artifact monitoring
 - [x] Verify a different seed produces a different artifact under the same pinned local configuration: seed 43 produced SHA-256 `c2933382…`, distinct from seed 42

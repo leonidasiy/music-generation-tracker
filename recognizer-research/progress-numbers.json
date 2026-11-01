@@ -1,0 +1,106 @@
+{
+  "updated_at": "2026-11-01T07:46:24.730334+00:00",
+  "chords": {
+    "status": "complete_exposed64_not_promoted",
+    "available": 64,
+    "intended": 64,
+    "endpoints": {
+      "root_only": {
+        "scorable": 64,
+        "control_duration_error_percent": 21.625360558200413,
+        "candidate_duration_error_percent": 18.03699555924877,
+        "duration_gain_pp": 3.5883649989516435,
+        "relative_error_reduction_percent": 16.593318706961043,
+        "control_failures": 16,
+        "candidate_failures": 14,
+        "control_failure_percent": 25.0,
+        "candidate_failure_percent": 21.875
+      },
+      "strict_triad": {
+        "scorable": 64,
+        "control_duration_error_percent": 39.07466738423459,
+        "candidate_duration_error_percent": 33.85731575045307,
+        "duration_gain_pp": 5.217351633781519,
+        "relative_error_reduction_percent": 13.35226115292937,
+        "control_failures": 33,
+        "candidate_failures": 27,
+        "control_failure_percent": 51.5625,
+        "candidate_failure_percent": 42.1875
+      }
+    },
+    "categories": {
+      "BN": {
+        "n": 10,
+        "control_root_error_percent": 19.347486993974638,
+        "candidate_root_error_percent": 19.553735673302842
+      },
+      "Funk": {
+        "n": 15,
+        "control_root_error_percent": 37.58076108474451,
+        "candidate_root_error_percent": 33.28116936939802
+      },
+      "Jazz": {
+        "n": 12,
+        "control_root_error_percent": 32.22708420898957,
+        "candidate_root_error_percent": 22.254527090982158
+      },
+      "Rock": {
+        "n": 10,
+        "control_root_error_percent": 6.649053672173332,
+        "candidate_root_error_percent": 3.623430461890398
+      },
+      "SS": {
+        "n": 13,
+        "control_root_error_percent": 3.9361758971783734,
+        "candidate_root_error_percent": 4.730638485764683
+      },
+      "Winterreise": {
+        "n": 4,
+        "control_root_error_percent": 26.367080710112877,
+        "candidate_root_error_percent": 20.931087289433393
+      }
+    },
+    "broad_confirmation": false,
+    "production_adoption": false
+  },
+  "instruments": {
+    "status": "partial_deadline_stop_no_further_inference_selected",
+    "intended": 295,
+    "reference_scorable": 292,
+    "saved": 146,
+    "valid": 124,
+    "invalid": 22,
+    "missing": 149,
+    "unattempted": 148,
+    "interrupted_without_output": 1,
+    "matched_valid_scorable": {
+      "control": {
+        "scorable": 122,
+        "primary_failures": 29,
+        "primary_percent": 23.770491803278688,
+        "severe_failures": 5,
+        "severe_percent": 4.098360655737705
+      },
+      "hybrid": {
+        "scorable": 122,
+        "primary_failures": 38,
+        "primary_percent": 31.147540983606557,
+        "severe_failures": 9,
+        "severe_percent": 7.377049180327869
+      },
+      "primary_worsening_pp": 7.3770491803278695,
+      "severe_worsening_pp": 3.278688524590164,
+      "primary_rescues": 3,
+      "primary_regressions": 12
+    },
+    "elapsed_seconds": 1200.319911542,
+    "broad_confirmation": false,
+    "production_adoption": false
+  },
+  "limits": [
+    "Partial instrument sample follows fixed execution order and validation availability, not a random final295 estimate.",
+    "Stopping further inference is an outcome-informed resource decision, not a preregistered futility test or proof of full-cohort performance.",
+    "Invalid and missing outputs are availability failures, not acoustic false negatives.",
+    "Chord64 is an exposed cohort dominated by guitar plus four classical songs, not broad independent confirmation."
+  ]
+}

@@ -290,7 +290,7 @@
     "paid_services": false
   },
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T07:00:52.329453+00:00",
+  "updated_at": "2026-11-01T07:46:24.730334+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25497,7 +25497,7 @@
       "feasible local runtime and isolated adapter",
       "matched comparison against strongest current control"
     ],
-    "next_deliverable": "Next substantive task: test and freeze all19 training-support/raw-note mapping and one fixed presence rule, then one useful matched exposed evaluation versus strongest unchanged PaSST/fusion control (primary55/severe12 of292). Keep295intended/292scorable, known/unknown masks, unsupported/missing coverage and paired/category panels explicit; do not silently remove unsupported classes or change denominator. Reuse exact smoke only after identities match. Give measured corpus time/storage estimate and prospective phase before new inference; no repeat feasibility/literature/website-only loop. Broad independent genre/audio-type confirmation and lawful separately scoped adoption of qualifying gain remain open.",
+    "next_deliverable": "Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.",
     "new_accuracy_gain_claim": false,
     "production_adoption": false,
     "first_practical_pilot": {
@@ -29803,7 +29803,7 @@
         "independent_full_upstream_cli": false
       }
     },
-    "gain_scope": "Primary3.125pp <5pp; complete exposed diagnostic, no qualifiedgain/adoption.",
+    "gain_scope": "Existing complete64 chord gain retained; no new instrument gain.",
     "full64_partial": {
       "status": "historical_storage_stop_superseded_by_complete64",
       "intended": 64,
@@ -102695,6 +102695,40 @@
       "channels": 13,
       "qualified_gain": false,
       "production_adopted": false
+    },
+    "yourmt3_matched": {
+      "status": "partial_deadline_stop_no_further_inference_selected",
+      "intended": 295,
+      "reference_scorable": 292,
+      "saved": 146,
+      "valid": 124,
+      "invalid": 22,
+      "missing": 149,
+      "unattempted": 148,
+      "interrupted_without_output": 1,
+      "matched_valid_scorable": {
+        "control": {
+          "scorable": 122,
+          "primary_failures": 29,
+          "primary_percent": 23.770491803278688,
+          "severe_failures": 5,
+          "severe_percent": 4.098360655737705
+        },
+        "hybrid": {
+          "scorable": 122,
+          "primary_failures": 38,
+          "primary_percent": 31.147540983606557,
+          "severe_failures": 9,
+          "severe_percent": 7.377049180327869
+        },
+        "primary_worsening_pp": 7.3770491803278695,
+        "severe_worsening_pp": 3.278688524590164,
+        "primary_rescues": 3,
+        "primary_regressions": 12
+      },
+      "elapsed_seconds": 1200.319911542,
+      "broad_confirmation": false,
+      "production_adoption": false
     }
   }
 }

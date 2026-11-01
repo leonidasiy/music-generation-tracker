@@ -1,3 +1,14 @@
+## Current numerical progress —1November2026
+
+Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.
+
+Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.
+
+Evidence: recognizer-research/PROGRESS.md and progress-numbers.json. Matched partial rates exclude171missing/invalid outputs; these remain availability failures on original295 roster, never silent acoustic negatives.
+
+---
+## Historical records (current status above supersedes)
+
 ## Current —1 November2026: YourMT3+ waveform runtime feasible; accuracy untested
 
 YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption.
