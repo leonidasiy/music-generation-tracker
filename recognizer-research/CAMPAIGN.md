@@ -1,3 +1,16 @@
+## CURRENT: promising two-stage pilot and practical memory implementation —31October2026
+
+Task-trained Two-Stage ACR completed7/7 fixed recordings: root duration error25.26%→20.09%, root failures0→0/7; strict-triad34.45%→24.60%, failures4→2/7. Broader confirmation remains open. The stage-separated native pipeline completes four long recordings below1.50GB sampled group RSS after same-process execution hit2GB; short-control four-head logits are bit-identical. Working research implementation, not production adoption: weights noncommercial, code-rights conflict and missing-N/null handling remain unresolved. [Report](PRACTICAL-SOLUTIONS.md).
+
+Next: use the efficient implementation for broader prospectively frozen validation; no HPSS/BTC tuning sweep. Older next-step sections below are historical and superseded where conflicting.
+
+ No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance.
+
+- [ ] Separately scoped fresh authorized lease support; no execution under expired lease.
+
+---
+## Prior records (historical)
+
 ## Practical implementation result —31October2026
 
 Released BTC CPU adapter actually completed7/7 fixed recordings (80native model-block forwards). Primary root failures0→1/7 versus strongest ACE control; strict-triad4→3/7 is secondary. No promotion/adoption; HPSS remains deferred. Retain the runnable comparator and seek materially different task-trained solutions, not small-pilot tuning. [Report](PRACTICAL-SOLUTIONS.md).

@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-10-31T14:42:37.704208+00:00",
+  "updated_at": "2026-11-01T00:12:55.499048+00:00",
   "title": "Recognizer Research",
-  "phase": "Practical recognizer implemented and actual paired pilot executed—not promoted",
-  "summary": "Practical-solutions pivot executed: released BTC CPU adapter completed7/7 fixed recordings with80 native model-block forwards. Primary root failures0 to1/7; strict-triad failures4 to3/7. Secondary improvements do not cancel the root regression: no promotion, broad confirmation or application adoption. HPSS follow-up remains deferred.",
+  "phase": "Promising task-trained chord pilot and practical memory fix—broader validation next",
+  "summary": "Task-trained two-stage recognizer completed7/7 fixed recordings. Root duration25.26%→20.09% without a root failure-count regression; strict-triad failures4→2/7. Process separation fixes the observed2GB memory stop without changing native models. Narrow exposed evidence, no production adoption; HPSS follow-up remains deferred. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "practical-two-stage-pilot",
+      "title": "Task-trained recognizer: promising pilot and working memory-efficient implementation",
+      "status": "complete",
+      "evidence_type": "Previously executed CPU waveform inference, actual native-path parity and saved-output paired comparison; no inference in this publication",
+      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+    },
     {
       "id": "practical-btc-pilot",
       "title": "Working alternate chord recognizer: actual inference complete—not promoted",
@@ -395,6 +402,13 @@
   ],
   "findings": [
     {
+      "title": "Task-trained model improves this pilot without the BTC root regression",
+      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance. Expanded-quality failures remain5/7; no N class, commercial weight restriction and code-provenance conflict remain explicit.",
+      "evidence_type": "Fixed seven-case exposed paired experiment",
+      "confidence": "HIGH scoped computational evidence:75 original audit checks plus573 saved-evidence recovery checks; not independent model execution or broad confirmation",
+      "source": "PRACTICAL-SOLUTIONS.md; autonomous-summary.json"
+    },
+    {
       "title": "Lower failure count is insufficient when severe errors rise",
       "detail": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. Global-relative27rescues/16regressions; source-test18→19failures and3→5severe.",
       "evidence_type": "Independent aggregate reconstruction; exposed partial-label development",
@@ -594,12 +608,13 @@
   "blockers": [
     "No broadindependentgenre/audio-typefinalconfirmation orvalidatedfinalchordutilitytolerance.",
     "Instrumentreferencesremainpartialcliplabels,notexhaustivewhole-song/sectioninventories.",
-    "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved."
+    "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved.",
+    "Two-stage checkpoint is noncommercial; code MIT/GPL provenance conflict and no-N/null semantics block general product clearance. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
   ],
   "next_steps": [
-    "Keep the working BTC adapter as an operational comparator, not an adopted replacement: primary root regression is explicit.",
-    "Prioritize a materially different task-trained released recognizer with actual CPU/terms feasibility, rather than tune this small pilot or resume HPSS.",
-    "Preserve fixed denominators, regressions and broad validation requirements; carry only verified useful gains to a separately scoped app-integration task."
+    "Prospectively freeze broader validation using the demonstrated stage-separated design; do not execute until a separately scoped change supports a fresh authorized lease. No HPSS/BTC rescue sweep.",
+    "Prospectively expand matched root-first evaluation beyond the seven-case exposed pilot, retaining category, severe/missing and training-overlap strata. Diverse independent confirmation remains required.",
+    "Production integration is separate: resolve noncommercial checkpoint terms/code provenance and missing-N/null handling, then obtain scoped application-change authorization. Keep the original application unchanged."
   ],
   "agents": [
     {
@@ -629,6 +644,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T00:12:55.499048+00:00",
+      "title": "Task-trained recognizer actually implemented and seven-case comparison completed",
+      "action": "67MPE,7CRNN and7head evaluations; native stage-separated process lifecycle fixes memory stop; no training.",
+      "result": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+    },
     {
       "time": "2026-10-31T14:42:37.704208+00:00",
       "title": "First practical recognizer implemented and actually executed",

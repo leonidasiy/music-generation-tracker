@@ -1,3 +1,33 @@
+# CURRENT: executed Two-Stage ACR development pilot — 31 October 2026
+
+The released task-trained recognizer has an actual isolated native-path implementation and saved outputs for **7/7 fixed recordings**, not just a proposed adapter. The original Desktop application is unchanged. These are three exposed solo-guitar examples and four clustered classical songs; unresolved training overlap and shared label-comparison semantics prevent broad independent confirmation. [Internal experiment: frozen pilot RESULTS and 75-check independent saved-output outcome review, followed by573-check saved-evidence recovery on1November2026 (existing evaluator interpreter; no new model forwards); not an upstream performance claim.]
+
+| Metric | ACE duration error % | BTC % | Two-Stage % | ACE / BTC / Two-Stage >30% recordings |
+|---|---:|---:|---:|---:|
+| Root | 25.261021 | 23.186571 | 20.089122 | 0 / 1 / 0 |
+| Strict triad | 34.451561 | 27.845342 | 24.603889 | 4 / 3 / 2 |
+| Historical triad | 34.660263 | 28.054044 | 24.821140 | 4 / 3 / 2 |
+| Expanded quality | 43.186391 | 38.594803 | 36.943788 | 5 / 5 / 5 |
+
+**No primary root-failure benefit: 0→0/7 against ACE.** Strict-triad 4→2/7 and duration improvements are exposed-development findings only, not a generally qualified practical gain. Paired >30% ACE comparisons rescue two strict/historical-triad recordings without regressions; root and expanded quality rescue none. BTC comparisons rescue one root/strict/historical recording without regressions. Expanded-quality failures remain 5/7. [Internal experiment: saved-output paired recount.]
+
+Root-duration error by category is ACE/BTC/Two-Stage **16.608421/17.223413/13.502508%** for guitar and **26.367081/23.948840/20.931087%** for classical songs. The [curated aggregate record](autonomous-summary.json) retains all three arms, four metrics, category panels, paired observed/historical/model-output unions and thresholds 30/40/50/70 (70 is the severe diagnostic). Historical missing=2 reflects shared reference microtails, **not absent predictions: actual model-output missing=0**. Tiny positive machine-epsilon tails can occur without crossing the historical missing threshold. Coverage denominators and known-reference fraction range are retained, with no denominator repair. [Internal experiment: RESULTS and independently reconstructed coverage.]
+
+## Working implementation, bounded resource result
+
+The pilot used 67 MPE, 7 CRNN and 7 head forwards, with no fitting. The initial long fresh process stopped at sampled group RSS 2,078,408,704 bytes; sequential frontend/recognizer processes completed the four remaining songs in 61.141039375 seconds, sampled peak 1,499,545,600 bytes. This is observed feasibility, not an absolute memory bound or causal speedup. The short native-path parity control had bit-identical logits in all four heads; it is not proof the complete unmodified upstream CLI ran. Failed allocator pressure relief is not adopted. [Internal experiment: outcome review and retained native-path parity.]
+
+A guarded arbitrary-input research CLI was implemented and exercised on one existing synthetic-noise input. STATUS and FINAL-VERIFICATION record successful feature/raw/event hash checks, exact terminal duration and all-head parity; synthetic controls are not real-recording accuracy evidence. **The old interactive lease has expired. The current implementation does not support a fresh authorized lease without a separately scoped future change; there is no bypass and this milestone authorizes no new inference.** [Internal experiment: efficient CLI verification and refusal receipts.]
+
+## Rights, output and adoption limits
+
+The official project documents pretrained weights as **CC BY-NC 4.0**, not commercial-use clearance. Its README MIT claim, missing license text and GPL-marked utility leave code provenance unresolved. This publication includes curated aggregate findings only: **no audio, annotations, event derivatives, weights or source redistribution**. Noncommercial weight terms and unresolved code rights do not confer output/product deployment clearance. Official release/weight sources are distinct from our internal experiment evidence: [official GitHub README](https://github.com/suncerock/two-stage-acr/blob/ae75752d0068c24c36d11cb6198037683585e5cb/README.md), [official inference source](https://github.com/suncerock/two-stage-acr/blob/ae75752d0068c24c36d11cb6198037683585e5cb/scripts/inference.py), and [official Zenodo record](https://zenodo.org/records/21644912). [Official release preflight; retained source snapshot and published metadata.]
+
+No N class: silence fails closed while noise/DC force chords. No broad confirmation, automatic routing, notification-qualifying gain or production adoption. Next: prospectively freeze broader category-stratified root-first evaluation, then separately authorize lease support and resolve rights/null handling before any execution or integration. HPSS/BTC small-variant rescue is not the next automatic task. Historical records below remain unchanged.
+
+---
+## Prior records (historical; current section supersedes conflicting next steps)
+
 # Practical solutions first — owner-directed research pivot
 
 ## Executive summary

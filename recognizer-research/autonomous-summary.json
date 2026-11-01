@@ -290,7 +290,7 @@
     "paid_services": false
   },
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-10-31T14:42:37.704208+00:00",
+  "updated_at": "2026-11-01T00:12:55.499048+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25497,8 +25497,8 @@
       "feasible local runtime and isolated adapter",
       "matched comparison against strongest current control"
     ],
-    "next_deliverable": "Keep the working alternate recognizer as a comparator; no promotion after root regression. Prioritize the next materially different task-trained solution, not another small variant.",
-    "new_accuracy_gain_claim": false,
+    "next_deliverable": "Use verified stage-separated native pipeline; broader prospectively frozen root/quality validation, not another model shortlist or weak-variant sweep. Resolve no-N and noncommercial rights before product integration.",
+    "new_accuracy_gain_claim": true,
     "production_adoption": false,
     "first_practical_pilot": {
       "status": "actual_frozen_pilot_not_promoted",
@@ -26549,6 +26549,3260 @@
       "production_adoption": false,
       "independent_confirmation": false,
       "scope": "Exposed three-guitar/four-classical diagnostic, not broad genre or checkpoint-independent confirmation. No tuning, routing or model selection from individual reference outcomes."
-    }
+    },
+    "second_practical_pilot": {
+      "status": "promising_exposed_pilot_advance_to_broader_validation",
+      "recordings": 7,
+      "category_counts": {
+        "solo_guitar": 3,
+        "classical_songs": 4
+      },
+      "waveform_seconds": 760.8801360544218,
+      "forward_counts": {
+        "mpe": 67,
+        "crnn": 7,
+        "head": 7
+      },
+      "model_checkpoint_bytes": 14300020,
+      "decoder_labels": 192,
+      "fits": 0,
+      "missing_model_outputs": 0,
+      "pooled": {
+        "ace_fixed181_rootfirst": {
+          "root_only": {
+            "duration_error_percent": 25.26102134863106,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 550.432248765139,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "strict_triad": {
+            "duration_error_percent": 34.45156080506126,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 482.7464254952627,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "historical_triad": {
+            "duration_error_percent": 34.66026329034477,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 481.20938845822565,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "expanded_full_quality": {
+            "duration_error_percent": 43.186390775178076,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 418.4167786391043,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 4,
+                "unacceptable_or_missing": 4,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          }
+        },
+        "btc_native170": {
+          "root_only": {
+            "duration_error_percent": 23.18657127372685,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 565.7100093163881,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "strict_triad": {
+            "duration_error_percent": 27.845341711510386,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 531.3994322276715,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "historical_triad": {
+            "duration_error_percent": 28.054044196793892,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 529.8623951906344,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "expanded_full_quality": {
+            "duration_error_percent": 38.59480267714063,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 452.23257606918736,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 3,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          }
+        },
+        "two_stage_crnn_pop192": {
+          "root_only": {
+            "duration_error_percent": 20.08912231452826,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 588.5218783947688,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 0,
+                "unacceptable_or_missing": 0,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "strict_triad": {
+            "duration_error_percent": 24.603888622230762,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 555.2718525549756,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "historical_triad": {
+            "duration_error_percent": 24.82114036594758,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 553.6718525549755,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          },
+          "expanded_full_quality": {
+            "duration_error_percent": 36.943787665345475,
+            "eligible_seconds": 736.4727999999999,
+            "matched_seconds": 464.3918525549755,
+            "shared_reference_microtail_cases": 3,
+            "thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 3,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 2,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 70
+              }
+            },
+            "model_output_thresholds": {
+              "30": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 5,
+                "unacceptable_or_missing": 5,
+                "tolerance_percent": 30
+              },
+              "40": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 2,
+                "unacceptable_or_missing": 2,
+                "tolerance_percent": 40
+              },
+              "50": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 50
+              },
+              "70": {
+                "intended": 7,
+                "scorable": 7,
+                "reference_unscorable": 0,
+                "missing": 0,
+                "above_tolerance": 1,
+                "unacceptable_or_missing": 1,
+                "tolerance_percent": 70
+              }
+            }
+          }
+        }
+      },
+      "datasets": {
+        "GuitarSet": {
+          "ace_fixed181_rootfirst": {
+            "root_only": {
+              "duration_error_percent": 16.608421183695466,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 69.60928580217616,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "strict_triad": {
+              "duration_error_percent": 43.30583941949888,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 47.324203273040474,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "historical_triad": {
+              "duration_error_percent": 45.14720215926206,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 45.78716623600344,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "expanded_full_quality": {
+              "duration_error_percent": 55.07105870921913,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 37.50344530577088,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            }
+          },
+          "btc_native170": {
+            "root_only": {
+              "duration_error_percent": 17.223412605885912,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 69.09593524231397,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "strict_triad": {
+              "duration_error_percent": 40.85167196858759,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 49.372765561004755,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "historical_triad": {
+              "duration_error_percent": 42.693034708350766,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 47.835728523967724,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "expanded_full_quality": {
+              "duration_error_percent": 52.79457837726957,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 39.403687180298476,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            }
+          },
+          "two_stage_crnn_pop192": {
+            "root_only": {
+              "duration_error_percent": 13.502508128673195,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 72.20187839476878,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "strict_triad": {
+              "duration_error_percent": 39.46309150408809,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 50.531852554975494,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "historical_triad": {
+              "duration_error_percent": 41.37988356090181,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 48.93185255497549,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "expanded_full_quality": {
+              "duration_error_percent": 47.489658241995535,
+              "eligible_seconds": 83.47279999999989,
+              "matched_seconds": 43.83185255497549,
+              "shared_reference_microtail_cases": 3,
+              "thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 2,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 3,
+                  "scorable": 3,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 70
+                }
+              }
+            }
+          }
+        },
+        "HU33": {
+          "ace_fixed181_rootfirst": {
+            "root_only": {
+              "duration_error_percent": 26.367080710112877,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 480.8229629629629,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "strict_triad": {
+              "duration_error_percent": 33.31972094606092,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 435.4222222222222,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "historical_triad": {
+              "duration_error_percent": 33.31972094606092,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 435.4222222222222,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "expanded_full_quality": {
+              "duration_error_percent": 41.66717713118937,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 380.9133333333334,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 2,
+                  "unacceptable_or_missing": 2,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            }
+          },
+          "btc_native170": {
+            "root_only": {
+              "duration_error_percent": 23.94884011116781,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 496.61407407407415,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "strict_triad": {
+              "duration_error_percent": 26.18274629913221,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 482.0266666666667,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "historical_triad": {
+              "duration_error_percent": 26.18274629913221,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 482.0266666666667,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "expanded_full_quality": {
+              "duration_error_percent": 36.77964948102773,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 412.8288888888889,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            }
+          },
+          "two_stage_crnn_pop192": {
+            "root_only": {
+              "duration_error_percent": 20.931087289433393,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 516.3199999999999,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "strict_triad": {
+              "duration_error_percent": 22.70444104134762,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 504.74,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "historical_triad": {
+              "duration_error_percent": 22.70444104134762,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 504.74,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            },
+            "expanded_full_quality": {
+              "duration_error_percent": 35.59571209800918,
+              "eligible_seconds": 653.0,
+              "matched_seconds": 420.56000000000006,
+              "shared_reference_microtail_cases": 0,
+              "thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              },
+              "model_output_thresholds": {
+                "30": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 3,
+                  "unacceptable_or_missing": 3,
+                  "tolerance_percent": 30
+                },
+                "40": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 1,
+                  "unacceptable_or_missing": 1,
+                  "tolerance_percent": 40
+                },
+                "50": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 50
+                },
+                "70": {
+                  "intended": 4,
+                  "scorable": 4,
+                  "reference_unscorable": 0,
+                  "missing": 0,
+                  "above_tolerance": 0,
+                  "unacceptable_or_missing": 0,
+                  "tolerance_percent": 70
+                }
+              }
+            }
+          }
+        }
+      },
+      "primary_root_failure_nonregression": true,
+      "pilot_improvement": true,
+      "broad_confirmation": false,
+      "production_adoption": false,
+      "resource_fix": {
+        "previous_fresh_process_stopped_above_bytes": 2000000000,
+        "completed_stage_separated_seconds": 61.141039375,
+        "completed_stage_separated_peak_group_rss_bytes": 1499545600,
+        "complete_remaining_recordings": 4,
+        "same_native_model_and_frontend": true,
+        "actual_short_control_all_four_heads_bit_identical": true,
+        "no_speedup_ratio_claim": true
+      },
+      "null_limit": "No N class: silence rejected; noise and DC force chords. No production adoption.",
+      "rights_limit": "Weights CC BY-NC 4.0; README MIT versus missing license text and GPL-marked utility remains unresolved for redistribution/product use. Private noncommercial research only.",
+      "scope": "Same exposed three solo-guitar examples and four clustered classical songs; not diverse independent confirmation. Shared label semantics and unresolved training overlap.",
+      "paired_gt30": {
+        "ace_fixed181_rootfirst_vs_btc_native170": {
+          "observed_above30": [
+            {
+              "metric": "root_only",
+              "rescues": 0,
+              "regressions": 1
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ],
+          "historical_union": [
+            {
+              "metric": "root_only",
+              "rescues": 0,
+              "regressions": 0
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ],
+          "model_output_union": [
+            {
+              "metric": "root_only",
+              "rescues": 0,
+              "regressions": 1
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ]
+        },
+        "ace_fixed181_rootfirst_vs_two_stage_crnn_pop192": {
+          "observed_above30": [
+            {
+              "metric": "root_only",
+              "rescues": 0,
+              "regressions": 0
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 2,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 2,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ],
+          "historical_union": [
+            {
+              "metric": "root_only",
+              "rescues": 0,
+              "regressions": 0
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 2,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 2,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ],
+          "model_output_union": [
+            {
+              "metric": "root_only",
+              "rescues": 0,
+              "regressions": 0
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 2,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 2,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ]
+        },
+        "btc_native170_vs_two_stage_crnn_pop192": {
+          "observed_above30": [
+            {
+              "metric": "root_only",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ],
+          "historical_union": [
+            {
+              "metric": "root_only",
+              "rescues": 0,
+              "regressions": 0
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ],
+          "model_output_union": [
+            {
+              "metric": "root_only",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "strict_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "historical_triad",
+              "rescues": 1,
+              "regressions": 0
+            },
+            {
+              "metric": "expanded_full_quality",
+              "rescues": 0,
+              "regressions": 0
+            }
+          ]
+        }
+      },
+      "coverage": {
+        "historical_missing_cases": 2,
+        "actual_missing_model_outputs": 0,
+        "known_reference_seconds": 736.4728,
+        "known_reference_fraction_min": 0.9445277965373282,
+        "known_reference_fraction_max": 1.0000002806688053,
+        "shared_reference_microtail_cases": 3
+      },
+      "general_practical_gain_qualified": false,
+      "primary_root_failure_benefit": false,
+      "independent_confirmation": false,
+      "new_pilot_numeric_finding": true,
+      "cli": {
+        "status": "working_guarded_research_cli_demonstrated",
+        "current_lease_expired": true,
+        "fresh_authorized_lease_supported": false,
+        "limitation": "Old interactive lease expired; fresh authorized lease requires a separately scoped future change. No bypass or new inference authorized."
+      },
+      "output_rights": "Only curated aggregate results published; no audio, annotations, event derivatives, weights or source redistribution. Noncommercial research restrictions and unresolved code provenance do not establish output or deployment clearance.",
+      "verification": {
+        "saved_output_checks": 75,
+        "cli_smoke_returncode": 0,
+        "feature_hash_verified": true,
+        "raw_and_event_hashes_verified": true,
+        "tail_exact": true,
+        "additional_synthetic_control_forwards": {
+          "mpe": 1,
+          "crnn": 1,
+          "head": 1
+        },
+        "recovery_saved_evidence_checks": 573,
+        "recovery_source_hashes_reverified": true,
+        "recovery_new_model_forwards": 0,
+        "independent_full_upstream_cli": false
+      }
+    },
+    "gain_scope": "This exposed seven-recording comparison only; not overall target confirmation."
   }
 }
