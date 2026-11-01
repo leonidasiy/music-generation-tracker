@@ -290,7 +290,7 @@
     "paid_services": false
   },
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T00:12:55.499048+00:00",
+  "updated_at": "2026-11-01T01:49:17.587599+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25497,8 +25497,8 @@
       "feasible local runtime and isolated adapter",
       "matched comparison against strongest current control"
     ],
-    "next_deliverable": "Use verified stage-separated native pipeline; broader prospectively frozen root/quality validation, not another model shortlist or weak-variant sweep. Resolve no-N and noncommercial rights before product integration.",
-    "new_accuracy_gain_claim": true,
+    "next_deliverable": "Next executable phase: preserve/reuse all23; prospectively reconcile retained features for41 remaining against the3GB campaign and15GB reserve, explicitly budget/version/test a packet-allowance successor without altering old300MB guard, freeze corrected unknown/unobserved/official-ID scoring, then run only41 in a new bounded lease. No restart this pass and no HPSS/BTC rescue. Final broad genre/audio-type category confirmation and separately scoped lawful product adoption remain open.",
+    "new_accuracy_gain_claim": false,
     "production_adoption": false,
     "first_practical_pilot": {
       "status": "actual_frozen_pilot_not_promoted",
@@ -29780,10 +29780,10 @@
       "independent_confirmation": false,
       "new_pilot_numeric_finding": true,
       "cli": {
-        "status": "working_guarded_research_cli_demonstrated",
-        "current_lease_expired": true,
-        "fresh_authorized_lease_supported": false,
-        "limitation": "Old interactive lease expired; fresh authorized lease requires a separately scoped future change. No bypass or new inference authorized."
+        "status": "fresh_phase_successor_exercised_resource_incomplete",
+        "current_lease_expired": false,
+        "fresh_authorized_lease_supported": true,
+        "limitation": "Fresh authorized phase guard executed15 additional recordings. Current packet stopped at unchanged300MB reserve; no restart or production adoption."
       },
       "output_rights": "Only curated aggregate results published; no audio, annotations, event derivatives, weights or source redistribution. Noncommercial research restrictions and unresolved code provenance do not establish output or deployment clearance.",
       "verification": {
@@ -29803,6 +29803,809 @@
         "independent_full_upstream_cli": false
       }
     },
-    "gain_scope": "This exposed seven-recording comparison only; not overall target confirmation."
+    "gain_scope": "No qualified gain: resource-incomplete23/64 exposed diagnostic.",
+    "full64_partial": {
+      "status": "resource_incomplete_not_promoted",
+      "intended": 64,
+      "reference_eligible": 64,
+      "available": 23,
+      "reused": 8,
+      "new_successes": 15,
+      "unattempted": 41,
+      "invalid": 0,
+      "restarts": 0,
+      "observed_pairs": {
+        "ace_fixed181_rootfirst": {
+          "root_only": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 2,
+            "severe_over70": 1,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 4,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 952.6035694324494,
+            "duration_error_percent": 19.979082628012033,
+            "unknown_reference_seconds": 0.0
+          },
+          "strict_triad": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 9,
+            "severe_over70": 2,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 4,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 822.4771664758014,
+            "duration_error_percent": 30.910003394046736,
+            "unknown_reference_seconds": 0.0
+          },
+          "historical_triad": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 10,
+            "severe_over70": 2,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 4,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 811.3403473036881,
+            "duration_error_percent": 31.84552212959946,
+            "unknown_reference_seconds": 0.0
+          },
+          "expanded_full_quality": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 13,
+            "severe_over70": 3,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 4,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 713.3903786130436,
+            "duration_error_percent": 40.073547514653065,
+            "unknown_reference_seconds": 0.0
+          }
+        },
+        "two_stage_crnn_pop192": {
+          "root_only": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 1,
+            "severe_over70": 0,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 7,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 1008.3326238964462,
+            "duration_error_percent": 15.297712322902413,
+            "unknown_reference_seconds": 0.0
+          },
+          "strict_triad": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 4,
+            "severe_over70": 1,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 7,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 928.2094419668097,
+            "duration_error_percent": 22.028246121544505,
+            "unknown_reference_seconds": 0.0
+          },
+          "historical_triad": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 5,
+            "severe_over70": 1,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 7,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 916.237776680977,
+            "duration_error_percent": 23.033893874064958,
+            "unknown_reference_seconds": 0.0
+          },
+          "expanded_full_quality": {
+            "scorable": 23,
+            "reference_unscorable": 0,
+            "failures_over30": 11,
+            "severe_over70": 2,
+            "missing_on_scorable": 0,
+            "historical_boundary_missing": 7,
+            "eligible_seconds": 1190.4432,
+            "matched_seconds": 779.6976459620228,
+            "duration_error_percent": 34.503582702473935,
+            "unknown_reference_seconds": 0.0
+          }
+        }
+      },
+      "paired": {
+        "root_only": {
+          "pairs": 23,
+          "rescues": 1,
+          "regressions": 0
+        },
+        "strict_triad": {
+          "pairs": 23,
+          "rescues": 5,
+          "regressions": 0
+        },
+        "historical_triad": {
+          "pairs": 23,
+          "rescues": 5,
+          "regressions": 0
+        },
+        "expanded_full_quality": {
+          "pairs": 23,
+          "rescues": 2,
+          "regressions": 0
+        }
+      },
+      "categories": {
+        "BN": {
+          "intended": 10,
+          "available": 2,
+          "unattempted": 8,
+          "observed_pairs": {
+            "ace_fixed181_rootfirst": {
+              "root_only": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 34.70877847035455,
+                "duration_error_percent": 17.18258537257319,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 19.133008110531037,
+                "duration_error_percent": 54.34739176680732,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 19.133008110531037,
+                "duration_error_percent": 54.34739176680732,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 14.322983325423195,
+                "duration_error_percent": 65.82442537479551,
+                "unknown_reference_seconds": 0.0
+              }
+            },
+            "two_stage_crnn_pop192": {
+              "root_only": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 33.347251637399154,
+                "duration_error_percent": 20.431277410166594,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 18.631874323682965,
+                "duration_error_percent": 55.54312974544744,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 18.631874323682965,
+                "duration_error_percent": 55.54312974544744,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 2,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 41.90999999999997,
+                "matched_seconds": 16.231874323682966,
+                "duration_error_percent": 61.2696866531067,
+                "unknown_reference_seconds": 0.0
+              }
+            }
+          }
+        },
+        "Funk": {
+          "intended": 15,
+          "available": 3,
+          "unattempted": 12,
+          "observed_pairs": {
+            "ace_fixed181_rootfirst": {
+              "root_only": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 2,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 82.8171683494451,
+                "duration_error_percent": 14.05013081863229,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 2,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 58.16276803118908,
+                "duration_error_percent": 39.63712593488554,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 2,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 56.21832358674464,
+                "duration_error_percent": 41.65512231125593,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 2,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 47.70955165692007,
+                "duration_error_percent": 50.485753071012105,
+                "unknown_reference_seconds": 0.0
+              }
+            },
+            "two_stage_crnn_pop192": {
+              "root_only": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 3,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 85.76745076978162,
+                "duration_error_percent": 10.988248927113698,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 3,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 65.19400405776348,
+                "duration_error_percent": 32.339921397326165,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 3,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 62.994004057763476,
+                "duration_error_percent": 34.623140154590956,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 3,
+                "eligible_seconds": 96.35519999999985,
+                "matched_seconds": 51.31622627998569,
+                "duration_error_percent": 46.74264982067832,
+                "unknown_reference_seconds": 0.0
+              }
+            }
+          }
+        },
+        "Jazz": {
+          "intended": 12,
+          "available": 6,
+          "unattempted": 6,
+          "observed_pairs": {
+            "ace_fixed181_rootfirst": {
+              "root_only": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 91.65448756036984,
+                "duration_error_percent": 25.28930123413764,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 82.91196581196577,
+                "duration_error_percent": 32.41562888251167,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 79.2304843304843,
+                "duration_error_percent": 35.41652999817061,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 4,
+                "severe_over70": 2,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 61.64102564102561,
+                "duration_error_percent": 49.754297679618396,
+                "unknown_reference_seconds": 0.0
+              }
+            },
+            "two_stage_crnn_pop192": {
+              "root_only": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 105.59935177912654,
+                "duration_error_percent": 13.922366807799113,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 100.72123577748113,
+                "duration_error_percent": 17.898685533096813,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 96.82123577748112,
+                "duration_error_percent": 21.077708545962892,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 6,
+                "reference_unscorable": 0,
+                "failures_over30": 3,
+                "severe_over70": 1,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 122.67920000000004,
+                "matched_seconds": 73.00358871865758,
+                "duration_error_percent": 40.49228498501982,
+                "unknown_reference_seconds": 0.0
+              }
+            }
+          }
+        },
+        "Rock": {
+          "intended": 10,
+          "available": 5,
+          "unattempted": 5,
+          "observed_pairs": {
+            "ace_fixed181_rootfirst": {
+              "root_only": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 146.9362436621886,
+                "duration_error_percent": 7.214960873070186,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 127.43507762456854,
+                "duration_error_percent": 19.529257255800925,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 121.92418437838117,
+                "duration_error_percent": 23.009191360060388,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 115.17178326143987,
+                "duration_error_percent": 27.2730937589574,
+                "unknown_reference_seconds": 0.0
+              }
+            },
+            "two_stage_crnn_pop192": {
+              "root_only": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 154.68644866293212,
+                "duration_error_percent": 2.320980624813951,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 138.5154015658701,
+                "duration_error_percent": 12.532424719396007,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 132.64373628003747,
+                "duration_error_percent": 16.2401736022294,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 5,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 158.362,
+                "matched_seconds": 123.67903039768453,
+                "duration_error_percent": 21.901068187011695,
+                "unknown_reference_seconds": 0.0
+              }
+            }
+          }
+        },
+        "SS": {
+          "intended": 13,
+          "available": 3,
+          "unattempted": 10,
+          "observed_pairs": {
+            "ace_fixed181_rootfirst": {
+              "root_only": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 115.66392842712847,
+                "duration_error_percent": 2.0932271509568445,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 99.4121246753247,
+                "duration_error_percent": 15.849993672314922,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 99.4121246753247,
+                "duration_error_percent": 15.849993672314922,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 1,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 93.63170139490143,
+                "duration_error_percent": 20.742984916722484,
+                "unknown_reference_seconds": 0.0
+              }
+            },
+            "two_stage_crnn_pop192": {
+              "root_only": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 112.61212104720678,
+                "duration_error_percent": 4.676509735148793,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 100.40692624201196,
+                "duration_error_percent": 15.007917734345334,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 100.40692624201196,
+                "duration_error_percent": 15.007917734345334,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 3,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 1,
+                "eligible_seconds": 118.13680000000005,
+                "matched_seconds": 94.90692624201196,
+                "duration_error_percent": 19.663537321129464,
+                "unknown_reference_seconds": 0.0
+              }
+            }
+          }
+        },
+        "Winterreise": {
+          "intended": 4,
+          "available": 4,
+          "unattempted": 0,
+          "observed_pairs": {
+            "ace_fixed181_rootfirst": {
+              "root_only": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 480.8229629629629,
+                "duration_error_percent": 26.367080710112877,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 435.4222222222222,
+                "duration_error_percent": 33.31972094606092,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 2,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 435.4222222222222,
+                "duration_error_percent": 33.31972094606092,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 3,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 380.9133333333334,
+                "duration_error_percent": 41.66717713118937,
+                "unknown_reference_seconds": 0.0
+              }
+            },
+            "two_stage_crnn_pop192": {
+              "root_only": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 516.3199999999999,
+                "duration_error_percent": 20.931087289433393,
+                "unknown_reference_seconds": 0.0
+              },
+              "strict_triad": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 504.74,
+                "duration_error_percent": 22.70444104134762,
+                "unknown_reference_seconds": 0.0
+              },
+              "historical_triad": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 0,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 504.74,
+                "duration_error_percent": 22.70444104134762,
+                "unknown_reference_seconds": 0.0
+              },
+              "expanded_full_quality": {
+                "scorable": 4,
+                "reference_unscorable": 0,
+                "failures_over30": 3,
+                "severe_over70": 0,
+                "missing_on_scorable": 0,
+                "historical_boundary_missing": 0,
+                "eligible_seconds": 653.0,
+                "matched_seconds": 420.56000000000006,
+                "duration_error_percent": 35.59571209800918,
+                "unknown_reference_seconds": 0.0
+              }
+            }
+          }
+        }
+      },
+      "primary": "Observed recording root error >30 percentage points with 1e-9 comparison epsilon; intended64 remains incomplete.",
+      "severe": "Observed error >70 with same epsilon.",
+      "operational_missing": 41,
+      "acoustic_missing_in_available": 0,
+      "historical_boundary_missing_in_available": 7,
+      "qualified_gain": false,
+      "production_adopted": false,
+      "broad_confirmation": false,
+      "canonical_contract_frozen_before_new_inference": true,
+      "exact_scoring_wrapper_frozen_before_new_inference": false,
+      "resource_stop": {
+        "retained_bytes": 291012608,
+        "next_case_plus_closure_reserve_bytes": 13670112,
+        "packet_cap_bytes": 300000000,
+        "overshoot_occurred": false
+      },
+      "limits": [
+        "Exposed60 guitar plus4 clustered classical-song roster; available23 is a lexicographic storage-limited subset, not final64 or untouched broad confirmation.",
+        "All41 unattempted outputs are operationally absent, never observed acoustic failures; private original missing-as-wrong panels are not published as performance.",
+        "Unknown truth never contributes a negative acoustic example. Shared label theory, independent interval/arithmetic review, no new human annotations.",
+        "Official192 vocabulary/weight/source identities verified for all23 actual outputs by independent audit; current generic validators need stronger prospective malformed-output checks.",
+        "No N class; noncommercial checkpoint and unresolved code provenance remain product gates."
+      ],
+      "next": "Preserve all23 outputs and failed incomplete scoring evidence. Prospectively reconcile retained-feature storage for remaining41; version/test guardian packet allowance within unchanged3GB campaign and15GB reserve, freeze corrected unknown/unobserved/official-ID scoring, then infer only41 in a new bounded phase. No restart after this stop, no HPSS/BTC rescue, no production writes."
+    }
   }
 }

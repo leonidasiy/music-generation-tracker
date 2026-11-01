@@ -1,18 +1,25 @@
 {
   "schema_version": 1,
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T00:12:55.499048+00:00",
+  "updated_at": "2026-11-01T01:49:17.587599+00:00",
   "title": "Recognizer Research",
-  "phase": "Promising task-trained chord pilot and practical memory fix—broader validation next",
-  "summary": "Task-trained two-stage recognizer completed7/7 fixed recordings. Root duration25.26%→20.09% without a root failure-count regression; strict-triad failures4→2/7. Process separation fixes the observed2GB memory stop without changing native models. Narrow exposed evidence, no production adoption; HPSS follow-up remains deferred. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance.",
+  "phase": "Practical native evaluation:23/64 available; bounded storage stop",
+  "summary": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. HPSS follow-up remains deferred.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "practical-native-partial64",
+      "title": "Native practical comparison:23/64 outputs; storage-reserve stop",
+      "status": "in_progress",
+      "evidence_type": "15 new waveform inferences plus8 exact reused outputs; independently reconstructed partial diagnostic",
+      "detail": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20–100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
+    },
     {
       "id": "practical-two-stage-pilot",
       "title": "Task-trained recognizer: promising pilot and working memory-efficient implementation",
       "status": "complete",
       "evidence_type": "Previously executed CPU waveform inference, actual native-path parity and saved-output paired comparison; no inference in this publication",
-      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
     },
     {
       "id": "practical-btc-pilot",
@@ -402,8 +409,15 @@
   ],
   "findings": [
     {
+      "title": "Observed partial progress, not full64 or qualified gain",
+      "detail": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. Independent raw-interval/receipt audit3963checks plus120 aggregate checks and37 tests accepted the actual23 outputs and fixed64 ACE control; separate quality review42 tests/673 official-vocabulary events. Scientific review BLOCKS calling41 unattempted outcomes acoustic failures: original private all64 missing-as-wrong panels preserved, excluded from public performance. Corrected tested aggregate projection uses observed23 only and reports intended64/missing41 separately; unknown truth never negative. Shared label theory; exact full wrapper sealed later than canonical pre-outcome contract. Product gates remain noncommercial weights/code provenance/noN.",
+      "evidence_type": "Independent saved-output reconstruction; exposed storage-limited subset",
+      "confidence": "HIGH scoped computation; LOW generalization; incomplete final comparison",
+      "source": "full64-partial.json; PRACTICAL-SOLUTIONS.md"
+    },
+    {
       "title": "Task-trained model improves this pilot without the BTC root regression",
-      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance. Expanded-quality failures remain5/7; no N class, commercial weight restriction and code-provenance conflict remain explicit.",
+      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance. Expanded-quality failures remain5/7; no N class, commercial weight restriction and code-provenance conflict remain explicit.",
       "evidence_type": "Fixed seven-case exposed paired experiment",
       "confidence": "HIGH scoped computational evidence:75 original audit checks plus573 saved-evidence recovery checks; not independent model execution or broad confirmation",
       "source": "PRACTICAL-SOLUTIONS.md; autonomous-summary.json"
@@ -609,12 +623,12 @@
     "No broadindependentgenre/audio-typefinalconfirmation orvalidatedfinalchordutilitytolerance.",
     "Instrumentreferencesremainpartialcliplabels,notexhaustivewhole-song/sectioninventories.",
     "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved.",
-    "Two-stage checkpoint is noncommercial; code MIT/GPL provenance conflict and no-N/null semantics block general product clearance. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+    "Current packet stopped prospectively at unchanged300MB storage reserve;41 not attempted. Existing guarded fresh-phase successor works. Explicit next-phase packet/scoring reconciliation required; no owner action presently necessary. Noncommercial/code/noN product gates remain."
   ],
   "next_steps": [
-    "Prospectively freeze broader validation using the demonstrated stage-separated design; do not execute until a separately scoped change supports a fresh authorized lease. No HPSS/BTC rescue sweep.",
-    "Prospectively expand matched root-first evaluation beyond the seven-case exposed pilot, retaining category, severe/missing and training-overlap strata. Diverse independent confirmation remains required.",
-    "Production integration is separate: resolve noncommercial checkpoint terms/code provenance and missing-N/null handling, then obtain scoped application-change authorization. Keep the original application unchanged."
+    "Next executable phase: preserve/reuse all23; prospectively reconcile retained features for41 remaining against the3GB campaign and15GB reserve, explicitly budget/version/test a packet-allowance successor without altering old300MB guard, freeze corrected unknown/unobserved/official-ID scoring, then run only41 in a new bounded lease. No restart this pass and no HPSS/BTC rescue. Final broad genre/audio-type category confirmation and separately scoped lawful product adoption remain open.",
+    "Keep41 unattempted/operational missing separate from observed acoustic failure. Do not publish private missing-as-wrong panels as measured full64 performance.",
+    "Resolve noN, noncommercial checkpoint/code rights and independent genre/audio-type validation before any separately authorized production adoption."
   ],
   "agents": [
     {
@@ -645,10 +659,16 @@
   ],
   "activity": [
     {
+      "time": "2026-11-01T01:49:17.587599+00:00",
+      "title": "Partial native waveform batch retained without restart",
+      "action": "15 additional unchanged native inferences; all23 available outputs independently audited.",
+      "result": "The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20–100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
+    },
+    {
       "time": "2026-11-01T00:12:55.499048+00:00",
       "title": "Task-trained recognizer actually implemented and seven-case comparison completed",
       "action": "67MPE,7CRNN and7head evaluations; native stage-separated process lifecycle fixes memory stop; no training.",
-      "result": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Working guarded CLI demonstrated, but old interactive lease expired; fresh authorized lease unsupported without separately scoped future change. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+      "result": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
     },
     {
       "time": "2026-10-31T14:42:37.704208+00:00",
@@ -1248,7 +1268,7 @@
   ],
   "limits": [
     "Coarse19 changes reporting specificity and raises severe11→14; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
-    "Current scope:allchordresults are60alreadyinspectedsolo-guitarclips; no broad or untouchedfinalconfirmation. Root-only forgiveness is not permission to forgivewrongquality.",
+    "Current chord roster:60 exposed solo-guitar recordings plus4 clustered classical songs; native outputs available23/64 after storage-reserve stop,41 unattempted. Earlier60-only chord analyses are historical. No broad or untouched final confirmation; root-only forgiveness does not forgive wrong quality.",
     "Thresholds/hyperparameters are tunable with development-onlyselection; publishedoldfixedthresholdexperiments remainunchanged.",
     "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",
     "Synthetic controls test numerical behavior, not musical correctness.",

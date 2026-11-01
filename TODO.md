@@ -1,3 +1,23 @@
+## Current —1 November2026:23/64 saved outputs; storage-reserve stop
+
+Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption.
+
+The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20–100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim.
+
+Independent raw-interval/receipt audit3963checks plus120 aggregate checks and37 tests accepted the actual23 outputs and fixed64 ACE control; separate quality review42 tests/673 official-vocabulary events. Scientific review BLOCKS calling41 unattempted outcomes acoustic failures: original private all64 missing-as-wrong panels preserved, excluded from public performance. Corrected tested aggregate projection uses observed23 only and reports intended64/missing41 separately; unknown truth never negative. Shared label theory; exact full wrapper sealed later than canonical pre-outcome contract. Product gates remain noncommercial weights/code provenance/noN.
+
+Next executable phase: preserve/reuse all23; prospectively reconcile retained features for41 remaining against the3GB campaign and15GB reserve, explicitly budget/version/test a packet-allowance successor without altering old300MB guard, freeze corrected unknown/unobserved/official-ID scoring, then run only41 in a new bounded lease. No restart this pass and no HPSS/BTC rescue. Final broad genre/audio-type category confirmation and separately scoped lawful product adoption remain open.
+
+Aggregate endpoint panels: [observed partial results](full64-partial.json). [Internal computational evidence,1November2026; HIGH scoped arithmetic/identity, LOW generalization].
+
+- [x] Frozen64 identities;8 reuse+15 new native predictions and independent actual-output reconstruction.
+- [x] Preserve partial resource stop and original incomplete scorer; observed-only public projection.
+- [ ] Next phase: corrected scoring/official-ID validators and explicit retained-feature packet budget; reuse23/infer41 only.
+- [ ] Full64 matched diagnostic completion, broad independent category confirmation and separately scoped product adoption.
+
+---
+## Prior records (historical, not current tasks)
+
 ## CURRENT: promising two-stage pilot and practical memory implementation —31October2026
 
 Task-trained Two-Stage ACR completed7/7 fixed recordings: root duration error25.26%→20.09%, root failures0→0/7; strict-triad34.45%→24.60%, failures4→2/7. Broader confirmation remains open. The stage-separated native pipeline completes four long recordings below1.50GB sampled group RSS after same-process execution hit2GB; short-control four-head logits are bit-identical. Working research implementation, not production adoption: weights noncommercial, code-rights conflict and missing-N/null handling remain unresolved. [Report](recognizer-research/PRACTICAL-SOLUTIONS.md).
