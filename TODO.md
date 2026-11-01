@@ -10,7 +10,7 @@ Next concrete task: implement one isolated YourMT3+ raw-note CPU adapter from pi
 - [x] Independent full saved-output reconstruction and fixed-endpoint nonpromotion.
 - [x] New materiallydifferent raw-note adapter selected, not runtime/accuracy approved.
 - [ ] Implement isolated raw-note adapter and check minimal dependency/safe-load/program reachability before new acquisition scope.
-- [ ] Exact-current publication/live verification closure.
+- [x] Exact-current eight-file publication verified: commit68aff1d, exact Pages run41276532965 success,10/10 live artifact bytes,21local+21live browser checks and actual desktop/mobile inspection. Scientific promotion remains blocked.
 - [ ] Broad independent genre/audio-type final confirmation and separately scoped adoption of any qualifying winner.
 ---
 ## Prior records (historical, not current tasks)

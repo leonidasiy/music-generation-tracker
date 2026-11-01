@@ -16,7 +16,7 @@
     },
     {
       "id": "panns-runtime-feasibility",
-      "title": "PANNs CPU adapter exercised — accuracy untested",
+      "title": "Historical PANNs CPU feasibility — superseded by295 diagnostic",
       "status": "complete",
       "evidence_type": "Two real waveform forwards and independent prelaunch engineering review",
       "detail": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits. Exact publisher327428481-byte checkpoint/checksum and CC-BY4.0/MIT terms, official527-label ordering and34 alias entries verified. Independent prelaunch review first blocked absent frozen-audio hash enforcement despite15passingtests; actual behavioral failure retained, corrected successor and fresh16tests accepted before inference. Historical404label lookup and180s download-tool timeout preserved; verified206range completion matched full publisher checksum, not a pressure restart. No unsafe pickle or wrapper auto-download. Single-clip warm latency is not corpus/full-song throughput or broad confirmation."
