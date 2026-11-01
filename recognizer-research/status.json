@@ -1,25 +1,32 @@
 {
   "schema_version": 1,
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T01:49:17.587599+00:00",
+  "updated_at": "2026-11-01T03:27:13.285324+00:00",
   "title": "Recognizer Research",
-  "phase": "Practical native evaluation:23/64 available; bounded storage stop",
-  "summary": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. HPSS follow-up remains deferred.",
+  "phase": "Complete native64 diagnostic: primary gain below gate",
+  "summary": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred.",
   "publication_ready": false,
   "milestones": [
     {
+      "id": "practical-native-complete64",
+      "title": "Complete64 native comparison — not promoted",
+      "status": "complete",
+      "evidence_type": "41 new waveform runs+23 exact reuse; independent interval/receipt review",
+      "detail": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254→18.0370%, stricttriad39.0747→33.8573%. Historical boundary flags12→34 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates."
+    },
+    {
       "id": "practical-native-partial64",
-      "title": "Native practical comparison:23/64 outputs; storage-reserve stop",
-      "status": "in_progress",
+      "title": "Historical23/64 storage stop — superseded by complete64",
+      "status": "complete",
       "evidence_type": "15 new waveform inferences plus8 exact reused outputs; independently reconstructed partial diagnostic",
-      "detail": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20–100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
+      "detail": "Historical immutable stop; remaining41 completed in separately reviewed successor. Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20–100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
     },
     {
       "id": "practical-two-stage-pilot",
       "title": "Task-trained recognizer: promising pilot and working memory-efficient implementation",
       "status": "complete",
       "evidence_type": "Previously executed CPU waveform inference, actual native-path parity and saved-output paired comparison; no inference in this publication",
-      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; historical23/64 batch stopped on storage and has now been superseded by complete64. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
     },
     {
       "id": "practical-btc-pilot",
@@ -409,6 +416,13 @@
   ],
   "findings": [
     {
+      "title": "Complete64: secondary quality gains, primary below gate",
+      "detail": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254→18.0370%, stricttriad39.0747→33.8573%. Historical boundary flags12→34 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates. Independent boundary-partition interval/receipt/official192 audit passed19768 assertions;1296 native events, all64 saved outputs, fixed strongest control and all23 reuse identities checked. Shared pinned label theory, independently implemented interval/aggregate arithmetic.15guard+2path-overlay+3privacy-projection tests pass. Canonical control/semantics and corrected scorer frozen before new outcomes; path-only relocation overlay finalized after inference began, before scoring. No training/download/paid service/production writes.",
+      "evidence_type": "Exposed diagnostic and independent saved-output reconstruction",
+      "confidence": "HIGH scoped computation; LOW population transfer",
+      "source": "full64-complete.json; PRACTICAL-SOLUTIONS.md"
+    },
+    {
       "title": "Observed partial progress, not full64 or qualified gain",
       "detail": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. Independent raw-interval/receipt audit3963checks plus120 aggregate checks and37 tests accepted the actual23 outputs and fixed64 ACE control; separate quality review42 tests/673 official-vocabulary events. Scientific review BLOCKS calling41 unattempted outcomes acoustic failures: original private all64 missing-as-wrong panels preserved, excluded from public performance. Corrected tested aggregate projection uses observed23 only and reports intended64/missing41 separately; unknown truth never negative. Shared label theory; exact full wrapper sealed later than canonical pre-outcome contract. Product gates remain noncommercial weights/code provenance/noN.",
       "evidence_type": "Independent saved-output reconstruction; exposed storage-limited subset",
@@ -623,12 +637,12 @@
     "No broadindependentgenre/audio-typefinalconfirmation orvalidatedfinalchordutilitytolerance.",
     "Instrumentreferencesremainpartialcliplabels,notexhaustivewhole-song/sectioninventories.",
     "External4classicalsongsareclustered; checkpointoverlapunknown. ProspectiveMIREXpairannotationreuseprovenancestillunresolved.",
-    "Current packet stopped prospectively at unchanged300MB storage reserve;41 not attempted. Existing guarded fresh-phase successor works. Explicit next-phase packet/scoring reconciliation required; no owner action presently necessary. Noncommercial/code/noN product gates remain."
+    "No owner action required for current diagnostic. NC checkpoint/code/noN constraints and broad independent validation remain production gates; primary improvement is below practical5pp threshold."
   ],
   "next_steps": [
-    "Next executable phase: preserve/reuse all23; prospectively reconcile retained features for41 remaining against the3GB campaign and15GB reserve, explicitly budget/version/test a packet-allowance successor without altering old300MB guard, freeze corrected unknown/unobserved/official-ID scoring, then run only41 in a new bounded lease. No restart this pass and no HPSS/BTC rescue. Final broad genre/audio-type category confirmation and separately scoped lawful product adoption remain open.",
-    "Keep41 unattempted/operational missing separate from observed acoustic failure. Do not publish private missing-as-wrong panels as measured full64 performance.",
-    "Resolve noN, noncommercial checkpoint/code rights and independent genre/audio-type validation before any separately authorized production adoption."
+    "Next executable task: implement the already selected PANNs Cnn14 task-head instrument adapter, not another chord/HPSS/head/threshold variation. Before acquisition, freshly verify its pinned327428481-byte release and CC-BY-4.0/MIT terms, safe weights-only load, actual527-label order and existing interpreter dependencies; give a new time/cost/storage estimate and explicit phase envelope retaining all spending. Then one real waveform plus silence feasibility, fixed19 coarse-presence lane versus strongest73/292 PaSST/fusion control, unknown labels never negative; no corpus commitment until runtime measured. Broad independent audio-type/genre confirmation and separately scoped lawful adoption remain open.",
+    "No further native64 reruns or scoring-contract revisions absent concrete defects. Retain negative and partial evidence.",
+    "Qualifying independently verified practical gain creates concrete adoption task, subject to rights/production scope."
   ],
   "agents": [
     {
@@ -658,6 +672,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T03:27:13.285324+00:00",
+      "title": "Remaining41 completed; native64 nonpromotion verified",
+      "action": "Reviewed authoritative800MB successor, actual41waveforms, fixed64 scores and independent19768-assertion audit.",
+      "result": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. A separately scoped800MB successor preserved the old300MB storage-stop packet and all evidence, then completed41-only inference without restart. Prior17s administrative cap overrun retained, not erased. Current retained combined model packets about601MB and campaign about1.148GB before publication QA;3GB campaign/15GB free floor unchanged. Exact final resource/time receipt remains private."
+    },
     {
       "time": "2026-11-01T01:49:17.587599+00:00",
       "title": "Partial native waveform batch retained without restart",

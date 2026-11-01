@@ -1,4 +1,21 @@
-## Current —1 November2026:23/64 saved outputs; storage-reserve stop
+## Current —1 November2026: native64 complete, primary gain below gate
+
+Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred.
+
+Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254→18.0370%, stricttriad39.0747→33.8573%. Historical boundary flags12→34 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates.
+
+Independent boundary-partition interval/receipt/official192 audit passed19768 assertions;1296 native events, all64 saved outputs, fixed strongest control and all23 reuse identities checked. Shared pinned label theory, independently implemented interval/aggregate arithmetic.15guard+2path-overlay+3privacy-projection tests pass. Canonical control/semantics and corrected scorer frozen before new outcomes; path-only relocation overlay finalized after inference began, before scoring. No training/download/paid service/production writes.
+
+A separately scoped800MB successor preserved the old300MB storage-stop packet and all evidence, then completed41-only inference without restart. Prior17s administrative cap overrun retained, not erased. Current retained combined model packets about601MB and campaign about1.148GB before publication QA;3GB campaign/15GB free floor unchanged. Exact final resource/time receipt remains private.
+
+Next executable task: implement the already selected PANNs Cnn14 task-head instrument adapter, not another chord/HPSS/head/threshold variation. Before acquisition, freshly verify its pinned327428481-byte release and CC-BY-4.0/MIT terms, safe weights-only load, actual527-label order and existing interpreter dependencies; give a new time/cost/storage estimate and explicit phase envelope retaining all spending. Then one real waveform plus silence feasibility, fixed19 coarse-presence lane versus strongest73/292 PaSST/fusion control, unknown labels never negative; no corpus commitment until runtime measured. Broad independent audio-type/genre confirmation and separately scoped lawful adoption remain open.
+
+[Internal experiment and independent computational review,1November2026; HIGH scoped arithmetic/identity, LOW generalization]. Aggregate panels: [completed64 results](full64-complete.json).
+
+---
+## Prior records (historical, not current tasks)
+
+## Historical — superseded23/64 storage-reserve stop
 
 Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption.
 
