@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T04:22:02.672635+00:00",
+  "checkpoint": "panns295-fixed-head-rejected",
+  "updated_at": "2026-11-01T05:14:38.193274+00:00",
   "title": "Recognizer Research",
-  "phase": "PANNs runtime feasible; matched accuracy diagnostic next",
-  "summary": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits.",
+  "phase": "PANNs295 rejected; raw-note adapter next",
+  "summary": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "panns295-fixed-diagnostic",
+      "title": "PANNs295 completed — fixed candidate rejected",
+      "status": "complete",
+      "evidence_type": "Real waveform inference plus independent full saved-output reconstruction",
+      "detail": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption. Same strongest fixed PaSST/fusion predictions, unchanged295intended/292scorable,703known/4902unknown pairs. The historical73/292 anchor meant any observed error; the before-outcomes endpoint amendment reconciles it to55/292 at >30% without changing predictions, denominators or exclusions. Unknown never negative. Primary12rescues/90regressions; continuous errors worsen121/improve18. All19classes,101overlapping raw publisher genre panels plus source/split/instrumental and295artist groups are retained privately; overlapping tags do not establish broad independent coverage. Audit checks986frozenfiles/295audio/295outputs/155465source-score rows and all421panels.25tests; one model load,77.54s guarded worker, sampled1.12GB group RSS, owned-group cleanup verified. No training, downloads, paid services, original-app edits or broad confirmation."
+    },
     {
       "id": "panns-runtime-feasibility",
       "title": "PANNs CPU adapter exercised — accuracy untested",
@@ -423,6 +430,13 @@
   ],
   "findings": [
     {
+      "title": "Released classifier reduces false positives but loses too much recall",
+      "detail": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.",
+      "evidence_type": "Exposed matched development, not independent confirmation",
+      "confidence": "HIGH scoped numeric audit; limited external validity",
+      "source": "panns-matched.json; PRACTICAL-SOLUTIONS.md"
+    },
+    {
       "title": "Runtime works; no acoustic gain demonstrated",
       "detail": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits.",
       "evidence_type": "One exposed clip and silence, not a benchmark",
@@ -654,8 +668,8 @@
     "No owner action required for current diagnostic. NC checkpoint/code/noN constraints and broad independent validation remain production gates; primary improvement is below practical5pp threshold."
   ],
   "next_steps": [
-    "Next substantive task: freeze and execute one matched295-intended/292-scorable exposed instrument diagnostic with this released task head, using strongest fixed PaSST/fusion73/292 control,703known/4902unknown pairs. Reuse exact smoke only after matching identities. Fixed raw0.5, all19max-alias lane, no calibration/music-gate/pooling grid; unknown never negative. Before corpus scope, measure header inventory, give prospective time/storage/cost estimate and explicit newphase accounting; frozen per-record failure>30%, severe>70%, missing/coverage, paired/category/artist panels and independent reconstruction. No production adoption without qualifying gain and separately scoped rights/implementation; broad diverse independent confirmation remains open.",
-    "Native64 remains not promoted; no native/BTC/HPSS rerun or small-head rescue."
+    "Next concrete task: implement one isolated YourMT3+ raw-note CPU adapter from pinned author source, preserving instrument programs and cross-segment ties BEFORE default MIDI export collapses them. First audit reachable program vocabulary, per-file GPL/Apache discrepancy, minimal existing dependency compatibility and safe weights-only loading; all19 evidence/support states, unsupported never negative. Selected561544628-byte author checkpoint is metadata-verified, NOT downloaded; full execution storage/runtime fit not cleared. Give new measured scope/time/cost/storage estimate before acquisition or inference. No PANNs threshold/pooling/head/HPSS rescue. Broad diverse independent confirmation and separately scoped lawful adoption remain open.",
+    "No model promoted; current production and strongest control retained."
   ],
   "agents": [
     {
@@ -685,6 +699,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T05:14:38.193274+00:00",
+      "title": "PANNs295 diagnostic independently reconstructed",
+      "action": "294newforwards+1reuse; fixed raw0.5, unknown masks retained.",
+      "result": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption."
+    },
     {
       "time": "2026-11-01T04:22:02.672635+00:00",
       "title": "Selected PANNs adapter executed",
@@ -1303,11 +1323,16 @@
       "name": "recognizer-research/instrument-presence-summary.json",
       "bytes": 91227,
       "sha256": "c958269fb971cc1b0936696f001ef70c90475bc97d0df8cdfd9c973506611758"
+    },
+    {
+      "title": "PANNs295 aggregate diagnostic",
+      "url": "panns-matched.json",
+      "description": "All19class and non-identifying category counters; no recording arrays."
     }
   ],
   "limits": [
     "Coarse19 changes reporting specificity and raises severe11→14; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
-    "Current chord roster:60 exposed solo-guitar recordings plus4 clustered classical songs; native outputs available23/64 after storage-reserve stop,41 unattempted. Earlier60-only chord analyses are historical. No broad or untouched final confirmation; root-only forgiveness does not forgive wrong quality.",
+    "Current chord roster:60 exposed solo-guitar recordings plus4 clustered classical songs; native outputs available64/64 after separately authorized remaining41 completion. The23/64 storage stop and earlier60-only chord analyses are historical. No broad or untouched final confirmation; root-only forgiveness does not forgive wrong quality.",
     "Thresholds/hyperparameters are tunable with development-onlyselection; publishedoldfixedthresholdexperiments remainunchanged.",
     "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",
     "Synthetic controls test numerical behavior, not musical correctness.",
@@ -1323,7 +1348,7 @@
     "Recording-level metadata review is not legal clearance. Only humans can supply independent audible reference judgments here; future reference rights/consent and all confirmatory tolerances remain unresolved. The response checker cannot verify human independence or musical truth.",
     "Current storage authorization (31 October): justified storage and demonstrably disposable cleanup are allowed; alert only below 15 GB free. Required source/data/checkpoints/evidence are retained. Earlier dated 30 GiB pauses are historical.",
     "The prior recording-clearance commit was pushed but failed its live publication gate; last verified prior five-file checkpoint remained the older chord-readiness page. Current publication is only established by exact deployment/live read-back, never by a push.",
-    "Primary failure means at least one disagreement on an observed reference class; unknown/unannotated classes are never negatives. Three reference-unscorable recordings remain in current295-input inference accounting (292scorable); the historical49-input diagnostic had two.",
+    "Current instrument primary failure is >30% disagreement among known observed pairs (same fixed control55/292); severe is >70% (control12/292). The historical any-error73/292 and >=2-error11/292 remain separately reported, not renamed. Unknown/unannotated classes are never negatives. Three reference-unscorable recordings remain in current295-input accounting (292scorable); the historical49-input diagnostic had two.",
     "PaSST publisher TEST served validation/checkpoint selection. New local artist groups do not imply independence from model selection, compositions or pretrained exposure.",
     "The descriptive artist-cluster95% interval for candidate-minus-baseline failure incidence spans -25.00 to +2.44 percentage points; it includes no difference. No population-level improvement is established.",
     "Historical global comparator rescored only eleven existing singleton names. The current experimental arm additionally suppresses eight coarse/multimember classes, without boosting exact subtypes or inventing rows. Vocal/world vocabulary stays unchanged; no production adoption.",

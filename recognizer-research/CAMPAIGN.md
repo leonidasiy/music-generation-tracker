@@ -1,3 +1,14 @@
+## Current —1November2026: PANNs295 completed and rejected
+
+Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.
+
+Same strongest fixed PaSST/fusion predictions, unchanged295intended/292scorable,703known/4902unknown pairs. The historical73/292 anchor meant any observed error; the before-outcomes endpoint amendment reconciles it to55/292 at >30% without changing predictions, denominators or exclusions. Unknown never negative. Primary12rescues/90regressions; continuous errors worsen121/improve18. All19classes,101overlapping raw publisher genre panels plus source/split/instrumental and295artist groups are retained privately; overlapping tags do not establish broad independent coverage. Audit checks986frozenfiles/295audio/295outputs/155465source-score rows and all421panels.25tests; one model load,77.54s guarded worker, sampled1.12GB group RSS, owned-group cleanup verified. No training, downloads, paid services, original-app edits or broad confirmation.
+
+Next concrete task: implement one isolated YourMT3+ raw-note CPU adapter from pinned author source, preserving instrument programs and cross-segment ties BEFORE default MIDI export collapses them. First audit reachable program vocabulary, per-file GPL/Apache discrepancy, minimal existing dependency compatibility and safe weights-only loading; all19 evidence/support states, unsupported never negative. Selected561544628-byte author checkpoint is metadata-verified, NOT downloaded; full execution storage/runtime fit not cleared. Give new measured scope/time/cost/storage estimate before acquisition or inference. No PANNs threshold/pooling/head/HPSS rescue. Broad diverse independent confirmation and separately scoped lawful adoption remain open.
+
+---
+## Prior records (historical, not current tasks)
+
 ## Current —1November2026: PANNs runtime feasible, accuracy untested
 
 PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits.
