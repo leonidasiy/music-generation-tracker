@@ -407,4 +407,3 @@ Chords, complete64: root duration error21.63%→18.04% (16.59% relative reductio
 Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory.
 
 Evidence: recognizer-research/PROGRESS.md and progress-numbers.json. Matched partial rates exclude171missing/invalid outputs; these remain availability failures on original295 roster, never silent acoustic negatives.
-
