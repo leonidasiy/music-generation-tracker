@@ -1,3 +1,18 @@
+## Current —1November2026: PANNs runtime feasible, accuracy untested
+
+PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits.
+
+Exact publisher327428481-byte checkpoint/checksum and CC-BY4.0/MIT terms, official527-label ordering and34 alias entries verified. Independent prelaunch review first blocked absent frozen-audio hash enforcement despite15passingtests; actual behavioral failure retained, corrected successor and fresh16tests accepted before inference. Historical404label lookup and180s download-tool timeout preserved; verified206range completion matched full publisher checksum, not a pressure restart. No unsafe pickle or wrapper auto-download. Single-clip warm latency is not corpus/full-song throughput or broad confirmation.
+
+Next substantive task: freeze and execute one matched295-intended/292-scorable exposed instrument diagnostic with this released task head, using strongest fixed PaSST/fusion73/292 control,703known/4902unknown pairs. Reuse exact smoke only after matching identities. Fixed raw0.5, all19max-alias lane, no calibration/music-gate/pooling grid; unknown never negative. Before corpus scope, measure header inventory, give prospective time/storage/cost estimate and explicit newphase accounting; frozen per-record failure>30%, severe>70%, missing/coverage, paired/category/artist panels and independent reconstruction. No production adoption without qualifying gain and separately scoped rights/implementation; broad diverse independent confirmation remains open.
+
+- [x] Selected releasedPANNs adapter, safe isolated acquisition and independent16test closure.
+- [x] Actual waveform+silence,2forwards, normalpressure/resource completion.
+- [ ] Frozen matched295 instrument diagnostic with separate prospective scope/lease; no further chord/HPSS/readout variants.
+- [ ] Broad independent genre/audio-type confirmation and separately authorized adoption of qualifying winner.
+---
+## Prior records (historical, not current tasks)
+
 ## Current —1 November2026: native64 complete, primary gain below gate
 
 Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred.

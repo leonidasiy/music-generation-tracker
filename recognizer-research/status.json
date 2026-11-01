@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T03:27:13.285324+00:00",
+  "updated_at": "2026-11-01T04:22:02.672635+00:00",
   "title": "Recognizer Research",
-  "phase": "Complete native64 diagnostic: primary gain below gate",
-  "summary": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred.",
+  "phase": "PANNs runtime feasible; matched accuracy diagnostic next",
+  "summary": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "panns-runtime-feasibility",
+      "title": "PANNs CPU adapter exercised — accuracy untested",
+      "status": "complete",
+      "evidence_type": "Two real waveform forwards and independent prelaunch engineering review",
+      "detail": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits. Exact publisher327428481-byte checkpoint/checksum and CC-BY4.0/MIT terms, official527-label ordering and34 alias entries verified. Independent prelaunch review first blocked absent frozen-audio hash enforcement despite15passingtests; actual behavioral failure retained, corrected successor and fresh16tests accepted before inference. Historical404label lookup and180s download-tool timeout preserved; verified206range completion matched full publisher checksum, not a pressure restart. No unsafe pickle or wrapper auto-download. Single-clip warm latency is not corpus/full-song throughput or broad confirmation."
+    },
     {
       "id": "practical-native-complete64",
       "title": "Complete64 native comparison — not promoted",
@@ -416,6 +423,13 @@
   ],
   "findings": [
     {
+      "title": "Runtime works; no acoustic gain demonstrated",
+      "detail": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits.",
+      "evidence_type": "One exposed clip and silence, not a benchmark",
+      "confidence": "HIGH scoped runtime; unknown accuracy",
+      "source": "panns-runtime.json; PRACTICAL-SOLUTIONS.md"
+    },
+    {
       "title": "Complete64: secondary quality gains, primary below gate",
       "detail": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254→18.0370%, stricttriad39.0747→33.8573%. Historical boundary flags12→34 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates. Independent boundary-partition interval/receipt/official192 audit passed19768 assertions;1296 native events, all64 saved outputs, fixed strongest control and all23 reuse identities checked. Shared pinned label theory, independently implemented interval/aggregate arithmetic.15guard+2path-overlay+3privacy-projection tests pass. Canonical control/semantics and corrected scorer frozen before new outcomes; path-only relocation overlay finalized after inference began, before scoring. No training/download/paid service/production writes.",
       "evidence_type": "Exposed diagnostic and independent saved-output reconstruction",
@@ -640,9 +654,8 @@
     "No owner action required for current diagnostic. NC checkpoint/code/noN constraints and broad independent validation remain production gates; primary improvement is below practical5pp threshold."
   ],
   "next_steps": [
-    "Next executable task: implement the already selected PANNs Cnn14 task-head instrument adapter, not another chord/HPSS/head/threshold variation. Before acquisition, freshly verify its pinned327428481-byte release and CC-BY-4.0/MIT terms, safe weights-only load, actual527-label order and existing interpreter dependencies; give a new time/cost/storage estimate and explicit phase envelope retaining all spending. Then one real waveform plus silence feasibility, fixed19 coarse-presence lane versus strongest73/292 PaSST/fusion control, unknown labels never negative; no corpus commitment until runtime measured. Broad independent audio-type/genre confirmation and separately scoped lawful adoption remain open.",
-    "No further native64 reruns or scoring-contract revisions absent concrete defects. Retain negative and partial evidence.",
-    "Qualifying independently verified practical gain creates concrete adoption task, subject to rights/production scope."
+    "Next substantive task: freeze and execute one matched295-intended/292-scorable exposed instrument diagnostic with this released task head, using strongest fixed PaSST/fusion73/292 control,703known/4902unknown pairs. Reuse exact smoke only after matching identities. Fixed raw0.5, all19max-alias lane, no calibration/music-gate/pooling grid; unknown never negative. Before corpus scope, measure header inventory, give prospective time/storage/cost estimate and explicit newphase accounting; frozen per-record failure>30%, severe>70%, missing/coverage, paired/category/artist panels and independent reconstruction. No production adoption without qualifying gain and separately scoped rights/implementation; broad diverse independent confirmation remains open.",
+    "Native64 remains not promoted; no native/BTC/HPSS rerun or small-head rescue."
   ],
   "agents": [
     {
@@ -672,6 +685,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-01T04:22:02.672635+00:00",
+      "title": "Selected PANNs adapter executed",
+      "action": "Safe explicit local load, fixed19-class lane, real-waveform and silence probe.",
+      "result": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits."
+    },
     {
       "time": "2026-11-01T03:27:13.285324+00:00",
       "title": "Remaining41 completed; native64 nonpromotion verified",

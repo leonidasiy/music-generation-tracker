@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "runtime_feasible_accuracy_untested",
+  "model": "PANNs Cnn14 released AudioSet task head",
+  "scope": "One existing exposed ten-second music clip and same-duration digital silence; not a benchmark",
+  "weights_terms": "CC-BY-4.0",
+  "code_terms": "MIT",
+  "source_labels": 527,
+  "mapped_coarse_categories": 19,
+  "forward_calls": 2,
+  "fit_calls": 0,
+  "threshold": 0.5,
+  "load_and_decode_seconds": 14.24716541700036,
+  "waveform_forward_seconds": 0.0990740419983922,
+  "silence_forward_seconds": 0.07109166699956404,
+  "supervised_peak_group_rss_bytes": 1099218944,
+  "silence_positive_categories": 0,
+  "waveform_positive_categories": 0,
+  "qualified_gain": false,
+  "production_adopted": false
+}

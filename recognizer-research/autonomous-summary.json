@@ -290,7 +290,7 @@
     "paid_services": false
   },
   "checkpoint": "practical-solutions-first",
-  "updated_at": "2026-11-01T03:27:13.285324+00:00",
+  "updated_at": "2026-11-01T04:22:02.672635+00:00",
   "instrumentation": {
     "stage": "Executed and independently reconstructed fixed clip-window comparison",
     "metrics": {
@@ -25497,7 +25497,7 @@
       "feasible local runtime and isolated adapter",
       "matched comparison against strongest current control"
     ],
-    "next_deliverable": "Next executable task: implement the already selected PANNs Cnn14 task-head instrument adapter, not another chord/HPSS/head/threshold variation. Before acquisition, freshly verify its pinned327428481-byte release and CC-BY-4.0/MIT terms, safe weights-only load, actual527-label order and existing interpreter dependencies; give a new time/cost/storage estimate and explicit phase envelope retaining all spending. Then one real waveform plus silence feasibility, fixed19 coarse-presence lane versus strongest73/292 PaSST/fusion control, unknown labels never negative; no corpus commitment until runtime measured. Broad independent audio-type/genre confirmation and separately scoped lawful adoption remain open.",
+    "next_deliverable": "Next substantive task: freeze and execute one matched295-intended/292-scorable exposed instrument diagnostic with this released task head, using strongest fixed PaSST/fusion73/292 control,703known/4902unknown pairs. Reuse exact smoke only after matching identities. Fixed raw0.5, all19max-alias lane, no calibration/music-gate/pooling grid; unknown never negative. Before corpus scope, measure header inventory, give prospective time/storage/cost estimate and explicit newphase accounting; frozen per-record failure>30%, severe>70%, missing/coverage, paired/category/artist panels and independent reconstruction. No production adoption without qualifying gain and separately scoped rights/implementation; broad diverse independent confirmation remains open.",
     "new_accuracy_gain_claim": false,
     "production_adoption": false,
     "first_practical_pilot": {
@@ -31394,6 +31394,27 @@
         "Noncommercial pretrained checkpoints, unresolved code provenance and no-N controls block production adoption."
       ],
       "next": "Keep unchanged native candidate experimental. Interpret primary/category/severe regressions before further inference; task-matched broader lawful independent confirmation and separately scoped adoption remain gates."
+    },
+    "panns_runtime": {
+      "schema_version": 1,
+      "status": "runtime_feasible_accuracy_untested",
+      "model": "PANNs Cnn14 released AudioSet task head",
+      "scope": "One existing exposed ten-second music clip and same-duration digital silence; not a benchmark",
+      "weights_terms": "CC-BY-4.0",
+      "code_terms": "MIT",
+      "source_labels": 527,
+      "mapped_coarse_categories": 19,
+      "forward_calls": 2,
+      "fit_calls": 0,
+      "threshold": 0.5,
+      "load_and_decode_seconds": 14.24716541700036,
+      "waveform_forward_seconds": 0.0990740419983922,
+      "silence_forward_seconds": 0.07109166699956404,
+      "supervised_peak_group_rss_bytes": 1099218944,
+      "silence_positive_categories": 0,
+      "waveform_positive_categories": 0,
+      "qualified_gain": false,
+      "production_adopted": false
     }
   }
 }
