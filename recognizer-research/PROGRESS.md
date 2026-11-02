@@ -1,3 +1,22 @@
+# Private BTC chord implementation — final verification, 2 November 2026
+
+Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation.
+
+## Category results (previous hybrid → BTC)
+
+- guitar (3 recordings): root 21.32% → 19.66%; triad 36.30% → 34.58%; full quality 55.40% → 46.15%. Triad failures 2/3 → 2/3; severe 1/3 → 1/3.
+- classical_vocal_piano (2 recordings): root 29.22% → 25.20%; triad 29.36% → 25.20%; full quality 32.52% → 32.82%. Triad failures 1/2 → 0/2; severe 0/2 → 0/2.
+- rwc_fullmix (2 recordings): root 26.08% → 14.87%; triad 27.24% → 20.03%; full quality 50.92% → 35.82%. Triad failures 1/2 → 1/2; severe 0/2 → 0/2.
+
+Contrary evidence: classical voice/piano full-quality error worsens slightly (32.52% → 32.82%), despite its threshold failure count 2/2 → 1/2.
+
+Prior full-mix quality regressions and the earlier twelve-output candidate-only 4/12 failure result remain contrary evidence. Seven unique recordings, not fourteen; prior six matched pairs retain their separate protocol. No claim of all-genre coverage, commercial clearance or a hosted/default release.
+
+[Final seven-recording aggregate](btc-private-seven.json)
+
+---
+## Historical progress (original dates and scopes retained)
+
 # BTC actual-app follow-up —1 November 2026
 
 Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%).

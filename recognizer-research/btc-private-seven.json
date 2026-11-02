@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "evidence_type": "Actual installed private BTC versus current implemented ACE+Two-Stage quality hybrid; independently reconstructed duration arithmetic",
+  "intended": 7,
+  "completed_pairs": 7,
+  "unique_recordings": 7,
+  "final_repeat_is_not_additional_cases": true,
+  "paired": {
+    "current": {
+      "root_only": {
+        "eligible_seconds": 200.74439909297053,
+        "error_percent": 25.043384393511715,
+        "fail_gt30": 4,
+        "matched_seconds": 150.47120757967267,
+        "n": 7,
+        "severe_gt70": 0
+      },
+      "strict_triad": {
+        "eligible_seconds": 200.74439909297053,
+        "error_percent": 31.572603342030913,
+        "fail_gt30": 4,
+        "matched_seconds": 137.36416623600343,
+        "n": 7,
+        "severe_gt70": 1
+      },
+      "expanded_full_quality": {
+        "eligible_seconds": 200.74439909297053,
+        "error_percent": 47.40118941644691,
+        "fail_gt30": 6,
+        "matched_seconds": 105.58916623600344,
+        "n": 7,
+        "severe_gt70": 1
+      }
+    },
+    "btc": {
+      "root_only": {
+        "eligible_seconds": 200.74439909297053,
+        "error_percent": 19.840032538912446,
+        "fail_gt30": 1,
+        "matched_seconds": 160.91664499288092,
+        "n": 7,
+        "severe_gt70": 0
+      },
+      "strict_triad": {
+        "eligible_seconds": 200.74439909297053,
+        "error_percent": 27.501642097790924,
+        "fail_gt30": 3,
+        "matched_seconds": 145.53639292306073,
+        "n": 7,
+        "severe_gt70": 1
+      },
+      "expanded_full_quality": {
+        "eligible_seconds": 200.74439909297053,
+        "error_percent": 39.18120517337036,
+        "fail_gt30": 5,
+        "matched_seconds": 122.09032421030432,
+        "n": 7,
+        "severe_gt70": 1
+      }
+    }
+  },
+  "categories": {
+    "guitar": {
+      "current": {
+        "root_only": {
+          "eligible_seconds": 82.32439909297052,
+          "error_percent": 21.317660561267047,
+          "fail_gt30": 2,
+          "matched_seconds": 64.77476313522826,
+          "n": 3,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "eligible_seconds": 82.32439909297052,
+          "error_percent": 36.29747393317208,
+          "fail_gt30": 2,
+          "matched_seconds": 52.442721791559,
+          "n": 3,
+          "severe_gt70": 1
+        },
+        "expanded_full_quality": {
+          "eligible_seconds": 82.32439909297052,
+          "error_percent": 55.39536276740069,
+          "fail_gt30": 2,
+          "matched_seconds": 36.72049956933678,
+          "n": 3,
+          "severe_gt70": 1
+        }
+      },
+      "btc": {
+        "root_only": {
+          "eligible_seconds": 82.32439909297052,
+          "error_percent": 19.660324368392534,
+          "fail_gt30": 1,
+          "matched_seconds": 66.13915519696252,
+          "n": 3,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "eligible_seconds": 82.32439909297052,
+          "error_percent": 34.57926724520005,
+          "fail_gt30": 2,
+          "matched_seconds": 53.8572251226072,
+          "n": 3,
+          "severe_gt70": 1
+        },
+        "expanded_full_quality": {
+          "eligible_seconds": 82.32439909297052,
+          "error_percent": 46.148809623936195,
+          "fail_gt30": 2,
+          "matched_seconds": 44.3326688815061,
+          "n": 3,
+          "severe_gt70": 1
+        }
+      }
+    },
+    "classical_vocal_piano": {
+      "current": {
+        "root_only": {
+          "eligible_seconds": 58.42,
+          "error_percent": 29.223883246478255,
+          "fail_gt30": 1,
+          "matched_seconds": 41.3474074074074,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "eligible_seconds": 58.42,
+          "error_percent": 29.360822650791853,
+          "fail_gt30": 1,
+          "matched_seconds": 41.267407407407404,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "eligible_seconds": 58.42,
+          "error_percent": 32.51930465213589,
+          "fail_gt30": 2,
+          "matched_seconds": 39.42222222222222,
+          "n": 2,
+          "severe_gt70": 0
+        }
+      },
+      "btc": {
+        "root_only": {
+          "eligible_seconds": 58.42,
+          "error_percent": 25.202284497046545,
+          "fail_gt30": 0,
+          "matched_seconds": 43.69682539682541,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "eligible_seconds": 58.42,
+          "error_percent": 25.202284497046545,
+          "fail_gt30": 0,
+          "matched_seconds": 43.69682539682541,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "eligible_seconds": 58.42,
+          "error_percent": 32.81569617462412,
+          "fail_gt30": 1,
+          "matched_seconds": 39.24907029478459,
+          "n": 2,
+          "severe_gt70": 0
+        }
+      }
+    },
+    "rwc_fullmix": {
+      "current": {
+        "root_only": {
+          "eligible_seconds": 60.0,
+          "error_percent": 26.084938271604972,
+          "fail_gt30": 1,
+          "matched_seconds": 44.349037037037014,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "eligible_seconds": 60.0,
+          "error_percent": 27.243271604938315,
+          "fail_gt30": 1,
+          "matched_seconds": 43.654037037037014,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "eligible_seconds": 60.0,
+          "error_percent": 50.92259259259259,
+          "fail_gt30": 2,
+          "matched_seconds": 29.446444444444438,
+          "n": 2,
+          "severe_gt70": 0
+        }
+      },
+      "btc": {
+        "root_only": {
+          "eligible_seconds": 60.0,
+          "error_percent": 14.865559334845003,
+          "fail_gt30": 0,
+          "matched_seconds": 51.080664399092996,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "strict_triad": {
+          "eligible_seconds": 60.0,
+          "error_percent": 20.02942932728644,
+          "fail_gt30": 1,
+          "matched_seconds": 47.98234240362814,
+          "n": 2,
+          "severe_gt70": 0
+        },
+        "expanded_full_quality": {
+          "eligible_seconds": 60.0,
+          "error_percent": 35.81902494331063,
+          "fail_gt30": 2,
+          "matched_seconds": 38.50858503401362,
+          "n": 2,
+          "severe_gt70": 0
+        }
+      }
+    }
+  },
+  "missing_outputs": 0,
+  "invalid_outputs": 0,
+  "missing_prediction_seconds": 0,
+  "default_changed": false,
+  "private_noncommercial_only": true,
+  "hosted_release": false,
+  "limitations": [
+    "Seven exposed development recordings: three guitar styles, two classical voice/piano excerpts, two Japanese J-pop mixes. Not all genres or independent confirmation.",
+    "Final-code repeat checks the thread-policy correction on the same seven recordings; not fourteen recordings.",
+    "Training overlap, broader diversity, full-track reliability and commercial clearance remain unresolved.",
+    "Earlier six paired application comparisons and twelve candidate-only outputs retain their own protocols and denominators.",
+    "Private optional code integration is complete; population-level recording-failure target and default/hosted adoption are not established."
+  ]
+}

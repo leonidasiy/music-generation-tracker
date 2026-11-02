@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "btc-actual-app-six-verified",
-  "updated_at": "2026-11-01T14:52:13.936987+00:00",
+  "checkpoint": "btc-private-seven-final-verified",
+  "updated_at": "2026-11-02T14:23:23.026000+00:00",
   "title": "Recognizer Research",
-  "phase": "BTC actual-app six-case comparison verified; broader target remains open",
-  "summary": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%).",
+  "phase": "Private BTC chord implementation complete; final-code seven-pair verification passed, broader accuracy target open",
+  "summary": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "btc-private-seven-final",
+      "title": "Private BTC chord improvement — implementation and final verification complete",
+      "status": "complete",
+      "evidence_type": "Actual installed full-analyzer comparison, independent scoring, code review and guarded runtime/regression checks",
+      "detail": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation."
+    },
     {
       "id": "btc-actual-app-six",
       "title": "BTC actual-app follow-up — six verified development pairs",
@@ -465,6 +472,13 @@
   ],
   "findings": [
     {
+      "title": "Lower root and chord errors; recording-failure target remains unmet",
+      "detail": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation.",
+      "evidence_type": "Seven additional matched actual-app pairs plus same-recording final-code repeat",
+      "confidence": "High for saved arithmetic; generalization unverified",
+      "source": "Private BTC implementation and closeout, 2 November 2026"
+    },
+    {
       "title": "BTC improves the additional six-case application screen, but the broader failure target remains open",
       "detail": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 → 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training.",
       "evidence_type": "Six matched full-analyzer pairs, independent native/scoring audit",
@@ -732,15 +746,22 @@
     }
   ],
   "blockers": [
-    "Broad independent dataset confirmation and future commercial/code rights remain unresolved.",
-    "Across twelve exploratory BTC outputs, strict-triad recording failures remain 4/12 (33.33%); do not claim overall target attainment.",
-    "Full-quality failure incidence worsens on the three full mixes despite lower pooled error."
+    "Seven-recording strict-triad failure incidence remains 42.86%; pooled duration error below 30% is a different endpoint.",
+    "Broad independently labeled genre/audio-type and full-track confirmation, training-overlap assessment and future commercial rights remain open.",
+    "Earlier full-mix full-quality failure regression and twelve candidate-only BTC failures 4/12 (33.33%) remain contrary evidence; do not pool protocols or claim target attainment.",
+    "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Prioritize diagnosis of residual hard guitar/full-mix errors and task-relevant independent confirmation before production adoption.",
-    "Retain the current application unchanged; any BTC installation or new training run needs separate scope and resource review."
+    "Use the completed private BTC launcher only when explicitly opting in; the ordinary backend remains unchanged.",
+    "No further model search, training or downloads are scheduled as part of this completed chord implementation.",
+    "Any wider rollout should first address severe guitar/quality failures and obtain broader independent validation and appropriate rights."
   ],
   "agents": [
+    {
+      "responsibility": "BTC backend, source-bound off/on scoring, safety and publication reviews; disjoint bounded tasks",
+      "model": "gpt-6-luna",
+      "reasoning": "high"
+    },
     {
       "responsibility": "Scoring implementation and tests",
       "model": "gpt-6.1-sol",
@@ -768,6 +789,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-02T14:23:23.026000+00:00",
+      "title": "Private BTC implementation and exact-final-code verification closed",
+      "action": "Installed portable backend with gated launcher and honest fallback; completed guarded full-analyzer pairs, independent reconstruction and runtime tests.",
+      "result": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation."
+    },
     {
       "time": "2026-11-01T14:52:13.936987+00:00",
       "title": "Six-case actual-application BTC follow-up independently verified",
@@ -1432,11 +1459,22 @@
       "name": "recognizer-research/PRIVATE-CHORD-ADOPTION.md",
       "bytes": 2198,
       "sha256": "44b901a5d7c187476b60d717e4405d1b31c9b8be570ec1e568dfbe064ae6ae9f"
+    },
+    {
+      "name": "btc-private-seven.json",
+      "bytes": 7339,
+      "sha256": "e6e3a9c4aca54c8effe77fcacc6582d658103dd7d53a8c9940cad70e6c292ab9"
+    },
+    {
+      "name": "PROGRESS.md",
+      "bytes": 5211,
+      "sha256": "181bf4c352bd6f90696fa66f1c094d231eceee08cbae3686ffada1d3fa50b38a"
     }
   ],
   "limits": [
+    "Current BTC implementation is private opt-in, not a default replacement. Latest seven-recording repeat adds no new cases. No broad independent target or commercial clearance claim.",
     "Coarse19 changes reporting specificity and raises severe11→14; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
-    "Current chord roster:60 exposed solo-guitar recordings plus4 clustered classical songs; native outputs available64/64 after separately authorized remaining41 completion. The23/64 storage stop and earlier60-only chord analyses are historical. No broad or untouched final confirmation; root-only forgiveness does not forgive wrong quality.",
+    "Historical Complete64 chord roster:60 exposed solo-guitar recordings plus4 clustered classical songs; native outputs available64/64 after separately authorized remaining41 completion. The23/64 storage stop and earlier60-only chord analyses are historical. No broad or untouched final confirmation; root-only forgiveness does not forgive wrong quality.",
     "Thresholds/hyperparameters are tunable with development-onlyselection; publishedoldfixedthresholdexperiments remainunchanged.",
     "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",
     "Synthetic controls test numerical behavior, not musical correctness.",
@@ -1462,6 +1500,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "Private BTC final seven-recording aggregate and scope limits",
+      "url": "./btc-private-seven.json"
+    },
     {
       "title": "BTC actual-app six-case aggregate and broader-target caveat",
       "url": "./btc-app-six.json"
