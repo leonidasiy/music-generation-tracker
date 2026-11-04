@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "role-context-pilot-20261104",
-  "updated_at": "2026-11-04T10:58:55.927225+00:00",
+  "checkpoint": "msclap-new-source-screen-20261104",
+  "updated_at": "2026-11-04T20:35:43.491184+08:00",
   "title": "Recognizer Research",
-  "phase": "Role-context training pilot complete \u2014 no promotion beyond identity prior",
-  "summary": "Lead-role: trained intact-mixture ranking improves from 7/12 to 11/12 on a supplied-pair diagnostic, but the audio-blind prior also scores 11/12 and learned melody adds no correct cases. No new application accuracy gain; application unchanged.",
+  "phase": "New-source lead-role screen complete \u2014 MSCLAP replacement rejected",
+  "summary": "12 new recordings / 9 artists: original scorer11/12\u2192MSCLAP10/12, zero wins and one regression; artist-macro88.89%\u219286.11%. No application improvement or adoption. MoE retained as future, lead-first unvalidated direction.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "msclap-new-source-screen-20261104",
+      "title": "Fixed MSCLAP transfer screen completed on new sources",
+      "status": "complete",
+      "evidence_type": "Original-mixture supplied-pair comparison; no training, no full-app claim",
+      "detail": "11/12\u219210/12;0wins/1regression;12valid,0missing/invalid. Frozen general replacement rejected; no tuning rescue."
+    },
     {
       "id": "role-context-pilot-20261104",
       "title": "Actual role-supervised training and learned-melody ablation completed",
@@ -521,7 +528,14 @@
   ],
   "findings": [
     {
-      "title": "Raw scorer improvement is explained by a matching audio-blind control",
+      "title": "Earlier narrow flute gain did not transfer as a general replacement",
+      "detail": "New12source/9artist check: top-one91.67%\u219283.33%; piano4/4\u21923/4, other supported leader panels unchanged. Zero new correct cases; no model adoption.",
+      "evidence_type": "Saved paired original-mixture screen, 12 new crops / 9 artists; not full-app validation",
+      "confidence": "MEDIUM \u2014 scoped experimental evidence",
+      "source": "New-source MSCLAP screen aggregate"
+    },
+    {
+      "title": "Historical role-context pilot \u2014 Raw scorer improvement is explained by a matching audio-blind control",
       "detail": "Check set: 12 songs from 8 other artists. Original checkpoint ranking: 7/12; both trained role models: 11/12; audio-blind role prior: 11/12. Four raw ranking errors corrected, none introduced; but zero gain above the prior, with identical decisions. This does not establish acoustic-role learning or application improvement.",
       "evidence_type": "Actual 33-song role adaptation and saved-output paired-control reconstruction",
       "confidence": "Scoped exploratory outputs; sourcebias and pretrainedexposure unresolved",
@@ -844,6 +858,7 @@
     }
   ],
   "blockers": [
+    "No validated general lead-role replacement: frozen MSCLAP transfer failed. Current source-disjoint packet lacks same-pair role reversals and does not test full-app candidate admission.",
     "Current supplied-pair role pilot is confounded: trained models exactly match the 11/12 audio-blind prior. No verified counterbalanced role-training/check bank or arbitrary-mixture role replacement is ready.",
     "No broadly confirmed mixture-only lead-role replacement; stronger melody/contextual supervision and complete shared/no-lead references remain unvalidated.",
     "Seven-recording strict-triad failure incidence remains 42.86%; pooled duration error below 30% is a different endpoint.",
@@ -852,12 +867,10 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Keep LEAD-NEG-001 masking/fusion closed and LEAD-NEG-002 same-45-crop role-training packet closed. No seed, learning-rate, pitch-feature, prompt, threshold or split search to rescue these runs.",
-    "Next prerequisite: independently grounded, counterbalanced role audio/labels, including the same instrument pair in reversed roles across source groups, plus shared/no-clear/vocal cases. Do not simply expand this biased pilot. Full MedleyDB access is restricted; 109 metadata keys are not 109 available training songs.",
-    "No qualifying candidate for broader confirmation or actual-app off/on adoption. Keep the application and private chord option unchanged.",
-    "The adapter preflight and one real ten-second smoke are complete. A broader paired exploratory screen remains pending; do not infer permission for more inference from the technical smoke or its successful resource receipt.",
-    "For any resumed screen, retain and evaluate the original unseparated mixture as the paired control, score the reconstruction sum diagnostically, preserve all four stems and one frozen pooling rule, and keep sparse unknown labels unknown. Compare the installed pipeline and strongest saved PaSST/fusion as distinct controls; native PaSST is neither.",
-    "No accuracy improvement, broader genre validation, commercial/model redistribution clearance or production adoption is established. Do not restart negative PANNs or partial YourMT3 runs."
+    "Keep frozen MSCLAP general replacement closed (LEAD-NEG-005); do not rescue with prompt/window/threshold/weight sweeps.",
+    "Next substantive prerequisite: independent role-counterbalanced labels with the same named instrument pairs exchanging leader/accompaniment roles. Do not reuse the confounded45-crop training packet.",
+    "MoE is promising but untested and deferred: establish a lead-role gain versus best single/fixed blend before generalizing to other application tasks. No router has been run.",
+    "Production application unchanged; any future adoption requires separate varied actual-app off/on gains."
   ],
   "agents": [
     {
@@ -892,6 +905,13 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-04T20:35:43.491184+08:00",
+      "title": "New-source MSCLAP comparison complete",
+      "action": "Both frozen scorers executed on all12 new source crops; 11/12\u219210/12,0wins/1regression; no production changes. MoE retained as future lead-first direction.",
+      "status": "complete",
+      "result": "Frozen general replacement rejected. Future MoE remains untested; lead-role proof required before cross-task generalization."
+    },
     {
       "time": "2026-11-04T10:58:55.927225+00:00",
       "title": "Intact-mixture role training and learned contour ablation complete",
@@ -1626,7 +1646,8 @@
     }
   ],
   "limits": [
-    "Current role check uses 12 songs / 8 artists, two reference-supplied present identities and confidence-4 crop-level labels. It does not validate full-app identity admission, dense handovers, no-lead cases or broad genres. Perceptual severity is ungraded, not zero.",
+    "Current MSCLAP screen:12 confidence4 excerpts/9artists, reference-supplied present pairs; no role reversals, vocal/shared/no-lead coverage or pretraining-disjoint claim. Instrument panels are not genres.",
+    "Historical role-context pilot: Current role check uses 12 songs / 8 artists, two reference-supplied present identities and confidence-4 crop-level labels. It does not validate full-app identity admission, dense handovers, no-lead cases or broad genres. Perceptual severity is ungraded, not zero.",
     "Lead-role prototype masking is not a validated melody model. A small owner top-one gain is matched by resampling alone; new caption-pair results cannot replace timed application-identity metrics.",
     "Vocabulary oracle floors are theoretical, not achieved recognition. Seven existing development excerpts, not seven new recordings. The severe guitar full-quality floor remains 58.34%.",
     "Current BTC implementation is private opt-in, not a default replacement. Latest seven-recording repeat adds no new cases. No broad independent target or commercial clearance claim.",
@@ -1657,6 +1678,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "New-source MSCLAP screen, limits and deferred MoE gate",
+      "url": "./msclap-screen.json"
+    },
     {
       "title": "Role-context training, matched identity-prior control and evidence limits",
       "url": "./role-context.json"
