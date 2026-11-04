@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "checkpoint": "role-context-pilot-20261104",
+  "updated_at": "2026-11-04T10:56:29.322031+00:00",
+  "status": "STOP: trained role models match audio-blind prior; no application improvement established",
+  "scope": "Exploratory10second crop-level ranking between two annotation-supplied present instruments; not full-app candidate admission, arbitrary identity accuracy or dense handover evaluation",
+  "cohort": {
+    "admitted_songs": 45,
+    "fit_songs": 33,
+    "check_songs": 12,
+    "fit_artists": 24,
+    "check_artists": 8,
+    "check_seconds": 120,
+    "check_annotation_confidence": {
+      "4": 12
+    },
+    "source": "MASBroleaxis/SDDcoveredcrops, nonNDlicensedprivateNCtraining; sourceweights/dataexposureunresolved"
+  },
+  "methods": {
+    "mixture": "MERT95M first11layersfrozen, trainfinaltransformerblock+frameclassifier;6fixedepochs/finalcheckpoint",
+    "mixture_melody": "Samepairedtraining plus learnedMSNetcontourstatistics; intactaudio,no masks/CLAPfusion",
+    "controls": [
+      "originalCLAPcheckpoint/template withsameknown2presentidentities",
+      "fit-onlyaudio-blindidentityrolefrequencyprior"
+    ]
+  },
+  "results": {
+    "mixture": {
+      "songs": 12,
+      "correct": 11,
+      "errors": 1,
+      "missing": 0,
+      "ties": 0,
+      "accuracy": 0.9166666666666666,
+      "artist_macro_accuracy": 0.875,
+      "wrong_accompaniment_promotions": 1,
+      "leader_panels": {
+        "electric guitar": {
+          "intended": 3,
+          "correct": 3,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "flute": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "harmonica": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "piano": {
+          "intended": 1,
+          "correct": 0,
+          "errors": 1,
+          "missing": 0,
+          "accuracy": 0.0
+        },
+        "synth": {
+          "intended": 1,
+          "correct": 1,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "trumpet": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "violin": {
+          "intended": 1,
+          "correct": 1,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "mixture_melody": {
+      "songs": 12,
+      "correct": 11,
+      "errors": 1,
+      "missing": 0,
+      "ties": 0,
+      "accuracy": 0.9166666666666666,
+      "artist_macro_accuracy": 0.875,
+      "wrong_accompaniment_promotions": 1,
+      "leader_panels": {
+        "electric guitar": {
+          "intended": 3,
+          "correct": 3,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "flute": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "harmonica": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "piano": {
+          "intended": 1,
+          "correct": 0,
+          "errors": 1,
+          "missing": 0,
+          "accuracy": 0.0
+        },
+        "synth": {
+          "intended": 1,
+          "correct": 1,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "trumpet": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "violin": {
+          "intended": 1,
+          "correct": 1,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "identity_prior": {
+      "songs": 12,
+      "correct": 11,
+      "errors": 1,
+      "missing": 0,
+      "ties": 0,
+      "accuracy": 0.9166666666666666,
+      "artist_macro_accuracy": 0.875,
+      "wrong_accompaniment_promotions": 1,
+      "leader_panels": {
+        "electric guitar": {
+          "intended": 3,
+          "correct": 3,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "flute": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "harmonica": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "piano": {
+          "intended": 1,
+          "correct": 0,
+          "errors": 1,
+          "missing": 0,
+          "accuracy": 0.0
+        },
+        "synth": {
+          "intended": 1,
+          "correct": 1,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "trumpet": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "violin": {
+          "intended": 1,
+          "correct": 1,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "original_clap": {
+      "songs": 12,
+      "correct": 7,
+      "errors": 5,
+      "missing": 0,
+      "ties": 0,
+      "accuracy": 0.5833333333333334,
+      "artist_macro_accuracy": 0.375,
+      "wrong_accompaniment_promotions": 5,
+      "leader_panels": {
+        "electric guitar": {
+          "intended": 3,
+          "correct": 3,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "flute": {
+          "intended": 2,
+          "correct": 0,
+          "errors": 2,
+          "missing": 0,
+          "accuracy": 0.0
+        },
+        "harmonica": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "piano": {
+          "intended": 1,
+          "correct": 0,
+          "errors": 1,
+          "missing": 0,
+          "accuracy": 0.0
+        },
+        "synth": {
+          "intended": 1,
+          "correct": 0,
+          "errors": 1,
+          "missing": 0,
+          "accuracy": 0.0
+        },
+        "trumpet": {
+          "intended": 2,
+          "correct": 2,
+          "errors": 0,
+          "missing": 0,
+          "accuracy": 1.0
+        },
+        "violin": {
+          "intended": 1,
+          "correct": 0,
+          "errors": 1,
+          "missing": 0,
+          "accuracy": 0.0
+        }
+      }
+    }
+  },
+  "contradiction": "Rawsame-taskcheckpointscore7/12\u219211/12, butaudio-blindprior11/12 andallthreeidenticaldecisions; no demonstratedgainaboveprior. Pitchcueadds0correctchecks.",
+  "application_changed": false,
+  "actual_app_off_on": "NOT_TRIGGERED",
+  "broader_validation": "NOT_TRIGGERED_NO_QUALIFYING_CANDIDATE",
+  "severe_failures": null,
+  "severe_definition": "Not independently perceptually graded; binarywrong and perceptualseveritydifferent",
+  "limitations": [
+    "Only12check songs/8artists and confidence4; allhistorical12sourceartistgroups forcedfit",
+    "Referenceprovidestwoinstrumentidentities; candidateadmissionandotherpresentinstrumentsuntested",
+    "No vocal/shared/no-clearlead or withinexcerptrolehandover supervision",
+    "No verifiedgenreorpopulationtransfer; pretraining/sourceexposureunresolved",
+    "Matchingpriorchoices doesnotprove modelignoresaudio; cannotclaim genuinelead-rolelearninggain",
+    "PrivateNC-only source/modelterms; no rawaudio/features/checkpointsorrecordidentifiers published"
+  ],
+  "next_step": "Obtain independentlygrounded counterbalancedrolelabels/audio, including sameinstrumentpair in reversedroles acrossartists. Do notretune/re-splitthis45songpacket; oldmaskingfamilyremainsclosed.",
+  "sources": [
+    "https://huggingface.co/m-a-p/MERT-v1-95M",
+    "https://github.com/barry-mir/music-clap-bow",
+    "https://zenodo.org/records/10072001",
+    "https://arxiv.org/html/2503.03232"
+  ]
+}
