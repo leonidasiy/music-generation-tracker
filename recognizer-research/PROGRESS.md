@@ -1,3 +1,14 @@
+# Corrected contextual screen and temporal role-data readiness — 5 November 2026
+
+- **No application improvement/adoption established.** Corrected same-eight-case TinyMU screen: baseline **4/8**, candidate **5/8**, silence **4/8**; **three corrections and two regressions**, zero missing/invalid. Stop only for regressions, not audio-null failure. The original unpadded silence-6/8 conclusion is superseded; prior outputs remain private adapter evidence.
+- **Data-readiness increment completed, not training:** manual leader intervals plus original human-reviewed positive pitch yield **12 balanced five-second windows / three songs / two artists**. Each exact pair belongs to one artist; **zero pairs** support artist-disjoint fit/check. World/Folk and Jazz only; secondary melodic-source evidence is not complete accompaniment or mixture-audibility labels.
+- No audio acquisition, training, new model sweep or application edits in the metadata increment. Access to licensed original mixtures plus human co-presence/ambiguity review remains a prerequisite; access alone does not repair labels. No automatic next fit/download.
+- [Aggregate evidence and limits](contextual-role-data.json). Earlier separation-assisted IRNet role-development gains did not transfer to the separate predominance endpoint. MoE remains deferred until transferable complementary role strengths are demonstrated.
+
+Historical public progress follows unchanged.
+
+---
+
 # Separation-assisted instrumentation — technical smoke, 4 November 2026
 
 One real ten-second clip completed the offline separator-to-recognizer path. This is a working research adapter, **not an accuracy improvement or a completed eight-clip pilot**. The installed application and completed chord implementation remain unchanged.

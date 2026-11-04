@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-05T06:43:20.275630+08:00",
+  "scope": "Aggregate-only corrected contextual screen and metadata readiness; no application adoption",
+  "contextual_screen": {
+    "songs": 8,
+    "artists": 8,
+    "leader_categories": 8,
+    "baseline_correct": 4,
+    "candidate_correct": 5,
+    "null_correct": 4,
+    "wins": 3,
+    "regressions": 2,
+    "ties": 3,
+    "missing": 0,
+    "invalid": 0,
+    "continue_gate": false,
+    "stop_reason": "Two regressions exceed maximum one; corrected candidate beats null by one.",
+    "superseded": "Original unpadded prompt result and silence-6/8 conclusion are adapter evidence only.",
+    "limits": "Previously exposed, supplied-pair development; same eight repeated cases, not sixteen unique recordings. Tokenizer probe version differs from author pin."
+  },
+  "temporal_join": {
+    "candidate_songs": 41,
+    "inspected_pitch_files": 90,
+    "balanced_pair_rows": 12,
+    "distinct_original_windows": 12,
+    "songs": 3,
+    "artists": 2,
+    "FIT_rows": 12,
+    "CHECK_rows": 0,
+    "pairs_supported_both_splits": 0,
+    "genres": {
+      "World/Folk": 4,
+      "Jazz": 8
+    },
+    "pair_panels": [
+      {
+        "pair": [
+          "dizi",
+          "erhu"
+        ],
+        "FIT_artists": 1,
+        "CHECK_artists": 0,
+        "FIT_rows": 2,
+        "CHECK_rows": 0
+      },
+      {
+        "pair": [
+          "oud",
+          "piano"
+        ],
+        "FIT_artists": 1,
+        "CHECK_artists": 0,
+        "FIT_rows": 2,
+        "CHECK_rows": 0
+      },
+      {
+        "pair": [
+          "soprano saxophone",
+          "trumpet"
+        ],
+        "FIT_artists": 1,
+        "CHECK_artists": 0,
+        "FIT_rows": 8,
+        "CHECK_rows": 0
+      }
+    ]
+  },
+  "readiness": "BLOCKED: each exact pair belongs to one artist; manual melodic-source evidence is not general accompaniment/audibility. Original mixtures and human-confirmed role/co-presence needed before training.",
+  "prohibited_claims": [
+    "No deployed or broad performance gain",
+    "No below-30% recording-failure claim",
+    "No audio acquisition or training in this increment"
+  ],
+  "sources": [
+    {
+      "title": "Original manual melody/pitch and automatic-activation definitions",
+      "url": "https://medleydb.weebly.com/description.html"
+    },
+    {
+      "title": "Official audio access and terms",
+      "url": "https://medleydb.weebly.com/downloads.html"
+    },
+    {
+      "title": "Primary annotation release",
+      "url": "https://github.com/marl/medleydb/tree/537bb7bad0601fc58e4fff8404f71658b86ef60e/medleydb/data/Annotations"
+    }
+  ]
+}
