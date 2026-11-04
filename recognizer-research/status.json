@@ -1,18 +1,32 @@
 {
   "schema_version": 1,
-  "checkpoint": "lead-role-pilot-20261104",
-  "updated_at": "2026-11-04T09:35:41.790099+00:00",
+  "checkpoint": "lead-role-next-20261104",
+  "updated_at": "2026-11-04T10:09:31.879247+00:00",
   "title": "Recognizer Research",
-  "phase": "lead/accompaniment pilot complete; fixed masking rejected",
-  "summary": "Lead-role validation completed: the tested harmonic-salience fusion worsened the timed baseline, so it is not promoted. Exact-checkpoint role-caption diagnostics completed on twelve fresh songs; no new application accuracy gain. Application and private chord option unchanged.",
+  "phase": "Rejected-mask family locked; trained-melody upstream gate complete",
+  "summary": "Lead-role: failed masking/fusion is permanently closed, including parameter or renamed retries. A different pretrained general-melody model passed an upstream pitch screen on one exposed song; no new application accuracy gain. Application and private chord option unchanged.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "lead-mask-closed",
+      "title": "Permanent rejected-method record and admission checks",
+      "status": "complete",
+      "evidence_type": "Durable negative record and engineering tests",
+      "detail": "REJECTED_DO_NOT_RETRY; exact family/ancestor/renamed-identical-code retries blocked. Honest method declarations and independent review remain required."
+    },
+    {
+      "id": "lead-trained-contour",
+      "title": "Trained general melody branch exercised, not app adopted",
+      "status": "complete",
+      "evidence_type": "Upstream pitch screen, not instrument accuracy",
+      "detail": "Prospective contour gate passes on one exposed recording using strict50centf0tolerance overreferencevoicedframes; highfalsevoicing and instrumentattribution remainopen."
+    },
     {
       "id": "lead-role-pilot-20261104",
       "title": "Lead versus accompaniment: first real pilot complete, fixed masking not promoted",
       "status": "complete",
       "evidence_type": "Exact-checkpoint waveform inference and saved-output reconstruction; exploratory, not broad confirmation or application adoption",
-      "detail": "All26local cases from11recordings and12fresh role-caption songs completed. On175.926timed developmentseconds, original→fixedfusion top-one55.40→37.81%, exactsets33.56→23.61%, inclusion80.82→52.59%, F158.70→42.12%. Owner top-one3→4/7 but resampling-only also4/7; exactsets3→3/9, no-clearabstentions0→0/2. Fresh rolecaptions strict9/12 andnatural10/12, not arbitrary instrument accuracy;24pairedstyleobservations across12songs/11artists. Same candidates, prompts, policy and timing. No trained general-melody model, model fitting or application changes; tested heuristic stopped without expansion."
+      "detail": "Earlier first-pilot scope, before the later trained-Melody admission: All26local cases from11recordings and12fresh role-caption songs completed. On175.926timed developmentseconds, original→fixedfusion top-one55.40→37.81%, exactsets33.56→23.61%, inclusion80.82→52.59%, F158.70→42.12%. Owner top-one3→4/7 but resampling-only also4/7; exactsets3→3/9, no-clearabstentions0→0/2. Fresh rolecaptions strict9/12 andnatural10/12, not arbitrary instrument accuracy;24pairedstyleobservations across12songs/11artists. Same candidates, prompts, policy and timing. No trained general-melody model, model fitting or application changes; tested heuristic stopped without expansion."
     },
     {
       "id": "separation-smoke-20261104",
@@ -500,6 +514,20 @@
   ],
   "findings": [
     {
+      "title": "Rejected method is permanently locked against retries",
+      "detail": "LEAD-NEG-001: fixed harmonic-salience mask/fusion top-one55.40→37.81%, exact33.56→23.61%, F158.70→42.12% on175.926exposedseconds. Do not revisit mask/threshold/path/fusion variants, renamed filtering, or bigger benchmark. Explicit owner approval plus materially new evidence required to reopen the rejected family. Failure records/source-score pins remain private and preserved.",
+      "evidence_type": "Negative experimental result and owner-requested persistent admission gate",
+      "confidence": "Verified scoped negative; does not reject trained general melody or contextual-role learning",
+      "source": "Lead-role failure register,4November2026"
+    },
+    {
+      "title": "Different trained general-melody model passes upstream contour screen only",
+      "detail": "Actual pretrained MSNet general-melody CPU inference: rawpitchaccuracy80.49%, voicingrecall90.24%, overallpitch74.90%; flute-led63.49%, violin-led85.03%. One exposed World/Folk recording,30,515predictedframes/30,516referenceframes including one leadingunmatchedunvoicedreference. Voicingfalsealarm44.90%(flute50.77%)remainsweak. No instrumentpredictions: pitch80.49% is not55.40→80.49%appgain. Existingmixtureunchanged; no audio masks/fusion, appintegration or actualappoffonrun.",
+      "evidence_type": "Pinned pretrained model execution plus official pitch-reference reconstruction",
+      "confidence": "Upstream one-song signal only; independent transfer, attribution and broad genres unresolved",
+      "source": "Trained-melody admission,4November2026"
+    },
+    {
       "title": "Fixed melody-mask fusion worsens the paired timed endpoint",
       "detail": "Original→fixedfusion top-one55.40→37.81%, exactsets33.56→23.61%, F158.70→42.12% on175.926seconds fromoneexposeddevelopmentrecording. Sustained-leader top-one66.31→46.09%; not merely handover errors. Mask and resampling-only controls both expose preprocessing regressions. No promotion.",
       "evidence_type": "Direct paired experimental inference and saved-feature arithmetic",
@@ -802,8 +830,8 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Do not tune or expand the rejected fixed harmonic-salience masking/fusion heuristic; keep the application unchanged.",
-    "Before another substantial lead-role run, resolve one licensed task-matched melody/contextual-role candidate, source supervision and a fresh resource estimate. No qualified lead-role adoption candidate emerged.",
+    "Do not reopen LEAD-NEG-001 mask/fusion family or its parameter/renaming variants.",
+    "Resolve role-supervision and intact-mixture attribution/contextual architecture before any further bounded lead-role screen; no small pooled-head/filtering/prompt sweep or broad confirmation claimed.",
     "Keep the installed application and completed private BTC chord option unchanged; the new separator adapter is research-only.",
     "The adapter preflight and one real ten-second smoke are complete. A broader paired exploratory screen remains pending; do not infer permission for more inference from the technical smoke or its successful resource receipt.",
     "For any resumed screen, retain and evaluate the original unseparated mixture as the paired control, score the reconstruction sum diagnostically, preserve all four stems and one frozen pooling rule, and keep sparse unknown labels unknown. Compare the installed pipeline and strongest saved PaSST/fusion as distinct controls; native PaSST is neither.",
@@ -842,6 +870,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-04T10:09:31.879247+00:00",
+      "title": "Failure permanently locked; different trained melody gate executed",
+      "action": "Preserved negative evidence and no-retry rules; selectively acquired small repository checkpoint and official pitch annotations, used existingCPUtorch with safe loading and bounded streaming. No installs or new audio.",
+      "result": "UpstreamRPA80.49%; no instrumentpredictions or applicationgain. Falsevoicing44.90% and sparse exposed scope remain explicit."
+    },
     {
       "time": "2026-11-04T09:35:41.790099+00:00",
       "title": "First lead-versus-accompaniment experimental validation completed",
@@ -1556,6 +1590,11 @@
       "name": "recognizer-research/lead-role-pilot.json",
       "bytes": 8466,
       "sha256": "b43bcba769f78015753730cdbefb7091d480bfa46968e4713371df538a1fc773"
+    },
+    {
+      "name": "recognizer-research/lead-role-next.json",
+      "bytes": 5054,
+      "sha256": "e773797e42797632f03ef6336dbca60374232f65e1fc4d8a4e8692d647a63085"
     }
   ],
   "limits": [
@@ -1673,6 +1712,18 @@
       "title": "PANNs295 aggregate diagnostic",
       "url": "panns-matched.json",
       "description": "All19class and non-identifying category counters; no recording arrays."
+    },
+    {
+      "title": "MSNet general-melody author model/code and repository MITlicense",
+      "url": "https://github.com/bill317996/Melody-extraction-with-melodic-segnet"
+    },
+    {
+      "title": "Streamlined encoder/decoder melody paper",
+      "url": "https://arxiv.org/abs/1810.12947"
+    },
+    {
+      "title": "Official MedleyDBannotations/tools",
+      "url": "https://github.com/marl/medleydb"
     }
   ]
 }

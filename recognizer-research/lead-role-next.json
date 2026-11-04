@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "checkpoint": "lead-role-next-20261104",
+  "updated_at": "2026-11-04T10:09:31.879247+00:00",
+  "status": "Upstream trained-melody contour admission only; no new application accuracy or adoption",
+  "failed_method": {
+    "id": "LEAD-NEG-001",
+    "status": "REJECTED_DO_NOT_RETRY",
+    "method": "Fixed harmonic-salience mask plus CLAP fusion",
+    "original_top_one": 0.5539658720143696,
+    "failed_fusion_top_one": 0.37805099871536896,
+    "seconds": 175.926,
+    "prohibited_retries": [
+      "mask/threshold/pitch-path variations",
+      "fusion-weight sweeps",
+      "renamed filtering fallback",
+      "larger benchmark for rejected heuristic",
+      "prompt sweeps presented as a distinct method for the rejected family"
+    ],
+    "reopen_gate": "Only explicit owner approval AFTER evidence of a materially new trained representation or contextual-role objective. Code renaming or parameter changes are not new evidence. General trained melody/contextual role learning is not rejected."
+  },
+  "new_candidate": {
+    "name": "MSNet general melody pretrained model",
+    "scope": "One exposed World/Folk recording; upstream pitch signal only, not instrument identity",
+    "recordings": 1,
+    "pitch": {
+      "frames": 30516,
+      "reference_voiced_frames": 23801,
+      "estimated_voiced_frames": 24492,
+      "pitch_correct_frames": 19157,
+      "raw_pitch_accuracy": 0.8048821478089155,
+      "voicing_recall": 0.9023570438216881,
+      "voicing_false_alarm": 0.44899478778853313,
+      "overall_accuracy": 0.7490169091624066,
+      "median_absolute_cents_both_voiced": 10.374772712849175
+    },
+    "pitch_by_reference_leader": {
+      "Flute": {
+        "frames": 6828,
+        "reference_voiced_frames": 5020,
+        "estimated_voiced_frames": 5071,
+        "pitch_correct_frames": 3187,
+        "raw_pitch_accuracy": 0.6348605577689242,
+        "voicing_recall": 0.8272908366533864,
+        "voicing_false_alarm": 0.5077433628318584,
+        "overall_accuracy": 0.5971001757469244,
+        "median_absolute_cents_both_voiced": 14.808841579951688,
+        "role_labeled_frames": 6828
+      },
+      "Violin": {
+        "frames": 23477,
+        "reference_voiced_frames": 18780,
+        "estimated_voiced_frames": 19420,
+        "pitch_correct_frames": 15969,
+        "raw_pitch_accuracy": 0.8503194888178913,
+        "voicing_recall": 0.9224174653887114,
+        "voicing_false_alarm": 0.4464551841601022,
+        "overall_accuracy": 0.7909443284917153,
+        "median_absolute_cents_both_voiced": 9.830948140613982,
+        "role_labeled_frames": 23477
+      }
+    },
+    "sustained_pitch": {
+      "frames": 21985,
+      "reference_voiced_frames": 17037,
+      "estimated_voiced_frames": 17595,
+      "pitch_correct_frames": 14017,
+      "raw_pitch_accuracy": 0.8227387450842284,
+      "voicing_recall": 0.9063215354815989,
+      "voicing_false_alarm": 0.43532740501212613,
+      "overall_accuracy": 0.7646577211735274,
+      "median_absolute_cents_both_voiced": 10.229789090678796
+    },
+    "handover_pitch": {
+      "frames": 8320,
+      "reference_voiced_frames": 6763,
+      "estimated_voiced_frames": 6896,
+      "pitch_correct_frames": 5139,
+      "raw_pitch_accuracy": 0.7598698802306668,
+      "voicing_recall": 0.8923554635516783,
+      "voicing_false_alarm": 0.5529865125240848,
+      "overall_accuracy": 0.7013221153846154,
+      "median_absolute_cents_both_voiced": 10.98287493093968
+    },
+    "gate": "PASS_UPSTREAM_ONLY",
+    "instrument_predictions": 0,
+    "new_application_accuracy": null,
+    "missing_inference_cases": 0,
+    "invalid_inference_cases": 0,
+    "reference_frames": 30516,
+    "predicted_frames": 30515,
+    "unmatched_leading_reference_frames": 1,
+    "rights": "Repository MIT and bundled checkpoint admitted for private research; not separate commercial clearance",
+    "trained_model_not_rejected_mask": true,
+    "metric_definition": {
+      "pitch_correct": "Reference and estimate voiced; absolute f0error strictly less than50cents",
+      "raw_pitch_accuracy_denominator": "All23,801referencevoicedframes, including unvoiced/missing estimates as errors",
+      "pitch_correct_numerator": 19157,
+      "reference_voiced_frames": 23801,
+      "unmatched_leading_reference": "time0s, referenceunvoiced; estimateunvoiced by declaredalignmentpolicy",
+      "per_leader_panels": "Oracle-conditioned EVALUATION framegroups from referenceleaderintervals; not predicted instrumentidentity"
+    }
+  },
+  "limitations": [
+    "High voicing false alarm44.90%, flute50.77%",
+    "One exposed song; author test metadata is not proof oftraininghistory",
+    "Pitch80.49% and application topone55.40% are different endpoints, not a gain",
+    "No audio filtering, new instrumentpredictions, productionchanges or actualappoffonrun",
+    "No voice/shared/no-clearlead correctness or broad genreclaim"
+  ],
+  "sources": [
+    "https://github.com/bill317996/Melody-extraction-with-melodic-segnet",
+    "https://arxiv.org/abs/1810.12947",
+    "https://github.com/marl/medleydb"
+  ]
+}
