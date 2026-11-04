@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "btc-private-seven-final-verified",
-  "updated_at": "2026-11-02T14:23:23.026000+00:00",
+  "checkpoint": "btc-vocabulary-ceiling-verified",
+  "updated_at": "2026-11-04T07:27:48.394895+00:00",
   "title": "Recognizer Research",
-  "phase": "Private BTC chord implementation complete; final-code seven-pair verification passed, broader accuracy target open",
-  "summary": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet.",
+  "phase": "BTC vocabulary ceiling checked; actual recording-failure target remains open",
+  "summary": "Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "btc-vocabulary-ceiling",
+      "title": "Exact BTC vocabulary ceiling — diagnostic, not recognition improvement",
+      "status": "complete",
+      "evidence_type": "Checkpoint metadata enumeration plus independent saved-reference signature calculation",
+      "detail": "Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change. Exact pinned checkpoint: 170 raw classes, 169 feasible emitted labels; X is rejected, not converted to N. Enumerative and independently implemented signature calculations agree. Root floor 0%. Severe guitar excerpt: triad floor 8.33% versus actual 75.31%, but full-quality floor 58.34%. Oracle labels use references and perfect timing, not a deployable selector. All seven remain exposed development cases."
+    },
     {
       "id": "btc-private-seven-final",
       "title": "Private BTC chord improvement — implementation and final verification complete",
@@ -472,6 +479,13 @@
   ],
   "findings": [
     {
+      "title": "Vocabulary does not force the seven-case strict-triad target miss",
+      "detail": "Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change. Exact pinned checkpoint: 170 raw classes, 169 feasible emitted labels; X is rejected, not converted to N. Enumerative and independently implemented signature calculations agree. Root floor 0%. Severe guitar excerpt: triad floor 8.33% versus actual 75.31%, but full-quality floor 58.34%. Oracle labels use references and perfect timing, not a deployable selector. All seven remain exposed development cases.",
+      "evidence_type": "Perfect-timing reference-informed diagnostic, not inference",
+      "confidence": "Verified scoped arithmetic; practical attainability and generalization unverified",
+      "source": "Exact BTC vocabulary diagnostic, 4 November 2026"
+    },
+    {
       "title": "Lower root and chord errors; recording-failure target remains unmet",
       "detail": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation.",
       "evidence_type": "Seven additional matched actual-app pairs plus same-recording final-code repeat",
@@ -752,9 +766,10 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Use the completed private BTC launcher only when explicitly opting in; the ordinary backend remains unchanged.",
-    "No further model search, training or downloads are scheduled as part of this completed chord implementation.",
-    "Any wider rollout should first address severe guitar/quality failures and obtain broader independent validation and appropriate rights."
+    "Keep the completed private BTC opt-in backend and unchanged scoring/acceptance target.",
+    "Before another experimental run, select one bounded recognition/sequence intervention using fresh task-specific primary evidence; exact vocabulary alone does not block the triad target in this sample.",
+    "Retain expanded-quality representation limitations; broader varied independent confirmation and actual-app off/on tests remain separate adoption gates.",
+    "No new inference, training, downloads or production changes are authorized by this diagnostic."
   ],
   "agents": [
     {
@@ -789,6 +804,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-04T07:27:48.394895+00:00",
+      "title": "Exact-vocabulary diagnostic completed",
+      "action": "Enumerated pinned checkpoint metadata without loading tensor data or running models; kept original scoring rules.",
+      "result": "Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change."
+    },
     {
       "time": "2026-11-02T14:23:23.026000+00:00",
       "title": "Private BTC implementation and exact-final-code verification closed",
@@ -1469,9 +1490,15 @@
       "name": "PROGRESS.md",
       "bytes": 5211,
       "sha256": "181bf4c352bd6f90696fa66f1c094d231eceee08cbae3686ffada1d3fa50b38a"
+    },
+    {
+      "name": "btc-vocabulary-ceiling.json",
+      "bytes": 4332,
+      "sha256": "b27d7e7e64700cf76e657fa00781f2fdd521eb4a27ce74621e593a2ecdcff280"
     }
   ],
   "limits": [
+    "Vocabulary oracle floors are theoretical, not achieved recognition. Seven existing development excerpts, not seven new recordings. The severe guitar full-quality floor remains 58.34%.",
     "Current BTC implementation is private opt-in, not a default replacement. Latest seven-recording repeat adds no new cases. No broad independent target or commercial clearance claim.",
     "Coarse19 changes reporting specificity and raises severe11→14; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
     "Historical Complete64 chord roster:60 exposed solo-guitar recordings plus4 clustered classical songs; native outputs available64/64 after separately authorized remaining41 completion. The23/64 storage stop and earlier60-only chord analyses are historical. No broad or untouched final confirmation; root-only forgiveness does not forgive wrong quality.",
@@ -1500,6 +1527,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "Exact BTC vocabulary oracle floors and evidence limits",
+      "url": "./btc-vocabulary-ceiling.json"
+    },
     {
       "title": "Private BTC final seven-recording aggregate and scope limits",
       "url": "./btc-private-seven.json"

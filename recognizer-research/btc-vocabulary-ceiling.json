@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "evidence_type": "Perfect-timing exact-vocabulary oracle diagnostic; not achieved recognition",
+  "unique_development_recordings": 7,
+  "raw_checkpoint_labels": 170,
+  "feasible_emission_labels": 169,
+  "oracle_floor": {
+    "root_only": {
+      "n": 7,
+      "eligible_seconds": 200.74439909297053,
+      "unrepresentable_seconds": 0.0,
+      "error_percent": 0.0,
+      "fail_gt30": 0,
+      "severe_gt70": 0
+    },
+    "strict_triad": {
+      "n": 7,
+      "eligible_seconds": 200.74439909297053,
+      "unrepresentable_seconds": 5.692465116279077,
+      "error_percent": 2.835678176825612,
+      "fail_gt30": 0,
+      "severe_gt70": 0
+    },
+    "expanded_full_quality": {
+      "n": 7,
+      "eligible_seconds": 200.74439909297053,
+      "unrepresentable_seconds": 29.966366925064605,
+      "error_percent": 14.927622917731474,
+      "fail_gt30": 1,
+      "severe_gt70": 0
+    }
+  },
+  "categories": {
+    "classical_vocal_piano": {
+      "root_only": {
+        "n": 2,
+        "eligible_seconds": 58.42,
+        "unrepresentable_seconds": 0.0,
+        "error_percent": 0.0,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      },
+      "strict_triad": {
+        "n": 2,
+        "eligible_seconds": 58.42,
+        "unrepresentable_seconds": 0.0,
+        "error_percent": 0.0,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      },
+      "expanded_full_quality": {
+        "n": 2,
+        "eligible_seconds": 58.42,
+        "unrepresentable_seconds": 0.0,
+        "error_percent": 0.0,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      }
+    },
+    "guitar": {
+      "root_only": {
+        "n": 3,
+        "eligible_seconds": 82.32439909297052,
+        "unrepresentable_seconds": 0.0,
+        "error_percent": 0.0,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      },
+      "strict_triad": {
+        "n": 3,
+        "eligible_seconds": 82.32439909297052,
+        "unrepresentable_seconds": 1.8604651162790695,
+        "error_percent": 2.259919461031244,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      },
+      "expanded_full_quality": {
+        "n": 3,
+        "eligible_seconds": 82.32439909297052,
+        "unrepresentable_seconds": 26.134366925064597,
+        "error_percent": 31.745590873430555,
+        "fail_gt30": 1,
+        "severe_gt70": 0
+      }
+    },
+    "rwc_fullmix": {
+      "root_only": {
+        "n": 2,
+        "eligible_seconds": 60.0,
+        "unrepresentable_seconds": 0.0,
+        "error_percent": 0.0,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      },
+      "strict_triad": {
+        "n": 2,
+        "eligible_seconds": 60.0,
+        "unrepresentable_seconds": 3.832000000000008,
+        "error_percent": 6.38666666666668,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      },
+      "expanded_full_quality": {
+        "n": 2,
+        "eligible_seconds": 60.0,
+        "unrepresentable_seconds": 3.832000000000008,
+        "error_percent": 6.38666666666668,
+        "fail_gt30": 0,
+        "severe_gt70": 0
+      }
+    }
+  },
+  "observed_btc": {
+    "root_only": {
+      "n": 7,
+      "error_percent": 19.840032538912446,
+      "fail_gt30": 1,
+      "severe_gt70": 0
+    },
+    "strict_triad": {
+      "n": 7,
+      "error_percent": 27.501642097790924,
+      "fail_gt30": 3,
+      "severe_gt70": 1
+    },
+    "expanded_full_quality": {
+      "n": 7,
+      "error_percent": 39.18120517337036,
+      "fail_gt30": 5,
+      "severe_gt70": 1
+    }
+  },
+  "decision": "Exact output vocabulary does not itself prevent the current strict-triad recording-failure target on these seven development excerpts. Full-quality vocabulary limitations remain. No new acoustic result or application change.",
+  "limitations": [
+    "Perfect reference timing and reference-informed label choice; a theoretical lower bound, not attainable accuracy evidence.",
+    "Same seven exposed recordings, no new independent cases; unknown checkpoint training overlap.",
+    "Strict triad retains explicit omissions and bass-stripped bitmap slots 0..7; root/full-quality endpoints remain distinct.",
+    "X rejected by deployed decoder, N eligible, unknown reference/gaps excluded without masking unsupported known labels.",
+    "Independent enumeration/signature arithmetic shares frozen label semantics; not independent scientific datasets."
+  ]
+}

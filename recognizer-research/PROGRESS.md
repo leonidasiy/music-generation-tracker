@@ -1,3 +1,18 @@
+# Exact BTC vocabulary diagnostic — 4 November 2026
+
+Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change.
+
+- Perfect-timing root/triad/full-quality floors: 0.00% / 2.84% / 14.93%; recording failures 0/7 / 0/7 / 1/7.
+- Actual BTC errors remain 19.84% / 27.50% / 39.18%; recording failures 1/7 / 3/7 / 5/7. These are not oracle achievements.
+- Severe guitar: strict-triad floor 8.33% versus actual75.31%; full-quality floor58.34%.
+- Category oracle triad floors: guitar2.26% (n3), classical voice/piano0.00% (n2), fullmix6.39% (n2). Full-quality floors31.75% /0.00% /6.39%.
+- Same seven exposed development recordings; reference-informed perfect timing, unknown training overlap. No new model run or app change.
+
+[Aggregate oracle floors and limitations](btc-vocabulary-ceiling.json)
+
+---
+## Previous verified implementation and historical progress
+
 # Private BTC chord implementation — final verification, 2 November 2026
 
 Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation.
