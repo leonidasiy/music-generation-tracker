@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "checkpoint": "lead-role-pilot-20261104",
+  "updated_at": "2026-11-04T09:35:41.790099+00:00",
+  "status": "Completed exploratory pilot; no application improvement or adoption",
+  "scope": {
+    "local_cases": 26,
+    "local_recordings": 11,
+    "owner_clips": 10,
+    "timed_sections": 16,
+    "fresh_role_songs": 12,
+    "fresh_role_artists": 11,
+    "fresh_role_albums": 12,
+    "paired_caption_observations": 24
+  },
+  "timed": {
+    "original": {
+      "annotated_seconds": 175.926,
+      "reference_included_seconds": 142.188,
+      "predicted_instrument_seconds": 308.525,
+      "exact_seconds": 59.046,
+      "top_one_correct_seconds": 97.457,
+      "top_one_accuracy": 0.5539658720143696,
+      "exact_set_accuracy": 0.3356297534190512,
+      "inclusion": 0.8082261860100269,
+      "precision": 0.4608637873754153,
+      "f1": 0.5870067354593137,
+      "candidate_coverage": 1.0
+    },
+    "roundtrip": {
+      "annotated_seconds": 175.926,
+      "reference_included_seconds": 83.609,
+      "predicted_instrument_seconds": 236.126,
+      "exact_seconds": 49.209,
+      "top_one_correct_seconds": 49.209,
+      "top_one_accuracy": 0.2797141980150745,
+      "exact_set_accuracy": 0.2797141980150745,
+      "inclusion": 0.4752509577890704,
+      "precision": 0.35408637761195294,
+      "f1": 0.4058177123275703,
+      "candidate_coverage": 1.0
+    },
+    "cue": {
+      "annotated_seconds": 175.926,
+      "reference_included_seconds": 41.397,
+      "predicted_instrument_seconds": 230.853,
+      "exact_seconds": 7.681,
+      "top_one_correct_seconds": 7.681,
+      "top_one_accuracy": 0.04366040266930414,
+      "exact_set_accuracy": 0.04366040266930414,
+      "inclusion": 0.23530916408035196,
+      "precision": 0.17932190614806826,
+      "f1": 0.20353558074531872,
+      "candidate_coverage": 1.0
+    },
+    "fusion": {
+      "annotated_seconds": 175.926,
+      "reference_included_seconds": 92.527,
+      "predicted_instrument_seconds": 263.425,
+      "exact_seconds": 41.528,
+      "top_one_correct_seconds": 66.509,
+      "top_one_accuracy": 0.37805099871536896,
+      "exact_set_accuracy": 0.23605379534577037,
+      "inclusion": 0.5259427259188523,
+      "precision": 0.35124608522349815,
+      "f1": 0.4211985405746203,
+      "candidate_coverage": 1.0
+    }
+  },
+  "sustained": {
+    "original": {
+      "annotated_seconds": 127.628,
+      "reference_included_seconds": 111.928,
+      "predicted_instrument_seconds": 196.828,
+      "exact_seconds": 58.828,
+      "top_one_correct_seconds": 84.628,
+      "top_one_accuracy": 0.6630833359450904,
+      "exact_set_accuracy": 0.46093333751214466,
+      "inclusion": 0.8769862412636725,
+      "precision": 0.5686589306399497,
+      "f1": 0.6899425499913702,
+      "candidate_coverage": 1.0
+    },
+    "roundtrip": {
+      "annotated_seconds": 127.628,
+      "reference_included_seconds": 75.928,
+      "predicted_instrument_seconds": 187.828,
+      "exact_seconds": 41.528,
+      "top_one_correct_seconds": 41.528,
+      "top_one_accuracy": 0.3253831447644717,
+      "exact_set_accuracy": 0.3253831447644717,
+      "inclusion": 0.5949164760083994,
+      "precision": 0.4042421790148434,
+      "f1": 0.4813856766078312,
+      "candidate_coverage": 1.0
+    },
+    "cue": {
+      "annotated_seconds": 127.628,
+      "reference_included_seconds": 28.928,
+      "predicted_instrument_seconds": 165.156,
+      "exact_seconds": 0.0,
+      "top_one_correct_seconds": 0.0,
+      "top_one_accuracy": 0.0,
+      "exact_set_accuracy": 0.0,
+      "inclusion": 0.22665872692512615,
+      "precision": 0.17515561045314731,
+      "f1": 0.19760642658068747,
+      "candidate_coverage": 1.0
+    },
+    "fusion": {
+      "annotated_seconds": 127.628,
+      "reference_included_seconds": 84.628,
+      "predicted_instrument_seconds": 207.228,
+      "exact_seconds": 41.528,
+      "top_one_correct_seconds": 58.828,
+      "top_one_accuracy": 0.46093333751214466,
+      "exact_set_accuracy": 0.3253831447644717,
+      "inclusion": 0.6630833359450904,
+      "precision": 0.40838110680023937,
+      "f1": 0.505459063000215,
+      "candidate_coverage": 1.0
+    }
+  },
+  "owner": {
+    "original": {
+      "complete_clips": 9,
+      "clear_single_lead_clips": 7,
+      "partial_shared_clips": 1,
+      "unclear_clips": 2,
+      "exact_matches": 3,
+      "top_one_correct_clear": 3,
+      "reference_included_clear": 4,
+      "correct_unclear_abstentions": 0,
+      "false_abstentions_clear": 0,
+      "tp": 4,
+      "fp": 8,
+      "fn": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.5714285714285714,
+      "f1": 0.4210526315789474
+    },
+    "roundtrip": {
+      "complete_clips": 9,
+      "clear_single_lead_clips": 7,
+      "partial_shared_clips": 1,
+      "unclear_clips": 2,
+      "exact_matches": 3,
+      "top_one_correct_clear": 4,
+      "reference_included_clear": 5,
+      "correct_unclear_abstentions": 0,
+      "false_abstentions_clear": 0,
+      "tp": 5,
+      "fp": 8,
+      "fn": 2,
+      "precision": 0.38461538461538464,
+      "recall": 0.7142857142857143,
+      "f1": 0.5
+    },
+    "cue": {
+      "complete_clips": 9,
+      "clear_single_lead_clips": 7,
+      "partial_shared_clips": 1,
+      "unclear_clips": 2,
+      "exact_matches": 3,
+      "top_one_correct_clear": 4,
+      "reference_included_clear": 5,
+      "correct_unclear_abstentions": 0,
+      "false_abstentions_clear": 0,
+      "tp": 5,
+      "fp": 9,
+      "fn": 2,
+      "precision": 0.35714285714285715,
+      "recall": 0.7142857142857143,
+      "f1": 0.4761904761904762
+    },
+    "fusion": {
+      "complete_clips": 9,
+      "clear_single_lead_clips": 7,
+      "partial_shared_clips": 1,
+      "unclear_clips": 2,
+      "exact_matches": 3,
+      "top_one_correct_clear": 4,
+      "reference_included_clear": 4,
+      "correct_unclear_abstentions": 0,
+      "false_abstentions_clear": 0,
+      "tp": 4,
+      "fp": 8,
+      "fn": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.5714285714285714,
+      "f1": 0.4210526315789474
+    }
+  },
+  "role_captions": {
+    "songs": 12,
+    "artists": 11,
+    "albums": 12,
+    "style_pair_observations": 24,
+    "styles": {
+      "strict": {
+        "observations": 12,
+        "wins": 9,
+        "losses": 3,
+        "ties": 0,
+        "strict_win_fraction": 0.75,
+        "tie_half_credit_fraction": 0.75,
+        "mean_margin": 0.017809043327967327
+      },
+      "natural": {
+        "observations": 12,
+        "wins": 10,
+        "losses": 2,
+        "ties": 0,
+        "strict_win_fraction": 0.8333333333333334,
+        "tie_half_credit_fraction": 0.8333333333333334,
+        "mean_margin": 0.04057775686184565
+      }
+    },
+    "style_decision_agreement_songs": 11,
+    "both_styles_win_songs": 9,
+    "neither_style_win_songs": 2,
+    "one_style_only_win_songs": 1,
+    "repeated_caption_controls": 24,
+    "repeat_control_max_abs_delta": 0.0,
+    "missing_cases": 0,
+    "invalid_cases": 0
+  },
+  "limits": [
+    "Local owner and timed cases are exposed development material; one timed song, not broad confirmation.",
+    "A new fixed harmonic-salience heuristic was tested, not the proposed pretrained general melody model.",
+    "Exact application CLAP role scorer on frozen old candidate pools; not a full current-app off/on integration test.",
+    "Fresh role subset is confidence-five, distinct-instrument-pair, first-two-minutes-covered and metadata-selected; eight leader labels but tiny category cells.",
+    "Caption-pair ranking is not arbitrary lead-identity accuracy. Styles are paired within songs and some artists are shared.",
+    "Source-grouped contextual role training, broad shared/no-clear-lead validation, source exposure and stronger model rights/runtime remain unresolved.",
+    "No source audio, annotation rows, private identifiers or model weights are redistributed.",
+    "Initial worker stopped at disk reserve; preserved committed half plus unchanged-code remaining-only successor complete all intended cases."
+  ],
+  "decision": "Reject this fixed masking/fusion heuristic for promotion; no tuning or expansion. Exact-checkpoint caption diagnostic is informative but does not establish a new application gain.",
+  "sources": [
+    {
+      "title": "MASB role annotations and code",
+      "url": "https://github.com/barry-mir/music-clap-bow"
+    },
+    {
+      "title": "Song Describer Dataset official source and audio-specific license metadata",
+      "url": "https://zenodo.org/records/10072001"
+    }
+  ]
+}

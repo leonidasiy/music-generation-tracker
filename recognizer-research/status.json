@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "separation-smoke-20261104",
-  "updated_at": "2026-11-04T08:33:45.303225+00:00",
+  "checkpoint": "lead-role-pilot-20261104",
+  "updated_at": "2026-11-04T09:35:41.790099+00:00",
   "title": "Recognizer Research",
-  "phase": "instrumentation adapter technical smoke; accuracy unproven",
-  "summary": "Instrumentation adapter now runs locally; chord implementation unchanged. One ten-second technical smoke completed, not an accuracy improvement. The remaining seven planned clips were not run after the owner narrowed the memory-constrained scope.",
+  "phase": "lead/accompaniment pilot complete; fixed masking rejected",
+  "summary": "Lead-role validation completed: the tested harmonic-salience fusion worsened the timed baseline, so it is not promoted. Exact-checkpoint role-caption diagnostics completed on twelve fresh songs; no new application accuracy gain. Application and private chord option unchanged.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "lead-role-pilot-20261104",
+      "title": "Lead versus accompaniment: first real pilot complete, fixed masking not promoted",
+      "status": "complete",
+      "evidence_type": "Exact-checkpoint waveform inference and saved-output reconstruction; exploratory, not broad confirmation or application adoption",
+      "detail": "All26local cases from11recordings and12fresh role-caption songs completed. On175.926timed developmentseconds, original→fixedfusion top-one55.40→37.81%, exactsets33.56→23.61%, inclusion80.82→52.59%, F158.70→42.12%. Owner top-one3→4/7 but resampling-only also4/7; exactsets3→3/9, no-clearabstentions0→0/2. Fresh rolecaptions strict9/12 andnatural10/12, not arbitrary instrument accuracy;24pairedstyleobservations across12songs/11artists. Same candidates, prompts, policy and timing. No trained general-melody model, model fitting or application changes; tested heuristic stopped without expansion."
+    },
     {
       "id": "separation-smoke-20261104",
       "title": "Separation-assisted instrumentation: working technical smoke, no accuracy gain",
@@ -493,6 +500,20 @@
   ],
   "findings": [
     {
+      "title": "Fixed melody-mask fusion worsens the paired timed endpoint",
+      "detail": "Original→fixedfusion top-one55.40→37.81%, exactsets33.56→23.61%, F158.70→42.12% on175.926seconds fromoneexposeddevelopmentrecording. Sustained-leader top-one66.31→46.09%; not merely handover errors. Mask and resampling-only controls both expose preprocessing regressions. No promotion.",
+      "evidence_type": "Direct paired experimental inference and saved-feature arithmetic",
+      "confidence": "Verified scoped outputs; general melody conditioning and broad transfer remain untested",
+      "source": "Lead-role first pilot,4November2026"
+    },
+    {
+      "title": "Exact CLAP checkpoint can rank some matched-instrument role captions",
+      "detail": "Twelve metadata-selected high-confidence instrumental excerpts: strict9/12, natural10/12; no ties,0missing/invalid. Eightleaderlabels,12songs/11artists/12albums;24captionstylepairs are not24independentrecordings. This diagnostic is not an application lead-identity improvement or fullMASBreplication.",
+      "evidence_type": "Author role annotations and new exact-checkpoint inference",
+      "confidence": "Small nonrandom source-bounded diagnostic, not broad accuracy",
+      "source": "Lead-role first pilot,4November2026"
+    },
+    {
       "title": "Vocabulary does not force the seven-case strict-triad target miss",
       "detail": "Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change. Exact pinned checkpoint: 170 raw classes, 169 feasible emitted labels; X is rejected, not converted to N. Enumerative and independently implemented signature calculations agree. Root floor 0%. Severe guitar excerpt: triad floor 8.33% versus actual 75.31%, but full-quality floor 58.34%. Oracle labels use references and perfect timing, not a deployable selector. All seven remain exposed development cases.",
       "evidence_type": "Perfect-timing reference-informed diagnostic, not inference",
@@ -774,12 +795,15 @@
     }
   ],
   "blockers": [
+    "No broadly confirmed mixture-only lead-role replacement; stronger melody/contextual supervision and complete shared/no-lead references remain unvalidated.",
     "Seven-recording strict-triad failure incidence remains 42.86%; pooled duration error below 30% is a different endpoint.",
     "Broad independently labeled genre/audio-type and full-track confirmation, training-overlap assessment and future commercial rights remain open.",
     "Earlier full-mix full-quality failure regression and twelve candidate-only BTC failures 4/12 (33.33%) remain contrary evidence; do not pool protocols or claim target attainment.",
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
+    "Do not tune or expand the rejected fixed harmonic-salience masking/fusion heuristic; keep the application unchanged.",
+    "Before another substantial lead-role run, resolve one licensed task-matched melody/contextual-role candidate, source supervision and a fresh resource estimate. No qualified lead-role adoption candidate emerged.",
     "Keep the installed application and completed private BTC chord option unchanged; the new separator adapter is research-only.",
     "The adapter preflight and one real ten-second smoke are complete. A broader paired exploratory screen remains pending; do not infer permission for more inference from the technical smoke or its successful resource receipt.",
     "For any resumed screen, retain and evaluate the original unseparated mixture as the paired control, score the reconstruction sum diagnostically, preserve all four stems and one frozen pooling rule, and keep sparse unknown labels unknown. Compare the installed pipeline and strongest saved PaSST/fusion as distinct controls; native PaSST is neither.",
@@ -818,6 +842,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-04T09:35:41.790099+00:00",
+      "title": "First lead-versus-accompaniment experimental validation completed",
+      "action": "Executed fixed four-arm current-CLAP role scoring and acquired only selected, license-documented archive members for a fresh twelve-song role-caption diagnostic. Preserved disk-stop outputs; unchanged-code remaining-only recovery finished the roster.",
+      "result": "Timedfusionregresses; ownerexactsetsunchanged. Reject testedheuristic, no tuning/expansion/applicationchange. Exactcheckpointcaptionranking9/12strictand10/12natural is a separate narrow endpoint, not new appaccuracy."
+    },
     {
       "time": "2026-11-04T08:33:45.303225+00:00",
       "title": "Offline separator-to-recognizer path exercised on real audio",
@@ -1521,9 +1551,15 @@
       "name": "btc-vocabulary-ceiling.json",
       "bytes": 4332,
       "sha256": "b27d7e7e64700cf76e657fa00781f2fdd521eb4a27ce74621e593a2ecdcff280"
+    },
+    {
+      "name": "recognizer-research/lead-role-pilot.json",
+      "bytes": 8466,
+      "sha256": "b43bcba769f78015753730cdbefb7091d480bfa46968e4713371df538a1fc773"
     }
   ],
   "limits": [
+    "Lead-role prototype masking is not a validated melody model. A small owner top-one gain is matched by resampling alone; new caption-pair results cannot replace timed application-identity metrics.",
     "Vocabulary oracle floors are theoretical, not achieved recognition. Seven existing development excerpts, not seven new recordings. The severe guitar full-quality floor remains 58.34%.",
     "Current BTC implementation is private opt-in, not a default replacement. Latest seven-recording repeat adds no new cases. No broad independent target or commercial clearance claim.",
     "Coarse19 changes reporting specificity and raises severe11→14; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
@@ -1553,6 +1589,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "Lead-versus-accompaniment pilot aggregate and evidence limits",
+      "url": "./lead-role-pilot.json"
+    },
     {
       "title": "Exact BTC vocabulary oracle floors and evidence limits",
       "url": "./btc-vocabulary-ceiling.json"
