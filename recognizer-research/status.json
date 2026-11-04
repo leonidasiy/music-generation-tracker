@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "instrumentation-restart-20261104",
-  "updated_at": "2026-11-04T07:49:22.494801+00:00",
+  "checkpoint": "separation-smoke-20261104",
+  "updated_at": "2026-11-04T08:33:45.303225+00:00",
   "title": "Recognizer Research",
-  "phase": "Instrumentation research restarted; chord implementation retained",
-  "summary": "Research priority shifts to instrumentation; keep the completed private BTC chord option unchanged. This is a bounded source/release audit, not a new accuracy gain. Preserve the strongest saved PaSST/fusion comparator and do not restart the worse PANNs or partial YourMT3 candidates.",
+  "phase": "instrumentation adapter technical smoke; accuracy unproven",
+  "summary": "Instrumentation adapter now runs locally; chord implementation unchanged. One ten-second technical smoke completed, not an accuracy improvement. The remaining seven planned clips were not run after the owner narrowed the memory-constrained scope.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "separation-smoke-20261104",
+      "title": "Separation-assisted instrumentation: working technical smoke, no accuracy gain",
+      "status": "complete",
+      "evidence_type": "One real-audio paired engineering smoke plus synthetic contract tests; not a completed pilot or independent accuracy confirmation",
+      "detail": "Official local HDemucs state dictionary and frozen PaSST produced finite twenty-class scores for the original unseparated mixture, reconstruction sum and all four stems. One ten-second clip completed in5.58seconds supervised wall time; observed peak worker-tree RSS2.29GiB under an explicitly revised3GiB cap. The single annotated piano pair was correct before and after; two added threshold-crossing names are unannotated and cannot be called correct or false positives. One of eight planned clips ran; seven are unrun, not failed outputs. No application/model-default change or weights/audio redistribution."
+    },
     {
       "id": "instrumentation-restart-20261104",
       "title": "Instrumentation next; completed chord implementation retained",
@@ -773,10 +780,10 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Preserve the completed private BTC opt-in implementation, ordinary default and unmet chord recording-failure target.",
-    "Next engineering gate: preflight one separation-assisted instrument-recognition adapter with a frozen multilabel classifier, retaining and evaluating the original unseparated mixture as the paired control. This is an untested hypothesis, not a selected winning method; separator names are not presence labels.",
-    "Use a small diverse matched instrument screen before expanding; compare both the unchanged application and strongest saved PaSST/fusion control. Freeze known/unknown masks, >30% failures, >70% severe cases and missing outputs.",
-    "Do not resume the negative fixed PANNs or partial YourMT3 runs. No new inference, training, model acquisition or application change occurred in this audit."
+    "Keep the installed application and completed private BTC chord option unchanged; the new separator adapter is research-only.",
+    "The adapter preflight and one real ten-second smoke are complete. A broader paired exploratory screen remains pending; do not infer permission for more inference from the technical smoke or its successful resource receipt.",
+    "For any resumed screen, retain and evaluate the original unseparated mixture as the paired control, score the reconstruction sum diagnostically, preserve all four stems and one frozen pooling rule, and keep sparse unknown labels unknown. Compare the installed pipeline and strongest saved PaSST/fusion as distinct controls; native PaSST is neither.",
+    "No accuracy improvement, broader genre validation, commercial/model redistribution clearance or production adoption is established. Do not restart negative PANNs or partial YourMT3 runs."
   ],
   "agents": [
     {
@@ -811,6 +818,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-04T08:33:45.303225+00:00",
+      "title": "Offline separator-to-recognizer path exercised on real audio",
+      "action": "Built safe local loading and same-clock original-mixture/reconstruction/all-stem controls; repaired and independently reviewed a frozen-runtime identity guard before inference. Memory warning prompted an explicit narrower one-clip approval.",
+      "result": "Technical smoke1/1 valid,0invalid; six waveform views each emitted twenty finite scores. No demonstrated gain; seven planned clips remain unrun. Common gain was1.0; no clipping or per-stem boost."
+    },
     {
       "time": "2026-11-04T07:49:22.494801+00:00",
       "title": "Research focus moves to instrumentation",
@@ -1501,8 +1514,8 @@
     },
     {
       "name": "PROGRESS.md",
-      "bytes": 7592,
-      "sha256": "c305e85c122633644944d7dea12b71acae2e330a9c15128bc4c74bc4de2cb22d"
+      "bytes": 9754,
+      "sha256": "949fda7c0708068033ea7ab4cb33d28238a093046e6d99a49f83e8fc330c095c"
     },
     {
       "name": "btc-vocabulary-ceiling.json",

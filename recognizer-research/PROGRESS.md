@@ -1,3 +1,17 @@
+# Separation-assisted instrumentation — technical smoke, 4 November 2026
+
+One real ten-second clip completed the offline separator-to-recognizer path. This is a working research adapter, **not an accuracy improvement or a completed eight-clip pilot**. The installed application and completed chord implementation remain unchanged.
+
+- Four-stem HDemucs and the frozen twenty-class PaSST recognizer ran in the existing environment, without installation or inference-time network access. Original unseparated mixture, reconstruction sum and all four stems were scored separately; reconstruction is diagnostic, not a fifth stem vote.
+- Observed supervised runtime **5.58 seconds**; peak sampled worker-tree RSS **2.29 GiB**, below the explicitly revised **3 GiB** cap. The official separator checkpoint was downloaded separately; no new cloud/data/software purchases. These measurements are one smoke, not a guaranteed scaling law or kernel-enforced memory limit.
+- The clip has only **one known instrument label**: piano. It was detected both before and after; no gain was demonstrated. Max pooling additionally crossed the fixed threshold for banjo and synthesizer, but these labels are unknown in the reference—not verified detections or established false positives.
+- One of eight privately frozen metadata-selected clips ran. The remaining seven are **unrun, not invalid**: memory-warning admission led to a narrower one-clip approval. Metadata strata and this single classical-metadata example do not establish broad genre/audio-type validation.
+- Twenty-one local contract/scoring tests passed. A reproduced stale-runtime manifest defect was repaired and independently re-reviewed before inference. Test counts are engineering evidence, not musical accuracy.
+- Next empirical work remains a separately scoped continuation of the small paired screen, preserving the original unseparated mixture as evaluated control, sparse known/unknown masks and distinct installed versus saved PaSST/fusion controls. No automatic full benchmark, threshold tuning, source-name truth or app integration.
+
+---
+## Previous priority and chord records (historical, retained)
+
 # Instrumentation research restart — 4 November 2026
 
 Research priority shifts to instrumentation; keep the completed private BTC chord option unchanged. This is a bounded source/release audit, not a new accuracy gain. Preserve the strongest saved PaSST/fusion comparator and do not restart the worse PANNs or partial YourMT3 candidates.
