@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "btc-vocabulary-ceiling-verified",
-  "updated_at": "2026-11-04T07:27:48.394895+00:00",
+  "checkpoint": "instrumentation-restart-20261104",
+  "updated_at": "2026-11-04T07:49:22.494801+00:00",
   "title": "Recognizer Research",
-  "phase": "BTC vocabulary ceiling checked; actual recording-failure target remains open",
-  "summary": "Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change.",
+  "phase": "Instrumentation research restarted; chord implementation retained",
+  "summary": "Research priority shifts to instrumentation; keep the completed private BTC chord option unchanged. This is a bounded source/release audit, not a new accuracy gain. Preserve the strongest saved PaSST/fusion comparator and do not restart the worse PANNs or partial YourMT3 candidates.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "instrumentation-restart-20261104",
+      "title": "Instrumentation next; completed chord implementation retained",
+      "status": "running",
+      "evidence_type": "Owner-delegated research priority decision and read-only release audit, not inference",
+      "detail": "Research priority shifts to instrumentation; keep the completed private BTC chord option unchanged. This is a bounded source/release audit, not a new accuracy gain. Preserve the strongest saved PaSST/fusion comparator and do not restart the worse PANNs or partial YourMT3 candidates. The installed instrument fusion still uses BEATs, EfficientAT and CLAP; the saved PaSST/fusion research comparator is not the installed default. Sparse known-label results are not exhaustive fine-instrument accuracy."
+    },
     {
       "id": "btc-vocabulary-ceiling",
       "title": "Exact BTC vocabulary ceiling — diagnostic, not recognition improvement",
@@ -766,10 +773,10 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Keep the completed private BTC opt-in backend and unchanged scoring/acceptance target.",
-    "Before another experimental run, select one bounded recognition/sequence intervention using fresh task-specific primary evidence; exact vocabulary alone does not block the triad target in this sample.",
-    "Retain expanded-quality representation limitations; broader varied independent confirmation and actual-app off/on tests remain separate adoption gates.",
-    "No new inference, training, downloads or production changes are authorized by this diagnostic."
+    "Preserve the completed private BTC opt-in implementation, ordinary default and unmet chord recording-failure target.",
+    "Next engineering gate: preflight one separation-assisted instrument-recognition adapter with a frozen multilabel classifier, retaining and evaluating the original unseparated mixture as the paired control. This is an untested hypothesis, not a selected winning method; separator names are not presence labels.",
+    "Use a small diverse matched instrument screen before expanding; compare both the unchanged application and strongest saved PaSST/fusion control. Freeze known/unknown masks, >30% failures, >70% severe cases and missing outputs.",
+    "Do not resume the negative fixed PANNs or partial YourMT3 runs. No new inference, training, model acquisition or application change occurred in this audit."
   ],
   "agents": [
     {
@@ -804,6 +811,12 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-04T07:49:22.494801+00:00",
+      "title": "Research focus moves to instrumentation",
+      "action": "Recovered previous instrument comparisons and inspected installed fusion source without importing the application or loading models.",
+      "result": "Priority decision only; chord implementation and all achieved accuracy results remain unchanged."
+    },
     {
       "time": "2026-11-04T07:27:48.394895+00:00",
       "title": "Exact-vocabulary diagnostic completed",
@@ -1488,8 +1501,8 @@
     },
     {
       "name": "PROGRESS.md",
-      "bytes": 5211,
-      "sha256": "181bf4c352bd6f90696fa66f1c094d231eceee08cbae3686ffada1d3fa50b38a"
+      "bytes": 7592,
+      "sha256": "c305e85c122633644944d7dea12b71acae2e330a9c15128bc4c74bc4de2cb22d"
     },
     {
       "name": "btc-vocabulary-ceiling.json",

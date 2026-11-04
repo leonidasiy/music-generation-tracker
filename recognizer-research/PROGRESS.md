@@ -1,3 +1,15 @@
+# Instrumentation research restart — 4 November 2026
+
+Research priority shifts to instrumentation; keep the completed private BTC chord option unchanged. This is a bounded source/release audit, not a new accuracy gain. Preserve the strongest saved PaSST/fusion comparator and do not restart the worse PANNs or partial YourMT3 candidates.
+
+- Installed instrument fusion: BEATs + EfficientAT + CLAP. PaSST/fusion is a saved research comparator, not a newly installed default.
+- Strongest saved comparator: 55/292 scorable recordings above 30% observed-label disagreement; 12/292 severe above 70%, 295 intended inputs. Unannotated classes remain unknown.
+- Fixed PANNs worsened failures 55→133/292. Partial YourMT3 worsened 29→38/122 matched recordings; 22 invalid and 149 missing from its intended 295 remain explicit. Neither negative run is restarted.
+- Next engineering gate: preflight one separation-assisted recognition adapter with a frozen multilabel classifier, retaining the original mixture as a control. Untested hypothesis only; no stem name is treated as proof of instrument presence. A small diverse pilot requires input/label/rights/resource checks first.
+
+---
+## Previous verified chord milestones (retained)
+
 # Exact BTC vocabulary diagnostic — 4 November 2026
 
 Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change.
