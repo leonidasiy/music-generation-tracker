@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-05T18:35:30.727489+08:00",
+  "scope": "Actual offline full-head PaSST screen on 10 previously exposed owner clips: seven clear, one partial and two unclear. No application integration.",
+  "owner_contract": {
+    "maximum_returned_instruments": 2,
+    "primary": "Accepted manual lead included in actual final capped list."
+  },
+  "candidate": "Existing released PaSST OpenMIC20 full-head top two, including voice \u2192 Vocal; not the earlier 11-singleton row-replacement hybrid.",
+  "selection": "Fixed native full-20-class stable-score top two; no annotation candidate restriction, threshold or outcome tuning.",
+  "owner": {
+    "n": 7,
+    "hits": 4,
+    "failures": 3,
+    "percent": 57.142857142857146,
+    "top1_hits": 2,
+    "invalid": 0,
+    "empty": 0,
+    "cap_violations": 0,
+    "all_owner_invalid": 0,
+    "partial_n": 1,
+    "unclear_n": 2,
+    "categories": {
+      "Vocal": {
+        "n": 4,
+        "hits": 1,
+        "invalid": 0
+      },
+      "Synthesizer": {
+        "n": 1,
+        "hits": 1,
+        "invalid": 0
+      },
+      "Saxophone": {
+        "n": 1,
+        "hits": 1,
+        "invalid": 0
+      },
+      "Piano": {
+        "n": 1,
+        "hits": 1,
+        "invalid": 0
+      }
+    }
+  },
+  "comparisons": {
+    "role_cap2": {
+      "hits": 4,
+      "invalid": 0,
+      "rescues": 1,
+      "regressions": 1
+    },
+    "presence_top2": {
+      "hits": 4,
+      "invalid": 0,
+      "rescues": 1,
+      "regressions": 1
+    }
+  },
+  "promise_gate": {
+    "pass": false,
+    "checks": {
+      "role_cap2": {
+        "net_gain": false,
+        "regressions": true,
+        "invalid": true
+      },
+      "presence_top2": {
+        "net_gain": false,
+        "regressions": true,
+        "invalid": true
+      }
+    }
+  },
+  "decision": "STOP this frozen full-head top-two policy: 4/7 ties both 4/7 controls; no net benefit. No tuning or expansion.",
+  "timed": {
+    "songs_admitted_if_owner_passed": 1,
+    "sections_attempted": 0,
+    "sections_unattempted": 16,
+    "coverage": null,
+    "status": "Not run because owner gate failed; not zero accuracy."
+  },
+  "exposure": {
+    "clear_training_recordings": 6,
+    "clear_checkpoint_selection_recordings": 1,
+    "all_owner_training_recordings": 9,
+    "all_owner_checkpoint_selection_recordings": 1,
+    "interpretation": "Exact publisher recording overlap; not independent confirmation. Manual lead labels differ from presence training labels, but audio exposure remains."
+  },
+  "execution": {
+    "actual_owner_inference_clips": 10,
+    "model_forward_calls": 10,
+    "timed_forward_calls": 0,
+    "new_models_trained": 0,
+    "new_downloads": 0,
+    "new_installs": 0,
+    "app_changes": false,
+    "broader_evaluation_started": false,
+    "tests_passed": 26,
+    "inference_wall_seconds": 5.392444457997044,
+    "peak_process_tree_rss_bytes": 1124433920,
+    "invalid_outputs_all10": 0,
+    "owned_worker_cleanup_verified": true
+  },
+  "limits": [
+    "Repeatedly exposed and publisher-overlapping development; no statistical generalization claim.",
+    "Four lead categories only; unsupported instruments and broad genre/audio-type coverage not tested.",
+    "No timed inference, full-track performance or multiwindow accuracy claim; no-clear/partial labels cannot establish full presence precision.",
+    "Weight rights remain conditional; no commercial or redistribution clearance asserted."
+  ],
+  "sources": [
+    {
+      "title": "Prior capped baselines and failed dual-top1 policy",
+      "url": "lead-cap2-promise.json"
+    },
+    {
+      "title": "Earlier nonvoice sparse presence comparison, different endpoint",
+      "url": "instrument-presence-summary.json"
+    }
+  ]
+}

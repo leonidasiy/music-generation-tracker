@@ -2,14 +2,14 @@
   "schema_version": 1,
   "source_checkpoint": {
     "file": "status.json",
-    "checkpoint": "lead-cap2-promise-20261105",
-    "updated_at": "2026-11-05T17:22:50.856157+08:00",
+    "checkpoint": "lead-passt-cap2-20261105",
+    "updated_at": "2026-11-05T18:35:30.727489+08:00",
     "counts": {
-      "milestones": 82,
-      "findings": 54,
-      "activity": 53
+      "milestones": 83,
+      "findings": 55,
+      "activity": 54
     },
-    "sha256": "91f6f4e3e35ce557c5c5ad3ed294f3522391944dfd397ea092c945d8db441f36"
+    "sha256": "f2562ae0d7b4f743c58061ea59ad48cd722fce2911418b32f4de7071a5d0a107"
   },
   "categories": [
     {
@@ -99,6 +99,7 @@
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
       "milestone_ids": [
+        "lead-passt-cap2-20261105",
         "lead-cap2-promise-20261105",
         "lead-inclusive-hit-20261105",
         "lead-role-readout-diagnosis-20261105",
@@ -150,7 +151,7 @@
     {
       "id": "chords-harmony",
       "title": "Chords & harmony",
-      "result": "Private opt-in BTC: triad recording failures 4/7 → 3/7; severe 1/7 unchanged, no missing/invalid outputs. Seven-pair duration errors: root 25.04% → 19.84%, triad 31.57% → 27.50%, full quality 47.40% → 39.18%. Actual-app off/on checks completed.",
+      "result": "Private opt-in BTC: triad recording failures 4/7 \u2192 3/7; severe 1/7 unchanged, no missing/invalid outputs. Seven-pair duration errors: root 25.04% \u2192 19.84%, triad 31.57% \u2192 27.50%, full quality 47.40% \u2192 39.18%. Actual-app off/on checks completed.",
       "limit": "Root, strict-triad and full-quality are distinct; the below-30% failure goal is unmet. Exposed development evidence and noncommercial/source-rights limits preclude broad or commercial claims.",
       "next": "Seek lawful, independent diverse confirmation; retain the completed private opt-in and unchanged ordinary default. Any new integration needs renewed authorization and actual-app checks.",
       "evidence": [
@@ -171,7 +172,7 @@
     {
       "id": "instrument-presence",
       "title": "Instrument presence",
-      "result": "Saved PaSST/fusion comparator: 55/292 recordings above 30% known-label error; 12 severe, no missing outputs. This is not the installed presence default. PANNs worsened failures 55 → 133/292; partial YourMT3 worsened 29 → 38/122 matched recordings.",
+      "result": "Saved PaSST/fusion comparator: 55/292 recordings above 30% known-label error; 12 severe, no missing outputs. This is not the installed presence default. PANNs worsened failures 55 \u2192 133/292; partial YourMT3 worsened 29 \u2192 38/122 matched recordings.",
       "limit": "Sparse labels and exposed development, not broad independent or full-inventory accuracy. YourMT3 also had 22 invalid and 149 missing outputs in its intended 295; its matched subset is not a full-cohort result.",
       "next": "Require independently labeled, rights-cleared and diverse examples; test full-track aggregation before any separately authorized adoption.",
       "evidence": [
@@ -192,24 +193,24 @@
     {
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
-      "result": "With at most two outputs, capped role and presence baselines each hit 4/7 clear clips. Fixed role-top1 plus presence-top1 hits 3/7 and fails the promise gate. One-song coverage: 71.67%, 94.11%, and 89.75%, respectively.",
-      "limit": "Exposed saved-output policy replay: seven clear clips and ONE timed song, not a new model or app improvement. Earlier 6/7 and 100% used longer lists and do not satisfy this cap.",
-      "next": "Broader varied-data evaluation remains blocked until a direction demonstrates promise under the two-output standard. Stop this fixed policy without tuning; no application change.",
+      "result": "Full-head PaSST with at most two outputs hits 4/7 clear clips, tying both capped controls. Each comparison has one rescue and one regression. Vocal leads: 1/4; other three tested categories: 1/1 each. The small recording-level promise gate failed.",
+      "limit": "Actual offline inference on exposed clips, not app adoption: six clear recordings are in publisher training and one in checkpoint selection. Timed sections were deliberately not run. No broad accuracy claim.",
+      "next": "Broader varied-data evaluation remains blocked. Stop this fixed policy without tuning; require materially new task-matched evidence before another admitted small test. Lead application unchanged.",
       "evidence": [
         {
-          "label": "Maximum-two output pilot and gate",
-          "href": "lead-cap2-promise.json"
+          "label": "Full-head PaSST capped-lead screen",
+          "href": "lead-passt-cap2.json"
         },
         {
-          "label": "Earlier uncapped coverage (historical)",
-          "href": "lead-inclusive-hit.json"
+          "label": "Earlier capped controls and two-slot failure",
+          "href": "lead-cap2-promise.json"
         },
         {
           "label": "Readout and architecture diagnosis",
           "href": "lead-role-readout-diagnosis.json"
         }
       ],
-      "status": "Maximum-two pilot stopped; no expansion"
+      "status": "PaSST screen stopped; no expansion"
     }
   ],
   "overall": {
@@ -220,9 +221,9 @@
       "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
     ],
     "archive_counts": {
-      "milestones": 82,
-      "findings": 54,
-      "activity": 53
+      "milestones": 83,
+      "findings": 55,
+      "activity": 54
     }
   },
   "link_allowlist": [
@@ -242,6 +243,8 @@
     "EXTENDED.md",
     "TUNING.md",
     "lead-role-readout-diagnosis.json",
-    "lead-inclusive-hit.json"
+    "lead-inclusive-hit.json",
+    "lead-passt-cap2.json",
+    "lead-cap2-promise.json"
   ]
 }

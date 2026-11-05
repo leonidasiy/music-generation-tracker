@@ -3,7 +3,7 @@
 (function (root) {
   const AREA_IDS = ['rhythm-tempo', 'chords-harmony', 'instrument-presence', 'lead-accompaniment'];
   const CATEGORY_IDS = [...AREA_IDS, 'shared-evaluation'];
-  const LINKS = new Set(['lead-cap2-promise.json','lead-role-readout-diagnosis.json',"lead-inclusive-hit.json",'moe-learned-router.json','btc-private-seven.json','btc-app-six.json','lead-role-pilot.json','private-chord-adoption.json','full64-complete.json','panns-matched.json','instrument-presence-summary.json','progress-numbers.json','METHODS.md','PRACTICAL-SOLUTIONS.md','FOLLOWUP.md','CAMPAIGN.md','EXTENDED.md','TUNING.md']);
+  const LINKS = new Set(['lead-passt-cap2.json','lead-cap2-promise.json','lead-role-readout-diagnosis.json',"lead-inclusive-hit.json",'moe-learned-router.json','btc-private-seven.json','btc-app-six.json','lead-role-pilot.json','private-chord-adoption.json','full64-complete.json','panns-matched.json','instrument-presence-summary.json','progress-numbers.json','METHODS.md','PRACTICAL-SOLUTIONS.md','FOLLOWUP.md','CAMPAIGN.md','EXTENDED.md','TUNING.md']);
   const requireThat = (value, message) => { if (!value) throw new Error(message); };
   const isText = value => typeof value === 'string' && value.trim().length > 0;
   const wordCount = value => String(value).trim().split(/\s+/).length;
