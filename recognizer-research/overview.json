@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "source_checkpoint": {
+    "file": "status.json",
+    "checkpoint": "moe-learned-router-20261105",
+    "updated_at": "2026-11-05T04:16:29.509018+00:00",
+    "counts": {
+      "milestones": 79,
+      "findings": 51,
+      "activity": 50
+    },
+    "sha256": "6b6e48eb50169c821caedcc3bda1caf5449abf250ce748b7a8b0e6358da10bb5"
+  },
+  "categories": [
+    {
+      "id": "rhythm-tempo",
+      "title": "Rhythm & tempo",
+      "milestone_ids": [
+        "frozen-execution",
+        "metrics",
+        "historical-diagnosis",
+        "trained-model-design",
+        "confirmation",
+        "training-preflight",
+        "pilot-budget",
+        "trained-local-pilot",
+        "diverse-final-run",
+        "preprocessing-recon",
+        "preprocessing-stage-a",
+        "threshold-incidence-policy",
+        "below30-feasibility",
+        "frozen-beat-runtime",
+        "frozen-beat-outcome",
+        "tempo-local-evidence",
+        "diverse-inventory"
+      ]
+    },
+    {
+      "id": "chords-harmony",
+      "title": "Chords & harmony",
+      "milestone_ids": [
+        "btc-vocabulary-ceiling",
+        "btc-private-seven-final",
+        "btc-actual-app-six",
+        "private-chord-option",
+        "rwc-eight-chord-subset",
+        "practical-native-complete64",
+        "practical-native-partial64",
+        "practical-two-stage-pilot",
+        "practical-btc-pilot",
+        "chord-diagnosis",
+        "chord-intervention",
+        "chord-standard-replay",
+        "chord-annotation-tooling",
+        "chord-exact-source-triage",
+        "chord-timing-proposal",
+        "chord-native-contract-audit",
+        "chord-recording-clearance",
+        "chord-human-return-tooling",
+        "chord-development-exposure",
+        "chord-soft-history-executed",
+        "chord-quality-head-trained",
+        "extended-chord-vocabulary",
+        "strict-multiclass-training",
+        "extended-semantic-correction",
+        "broader-source-preflight",
+        "temporal-quality-followup",
+        "external-whole-song-diagnostic",
+        "chord-hpss-smoke"
+      ]
+    },
+    {
+      "id": "instrument-presence",
+      "title": "Instrument presence",
+      "milestone_ids": [
+        "separation-smoke-20261104",
+        "instrumentation-restart-20261104",
+        "yourmt3-partial-146",
+        "yourmt3-waveform-smoke",
+        "panns295-fixed-diagnostic",
+        "panns-runtime-feasibility",
+        "coarse19",
+        "union-suppression",
+        "presence-first-loss",
+        "presence-contract",
+        "presence-reference-gate",
+        "presence-calibration-executed",
+        "passt-runtime",
+        "passt-matched-comparison",
+        "passt-integration",
+        "threshold-tuning-root-scope",
+        "threshold-tuning-executed",
+        "extended-instrument-classes",
+        "instrument-crop-execution",
+        "masked-feature-training"
+      ]
+    },
+    {
+      "id": "lead-accompaniment",
+      "title": "Lead vs accompaniment",
+      "milestone_ids": [
+        "moe-learned-router-20261105",
+        "moe-source-readiness-20261105",
+        "temporal-role-data-20261105",
+        "contextual-tinymu-20261104",
+        "lead-role-alternatives-20261104",
+        "msclap-new-source-screen-20261104",
+        "role-context-pilot-20261104",
+        "lead-mask-closed",
+        "lead-trained-contour",
+        "lead-role-pilot-20261104"
+      ]
+    },
+    {
+      "id": "shared-evaluation",
+      "title": "Shared evaluation",
+      "milestone_ids": [
+        "practical-solution-pivot",
+        "audit-design",
+        "reference-contract",
+        "independent-validation"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "rhythm-tempo",
+      "title": "Rhythm & tempo",
+      "result": "A frozen direct-tempo method is wired in the local application. The 151-case saved comparison reports 13 combined failures (8.61%), including two missing and two severe; the older baseline has 62/151 combined failures.",
+      "limit": "Training-exposed development evidence; broad transfer remains open. Local implementation is not a hosted release or broad independent validation.",
+      "next": "Admit rights-cleared, independent and diverse references; verify full release/hosted behavior before claiming broad deployment.",
+      "evidence": [
+        {
+          "label": "Tempo follow-up",
+          "href": "FOLLOWUP.md"
+        },
+        {
+          "label": "Tempo evidence aggregate",
+          "href": "progress-numbers.json"
+        },
+        {
+          "label": "Methods and limits",
+          "href": "METHODS.md"
+        }
+      ]
+    },
+    {
+      "id": "chords-harmony",
+      "title": "Chords & harmony",
+      "result": "Private opt-in BTC: triad recording failures 4/7 → 3/7; severe 1/7 unchanged, no missing/invalid outputs. Seven-pair duration errors: root 25.04% → 19.84%, triad 31.57% → 27.50%, full quality 47.40% → 39.18%. Actual-app off/on checks completed.",
+      "limit": "Root, strict-triad and full-quality are distinct; the below-30% failure goal is unmet. Exposed development evidence and noncommercial/source-rights limits preclude broad or commercial claims.",
+      "next": "Seek lawful, independent diverse confirmation; retain the completed private opt-in and unchanged ordinary default. Any new integration needs renewed authorization and actual-app checks.",
+      "evidence": [
+        {
+          "label": "Private BTC seven-case aggregate",
+          "href": "btc-private-seven.json"
+        },
+        {
+          "label": "Six-case actual-app follow-up",
+          "href": "btc-app-six.json"
+        },
+        {
+          "label": "Methods and limits",
+          "href": "METHODS.md"
+        }
+      ]
+    },
+    {
+      "id": "instrument-presence",
+      "title": "Instrument presence",
+      "result": "Saved PaSST/fusion comparator: 55/292 recordings above 30% known-label error; 12 severe, no missing outputs. This is not the installed presence default. PANNs worsened failures 55 → 133/292; partial YourMT3 worsened 29 → 38/122 matched recordings.",
+      "limit": "Sparse labels and exposed development, not broad independent or full-inventory accuracy. YourMT3 also had 22 invalid and 149 missing outputs in its intended 295; its matched subset is not a full-cohort result.",
+      "next": "Require independently labeled, rights-cleared and diverse examples; test full-track aggregation before any separately authorized adoption.",
+      "evidence": [
+        {
+          "label": "Instrument comparison source",
+          "href": "instrument-presence-summary.json"
+        },
+        {
+          "label": "PANNs contrary result",
+          "href": "panns-matched.json"
+        },
+        {
+          "label": "Methods and limits",
+          "href": "METHODS.md"
+        }
+      ]
+    },
+    {
+      "id": "lead-accompaniment",
+      "title": "Lead vs accompaniment",
+      "result": "Learned hard/soft routers 12/16 equal strongest single and audio-blind 12/16: no routing advantage. Separate predominance stress: CLAP 17/20, hard 15/20, soft 16/20. Different endpoints; no independent role confirmation.",
+      "limit": "Sixteen previously exposed artist-held-out cases; no verified performance/reliability gain or lead-role app adoption. One frozen configuration failed, not all MoE.",
+      "next": "Close this confidence/agreement configuration without tuning. A new run needs a materially different promising signal, lawful manual role truth and an independently grouped test.",
+      "evidence": [
+        {
+          "label": "Learned router result",
+          "href": "moe-learned-router.json"
+        },
+        {
+          "label": "Role evidence and methods",
+          "href": "lead-role-pilot.json"
+        },
+        {
+          "label": "Methods and limits",
+          "href": "METHODS.md"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "summary": "Four distinct recognizer tasks; evidence is mostly scoped development, not broad independent confirmation. Chord private opt-in integration exists; lead remains unchanged.",
+    "limitations": [
+      "Endpoints and denominators are task-specific; do not combine duration error, recording-failure incidence, role ranking or predominance.",
+      "Unknown or unannotated classes are not negatives. Rights, checkpoint exposure and independent reference quality constrain transfer.",
+      "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
+    ],
+    "archive_counts": {
+      "milestones": 79,
+      "findings": 51,
+      "activity": 50
+    }
+  },
+  "link_allowlist": [
+    "moe-learned-router.json",
+    "btc-private-seven.json",
+    "btc-app-six.json",
+    "lead-role-pilot.json",
+    "private-chord-adoption.json",
+    "full64-complete.json",
+    "panns-matched.json",
+    "instrument-presence-summary.json",
+    "progress-numbers.json",
+    "METHODS.md",
+    "PRACTICAL-SOLUTIONS.md",
+    "FOLLOWUP.md",
+    "CAMPAIGN.md",
+    "EXTENDED.md",
+    "TUNING.md"
+  ]
+}
