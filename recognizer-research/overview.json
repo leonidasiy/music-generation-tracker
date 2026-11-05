@@ -2,14 +2,14 @@
   "schema_version": 1,
   "source_checkpoint": {
     "file": "status.json",
-    "checkpoint": "lead-passt-cap2-20261105",
-    "updated_at": "2026-11-05T18:35:30.727489+08:00",
+    "checkpoint": "lead-vocal-specialist-20261105",
+    "updated_at": "2026-11-05T19:32:56.180124+08:00",
     "counts": {
-      "milestones": 83,
-      "findings": 55,
-      "activity": 54
+      "milestones": 84,
+      "findings": 56,
+      "activity": 55
     },
-    "sha256": "f2562ae0d7b4f743c58061ea59ad48cd722fce2911418b32f4de7071a5d0a107"
+    "sha256": "3c4f2c0ef0a9eaac23be360b274376dd221301e97c59828b8b6eca46baaf60a7"
   },
   "categories": [
     {
@@ -99,6 +99,7 @@
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
       "milestone_ids": [
+        "lead-vocal-specialist-20261105",
         "lead-passt-cap2-20261105",
         "lead-cap2-promise-20261105",
         "lead-inclusive-hit-20261105",
@@ -193,24 +194,24 @@
     {
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
-      "result": "Full-head PaSST with at most two outputs hits 4/7 clear clips, tying both capped controls. Each comparison has one rescue and one regression. Vocal leads: 1/4; other three tested categories: 1/1 each. The small recording-level promise gate failed.",
-      "limit": "Actual offline inference on exposed clips, not app adoption: six clear recordings are in publisher training and one in checkpoint selection. Timed sections were deliberately not run. No broad accuracy claim.",
-      "next": "Broader varied-data evaluation remains blocked. Stop this fixed policy without tuning; require materially new task-matched evidence before another admitted small test. Lead application unchanged.",
+      "result": "Vocal specialist plus cached native presence hits 7/7 clear clips versus 4/7 for each capped control: three rescues, zero regressions each. Vocal 4/4; three nonvocal leads retained. Ten valid outputs, at most two names.",
+      "limit": "Exposed development, unknown pretraining overlap; not a full-app run. Partial known-positive containment 0/1 versus role 1/1 and presence 0/1; two unclear unscored. No independent accuracy or reliability-improvement claim.",
+      "next": "Freeze this policy. A separately admitted small independent confirmation is needed; no broad/timed expansion or lead-app adoption is queued.",
       "evidence": [
         {
-          "label": "Full-head PaSST capped-lead screen",
+          "label": "Vocal-specialist bounded result",
+          "href": "lead-vocal-specialist.json"
+        },
+        {
+          "label": "Previous PaSST screen",
           "href": "lead-passt-cap2.json"
         },
         {
-          "label": "Earlier capped controls and two-slot failure",
+          "label": "Capped baselines",
           "href": "lead-cap2-promise.json"
-        },
-        {
-          "label": "Readout and architecture diagnosis",
-          "href": "lead-role-readout-diagnosis.json"
         }
       ],
-      "status": "PaSST screen stopped; no expansion"
+      "status": "Development promise; confirmation pending admission"
     }
   ],
   "overall": {
@@ -221,9 +222,9 @@
       "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
     ],
     "archive_counts": {
-      "milestones": 83,
-      "findings": 55,
-      "activity": 54
+      "milestones": 84,
+      "findings": 56,
+      "activity": 55
     }
   },
   "link_allowlist": [
@@ -245,6 +246,7 @@
     "lead-role-readout-diagnosis.json",
     "lead-inclusive-hit.json",
     "lead-passt-cap2.json",
-    "lead-cap2-promise.json"
+    "lead-cap2-promise.json",
+    "lead-vocal-specialist.json"
   ]
 }

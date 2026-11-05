@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-05T19:32:56.180124+08:00",
+  "scope": "One-shot exposed-development screen: actual vocal-specialist inference on10existing clips plus cached native presence outputs; not a full current-app run.",
+  "decision": "DEVELOPMENT_PROMISE_ONLY_NO_EXPANSION",
+  "selected_direction": "Vocal-specialist admission; relative-role training and full-backbone rewrite deferred. Producer-role AI judgment, not human validation.",
+  "owner_contract": {
+    "maximum_returned_instruments": 2,
+    "primary": "Accepted manual lead in actual final capped list."
+  },
+  "policy": "Mean native per-patch instrumental/voice softmax; voice only when mean voice exceeds instrumental. Voice branch: Vocal plus highest native non-Vocal identity; otherwise cached native top two. Downstream rule is ours, not publisher-default. No tuning.",
+  "clear": {
+    "n": 7,
+    "hits": 7,
+    "failures": 0,
+    "unavailable": 0,
+    "percent": 100.0,
+    "categories": {
+      "Piano": {
+        "n": 1,
+        "hits": 1
+      },
+      "Saxophone": {
+        "n": 1,
+        "hits": 1
+      },
+      "Synthesizer": {
+        "n": 1,
+        "hits": 1
+      },
+      "Vocal": {
+        "n": 4,
+        "hits": 4
+      }
+    }
+  },
+  "comparisons": {
+    "role_cap2": {
+      "baseline_hits": 4,
+      "rescues": 3,
+      "regressions": 0,
+      "net": 3
+    },
+    "presence_top2": {
+      "baseline_hits": 4,
+      "rescues": 3,
+      "regressions": 0,
+      "net": 3
+    }
+  },
+  "partial": {
+    "n": 1,
+    "known_positive_hits": 0,
+    "controls": {
+      "role_cap2": 1,
+      "presence_top2": 0
+    },
+    "interpretation": "Partial/shared positive containment only, not complete shared-leader accuracy; excluded from clear primary prospectively"
+  },
+  "unclear": {
+    "n": 2,
+    "scored": false
+  },
+  "gate": {
+    "development_pass": true,
+    "net_rescues_min_each_control": 1,
+    "regressions_max_each_control": 1,
+    "independent_validation": false,
+    "broader_evaluation_admitted": false
+  },
+  "execution": {
+    "attempted_clips": 10,
+    "valid_outputs": 10,
+    "cap_violations": 0,
+    "missing_outputs": 0,
+    "list_sizes": {
+      "min": 2,
+      "max": 2
+    },
+    "inference_seconds": 6.113832208000531,
+    "peak_rss_bytes": 466845696,
+    "cleanup_verified": true,
+    "application_changes": false,
+    "timed_attempted": 0,
+    "broader_evaluation_started": false,
+    "parent_tests": 13
+  },
+  "setup": {
+    "isolated_runtime": true,
+    "transient_storage_cap_exceeded": true,
+    "stopped_before_accuracy": true,
+    "duplicate_extractions_removed_evidence_preserved": true,
+    "explicit_owner_resume": true,
+    "retained_bytes_before_publication": 558471582
+  },
+  "limits": [
+    "Repeatedly exposed development; unknown head and backbone pretraining overlap, no independent/general accuracy claim.",
+    "Only four clear categories; partial known-positive Vocal miss remains, two unclear cases unscored. Lead labels do not establish vocal-presence precision.",
+    "No measured reliability improvement, app adoption, timed or broad evaluation. Private noncommercial research only; future commercial scope needs renewed review."
+  ],
+  "next": "Separately admit a small independent source-grouped confirmation with vocal and nonvocal lead controls; no expansion or application adoption is queued.",
+  "sources": [
+    {
+      "title": "Official head metadata",
+      "url": "https://essentia.upf.edu/models/classification-heads/voice_instrumental/voice_instrumental-msd-musicnn-1.json"
+    },
+    {
+      "title": "Publisher licensing",
+      "url": "https://essentia.upf.edu/licensing_information.html"
+    },
+    {
+      "title": "Previous capped baselines and failure",
+      "url": "lead-cap2-promise.json"
+    },
+    {
+      "title": "Previous PaSST capped screen",
+      "url": "lead-passt-cap2.json"
+    }
+  ]
+}

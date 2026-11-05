@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "lead-passt-cap2-20261105",
-  "updated_at": "2026-11-05T18:35:30.727489+08:00",
+  "checkpoint": "lead-vocal-specialist-20261105",
+  "updated_at": "2026-11-05T19:32:56.180124+08:00",
   "title": "Recognizer Research",
-  "phase": "Full-head PaSST max-two screen stopped; no expansion",
-  "summary": "Actual full-head PaSST top two hits 4/7 clear clips, tying both capped controls; no net benefit. Exact training/checkpoint-selection audio overlap limits inference. Timed test deliberately unrun; no lead-application change.",
+  "phase": "Vocal specialist passes exposed-development gate; no expansion",
+  "summary": "AI practitioner-selected vocal specialist plus cached native presence reaches 7/7 clear hits versus 4/7 for both controls: three rescues and zero regressions each. Shared/partial 0/1 and unknown training overlap limit claims; no broad evaluation or lead-app changes.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "lead-vocal-specialist-20261105",
+      "title": "Selected vocal specialist passes small exposed max-two screen",
+      "status": "development-promise-no-expansion",
+      "detail": "Actual specialist inference with cached native presence path: 7/7 clear hits versus 4/7 for each capped control, three rescues and zero regressions each. Vocal 4/4; other three clear leads retained; ten valid capped outputs. Partial known-positive containment 0/1 versus role 1/1 and presence 0/1; two unclear unscored. Exposed development, unknown training overlap; no adoption or broad/timed expansion.",
+      "artifact": "lead-vocal-specialist.json"
+    },
     {
       "id": "lead-passt-cap2-20261105",
       "title": "Full-head PaSST max-two screen stopped at owner gate",
@@ -591,6 +598,11 @@
   ],
   "findings": [
     {
+      "title": "Vocal-specialist admission shows bounded practical promise, not independent validation",
+      "detail": "The task-focused gate recovers missing Vocal without losing any of three tested clear nonvocal leads. Voice presence still is not leadership; a missed partial positive and small reused roster prevent generalization. No measured reliability gain.",
+      "source": "lead-vocal-specialist.json"
+    },
+    {
       "title": "Full native presence head did not improve capped lead coverage",
       "detail": "The 20-class head can emit Vocal independently of old candidate rows, unlike the 11-singleton hybrid, but hits only 1/4 vocal-lead clips. Failed recording gate stops before one-song timing. This does not exhaust all presence models or establish the need for a new backbone.",
       "source": "lead-passt-cap2.json"
@@ -971,7 +983,7 @@
     }
   ],
   "blockers": [
-    "Broader varied-data lead evaluation remains BLOCKED: full-head PaSST max-two screen ties both controls at 4/7 and fails. Exact clear-roster audio overlap: six training and one checkpoint-selection recording. Older dual-top1 also failed; no independent capped winner.",
+    "Broad lead evaluation and adoption remain BLOCKED: new vocal-specialist policy passes only seven reused development clips; head/backbone pretraining overlap unestablished, partial known-positive 0/1. Independent small confirmation remains unadmitted. Earlier PaSST and fixed dual policies stay stopped.",
     "Full original123role annotations reduce to78rows under current non-ND training policy, with zero exact pairs supporting both role directions across artist-disjoint fit/check. Metadata is not admitted audio; this is the controlled diagnostic requirement, not a universal role-learning rule.",
     "Manual temporal-data join has only 12 balanced windows/three songs/two artists; each exact instrument pair belongs to one artist. No artist-disjoint counterbalanced training/check bank or audio admission.",
     "Fixed-pair role ranking, predominant-instrument recognition and full-app recording-failure incidence remain different endpoints; no demonstrated below30% installed lead failure.",
@@ -981,7 +993,7 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Keep the max-two requirement; stop this full-head top-two policy without tuning or extra evaluation. A next candidate needs materially new task-matched evidence and a separately admitted small screen with explicit publisher fit/selection overlap accounting.",
+    "Retain frozen vocal-specialist policy; seek separately admitted small independent source-grouped manual confirmation,including instrumental leads with vocals present. Do not tune on current results or automatically expand.",
     "A next controlled role-architecture diagnostic needs admitted counterbalanced source/artist groups and a frozen role-specific comparison to strongest/audio-blind/temporal controls.",
     "Assess a compact contextual/relative-role component using an existing encoder before considering a wholly new backbone; this is a proposal, not an approved fit or gain.",
     "Any actual new experiment, acquisition, install or application integration requires a fresh scoped promise/resource/rights gate."
@@ -1019,6 +1031,10 @@
     }
   ],
   "activity": [
+    {
+      "date": "2026-11-05T19:32:56.180124+08:00",
+      "action": "Obtained native producer-role AI choice and clarification, completed isolated setup after owner-approved resource recovery, froze one output policy and 13 tests, ran existing ten clips once: 7/7 clear. No tuning, new audio, training, app changes or broader evaluation."
+    },
     {
       "date": "2026-11-05T18:35:30.727489+08:00",
       "action": "Froze 26 test-first contracts and one full-20-class PaSST top-two policy; ran 10 existing owner clips offline and stopped at 4/7 clear hits with no net gain. No timed or broad-data evaluation, tuning, downloads, installation or application edits."
