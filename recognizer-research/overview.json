@@ -2,14 +2,14 @@
   "schema_version": 1,
   "source_checkpoint": {
     "file": "status.json",
-    "checkpoint": "lead-role-readout-diagnosis-20261105",
-    "updated_at": "2026-11-05T08:01:47.325626+00:00",
+    "checkpoint": "lead-inclusive-hit-20261105",
+    "updated_at": "2026-11-05T08:48:53.447410+00:00",
     "counts": {
-      "milestones": 80,
-      "findings": 52,
-      "activity": 51
+      "milestones": 81,
+      "findings": 53,
+      "activity": 52
     },
-    "sha256": "a0f75e6c8f4eea367c4e7834208014fad00b0c352305cd838e72db20c1dbeea2"
+    "sha256": "1751c5f818de85e8a8ae4c603e014fec13943224dd6e94ec99fca8684c42d534"
   },
   "categories": [
     {
@@ -99,6 +99,7 @@
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
       "milestone_ids": [
+        "lead-inclusive-hit-20261105",
         "lead-role-readout-diagnosis-20261105",
         "moe-learned-router-20261105",
         "moe-source-readiness-20261105",
@@ -148,7 +149,7 @@
     {
       "id": "chords-harmony",
       "title": "Chords & harmony",
-      "result": "Private opt-in BTC: triad recording failures 4/7 → 3/7; severe 1/7 unchanged, no missing/invalid outputs. Seven-pair duration errors: root 25.04% → 19.84%, triad 31.57% → 27.50%, full quality 47.40% → 39.18%. Actual-app off/on checks completed.",
+      "result": "Private opt-in BTC: triad recording failures 4/7 \u2192 3/7; severe 1/7 unchanged, no missing/invalid outputs. Seven-pair duration errors: root 25.04% \u2192 19.84%, triad 31.57% \u2192 27.50%, full quality 47.40% \u2192 39.18%. Actual-app off/on checks completed.",
       "limit": "Root, strict-triad and full-quality are distinct; the below-30% failure goal is unmet. Exposed development evidence and noncommercial/source-rights limits preclude broad or commercial claims.",
       "next": "Seek lawful, independent diverse confirmation; retain the completed private opt-in and unchanged ordinary default. Any new integration needs renewed authorization and actual-app checks.",
       "evidence": [
@@ -169,7 +170,7 @@
     {
       "id": "instrument-presence",
       "title": "Instrument presence",
-      "result": "Saved PaSST/fusion comparator: 55/292 recordings above 30% known-label error; 12 severe, no missing outputs. This is not the installed presence default. PANNs worsened failures 55 → 133/292; partial YourMT3 worsened 29 → 38/122 matched recordings.",
+      "result": "Saved PaSST/fusion comparator: 55/292 recordings above 30% known-label error; 12 severe, no missing outputs. This is not the installed presence default. PANNs worsened failures 55 \u2192 133/292; partial YourMT3 worsened 29 \u2192 38/122 matched recordings.",
       "limit": "Sparse labels and exposed development, not broad independent or full-inventory accuracy. YourMT3 also had 22 invalid and 149 missing outputs in its intended 295; its matched subset is not a full-cohort result.",
       "next": "Require independently labeled, rights-cleared and diverse examples; test full-track aggregation before any separately authorized adoption.",
       "evidence": [
@@ -190,10 +191,14 @@
     {
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
-      "result": "Final distinct readout: 4/8 correct versus strongest 5/8; no benefit from correct melody timing. Remaining eight stopped. Saved-map diagnosis implicates this readout’s stationary bias, not a proven backbone ceiling.",
-      "limit": "Exposed supplied-pair development; no independent role confirmation, reliability gain or lead-app adoption. Current training-policy labels do not support the specified grouped role-reversal diagnostic.",
-      "next": "Resolve task-matched counterbalanced source groups, then compare a compact role component on an existing encoder. No stopped-method tuning; a wholly new backbone is not yet justified.",
+      "result": "Under the owner\u2019s inclusive rule, archived native instrument lists contain the lead on 6/7 clear clips (85.7%); role-selected lists hit 4/7 (57.1%). On one timed song, role-list coverage is 80.8%, versus 55.4% top-one.",
+      "limit": "Exposed cached reports: seven clear owner clips and one song, not broad confirmation or a model improvement. Actual native lists are audited; supplied benchmark pairs and full logits are not predictions.",
+      "next": "Evaluate practical lead containment in actual outputs across varied recordings, with list sizes and missing outputs. Exclusive lead discrimination remains separate; this reanalysis does not justify a wholesale rewrite.",
       "evidence": [
+        {
+          "label": "Inclusive actual-output lead-hit results",
+          "href": "lead-inclusive-hit.json"
+        },
         {
           "label": "Readout and architecture diagnosis",
           "href": "lead-role-readout-diagnosis.json"
@@ -201,12 +206,9 @@
         {
           "label": "Earlier learned-router result",
           "href": "moe-learned-router.json"
-        },
-        {
-          "label": "Methods and limits",
-          "href": "METHODS.md"
         }
-      ]
+      ],
+      "status": "Inclusive coverage rescored; no new model gain"
     }
   ],
   "overall": {
@@ -217,9 +219,9 @@
       "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
     ],
     "archive_counts": {
-      "milestones": 80,
-      "findings": 52,
-      "activity": 51
+      "milestones": 81,
+      "findings": 53,
+      "activity": 52
     }
   },
   "link_allowlist": [
@@ -238,6 +240,7 @@
     "CAMPAIGN.md",
     "EXTENDED.md",
     "TUNING.md",
-    "lead-role-readout-diagnosis.json"
+    "lead-role-readout-diagnosis.json",
+    "lead-inclusive-hit.json"
   ]
 }
