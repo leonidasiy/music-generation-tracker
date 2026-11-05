@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "checkpoint": "moe-learned-router-20261105",
+  "scope": "Exposed-development saved-score routing; not independent confirmation or actual-app improvement",
+  "decision": "NO_INCREMENTAL_ROUTING_GAIN_NO_ADOPTION",
+  "role": {
+    "n": 16,
+    "artist_groups": 16,
+    "expert_oracle_chosen_three": 13,
+    "experts_and_controls": {
+      "CLAP": {
+        "correct": 7,
+        "errors": 9,
+        "unavailable": 0
+      },
+      "IRNet": {
+        "correct": 10,
+        "errors": 6,
+        "unavailable": 0
+      },
+      "separated-IRNet": {
+        "correct": 12,
+        "errors": 4,
+        "unavailable": 0
+      },
+      "hard": {
+        "correct": 12,
+        "errors": 4,
+        "unavailable": 0
+      },
+      "soft": {
+        "correct": 12,
+        "errors": 4,
+        "unavailable": 0
+      },
+      "fixed_blend": {
+        "correct": 10,
+        "errors": 6,
+        "unavailable": 0
+      },
+      "audio_blind": {
+        "correct": 12,
+        "errors": 4,
+        "unavailable": 0
+      },
+      "identity_prior": {
+        "correct": 9,
+        "errors": 7,
+        "unavailable": 0
+      }
+    },
+    "router_vs_CLAP": {
+      "rescues": 6,
+      "regressions": 1
+    },
+    "router_vs_strongest": {
+      "rescues": 0,
+      "regressions": 0
+    }
+  },
+  "external_stress": {
+    "n": 20,
+    "endpoint": "Manually labelled11-class predominance reference-set membership, not role confirmation",
+    "correct": {
+      "CLAP": 17,
+      "IRNet": 13,
+      "separated-IRNet": 15,
+      "hard": 15,
+      "soft": 16,
+      "fixed_blend": 15,
+      "audio_blind": 15,
+      "identity_prior": 1
+    },
+    "soft_vs_CLAP": {
+      "rescues": 3,
+      "regressions": 4
+    }
+  },
+  "reliability": {
+    "actual_saved_input_invalid": 0,
+    "actual_saved_input_unavailable": 0,
+    "actual_router_fallback": 0,
+    "fault_injection_checks": 48,
+    "fault_injection_is_performance_gain": false,
+    "end_to_end_reliability_improvement_verified": false
+  },
+  "production_changed": false,
+  "verified_gain": false,
+  "limits": [
+    "All role recordings previously exposed; source grouping is not untouched confirmation.",
+    "External endpoint, candidate count and original-IRNet resampling differ.",
+    "Severity, production runtime and independent role transfer remain unmeasured."
+  ]
+}

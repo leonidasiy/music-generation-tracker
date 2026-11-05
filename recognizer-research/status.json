@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "moe-source-readiness-20261105",
-  "updated_at": "2026-11-05T03:53:08.989896+00:00",
+  "checkpoint": "moe-learned-router-20261105",
+  "updated_at": "2026-11-05T04:16:29.509018+00:00",
   "title": "Recognizer Research",
-  "phase": "Quiet lead-role MoE feasibility; no verified gain",
-  "summary": "Learned MoE remains untested. Saved experts have hindsight union14/16 versus current7/16 and strongest complete expert12/16—not achieved routing. Whole-source human-tag audit finds3596 agreed buffered windows across118songs, but no audio is admitted. New jazz-role sources remain conditional; no production change or verified performance/reliability gain.",
+  "phase": "Learned lead-role routing executed; no incremental or verified gain",
+  "summary": "Learned hard/soft MoE scored12/16 on exposed artist-held-out role cases, matching the strongest single expert and audio-blind control; fixed blend10/16, CLAP7/16. Separate predominance stress:CLAP17/20, hard15/20, soft16/20. No incremental routing benefit, reliability improvement or production change.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "moe-learned-router-20261105",
+      "title": "Learned lead-role router executed; no gain above strongest expert",
+      "status": "complete",
+      "evidence_type": "Actual cached-score gate fitting with artist-held-out exposed-development predictions; no new model/audio inference or app adoption",
+      "detail": "Role16:CLAP7,IRNet10,separated12,hard12,soft12,blend10,audio-blind12 correct. Both routers match the strongest expert on every role case. Separate11-class predominance20:CLAP17,hard15,soft16. Zero invalid/missing saved inputs; fault-injection checks are not reliability improvement. No tuning rescue or verified gain."
+    },
     {
       "id": "moe-source-readiness-20261105",
       "title": "MoE coverage corrected; human-source readiness checked",
@@ -556,8 +563,15 @@
   ],
   "findings": [
     {
-      "title": "Unfinished MoE is not exhausted; source coverage is not musical progress",
-      "detail": "A learned router has not been trained or validated. Metadata can support more labels than the earlier six-song sample implied, but recording use, clock identity and independent role checks remain gates. No generic human annotation effort is requested merely because labels are scarce.",
+      "title": "Expert complementarity did not become useful learned routing in this frozen pilot",
+      "detail": "Confidence/agreement ridge gates match separatedIRNet and the audio-blind best-expert selector on16exposed manual role cases. The separate endpoint favors CLAP. This tests one small gate, not all MoE architectures; independent role confirmation and actual-application reliability remain unverified.",
+      "source": "Frozen learned-router experiment,5November2026",
+      "evidence_type": "Actual learned cached-score pilot; exposed-development LOAO, not independent confirmation",
+      "confidence": "HIGH for exact counts; LOW for generalization"
+    },
+    {
+      "title": "Historical source-readiness audit; broader independent role admission remains open",
+      "detail": "Before the new exploratory pilot, no router had been fitted. Whole-source human tags increased conditional label capacity, not lawful aligned audio admission. The newly executed16-case gate does not establish independent confirmation; no generic human annotation effort is requested.",
       "evidence_type": "Deterministic saved-output and original-human-annotation reconstruction",
       "confidence": "HIGH for these scoped inventory counts; application benefit unverified",
       "source": "MoE continuation source-readiness audit, 5 November 2026"
@@ -916,8 +930,8 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
+    "Close this confidence/agreement router without tuning: no incremental gain above the strongest expert or audio-blind control. Further learned routing requires materially new routing evidence and suitable independent manual role truth; no production adoption.",
     "Proceed only with a credible task-matched lead-role candidate and lawful independent manual role targets; compare best single/fixed blend, prior controls, regressions and unavailable outputs.",
-    "Keep learned MoE marked untested until an actual grouped-source routing experiment is executed and independently checked.",
     "No generic annotation bank, rejected45packet rescue, unsupported new model download, or production adoption is triggered by these source audits.",
     "Report a positive result only after verified paired performance AND reliability gains; research-only and actual-application claims remain separate."
   ],
@@ -954,6 +968,12 @@
     }
   ],
   "activity": [
+    {
+      "title": "Frozen learned hard/soft lead router executed",
+      "time": "2026-11-05T04:17:20.702937+00:00",
+      "action": "Fitted one ridge1 confidence/agreement gate with training-only calibration and16artist-held-out folds. No new model/audio inference or production changes.",
+      "result": "Hard12/16 andsoft12/16 equal strongest expert and audio-blind12/16; external stressCLAP17/20 versus hard15/20,soft16/20. No incremental routing or reliability gain; frozen configuration closed without tuning."
+    },
     {
       "time": "2026-11-05T03:53:08.989896+00:00",
       "title": "Quiet MoE feasibility and whole-source annotation audit",
@@ -1749,6 +1769,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "Actual learned-router result and explicit controls",
+      "url": "./moe-learned-router.json"
+    },
     {
       "title": "MoE headroom and manual source-readiness aggregate",
       "url": "./moe-source-readiness.json"
