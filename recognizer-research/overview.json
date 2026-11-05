@@ -2,14 +2,14 @@
   "schema_version": 1,
   "source_checkpoint": {
     "file": "status.json",
-    "checkpoint": "lead-vocal-specialist-20261105",
-    "updated_at": "2026-11-05T19:32:56.180124+08:00",
+    "checkpoint": "lead-vocal-validation-labels-20261105",
+    "updated_at": "2026-11-05T20:17:40.134363+08:00",
     "counts": {
-      "milestones": 84,
-      "findings": 56,
-      "activity": 55
+      "milestones": 85,
+      "findings": 57,
+      "activity": 56
     },
-    "sha256": "3c4f2c0ef0a9eaac23be360b274376dd221301e97c59828b8b6eca46baaf60a7"
+    "sha256": "fd55f8efc7c05a59fea7d60c0f4546fc442d9043da767cf4e0d2438422e7213e"
   },
   "categories": [
     {
@@ -99,6 +99,7 @@
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
       "milestone_ids": [
+        "lead-vocal-validation-labels-20261105",
         "lead-vocal-specialist-20261105",
         "lead-passt-cap2-20261105",
         "lead-cap2-promise-20261105",
@@ -194,24 +195,24 @@
     {
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
-      "result": "Vocal specialist plus cached native presence hits 7/7 clear clips versus 4/7 for each capped control: three rescues, zero regressions each. Vocal 4/4; three nonvocal leads retained. Ten valid outputs, at most two names.",
-      "limit": "Exposed development, unknown pretraining overlap; not a full-app run. Partial known-positive containment 0/1 versus role 1/1 and presence 0/1; two unclear unscored. No independent accuracy or reliability-improvement claim.",
-      "next": "Freeze this policy. A separately admitted small independent confirmation is needed; no broad/timed expansion or lead-app adoption is queued.",
+      "result": "Frozen vocal-specialist development result remains 7/7 versus 4/7 for both controls. Eight blind clips from eight different artists are prepared for new manual lead judgments; no validation scores have been generated.",
+      "limit": "New clips are artist/track-disjoint from the lead-policy pilot but were used in earlier presence research; pretraining overlap unknown. Prior 7/7 is not independent confirmation; partial reference 0/1 remains.",
+      "next": "Await eight manual judgments. Seal references and verify research-only baseline cache isolation/parity before one unchanged capped paired run. No app adoption or broad benchmark.",
       "evidence": [
         {
-          "label": "Vocal-specialist bounded result",
-          "href": "lead-vocal-specialist.json"
+          "label": "Blind-reference validation status",
+          "href": "lead-vocal-validation.json"
         },
         {
-          "label": "Previous PaSST screen",
-          "href": "lead-passt-cap2.json"
+          "label": "Previous specialist development result",
+          "href": "lead-vocal-specialist.json"
         },
         {
           "label": "Capped baselines",
           "href": "lead-cap2-promise.json"
         }
       ],
-      "status": "Development promise; confirmation pending admission"
+      "status": "Awaiting eight manual lead judgments"
     }
   ],
   "overall": {
@@ -222,9 +223,9 @@
       "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
     ],
     "archive_counts": {
-      "milestones": 84,
-      "findings": 56,
-      "activity": 55
+      "milestones": 85,
+      "findings": 57,
+      "activity": 56
     }
   },
   "link_allowlist": [
@@ -247,6 +248,7 @@
     "lead-inclusive-hit.json",
     "lead-passt-cap2.json",
     "lead-cap2-promise.json",
-    "lead-vocal-specialist.json"
+    "lead-vocal-specialist.json",
+    "lead-vocal-validation.json"
   ]
 }

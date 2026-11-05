@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "lead-vocal-specialist-20261105",
-  "updated_at": "2026-11-05T19:32:56.180124+08:00",
+  "checkpoint": "lead-vocal-validation-labels-20261105",
+  "updated_at": "2026-11-05T20:17:40.134363+08:00",
   "title": "Recognizer Research",
-  "phase": "Vocal specialist passes exposed-development gate; no expansion",
-  "summary": "AI practitioner-selected vocal specialist plus cached native presence reaches 7/7 clear hits versus 4/7 for both controls: three rescues and zero regressions each. Shared/partial 0/1 and unknown training overlap limit claims; no broad evaluation or lead-app changes.",
+  "phase": "Small confirmation awaiting eight blind manual references",
+  "summary": "Previous vocal-specialist result remains 7/7 exposed clear clips versus 4/7 for both controls. Eight source/artist-disjoint blind clips are prepared for manual lead judgments; no validation scores exist. Prior presence-data exposure and baseline cache-isolation readiness remain explicit.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "lead-vocal-validation-labels-20261105",
+      "title": "Targeted blind-eight review prepared; confirmation awaiting human references",
+      "status": "awaiting-manual-labels",
+      "detail": "Eight ten-second clips from eight artists, disjoint from the ten-clip lead-policy pilot. Earlier presence experiments used the audio; no pristine-independence claim. Manual lead labels pending and no new-eight model predictions. Offline playback, label export and source provenance verified; native-baseline cache isolation still requires engineering.",
+      "artifact": "lead-vocal-validation.json"
+    },
     {
       "id": "lead-vocal-specialist-20261105",
       "title": "Selected vocal specialist passes small exposed max-two screen",
@@ -598,6 +605,11 @@
   ],
   "findings": [
     {
+      "title": "Fresh lead judgments remain necessary; presence labels are not lead truth",
+      "detail": "Available manual-lead material was reused or did not provide a ready fresh vocal/nonvocal roster. Owner approved eight blinded judgments. Artist-disjoint clip selection does not erase prior presence-model exposure or unknown pretraining overlap.",
+      "source": "lead-vocal-validation.json"
+    },
+    {
       "title": "Vocal-specialist admission shows bounded practical promise, not independent validation",
       "detail": "The task-focused gate recovers missing Vocal without losing any of three tested clear nonvocal leads. Voice presence still is not leadership; a missed partial positive and small reused roster prevent generalization. No measured reliability gain.",
       "source": "lead-vocal-specialist.json"
@@ -983,7 +995,7 @@
     }
   ],
   "blockers": [
-    "Broad lead evaluation and adoption remain BLOCKED: new vocal-specialist policy passes only seven reused development clips; head/backbone pretraining overlap unestablished, partial known-positive 0/1. Independent small confirmation remains unadmitted. Earlier PaSST and fixed dual policies stay stopped.",
+    "Small confirmation awaits eight human lead judgments and research-only baseline cache isolation/parity. Clips are artist/track-disjoint from lead-policy development but previously used for presence research; pretraining overlap unknown. Prior 7/7 is development only; broad evaluation/adoption remain blocked.",
     "Full original123role annotations reduce to78rows under current non-ND training policy, with zero exact pairs supporting both role directions across artist-disjoint fit/check. Metadata is not admitted audio; this is the controlled diagnostic requirement, not a universal role-learning rule.",
     "Manual temporal-data join has only 12 balanced windows/three songs/two artists; each exact instrument pair belongs to one artist. No artist-disjoint counterbalanced training/check bank or audio admission.",
     "Fixed-pair role ranking, predominant-instrument recognition and full-app recording-failure incidence remain different endpoints; no demonstrated below30% installed lead failure.",
@@ -993,7 +1005,7 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Retain frozen vocal-specialist policy; seek separately admitted small independent source-grouped manual confirmation,including instrumental leads with vocals present. Do not tune on current results or automatically expand.",
+    "Collect and seal the eight blind manual lead judgments; verify native-baseline cache isolation and parity, then run the unchanged max-two candidate against both controls once. Do not infer ground truth from presence labels or start broad evaluation.",
     "A next controlled role-architecture diagnostic needs admitted counterbalanced source/artist groups and a frozen role-specific comparison to strongest/audio-blind/temporal controls.",
     "Assess a compact contextual/relative-role component using an existing encoder before considering a wholly new backbone; this is a proposal, not an approved fit or gain.",
     "Any actual new experiment, acquisition, install or application integration requires a fresh scoped promise/resource/rights gate."
@@ -1031,6 +1043,10 @@
     }
   ],
   "activity": [
+    {
+      "date": "2026-11-05T20:17:40.134363+08:00",
+      "action": "Audited exact manual sources and native baseline readiness, prepared eight owner-approved blind clips with offline audio/form/export checks. Waiting human references; no new candidate/control predictions, validation scores, tuning, app adoption or broad benchmark."
+    },
     {
       "date": "2026-11-05T19:32:56.180124+08:00",
       "action": "Obtained native producer-role AI choice and clarification, completed isolated setup after owner-approved resource recovery, froze one output policy and 13 tests, ran existing ten clips once: 7/7 clear. No tuning, new audio, training, app changes or broader evaluation."

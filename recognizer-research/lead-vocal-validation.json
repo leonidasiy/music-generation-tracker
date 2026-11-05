@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-05T20:17:40.134363+08:00",
+  "status": "AWAITING_MANUAL_LEAD_REFERENCES",
+  "scope": "Targeted eight-clip blind manual review after owner-requested small confirmation; not a new model-accuracy result.",
+  "previous_development": {
+    "clear_hits": 7,
+    "clear_n": 7,
+    "both_capped_control_hits": 4,
+    "independent_validation": false
+  },
+  "blind_packet": {
+    "clips": 8,
+    "seconds_per_clip": 10,
+    "distinct_artists": 8,
+    "distinct_tracks": 8,
+    "artist_track_hash_disjoint_from_owner10": true,
+    "prior_broader_presence_experiment_exposure": true,
+    "original_presence_annotations": "Used for selection only, not lead truth or vocal absence.",
+    "human_lead_labels_received": 0,
+    "new_clip_model_predictions_run": 0,
+    "audio_changed": false,
+    "offline_audio_export_workflow_tested": true
+  },
+  "selection": "Deterministic metadata-only stratification; four voice-presence and four instrument-presence strata. No predictions/lead labels used in selection.",
+  "validation": {
+    "completed": false,
+    "scores": null,
+    "candidate_policy_changed": false,
+    "maximum_output_names": 2,
+    "manual_labels_required": true,
+    "baseline_cache_isolation_and_native_parity_required": true,
+    "broad_benchmark_started": false,
+    "application_changed": false
+  },
+  "limits": [
+    "These clips are disjoint from the lead-policy pilot but were already used in broader instrument-presence research; not a pristine independent benchmark.",
+    "Model pretraining and composition overlap remain unestablished. Presence labels do not substitute for human lead judgments.",
+    "Human reference collection and engineering readiness are not measured model performance or reliability gains."
+  ],
+  "next": "Obtain the eight manual lead judgments, seal references, verify research-only native-baseline cache isolation and parity, then admit one unchanged capped paired screen.",
+  "sources": [
+    {
+      "title": "Prior exposed-development result",
+      "url": "lead-vocal-specialist.json"
+    },
+    {
+      "title": "OpenMIC-2018 dataset and provenance",
+      "url": "https://doi.org/10.5281/zenodo.1432913"
+    }
+  ]
+}
