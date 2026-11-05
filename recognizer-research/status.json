@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "lead-inclusive-hit-20261105",
-  "updated_at": "2026-11-05T08:48:53.447410+00:00",
+  "checkpoint": "lead-cap2-promise-20261105",
+  "updated_at": "2026-11-05T17:22:50.856157+08:00",
   "title": "Recognizer Research",
-  "phase": "Lead-role readout stopped; architecture necessity not established",
-  "summary": "Final distinct readout4/8 versus strongest5/8 failed; independent reconstruction closed. Saved-map and full-role-source audits favor fixing the role/evaluation formulation before a new backbone; no new model experiment admitted.",
+  "phase": "Maximum-two output pilot failed; broader evaluation blocked",
+  "summary": "Owner requires at most two lead-candidate instruments. Fixed dual-top1 output policy hits3/7clear clips versus4/7capped baselines;no broad evaluation or app change.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "lead-cap2-promise-20261105",
+      "title": "Maximum-two lead-output promise screen stopped",
+      "status": "stopped-no-expansion",
+      "detail": "Fixed role-top1 plus presence-top1 hits3/7clear clips versus4/7for both capped baselines. One-song coverage89.75%versus71.67%rolecap2and94.11%presence top2. Zero invalid/capviolations;no broader evaluation or app change. Earlier uncapped figures are historical.",
+      "artifact": "lead-cap2-promise.json"
+    },
     {
       "id": "lead-inclusive-hit-20261105",
       "title": "Practical lead-hit endpoint: actual multi-instrument outputs",
@@ -61,7 +68,7 @@
       "title": "Fixed MSCLAP transfer screen completed on new sources",
       "status": "complete",
       "evidence_type": "Original-mixture supplied-pair comparison; no training, no full-app claim",
-      "detail": "11/12\u219210/12;0wins/1regression;12valid,0missing/invalid. Frozen general replacement rejected; no tuning rescue."
+      "detail": "11/12→10/12;0wins/1regression;12valid,0missing/invalid. Frozen general replacement rejected; no tuning rescue."
     },
     {
       "id": "role-context-pilot-20261104",
@@ -89,7 +96,7 @@
       "title": "Lead versus accompaniment: first real pilot complete, fixed masking not promoted",
       "status": "complete",
       "evidence_type": "Exact-checkpoint waveform inference and saved-output reconstruction; exploratory, not broad confirmation or application adoption",
-      "detail": "Earlier first-pilot scope, before the later trained-Melody admission: All26local cases from11recordings and12fresh role-caption songs completed. On175.926timed developmentseconds, original\u2192fixedfusion top-one55.40\u219237.81%, exactsets33.56\u219223.61%, inclusion80.82\u219252.59%, F158.70\u219242.12%. Owner top-one3\u21924/7 but resampling-only also4/7; exactsets3\u21923/9, no-clearabstentions0\u21920/2. Fresh rolecaptions strict9/12 andnatural10/12, not arbitrary instrument accuracy;24pairedstyleobservations across12songs/11artists. Same candidates, prompts, policy and timing. No trained general-melody model, model fitting or application changes; tested heuristic stopped without expansion."
+      "detail": "Earlier first-pilot scope, before the later trained-Melody admission: All26local cases from11recordings and12fresh role-caption songs completed. On175.926timed developmentseconds, original→fixedfusion top-one55.40→37.81%, exactsets33.56→23.61%, inclusion80.82→52.59%, F158.70→42.12%. Owner top-one3→4/7 but resampling-only also4/7; exactsets3→3/9, no-clearabstentions0→0/2. Fresh rolecaptions strict9/12 andnatural10/12, not arbitrary instrument accuracy;24pairedstyleobservations across12songs/11artists. Same candidates, prompts, policy and timing. No trained general-melody model, model fitting or application changes; tested heuristic stopped without expansion."
     },
     {
       "id": "separation-smoke-20261104",
@@ -107,94 +114,94 @@
     },
     {
       "id": "btc-vocabulary-ceiling",
-      "title": "Exact BTC vocabulary ceiling \u2014 diagnostic, not recognition improvement",
+      "title": "Exact BTC vocabulary ceiling — diagnostic, not recognition improvement",
       "status": "complete",
       "evidence_type": "Checkpoint metadata enumeration plus independent saved-reference signature calculation",
       "detail": "Exact-vocabulary diagnostic complete on the same seven development recordings: perfect-timing strict-triad error floor 2.84% with 0/7 failures, versus actual BTC 27.50% with 3/7 failures. Vocabulary alone does not force the current triad-target miss. Full-quality floor 14.93% with 1/7 failures; no new recognition gain, inference or application change. Exact pinned checkpoint: 170 raw classes, 169 feasible emitted labels; X is rejected, not converted to N. Enumerative and independently implemented signature calculations agree. Root floor 0%. Severe guitar excerpt: triad floor 8.33% versus actual 75.31%, but full-quality floor 58.34%. Oracle labels use references and perfect timing, not a deployable selector. All seven remain exposed development cases."
     },
     {
       "id": "btc-private-seven-final",
-      "title": "Private BTC chord improvement \u2014 implementation and final verification complete",
+      "title": "Private BTC chord improvement — implementation and final verification complete",
       "status": "complete",
       "evidence_type": "Actual installed full-analyzer comparison, independent scoring, code review and guarded runtime/regression checks",
-      "detail": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% \u2192 19.84%; triad error 31.57% \u2192 27.50%; full-quality error 47.40% \u2192 39.18%. Triad failures 4/7 \u2192 3/7 (42.86%); severe 1/7 \u2192 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation."
+      "detail": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation."
     },
     {
       "id": "btc-actual-app-six",
-      "title": "BTC actual-app follow-up \u2014 six verified development pairs",
+      "title": "BTC actual-app follow-up — six verified development pairs",
       "status": "complete",
       "evidence_type": "Actual full-analyzer inference plus independent interval reconstruction",
-      "detail": "Six additional actual-app pairs: triad error 29.43% \u2192 21.26% (27.76% relative reduction); failed recordings 3/6 \u2192 1/6. Root error 25.36% \u2192 16.48%; full quality 37.54% \u2192 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 \u2192 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training."
+      "detail": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 → 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training."
     },
     {
       "id": "private-chord-option",
-      "title": "Private chord-quality option installed \u2014 final runtime resource-held",
+      "title": "Private chord-quality option installed — final runtime resource-held",
       "status": "blocked",
       "evidence_type": "Independent cached-output audit; real chord-path smoke before cache hardening; full local API/UI fallback verification",
-      "detail": "Cached contrasting eight-recording check: triad error 33.44% \u2192 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 \u2192 2/8; guitar full-quality error worsens 53.32% \u2192 55.75%, severe 1 \u2192 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights. Earlier real 22.32-second app chord-path call took 4.77 seconds versus 0.67 seconds baseline; roots/N/X preserved. Those are one-clip timings before cache hardening, not full-application throughput. Final cache-hardened code passes independent code review; host memory warning prevents claiming final native-path waveform completion."
+      "detail": "Cached contrasting eight-recording check: triad error 33.44% → 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights. Earlier real 22.32-second app chord-path call took 4.77 seconds versus 0.67 seconds baseline; roots/N/X preserved. Those are one-clip timings before cache hardening, not full-application throughput. Final cache-hardened code passes independent code review; host memory warning prevents claiming final native-path waveform completion."
     },
     {
       "id": "rwc-eight-chord-subset",
-      "title": "Eight vocal full-mix chord pairs \u2014 promising scoped gain",
+      "title": "Eight vocal full-mix chord pairs — promising scoped gain",
       "status": "complete",
       "evidence_type": "Fresh two-arm waveform inference, independent saved-output reconstruction",
-      "detail": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%\u219219.69% (32.91% relative reduction). Root error stays18.24%, root failures1\u21921/8; triad failures2\u21922/8, severe1\u21920. Eight valid pairs, no missing outputs. No production adoption. Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%\u219218.28% and failures1\u21922/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain."
+      "detail": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption. Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%→18.28% and failures1→2/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain."
     },
     {
       "id": "yourmt3-partial-146",
-      "title": "YourMT3 partial146 \u2014 worse on matched122; not promoted",
+      "title": "YourMT3 partial146 — worse on matched122; not promoted",
       "status": "complete",
       "evidence_type": "Deadline-stopped waveform run; independent saved-output reconstruction",
-      "detail": "Chords, complete64: root duration error21.63%\u219218.04% (16.59% relative reduction), root failures16\u219214/64; strict-triad error39.07%\u219233.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29\u219238 (23.77%\u219231.15%), severe5\u21929 (4.10%\u21927.38%). No production adoption. Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory. Partial run closure is not full295 evaluation completion."
+      "detail": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption. Do not launch the prepared remaining148 YourMT3 run: the observed matched hybrid is worse,22saved outputs fail validation, and no practical gain is demonstrated. Preserve every output. This is outcome-informed de-prioritization of an incomplete experiment, not a final295 rejection. Prioritize the task-trained chord candidate that has measured gains; next substantive work must address diverse independent evaluation and lawful integration, not another instrument threshold grid or speculative model inventory. Partial run closure is not full295 evaluation completion."
     },
     {
       "id": "yourmt3-waveform-smoke",
-      "title": "Historical YourMT3 waveform smoke \u2014 superseded by partial accuracy result",
+      "title": "Historical YourMT3 waveform smoke — superseded by partial accuracy result",
       "status": "complete",
       "evidence_type": "Real waveform plus silence, independent saved-artifact audit",
       "detail": "YourMT3+ private CPU raw-note adapter completed real ten-second music and matched silence inference. Strict655-key checkpoint loading succeeded; music103native notes, silence0notes. Ten batch-one segment calls across13channels; no sequence reached the256token cap. Runtime feasibility only: no accuracy gain or production adoption. Two-thread CPUFP32 supervised9.474s, sampled2.198GB groupRSS; music3.084s/silence1.380s warm inference, not full-song throughput. Native music decoder errors retained:13segment-tie merges and3missing onsets. Checkpoint hparams and bias tensors establish layer_norm despite rms filename. Minimal licensed legacy T5 tuple-cache core avoids changing installed Transformers; no training, new audio, paid service or production edits. Independent saved-artifact audit accepted38pins/audio and130EOS-bearing sequences. Optional nonempty task conditioning and complete upstream numerical equivalence untested; exposed singleclip is not diverse independent confirmation. Training-vocabulary collapsed/unsupported classes remain unknown, never negative. Code distribution/provenance and separately scoped adoption remain open."
     },
     {
       "id": "panns295-fixed-diagnostic",
-      "title": "PANNs295 completed \u2014 fixed candidate rejected",
+      "title": "PANNs295 completed — fixed candidate rejected",
       "status": "complete",
       "evidence_type": "Real waveform inference plus independent full saved-output reconstruction",
-      "detail": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55\u2192133/292; severe >70% 12\u219256; missing/invalid0. Historical any-error73\u2192164 and \u22652-error11\u219247 are different endpoints, not contradictory results. FP44\u21923 but FN42\u2192218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption. Same strongest fixed PaSST/fusion predictions, unchanged295intended/292scorable,703known/4902unknown pairs. The historical73/292 anchor meant any observed error; the before-outcomes endpoint amendment reconciles it to55/292 at >30% without changing predictions, denominators or exclusions. Unknown never negative. Primary12rescues/90regressions; continuous errors worsen121/improve18. All19classes,101overlapping raw publisher genre panels plus source/split/instrumental and295artist groups are retained privately; overlapping tags do not establish broad independent coverage. Audit checks986frozenfiles/295audio/295outputs/155465source-score rows and all421panels.25tests; one model load,77.54s guarded worker, sampled1.12GB group RSS, owned-group cleanup verified. No training, downloads, paid services, original-app edits or broad confirmation."
+      "detail": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption. Same strongest fixed PaSST/fusion predictions, unchanged295intended/292scorable,703known/4902unknown pairs. The historical73/292 anchor meant any observed error; the before-outcomes endpoint amendment reconciles it to55/292 at >30% without changing predictions, denominators or exclusions. Unknown never negative. Primary12rescues/90regressions; continuous errors worsen121/improve18. All19classes,101overlapping raw publisher genre panels plus source/split/instrumental and295artist groups are retained privately; overlapping tags do not establish broad independent coverage. Audit checks986frozenfiles/295audio/295outputs/155465source-score rows and all421panels.25tests; one model load,77.54s guarded worker, sampled1.12GB group RSS, owned-group cleanup verified. No training, downloads, paid services, original-app edits or broad confirmation."
     },
     {
       "id": "panns-runtime-feasibility",
-      "title": "Historical PANNs CPU feasibility \u2014 superseded by295 diagnostic",
+      "title": "Historical PANNs CPU feasibility — superseded by295 diagnostic",
       "status": "complete",
       "evidence_type": "Two real waveform forwards and independent prelaunch engineering review",
       "detail": "PANNs Cnn14 isolated CPU adapter exercised on one existing ten-second waveform plus silence: two real forwards, 527 raw labels mapped to19 coarse classes; silence0 positives at fixed raw0.5 threshold. Model/decode startup14.25s, waveform forward0.099s, silence0.071s, sampled peak1.10GB. Runtime feasibility only: the music clip also has0 positives, so no recognition benefit is established. No fitting, new audio, paid service or production edits. Exact publisher327428481-byte checkpoint/checksum and CC-BY4.0/MIT terms, official527-label ordering and34 alias entries verified. Independent prelaunch review first blocked absent frozen-audio hash enforcement despite15passingtests; actual behavioral failure retained, corrected successor and fresh16tests accepted before inference. Historical404label lookup and180s download-tool timeout preserved; verified206range completion matched full publisher checksum, not a pressure restart. No unsafe pickle or wrapper auto-download. Single-clip warm latency is not corpus/full-song throughput or broad confirmation."
     },
     {
       "id": "practical-native-complete64",
-      "title": "Complete64 native comparison \u2014 not promoted",
+      "title": "Complete64 native comparison — not promoted",
       "status": "complete",
       "evidence_type": "41 new waveform runs+23 exact reuse; independent interval/receipt review",
-      "detail": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16\u219214, inversion-forgiven stricttriad33\u219227, historical bass-inclusive37\u219231 and expandedquality45\u219239. Root severe3\u21921; stricttriad severe17\u219212. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254\u219218.0370%, stricttriad39.0747\u219233.8573%. Historical boundary flags12\u219234 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates."
+      "detail": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254→18.0370%, stricttriad39.0747→33.8573%. Historical boundary flags12→34 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates."
     },
     {
       "id": "practical-native-partial64",
-      "title": "Historical23/64 storage stop \u2014 superseded by complete64",
+      "title": "Historical23/64 storage stop — superseded by complete64",
       "status": "complete",
       "evidence_type": "15 new waveform inferences plus8 exact reused outputs; independently reconstructed partial diagnostic",
-      "detail": "Historical immutable stop; remaining41 completed in separately reviewed successor. Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2\u21921, strict-triad9\u21924, historical bass-inclusive10\u21925 and expanded-quality13\u219211 at >30% error (1e-9 comparison epsilon). Root severe1\u21920 and strict-triad severe2\u21921 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20\u2013100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
+      "detail": "Historical immutable stop; remaining41 completed in separately reviewed successor. Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20–100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
     },
     {
       "id": "practical-two-stage-pilot",
       "title": "Task-trained recognizer: promising pilot and working memory-efficient implementation",
       "status": "complete",
       "evidence_type": "Previously executed CPU waveform inference, actual native-path parity and saved-output paired comparison; no inference in this publication",
-      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%\u219220.09%, root failures0\u21920/7; strict triad34.45%\u219224.60%, failures4\u21922/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0\u21920/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; historical23/64 batch stopped on storage and has now been superseded by complete64. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; historical23/64 batch stopped on storage and has now been superseded by complete64. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
     },
     {
       "id": "practical-btc-pilot",
-      "title": "Working alternate chord recognizer: actual inference complete\u2014not promoted",
+      "title": "Working alternate chord recognizer: actual inference complete—not promoted",
       "status": "complete",
       "evidence_type": "New CPU waveform inference on a fixed7-recording diagnostic; no training",
-      "detail": "Official170-label BTC adapter,7/7 recordings,80 native attention/output-block forwards; no missing model outputs. Root recording failures0\u21921/7 while strict triad4\u21923/7; pooled duration improves but primary root regression blocks promotion. Exposed narrow diagnostic, not broad confirmation or adoption."
+      "detail": "Official170-label BTC adapter,7/7 recordings,80 native attention/output-block forwards; no missing model outputs. Root recording failures0→1/7 while strict triad4→3/7; pooled duration improves but primary root regression blocks promotion. Exposed narrow diagnostic, not broad confirmation or adoption."
     },
     {
       "id": "practical-solution-pivot",
@@ -205,17 +212,17 @@
     },
     {
       "id": "coarse19",
-      "title": "Coarse19 independently reconstructed\u2014not promoted",
+      "title": "Coarse19 independently reconstructed—not promoted",
       "status": "complete",
       "evidence_type": "299 saved predictions;897 armsets;321 panel-arm metrics; independent numerical review",
       "detail": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation."
     },
     {
       "id": "union-suppression",
-      "title": "Union suppression independently reconstructed\u2014not promoted",
+      "title": "Union suppression independently reconstructed—not promoted",
       "status": "complete",
       "evidence_type": "Standalone raw-cache, partial-label and107-panel reconstruction",
-      "detail": "Fixed eight-union suppression independently reconstructed: 73\u219266 failures/292 scorable (2.397pp), severe11\u219211, missing0; nine rescues/two regressions, FP44\u219233 but FN42\u219245. Below the5pp practical alert gate; exposed development only, not promoted or adopted."
+      "detail": "Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted."
     },
     {
       "id": "audit-design",
@@ -292,7 +299,7 @@
       "title": "Local training pilot: completed, no gain",
       "status": "complete",
       "evidence_type": "Actual fits, exact saved-result verification and independent technical closure",
-      "detail": "151 recordings; 24 distinct final model/fold/seed fits. Frozen mean error 25.02%, linear 37.19%, width32 MLP 35.41\u201337.45%. Fifteen tests pass; 2,265 predictions and 45 summaries verified. No production model change or broad musical validity is claimed."
+      "detail": "151 recordings; 24 distinct final model/fold/seed fits. Frozen mean error 25.02%, linear 37.19%, width32 MLP 35.41–37.45%. Fifteen tests pass; 2,265 predictions and 45 summaries verified. No production model change or broad musical validity is claimed."
     },
     {
       "id": "diverse-final-run",
@@ -324,7 +331,7 @@
     },
     {
       "id": "below30-feasibility",
-      "title": "Sub-30% target assessed\u2014not achieved",
+      "title": "Sub-30% target assessed—not achieved",
       "status": "complete",
       "evidence_type": "Saved-output arithmetic, fresh primary-source/benchmark review and independent read-only critique",
       "detail": "Twenty research questions; four headroom tests; 2,265 saved selector predictions across 15 arm/seed groups rescored. Target: at most 45 failures in 151 recordings, requiring 14 net corrections. The source application and historical predictions are unchanged; no model downloads, training or inference."
@@ -334,7 +341,7 @@
       "title": "Frozen-backbone pilot: controls and runtime gate passed",
       "status": "complete",
       "evidence_type": "Executed numerical/API tests, synthetic smoke, checksum verification and independent read-only review",
-      "detail": "Advance envelope: 1\u20132 hours estimated, 3-hour stop, 1.25 GiB file cap, 30 GiB free reserve, 6 GiB process-memory stop. Eight-fold downloads blocked; exact-author-checksummed single_final0 acquired from an immutable mirror. CASM installation deferred for absent explicit decoder licence. Actual arms: direct and librosa DP; no retraining."
+      "detail": "Advance envelope: 1–2 hours estimated, 3-hour stop, 1.25 GiB file cap, 30 GiB free reserve, 6 GiB process-memory stop. Eight-fold downloads blocked; exact-author-checksummed single_final0 acquired from an immutable mirror. CASM installation deferred for absent explicit decoder licence. Actual arms: direct and librosa DP; no retraining."
     },
     {
       "id": "frozen-beat-outcome",
@@ -453,7 +460,7 @@
       "title": "Learned calibration implemented and rejected",
       "status": "complete",
       "evidence_type": "Real295-source inference, three fitted models, prospective34-case artist-held-out test",
-      "detail": "Calibration failed12/28\u219213/28 observed-record failures;FN7\u21922 butFP7\u219212. Working code retained; no adoption. Independent negative-experiment review approved."
+      "detail": "Calibration failed12/28→13/28 observed-record failures;FN7→2 butFP7→12. Working code retained; no adoption. Independent negative-experiment review approved."
     },
     {
       "id": "passt-runtime",
@@ -467,14 +474,14 @@
       "title": "PaSST instrument-presence comparison completed",
       "status": "complete",
       "evidence_type": "Actual matched inference and independent saved-output reconstruction",
-      "detail": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12\u21927; false positives 8\u21928; severe 1\u21921; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320\u219297/320 failures, FN64\u219232 but FP55\u219279; keep the candidate experimental, not default."
+      "detail": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default."
     },
     {
       "id": "passt-integration",
       "title": "Research-copy integration exercised; default adoption deferred",
       "status": "complete",
       "evidence_type": "10integration tests,49-cache parity,227tests/9skips per source copy and real paired full-report smoke",
-      "detail": "Actual application unchanged. Corrected patch preserves current-global section subset. Wider329historical cases show FP55\u219279; keep candidate experimental. Longer inputs retain baseline; full-track validation and explicit production integration scope remain separate."
+      "detail": "Actual application unchanged. Corrected patch preserves current-global section subset. Wider329historical cases show FP55→79; keep candidate experimental. Longer inputs retain baseline; full-track validation and explicit production integration scope remain separate."
     },
     {
       "id": "threshold-tuning-root-scope",
@@ -488,7 +495,7 @@
       "title": "PaSST threshold/blend search completed",
       "status": "complete",
       "evidence_type": "46cached-score arms;5artist-grouped outerfolds;19partial-referenceclasses",
-      "detail": "88/292\u219273/292developmentfailures; selected headthreshold0.30/headweight0.75. New49inspecteddiagnostic15/47fails, worse thanfixed14/47; no default adoption."
+      "detail": "88/292→73/292developmentfailures; selected headthreshold0.30/headweight0.75. New49inspecteddiagnostic15/47fails, worse thanfixed14/47; no default adoption."
     },
     {
       "id": "chord-soft-history-executed",
@@ -516,7 +523,7 @@
       "title": "Richer root-first chord vocabulary executed",
       "status": "complete",
       "evidence_type": "Fixed181labels; identical cached logits;3content-family sensitivity",
-      "detail": "Expanded full-pitch error59.09%\u219251.42%; strict failures26/60remain above target. Rootfirst matches priorrawroot; no new acoustic model."
+      "detail": "Expanded full-pitch error59.09%→51.42%; strict failures26/60remain above target. Rootfirst matches priorrawroot; no new acoustic model."
     },
     {
       "id": "strict-multiclass-training",
@@ -577,6 +584,11 @@
   ],
   "findings": [
     {
+      "title": "Complementary two-slot output did not improve the small clip packet",
+      "detail": "Against cappedrole baseline:0rescues/1regression;againstpresence top2:1rescue/2regressions. The one-song benefit doesnot establish broad promise. Ownermax2cap and promise-before-expansion gate supersede earlier long-list interpretation.",
+      "source": "lead-cap2-promise.json"
+    },
+    {
       "title": "Inclusive lead coverage differs from exclusive role identification",
       "detail": "Direct native-report joins verify actual emitted lists,not supplied pairs. Owner native lists average4.43,max8; one-song native section lists average5.56,max11. Seven clear recordings and one exposed song cannot establish broad generalization. Earlier failed methods stay failed under matched inclusive comparisons.",
       "source": "lead-inclusive-hit.json"
@@ -606,25 +618,25 @@
       "title": "Manual pitch narrows the label gap, but does not provide a usable training bank",
       "detail": "Positive reviewed pitch supports another annotated melodic line, not general accompaniment or audibility in the final mix. The resulting 12 balanced windows cover World/Folk and Jazz only; every exact pair has only one artist, so changing the split cannot supply independent same-pair fit/check support.",
       "evidence_type": "Executed deterministic metadata join; source-provenance audit",
-      "confidence": "MEDIUM \u2014 narrow data-readiness evidence, not model performance",
+      "confidence": "MEDIUM — narrow data-readiness evidence, not model performance",
       "source": "Temporal role-data join, 5 November 2026"
     },
     {
       "title": "Corrected TinyMU result beats silence narrowly but fails the regression gate",
       "detail": "Eight exposed songs/eight artists/eight leader categories: original 4/8, TinyMU 5/8, silence 4/8; three corrections and two regressions. Native-prefix correction supersedes the original unpadded silence result. This small supplied-pair development gain is not broad or actual-app validation. The audit used Transformers 4.57.6 rather than the author-pinned 4.46.3.",
       "evidence_type": "Actual CPU inference with corrected native-prefix contract; independent saved-output reconstruction",
-      "confidence": "MEDIUM \u2014 small exposed-development evidence",
+      "confidence": "MEDIUM — small exposed-development evidence",
       "source": "Corrected contextual-role screen, 4 November 2026"
     },
     {
       "title": "Earlier narrow flute gain did not transfer as a general replacement",
-      "detail": "New12source/9artist check: top-one91.67%\u219283.33%; piano4/4\u21923/4, other supported leader panels unchanged. Zero new correct cases; no model adoption.",
+      "detail": "New12source/9artist check: top-one91.67%→83.33%; piano4/4→3/4, other supported leader panels unchanged. Zero new correct cases; no model adoption.",
       "evidence_type": "Saved paired original-mixture screen, 12 new crops / 9 artists; not full-app validation",
-      "confidence": "MEDIUM \u2014 scoped experimental evidence",
+      "confidence": "MEDIUM — scoped experimental evidence",
       "source": "New-source MSCLAP screen aggregate"
     },
     {
-      "title": "Historical role-context pilot \u2014 Raw scorer improvement is explained by a matching audio-blind control",
+      "title": "Historical role-context pilot — Raw scorer improvement is explained by a matching audio-blind control",
       "detail": "Check set: 12 songs from 8 other artists. Original checkpoint ranking: 7/12; both trained role models: 11/12; audio-blind role prior: 11/12. Four raw ranking errors corrected, none introduced; but zero gain above the prior, with identical decisions. This does not establish acoustic-role learning or application improvement.",
       "evidence_type": "Actual 33-song role adaptation and saved-output paired-control reconstruction",
       "confidence": "Scoped exploratory outputs; sourcebias and pretrainedexposure unresolved",
@@ -639,21 +651,21 @@
     },
     {
       "title": "Rejected method is permanently locked against retries",
-      "detail": "LEAD-NEG-001: fixed harmonic-salience mask/fusion top-one55.40\u219237.81%, exact33.56\u219223.61%, F158.70\u219242.12% on175.926exposedseconds. Do not revisit mask/threshold/path/fusion variants, renamed filtering, or bigger benchmark. Explicit owner approval plus materially new evidence required to reopen the rejected family. Failure records/source-score pins remain private and preserved.",
+      "detail": "LEAD-NEG-001: fixed harmonic-salience mask/fusion top-one55.40→37.81%, exact33.56→23.61%, F158.70→42.12% on175.926exposedseconds. Do not revisit mask/threshold/path/fusion variants, renamed filtering, or bigger benchmark. Explicit owner approval plus materially new evidence required to reopen the rejected family. Failure records/source-score pins remain private and preserved.",
       "evidence_type": "Negative experimental result and owner-requested persistent admission gate",
       "confidence": "Verified scoped negative; does not reject trained general melody or contextual-role learning",
       "source": "Lead-role failure register,4November2026"
     },
     {
       "title": "Different trained general-melody model passes upstream contour screen only",
-      "detail": "Actual pretrained MSNet general-melody CPU inference: rawpitchaccuracy80.49%, voicingrecall90.24%, overallpitch74.90%; flute-led63.49%, violin-led85.03%. One exposed World/Folk recording,30,515predictedframes/30,516referenceframes including one leadingunmatchedunvoicedreference. Voicingfalsealarm44.90%(flute50.77%)remainsweak. No instrumentpredictions: pitch80.49% is not55.40\u219280.49%appgain. Existingmixtureunchanged; no audio masks/fusion, appintegration or actualappoffonrun.",
+      "detail": "Actual pretrained MSNet general-melody CPU inference: rawpitchaccuracy80.49%, voicingrecall90.24%, overallpitch74.90%; flute-led63.49%, violin-led85.03%. One exposed World/Folk recording,30,515predictedframes/30,516referenceframes including one leadingunmatchedunvoicedreference. Voicingfalsealarm44.90%(flute50.77%)remainsweak. No instrumentpredictions: pitch80.49% is not55.40→80.49%appgain. Existingmixtureunchanged; no audio masks/fusion, appintegration or actualappoffonrun.",
       "evidence_type": "Pinned pretrained model execution plus official pitch-reference reconstruction",
       "confidence": "Upstream one-song signal only; independent transfer, attribution and broad genres unresolved",
       "source": "Trained-melody admission,4November2026"
     },
     {
       "title": "Fixed melody-mask fusion worsens the paired timed endpoint",
-      "detail": "Original\u2192fixedfusion top-one55.40\u219237.81%, exactsets33.56\u219223.61%, F158.70\u219242.12% on175.926seconds fromoneexposeddevelopmentrecording. Sustained-leader top-one66.31\u219246.09%; not merely handover errors. Mask and resampling-only controls both expose preprocessing regressions. No promotion.",
+      "detail": "Original→fixedfusion top-one55.40→37.81%, exactsets33.56→23.61%, F158.70→42.12% on175.926seconds fromoneexposeddevelopmentrecording. Sustained-leader top-one66.31→46.09%; not merely handover errors. Mask and resampling-only controls both expose preprocessing regressions. No promotion.",
       "evidence_type": "Direct paired experimental inference and saved-feature arithmetic",
       "confidence": "Verified scoped outputs; general melody conditioning and broad transfer remain untested",
       "source": "Lead-role first pilot,4November2026"
@@ -674,35 +686,35 @@
     },
     {
       "title": "Lower root and chord errors; recording-failure target remains unmet",
-      "detail": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% \u2192 19.84%; triad error 31.57% \u2192 27.50%; full-quality error 47.40% \u2192 39.18%. Triad failures 4/7 \u2192 3/7 (42.86%); severe 1/7 \u2192 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation.",
+      "detail": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation.",
       "evidence_type": "Seven additional matched actual-app pairs plus same-recording final-code repeat",
       "confidence": "High for saved arithmetic; generalization unverified",
       "source": "Private BTC implementation and closeout, 2 November 2026"
     },
     {
       "title": "BTC improves the additional six-case application screen, but the broader failure target remains open",
-      "detail": "Six additional actual-app pairs: triad error 29.43% \u2192 21.26% (27.76% relative reduction); failed recordings 3/6 \u2192 1/6. Root error 25.36% \u2192 16.48%; full quality 37.54% \u2192 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 \u2192 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training.",
+      "detail": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 → 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training.",
       "evidence_type": "Six matched full-analyzer pairs, independent native/scoring audit",
       "confidence": "High for scoped arithmetic; generalization unverified",
       "source": "Actual-app follow-up, 1 November 2026"
     },
     {
       "title": "Contrasting cached subset retains triad gain, but not universal quality improvement",
-      "detail": "Triad 33.44% \u2192 28.63%; guitar 34.13% \u2192 32.57%; classical vocal/piano 33.32% \u2192 27.96%. Roots unchanged. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 \u2192 2/8; guitar full-quality error worsens 53.32% \u2192 55.75%, severe 1 \u2192 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights.",
+      "detail": "Triad 33.44% → 28.63%; guitar 34.13% → 32.57%; classical vocal/piano 33.32% → 27.96%. Roots unchanged. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights.",
       "evidence_type": "Independent computational reconstruction of all eight saved-output comparisons",
       "confidence": "High for saved subset arithmetic; generalization unverified",
       "source": "Private cached contrast audit, 1 November 2026"
     },
     {
       "title": "Chord full-mix transfer subset: actual classification numbers",
-      "detail": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%\u219219.69% (32.91% relative reduction). Root error stays18.24%, root failures1\u21921/8; triad failures2\u21922/8, severe1\u21920. Eight valid pairs, no missing outputs. No production adoption. Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%\u219218.28% and failures1\u21922/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain.",
+      "detail": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption. Vocal full mixes; Popular genre, Pop and J-pop subgenre labels, Japanese and English; four joint singer/language strata, not four genres. Candidate per-record RWC exposure unresolved. ACE publisher-test collection exposure disclosed. This is development transfer, not untouched confirmation. Selection fixed metadata-only before waveform/annotation outcomes; references fetched after prediction seal. Root, inversion-forgiven strict triad, historical bass-sensitive and expanded-quality metrics remain distinct. Explicit N scored; X and reference gaps unknown, never silently negative. Private NC research; distribution/commercial integration not cleared. Standalone candidate root error18.24%→18.28% and failures1→2/8 do not support replacing the root estimator. Root-locked hybrid was designed after those outcomes, using the same exposed references; this is exploratory, not independent confirmation, and not a new root-accuracy gain.",
       "evidence_type": "Exposed eight-clip RWC development transfer diagnostic",
       "confidence": "HIGH scoped arithmetic; independent generalization unconfirmed",
       "source": "RWC-SUBSET.md; rwc-chord-subset.json"
     },
     {
       "title": "Actual gains and regressions, not infrastructure counts",
-      "detail": "Chords, complete64: root duration error21.63%\u219218.04% (16.59% relative reduction), root failures16\u219214/64; strict-triad error39.07%\u219233.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29\u219238 (23.77%\u219231.15%), severe5\u21929 (4.10%\u21927.38%). No production adoption.",
+      "detail": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption.",
       "evidence_type": "Complete64 chord comparison and partial122 matched instrument comparison",
       "confidence": "HIGH scoped arithmetic; generalization unconfirmed",
       "source": "PROGRESS.md; progress-numbers.json; full64-complete.json"
@@ -716,7 +728,7 @@
     },
     {
       "title": "Released classifier reduces false positives but loses too much recall",
-      "detail": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55\u2192133/292; severe >70% 12\u219256; missing/invalid0. Historical any-error73\u2192164 and \u22652-error11\u219247 are different endpoints, not contradictory results. FP44\u21923 but FN42\u2192218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.",
+      "detail": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption.",
       "evidence_type": "Exposed matched development, not independent confirmation",
       "confidence": "HIGH scoped numeric audit; limited external validity",
       "source": "panns-matched.json; PRACTICAL-SOLUTIONS.md"
@@ -730,28 +742,28 @@
     },
     {
       "title": "Complete64: secondary quality gains, primary below gate",
-      "detail": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16\u219214, inversion-forgiven stricttriad33\u219227, historical bass-inclusive37\u219231 and expandedquality45\u219239. Root severe3\u21921; stricttriad severe17\u219212. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254\u219218.0370%, stricttriad39.0747\u219233.8573%. Historical boundary flags12\u219234 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates. Independent boundary-partition interval/receipt/official192 audit passed19768 assertions;1296 native events, all64 saved outputs, fixed strongest control and all23 reuse identities checked. Shared pinned label theory, independently implemented interval/aggregate arithmetic.15guard+2path-overlay+3privacy-projection tests pass. Canonical control/semantics and corrected scorer frozen before new outcomes; path-only relocation overlay finalized after inference began, before scoring. No training/download/paid service/production writes.",
+      "detail": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. Root/strict threshold rescues2/6 with0/0 threshold regressions; duration errors nevertheless worsen on23/15 recordings. Duration-pooled root21.6254→18.0370%, stricttriad39.0747→33.8573%. Historical boundary flags12→34 are not missing model outputs. Exposed60guitar across five style labels plus4 clustered classical songs; six total categories, not broad genre/audio-type or untouched confirmation. Noncommercial weights, unresolved code provenance and no-N output remain product gates. Independent boundary-partition interval/receipt/official192 audit passed19768 assertions;1296 native events, all64 saved outputs, fixed strongest control and all23 reuse identities checked. Shared pinned label theory, independently implemented interval/aggregate arithmetic.15guard+2path-overlay+3privacy-projection tests pass. Canonical control/semantics and corrected scorer frozen before new outcomes; path-only relocation overlay finalized after inference began, before scoring. No training/download/paid service/production writes.",
       "evidence_type": "Exposed diagnostic and independent saved-output reconstruction",
       "confidence": "HIGH scoped computation; LOW population transfer",
       "source": "full64-complete.json; PRACTICAL-SOLUTIONS.md"
     },
     {
       "title": "Observed partial progress, not full64 or qualified gain",
-      "detail": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2\u21921, strict-triad9\u21924, historical bass-inclusive10\u21925 and expanded-quality13\u219211 at >30% error (1e-9 comparison epsilon). Root severe1\u21920 and strict-triad severe2\u21921 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. Independent raw-interval/receipt audit3963checks plus120 aggregate checks and37 tests accepted the actual23 outputs and fixed64 ACE control; separate quality review42 tests/673 official-vocabulary events. Scientific review BLOCKS calling41 unattempted outcomes acoustic failures: original private all64 missing-as-wrong panels preserved, excluded from public performance. Corrected tested aggregate projection uses observed23 only and reports intended64/missing41 separately; unknown truth never negative. Shared label theory; exact full wrapper sealed later than canonical pre-outcome contract. Product gates remain noncommercial weights/code provenance/noN.",
+      "detail": "Native task-trained chord comparison is resource-incomplete:64 intended,23 available (8 reused+15 new),41 unattempted; no restart. Among23 observed pairs, root failures2→1, strict-triad9→4, historical bass-inclusive10→5 and expanded-quality13→11 at >30% error (1e-9 comparison epsilon). Root severe1→0 and strict-triad severe2→1 at >70%; observed model-output missing0. Native historical boundary-missing7 is not seven missing predictions. Lexicographic storage-limited exposed subset, not final64 performance or broad confirmation; no qualified gain or production adoption. Independent raw-interval/receipt audit3963checks plus120 aggregate checks and37 tests accepted the actual23 outputs and fixed64 ACE control; separate quality review42 tests/673 official-vocabulary events. Scientific review BLOCKS calling41 unattempted outcomes acoustic failures: original private all64 missing-as-wrong panels preserved, excluded from public performance. Corrected tested aggregate projection uses observed23 only and reports intended64/missing41 separately; unknown truth never negative. Shared label theory; exact full wrapper sealed later than canonical pre-outcome contract. Product gates remain noncommercial weights/code provenance/noN.",
       "evidence_type": "Independent saved-output reconstruction; exposed storage-limited subset",
       "confidence": "HIGH scoped computation; LOW generalization; incomplete final comparison",
       "source": "full64-partial.json; PRACTICAL-SOLUTIONS.md"
     },
     {
       "title": "Task-trained model improves this pilot without the BTC root regression",
-      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%\u219220.09%, root failures0\u21920/7; strict triad34.45%\u219224.60%, failures4\u21922/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0\u21920/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance. Expanded-quality failures remain5/7; no N class, commercial weight restriction and code-provenance conflict remain explicit.",
+      "detail": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance. Expanded-quality failures remain5/7; no N class, commercial weight restriction and code-provenance conflict remain explicit.",
       "evidence_type": "Fixed seven-case exposed paired experiment",
       "confidence": "HIGH scoped computational evidence:75 original audit checks plus573 saved-evidence recovery checks; not independent model execution or broad confirmation",
       "source": "PRACTICAL-SOLUTIONS.md; autonomous-summary.json"
     },
     {
       "title": "Lower failure count is insufficient when severe errors rise",
-      "detail": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. Global-relative27rescues/16regressions; source-test18\u219219failures and3\u21925severe.",
+      "detail": "Fixed coarse19 presence independently reconstructed: global73 / suppression66 / coarse62 failures per292 scorable recordings; severe11 /11 /14 and missing0 in every arm. Coarse gains3.767pp versus global and1.370pp versus suppression miss the5pp gate; severe worsens. Different coarse vocabulary, not improved exact-subtype reporting. No promotion, production adoption or broad confirmation. Global-relative27rescues/16regressions; source-test18→19failures and3→5severe.",
       "evidence_type": "Independent aggregate reconstruction; exposed partial-label development",
       "confidence": "HIGH numerical scope only; broad confirmation unproven",
       "source": "COARSE.md and coarse-summary.json"
@@ -779,7 +791,7 @@
     },
     {
       "title": "PaSST hybrid: fewer observed-reference failed recordings",
-      "detail": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12\u21927; false positives 8\u21928; severe 1\u21921; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320\u219297/320 failures, FN64\u219232 but FP55\u219279; keep the candidate experimental, not default.",
+      "detail": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default.",
       "evidence_type": "Frozen local sparse-reference comparison, independently reconstructed",
       "confidence": "HIGH for scoped arithmetic; generalization unresolved",
       "source": "Matched comparison and independent outcome reconstruction,31Oct2026; local experimental evidence."
@@ -884,7 +896,7 @@
     },
     {
       "title": "Candidate availability is not selection performance",
-      "detail": "The earlier expanded bank contains a candidate within 8% for 149/151 recordings, but its reference-informed 1.32% oracle failure is NOT model performance. Actual incidence: linear 48.34%; MLP 47.68\u201349.01%. Fresh papers and benchmark trade-offs favor testing stronger frozen rhythm evidence before assuming decoder-only rescue.",
+      "detail": "The earlier expanded bank contains a candidate within 8% for 149/151 recordings, but its reference-informed 1.32% oracle failure is NOT model performance. Actual incidence: linear 48.34%; MLP 47.68–49.01%. Fresh papers and benchmark trade-offs favor testing stronger frozen rhythm evidence before assuming decoder-only rescue.",
       "evidence_type": "All saved selector seeds rescored; targeted academic/benchmark synthesis",
       "confidence": "HIGH for saved-output arithmetic; MEDIUM for research priority, no forecast",
       "source": "Selector incidence crosscheck and literature review,2026-10-27; eventF1scores are not recording-level8%failure rates."
@@ -915,11 +927,11 @@
       "detail": "Explore This! already learns a tatum grid and joint beat/downbeat metrical interpretations. Joint pulse/grid modeling alone is therefore not a sufficient novelty claim. Its reported limitations motivate candidates, but no local performance claim is replicated. The primary PDF and original reproduction-code commit were inspected.",
       "evidence_type": "Primary academic paper, official conference page and released source",
       "confidence": "HIGH on verified existence/overlap; local transfer unverified",
-      "source": "Kihlborg, Holzapfel and Schl\u00fcter, Explore This! (ISMIR 2026); https://arxiv.org/pdf/2610.14817 and https://github.com/CPJKU/explore_this"
+      "source": "Kihlborg, Holzapfel and Schlüter, Explore This! (ISMIR 2026); https://arxiv.org/pdf/2610.14817 and https://github.com/CPJKU/explore_this"
     },
     {
       "title": "Small learned selectors failed cross-corpus transfer",
-      "detail": "Pooled exact metadata BPM mean error increased from 25.017% frozen to 37.187% linear and 35.413\u201337.446% MLP. Above-50% error cases increased from 27/151 to 48/151 linear and 49\u201352/151 MLP. Lower medians for some arms did not compensate for worse tails. No learned checkpoint is promoted.",
+      "detail": "Pooled exact metadata BPM mean error increased from 25.017% frozen to 37.187% linear and 35.413–37.446% MLP. Above-50% error cases increased from 27/151 to 48/151 linear and 49–52/151 MLP. Lower medians for some arms did not compensate for worse tails. No learned checkpoint is promoted.",
       "evidence_type": "Actual training on opposite-corpus development folds; verified saved predictions",
       "confidence": "HIGH for this bounded numerical result; broad musical generalization unestablished",
       "source": "local selector pilot results, verification and independent technical closure, 2026-10-27; direct execution and technical review"
@@ -947,7 +959,7 @@
     }
   ],
   "blockers": [
-    "Practical lead coverage needs broader varied native-output validation; exact-pair counterbalancing blocks a role-learning diagnostic,not simple lead-hit evaluation. Current numbers are exposed cached outputs,not fresh app confirmation.",
+    "Broader varied-data lead evaluation is BLOCKED until a direction demonstrates promise with at most TWO outputs. Small saved-output dual-top1 screen fails;prior6/7and100%are uncapped historical results.",
     "Full original123role annotations reduce to78rows under current non-ND training policy, with zero exact pairs supporting both role directions across artist-disjoint fit/check. Metadata is not admitted audio; this is the controlled diagnostic requirement, not a universal role-learning rule.",
     "Manual temporal-data join has only 12 balanced windows/three songs/two artists; each exact instrument pair belongs to one artist. No artist-disjoint counterbalanced training/check bank or audio admission.",
     "Fixed-pair role ranking, predominant-instrument recognition and full-app recording-failure incidence remain different endpoints; no demonstrated below30% installed lead failure.",
@@ -957,7 +969,7 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Do not tune the stopped class-relevance readout or confidence router. No remaining-half run, generic annotation package or closed45packet refit.",
+    "Keep max2 output requirement;do not broaden evaluation or tune the stopped two-slot policy. Admit a materially different promising intervention before another frozen small screen.",
     "A next controlled role-architecture diagnostic needs admitted counterbalanced source/artist groups and a frozen role-specific comparison to strongest/audio-blind/temporal controls.",
     "Assess a compact contextual/relative-role component using an existing encoder before considering a wholly new backbone; this is a proposal, not an approved fit or gain.",
     "Any actual new experiment, acquisition, install or application integration requires a fresh scoped promise/resource/rights gate."
@@ -995,6 +1007,10 @@
     }
   ],
   "activity": [
+    {
+      "date": "2026-11-05T17:22:50.856157+08:00",
+      "action": "Froze and executed a small saved-output max2 policy screen with14test-first contracts;stopped fixeddual-top1 after failedpromisegate. No extra recordings evaluated,no new inference,fitting,downloads or app changes."
+    },
     {
       "date": "2026-11-05T08:48:53.447410+00:00",
       "action": "Executed owner-directed actual-output inclusive-lead-hit rescore and direct archived native-report provenance joins; preserved historical strict results and no-retry gates. No inference,fitting,downloads or app changes."
@@ -1035,7 +1051,7 @@
     {
       "time": "2026-11-04T20:35:43.491184+08:00",
       "title": "New-source MSCLAP comparison complete",
-      "action": "Both frozen scorers executed on all12 new source crops; 11/12\u219210/12,0wins/1regression; no production changes. MoE retained as future lead-first direction.",
+      "action": "Both frozen scorers executed on all12 new source crops; 11/12→10/12,0wins/1regression; no production changes. MoE retained as future lead-first direction.",
       "status": "complete",
       "result": "Frozen general replacement rejected. Future MoE remains untested; lead-role proof required before cross-task generalization."
     },
@@ -1079,31 +1095,31 @@
       "time": "2026-11-02T14:23:23.026000+00:00",
       "title": "Private BTC implementation and exact-final-code verification closed",
       "action": "Installed portable backend with gated launcher and honest fallback; completed guarded full-analyzer pairs, independent reconstruction and runtime tests.",
-      "result": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% \u2192 19.84%; triad error 31.57% \u2192 27.50%; full-quality error 47.40% \u2192 39.18%. Triad failures 4/7 \u2192 3/7 (42.86%); severe 1/7 \u2192 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation."
+      "result": "Private BTC chord implementation complete and final-code verified on seven additional actual-app pairs. Root error 25.04% → 19.84%; triad error 31.57% → 27.50%; full-quality error 47.40% → 39.18%. Triad failures 4/7 → 3/7 (42.86%); severe 1/7 → 1/7. No missing/invalid outputs. The below-30% recording-failure goal remains unmet. Same-input full-analyzer off/on runs exercised the actual installed backend, not research prediction replacement. Independent interval reconstruction agreed on 126 per-case values; final-code repeat preserved predictions in all fourteen arms across seven unique recordings. Private noncommercial opt-in only; ordinary default and hosted runtime unchanged. Exposed development evidence, not broad independent confirmation."
     },
     {
       "time": "2026-11-01T14:52:13.936987+00:00",
       "title": "Six-case actual-application BTC follow-up independently verified",
       "action": "One verified pilot plus five additional matched pairs, immutable scopes and resource guards.",
-      "result": "Six additional actual-app pairs: triad error 29.43% \u2192 21.26% (27.76% relative reduction); failed recordings 3/6 \u2192 1/6. Root error 25.36% \u2192 16.48%; full quality 37.54% \u2192 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 \u2192 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training."
+      "result": "Six additional actual-app pairs: triad error 29.43% → 21.26% (27.76% relative reduction); failed recordings 3/6 → 1/6. Root error 25.36% → 16.48%; full quality 37.54% → 27.73%. No missing or severe outputs. Exposed development evidence, not production adoption; broader twelve-case candidate-only triad failures remain 4/12 (33.33%). Current implemented root-preserving hybrid compared with pinned BTC-CL through the full analyzer, with one verified pilot reused and five new pairs. Same chord-input PCM and unchanged application sources; BTC replaces only the chord callable in memory. Independent separate interval sweep agrees on all six pairs. Two guitar excerpts, one classical vocal/piano excerpt, three full mixes. Full-mix strict-triad failures remain 1/3, and full-quality failures worsen 1/3 → 2/3. Guards completed below 3 GB at explicitly permitted warning pressure; no model downloads, installations or training."
     },
     {
       "time": "2026-11-01T09:06:42.663955+00:00",
       "title": "Private chord integration and contrasting cached check",
       "action": "Fixed decoder replay on eight cached recordings; installed a separate, explicitly acknowledged private application option.",
-      "result": "Cached contrasting eight-recording check: triad error 33.44% \u2192 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 \u2192 2/8; guitar full-quality error worsens 53.32% \u2192 55.75%, severe 1 \u2192 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights."
+      "result": "Cached contrasting eight-recording check: triad error 33.44% → 28.63% (14.37% relative reduction), roots unchanged at 24.95%. Optional private chord-quality integration installed; ordinary baseline retained. Final cache-hardened native startup is resource-blocked; full local upload/UI successfully served baseline fallback. Previously exposed development data, not independent confirmation. Four guitar recordings and four clustered classical vocal/piano recordings; classical dominates pooled duration. Triad failures remain 4/8 and severe 1/8; missing outputs 0. Full-quality severe cases rise 1 → 2/8; guitar full-quality error worsens 53.32% → 55.75%, severe 1 → 2/4. Current application emits major/minor/N/X rather than the research fixed181 baseline, so research percentages are not measured application-default gains. The option preserves current application roots/N/X/gaps. Noncommercial checkpoint terms and unresolved source provenance do not grant future commercial or redistribution rights."
     },
     {
       "time": "2026-11-01T08:25:09.663421+00:00",
       "title": "Eight full-mix chord comparisons completed",
       "action": "Selective CRC-verified waveform crops; baseline and memory-efficient native candidate; references only after predictions sealed.",
-      "result": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%\u219219.69% (32.91% relative reduction). Root error stays18.24%, root failures1\u21921/8; triad failures2\u21922/8, severe1\u21920. Eight valid pairs, no missing outputs. No production adoption."
+      "result": "Eight vocal full-mix clips: root-preserving hybrid reduces strict-triad duration error29.34%→19.69% (32.91% relative reduction). Root error stays18.24%, root failures1→1/8; triad failures2→2/8, severe1→0. Eight valid pairs, no missing outputs. No production adoption."
     },
     {
       "time": "2026-11-01T07:46:24.730334+00:00",
       "title": "Accuracy numbers surfaced; remaining-only losing run not launched",
       "action": "Scored146saved raw wrappers, separated124valid/22invalid, compared matched122scorable; preserved149missing. No new inference.",
-      "result": "Chords, complete64: root duration error21.63%\u219218.04% (16.59% relative reduction), root failures16\u219214/64; strict-triad error39.07%\u219233.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29\u219238 (23.77%\u219231.15%), severe5\u21929 (4.10%\u21927.38%). No production adoption."
+      "result": "Chords, complete64: root duration error21.63%→18.04% (16.59% relative reduction), root failures16→14/64; strict-triad error39.07%→33.86%. Instruments, partial:146/295 saved,124valid,22invalid,149missing; matched122 failures29→38 (23.77%→31.15%), severe5→9 (4.10%→7.38%). No production adoption."
     },
     {
       "time": "2026-11-01T07:00:52.329453+00:00",
@@ -1115,7 +1131,7 @@
       "time": "2026-11-01T05:14:38.193274+00:00",
       "title": "PANNs295 diagnostic independently reconstructed",
       "action": "294newforwards+1reuse; fixed raw0.5, unknown masks retained.",
-      "result": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55\u2192133/292; severe >70% 12\u219256; missing/invalid0. Historical any-error73\u2192164 and \u22652-error11\u219247 are different endpoints, not contradictory results. FP44\u21923 but FN42\u2192218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption."
+      "result": "Fixed PANNs Cnn14 released task head completed 295/295 exposed clips (294 new forwards, one exact reuse). Primary recording failures >30% worsen 55→133/292; severe >70% 12→56; missing/invalid0. Historical any-error73→164 and ≥2-error11→47 are different endpoints, not contradictory results. FP44→3 but FN42→218. Independent reconstruction rejects this fixed raw0.5 candidate; no qualified gain or production adoption."
     },
     {
       "time": "2026-11-01T04:22:02.672635+00:00",
@@ -1127,19 +1143,19 @@
       "time": "2026-11-01T03:27:13.285324+00:00",
       "title": "Remaining41 completed; native64 nonpromotion verified",
       "action": "Reviewed authoritative800MB successor, actual41waveforms, fixed64 scores and independent19768-assertion audit.",
-      "result": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16\u219214, inversion-forgiven stricttriad33\u219227, historical bass-inclusive37\u219231 and expandedquality45\u219239. Root severe3\u21921; stricttriad severe17\u219212. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. A separately scoped800MB successor preserved the old300MB storage-stop packet and all evidence, then completed41-only inference without restart. Prior17s administrative cap overrun retained, not erased. Current retained combined model packets about601MB and campaign about1.148GB before publication QA;3GB campaign/15GB free floor unchanged. Exact final resource/time receipt remains private."
+      "result": "Complete exposed native diagnostic:64/64 outputs,23 reused+41 new,0 missing/invalid. Against fixed ACE181 rootfirst, recording failures>30% are root16→14, inversion-forgiven stricttriad33→27, historical bass-inclusive37→31 and expandedquality45→39. Root severe3→1; stricttriad severe17→12. Root incidence improves3.125pp, below the existing5pp practical gate; no qualified primary gain or production adoption. HPSS remains deferred. A separately scoped800MB successor preserved the old300MB storage-stop packet and all evidence, then completed41-only inference without restart. Prior17s administrative cap overrun retained, not erased. Current retained combined model packets about601MB and campaign about1.148GB before publication QA;3GB campaign/15GB free floor unchanged. Exact final resource/time receipt remains private."
     },
     {
       "time": "2026-11-01T01:49:17.587599+00:00",
       "title": "Partial native waveform batch retained without restart",
       "action": "15 additional unchanged native inferences; all23 available outputs independently audited.",
-      "result": "The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20\u2013100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
+      "result": "The unchanged300MB packet gate refused the next case before invocation:291012608B retained +13670112B next-case/closure reserve exceeds300000000B. No overshoot, pressure restart, download, fit, paid service or production write. Existing native features made the original20–100MB additional-storage estimate inadequate for all56: freeze conservatively estimated651141008B total. All15 new successful predictions and earlier8 preserved; no acoustic exhaustion claim."
     },
     {
       "time": "2026-11-01T00:12:55.499048+00:00",
       "title": "Task-trained recognizer actually implemented and seven-case comparison completed",
       "action": "67MPE,7CRNN and7head evaluations; native stage-separated process lifecycle fixes memory stop; no training.",
-      "result": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%\u219220.09%, root failures0\u21920/7; strict triad34.45%\u219224.60%, failures4\u21922/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0\u21920/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
+      "result": "Fixed seven-case Two-Stage ACR pilot: root duration error25.26%→20.09%, root failures0→0/7; strict triad34.45%→24.60%, failures4→2/7. Root duration improves in both guitar and classical strata. Native stage-separated execution completes four long-song cases below1.50GB sampled group RSS after original paths stopped above2GB; exact short-control four-head parity. Exposed narrow pilot, not broad confirmation or application adoption. No primary root-failure benefit (0→0/7); exposed development numeric finding only, not a generally qualified practical gain. Historical seven-case lease restriction was superseded by the reviewed fresh-phase successor; current23/64 batch stopped on storage, not lease support. Curated aggregates only: no source/audio/annotation/event/weight redistribution; noncommercial weights and unresolved code rights block product clearance."
     },
     {
       "time": "2026-10-31T14:42:37.704208+00:00",
@@ -1169,7 +1185,7 @@
       "time": "2026-10-31T11:23:02.172706+00:00",
       "title": "Union suppression independent reconstruction completed",
       "action": "590 predictions,295 recordings,19 partial classes and107 panels verified without rerunning inference.",
-      "result": "Fixed eight-union suppression independently reconstructed: 73\u219266 failures/292 scorable (2.397pp), severe11\u219211, missing0; nine rescues/two regressions, FP44\u219233 but FN42\u219245. Below the5pp practical alert gate; exposed development only, not promoted or adopted."
+      "result": "Fixed eight-union suppression independently reconstructed: 73→66 failures/292 scorable (2.397pp), severe11→11, missing0; nine rescues/two regressions, FP44→33 but FN42→45. Below the5pp practical alert gate; exposed development only, not promoted or adopted."
     },
     {
       "time": "2026-10-31T10:13:46.748654+00:00",
@@ -1229,7 +1245,7 @@
       "time": "2026-10-27T07:51:00.682630+00:00",
       "title": "Local pilot budget communicated before fitting",
       "action": "Read-only resource, dependency and audio-header inventory; no model inference, training, acquisition or installation.",
-      "result": "Recommended small selector pilot: 1\u20132.5 hours, 256 MiB added-file cap, no new cloud fees or purchases. Runtime/storage ranges are provisional, not measured training throughput. Awaiting owner approval."
+      "result": "Recommended small selector pilot: 1–2.5 hours, 256 MiB added-file cap, no new cloud fees or purchases. Runtime/storage ranges are provisional, not measured training throughput. Awaiting owner approval."
     },
     {
       "time": "2026-10-27T08:22:50.576026+00:00",
@@ -1307,7 +1323,7 @@
       "time": "2026-10-31T01:22:06.266853+00:00",
       "title": "Actual instrumentation comparison and independent reconstruction complete",
       "action": "Frozen49record/29artist comparison,329historical head regressions, four null controls, independent reconstruction and real research-copy report/tests; no retraining or production edits.",
-      "result": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12\u21927; false positives 8\u21928; severe 1\u21921; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320\u219297/320 failures, FN64\u219232 but FP55\u219279; keep the candidate experimental, not default."
+      "result": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12→7; false positives 8→8; severe 1→1; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320→97/320 failures, FN64→32 but FP55→79; keep the candidate experimental, not default."
     }
   ],
   "artifacts": [
@@ -1773,6 +1789,7 @@
     }
   ],
   "limits": [
+    "Current max2results are new output-policy replay of exposed cached reports,not actual app off/on or broader confirmation. Seven clear clips plus ONE timed song;2unclear/1partial owner references separate. Current application output limit not changed.",
     "Latest8role recordings are exposed supplied-pair development with one recording per lead category; remaining8unattempted. Independent replay accepts saved relevance because raw activation/gradient tensors are absent. No broader genre or full-app reliability gain.",
     "Current lead-role evidence: corrected TinyMU screen is eight exposed reference-supplied pairs, not broad validation. Temporal join covers only annotated melodic sources and is not audio-admitted; absence of pitch remains unknown, not absence of an instrument.",
     "Current MSCLAP screen:12 confidence4 excerpts/9artists, reference-supplied present pairs; no role reversals, vocal/shared/no-lead coverage or pretraining-disjoint claim. Instrument panels are not genres.",
@@ -1780,14 +1797,14 @@
     "Lead-role prototype masking is not a validated melody model. A small owner top-one gain is matched by resampling alone; new caption-pair results cannot replace timed application-identity metrics.",
     "Vocabulary oracle floors are theoretical, not achieved recognition. Seven existing development excerpts, not seven new recordings. The severe guitar full-quality floor remains 58.34%.",
     "Current BTC implementation is private opt-in, not a default replacement. Latest seven-recording repeat adds no new cases. No broad independent target or commercial clearance claim.",
-    "Coarse19 changes reporting specificity and raises severe11\u219214; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
+    "Coarse19 changes reporting specificity and raises severe11→14; reject promotion despite62/292. Administrative publication budget extension does not authorize new model inference.",
     "Historical Complete64 chord roster:60 exposed solo-guitar recordings plus4 clustered classical songs; native outputs available64/64 after separately authorized remaining41 completion. The23/64 storage stop and earlier60-only chord analyses are historical. No broad or untouched final confirmation; root-only forgiveness does not forgive wrong quality.",
     "Thresholds/hyperparameters are tunable with development-onlyselection; publishedoldfixedthresholdexperiments remainunchanged.",
     "Deployed checkpoints, not second-by-second monitoring. Refresh after a milestone deployment.",
     "Synthetic controls test numerical behavior, not musical correctness.",
     "Old diagnostic recordings are not fresh confirmation material.",
     "CLPR remains the flagship. This is a proposed task-specific recognizer-qualification lane; rhythm/meter accuracy does not validate register or note-density constructs.",
-    "This local pilot uses only guitar/drum corpora and weak global BPM labels; it cannot satisfy the owner\u2019s final-run diversity requirement. The final diverse acquisition/training run is not started or budgeted.",
+    "This local pilot uses only guitar/drum corpora and weak global BPM labels; it cannot satisfy the owner’s final-run diversity requirement. The final diverse acquisition/training run is not started or budgeted.",
     "Scoring update: use above-tolerance incidence as the current headline; historical mean relative error is not the percentage of recordings that failed. The8%threshold is specific to this tempo benchmark, not a universal tolerance for chords/instruments/beat timing.",
     "The frozen pilot was research-only at its original dated milestone; later owner-authorized development integrated the direct global-tempo method. No new training or hosted model release occurred in this package.",
     "Chord matched seconds are retained approved-score observations; the fresh stdlib partition is not an independent mir_eval reproduction or expert musical annotation.",
@@ -1807,6 +1824,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "Maximum-two lead-output pilot, gate failure and limits",
+      "url": "./lead-cap2-promise.json"
+    },
     {
       "title": "Actual learned-router result and explicit controls",
       "url": "./moe-learned-router.json"
@@ -1848,19 +1869,19 @@
       "url": "./METHODS.md"
     },
     {
-      "title": "CASM \u2014 7 October 2026 preprint",
+      "title": "CASM — 7 October 2026 preprint",
       "url": "https://arxiv.org/html/2610.09318v1"
     },
     {
-      "title": "Chord source-separation preprocessing \u2014 APSIPA 2025",
+      "title": "Chord source-separation preprocessing — APSIPA 2025",
       "url": "https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P307.pdf"
     },
     {
-      "title": "Beyond SDR \u2014 2026 preprint",
+      "title": "Beyond SDR — 2026 preprint",
       "url": "https://arxiv.org/html/2609.04224v1"
     },
     {
-      "title": "MuScriptor representation ablation \u2014 2026 preprint",
+      "title": "MuScriptor representation ablation — 2026 preprint",
       "url": "https://arxiv.org/html/2607.08168v1"
     },
     {
