@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "moe-learned-router-20261105",
-  "updated_at": "2026-11-05T04:16:29.509018+00:00",
+  "checkpoint": "lead-role-readout-diagnosis-20261105",
+  "updated_at": "2026-11-05T08:01:47.325626+00:00",
   "title": "Recognizer Research",
-  "phase": "Learned lead-role routing executed; no incremental or verified gain",
-  "summary": "Learned hard/soft MoE scored12/16 on exposed artist-held-out role cases, matching the strongest single expert and audio-blind control; fixed blend10/16, CLAP7/16. Separate predominance stress:CLAP17/20, hard15/20, soft16/20. No incremental routing benefit, reliability improvement or production change.",
+  "phase": "Lead-role readout stopped; architecture necessity not established",
+  "summary": "Final distinct readout4/8 versus strongest5/8 failed; independent reconstruction closed. Saved-map and full-role-source audits favor fixing the role/evaluation formulation before a new backbone; no new model experiment admitted.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "lead-role-readout-diagnosis-20261105",
+      "title": "Final lead readout stopped; architectural-necessity diagnosis completed",
+      "status": "complete",
+      "evidence_type": "Actual8recording readout screen plus independent saved-array reconstruction, post-hoc analysis and metadata-only source audit; not independent role confirmation",
+      "detail": "Candidate4/8 versus strongest5/8,1rescue2regressions,0invalid/missing/fallback; remaining8unrun. Time-shift decisions identical8/8 despite changed maps. Stationary readout margin matches full8/8. Full123human role rows contain3metadata-feasible grouped reversed pairs before current rights/access rules; non-ND training-policy subset78contains0. No full-backbone rewrite justified; source-filter identity bridge and controlled data remain unresolved."
+    },
     {
       "id": "moe-learned-router-20261105",
       "title": "Learned lead-role router executed; no gain above strongest expert",
@@ -563,6 +570,13 @@
   ],
   "findings": [
     {
+      "title": "Readout failure is not a demonstrated backbone ceiling",
+      "detail": "Actual class maps and shifted templates differ, while stationary margins determine all8readout choices. The current training-policy data cannot support the specified artist-disjoint same-pair reversal discriminator. SIMM remains deferred for missing supported identity binding; ChIC methods target presence, not role. No actual gain, further run or application adoption.",
+      "source": "Frozen final readout, corrected independent replay, full original-role metadata and primary-source review,5November2026",
+      "evidence_type": "Scoped experiment/diagnostics/source capacity, not independent generalization",
+      "confidence": "MEDIUM for scoped evidence; LOW for future benefit"
+    },
+    {
       "title": "Expert complementarity did not become useful learned routing in this frozen pilot",
       "detail": "Confidence/agreement ridge gates match separatedIRNet and the audio-blind best-expert selector on16exposed manual role cases. The separate endpoint favors CLAP. This tests one small gate, not all MoE architectures; independent role confirmation and actual-application reliability remain unverified.",
       "source": "Frozen learned-router experiment,5November2026",
@@ -921,7 +935,8 @@
     }
   ],
   "blockers": [
-    "No validated general lead-role replacement: corrected TinyMU has two regressions above its gate; strongest separated-IRNet development gain did not transfer to the separate predominance endpoint.",
+    "No verified lead-role improvement from the final readout:4/8 versus strongest5/8 with no timing-specific advantage. No architecture ceiling or replacement gain established.",
+    "Full original123role annotations reduce to78rows under current non-ND training policy, with zero exact pairs supporting both role directions across artist-disjoint fit/check. Metadata is not admitted audio; this is the controlled diagnostic requirement, not a universal role-learning rule.",
     "Manual temporal-data join has only 12 balanced windows/three songs/two artists; each exact instrument pair belongs to one artist. No artist-disjoint counterbalanced training/check bank or audio admission.",
     "Fixed-pair role ranking, predominant-instrument recognition and full-app recording-failure incidence remain different endpoints; no demonstrated below30% installed lead failure.",
     "Seven-recording strict-triad failure incidence remains 42.86%; pooled duration error below 30% is a different endpoint.",
@@ -930,10 +945,10 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Close this confidence/agreement router without tuning: no incremental gain above the strongest expert or audio-blind control. Further learned routing requires materially new routing evidence and suitable independent manual role truth; no production adoption.",
-    "Proceed only with a credible task-matched lead-role candidate and lawful independent manual role targets; compare best single/fixed blend, prior controls, regressions and unavailable outputs.",
-    "No generic annotation bank, rejected45packet rescue, unsupported new model download, or production adoption is triggered by these source audits.",
-    "Report a positive result only after verified paired performance AND reliability gains; research-only and actual-application claims remain separate."
+    "Do not tune the stopped class-relevance readout or confidence router. No remaining-half run, generic annotation package or closed45packet refit.",
+    "A next controlled role-architecture diagnostic needs admitted counterbalanced source/artist groups and a frozen role-specific comparison to strongest/audio-blind/temporal controls.",
+    "Assess a compact contextual/relative-role component using an existing encoder before considering a wholly new backbone; this is a proposal, not an approved fit or gain.",
+    "Any actual new experiment, acquisition, install or application integration requires a fresh scoped promise/resource/rights gate."
   ],
   "agents": [
     {
@@ -968,6 +983,12 @@
     }
   ],
   "activity": [
+    {
+      "title": "Closed final readout and tested architectural-necessity claim",
+      "time": "2026-11-05T08:01:47.325626+00:00",
+      "action": "Independently reconstructed original cached-F0 maps/scores and audited all123role rows with artist/recording-term metadata. No new model inference in the continuation.",
+      "result": "Readout4/8 below strongest5/8; remaining8stopped. Source/analysis bottlenecks do not establish a need for a wholly new backbone; no next model run admitted."
+    },
     {
       "title": "Frozen learned hard/soft lead router executed",
       "time": "2026-11-05T04:17:20.702937+00:00",
@@ -1736,6 +1757,7 @@
     }
   ],
   "limits": [
+    "Latest8role recordings are exposed supplied-pair development with one recording per lead category; remaining8unattempted. Independent replay accepts saved relevance because raw activation/gradient tensors are absent. No broader genre or full-app reliability gain.",
     "Current lead-role evidence: corrected TinyMU screen is eight exposed reference-supplied pairs, not broad validation. Temporal join covers only annotated melodic sources and is not audio-admitted; absence of pitch remains unknown, not absence of an instrument.",
     "Current MSCLAP screen:12 confidence4 excerpts/9artists, reference-supplied present pairs; no role reversals, vocal/shared/no-lead coverage or pretraining-disjoint claim. Instrument panels are not genres.",
     "Historical role-context pilot: Current role check uses 12 songs / 8 artists, two reference-supplied present identities and confidence-4 crop-level labels. It does not validate full-app identity admission, dense handovers, no-lead cases or broad genres. Perceptual severity is ungraded, not zero.",
@@ -1885,6 +1907,10 @@
     {
       "title": "Official MedleyDBannotations/tools",
       "url": "https://github.com/marl/medleydb"
+    },
+    {
+      "title": "Lead readout and architecture decision aggregate",
+      "url": "lead-role-readout-diagnosis.json"
     }
   ]
 }

@@ -2,14 +2,14 @@
   "schema_version": 1,
   "source_checkpoint": {
     "file": "status.json",
-    "checkpoint": "moe-learned-router-20261105",
-    "updated_at": "2026-11-05T04:16:29.509018+00:00",
+    "checkpoint": "lead-role-readout-diagnosis-20261105",
+    "updated_at": "2026-11-05T08:01:47.325626+00:00",
     "counts": {
-      "milestones": 79,
-      "findings": 51,
-      "activity": 50
+      "milestones": 80,
+      "findings": 52,
+      "activity": 51
     },
-    "sha256": "6b6e48eb50169c821caedcc3bda1caf5449abf250ce748b7a8b0e6358da10bb5"
+    "sha256": "a0f75e6c8f4eea367c4e7834208014fad00b0c352305cd838e72db20c1dbeea2"
   },
   "categories": [
     {
@@ -99,6 +99,7 @@
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
       "milestone_ids": [
+        "lead-role-readout-diagnosis-20261105",
         "moe-learned-router-20261105",
         "moe-source-readiness-20261105",
         "temporal-role-data-20261105",
@@ -189,17 +190,17 @@
     {
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
-      "result": "Learned hard/soft routers 12/16 equal strongest single and audio-blind 12/16: no routing advantage. Separate predominance stress: CLAP 17/20, hard 15/20, soft 16/20. Different endpoints; no independent role confirmation.",
-      "limit": "Sixteen previously exposed artist-held-out cases; no verified performance/reliability gain or lead-role app adoption. One frozen configuration failed, not all MoE.",
-      "next": "Close this confidence/agreement configuration without tuning. A new run needs a materially different promising signal, lawful manual role truth and an independently grouped test.",
+      "result": "Final distinct readout: 4/8 correct versus strongest 5/8; no benefit from correct melody timing. Remaining eight stopped. Saved-map diagnosis implicates this readout’s stationary bias, not a proven backbone ceiling.",
+      "limit": "Exposed supplied-pair development; no independent role confirmation, reliability gain or lead-app adoption. Current training-policy labels do not support the specified grouped role-reversal diagnostic.",
+      "next": "Resolve task-matched counterbalanced source groups, then compare a compact role component on an existing encoder. No stopped-method tuning; a wholly new backbone is not yet justified.",
       "evidence": [
         {
-          "label": "Learned router result",
-          "href": "moe-learned-router.json"
+          "label": "Readout and architecture diagnosis",
+          "href": "lead-role-readout-diagnosis.json"
         },
         {
-          "label": "Role evidence and methods",
-          "href": "lead-role-pilot.json"
+          "label": "Earlier learned-router result",
+          "href": "moe-learned-router.json"
         },
         {
           "label": "Methods and limits",
@@ -216,9 +217,9 @@
       "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
     ],
     "archive_counts": {
-      "milestones": 79,
-      "findings": 51,
-      "activity": 50
+      "milestones": 80,
+      "findings": 52,
+      "activity": 51
     }
   },
   "link_allowlist": [
@@ -236,6 +237,7 @@
     "FOLLOWUP.md",
     "CAMPAIGN.md",
     "EXTENDED.md",
-    "TUNING.md"
+    "TUNING.md",
+    "lead-role-readout-diagnosis.json"
   ]
 }

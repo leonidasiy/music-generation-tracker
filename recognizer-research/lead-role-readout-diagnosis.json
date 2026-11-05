@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "checkpoint": "lead-role-readout-diagnosis-20261105",
+  "decision": "STOP_REFLECT_NO_ADOPTION",
+  "method": "Frozen native instrument-class gradient×activation evidence aligned to independently predicted melody on the intact mixture. Novel readout, not a new trained backbone.",
+  "scope": "Eight previously exposed manually labelled supplied-pair lead-role recordings, one per lead instrument category. Not full-app accuracy, independent confirmation or broad genre validation.",
+  "denominators": {
+    "planned_total": 16,
+    "attempted_and_scored": 8,
+    "unattempted_after_stop": 8
+  },
+  "headline": {
+    "unit": "recording supplied-pair categorical error",
+    "error_tolerance": 0,
+    "above_tolerance_if": "wrong accepted lead identity",
+    "strongest_errors": 3,
+    "candidate_errors": 4,
+    "strongest_error_percent": 37.5,
+    "candidate_error_percent": 50.0
+  },
+  "correct": {
+    "CLAP": 4,
+    "original_IRNet": 3,
+    "strongest": 5,
+    "aligned": 4,
+    "time_shift": 4,
+    "tritone": 4,
+    "uniform": 4,
+    "whole_map": 3
+  },
+  "paired_vs_strongest": {
+    "rescues": 1,
+    "regressions": 2,
+    "net_rescues": -1,
+    "same_decisions": 5
+  },
+  "paired_vs_CLAP": {
+    "rescues": 3,
+    "regressions": 3,
+    "net_rescues": 0,
+    "same_decisions": 2
+  },
+  "specificity_controls": {
+    "time_shift": {
+      "rescues": 0,
+      "regressions": 0,
+      "net_rescues": 0,
+      "same_decisions": 8,
+      "changed_nonfallback": 0
+    },
+    "tritone": {
+      "rescues": 2,
+      "regressions": 2,
+      "net_rescues": 0,
+      "same_decisions": 4,
+      "changed_nonfallback": 4
+    },
+    "uniform": {
+      "rescues": 3,
+      "regressions": 3,
+      "net_rescues": 0,
+      "same_decisions": 2,
+      "changed_nonfallback": 0
+    }
+  },
+  "reliability": {
+    "actual_invalid": 0,
+    "actual_missing": 0,
+    "actual_fallback": 0,
+    "real_audio_reliability_gain_verified": false,
+    "severe_error_count": null,
+    "severe_status": "No manual severity tier available; unmeasured, not zero."
+  },
+  "categories": {
+    "violin": {
+      "n": 1,
+      "CLAP": 0,
+      "original_IRNet": 1,
+      "strongest": 1,
+      "aligned": 1,
+      "time_shift": 1,
+      "tritone": 0,
+      "uniform": 0,
+      "whole_map": 1
+    },
+    "cello": {
+      "n": 1,
+      "CLAP": 0,
+      "original_IRNet": 0,
+      "strongest": 0,
+      "aligned": 0,
+      "time_shift": 0,
+      "tritone": 0,
+      "uniform": 0,
+      "whole_map": 0
+    },
+    "piano": {
+      "n": 1,
+      "CLAP": 0,
+      "original_IRNet": 0,
+      "strongest": 0,
+      "aligned": 1,
+      "time_shift": 1,
+      "tritone": 1,
+      "uniform": 0,
+      "whole_map": 0
+    },
+    "trumpet": {
+      "n": 1,
+      "CLAP": 1,
+      "original_IRNet": 0,
+      "strongest": 1,
+      "aligned": 1,
+      "time_shift": 1,
+      "tritone": 0,
+      "uniform": 1,
+      "whole_map": 0
+    },
+    "flute": {
+      "n": 1,
+      "CLAP": 0,
+      "original_IRNet": 1,
+      "strongest": 1,
+      "aligned": 1,
+      "time_shift": 1,
+      "tritone": 1,
+      "uniform": 0,
+      "whole_map": 1
+    },
+    "electric guitar": {
+      "n": 1,
+      "CLAP": 1,
+      "original_IRNet": 0,
+      "strongest": 0,
+      "aligned": 0,
+      "time_shift": 0,
+      "tritone": 1,
+      "uniform": 1,
+      "whole_map": 0
+    },
+    "acoustic guitar": {
+      "n": 1,
+      "CLAP": 1,
+      "original_IRNet": 1,
+      "strongest": 1,
+      "aligned": 0,
+      "time_shift": 0,
+      "tritone": 0,
+      "uniform": 1,
+      "whole_map": 1
+    },
+    "saxophone": {
+      "n": 1,
+      "CLAP": 1,
+      "original_IRNet": 0,
+      "strongest": 1,
+      "aligned": 0,
+      "time_shift": 0,
+      "tritone": 1,
+      "uniform": 1,
+      "whole_map": 0
+    }
+  },
+  "gate": {
+    "passed": false,
+    "checks": {
+      "complete": true,
+      "net_gain_above_strongest": false,
+      "bounded_regressions": false,
+      "no_invalid": true,
+      "no_missing": true,
+      "bounded_fallback": true,
+      "time_shift_gain": false,
+      "time_shift_nonfallback_changes": false,
+      "tritone_gain": false,
+      "tritone_nonfallback_changes": true,
+      "uniform_gain": false
+    }
+  },
+  "resources": {
+    "supervised_cpu_seconds": 8.25533620799979,
+    "peak_sampled_process_tree_rss_bytes": 471023616,
+    "new_packet_bytes_at_inference_finish": 10103294,
+    "native_score_parity_max_absolute_difference": 7.278490238293855e-08,
+    "model_audio_download_bytes": 0,
+    "fit_calls": 0,
+    "new_cloud_data_software_purchases": false,
+    "normal_assistant_api_billing_and_electricity": "unmeasured; excluded, not asserted zero"
+  },
+  "lead_application_changed": false,
+  "interpretation": "No gain above strongest; aligned and half-clip-shifted contour predictions identical on all eight. Four correct does not establish a melody-specific gain or that audio is ignored. Stop this frozen configuration without tuning; do not infer all architectures exhausted.",
+  "next": "Pause experiments for architecture/analysis reflection. Reframe role attribution before another model campaign; any new implementation or acquisition requires a separately justified scope.",
+  "independent_audit": {
+    "status": "PASS_SCOPED",
+    "original_cached_f0_used_for_map_reconstruction": true,
+    "harmonic_map_max_absolute_difference": 1.4771578710215394e-08,
+    "alignment_score_max_absolute_difference": 2.2079906653038606e-10,
+    "raw_relevance_independently_rederived": false,
+    "limit": "Raw activations/gradients were not saved; pitch tracking and model inference were not rerun."
+  },
+  "readout_diagnosis": {
+    "post_hoc": true,
+    "n": 8,
+    "static_margin_matches_total_count": 8,
+    "aligned_shift_identical_decision_count": 8,
+    "class_relevance_cosine_range": [
+      0.021031475167399564,
+      0.3312611596849341
+    ],
+    "template_relative_l2_range": [
+      1.1710134856362253,
+      1.3518561058554412
+    ],
+    "score_delta_max_abs": 0.015763322905142745,
+    "limit": "Decomposition of one global readout, not proof that the encoder lacks temporal information."
+  },
+  "label_capacity": {
+    "all_original_role123": {
+      "rows": 123,
+      "songs": 123,
+      "artists": 64,
+      "pairs": 52,
+      "reversed_pairs": 7,
+      "artist_disjoint_feasible_pairs": 3
+    },
+    "first120_confidence4": {
+      "rows": 73,
+      "songs": 73,
+      "artists": 45,
+      "pairs": 36,
+      "reversed_pairs": 5,
+      "artist_disjoint_feasible_pairs": 1
+    },
+    "all123_confidence4_nonND_policy": {
+      "rows": 78,
+      "songs": 78,
+      "artists": 46,
+      "pairs": 38,
+      "reversed_pairs": 6,
+      "artist_disjoint_feasible_pairs": 0
+    },
+    "first120_confidence4_nonND_policy": {
+      "rows": 45,
+      "songs": 45,
+      "artists": 32,
+      "pairs": 27,
+      "reversed_pairs": 2,
+      "artist_disjoint_feasible_pairs": 0
+    }
+  },
+  "label_capacity_limit": "Metadata only, not admitted audio. Non-ND eligibility is the current training policy, not a universal legal ban. Exact-pair role reversal in both grouped sides is this diagnostic, not a requirement for all role learning.",
+  "architecture_decision": {
+    "whole_new_backbone_justified": false,
+    "status": "NEXT_CONTROLLED_DIAGNOSTIC_BLOCKED",
+    "next": "Establish admitted counterbalanced role/source groups before comparing a compact contextual role component on an existing encoder. No generic annotation package or closed-packet refit started.",
+    "alternatives": {
+      "SIMM": "DEFER: missing supported instrument-identity bridge",
+      "pitch_conditioned_note_assignment": "DEFER: no verified runnable head/task data",
+      "ChIC": "REJECT_FOR_ROLE_ENDPOINT: methods target presence"
+    },
+    "limit": "No field-wide exhaustion or proof that a new architecture cannot help; no new performance or reliability gain."
+  }
+}
