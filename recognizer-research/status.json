@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "temporal-role-data-20261105",
-  "updated_at": "2026-11-05T06:43:20.275630+08:00",
+  "checkpoint": "moe-source-readiness-20261105",
+  "updated_at": "2026-11-05T03:53:08.989896+00:00",
   "title": "Recognizer Research",
-  "phase": "Corrected contextual screen closed; temporal role-data admission blocked",
-  "summary": "Corrected same-eight-case screen: CLAP 4/8, TinyMU 5/8, silence 4/8; three corrections but two regressions, so no adoption. Metadata-only manual-pitch/lead-interval join yields 12 balanced windows from three songs and two artists, but no exact pair spans artists. No training, new audio or application gain.",
+  "phase": "Quiet lead-role MoE feasibility; no verified gain",
+  "summary": "Learned MoE remains untested. Saved experts have hindsight union14/16 versus current7/16 and strongest complete expert12/16—not achieved routing. Whole-source human-tag audit finds3596 agreed buffered windows across118songs, but no audio is admitted. New jazz-role sources remain conditional; no production change or verified performance/reliability gain.",
   "publication_ready": false,
   "milestones": [
+    {
+      "id": "moe-source-readiness-20261105",
+      "title": "MoE coverage corrected; human-source readiness checked",
+      "status": "complete",
+      "evidence_type": "Saved-output arithmetic and metadata-only source audits; no learned gate or model accuracy result",
+      "detail": "Fourteen of16exposed cases fall in the hindsight union;7baseline-error rescues and2common failures. Whole SALAMI source yields3596exact-agreement buffered5s windows/118songs, zero admitted audio. New JSD/JSIR sources and a narrow released jazz specialist remain conditional. No verified gain."
+    },
     {
       "id": "temporal-role-data-20261105",
       "title": "Manual temporal-role/secondary-melodic-source join executed; training bank blocked",
@@ -549,6 +556,13 @@
   ],
   "findings": [
     {
+      "title": "Unfinished MoE is not exhausted; source coverage is not musical progress",
+      "detail": "A learned router has not been trained or validated. Metadata can support more labels than the earlier six-song sample implied, but recording use, clock identity and independent role checks remain gates. No generic human annotation effort is requested merely because labels are scarce.",
+      "evidence_type": "Deterministic saved-output and original-human-annotation reconstruction",
+      "confidence": "HIGH for these scoped inventory counts; application benefit unverified",
+      "source": "MoE continuation source-readiness audit, 5 November 2026"
+    },
+    {
       "title": "Manual pitch narrows the label gap, but does not provide a usable training bank",
       "detail": "Positive reviewed pitch supports another annotated melodic line, not general accompaniment or audibility in the final mix. The resulting 12 balanced windows cover World/Folk and Jazz only; every exact pair has only one artist, so changing the split cannot supply independent same-pair fit/check support.",
       "evidence_type": "Executed deterministic metadata join; source-provenance audit",
@@ -902,10 +916,10 @@
     "The historical private quality-option runtime resource hold remains historical and unresolved; current BTC closeout does not retroactively verify it."
   ],
   "next_steps": [
-    "Keep LEAD-NEG-001 through LEAD-NEG-006 closed at their recorded scope; no prompt/window/threshold/token-normalization rescues or broader failed-endpoint runs.",
-    "Resolve original-mixture audio access and human-confirmed counterpart activity/role ambiguity; then form an artist-disjoint same-pair reversal bank. Public manual-pitch annotations supply only a narrow secondary-melodic-source diagnostic, not complete accompaniment labels. No training or audio acquisition automatically queued.",
-    "MoE remains untested and deferred: establish transferable complementary role strengths versus best single/fixed blend before expanding to other application tasks.",
-    "Production application unchanged by lead-role research. Any eventual adoption requires separately authorized varied actual-app off/on gains, including admission, unsupported/no-lead, regressions and resource costs."
+    "Proceed only with a credible task-matched lead-role candidate and lawful independent manual role targets; compare best single/fixed blend, prior controls, regressions and unavailable outputs.",
+    "Keep learned MoE marked untested until an actual grouped-source routing experiment is executed and independently checked.",
+    "No generic annotation bank, rejected45packet rescue, unsupported new model download, or production adoption is triggered by these source audits.",
+    "Report a positive result only after verified paired performance AND reliability gains; research-only and actual-application claims remain separate."
   ],
   "agents": [
     {
@@ -940,6 +954,13 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-11-05T03:53:08.989896+00:00",
+      "title": "Quiet MoE feasibility and whole-source annotation audit",
+      "action": "Reconstructed exact expert overlap; corrected inconsistent child arithmetic and boundary/unknown handling; inspected new manual jazz-role sources.",
+      "result": "No learned gate, new inference or verified gain. Conditional source capacity only; production lead-role unchanged.",
+      "status": "complete"
+    },
     {
       "time": "2026-11-05T06:43:20.275630+08:00",
       "title": "Bounded metadata-only role-data join completed",
@@ -1728,6 +1749,10 @@
     "The native PaSST0.50 coarse-head diagnostic is not the hybrid or a deployable fine-instrument mapping. Sigmoid scores are not calibrated presence probabilities."
   ],
   "sources": [
+    {
+      "title": "MoE headroom and manual source-readiness aggregate",
+      "url": "./moe-source-readiness.json"
+    },
     {
       "title": "Corrected contextual-model screen and temporal role-data readiness aggregate",
       "url": "./contextual-role-data.json"

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-05T03:53:08.989896+00:00",
+  "status": "source_readiness_only_no_verified_gain",
+  "learned_moe_tested": false,
+  "production_lead_role_changed": false,
+  "verified_performance_and_reliability_gain": false,
+  "expert_headroom": {
+    "scope": "Retrospective exposed-development, supplied-present-pair task; NOT achieved routing",
+    "n": 16,
+    "current_correct": 7,
+    "strongest_complete_saved_expert_correct": 12,
+    "all_available_experts_hindsight_union_correct": 14,
+    "baseline_error_rescues_in_union": 7,
+    "universally_unsupported": 2,
+    "partial_expert_available": 8,
+    "partial_expert_missing": 8,
+    "gate_predictions_evaluated": 0
+  },
+  "human_source_readiness": {
+    "source": "SALAMI pinned original dual human tags, literal concordance only",
+    "metadata_eligible_songs": 140,
+    "strict_dual_parse_pass": 126,
+    "syntax_quarantined": 14,
+    "songs_with_agreed_buffered_windows": 118,
+    "exact_singleton_agreement_5s_windows": 3596,
+    "audio_items_admitted": 0,
+    "limits": [
+      "Missing either human annotation remains unknown.",
+      "Windows exclude internal role boundaries and require two-second clearance.",
+      "No inferred accompaniment, alias correction, audio rights or source-clock validation."
+    ]
+  },
+  "additional_sources": [
+    {
+      "name": "Jazz Structure Dataset",
+      "manual_role_annotations": true,
+      "recordings": 340,
+      "musical_segments": 3345,
+      "admitted_audio_items": 0,
+      "status": "source_access_annotation_license_and_exact_master_gates_unresolved"
+    },
+    {
+      "name": "2018 jazz solo specialist",
+      "released_checkpoints": 2,
+      "native_classes": 6,
+      "new_inference_calls": 0,
+      "status": "narrow_conditional_comparator_not_adopted"
+    },
+    {
+      "name": "JSIR 2026",
+      "manual_sparse_section_tags": true,
+      "admitted_audio_items": 0,
+      "status": "copyrighted_audio_not_distributed"
+    }
+  ],
+  "next_step": "Continue only a justified, independent-human-truth MoE test; no generic annotation request or rejected-packet rescue. Source readiness and oracle headroom are not model gains.",
+  "sources": [
+    {
+      "title": "SALAMI original human annotations",
+      "url": "https://github.com/DDMAL/salami-data-public"
+    },
+    {
+      "title": "JSD primary paper",
+      "url": "https://transactions.ismir.net/articles/10.5334/tismir.131"
+    },
+    {
+      "title": "2018 jazz solo classifier",
+      "url": "https://github.com/dfg-isad/ismir_2018_instrument_recognition"
+    },
+    {
+      "title": "JSIR 2026",
+      "url": "https://arxiv.org/abs/2610.15356"
+    }
+  ]
+}
