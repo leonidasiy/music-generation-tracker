@@ -2,14 +2,14 @@
   "schema_version": 1,
   "source_checkpoint": {
     "file": "status.json",
-    "checkpoint": "lead-vocal-validation-labels-20261105",
-    "updated_at": "2026-11-05T20:17:40.134363+08:00",
+    "checkpoint": "lead-vocal-confirmation-20261109",
+    "updated_at": "2026-11-09T18:30:53+08:00",
     "counts": {
-      "milestones": 85,
+      "milestones": 86,
       "findings": 57,
       "activity": 56
     },
-    "sha256": "fd55f8efc7c05a59fea7d60c0f4546fc442d9043da767cf4e0d2438422e7213e"
+    "sha256": "b6220072690ee5a000daed6536e5b0415f9664a2cafe0203ae7d834d0ebab129"
   },
   "categories": [
     {
@@ -114,7 +114,8 @@
         "role-context-pilot-20261104",
         "lead-mask-closed",
         "lead-trained-contour",
-        "lead-role-pilot-20261104"
+        "lead-role-pilot-20261104",
+        "lead-vocal-confirmation-20261109"
       ]
     },
     {
@@ -195,35 +196,35 @@
     {
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
-      "result": "Frozen vocal-specialist development result remains 7/7 versus 4/7 for both controls. Eight blind clips from eight different artists are prepared for new manual lead judgments; no validation scores have been generated.",
-      "limit": "New clips are artist/track-disjoint from the lead-policy pilot but were used in earlier presence research; pretraining overlap unknown. Prior 7/7 is not independent confirmation; partial reference 0/1 remains.",
-      "next": "Await eight manual judgments. Seal references and verify research-only baseline cache isolation/parity before one unchanged capped paired run. No app adoption or broad benchmark.",
+      "result": "Original frozen gate: vocal-specialist candidate 5/6 vs 4/6 for both controls. Post-hoc always-Vocal counterfactual also 5/6; voice-component value unproven on this Vocal-heavy set.",
+      "limit": "Eight valid capped outputs; two non-primary cases excluded. No reliability gain or abstention claim. Prior exposure/unknown overlap; broad validation and app adoption deferred.",
+      "next": "Next prerequisite: separately approved, varied comparison against the always-Vocal rule. No automatic expansion or app integration.",
       "evidence": [
         {
-          "label": "Blind-reference validation status",
-          "href": "lead-vocal-validation.json"
+          "label": "Eight-clip aggregate result",
+          "href": "lead-vocal-confirmation-aggregate.json"
         },
         {
-          "label": "Previous specialist development result",
+          "label": "Previous exposed development result",
           "href": "lead-vocal-specialist.json"
         },
         {
-          "label": "Capped baselines",
-          "href": "lead-cap2-promise.json"
+          "label": "Methods and limits",
+          "href": "METHODS.md"
         }
       ],
-      "status": "Awaiting eight manual lead judgments"
+      "status": "Small screen passed; specialist-specific benefit unproven"
     }
   ],
   "overall": {
-    "summary": "Four distinct recognizer tasks; evidence is mostly scoped development, not broad independent confirmation. Chord private opt-in integration exists; lead remains unchanged.",
+    "summary": "Four distinct recognizer tasks; this small lead confirmation clears its frozen promise gate, but broad independent validation and application adoption remain unestablished. Chord private opt-in integration exists; lead remains unchanged.",
     "limitations": [
       "Endpoints and denominators are task-specific; do not combine duration error, recording-failure incidence, role ranking or predominance.",
       "Unknown or unannotated classes are not negatives. Rights, checkpoint exposure and independent reference quality constrain transfer.",
       "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
     ],
     "archive_counts": {
-      "milestones": 85,
+      "milestones": 86,
       "findings": 57,
       "activity": 56
     }
@@ -249,6 +250,7 @@
     "lead-passt-cap2.json",
     "lead-cap2-promise.json",
     "lead-vocal-specialist.json",
-    "lead-vocal-validation.json"
+    "lead-vocal-validation.json",
+    "lead-vocal-confirmation-aggregate.json"
   ]
 }

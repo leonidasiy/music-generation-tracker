@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "scope": "Eight-clip capped paired confirmation; six clear manual lead references in primary scoring. Narrow confirmation only, not broad independent validation.",
+  "primary": {
+    "eligible_clear_references": 6,
+    "outputs_attempted": 8,
+    "candidate": {
+      "hits": 5,
+      "percent": 83.33,
+      "unavailable_or_invalid": 0,
+      "cap_violations_all8": 0
+    },
+    "role_cap2": {
+      "hits": 4,
+      "percent": 66.67,
+      "unavailable_or_invalid": 0,
+      "cap_violations_all8": 0
+    },
+    "presence_top2": {
+      "hits": 4,
+      "percent": 66.67,
+      "unavailable_or_invalid": 0,
+      "cap_violations_all8": 0
+    }
+  },
+  "posthoc_diagnostic": {
+    "label": "Always add Vocal plus first non-Vocal native-presence name",
+    "hits": 5,
+    "eligible_clear_references": 6,
+    "percent": 83.33,
+    "relation_to_frozen_candidate": "tie",
+    "status": "post-hoc counterfactual; no inference; not part of original frozen promise gate",
+    "implication": "Incremental value of the voice-detector component is unproven on this Vocal-heavy six-reference set; this is not a new model test."
+  },
+  "paired_comparisons": {
+    "candidate_vs_role_cap2": {
+      "paired_n": 6,
+      "rescues": 1,
+      "regressions": 0,
+      "additional_unavailable": 0,
+      "gate_pass": true
+    },
+    "candidate_vs_presence_top2": {
+      "paired_n": 6,
+      "rescues": 1,
+      "regressions": 0,
+      "additional_unavailable": 0,
+      "gate_pass": true
+    },
+    "rescue_overlap": "The rescued references differ between the two comparisons; per-reference identities are not published."
+  },
+  "reference_categories": {
+    "Vocal": {
+      "n": 4,
+      "candidate_hits": 4,
+      "role_cap2_hits": 3,
+      "presence_top2_hits": 3
+    },
+    "Choir": {
+      "n": 1,
+      "candidate_hits": 1,
+      "role_cap2_hits": 1,
+      "presence_top2_hits": 1
+    },
+    "Electric guitar": {
+      "n": 1,
+      "candidate_hits": 0,
+      "role_cap2_hits": 0,
+      "presence_top2_hits": 0
+    }
+  },
+  "non_primary": {
+    "unclear_references": 1,
+    "no_clear_lead_references": 1,
+    "scored_in_primary": false,
+    "candidate_emits_names_on_no_clear_lead": true,
+    "abstention_claim_supported": false
+  },
+  "execution_integrity": {
+    "all_eight_valid_outputs": true,
+    "maximum_emitted_names": 2,
+    "cap_violations": 0,
+    "missing_or_invalid_outputs": 0,
+    "candidate_policy_changed": false,
+    "new_model_fits_or_tuning": false,
+    "application_code_changed": false
+  },
+  "interpretation": {
+    "frozen_small_screen_promise_gate": "passed",
+    "independent_broad_validation": "not_established",
+    "measured_reliability_improvement": "not_established",
+    "application_adoption": "not_authorized_or_claimed",
+    "production_change": "none",
+    "prior_presence_exposure": "yes",
+    "pretraining_and_composition_overlap": "unknown"
+  }
+}

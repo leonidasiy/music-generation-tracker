@@ -49,9 +49,29 @@ class CompactProgressTests(unittest.TestCase):
     def test_known_endpoints_still_distinct(self):
         rows={r['id']:r for r in self.overview['cards']}
         lead=json.dumps(rows['lead-accompaniment']); chord=json.dumps(rows['chords-harmony']); presence=json.dumps(rows['instrument-presence'])
-        self.assertIn('12/16',lead);self.assertIn('no routing advantage',lead);self.assertIn('no verified performance/reliability gain',lead)
+        self.assertIn('5/6',lead);self.assertIn('voice-component value unproven',lead);self.assertIn('No reliability gain',lead)
+        historical=json.dumps(next(x for x in self.status['milestones'] if x['id']=='moe-learned-router-20261105'))
+        self.assertIn('hard12',historical);self.assertIn('match the strongest expert',historical)
+        posthoc=json.loads((SITE/'lead-vocal-confirmation-aggregate.json').read_text())['posthoc_diagnostic']
+        self.assertEqual(posthoc['hits'],5);self.assertEqual(posthoc['relation_to_frozen_candidate'],'tie')
+        self.assertIn('no inference',posthoc['status']);self.assertIn('unproven',posthoc['implication'])
         self.assertIn('3/7',chord);self.assertIn('below-30%',chord);self.assertIn('ordinary default',chord)
         self.assertIn('55/292',presence);self.assertIn('22 invalid',presence);self.assertIn('149 missing',presence)
+    def test_lead_confirmation_is_aggregate_only_and_qualifies_posthoc_result(self):
+        path=SITE/'lead-vocal-confirmation-aggregate.json'
+        raw=path.read_text(); parsed=json.loads(raw)
+        for case_id in ['B01','B02','B03','B04','B05','B06','B07','B08']:
+            self.assertNotIn(case_id,raw)
+        for key in ['cases','audit','emitted','source_path','source_sha256','artist','recording','track']:
+            self.assertNotIn(key,parsed)
+        self.assertEqual(parsed['primary']['candidate']['hits'],5)
+        self.assertEqual(parsed['paired_comparisons']['candidate_vs_role_cap2']['rescues'],1)
+        diagnostic=parsed['posthoc_diagnostic']
+        self.assertEqual(diagnostic['hits'],5)
+        self.assertIn('post-hoc',diagnostic['status'])
+        self.assertIn('not a new model test',diagnostic['implication'])
+        self.assertEqual(parsed['interpretation']['application_adoption'],'not_authorized_or_claimed')
+        self.assertEqual(parsed['interpretation']['independent_broad_validation'],'not_established')
     def test_local_evidence_allowlist(self):
         allowed=set(self.overview['link_allowlist'])
         for row in self.overview['cards']:

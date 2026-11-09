@@ -1,18 +1,19 @@
 {
   "schema_version": 1,
-  "checkpoint": "lead-vocal-validation-labels-20261105",
-  "updated_at": "2026-11-05T20:17:40.134363+08:00",
+  "checkpoint": "lead-vocal-confirmation-20261109",
+  "updated_at": "2026-11-09T18:30:53+08:00",
   "title": "Recognizer Research",
-  "phase": "Small confirmation awaiting eight blind manual references",
-  "summary": "Previous vocal-specialist result remains 7/7 exposed clear clips versus 4/7 for both controls. Eight source/artist-disjoint blind clips are prepared for manual lead judgments; no validation scores exist. Prior presence-data exposure and baseline cache-isolation readiness remain explicit.",
+  "phase": "Small capped lead-vocal confirmation completed; no app adoption or expansion",
+  "summary": "Six clear manual references: the candidate scored 5/6 versus 4/6 for each capped control, but a separate post-hoc always-Vocal counterfactual also scores 5/6. The original gate passed; incremental voice-component value is unproven on this Vocal-heavy set. Eight outputs were valid and capped. Prior presence exposure/unknown overlap; no broad validation, reliability gain or app adoption.",
   "publication_ready": false,
   "milestones": [
     {
       "id": "lead-vocal-validation-labels-20261105",
-      "title": "Targeted blind-eight review prepared; confirmation awaiting human references",
-      "status": "awaiting-manual-labels",
-      "detail": "Eight ten-second clips from eight artists, disjoint from the ten-clip lead-policy pilot. Earlier presence experiments used the audio; no pristine-independence claim. Manual lead labels pending and no new-eight model predictions. Offline playback, label export and source provenance verified; native-baseline cache isolation still requires engineering.",
-      "artifact": "lead-vocal-validation.json"
+      "title": "Blind eight-clip review prepared; later confirmation completed",
+      "status": "complete",
+      "detail": "Historical preparation milestone. Eight source/artist-disjoint blind clips were prepared for manual lead judgments; the subsequent frozen capped paired screen is recorded in the confirmation milestone. Earlier presence-research exposure and unknown pretraining/composition overlap remain; this was not a pristine independent benchmark.",
+      "artifact": "lead-vocal-validation.json",
+      "evidence_type": "Historical preparation and provenance record; superseded current status"
     },
     {
       "id": "lead-vocal-specialist-20261105",
@@ -601,6 +602,13 @@
       "status": "complete",
       "evidence_type": "Fresh existing-model waveform inference; independent saved-waveform, padded-output, clock and decoder reconstruction",
       "detail": "One previously exposed guitar recording; four actual forwards (two per arm),242 frames per arm. Original waveform, five cached arrays and native events reproduce exactly. Fixed 50%original+50%HPSS harmonic changes30 raw root-state frames; native events9 to7. These changes are NOT accuracy measurements or a performance gain. No fitting, download or adoption."
+    },
+    {
+      "id": "lead-vocal-confirmation-20261109",
+      "title": "Small eight-clip manual lead confirmation: capped candidate clears promise gate",
+      "status": "complete",
+      "evidence_type": "Frozen paired actual inference on eight clips; aggregate manual-reference scoring; narrow confirmation, not broad independent validation",
+      "detail": "Six clear references: candidate 5/6 (83.33%) versus role-cap-two 4/6 (66.67%) and presence-top-two 4/6 (66.67%). One rescue and zero regressions against each control; the rescued cases differ. A separate post-hoc, no-inference counterfactual adding Vocal to native presence top two and retaining the first non-Vocal name also scores 5/6, tying the candidate; it was not part of the original gate. Thus incremental value of the voice-detector component is unproven on this Vocal-heavy six-reference set. Clear-reference categories: Vocal 4, Choir 1, Electric guitar 1; candidate 4/4 Vocal, 1/1 Choir, 0/1 Electric guitar; each control 3/4 Vocal, 1/1 Choir, 0/1 Electric guitar. All eight outputs valid, maximum two names, zero cap violations; two cases (one unclear, one no-clear-lead) excluded from primary scoring. Candidate emits names on the no-clear-lead case, so no abstention claim. Frozen original small-screen promise gate passed only; adoption and broad expansion deferred pending a decisive varied comparison. No measured reliability improvement or production change. Earlier presence exposure and unknown pretraining/composition overlap limit independence."
     }
   ],
   "findings": [
