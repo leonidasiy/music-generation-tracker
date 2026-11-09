@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": "lead-vocal-confirmation-20261109",
-  "updated_at": "2026-11-09T18:30:53+08:00",
+  "checkpoint": "actual-app-verification-20261109",
+  "updated_at": "2026-11-09T20:24:10+08:00",
   "title": "Recognizer Research",
-  "phase": "Small capped lead-vocal confirmation completed; no app adoption or expansion",
-  "summary": "Six clear manual references: the candidate scored 5/6 versus 4/6 for each capped control, but a separate post-hoc always-Vocal counterfactual also scores 5/6. The original gate passed; incremental voice-component value is unproven on this Vocal-heavy set. Eight outputs were valid and capped. Prior presence exposure/unknown overlap; no broad validation, reliability gain or app adoption.",
+  "phase": "Actual-app tie verified; maximum-two output compliance confirmed; no new model default",
+  "summary": "Actual-app tempo verification ties at 1/8 above tolerance in each arm, with one rescue and one regression and no missing or severe outputs. Maximum-two lead output compliance passes. No new model/default adoption or acoustic gain; broad independent validation remains open.",
   "publication_ready": false,
   "milestones": [
     {
@@ -609,6 +609,14 @@
       "status": "complete",
       "evidence_type": "Frozen paired actual inference on eight clips; aggregate manual-reference scoring; narrow confirmation, not broad independent validation",
       "detail": "Six clear references: candidate 5/6 (83.33%) versus role-cap-two 4/6 (66.67%) and presence-top-two 4/6 (66.67%). One rescue and zero regressions against each control; the rescued cases differ. A separate post-hoc, no-inference counterfactual adding Vocal to native presence top two and retaining the first non-Vocal name also scores 5/6, tying the candidate; it was not part of the original gate. Thus incremental value of the voice-detector component is unproven on this Vocal-heavy six-reference set. Clear-reference categories: Vocal 4, Choir 1, Electric guitar 1; candidate 4/4 Vocal, 1/1 Choir, 0/1 Electric guitar; each control 3/4 Vocal, 1/1 Choir, 0/1 Electric guitar. All eight outputs valid, maximum two names, zero cap violations; two cases (one unclear, one no-clear-lead) excluded from primary scoring. Candidate emits names on the no-clear-lead case, so no abstention claim. Frozen original small-screen promise gate passed only; adoption and broad expansion deferred pending a decisive varied comparison. No measured reliability improvement or production change. Earlier presence exposure and unknown pretraining/composition overlap limit independence."
+    },
+    {
+      "id": "actual-app-tempo-tie-max-two-20261109",
+      "title": "Actual-app tempo tie and maximum-two output compliance verified",
+      "status": "complete",
+      "evidence_type": "Two actual full-analyzer runs; independent post-run execution/evidence-integrity review; aggregate-only publication",
+      "detail": "Eight exposed paired cases: strict >8% BPM failures are 1/8 off and 1/8 on; one rescue, one regression, six unchanged acceptable, zero severe and zero missing/invalid in both arms. Related groups and prior component-output parity mean this is not independent broad validation. Maximum-two lead-output policy passes across global/section outputs and report metadata. This is policy compliance, not acoustic gain. No new model or candidate default adopted; broad validation remains open.",
+      "artifact": "application-verification-aggregate.json"
     }
   ],
   "findings": [
@@ -1000,6 +1008,13 @@
       "evidence_type": "Executed subgroup/control diagnostics; not independent genre confirmation",
       "confidence": "HIGH for scoped arithmetic; no causal or perceptual claim",
       "source": "CATEGORY_RESULTS.md, controls and outcome-review.md,2026-10-27; local experimental evidence."
+    },
+    {
+      "title": "Full-app tempo comparison ties; max-two output policy passes",
+      "detail": "Actual-app off/on result: 1/8 above the strict 8% tempo tolerance in each arm, with one rescue and one regression; zero severe or missing/invalid outputs. Maximum-two output compliance passed. The exposed related sample is not broad independent confirmation, and no new model/default adoption or acoustic gain is supported.",
+      "evidence_type": "Aggregate actual-application verification and independent execution/evidence review",
+      "confidence": "HIGH for the scoped application run and compliance; no independent generalization",
+      "source": "application-verification-aggregate.json"
     }
   ],
   "blockers": [
@@ -1380,6 +1395,12 @@
       "title": "Actual instrumentation comparison and independent reconstruction complete",
       "action": "Frozen49record/29artist comparison,329historical head regressions, four null controls, independent reconstruction and real research-copy report/tests; no retraining or production edits.",
       "result": "PaSST-assisted instrument presence reduced observed-reference failure recordings from 19/47 (40.43%) to 14/47 (29.79%). Misses 12\u21927; false positives 8\u21928; severe 1\u21921; missing0. Eight recordings rescued, three regressed. 49 intended ten-second recordings,29 artist groups,47 scorable/99 sparse observed nonvoice pairs. PublisherTEST was used for checkpoint selection; this is bounded development evidence, not independent final confirmation or full-inventory accuracy. Application not modified; full-song aggregation remains untested. Wider historical regression is mixed: 100/320\u219297/320 failures, FN64\u219232 but FP55\u219279; keep the candidate experimental, not default."
+    },
+    {
+      "time": "2026-11-09T20:00:00+08:00",
+      "title": "Actual-app verification and maximum-two compliance synchronized",
+      "action": "Completed two full-analyzer off/on runs and independent aggregate evidence review; prepared compact area-summary and archive update.",
+      "result": "Tempo tied at 1/8 failures per arm (one rescue, one regression); maximum-two policy passed. No new model/default adoption or acoustic gain; broader independent validation remains open."
     }
   ],
   "artifacts": [

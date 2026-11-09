@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "title": "Actual-app verification and maximum-two output compliance",
+  "evidence_level": "Actual application off/on regression and engineering-compliance verification; exposed related-group sample, not independent broad validation",
+  "tempo": {
+    "endpoint": "Strictly more than 8% exact BPM deviation; severe means strictly more than 50%.",
+    "intended_per_arm": 8,
+    "valid_per_arm": 8,
+    "above_tolerance_per_arm": {
+      "off": 1,
+      "on": 1
+    },
+    "combined_failures_per_arm": {
+      "off": 1,
+      "on": 1
+    },
+    "missing_or_invalid_per_arm": {
+      "off": 0,
+      "on": 0
+    },
+    "severe_per_arm": {
+      "off": 0,
+      "on": 0
+    },
+    "paired": {
+      "rescues": 1,
+      "regressions": 1,
+      "unchanged_acceptable": 6
+    },
+    "interpretation": "Exact tie: no net tempo accuracy or reliability gain. All eight direct-tempo outputs match prior component results; sample is exposed and related, not independent confirmation."
+  },
+  "maximum_two_output_policy": {
+    "compliance": "PASS",
+    "scope": "Global and section lead-output caps plus report metadata",
+    "actual_reports": 16,
+    "verified_pairs": 8,
+    "interpretation": "Policy compliance, not acoustic-accuracy improvement."
+  },
+  "candidate_adoption": {
+    "new_model_default": false,
+    "candidate_default_changes": false,
+    "decision": "No new model adopted as default; existing optional/private experimental paths remain distinct from ordinary defaults."
+  },
+  "other_scope": {
+    "drum_performance": "1/3 above tolerance off; 0/3 on.",
+    "guitar_comp": "0/3 off and 0/3 on.",
+    "guitar_solo": "0/2 off; 1/2 on.",
+    "limits": "Related cases and shared source group; no broad genre/audio-type/artist validation. Scalar BPM does not validate other analysis endpoints."
+  }
+}

@@ -2,14 +2,14 @@
   "schema_version": 1,
   "source_checkpoint": {
     "file": "status.json",
-    "checkpoint": "lead-vocal-confirmation-20261109",
-    "updated_at": "2026-11-09T18:30:53+08:00",
+    "checkpoint": "actual-app-verification-20261109",
+    "updated_at": "2026-11-09T20:24:10+08:00",
     "counts": {
-      "milestones": 86,
-      "findings": 57,
-      "activity": 56
+      "milestones": 87,
+      "findings": 58,
+      "activity": 57
     },
-    "sha256": "b6220072690ee5a000daed6536e5b0415f9664a2cafe0203ae7d834d0ebab129"
+    "sha256": "7b3e715951a9c47e32e0b70e8937ad667c0743a3d2ec687520a2d4a7822f061c"
   },
   "categories": [
     {
@@ -32,7 +32,8 @@
         "frozen-beat-runtime",
         "frozen-beat-outcome",
         "tempo-local-evidence",
-        "diverse-inventory"
+        "diverse-inventory",
+        "actual-app-tempo-tie-max-two-20261109"
       ]
     },
     {
@@ -133,16 +134,16 @@
     {
       "id": "rhythm-tempo",
       "title": "Rhythm & tempo",
-      "result": "A frozen direct-tempo method is wired in the local application. The 151-case saved comparison reports 13 combined failures (8.61%), including two missing and two severe; the older baseline has 62/151 combined failures.",
-      "limit": "Training-exposed development evidence; broad transfer remains open. Local implementation is not a hosted release or broad independent validation.",
-      "next": "Admit rights-cleared, independent and diverse references; verify full release/hosted behavior before claiming broad deployment.",
+      "result": "Actual-app off/on tempo is tied: 1/8 above strict 8% tolerance in each arm; one rescue and one regression, with zero severe or missing outputs.",
+      "limit": "Exposed related sample; not independent broad validation. A tie is no new accuracy or reliability gain.",
+      "next": "Seek varied independent references; do not retune or promote from this tied screen.",
       "evidence": [
         {
-          "label": "Tempo follow-up",
-          "href": "FOLLOWUP.md"
+          "label": "Actual-app aggregate and max-two compliance",
+          "href": "application-verification-aggregate.json"
         },
         {
-          "label": "Tempo evidence aggregate",
+          "label": "Prior tempo evidence aggregate",
           "href": "progress-numbers.json"
         },
         {
@@ -154,9 +155,9 @@
     {
       "id": "chords-harmony",
       "title": "Chords & harmony",
-      "result": "Private opt-in BTC: triad recording failures 4/7 \u2192 3/7; severe 1/7 unchanged, no missing/invalid outputs. Seven-pair duration errors: root 25.04% \u2192 19.84%, triad 31.57% \u2192 27.50%, full quality 47.40% \u2192 39.18%. Actual-app off/on checks completed.",
-      "limit": "Root, strict-triad and full-quality are distinct; the below-30% failure goal is unmet. Exposed development evidence and noncommercial/source-rights limits preclude broad or commercial claims.",
-      "next": "Seek lawful, independent diverse confirmation; retain the completed private opt-in and unchanged ordinary default. Any new integration needs renewed authorization and actual-app checks.",
+      "result": "Existing private BTC: root duration error 25.04% to 19.84%; triad failures 4/7 to 3/7, severe 1/7 unchanged; no missing outputs.",
+      "limit": "Seven exposed cases versus optional ACE+Two-Stage, not the ordinary default. The below-30% failure goal is unmet; no default promotion.",
+      "next": "Need additional varied original-reference audio and renewed actual-app paired verification; private/noncommercial scope only.",
       "evidence": [
         {
           "label": "Private BTC seven-case aggregate",
@@ -196,17 +197,17 @@
     {
       "id": "lead-accompaniment",
       "title": "Lead vs accompaniment",
-      "result": "Original frozen gate: vocal-specialist candidate 5/6 vs 4/6 for both controls. Post-hoc always-Vocal counterfactual also 5/6; voice-component value unproven on this Vocal-heavy set.",
-      "limit": "Eight valid capped outputs; two non-primary cases excluded. No reliability gain or abstention claim. Prior exposure/unknown overlap; broad validation and app adoption deferred.",
-      "next": "Next prerequisite: separately approved, varied comparison against the always-Vocal rule. No automatic expansion or app integration.",
+      "result": "App enforces at most two lead names. Specialist 5/6 vs each control 4/6, but always-Vocal also 5/6: voice-component value unproven.",
+      "limit": "Two-name compliance is not an accuracy gain. No reliability gain or broad validation; the lead set remains tiny and Vocal-heavy.",
+      "next": "Any new lead method must beat the shortcut on varied labeled cases before adoption; no tuning or expansion queued.",
       "evidence": [
         {
-          "label": "Eight-clip aggregate result",
-          "href": "lead-vocal-confirmation-aggregate.json"
+          "label": "Actual-app aggregate and max-two compliance",
+          "href": "application-verification-aggregate.json"
         },
         {
-          "label": "Previous exposed development result",
-          "href": "lead-vocal-specialist.json"
+          "label": "Eight-clip lead aggregate",
+          "href": "lead-vocal-confirmation-aggregate.json"
         },
         {
           "label": "Methods and limits",
@@ -217,19 +218,20 @@
     }
   ],
   "overall": {
-    "summary": "Four distinct recognizer tasks; this small lead confirmation clears its frozen promise gate, but broad independent validation and application adoption remain unestablished. Chord private opt-in integration exists; lead remains unchanged.",
+    "summary": "Actual-app tempo verification ties at 1/8 failures per arm; maximum-two lead-output compliance passes. No new model/default adoption or acoustic gain. Broad independent validation remains open.",
     "limitations": [
       "Endpoints and denominators are task-specific; do not combine duration error, recording-failure incidence, role ranking or predominance.",
       "Unknown or unannotated classes are not negatives. Rights, checkpoint exposure and independent reference quality constrain transfer.",
       "No general production-readiness, hosted-release, commercial-rights, or broad-accuracy claim follows from these results."
     ],
     "archive_counts": {
-      "milestones": 86,
-      "findings": 57,
-      "activity": 56
+      "milestones": 87,
+      "findings": 58,
+      "activity": 57
     }
   },
   "link_allowlist": [
+    "application-verification-aggregate.json",
     "moe-learned-router.json",
     "btc-private-seven.json",
     "btc-app-six.json",
